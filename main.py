@@ -15,7 +15,7 @@ def visualise_election(filename=str, sat_class=Cost_Sat, rule="greedy", verbose=
         visualiser = GreedyWelfareVisualiser(profile, instance, outcome)
         if verbose:
             print("Rendering visualisation...")
-        visualiser.render("./output/", name=os.path.basename(path).split(".")[0] + "_greedy_utilitarian_welfare")
+        visualiser.render("./output/", filename.split("_.")[0] + "_greedy_utilitarian_welfare")
         if verbose:
             print("Visualisation complete.")
     elif rule == "mes":
@@ -25,7 +25,7 @@ def visualise_election(filename=str, sat_class=Cost_Sat, rule="greedy", verbose=
         visualiser = MESVisualiser(profile, instance, outcome)
         if verbose:
             print("Rendering visualisation...")
-        visualiser.render("./output/", name=os.path.basename(path).split(".")[0] + "_method_of_equal_shares")
+        visualiser.render("./output/", filename.split("_.")[0] + "_method_of_equal_shares")
         if verbose:
             print("Visualisation complete.")
     else:
