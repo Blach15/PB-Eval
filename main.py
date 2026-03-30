@@ -1,6 +1,7 @@
 from pabutools.election import Project, Instance, ApprovalBallot, ApprovalProfile, Cost_Sat, parse_pabulib
 from pabutools.rules import greedy_utilitarian_welfare, sequential_phragmen, method_of_equal_shares
 from pabutools.visualisation import GreedyWelfareVisualiser, MESVisualiser
+from pabutools.analysis.justifiedrepresentation import is_EJR_any_approval
 import os
 
 def visualise_election(filename=str, sat_class=Cost_Sat, rule="greedy", verbose=False):
@@ -30,9 +31,17 @@ def visualise_election(filename=str, sat_class=Cost_Sat, rule="greedy", verbose=
             print("Visualisation complete.")
     else:
         raise ValueError(f"Unknown rule: {rule}")
+    
+path = os.path.join("./elections/", "netherlands_amsterdam_252_.pb")    
+instance, profile = parse_pabulib(path)
+outcome_greedy = greedy_utilitarian_welfare(instance, profile, sat_class=Cost_Sat, analytics=True)
+res = is_EJR_any_approval(instance, profile, sat_class=Cost_Sat, budget_allocation=outcome_greedy)
 
-visualise_election("netherlands_amsterdam_252_.pb", sat_class=Cost_Sat, rule="greedy", verbose=True)
-visualise_election("netherlands_amsterdam_252_.pb", sat_class=Cost_Sat, rule="mes", verbose=True)
+print(res)
+
+
+# visualise_election("netherlands_amsterdam_252_.pb", sat_class=Cost_Sat, rule="greedy", verbose=True)
+# visualise_election("netherlands_amsterdam_252_.pb", sat_class=Cost_Sat, rule="mes", verbose=True)
 
 
 
