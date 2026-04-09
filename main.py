@@ -35,9 +35,9 @@ def visualise_election(filename=str, sat_class=Cost_Sat, rule="greedy", verbose=
 path = os.path.join("./elections/", "netherlands_amsterdam_252_.pb")    
 instance, profile = parse_pabulib(path)
 outcome_greedy = greedy_utilitarian_welfare(instance, profile, sat_class=Cost_Sat, analytics=True)
-res = is_EJR_any_approval(instance, profile, sat_class=Cost_Sat, budget_allocation=outcome_greedy)
+# res = is_EJR_any_approval(instance, profile, sat_class=Cost_Sat, budget_allocation=outcome_greedy)
 
-print(res)
+# print(res)
 
 
 # visualise_election("netherlands_amsterdam_252_.pb", sat_class=Cost_Sat, rule="greedy", verbose=True)
