@@ -17,7 +17,6 @@ def convert_pabutools_election(instance, profile, outcome):
 
     project_names = []
     costs = []
-
     for p in projects:
         project_names.append(str(p))
         costs.append(p.cost)
@@ -30,7 +29,6 @@ def convert_pabutools_election(instance, profile, outcome):
         approvals.append(approved)
 
     winners = {proj_to_idx[p] for p in outcome}
-
     budget = instance.budget_limit
 
     return project_names, costs, approvals, winners, budget
@@ -47,7 +45,7 @@ def compute_supporters_by_project(num_projects, approvals):
             supporters[b].add(voter_idx)
     return supporters
 
-def find_ejr_violation(costs, approvals, winners, budget, project_names=None, verbose=True):
+def find_ejr_violation(project_costs, approvals, winners, budget, project_names=None, verbose=True):
     """
     Exact EJR checker for the PB-style definition.
 
@@ -63,27 +61,25 @@ def find_ejr_violation(costs, approvals, winners, budget, project_names=None, ve
                 "support_size": int
             }
     """
-    n = len(approvals)
-    m = len(costs)
 
-    if n == 0:
+    if len(approvals) == 0:
         return None
 
     winner_counts = compute_winner_counts(approvals, winners)
-    supporters_by_project = compute_supporters_by_project(m, approvals)
+    supporters_by_project = compute_supporters_by_project(len(project_costs), approvals)
 
     # Maximum ell worth checking:
     # no voter can demand more than the number of projects they approve
     max_ell = max((len(ballot) for ballot in approvals), default=0)
 
     # Global sorted costs for quick lower bounds
-    all_costs_sorted = sorted(costs)
+    all_costs_sorted = sorted(project_costs)
 
     for ell in range(1, max_ell + 1):
         if verbose:
             print(f"Checking ell = {ell}")
 
-        unsat_voters = {i for i in range(n) if winner_counts[i] < ell}
+        unsat_voters = {i for i in range(len(approvals)) if winner_counts[i] < ell}
         unsat_count = len(unsat_voters)
 
         if unsat_count == 0:
@@ -94,19 +90,19 @@ def find_ejr_violation(costs, approvals, winners, budget, project_names=None, ve
             continue
 
         min_possible_cost = sum(all_costs_sorted[:ell])
-        if budget * unsat_count < n * min_possible_cost:
+        if budget * unsat_count < len(approvals) * min_possible_cost:
             if verbose:
                 print(f"  Skipping ell={ell}: not enough unsatisfied voters even for cheapest size-{ell} set.")
             continue
 
         # Candidate filtering: keep only projects with enough unsatisfied supporters
         candidate_data = []
-        for c in range(m):
+        for c in range(len(project_costs)):
             supp = supporters_by_project[c] & unsat_voters
             supp_count = len(supp)
 
             # singleton necessary condition
-            if budget * supp_count >= n * costs[c]:
+            if budget * supp_count >= len(approvals) * project_costs[c]:
                 candidate_data.append((c, supp, supp_count))
 
         if len(candidate_data) < ell:
@@ -116,13 +112,13 @@ def find_ejr_violation(costs, approvals, winners, budget, project_names=None, ve
 
         # Sort projects to make search faster:
         # more support first, then cheaper cost
-        candidate_data.sort(key=lambda x: (-x[2], costs[x[0]]))
+        candidate_data.sort(key=lambda x: (-x[2], project_costs[x[0]]))
 
         candidate_ids = [x[0] for x in candidate_data]
         support_map = {x[0]: x[1] for x in candidate_data}
 
         # Precompute suffix cheapest costs for lower bound pruning
-        sorted_remaining_costs = [costs[c] for c in candidate_ids]
+        sorted_remaining_costs = [project_costs[c] for c in candidate_ids]
 
         witness = _dfs_find_violation(
             ell=ell,
@@ -132,9 +128,9 @@ def find_ejr_violation(costs, approvals, winners, budget, project_names=None, ve
             current_cost=0,
             candidate_ids=candidate_ids,
             support_map=support_map,
-            costs=costs,
+            costs=project_costs,
             budget=budget,
-            n=n,
+            n=len(approvals),
             project_names=project_names,
             sorted_remaining_costs=sorted_remaining_costs,
             verbose=verbose

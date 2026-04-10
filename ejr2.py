@@ -12,6 +12,7 @@ from pabutools.rules import (
     method_of_equal_shares,
 )
 from pabutools.utils import Numeric
+from typing import Callable
 import os
 
 
@@ -31,13 +32,50 @@ def find_ejr_violation_witness(
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
+    utility_func: Callable[[set[int], set[int]], int],
 ) -> bool:
+    project_supporters = get_project_supporters(approvals, projects)
+    winning_util = [
+        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
+    ]
+
+    current_lattice_layer_worklist = []
+    next_lattice_layer_worklist = []
+
+    for p in projects:
+        next_lattice_layer_worklist.append({p})
+
+    while len(next_lattice_layer_worklist) > 0:
+        current_lattice_layer_worklist = next_lattice_layer_worklist
+        next_lattice_layer_worklist = []
+
+        for p_set in current_lattice_layer_worklist:
+            unsat_voters = {
+                i
+                for i in range(len(approvals))
+                if winning_util[i] < utility_func(p_set, approvals[i]) * budget
+            }
+            if len(unsat_voters) == 0:
+                continue
+
+            # find intersections of supporters of p.
+            supported_projects = set()
+
+            # test for t-coheisivness violation
+            # if len(p_intersection) >= utility_func(p) * budget:
+            #     2
+
+        next_lattice_layer_worklist = []  # todo: generate next layer of lattice
+
+    return True
+
+
+def get_project_supporters(approvals, projects) -> list[set[int]]:
     project_supporters = [set() for _ in range(len(projects))]
     for voter_idx, ballot in enumerate(approvals):
         for p in ballot:
             project_supporters[p].add(voter_idx)
-    
-    return True
+    return project_supporters
 
 
 def convert_inputs_to_ejr_types(
