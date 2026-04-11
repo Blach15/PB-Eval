@@ -223,9 +223,9 @@ def _dfs_find_violation(
 
     return None
 
-path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")   
+path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
 instance, profile = parse_pabulib(path)
-outcome_greedy = method_of_equal_shares(instance, profile, sat_class=Cost_Sat, analytics=False)
+outcome_greedy = greedy_utilitarian_welfare(instance, profile, sat_class=Cost_Sat, analytics=False)
 
 project_names, costs, approvals, winners, budget = convert_pabutools_election(instance, profile, outcome_greedy)
 

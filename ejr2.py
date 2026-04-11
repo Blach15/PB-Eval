@@ -58,12 +58,8 @@ def find_ejr_violation_witness(
             if len(unsat_voters) == 0:
                 continue
 
-            # find intersections of supporters of p.
-            supported_projects = set()
-
-            # test for t-coheisivness violation
-            # if len(p_intersection) >= utility_func(p) * budget:
-            #     2
+            # try and make a T-cohesive set out of p_set and unsat_voters
+            
 
         next_lattice_layer_worklist = []  # todo: generate next layer of lattice
 

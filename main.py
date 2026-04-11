@@ -37,10 +37,10 @@ instance, profile = parse_pabulib(path)
 outcome_greedy = greedy_utilitarian_welfare(instance, profile, sat_class=Cost_Sat, analytics=True)
 print("Outcome of greedy utilitarian welfare:", outcome_greedy)
 # print("Instance:", instance)
-for i in range(0, 5):
-    print(instance.projects[i])
-for i in range(0, 5):
-    print(profile[i])
+# for i in range(0, 5):
+#     print(instance.projects[i])
+# for i in range(0, 5):
+#     print(profile[i])
 
 
 # res = is_EJR_any_approval(instance, profile, sat_class=Cost_Sat, budget_allocation=outcome_greedy)
