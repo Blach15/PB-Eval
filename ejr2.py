@@ -1,29 +1,22 @@
 from pabutools.election import (
     Project,
     Instance,
-    ApprovalBallot,
     Profile,
     Cost_Sat,
     parse_pabulib,
 )
 from pabutools.rules import (
     greedy_utilitarian_welfare,
-    sequential_phragmen,
-    method_of_equal_shares,
     BudgetAllocation,
 )
 from pabutools.election import (
     Project,
     Instance,
-    ApprovalBallot,
-    ApprovalProfile,
     Cost_Sat,
     parse_pabulib,
 )
 from pabutools.rules import (
     greedy_utilitarian_welfare,
-    sequential_phragmen,
-    method_of_equal_shares,
 )
 from pabutools.utils import Numeric
 from typing import Callable
@@ -133,7 +126,28 @@ def convert_inputs_to_ejr_types(
     proj_to_idx = {p: idx for idx, p in enumerate(projects)}
 
     approvals = [set(proj_to_idx[p] for p in ballot) for ballot in profile]
-    winning_set = set(outcome_greedy)
+
+    # Ensure winning_set contains integers (indices of projects)
+    winning_set = set()
+    if isinstance(outcome_greedy, list):
+        for alloc in outcome_greedy:
+            if isinstance(alloc, Project):
+                winning_set.add(proj_to_idx[alloc])
+            elif isinstance(alloc, BudgetAllocation):
+                # Handle BudgetAllocation appropriately (e.g., extract relevant projects or indices)
+                raise NotImplementedError(
+                    "Handling of BudgetAllocation in outcome_greedy is not implemented."
+                )
+                pass
+    elif isinstance(outcome_greedy, Project):
+        winning_set.add(proj_to_idx[outcome_greedy])
+    elif isinstance(outcome_greedy, BudgetAllocation):
+        # Handle single BudgetAllocation appropriately
+        raise NotImplementedError(
+            "Handling of BudgetAllocation in outcome_greedy is not implemented."
+        )
+        pass
+
     costs = [p.cost for p in projects]
     budget = instance.budget_limit
 
