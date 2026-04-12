@@ -117,8 +117,6 @@ def find_ejr_violation(project_costs, approvals, winners, budget, project_names=
         candidate_ids = [x[0] for x in candidate_data]
         support_map = {x[0]: x[1] for x in candidate_data}
 
-        # Precompute suffix cheapest costs for lower bound pruning
-        sorted_remaining_costs = [project_costs[c] for c in candidate_ids]
 
         witness = _dfs_find_violation(
             ell=ell,
@@ -132,7 +130,6 @@ def find_ejr_violation(project_costs, approvals, winners, budget, project_names=
             budget=budget,
             n=len(approvals),
             project_names=project_names,
-            sorted_remaining_costs=sorted_remaining_costs,
             verbose=verbose
         )
 
@@ -153,7 +150,6 @@ def _dfs_find_violation(
     budget,
     n,
     project_names,
-    sorted_remaining_costs,
     verbose=False):
 
     depth = len(chosen)
@@ -213,7 +209,6 @@ def _dfs_find_violation(
             budget=budget,
             n=n,
             project_names=project_names,
-            sorted_remaining_costs=sorted_remaining_costs,
             verbose=verbose
         )
         chosen.pop()
@@ -223,7 +218,17 @@ def _dfs_find_violation(
 
     return None
 
-path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
+def print_stats(costs, approvals):
+    average_project_cost = sum(costs) / len(costs)
+    print(f"Average project cost: {average_project_cost}")
+    projects_to_voters_ratio = len(costs) / len(approvals)
+    print(f"Projects to voters ratio: {projects_to_voters_ratio}")
+    vote_length= sum(len(ballot) for ballot in approvals) / len(approvals)
+    print(f"Average votes per voter: {vote_length}")
+    vote_length_to_projects_ratio = vote_length / projects_to_voters_ratio
+    print(f"Average votes per voter to projects ratio: {vote_length_to_projects_ratio}")
+
+path = os.path.join("./elections/", "Poland_Warszawa_2019_Ursynow.pb")
 instance, profile = parse_pabulib(path)
 outcome_greedy = greedy_utilitarian_welfare(instance, profile, sat_class=Cost_Sat, analytics=False)
 
@@ -232,4 +237,5 @@ project_names, costs, approvals, winners, budget = convert_pabutools_election(in
 
 violation = find_ejr_violation(costs, approvals, winners, budget, project_names, verbose=True)
 print(violation)
-print (outcome_greedy)
+print_stats(costs, approvals)
+# print (outcome_greedy)

@@ -12,7 +12,7 @@ vote_type;approval
 rule;greedy
 date_begin;2020
 date_end;2020
-max_sum_cost;250000
+max_sum_cost;500000
 neighborhoods;Oostelijke Eilanden,Haarlemmerhouttuinen,Other
 language;nl
 currency;EUR
