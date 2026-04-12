@@ -57,8 +57,8 @@ def find_ejr_violation_witness(
     current_lattice_layer_worklist = []
     next_lattice_layer_worklist = []
 
-    for p in projects:
-        next_lattice_layer_worklist.append({p})
+    for pIdx in range(len(projects)):
+        next_lattice_layer_worklist.append({pIdx})
 
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
