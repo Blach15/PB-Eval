@@ -97,7 +97,7 @@ def find_ejr_violation(project_costs, approvals, winners, budget, project_names=
 
         # Candidate filtering: keep only projects with enough unsatisfied supporters
         candidate_data = []
-        for c in range(len(project_costs)):
+        for c in range(len(project_costs)): # what is going on here? 
             supp = supporters_by_project[c] & unsat_voters
             supp_count = len(supp)
 

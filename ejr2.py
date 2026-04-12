@@ -2,7 +2,7 @@ from pabutools.election import (
     Project,
     Instance,
     ApprovalBallot,
-    ApprovalProfile,
+    Profile,
     Cost_Sat,
     parse_pabulib,
 )
@@ -10,6 +10,7 @@ from pabutools.rules import (
     greedy_utilitarian_welfare,
     sequential_phragmen,
     method_of_equal_shares,
+    BudgetAllocation,
 )
 from pabutools.election import (
     Project,
@@ -45,7 +46,7 @@ def find_ejr_violation_witness(
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    utility_func: Callable[[set[int], set[int]], int],
+    utility_func: Callable[[set[int], set[int]], Numeric],
 ) -> bool:
     project_supporters = get_project_supporters(approvals, projects)
     winning_util = [
@@ -114,7 +115,9 @@ def get_project_supporters(approvals, projects) -> list[set[int]]:
 
 
 def convert_inputs_to_ejr_types(
-    instance: Instance, profile: ApprovalProfile, outcome_greedy: list[int]
+    instance: Instance,
+    profile: Profile,
+    outcome_greedy: BudgetAllocation | list[BudgetAllocation],
 ) -> tuple[list[set[int]], set[int], list[Numeric], list[Project], Numeric]:
     """
     Converts inputs from `instance`, `profile`, and `outcome_greedy` to the types required by `find_ejr_violation_witness`.
@@ -139,8 +142,11 @@ def convert_inputs_to_ejr_types(
 
 if __name__ == "__main__":
 
-    def card_utility_func(project_set: set[int], ballot: set[int]) -> int:
+    def card_utility_func(project_set: set[int], ballot: set[int]) -> Numeric:
         return len(project_set & ballot)
+
+    def cost_utility_func(project_set: set[int], ballot: set[int]) -> Numeric:
+        return sum(costs[p] for p in project_set & ballot)
 
     path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
     instance, profile = parse_pabulib(path)
@@ -153,7 +159,7 @@ if __name__ == "__main__":
     )
 
     violation = find_ejr_violation_witness(
-        approvals, winning_set, costs, projects, budget, card_utility_func
+        approvals, winning_set, costs, projects, budget, cost_utility_func
     )
     print(violation)
     print(outcome_greedy)
