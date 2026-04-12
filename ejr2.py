@@ -11,6 +11,19 @@ from pabutools.rules import (
     sequential_phragmen,
     method_of_equal_shares,
 )
+from pabutools.election import (
+    Project,
+    Instance,
+    ApprovalBallot,
+    ApprovalProfile,
+    Cost_Sat,
+    parse_pabulib,
+)
+from pabutools.rules import (
+    greedy_utilitarian_welfare,
+    sequential_phragmen,
+    method_of_equal_shares,
+)
 from pabutools.utils import Numeric
 from typing import Callable
 import os
@@ -39,6 +52,8 @@ def find_ejr_violation_witness(
         utility_func(winning_set, approvals[i]) for i in range(len(approvals))
     ]
 
+    n = len(approvals)
+
     current_lattice_layer_worklist = []
     next_lattice_layer_worklist = []
 
@@ -47,23 +62,47 @@ def find_ejr_violation_witness(
 
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
-        next_lattice_layer_worklist = []
+        surviving_lattice_layer_worklist = []
 
         for p_set in current_lattice_layer_worklist:
+            voter_intersection = set()
+            for p in p_set:
+                voter_intersection = (
+                    project_supporters[p]
+                    if len(voter_intersection) == 0
+                    else voter_intersection & project_supporters[p]
+                )
+            # check that is cohesive set
+            if len(voter_intersection) / n * budget < sum(costs[p] for p in p_set):
+                continue  # can't afford
+
             unsat_voters = {
                 i
-                for i in range(len(approvals))
-                if winning_util[i] < utility_func(p_set, approvals[i]) * budget
+                for i in voter_intersection
+                if winning_util[i] < utility_func(p_set, approvals[i])
             }
             if len(unsat_voters) == 0:
                 continue
 
-            # try and make a T-cohesive set out of p_set and unsat_voters
-            
+            # check if coheisive set violates EJR
+            if len(unsat_voters) == voter_intersection:
+                print(f"T: {p_set}, voters: {voter_intersection}")
+                return True  # all voters in the intersection are unsatisfied, so we have an EJR violation
 
-        next_lattice_layer_worklist = []  # todo: generate next layer of lattice
+            surviving_lattice_layer_worklist.append(p_set)
 
-    return True
+        # create all combinations, apriori style
+        next_lattice_layer_worklist = []
+        for i in range(len(surviving_lattice_layer_worklist)):
+            for j in range(i + 1, len(surviving_lattice_layer_worklist)):
+                new_set = (
+                    surviving_lattice_layer_worklist[i]
+                    | surviving_lattice_layer_worklist[j]
+                )
+                if new_set not in next_lattice_layer_worklist:
+                    next_lattice_layer_worklist.append(new_set)
+
+    return False
 
 
 def get_project_supporters(approvals, projects) -> list[set[int]]:
@@ -96,3 +135,25 @@ def convert_inputs_to_ejr_types(
     budget = instance.budget_limit
 
     return (approvals, winning_set, costs, projects, budget)
+
+
+if __name__ == "__main__":
+
+    def card_utility_func(project_set: set[int], ballot: set[int]) -> int:
+        return len(project_set & ballot)
+
+    path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
+    instance, profile = parse_pabulib(path)
+    outcome_greedy = greedy_utilitarian_welfare(
+        instance, profile, sat_class=Cost_Sat, analytics=False
+    )
+
+    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
+        instance, profile, outcome_greedy
+    )
+
+    violation = find_ejr_violation_witness(
+        approvals, winning_set, costs, projects, budget, card_utility_func
+    )
+    print(violation)
+    print(outcome_greedy)
