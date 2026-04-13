@@ -1,4 +1,5 @@
 from pabutools.election import (
+    Cardinality_Sat,
     Project,
     Instance,
     Profile,
@@ -48,15 +49,19 @@ def find_ejr_violation_witness(
 
     n = len(approvals)
 
-    current_lattice_layer_worklist = []
-    next_lattice_layer_worklist = []
+    current_lattice_layer_worklist: set[frozenset[int]] = set()
+    next_lattice_layer_worklist: set[frozenset[int]] = set()
 
     for pIdx in range(len(projects)):
-        next_lattice_layer_worklist.append({pIdx})
+        next_lattice_layer_worklist.add(frozenset({pIdx}))
 
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist = []
+
+        # print(
+        #    f"Current layer size: {len(current_lattice_layer_worklist[0])}, {len(current_lattice_layer_worklist)}"
+        # )
 
         for p_set in current_lattice_layer_worklist:
             voter_intersection = set()
@@ -88,15 +93,22 @@ def find_ejr_violation_witness(
             surviving_lattice_layer_worklist.append(p_set)
 
         # create all combinations, apriori style
-        next_lattice_layer_worklist = []
+        if len(surviving_lattice_layer_worklist) != 0:
+            print(
+                f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
+            )
+        next_lattice_layer_worklist = set()
         for i in range(len(surviving_lattice_layer_worklist)):
             for j in range(i + 1, len(surviving_lattice_layer_worklist)):
                 new_set = (
                     surviving_lattice_layer_worklist[i]
                     | surviving_lattice_layer_worklist[j]
                 )
-                if new_set not in next_lattice_layer_worklist:
-                    next_lattice_layer_worklist.append(new_set)
+                if (
+                    len(new_set) == len(surviving_lattice_layer_worklist[i]) + 1
+                    and new_set not in next_lattice_layer_worklist
+                ):
+                    next_lattice_layer_worklist.add(frozenset(new_set))
 
     return False
 
@@ -165,10 +177,10 @@ if __name__ == "__main__":
         return sum(costs[p] for p in (project_set & ballot))
 
     # path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
-    path = os.path.join("./elections/", "netherlands_amsterdam_417_.pb")
+    path = os.path.join("./elections/", "Netherlands_Amsterdam_332.pb")
     instance, profile = parse_pabulib(path)
     outcome_greedy = greedy_utilitarian_welfare(
-        instance, profile, sat_class=Cost_Sat, analytics=False
+        instance, profile, sat_class=Cardinality_Sat, analytics=False
     )
 
     (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
@@ -176,7 +188,12 @@ if __name__ == "__main__":
     )
 
     violation = find_ejr_violation_witness(
-        approvals, winning_set, costs, projects, budget, cost_utility_func
+        approvals, winning_set, costs, projects, budget, card_utility_func
     )
     print(violation)
     print(outcome_greedy)
+
+
+# 1,2 - 3,4 - 3,5 - 4.5 -> {1,2,3,4,5} -> 3^{1,2,3,4,5}
+
+# % 1,2,3
