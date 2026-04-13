@@ -32,6 +32,7 @@ def find_ejr_violation_witness(
     projects: list[Project],
     budget: Numeric,
     utility_func: Callable[[set[int] | frozenset[int], set[int]], Numeric],
+    verbose: bool = True,
 ) -> EJRViolationWitness | None:
     project_supporters = get_project_supporters(approvals, projects)
     winning_util = [
@@ -78,13 +79,14 @@ def find_ejr_violation_witness(
             # bug: missnig coheisive check.
             # instead check unsat_voters for cohesive, then withness
             if len(unsat_voters) / n * budget >= sum(costs[p] for p in p_set):
-                print(f"T: {p_set}, voters: {unsat_voters}")
+                if verbose:
+                    print(f"T: {p_set}, voters: {unsat_voters}")
                 return EJRViolationWitness(p_set, unsat_voters)
 
             surviving_lattice_layer_worklist.append(p_set)
 
         # create all combinations, apriori style
-        if len(surviving_lattice_layer_worklist) != 0:
+        if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(
                 f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
             )

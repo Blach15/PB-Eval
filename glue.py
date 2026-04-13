@@ -22,6 +22,7 @@ from pabutools.rules import (
 from pabutools.utils import Numeric
 from typing import Callable
 import os
+import time
 from ejr import convert_pabutools_election, find_ejr_violation
 from ejr2 import find_ejr_violation_witness, convert_inputs_to_ejr_types
 
@@ -53,7 +54,13 @@ def ejr2(filename: str):
     )
 
     violation = find_ejr_violation_witness(
-        approvals, winning_set, costs, projects, budget, card_utility_func
+        approvals,
+        winning_set,
+        costs,
+        projects,
+        budget,
+        card_utility_func,
+        verbose=False,
     )
     return violation
 
@@ -64,21 +71,35 @@ def ejr1(filename: str):
         instance, profile, outcome
     )
     violation = find_ejr_violation(
-        project_names, costs, approvals, winners, budget  # , verbose=False
+        costs, approvals, winners, budget, project_names, verbose=False
     )
     return violation
 
 
 def run_both(filename: str):
-    violation2 = ejr2(filename)
     violation1 = ejr1(filename)
+    violation2 = ejr2(filename)
 
     return violation1, violation2
 
 
+def timer(filename: str, ejr_func):
+    start = time.time()
+    violation = ejr_func(filename)
+    timing = time.time() - start
+
+    return violation, timing
+
+
 if __name__ == "__main__":
-    filename = "Hungary_Budapest_2024.pb"
-    violation1, violation2 = run_both(filename)
+    # filename = "Hungary_Budapest_2024.pb"
+    filename = "Netherlands_Amsterdam_622.pb"
+
+    violation1, time1 = timer(filename, ejr1)
+    violation2, time2 = timer(filename, ejr2)
+
+    print(f"ejr1 time: {time1:.4f}s, ejr2 time: {time2:.4f}s")
+
     if (violation1 is None) or (violation2 is None):
         if not ((violation1 is None) and (violation2 is None)):
             print(
