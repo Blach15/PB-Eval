@@ -1,6 +1,19 @@
-from pabutools.election import Project, Instance, ApprovalBallot, ApprovalProfile, Cost_Sat, parse_pabulib
-from pabutools.rules import greedy_utilitarian_welfare, sequential_phragmen, method_of_equal_shares
+from pabutools.election import (
+    Project,
+    Instance,
+    ApprovalBallot,
+    ApprovalProfile,
+    Cost_Sat,
+    Cardinality_Sat,
+    parse_pabulib,
+)
+from pabutools.rules import (
+    greedy_utilitarian_welfare,
+    sequential_phragmen,
+    method_of_equal_shares,
+)
 import os
+
 
 def convert_pabutools_election(instance, profile, outcome):
     """
@@ -33,9 +46,11 @@ def convert_pabutools_election(instance, profile, outcome):
 
     return project_names, costs, approvals, winners, budget
 
+
 # Compute the number of winners approved by each ballot
 def compute_winner_counts(approvals, winners):
     return [len(ballot & winners) for ballot in approvals]
+
 
 # Compute the supporters of each project
 def compute_supporters_by_project(num_projects, approvals):
@@ -45,7 +60,10 @@ def compute_supporters_by_project(num_projects, approvals):
             supporters[b].add(voter_idx)
     return supporters
 
-def find_ejr_violation(project_costs, approvals, winners, budget, project_names=None, verbose=True):
+
+def find_ejr_violation(
+    project_costs, approvals, winners, budget, project_names=None, verbose=True
+):
     """
     Exact EJR checker for the PB-style definition.
 
@@ -92,12 +110,14 @@ def find_ejr_violation(project_costs, approvals, winners, budget, project_names=
         min_possible_cost = sum(all_costs_sorted[:ell])
         if budget * unsat_count < len(approvals) * min_possible_cost:
             if verbose:
-                print(f"  Skipping ell={ell}: not enough unsatisfied voters even for cheapest size-{ell} set.")
+                print(
+                    f"  Skipping ell={ell}: not enough unsatisfied voters even for cheapest size-{ell} set."
+                )
             continue
 
         # Candidate filtering: keep only projects with enough unsatisfied supporters
         candidate_data = []
-        for c in range(len(project_costs)): # what is going on here? 
+        for c in range(len(project_costs)):
             supp = supporters_by_project[c] & unsat_voters
             supp_count = len(supp)
 
@@ -117,7 +137,6 @@ def find_ejr_violation(project_costs, approvals, winners, budget, project_names=
         candidate_ids = [x[0] for x in candidate_data]
         support_map = {x[0]: x[1] for x in candidate_data}
 
-
         witness = _dfs_find_violation(
             ell=ell,
             start_idx=0,
@@ -130,13 +149,14 @@ def find_ejr_violation(project_costs, approvals, winners, budget, project_names=
             budget=budget,
             n=len(approvals),
             project_names=project_names,
-            verbose=verbose
+            verbose=verbose,
         )
 
         if witness is not None:
             return witness
 
     return None
+
 
 def _dfs_find_violation(
     ell,
@@ -150,7 +170,8 @@ def _dfs_find_violation(
     budget,
     n,
     project_names,
-    verbose=False):
+    verbose=False,
+):
 
     depth = len(chosen)
     support_count = len(current_support)
@@ -167,7 +188,7 @@ def _dfs_find_violation(
             "T_names": [project_names[c] if project_names else str(c) for c in chosen],
             "cost": current_cost,
             "supporters": sorted(current_support),
-            "support_size": support_count
+            "support_size": support_count,
         }
 
     remaining_needed = ell - depth
@@ -178,7 +199,9 @@ def _dfs_find_violation(
         return None
 
     # Prune 3: even cheapest possible completion is too expensive
-    remaining_costs = [costs[candidate_ids[j]] for j in range(start_idx, len(candidate_ids))]
+    remaining_costs = [
+        costs[candidate_ids[j]] for j in range(start_idx, len(candidate_ids))
+    ]
     if len(remaining_costs) < remaining_needed:
         return None
 
@@ -209,7 +232,7 @@ def _dfs_find_violation(
             budget=budget,
             n=n,
             project_names=project_names,
-            verbose=verbose
+            verbose=verbose,
         )
         chosen.pop()
 
@@ -218,24 +241,33 @@ def _dfs_find_violation(
 
     return None
 
+
 def print_stats(costs, approvals):
     average_project_cost = sum(costs) / len(costs)
     print(f"Average project cost: {average_project_cost}")
     projects_to_voters_ratio = len(costs) / len(approvals)
     print(f"Projects to voters ratio: {projects_to_voters_ratio}")
-    vote_length= sum(len(ballot) for ballot in approvals) / len(approvals)
+    vote_length = sum(len(ballot) for ballot in approvals) / len(approvals)
     print(f"Average votes per voter: {vote_length}")
     vote_length_to_projects_ratio = vote_length / projects_to_voters_ratio
     print(f"Average votes per voter to projects ratio: {vote_length_to_projects_ratio}")
 
-path = os.path.join("./elections/", "Poland_Warszawa_2019_Ursynow.pb")
-instance, profile = parse_pabulib(path)
-outcome_greedy = greedy_utilitarian_welfare(instance, profile, sat_class=Cost_Sat, analytics=False)
 
-project_names, costs, approvals, winners, budget = convert_pabutools_election(instance, profile, outcome_greedy)
+if __name__ == "__main__":
+    # path = os.path.join("./elections/", "Poland_Warszawa_2019_Ursynow.pb")
+    path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
+    instance, profile = parse_pabulib(path)
+    outcome_greedy = greedy_utilitarian_welfare(
+        instance, profile, sat_class=Cardinality_Sat, analytics=False
+    )
 
+    project_names, costs, approvals, winners, budget = convert_pabutools_election(
+        instance, profile, outcome_greedy
+    )
 
-violation = find_ejr_violation(costs, approvals, winners, budget, project_names, verbose=True)
-print(violation)
-print_stats(costs, approvals)
-# print (outcome_greedy)
+    violation = find_ejr_violation(
+        costs, approvals, winners, budget, project_names, verbose=True
+    )
+    print(violation)
+    print_stats(costs, approvals)
+    # print (outcome_greedy)

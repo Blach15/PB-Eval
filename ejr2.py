@@ -22,16 +22,7 @@ from pabutools.rules import (
 from pabutools.utils import Numeric
 from typing import Callable
 import os
-
-
-def normalize_input(instance, profile, outcome):
-    project_names = []
-    project_costs = []
-    for p in list(instance):
-        project_names.append(p.name)
-        project_costs.append(p.cost)
-
-    return True
+from typess import EJRViolationWitness
 
 
 def find_ejr_violation_witness(
@@ -40,8 +31,8 @@ def find_ejr_violation_witness(
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    utility_func: Callable[[set[int], set[int]], Numeric],
-) -> bool:
+    utility_func: Callable[[set[int] | frozenset[int], set[int]], Numeric],
+) -> EJRViolationWitness | None:
     project_supporters = get_project_supporters(approvals, projects)
     winning_util = [
         utility_func(winning_set, approvals[i]) for i in range(len(approvals))
@@ -87,8 +78,8 @@ def find_ejr_violation_witness(
             # bug: missnig coheisive check.
             # instead check unsat_voters for cohesive, then withness
             if len(unsat_voters) / n * budget >= sum(costs[p] for p in p_set):
-                print(f"T: {p_set}, voters: {voter_intersection}")
-                return True  # all voters in the intersection are unsatisfied, so we have an EJR violation
+                print(f"T: {p_set}, voters: {unsat_voters}")
+                return EJRViolationWitness(p_set, unsat_voters)
 
             surviving_lattice_layer_worklist.append(p_set)
 
@@ -110,7 +101,7 @@ def find_ejr_violation_witness(
                 ):
                     next_lattice_layer_worklist.add(frozenset(new_set))
 
-    return False
+    return None
 
 
 def get_project_supporters(approvals, projects) -> list[set[int]]:
@@ -170,17 +161,21 @@ def convert_inputs_to_ejr_types(
 
 if __name__ == "__main__":
 
-    def card_utility_func(project_set: set[int], ballot: set[int]) -> Numeric:
+    def card_utility_func(
+        project_set: set[int] | frozenset[int], ballot: set[int]
+    ) -> Numeric:
         return len(project_set & ballot)
 
-    def cost_utility_func(project_set: set[int], ballot: set[int]) -> Numeric:
+    def cost_utility_func(
+        project_set: set[int] | frozenset[int], ballot: set[int]
+    ) -> Numeric:
         return sum(costs[p] for p in (project_set & ballot))
 
-    # path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
-    path = os.path.join("./elections/", "Netherlands_Amsterdam_332.pb")
+    path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
+    # path = os.path.join("./elections/", "Netherlands_Amsterdam_332.pb")
     instance, profile = parse_pabulib(path)
     outcome_greedy = greedy_utilitarian_welfare(
-        instance, profile, sat_class=Cardinality_Sat, analytics=False
+        instance, profile, sat_class=Cost_Sat, analytics=False
     )
 
     (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
@@ -188,7 +183,7 @@ if __name__ == "__main__":
     )
 
     violation = find_ejr_violation_witness(
-        approvals, winning_set, costs, projects, budget, card_utility_func
+        approvals, winning_set, costs, projects, budget, cost_utility_func
     )
     print(violation)
     print(outcome_greedy)
