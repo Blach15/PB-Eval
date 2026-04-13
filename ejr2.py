@@ -64,7 +64,7 @@ def find_ejr_violation_witness(
                 voter_intersection = (
                     project_supporters[p]
                     if len(voter_intersection) == 0
-                    else voter_intersection & project_supporters[p]
+                    else voter_intersection & project_supporters[p]  # bug here ?
                 )
             # check that is cohesive set
             if len(voter_intersection) / n * budget < sum(costs[p] for p in p_set):
@@ -75,11 +75,13 @@ def find_ejr_violation_witness(
                 for i in voter_intersection
                 if winning_util[i] < utility_func(p_set, approvals[i])
             }
-            if len(unsat_voters) == 0:
-                continue
+            # if len(unsat_voters) == 0: #bug?
+            #     continue
 
             # check if coheisive set violates EJR
-            if len(unsat_voters) == voter_intersection:
+            # bug: missnig coheisive check.
+            # instead check unsat_voters for cohesive, then withness
+            if len(unsat_voters) / n * budget >= sum(costs[p] for p in p_set):
                 print(f"T: {p_set}, voters: {voter_intersection}")
                 return True  # all voters in the intersection are unsatisfied, so we have an EJR violation
 
@@ -160,9 +162,10 @@ if __name__ == "__main__":
         return len(project_set & ballot)
 
     def cost_utility_func(project_set: set[int], ballot: set[int]) -> Numeric:
-        return sum(costs[p] for p in project_set & ballot)
+        return sum(costs[p] for p in (project_set & ballot))
 
-    path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
+    # path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
+    path = os.path.join("./elections/", "netherlands_amsterdam_417_.pb")
     instance, profile = parse_pabulib(path)
     outcome_greedy = greedy_utilitarian_welfare(
         instance, profile, sat_class=Cost_Sat, analytics=False
