@@ -10,20 +10,11 @@ from pabutools.rules import (
     greedy_utilitarian_welfare,
     BudgetAllocation,
 )
-from pabutools.election import (
-    Project,
-    Instance,
-    Cost_Sat,
-    parse_pabulib,
-)
-from pabutools.rules import (
-    greedy_utilitarian_welfare,
-)
 from pabutools.utils import Numeric
 from typing import Callable
 import os
 import time
-from ejr import convert_pabutools_election, find_ejr_violation
+from ejr import find_ejr_violation, run_election
 from ejr2 import find_ejr_violation_witness, convert_inputs_to_ejr_types
 
 
@@ -66,13 +57,8 @@ def ejr2(filename: str):
 
 
 def ejr1(filename: str):
-    instance, profile, outcome = parsefile(filename)
-    project_names, costs, approvals, winners, budget = convert_pabutools_election(
-        instance, profile, outcome
-    )
-    violation = find_ejr_violation(
-        costs, approvals, winners, budget, project_names, verbose=False
-    )
+    instance, profile, outcome = run_election(filename, rule="greedy", util=Cardinality_Sat)
+    violation = find_ejr_violation(instance, profile, outcome, util=Cardinality_Sat, verbose=False)
     return violation
 
 

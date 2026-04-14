@@ -1,0 +1,16505 @@
+META
+key;value
+description;Municipal PB in Gdynia, Green Budget
+country;Poland
+unit;Gdynia
+subunit;Green Budget
+instance;2025
+num_projects;2
+num_votes;16478
+budget;1000000
+vote_type;approval
+rule;greedy-no-skip
+date_begin;01.09.2025
+date_end;16.09.2025
+min_length;1
+max_length;2
+min_project_score_threshold;1000
+subdistricts;True
+edition;12
+language;pl
+currency;PLN
+PROJECTS
+project_id;cost;votes;name;selected
+2025/OGM/0004;998670;13782;Odbetonowanie, nasadzenia drzew oraz zieleni przyulicznej w 7 dzielnicach: Cisowej, Wielkim Kacku, Obłużu, Karwinach, Grabówku, Dąbrowie i Wzgórzu św. Maksymiliana;1
+2025/OGM/0012;1000000;8360;Zachowanie i poprawa stanu zdrowotnego starych drzew w Gdyni;0
+VOTES
+voter_id;vote;age;sex;voting_method;neighborhood
+2;2025/OGM/0004,2025/OGM/0012;31;F;internet;Obłuże
+3;2025/OGM/0004,2025/OGM/0012;50;F;internet;Obłuże
+5;2025/OGM/0004;30;F;internet;Wzgórze Św. Maksymiliana
+6;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+7;2025/OGM/0004,2025/OGM/0012;23;M;internet;Mały Kack
+9;2025/OGM/0012;54;M;internet;Redłowo
+10;2025/OGM/0004;46;F;internet;Obłuże
+11;2025/OGM/0004;36;F;internet;Chylonia
+12;2025/OGM/0004,2025/OGM/0012;44;F;internet;Karwiny
+13;2025/OGM/0004;32;F;internet;Wielki Kack
+14;2025/OGM/0012;3;F;internet;Witomino
+15;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chylonia
+16;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chylonia
+17;2025/OGM/0012;31;M;internet;Witomino
+18;2025/OGM/0012;60;F;internet;Mały Kack
+19;2025/OGM/0004,2025/OGM/0012;43;F;internet;Redłowo
+20;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chylonia
+21;2025/OGM/0004,2025/OGM/0012;67;F;internet;Dąbrowa
+22;2025/OGM/0004;82;F;internet;Chylonia
+23;2025/OGM/0004,2025/OGM/0012;44;F;internet;Oksywie
+24;2025/OGM/0004,2025/OGM/0012;6;F;internet;Obłuże
+25;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chylonia
+26;2025/OGM/0004,2025/OGM/0012;36;F;internet;Oksywie
+27;2025/OGM/0004,2025/OGM/0012;1;M;internet;Obłuże
+28;2025/OGM/0004,2025/OGM/0012;34;M;internet;Cisowa
+29;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+30;2025/OGM/0004,2025/OGM/0012;7;M;internet;Oksywie
+31;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chylonia
+32;2025/OGM/0004;61;F;internet;Kamienna Góra
+33;2025/OGM/0004;29;M;internet;Śródmieście
+35;2025/OGM/0004,2025/OGM/0012;96;F;internet;Śródmieście
+36;2025/OGM/0004;62;M;internet;Kamienna Góra
+37;2025/OGM/0004,2025/OGM/0012;43;F;internet;Obłuże
+38;2025/OGM/0004,2025/OGM/0012;49;M;internet;Oksywie
+39;2025/OGM/0004,2025/OGM/0012;16;M;internet;Dąbrowa
+40;2025/OGM/0012;43;M;internet;Witomino
+41;2025/OGM/0004,2025/OGM/0012;32;F;internet;Oksywie
+42;2025/OGM/0012;74;F;internet;Mały Kack
+43;2025/OGM/0012;47;F;internet;Babie Doły
+45;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+47;2025/OGM/0004;34;M;internet;Chylonia
+48;2025/OGM/0004;34;F;internet;Działki Leśne
+49;2025/OGM/0012;76;M;internet;Mały Kack
+50;2025/OGM/0004,2025/OGM/0012;73;F;internet;Oksywie
+51;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+52;2025/OGM/0004;20;F;internet;Oksywie
+54;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+55;2025/OGM/0012;17;F;internet;Babie Doły
+56;2025/OGM/0004;47;F;internet;Dąbrowa
+57;2025/OGM/0004,2025/OGM/0012;56;F;internet;Pustki Cisowskie-Demptowo
+58;2025/OGM/0004,2025/OGM/0012;24;F;internet;Cisowa
+59;2025/OGM/0004,2025/OGM/0012;50;M;internet;Witomino
+60;2025/OGM/0004;30;F;internet;Grabówek
+61;2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+62;2025/OGM/0004;43;F;internet;Dąbrowa
+63;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+64;2025/OGM/0004,2025/OGM/0012;76;M;internet;Oksywie
+65;2025/OGM/0012;41;M;internet;Dąbrowa
+67;2025/OGM/0004;7;M;internet;Chwarzno-Wiczlino
+69;2025/OGM/0004,2025/OGM/0012;50;F;internet;Mały Kack
+70;2025/OGM/0004,2025/OGM/0012;46;M;internet;Dąbrowa
+71;2025/OGM/0004;34;M;internet;Pustki Cisowskie-Demptowo
+72;2025/OGM/0004;31;F;internet;Obłuże
+73;2025/OGM/0012;45;F;internet;Chylonia
+74;2025/OGM/0012;40;F;internet;Działki Leśne
+75;2025/OGM/0004,2025/OGM/0012;33;M;internet;Obłuże
+76;2025/OGM/0012;35;M;internet;Orłowo
+77;2025/OGM/0004,2025/OGM/0012;43;F;internet;Karwiny
+78;2025/OGM/0012;40;F;internet;Leszczynki
+80;2025/OGM/0004;34;M;internet;Oksywie
+82;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wzgórze Św. Maksymiliana
+83;2025/OGM/0004;19;M;internet;Cisowa
+84;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+85;2025/OGM/0004,2025/OGM/0012;24;M;internet;Chwarzno-Wiczlino
+87;2025/OGM/0012;31;F;internet;Wielki Kack
+88;2025/OGM/0004;22;F;internet;Chylonia
+89;2025/OGM/0004,2025/OGM/0012;54;F;internet;Dąbrowa
+90;2025/OGM/0004;23;F;internet;Oksywie
+91;2025/OGM/0004;40;F;internet;Śródmieście
+92;2025/OGM/0004;44;M;internet;Leszczynki
+93;2025/OGM/0004,2025/OGM/0012;61;F;internet;Pustki Cisowskie-Demptowo
+94;2025/OGM/0004;41;M;internet;Dąbrowa
+95;2025/OGM/0004,2025/OGM/0012;28;F;internet;Karwiny
+96;2025/OGM/0004;35;F;internet;Mały Kack
+97;2025/OGM/0012;40;M;internet;Mały Kack
+99;2025/OGM/0004;42;F;internet;Mały Kack
+100;2025/OGM/0004;61;F;internet;Witomino
+101;2025/OGM/0004;38;F;internet;Obłuże
+102;2025/OGM/0004;38;F;internet;Mały Kack
+103;2025/OGM/0004;22;M;internet;Chwarzno-Wiczlino
+104;2025/OGM/0004,2025/OGM/0012;77;M;internet;Dąbrowa
+105;2025/OGM/0004,2025/OGM/0012;72;M;internet;Chylonia
+106;2025/OGM/0004,2025/OGM/0012;68;F;internet;Kamienna Góra
+107;2025/OGM/0004;42;F;internet;Obłuże
+108;2025/OGM/0004;40;M;internet;Wzgórze Św. Maksymiliana
+109;2025/OGM/0004,2025/OGM/0012;69;M;internet;Mały Kack
+110;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+111;2025/OGM/0004,2025/OGM/0012;17;M;internet;Obłuże
+112;2025/OGM/0012;54;M;internet;Chylonia
+113;2025/OGM/0012;35;M;internet;Chylonia
+114;2025/OGM/0004,2025/OGM/0012;28;F;internet;Dąbrowa
+115;2025/OGM/0004;45;M;internet;Obłuże
+116;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+117;2025/OGM/0004;43;F;internet;Grabówek
+118;2025/OGM/0012;41;M;internet;Śródmieście
+119;2025/OGM/0004;25;M;internet;Obłuże
+120;2025/OGM/0004,2025/OGM/0012;57;F;internet;Dąbrowa
+121;2025/OGM/0004;63;M;internet;Dąbrowa
+122;2025/OGM/0012;48;F;internet;Chylonia
+123;2025/OGM/0004,2025/OGM/0012;70;M;internet;Grabówek
+124;2025/OGM/0012;44;F;internet;Kamienna Góra
+125;2025/OGM/0004;42;F;internet;Grabówek
+126;2025/OGM/0004,2025/OGM/0012;44;M;internet;Pustki Cisowskie-Demptowo
+127;2025/OGM/0004;74;F;internet;Chwarzno-Wiczlino
+128;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+129;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wzgórze Św. Maksymiliana
+130;2025/OGM/0004;41;M;internet;Cisowa
+131;2025/OGM/0004,2025/OGM/0012;45;M;internet;Redłowo
+132;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+133;2025/OGM/0012;44;F;internet;Redłowo
+134;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+135;2025/OGM/0004,2025/OGM/0012;51;F;internet;Witomino
+136;2025/OGM/0004,2025/OGM/0012;75;F;internet;Chylonia
+137;2025/OGM/0004;73;M;internet;Chwarzno-Wiczlino
+138;2025/OGM/0012;39;M;internet;Orłowo
+139;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chylonia
+140;2025/OGM/0012;38;F;internet;Wielki Kack
+141;2025/OGM/0004;1;F;internet;Śródmieście
+142;2025/OGM/0004;26;F;internet;Obłuże
+143;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+144;2025/OGM/0012;50;M;internet;Chylonia
+145;2025/OGM/0004,2025/OGM/0012;34;F;internet;Obłuże
+146;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wielki Kack
+147;2025/OGM/0012;34;F;internet;Chylonia
+149;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wielki Kack
+151;2025/OGM/0004,2025/OGM/0012;58;F;internet;Chylonia
+152;2025/OGM/0004;47;M;internet;Grabówek
+153;2025/OGM/0004;39;M;internet;Dąbrowa
+155;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+156;2025/OGM/0004,2025/OGM/0012;29;F;internet;Wielki Kack
+157;2025/OGM/0004;53;M;internet;Wzgórze Św. Maksymiliana
+158;2025/OGM/0004;29;M;internet;Pustki Cisowskie-Demptowo
+159;2025/OGM/0004;42;F;internet;Obłuże
+160;2025/OGM/0004,2025/OGM/0012;42;M;internet;Witomino
+161;2025/OGM/0004;12;F;internet;Wzgórze Św. Maksymiliana
+162;2025/OGM/0004,2025/OGM/0012;33;F;internet;Babie Doły
+163;2025/OGM/0004;26;F;internet;Obłuże
+164;2025/OGM/0004;15;F;internet;Chwarzno-Wiczlino
+165;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+167;2025/OGM/0004;31;M;internet;Chylonia
+168;2025/OGM/0012;64;M;internet;Chylonia
+169;2025/OGM/0004;25;F;internet;Grabówek
+170;2025/OGM/0004;48;F;internet;Chylonia
+171;2025/OGM/0004;86;M;internet;Wzgórze Św. Maksymiliana
+172;2025/OGM/0004;51;F;internet;Mały Kack
+173;2025/OGM/0012;32;M;internet;Działki Leśne
+174;2025/OGM/0004;26;M;internet;Obłuże
+175;2025/OGM/0004;78;F;internet;Obłuże
+176;2025/OGM/0004;37;F;internet;Obłuże
+177;2025/OGM/0004;39;M;internet;Dąbrowa
+178;2025/OGM/0004,2025/OGM/0012;80;F;internet;Obłuże
+179;2025/OGM/0004,2025/OGM/0012;48;F;internet;Pustki Cisowskie-Demptowo
+180;2025/OGM/0004;20;F;internet;Obłuże
+181;2025/OGM/0004;53;M;internet;Obłuże
+182;2025/OGM/0004;8;M;internet;Dąbrowa
+183;2025/OGM/0004;23;F;internet;Pustki Cisowskie-Demptowo
+184;2025/OGM/0012;27;M;internet;Pogórze
+185;2025/OGM/0004;24;M;internet;Dąbrowa
+186;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chylonia
+187;2025/OGM/0004;34;F;internet;Witomino
+188;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+189;2025/OGM/0004;7;F;internet;Dąbrowa
+190;2025/OGM/0004,2025/OGM/0012;43;F;internet;Grabówek
+191;2025/OGM/0004,2025/OGM/0012;48;M;internet;Pustki Cisowskie-Demptowo
+192;2025/OGM/0004,2025/OGM/0012;26;M;internet;Śródmieście
+193;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+194;2025/OGM/0004,2025/OGM/0012;59;M;internet;Obłuże
+196;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+197;2025/OGM/0004,2025/OGM/0012;32;M;internet;Pogórze
+198;2025/OGM/0004;29;F;internet;Pustki Cisowskie-Demptowo
+199;2025/OGM/0004,2025/OGM/0012;59;M;internet;Śródmieście
+200;2025/OGM/0004;36;F;internet;Witomino
+201;2025/OGM/0004;34;M;internet;Mały Kack
+202;2025/OGM/0004,2025/OGM/0012;77;M;internet;Pustki Cisowskie-Demptowo
+203;2025/OGM/0004,2025/OGM/0012;72;F;internet;Chylonia
+204;2025/OGM/0004;41;F;internet;Dąbrowa
+205;2025/OGM/0004;42;M;internet;Mały Kack
+206;2025/OGM/0004;49;M;internet;Chylonia
+207;2025/OGM/0004,2025/OGM/0012;72;F;internet;Pustki Cisowskie-Demptowo
+208;2025/OGM/0004;37;F;internet;Oksywie
+209;2025/OGM/0004;32;F;internet;Oksywie
+210;2025/OGM/0004;40;M;internet;Śródmieście
+211;2025/OGM/0004,2025/OGM/0012;16;F;internet;Pustki Cisowskie-Demptowo
+212;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+213;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wzgórze Św. Maksymiliana
+214;2025/OGM/0004;54;F;internet;Chylonia
+215;2025/OGM/0004,2025/OGM/0012;13;M;internet;Obłuże
+216;2025/OGM/0012;61;F;internet;Wielki Kack
+217;2025/OGM/0004;38;F;internet;Witomino
+218;2025/OGM/0004,2025/OGM/0012;34;F;internet;Śródmieście
+219;2025/OGM/0012;68;F;internet;Witomino
+220;2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+221;2025/OGM/0004,2025/OGM/0012;30;M;internet;Śródmieście
+222;2025/OGM/0012;64;M;internet;Wielki Kack
+224;2025/OGM/0004;54;F;internet;Obłuże
+225;2025/OGM/0004,2025/OGM/0012;51;M;internet;Mały Kack
+226;2025/OGM/0012;45;F;internet;Śródmieście
+227;2025/OGM/0004;1;F;internet;Witomino
+228;2025/OGM/0004,2025/OGM/0012;39;F;internet;Grabówek
+229;2025/OGM/0004,2025/OGM/0012;46;M;internet;Oksywie
+230;2025/OGM/0004,2025/OGM/0012;36;M;internet;Redłowo
+231;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+233;2025/OGM/0012;40;M;internet;Babie Doły
+234;2025/OGM/0004,2025/OGM/0012;43;F;internet;Kamienna Góra
+235;2025/OGM/0004,2025/OGM/0012;54;F;internet;Karwiny
+236;2025/OGM/0004;50;F;internet;Babie Doły
+237;2025/OGM/0004,2025/OGM/0012;42;M;internet;Śródmieście
+238;2025/OGM/0004;27;F;internet;Chwarzno-Wiczlino
+239;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+240;2025/OGM/0004;10;F;internet;Witomino
+241;2025/OGM/0004;51;F;internet;Orłowo
+242;2025/OGM/0004;62;M;internet;Obłuże
+243;2025/OGM/0004;43;M;internet;Karwiny
+244;2025/OGM/0004;64;F;internet;Pustki Cisowskie-Demptowo
+245;2025/OGM/0004;38;M;internet;Chylonia
+246;2025/OGM/0004,2025/OGM/0012;19;F;internet;Oksywie
+247;2025/OGM/0004,2025/OGM/0012;29;F;internet;Wielki Kack
+248;2025/OGM/0004;40;F;internet;Grabówek
+249;2025/OGM/0012;7;F;internet;Chwarzno-Wiczlino
+250;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+251;2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+252;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+253;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+254;2025/OGM/0004,2025/OGM/0012;33;M;internet;Pogórze
+255;2025/OGM/0004;47;F;internet;Obłuże
+256;2025/OGM/0012;13;M;internet;Babie Doły
+257;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+258;2025/OGM/0004;29;M;internet;Chwarzno-Wiczlino
+259;2025/OGM/0004,2025/OGM/0012;38;F;internet;Śródmieście
+260;2025/OGM/0004,2025/OGM/0012;20;M;internet;Mały Kack
+262;2025/OGM/0012;8;F;internet;Babie Doły
+263;2025/OGM/0004,2025/OGM/0012;56;F;internet;Obłuże
+264;2025/OGM/0004,2025/OGM/0012;33;F;internet;Śródmieście
+265;2025/OGM/0004;37;M;internet;Wzgórze Św. Maksymiliana
+266;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+267;2025/OGM/0004,2025/OGM/0012;44;M;internet;Witomino
+268;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chwarzno-Wiczlino
+269;2025/OGM/0004,2025/OGM/0012;32;M;internet;Obłuże
+270;2025/OGM/0004,2025/OGM/0012;52;F;internet;Obłuże
+272;2025/OGM/0012;57;F;internet;Kamienna Góra
+273;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+274;2025/OGM/0012;40;F;internet;Witomino
+275;2025/OGM/0004,2025/OGM/0012;49;F;internet;Redłowo
+276;2025/OGM/0004;47;F;internet;Wzgórze Św. Maksymiliana
+278;2025/OGM/0004;56;F;internet;Obłuże
+279;2025/OGM/0012;44;M;internet;Oksywie
+280;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+281;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+282;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+283;2025/OGM/0004,2025/OGM/0012;26;F;internet;Witomino
+284;2025/OGM/0004,2025/OGM/0012;32;F;internet;Obłuże
+285;2025/OGM/0004,2025/OGM/0012;18;F;internet;Mały Kack
+286;2025/OGM/0004;18;M;internet;Mały Kack
+287;2025/OGM/0004,2025/OGM/0012;68;F;internet;Śródmieście
+288;2025/OGM/0004;35;F;internet;Mały Kack
+289;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+290;2025/OGM/0004,2025/OGM/0012;76;F;internet;Witomino
+291;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+292;2025/OGM/0004,2025/OGM/0012;69;F;internet;Działki Leśne
+294;2025/OGM/0012;32;M;internet;Obłuże
+295;2025/OGM/0004;32;F;internet;Pustki Cisowskie-Demptowo
+297;2025/OGM/0004;52;F;internet;Cisowa
+298;2025/OGM/0004;27;M;internet;Mały Kack
+299;2025/OGM/0012;64;F;internet;Pustki Cisowskie-Demptowo
+300;2025/OGM/0004,2025/OGM/0012;50;F;internet;Działki Leśne
+301;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+302;2025/OGM/0012;40;M;internet;Pogórze
+303;2025/OGM/0004;67;F;internet;Grabówek
+305;2025/OGM/0004;53;F;internet;Mały Kack
+306;2025/OGM/0012;35;F;internet;Redłowo
+307;2025/OGM/0004;38;M;internet;Witomino
+308;2025/OGM/0004,2025/OGM/0012;35;F;internet;Oksywie
+309;2025/OGM/0004;37;F;internet;Chylonia
+310;2025/OGM/0004;18;M;internet;Chwarzno-Wiczlino
+311;2025/OGM/0004;45;F;internet;Chylonia
+312;2025/OGM/0004;74;M;internet;Witomino
+313;2025/OGM/0004;44;M;internet;Działki Leśne
+314;2025/OGM/0004,2025/OGM/0012;46;F;internet;Dąbrowa
+315;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pogórze
+316;2025/OGM/0004;28;F;internet;Chylonia
+317;2025/OGM/0004,2025/OGM/0012;51;F;internet;Obłuże
+318;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+319;2025/OGM/0004;68;F;internet;Witomino
+320;2025/OGM/0004;53;F;internet;Śródmieście
+321;2025/OGM/0004;54;F;internet;Mały Kack
+322;2025/OGM/0004;24;F;internet;Chylonia
+323;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+324;2025/OGM/0004;40;F;internet;Oksywie
+325;2025/OGM/0004,2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+326;2025/OGM/0012;51;F;internet;Mały Kack
+327;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chylonia
+328;2025/OGM/0004,2025/OGM/0012;51;M;internet;Pustki Cisowskie-Demptowo
+329;2025/OGM/0004;46;M;internet;Obłuże
+331;2025/OGM/0012;45;M;internet;Oksywie
+332;2025/OGM/0012;36;F;internet;Wielki Kack
+334;2025/OGM/0004;43;F;internet;Śródmieście
+335;2025/OGM/0012;27;M;internet;Mały Kack
+336;2025/OGM/0004;52;F;internet;Dąbrowa
+337;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+338;2025/OGM/0004,2025/OGM/0012;62;M;internet;Chwarzno-Wiczlino
+339;2025/OGM/0012;39;M;internet;Witomino
+340;2025/OGM/0004;41;F;internet;Witomino
+341;2025/OGM/0004;33;M;internet;Wielki Kack
+342;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chylonia
+343;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+344;2025/OGM/0004;35;M;internet;Pogórze
+345;2025/OGM/0012;12;F;internet;Śródmieście
+346;2025/OGM/0004,2025/OGM/0012;74;F;internet;Chwarzno-Wiczlino
+347;2025/OGM/0004;51;M;internet;Leszczynki
+348;2025/OGM/0004;36;M;internet;Mały Kack
+349;2025/OGM/0004;42;F;internet;Witomino
+350;2025/OGM/0004;35;M;internet;Pogórze
+351;2025/OGM/0004,2025/OGM/0012;23;M;internet;Śródmieście
+352;2025/OGM/0012;45;M;internet;Dąbrowa
+353;2025/OGM/0012;9;M;internet;Oksywie
+354;2025/OGM/0004;33;M;internet;Mały Kack
+355;2025/OGM/0004;24;M;internet;Obłuże
+356;2025/OGM/0004;41;M;internet;Pustki Cisowskie-Demptowo
+357;2025/OGM/0004;42;F;internet;Obłuże
+358;2025/OGM/0004,2025/OGM/0012;52;F;internet;Kamienna Góra
+359;2025/OGM/0004,2025/OGM/0012;19;M;internet;Obłuże
+360;2025/OGM/0004;47;M;internet;Wzgórze Św. Maksymiliana
+361;2025/OGM/0012;49;F;internet;Kamienna Góra
+362;2025/OGM/0004,2025/OGM/0012;56;F;internet;Pogórze
+363;2025/OGM/0004;62;M;internet;Pustki Cisowskie-Demptowo
+364;2025/OGM/0004,2025/OGM/0012;40;M;internet;Wzgórze Św. Maksymiliana
+365;2025/OGM/0004;41;M;internet;Oksywie
+366;2025/OGM/0004,2025/OGM/0012;70;M;internet;Oksywie
+367;2025/OGM/0004,2025/OGM/0012;48;M;internet;Orłowo
+368;2025/OGM/0012;50;F;internet;Oksywie
+369;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chylonia
+370;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+371;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+372;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wielki Kack
+373;2025/OGM/0004,2025/OGM/0012;51;M;internet;Leszczynki
+374;2025/OGM/0004;46;M;internet;Redłowo
+375;2025/OGM/0012;45;F;internet;Witomino
+376;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+378;2025/OGM/0004;51;F;internet;Wzgórze Św. Maksymiliana
+379;2025/OGM/0012;54;M;internet;Redłowo
+380;2025/OGM/0004;47;F;internet;Oksywie
+381;2025/OGM/0004;45;F;internet;Śródmieście
+382;2025/OGM/0004;34;M;internet;Działki Leśne
+383;2025/OGM/0012;26;F;internet;Obłuże
+384;2025/OGM/0004,2025/OGM/0012;49;F;internet;Witomino
+385;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wielki Kack
+386;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+387;2025/OGM/0004;37;M;internet;Cisowa
+388;2025/OGM/0004,2025/OGM/0012;27;M;internet;Wielki Kack
+389;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+390;2025/OGM/0004,2025/OGM/0012;38;F;internet;Cisowa
+391;2025/OGM/0012;49;M;internet;Pogórze
+392;2025/OGM/0012;36;M;internet;Witomino
+393;2025/OGM/0004,2025/OGM/0012;49;F;internet;Oksywie
+394;2025/OGM/0004,2025/OGM/0012;45;F;internet;
+395;2025/OGM/0004,2025/OGM/0012;49;F;internet;Mały Kack
+397;2025/OGM/0004;30;M;internet;Wzgórze Św. Maksymiliana
+398;2025/OGM/0004;51;M;internet;Obłuże
+399;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+400;2025/OGM/0004;33;F;internet;Oksywie
+401;2025/OGM/0012;53;M;internet;Grabówek
+402;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+403;2025/OGM/0004;49;M;internet;Wielki Kack
+404;2025/OGM/0012;44;F;internet;Pustki Cisowskie-Demptowo
+405;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+406;2025/OGM/0004;37;M;internet;Redłowo
+407;2025/OGM/0004;42;M;internet;Mały Kack
+408;2025/OGM/0004,2025/OGM/0012;31;M;internet;Kamienna Góra
+409;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wzgórze Św. Maksymiliana
+410;2025/OGM/0004;36;F;internet;Pogórze
+411;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+412;2025/OGM/0004;46;F;internet;Redłowo
+413;2025/OGM/0012;21;F;internet;Wzgórze Św. Maksymiliana
+414;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+415;2025/OGM/0012;8;M;internet;Pustki Cisowskie-Demptowo
+416;2025/OGM/0004;45;M;internet;Działki Leśne
+417;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chylonia
+418;2025/OGM/0004,2025/OGM/0012;42;M;internet;Dąbrowa
+419;2025/OGM/0012;36;M;internet;Redłowo
+420;2025/OGM/0004;3;F;internet;Pogórze
+421;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+422;2025/OGM/0012;50;F;internet;Mały Kack
+423;2025/OGM/0012;41;M;internet;Śródmieście
+424;2025/OGM/0004,2025/OGM/0012;4;F;internet;Redłowo
+425;2025/OGM/0004;50;M;internet;Wielki Kack
+426;2025/OGM/0004;28;M;internet;Pustki Cisowskie-Demptowo
+427;2025/OGM/0012;38;M;internet;Redłowo
+428;2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+429;2025/OGM/0004;45;F;internet;Cisowa
+430;2025/OGM/0004;60;F;internet;Orłowo
+431;2025/OGM/0004;32;F;internet;Obłuże
+433;2025/OGM/0004,2025/OGM/0012;40;F;internet;Dąbrowa
+434;2025/OGM/0004,2025/OGM/0012;43;F;internet;Działki Leśne
+435;2025/OGM/0004,2025/OGM/0012;30;M;internet;Dąbrowa
+436;2025/OGM/0004;32;F;internet;Grabówek
+437;2025/OGM/0004;45;M;internet;Witomino
+438;2025/OGM/0004;51;F;internet;Witomino
+439;2025/OGM/0004,2025/OGM/0012;70;M;internet;Chylonia
+440;2025/OGM/0004;39;F;internet;Wielki Kack
+441;2025/OGM/0004,2025/OGM/0012;46;F;internet;Cisowa
+442;2025/OGM/0004;63;F;internet;Wielki Kack
+443;2025/OGM/0004,2025/OGM/0012;63;F;internet;Mały Kack
+444;2025/OGM/0004,2025/OGM/0012;64;M;internet;Dąbrowa
+446;2025/OGM/0004;46;M;internet;Chylonia
+447;2025/OGM/0004,2025/OGM/0012;11;M;internet;Dąbrowa
+448;2025/OGM/0004;52;M;internet;Obłuże
+449;2025/OGM/0004,2025/OGM/0012;34;F;internet;Oksywie
+450;2025/OGM/0004,2025/OGM/0012;58;F;internet;Orłowo
+451;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+452;2025/OGM/0004;10;M;internet;Wielki Kack
+453;2025/OGM/0004,2025/OGM/0012;21;M;internet;Dąbrowa
+454;2025/OGM/0012;42;M;internet;Śródmieście
+455;2025/OGM/0004,2025/OGM/0012;36;M;internet;Witomino
+457;2025/OGM/0012;28;M;internet;Obłuże
+458;2025/OGM/0004,2025/OGM/0012;31;M;internet;Witomino
+459;2025/OGM/0012;32;M;internet;Redłowo
+460;2025/OGM/0004;42;F;internet;Wielki Kack
+461;2025/OGM/0004,2025/OGM/0012;4;F;internet;Witomino
+462;2025/OGM/0004;46;M;internet;Chylonia
+463;2025/OGM/0004,2025/OGM/0012;48;M;internet;Śródmieście
+464;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+465;2025/OGM/0004,2025/OGM/0012;31;M;internet;Oksywie
+466;2025/OGM/0004,2025/OGM/0012;16;M;internet;Oksywie
+468;2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+469;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+470;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+471;2025/OGM/0004;43;M;internet;Mały Kack
+472;2025/OGM/0004;27;F;internet;Dąbrowa
+473;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+474;2025/OGM/0004,2025/OGM/0012;35;F;internet;Obłuże
+475;2025/OGM/0004;56;F;internet;Witomino
+476;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pogórze
+477;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+478;2025/OGM/0012;31;M;internet;Działki Leśne
+479;2025/OGM/0004;34;M;internet;Chylonia
+480;2025/OGM/0004;47;M;internet;Chwarzno-Wiczlino
+481;2025/OGM/0004,2025/OGM/0012;39;M;internet;Śródmieście
+482;2025/OGM/0012;31;M;internet;
+483;2025/OGM/0004;36;M;internet;Chylonia
+484;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pogórze
+485;2025/OGM/0004;35;F;internet;Witomino
+486;2025/OGM/0004,2025/OGM/0012;33;M;internet;Pogórze
+488;2025/OGM/0004;34;F;internet;Mały Kack
+489;2025/OGM/0012;40;F;internet;Orłowo
+490;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chylonia
+491;2025/OGM/0004;29;M;internet;Karwiny
+492;2025/OGM/0012;75;F;internet;Leszczynki
+493;2025/OGM/0004;18;M;internet;Chwarzno-Wiczlino
+494;2025/OGM/0004,2025/OGM/0012;51;M;internet;Dąbrowa
+495;2025/OGM/0004;34;M;internet;Grabówek
+496;2025/OGM/0004;41;F;internet;Witomino
+497;2025/OGM/0004;15;M;internet;Chylonia
+498;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wzgórze Św. Maksymiliana
+499;2025/OGM/0004;40;M;internet;Chylonia
+501;2025/OGM/0004;42;M;internet;Grabówek
+502;2025/OGM/0004;35;M;internet;Obłuże
+503;2025/OGM/0004;50;M;internet;Chwarzno-Wiczlino
+504;2025/OGM/0004;42;F;internet;Witomino
+505;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+506;2025/OGM/0004;35;F;internet;Chylonia
+507;2025/OGM/0004;42;F;internet;Obłuże
+508;2025/OGM/0004;62;M;internet;Witomino
+509;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+510;2025/OGM/0004;49;F;internet;Chwarzno-Wiczlino
+511;2025/OGM/0004,2025/OGM/0012;30;M;internet;Chwarzno-Wiczlino
+512;2025/OGM/0012;30;M;internet;Witomino
+513;2025/OGM/0004;62;F;internet;Wielki Kack
+515;2025/OGM/0004;27;F;internet;Cisowa
+516;2025/OGM/0004,2025/OGM/0012;68;F;internet;Witomino
+517;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+518;2025/OGM/0004;64;F;internet;Oksywie
+519;2025/OGM/0004;32;M;internet;Mały Kack
+520;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+521;2025/OGM/0004;30;M;internet;Chylonia
+522;2025/OGM/0012;34;F;internet;Dąbrowa
+523;2025/OGM/0004,2025/OGM/0012;38;M;internet;Cisowa
+524;2025/OGM/0012;79;F;internet;Redłowo
+525;2025/OGM/0012;45;M;internet;Działki Leśne
+526;2025/OGM/0012;35;M;internet;Chylonia
+527;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+528;2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+529;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chylonia
+530;2025/OGM/0004;42;M;internet;Mały Kack
+531;2025/OGM/0004;31;M;internet;Chwarzno-Wiczlino
+532;2025/OGM/0004;9;F;internet;Witomino
+533;2025/OGM/0012;69;M;internet;Oksywie
+534;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+535;2025/OGM/0004,2025/OGM/0012;22;M;internet;Witomino
+536;2025/OGM/0004;44;M;internet;Leszczynki
+537;2025/OGM/0004;46;M;internet;Chylonia
+538;2025/OGM/0004,2025/OGM/0012;19;F;internet;Chylonia
+539;2025/OGM/0004;31;M;internet;Obłuże
+540;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+541;2025/OGM/0004;35;F;internet;Grabówek
+542;2025/OGM/0004,2025/OGM/0012;26;F;internet;Oksywie
+543;2025/OGM/0004;41;F;internet;Chylonia
+544;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+545;2025/OGM/0004;53;M;internet;Chwarzno-Wiczlino
+546;2025/OGM/0004,2025/OGM/0012;47;F;internet;Działki Leśne
+547;2025/OGM/0004;57;F;internet;Dąbrowa
+548;2025/OGM/0004;32;F;internet;Wzgórze Św. Maksymiliana
+550;2025/OGM/0012;54;F;internet;Oksywie
+551;2025/OGM/0012;37;F;internet;Działki Leśne
+552;2025/OGM/0004;40;M;internet;Chylonia
+553;2025/OGM/0004,2025/OGM/0012;29;M;internet;Pustki Cisowskie-Demptowo
+554;2025/OGM/0012;41;F;internet;Chylonia
+555;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+557;2025/OGM/0012;38;M;internet;Orłowo
+558;2025/OGM/0004;24;F;internet;Mały Kack
+559;2025/OGM/0004,2025/OGM/0012;50;F;internet;Obłuże
+560;2025/OGM/0004;72;F;internet;Wielki Kack
+561;2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+563;2025/OGM/0004,2025/OGM/0012;26;F;internet;Redłowo
+564;2025/OGM/0004;19;F;internet;Mały Kack
+565;2025/OGM/0004;36;F;internet;Wielki Kack
+566;2025/OGM/0004;46;F;internet;Cisowa
+567;2025/OGM/0004;48;M;internet;Cisowa
+568;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chylonia
+570;2025/OGM/0004;40;M;internet;Chylonia
+571;2025/OGM/0004;37;M;internet;Mały Kack
+573;2025/OGM/0012;27;F;internet;Obłuże
+575;2025/OGM/0004;51;F;internet;Oksywie
+576;2025/OGM/0012;29;F;internet;Chylonia
+578;2025/OGM/0004,2025/OGM/0012;25;M;internet;Śródmieście
+579;2025/OGM/0004;37;M;internet;Cisowa
+580;2025/OGM/0004;36;M;internet;Wielki Kack
+581;2025/OGM/0004;50;M;internet;Śródmieście
+583;2025/OGM/0012;33;F;internet;Redłowo
+584;2025/OGM/0004;35;F;internet;Pogórze
+585;2025/OGM/0012;15;M;internet;Śródmieście
+586;2025/OGM/0004;40;M;internet;Dąbrowa
+587;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+588;2025/OGM/0004,2025/OGM/0012;29;M;internet;Wzgórze Św. Maksymiliana
+589;2025/OGM/0004,2025/OGM/0012;26;M;internet;Wzgórze Św. Maksymiliana
+590;2025/OGM/0012;76;M;internet;Pogórze
+591;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+592;2025/OGM/0004,2025/OGM/0012;52;M;internet;Karwiny
+593;2025/OGM/0012;39;M;internet;Działki Leśne
+594;2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+595;2025/OGM/0012;25;M;internet;Działki Leśne
+596;2025/OGM/0004;45;F;internet;Dąbrowa
+597;2025/OGM/0004;63;M;internet;Wielki Kack
+598;2025/OGM/0004;31;M;internet;Witomino
+599;2025/OGM/0012;43;F;internet;Oksywie
+600;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+601;2025/OGM/0004;10;M;internet;Dąbrowa
+602;2025/OGM/0012;41;M;internet;Wielki Kack
+603;2025/OGM/0004;63;F;internet;Oksywie
+604;2025/OGM/0004;72;F;internet;Pogórze
+605;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+606;2025/OGM/0004;8;F;internet;Dąbrowa
+607;2025/OGM/0004,2025/OGM/0012;27;F;internet;Witomino
+608;2025/OGM/0004,2025/OGM/0012;33;M;internet;Karwiny
+609;2025/OGM/0004,2025/OGM/0012;35;M;internet;Obłuże
+610;2025/OGM/0004;18;M;internet;Obłuże
+611;2025/OGM/0004;49;F;internet;Wzgórze Św. Maksymiliana
+612;2025/OGM/0004,2025/OGM/0012;25;M;internet;Orłowo
+613;2025/OGM/0012;34;M;internet;Wielki Kack
+614;2025/OGM/0012;36;M;internet;Pustki Cisowskie-Demptowo
+617;2025/OGM/0012;55;F;internet;Śródmieście
+618;2025/OGM/0012;47;F;internet;Pogórze
+619;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+620;2025/OGM/0012;55;M;internet;Orłowo
+621;2025/OGM/0004;39;F;internet;Wzgórze Św. Maksymiliana
+622;2025/OGM/0004;40;M;internet;Pogórze
+623;2025/OGM/0004;14;F;internet;Chwarzno-Wiczlino
+624;2025/OGM/0004,2025/OGM/0012;49;F;internet;Mały Kack
+625;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+626;2025/OGM/0004;65;M;internet;Witomino
+627;2025/OGM/0004,2025/OGM/0012;67;M;internet;Śródmieście
+628;2025/OGM/0012;35;F;internet;Redłowo
+629;2025/OGM/0004;14;M;internet;Obłuże
+630;2025/OGM/0004;48;F;internet;Chylonia
+631;2025/OGM/0004;55;F;internet;Obłuże
+632;2025/OGM/0004;44;F;internet;Mały Kack
+633;2025/OGM/0004,2025/OGM/0012;19;M;internet;Wielki Kack
+634;2025/OGM/0004;11;M;internet;Mały Kack
+635;2025/OGM/0004;47;F;internet;Obłuże
+636;2025/OGM/0004;31;M;internet;Wielki Kack
+637;2025/OGM/0004;34;F;internet;Karwiny
+638;2025/OGM/0012;32;M;internet;Leszczynki
+639;2025/OGM/0004;8;M;internet;Mały Kack
+640;2025/OGM/0004;36;F;internet;Wielki Kack
+641;2025/OGM/0004,2025/OGM/0012;28;F;internet;Dąbrowa
+642;2025/OGM/0004,2025/OGM/0012;18;M;internet;Obłuże
+643;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+644;2025/OGM/0004;48;M;internet;Obłuże
+645;2025/OGM/0004;36;M;internet;Grabówek
+646;2025/OGM/0004,2025/OGM/0012;34;M;internet;Wielki Kack
+647;2025/OGM/0004;18;M;internet;Obłuże
+648;2025/OGM/0004,2025/OGM/0012;30;M;internet;Oksywie
+649;2025/OGM/0004;67;F;internet;Grabówek
+650;2025/OGM/0012;55;M;internet;Pustki Cisowskie-Demptowo
+652;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chylonia
+653;2025/OGM/0012;38;M;internet;Chylonia
+654;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+655;2025/OGM/0004,2025/OGM/0012;31;M;internet;Grabówek
+656;2025/OGM/0004,2025/OGM/0012;74;F;internet;Leszczynki
+657;2025/OGM/0004;73;M;internet;Grabówek
+658;2025/OGM/0004;15;M;internet;Obłuże
+659;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chwarzno-Wiczlino
+660;2025/OGM/0012;31;F;internet;Redłowo
+661;2025/OGM/0004;47;F;internet;Mały Kack
+662;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wielki Kack
+663;2025/OGM/0012;36;F;internet;Śródmieście
+664;2025/OGM/0004,2025/OGM/0012;24;M;internet;Obłuże
+665;2025/OGM/0004;29;F;internet;Chylonia
+666;2025/OGM/0012;35;M;internet;Śródmieście
+667;2025/OGM/0012;50;M;internet;Witomino
+669;2025/OGM/0004,2025/OGM/0012;46;F;internet;Dąbrowa
+670;2025/OGM/0012;46;F;internet;Śródmieście
+671;2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+672;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+674;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chylonia
+676;2025/OGM/0004;35;M;internet;Mały Kack
+677;2025/OGM/0004;33;F;internet;Cisowa
+679;2025/OGM/0004;73;M;internet;Wielki Kack
+680;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+682;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+683;2025/OGM/0004;40;M;internet;Wzgórze Św. Maksymiliana
+684;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chylonia
+685;2025/OGM/0004,2025/OGM/0012;32;F;internet;Śródmieście
+686;2025/OGM/0004;49;F;internet;Wzgórze Św. Maksymiliana
+687;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+688;2025/OGM/0004;68;F;internet;Dąbrowa
+689;2025/OGM/0004,2025/OGM/0012;33;F;internet;Karwiny
+690;2025/OGM/0004;86;F;internet;Wzgórze Św. Maksymiliana
+691;2025/OGM/0004;49;F;internet;Oksywie
+692;2025/OGM/0004;45;M;internet;Leszczynki
+693;2025/OGM/0004;48;F;internet;Działki Leśne
+694;2025/OGM/0012;55;M;internet;Wielki Kack
+695;2025/OGM/0004;38;M;internet;Obłuże
+696;2025/OGM/0004;12;F;internet;Wzgórze Św. Maksymiliana
+697;2025/OGM/0004;41;M;internet;Witomino
+698;2025/OGM/0012;55;M;internet;Redłowo
+699;2025/OGM/0012;66;F;internet;Wzgórze Św. Maksymiliana
+700;2025/OGM/0004,2025/OGM/0012;35;F;internet;Dąbrowa
+701;2025/OGM/0004,2025/OGM/0012;67;F;internet;Śródmieście
+702;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+703;2025/OGM/0012;2;F;internet;Redłowo
+705;2025/OGM/0004;40;F;internet;Działki Leśne
+706;2025/OGM/0012;56;F;internet;Grabówek
+707;2025/OGM/0004;31;F;internet;Mały Kack
+708;2025/OGM/0004;49;M;internet;Wzgórze Św. Maksymiliana
+709;2025/OGM/0004;42;F;internet;Kamienna Góra
+710;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wzgórze Św. Maksymiliana
+711;2025/OGM/0004,2025/OGM/0012;45;F;internet;Oksywie
+712;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chylonia
+713;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+714;2025/OGM/0004,2025/OGM/0012;25;M;internet;Redłowo
+715;2025/OGM/0004,2025/OGM/0012;46;F;internet;Kamienna Góra
+716;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+717;2025/OGM/0004;39;M;internet;Oksywie
+718;2025/OGM/0004;54;M;internet;Wzgórze Św. Maksymiliana
+719;2025/OGM/0004;62;M;internet;Wzgórze Św. Maksymiliana
+720;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+721;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chylonia
+722;2025/OGM/0004;45;M;internet;Mały Kack
+724;2025/OGM/0012;35;M;internet;Pustki Cisowskie-Demptowo
+725;2025/OGM/0004,2025/OGM/0012;48;F;internet;Cisowa
+726;2025/OGM/0004;34;F;internet;Wielki Kack
+727;2025/OGM/0004,2025/OGM/0012;33;M;internet;Leszczynki
+728;2025/OGM/0004;46;F;internet;Cisowa
+729;2025/OGM/0004,2025/OGM/0012;27;M;internet;Działki Leśne
+730;2025/OGM/0004;39;F;internet;Witomino
+731;2025/OGM/0004;36;M;internet;Chylonia
+732;2025/OGM/0004,2025/OGM/0012;12;M;internet;Wielki Kack
+733;2025/OGM/0012;19;M;internet;Wielki Kack
+734;2025/OGM/0004;17;M;internet;Dąbrowa
+736;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+737;2025/OGM/0012;55;F;internet;Wzgórze Św. Maksymiliana
+738;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+739;2025/OGM/0012;77;F;internet;Wzgórze Św. Maksymiliana
+740;2025/OGM/0004,2025/OGM/0012;51;F;internet;Dąbrowa
+741;2025/OGM/0004,2025/OGM/0012;9;F;internet;Witomino
+742;2025/OGM/0004,2025/OGM/0012;22;M;internet;Oksywie
+743;2025/OGM/0004;53;M;internet;Grabówek
+744;2025/OGM/0004;54;F;internet;Wielki Kack
+745;2025/OGM/0004;30;M;internet;Chylonia
+746;2025/OGM/0004,2025/OGM/0012;16;M;internet;Mały Kack
+747;2025/OGM/0004;37;F;internet;Leszczynki
+748;2025/OGM/0004;30;M;internet;Orłowo
+749;2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+750;2025/OGM/0004;55;M;internet;Grabówek
+752;2025/OGM/0004;66;F;internet;Działki Leśne
+754;2025/OGM/0004;66;M;internet;Dąbrowa
+755;2025/OGM/0012;21;F;internet;Wzgórze Św. Maksymiliana
+756;2025/OGM/0012;54;M;internet;Orłowo
+757;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+758;2025/OGM/0012;24;M;internet;Chylonia
+759;2025/OGM/0004;42;M;internet;Dąbrowa
+760;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+761;2025/OGM/0012;45;F;internet;Kamienna Góra
+762;2025/OGM/0004,2025/OGM/0012;25;F;internet;Wielki Kack
+763;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+764;2025/OGM/0004,2025/OGM/0012;62;F;internet;Oksywie
+765;2025/OGM/0004;40;F;internet;Działki Leśne
+766;2025/OGM/0004;30;F;internet;Oksywie
+768;2025/OGM/0012;40;F;internet;Działki Leśne
+769;2025/OGM/0004;42;M;internet;Chylonia
+770;2025/OGM/0004,2025/OGM/0012;41;M;internet;Grabówek
+771;2025/OGM/0004;25;F;internet;Dąbrowa
+772;2025/OGM/0004;34;M;internet;Działki Leśne
+774;2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+775;2025/OGM/0012;55;F;internet;Orłowo
+777;2025/OGM/0012;33;F;internet;Witomino
+778;2025/OGM/0004;32;F;internet;Witomino
+779;2025/OGM/0004,2025/OGM/0012;50;F;internet;Kamienna Góra
+780;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+781;2025/OGM/0004;44;M;internet;Witomino
+782;2025/OGM/0004;24;F;internet;Chwarzno-Wiczlino
+783;2025/OGM/0004;8;M;internet;Działki Leśne
+785;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+786;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+787;2025/OGM/0004;40;M;internet;Śródmieście
+788;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wielki Kack
+789;2025/OGM/0012;44;M;internet;Śródmieście
+790;2025/OGM/0012;71;F;internet;Chwarzno-Wiczlino
+791;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+792;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+793;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chylonia
+794;2025/OGM/0004;66;M;internet;Chylonia
+795;2025/OGM/0004;38;M;internet;Wielki Kack
+796;2025/OGM/0004,2025/OGM/0012;46;F;internet;Obłuże
+797;2025/OGM/0004;34;F;internet;Pustki Cisowskie-Demptowo
+798;2025/OGM/0004;31;F;internet;Chwarzno-Wiczlino
+799;2025/OGM/0004;20;F;internet;Śródmieście
+800;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+802;2025/OGM/0004;36;F;internet;Wielki Kack
+804;2025/OGM/0004,2025/OGM/0012;41;M;internet;Działki Leśne
+805;2025/OGM/0004;65;F;internet;Pogórze
+806;2025/OGM/0004;39;M;internet;Redłowo
+807;2025/OGM/0004;42;F;internet;Oksywie
+808;2025/OGM/0004,2025/OGM/0012;49;F;internet;Redłowo
+809;2025/OGM/0012;28;M;internet;Witomino
+810;2025/OGM/0012;72;M;internet;Chwarzno-Wiczlino
+812;2025/OGM/0004,2025/OGM/0012;33;M;internet;Dąbrowa
+813;2025/OGM/0004;53;M;internet;Wielki Kack
+814;2025/OGM/0004,2025/OGM/0012;27;F;internet;
+816;2025/OGM/0004;63;M;internet;Karwiny
+817;2025/OGM/0004;45;M;internet;Działki Leśne
+818;2025/OGM/0004;42;M;internet;Wielki Kack
+819;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+820;2025/OGM/0004;18;M;internet;Dąbrowa
+821;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+822;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+823;2025/OGM/0012;28;M;internet;Działki Leśne
+824;2025/OGM/0004,2025/OGM/0012;36;M;internet;Orłowo
+825;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+826;2025/OGM/0004;34;M;internet;Karwiny
+827;2025/OGM/0004;48;F;internet;Oksywie
+828;2025/OGM/0012;56;M;internet;Śródmieście
+829;2025/OGM/0004,2025/OGM/0012;46;M;internet;Witomino
+831;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+832;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+833;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wzgórze Św. Maksymiliana
+834;2025/OGM/0004,2025/OGM/0012;33;M;internet;Oksywie
+835;2025/OGM/0012;60;F;internet;Wielki Kack
+836;2025/OGM/0004;25;M;internet;Oksywie
+837;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wielki Kack
+838;2025/OGM/0004;27;M;internet;Pustki Cisowskie-Demptowo
+839;2025/OGM/0004;33;M;internet;Chylonia
+840;2025/OGM/0004,2025/OGM/0012;36;M;internet;Działki Leśne
+841;2025/OGM/0012;51;M;internet;Śródmieście
+842;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+843;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+844;2025/OGM/0004;43;M;internet;Oksywie
+845;2025/OGM/0004,2025/OGM/0012;35;M;internet;Pogórze
+846;2025/OGM/0012;49;F;internet;Śródmieście
+847;2025/OGM/0004,2025/OGM/0012;58;F;internet;Mały Kack
+848;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+849;2025/OGM/0012;53;F;internet;Wielki Kack
+850;2025/OGM/0004;55;M;internet;Wielki Kack
+851;2025/OGM/0004;59;F;internet;Obłuże
+852;2025/OGM/0004;44;F;internet;Babie Doły
+853;2025/OGM/0004,2025/OGM/0012;24;M;internet;Mały Kack
+855;2025/OGM/0004,2025/OGM/0012;39;F;internet;Redłowo
+856;2025/OGM/0004;50;M;internet;Babie Doły
+857;2025/OGM/0004,2025/OGM/0012;70;F;internet;Chwarzno-Wiczlino
+858;2025/OGM/0004,2025/OGM/0012;20;M;internet;Śródmieście
+859;2025/OGM/0004;64;F;internet;Śródmieście
+860;2025/OGM/0004;25;F;internet;Babie Doły
+861;2025/OGM/0004;21;F;internet;Babie Doły
+862;2025/OGM/0012;22;M;internet;Dąbrowa
+863;2025/OGM/0004;42;F;internet;Mały Kack
+864;2025/OGM/0004;12;M;internet;Babie Doły
+865;2025/OGM/0004;43;M;internet;Chylonia
+866;2025/OGM/0012;92;M;internet;Śródmieście
+867;2025/OGM/0004;53;M;internet;Chwarzno-Wiczlino
+868;2025/OGM/0004;79;F;internet;Babie Doły
+869;2025/OGM/0004;65;F;internet;Śródmieście
+870;2025/OGM/0004;23;M;internet;Dąbrowa
+871;2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+872;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+873;2025/OGM/0004;54;F;internet;Działki Leśne
+874;2025/OGM/0004,2025/OGM/0012;33;M;internet;Obłuże
+875;2025/OGM/0012;17;M;internet;Chwarzno-Wiczlino
+876;2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+878;2025/OGM/0012;15;M;internet;Chwarzno-Wiczlino
+880;2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+882;2025/OGM/0004;26;M;internet;Wielki Kack
+883;2025/OGM/0004;10;F;internet;Witomino
+884;2025/OGM/0004;29;M;internet;Chylonia
+885;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+886;2025/OGM/0004,2025/OGM/0012;43;F;internet;Cisowa
+887;2025/OGM/0004,2025/OGM/0012;32;M;internet;Działki Leśne
+888;2025/OGM/0004;36;F;internet;Dąbrowa
+890;2025/OGM/0004,2025/OGM/0012;70;M;internet;Chwarzno-Wiczlino
+891;2025/OGM/0004,2025/OGM/0012;20;F;internet;Obłuże
+892;2025/OGM/0004;50;M;internet;Chylonia
+894;2025/OGM/0004,2025/OGM/0012;20;F;internet;Pustki Cisowskie-Demptowo
+895;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+896;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+897;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+898;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+899;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+900;2025/OGM/0004;59;F;internet;Śródmieście
+901;2025/OGM/0012;73;F;internet;Chwarzno-Wiczlino
+902;2025/OGM/0004;33;M;internet;Witomino
+903;2025/OGM/0004,2025/OGM/0012;39;F;internet;Śródmieście
+904;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+905;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+906;2025/OGM/0012;32;M;internet;Karwiny
+907;2025/OGM/0004,2025/OGM/0012;50;M;internet;Dąbrowa
+908;2025/OGM/0004;52;F;internet;Obłuże
+909;2025/OGM/0004;49;M;internet;Pustki Cisowskie-Demptowo
+910;2025/OGM/0004,2025/OGM/0012;17;F;internet;Pustki Cisowskie-Demptowo
+911;2025/OGM/0004;46;M;internet;Mały Kack
+912;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+913;2025/OGM/0004;36;F;internet;Oksywie
+914;2025/OGM/0004;33;M;internet;Chylonia
+915;2025/OGM/0004,2025/OGM/0012;44;F;internet;Obłuże
+916;2025/OGM/0004;32;F;internet;Chylonia
+917;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+918;2025/OGM/0012;30;F;internet;Oksywie
+919;2025/OGM/0004,2025/OGM/0012;74;F;internet;Obłuże
+920;2025/OGM/0004;25;F;internet;Pustki Cisowskie-Demptowo
+921;2025/OGM/0004;27;M;internet;Witomino
+923;2025/OGM/0004,2025/OGM/0012;27;M;internet;Obłuże
+924;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+925;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+926;2025/OGM/0004,2025/OGM/0012;24;M;internet;Witomino
+929;2025/OGM/0004,2025/OGM/0012;66;F;internet;Kamienna Góra
+930;2025/OGM/0012;43;F;internet;Redłowo
+931;2025/OGM/0004,2025/OGM/0012;34;F;internet;Dąbrowa
+932;2025/OGM/0004,2025/OGM/0012;16;M;internet;Redłowo
+933;2025/OGM/0012;47;M;internet;Witomino
+935;2025/OGM/0004;47;F;internet;Redłowo
+936;2025/OGM/0004;68;F;internet;Witomino
+937;2025/OGM/0004;36;F;internet;Wielki Kack
+938;2025/OGM/0004;22;F;internet;Redłowo
+939;2025/OGM/0004;38;F;internet;Wielki Kack
+940;2025/OGM/0004;38;M;internet;Śródmieście
+941;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+942;2025/OGM/0004;28;M;internet;Chylonia
+943;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+945;2025/OGM/0004;29;F;internet;Grabówek
+946;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+947;2025/OGM/0004,2025/OGM/0012;21;M;internet;Mały Kack
+949;2025/OGM/0004;57;M;internet;Wielki Kack
+950;2025/OGM/0004;28;F;internet;Wielki Kack
+951;2025/OGM/0004;54;M;internet;Obłuże
+952;2025/OGM/0004,2025/OGM/0012;75;F;internet;Obłuże
+953;2025/OGM/0004,2025/OGM/0012;69;F;internet;Działki Leśne
+954;2025/OGM/0004,2025/OGM/0012;16;M;internet;Mały Kack
+955;2025/OGM/0004;3;M;internet;Wielki Kack
+956;2025/OGM/0004,2025/OGM/0012;75;F;internet;Obłuże
+958;2025/OGM/0004;31;F;internet;Wielki Kack
+959;2025/OGM/0004,2025/OGM/0012;14;F;internet;Mały Kack
+961;2025/OGM/0004,2025/OGM/0012;34;F;internet;Karwiny
+963;2025/OGM/0004;44;M;internet;Orłowo
+964;2025/OGM/0004;65;F;internet;Redłowo
+965;2025/OGM/0012;72;M;internet;Chwarzno-Wiczlino
+966;2025/OGM/0004;52;M;internet;Pustki Cisowskie-Demptowo
+967;2025/OGM/0004;68;M;internet;Redłowo
+968;2025/OGM/0004;38;M;internet;Obłuże
+969;2025/OGM/0004;81;F;internet;Chylonia
+970;2025/OGM/0012;56;M;internet;Witomino
+971;2025/OGM/0004;23;F;internet;Wielki Kack
+972;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+973;2025/OGM/0004;4;F;internet;Chwarzno-Wiczlino
+974;2025/OGM/0004;24;F;internet;Witomino
+975;2025/OGM/0004,2025/OGM/0012;77;F;internet;Śródmieście
+976;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+978;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+979;2025/OGM/0004,2025/OGM/0012;48;M;internet;Oksywie
+980;2025/OGM/0004;39;M;internet;
+981;2025/OGM/0004,2025/OGM/0012;52;M;internet;Śródmieście
+982;2025/OGM/0004;40;M;internet;Leszczynki
+983;2025/OGM/0004;43;M;internet;Karwiny
+985;2025/OGM/0004;6;M;internet;Leszczynki
+986;2025/OGM/0004;26;F;internet;Wielki Kack
+988;2025/OGM/0004,2025/OGM/0012;55;F;internet;Śródmieście
+989;2025/OGM/0004;33;M;internet;Śródmieście
+990;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pogórze
+991;2025/OGM/0004,2025/OGM/0012;46;F;internet;Babie Doły
+992;2025/OGM/0004,2025/OGM/0012;17;M;internet;Śródmieście
+993;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chylonia
+994;2025/OGM/0004;5;F;internet;Wielki Kack
+995;2025/OGM/0004;40;M;internet;Karwiny
+996;2025/OGM/0004;39;F;internet;Wielki Kack
+997;2025/OGM/0012;34;F;internet;Witomino
+998;2025/OGM/0004;28;F;internet;Wielki Kack
+999;2025/OGM/0004;48;M;internet;Obłuże
+1000;2025/OGM/0004;36;M;internet;Śródmieście
+1001;2025/OGM/0004;29;M;internet;Wielki Kack
+1002;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+1003;2025/OGM/0004;43;M;internet;Wielki Kack
+1004;2025/OGM/0004;52;F;internet;Chylonia
+1005;2025/OGM/0004,2025/OGM/0012;81;M;internet;Obłuże
+1007;2025/OGM/0004;12;M;internet;Chylonia
+1008;2025/OGM/0004;4;F;internet;Chwarzno-Wiczlino
+1009;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pogórze
+1010;2025/OGM/0004;4;F;internet;Wielki Kack
+1011;2025/OGM/0004;33;F;internet;Grabówek
+1012;2025/OGM/0004;24;M;internet;Wielki Kack
+1013;2025/OGM/0004;48;M;internet;Dąbrowa
+1014;2025/OGM/0012;43;M;internet;Działki Leśne
+1015;2025/OGM/0004,2025/OGM/0012;41;F;internet;Babie Doły
+1016;2025/OGM/0004,2025/OGM/0012;76;F;internet;Obłuże
+1017;2025/OGM/0004;2;M;internet;Wielki Kack
+1018;2025/OGM/0004,2025/OGM/0012;43;F;internet;Obłuże
+1019;2025/OGM/0004;54;M;internet;Wielki Kack
+1020;2025/OGM/0004;47;F;internet;Obłuże
+1021;2025/OGM/0004;42;F;internet;Chylonia
+1022;2025/OGM/0004;40;F;internet;Kamienna Góra
+1023;2025/OGM/0004;18;M;internet;Chylonia
+1024;2025/OGM/0004,2025/OGM/0012;8;M;internet;Babie Doły
+1025;2025/OGM/0004;38;M;internet;Karwiny
+1026;2025/OGM/0004;35;F;internet;Dąbrowa
+1027;2025/OGM/0004;36;M;internet;Dąbrowa
+1028;2025/OGM/0004,2025/OGM/0012;71;F;internet;Cisowa
+1029;2025/OGM/0004;46;M;internet;Wielki Kack
+1030;2025/OGM/0004;45;M;internet;Witomino
+1031;2025/OGM/0004;35;M;internet;Witomino
+1032;2025/OGM/0012;39;F;internet;Witomino
+1034;2025/OGM/0004;49;M;internet;Karwiny
+1035;2025/OGM/0004;30;F;internet;Mały Kack
+1036;2025/OGM/0004;52;F;internet;Chylonia
+1037;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+1038;2025/OGM/0012;38;F;internet;Oksywie
+1039;2025/OGM/0004;74;M;internet;Chylonia
+1040;2025/OGM/0004,2025/OGM/0012;32;M;internet;Redłowo
+1041;2025/OGM/0004;50;F;internet;Wielki Kack
+1042;2025/OGM/0004;74;F;internet;Chylonia
+1043;2025/OGM/0004;50;F;internet;Wielki Kack
+1044;2025/OGM/0004;49;M;internet;Chylonia
+1045;2025/OGM/0004;26;M;internet;Śródmieście
+1046;2025/OGM/0012;8;M;internet;Oksywie
+1047;2025/OGM/0004,2025/OGM/0012;56;F;internet;Mały Kack
+1048;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+1049;2025/OGM/0004,2025/OGM/0012;31;F;internet;Cisowa
+1050;2025/OGM/0004;42;F;internet;Chylonia
+1051;2025/OGM/0004;54;M;internet;Chylonia
+1053;2025/OGM/0004;53;F;internet;Chylonia
+1054;2025/OGM/0004;42;F;internet;Karwiny
+1055;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+1056;2025/OGM/0012;27;M;internet;Cisowa
+1058;2025/OGM/0004,2025/OGM/0012;27;M;internet;Wielki Kack
+1059;2025/OGM/0004;76;F;internet;Chylonia
+1060;2025/OGM/0012;38;M;internet;Obłuże
+1061;2025/OGM/0012;41;M;internet;Witomino
+1062;2025/OGM/0004;40;M;internet;Dąbrowa
+1063;2025/OGM/0004;84;M;internet;Chylonia
+1064;2025/OGM/0004;29;M;internet;Obłuże
+1065;2025/OGM/0012;39;F;internet;Oksywie
+1066;2025/OGM/0004;34;F;internet;Wielki Kack
+1068;2025/OGM/0004;38;F;internet;Wielki Kack
+1069;2025/OGM/0004,2025/OGM/0012;53;F;internet;Witomino
+1070;2025/OGM/0012;32;F;internet;Chylonia
+1071;2025/OGM/0012;31;F;internet;Chylonia
+1072;2025/OGM/0012;26;M;internet;Orłowo
+1073;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+1074;2025/OGM/0004;48;F;internet;Chylonia
+1075;2025/OGM/0012;72;F;internet;Mały Kack
+1076;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+1077;2025/OGM/0004,2025/OGM/0012;55;F;internet;Grabówek
+1078;2025/OGM/0004;16;M;internet;Chylonia
+1079;2025/OGM/0004,2025/OGM/0012;34;F;internet;Pustki Cisowskie-Demptowo
+1080;2025/OGM/0004;41;F;internet;Wielki Kack
+1081;2025/OGM/0004;35;M;internet;Wielki Kack
+1082;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+1084;2025/OGM/0004;39;M;internet;Śródmieście
+1085;2025/OGM/0012;36;M;internet;Pustki Cisowskie-Demptowo
+1086;2025/OGM/0004,2025/OGM/0012;68;F;internet;Chylonia
+1087;2025/OGM/0004;10;F;internet;Wielki Kack
+1088;2025/OGM/0004;35;F;internet;Wielki Kack
+1089;2025/OGM/0012;41;F;internet;Chylonia
+1091;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+1092;2025/OGM/0004;54;M;internet;Wielki Kack
+1093;2025/OGM/0004,2025/OGM/0012;25;F;internet;Wielki Kack
+1094;2025/OGM/0004;4;F;internet;Wielki Kack
+1095;2025/OGM/0004;37;M;internet;Mały Kack
+1097;2025/OGM/0004;38;F;internet;Wielki Kack
+1098;2025/OGM/0004,2025/OGM/0012;79;F;internet;Pustki Cisowskie-Demptowo
+1100;2025/OGM/0004;39;M;internet;Babie Doły
+1101;2025/OGM/0004;33;F;internet;Wzgórze Św. Maksymiliana
+1102;2025/OGM/0004;42;M;internet;Działki Leśne
+1103;2025/OGM/0004;51;F;internet;Wielki Kack
+1104;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+1105;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+1106;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pustki Cisowskie-Demptowo
+1107;2025/OGM/0004;22;F;internet;Wielki Kack
+1108;2025/OGM/0004,2025/OGM/0012;44;F;internet;Obłuże
+1109;2025/OGM/0004;37;F;internet;Wielki Kack
+1110;2025/OGM/0004;32;F;internet;Wielki Kack
+1111;2025/OGM/0004;13;M;internet;Wielki Kack
+1112;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+1113;2025/OGM/0004,2025/OGM/0012;67;F;internet;Obłuże
+1114;2025/OGM/0004;38;F;internet;Obłuże
+1116;2025/OGM/0004,2025/OGM/0012;38;M;internet;Śródmieście
+1119;2025/OGM/0004,2025/OGM/0012;47;F;internet;Cisowa
+1120;2025/OGM/0012;65;F;internet;Działki Leśne
+1121;2025/OGM/0004;7;M;internet;Obłuże
+1122;2025/OGM/0004;49;M;internet;Cisowa
+1124;2025/OGM/0004;53;F;internet;Wielki Kack
+1125;2025/OGM/0004;23;M;internet;Chwarzno-Wiczlino
+1126;2025/OGM/0004;19;M;internet;Obłuże
+1127;2025/OGM/0004;40;M;internet;Obłuże
+1128;2025/OGM/0004,2025/OGM/0012;26;M;internet;Wielki Kack
+1130;2025/OGM/0004;47;M;internet;Grabówek
+1131;2025/OGM/0004;26;F;internet;Chylonia
+1133;2025/OGM/0004,2025/OGM/0012;42;F;internet;Grabówek
+1134;2025/OGM/0004,2025/OGM/0012;49;M;internet;Cisowa
+1135;2025/OGM/0012;36;F;internet;Oksywie
+1136;2025/OGM/0004,2025/OGM/0012;43;M;internet;Obłuże
+1137;2025/OGM/0004;40;M;internet;Witomino
+1139;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chylonia
+1140;2025/OGM/0004;78;M;internet;Wielki Kack
+1142;2025/OGM/0012;49;F;internet;Orłowo
+1144;2025/OGM/0004,2025/OGM/0012;76;F;internet;Cisowa
+1145;2025/OGM/0004;65;F;internet;Obłuże
+1146;2025/OGM/0004,2025/OGM/0012;42;F;internet;Dąbrowa
+1147;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+1148;2025/OGM/0004;41;M;internet;Witomino
+1150;2025/OGM/0004;29;F;internet;Chylonia
+1151;2025/OGM/0004;39;F;internet;Obłuże
+1153;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+1154;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+1155;2025/OGM/0004;45;M;internet;Chylonia
+1156;2025/OGM/0012;47;M;internet;Mały Kack
+1157;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+1159;2025/OGM/0004;72;M;internet;Pogórze
+1160;2025/OGM/0004;39;F;internet;Chylonia
+1161;2025/OGM/0004;28;M;internet;Śródmieście
+1162;2025/OGM/0004;77;F;internet;Wielki Kack
+1163;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+1164;2025/OGM/0004;56;F;internet;Cisowa
+1165;2025/OGM/0004;36;F;internet;Witomino
+1166;2025/OGM/0004,2025/OGM/0012;45;M;internet;Obłuże
+1167;2025/OGM/0004;46;M;internet;Obłuże
+1168;2025/OGM/0004,2025/OGM/0012;64;F;internet;Witomino
+1169;2025/OGM/0012;73;F;internet;Mały Kack
+1170;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chylonia
+1171;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chylonia
+1172;2025/OGM/0004,2025/OGM/0012;50;F;internet;Witomino
+1173;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+1175;2025/OGM/0004,2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+1176;2025/OGM/0004;51;F;internet;Witomino
+1177;2025/OGM/0004;50;F;internet;Wielki Kack
+1178;2025/OGM/0004;37;F;internet;Oksywie
+1179;2025/OGM/0004,2025/OGM/0012;13;M;internet;Grabówek
+1180;2025/OGM/0012;73;M;internet;Mały Kack
+1181;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+1182;2025/OGM/0004;25;M;internet;Cisowa
+1183;2025/OGM/0004;32;M;internet;Wielki Kack
+1184;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+1185;2025/OGM/0004,2025/OGM/0012;14;F;internet;Grabówek
+1186;2025/OGM/0012;35;F;internet;Chylonia
+1187;2025/OGM/0012;44;F;internet;Kamienna Góra
+1188;2025/OGM/0004,2025/OGM/0012;53;M;internet;Oksywie
+1189;2025/OGM/0004;3;F;internet;Wielki Kack
+1190;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+1191;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+1192;2025/OGM/0004,2025/OGM/0012;53;M;internet;Karwiny
+1193;2025/OGM/0004,2025/OGM/0012;58;F;internet;Karwiny
+1194;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+1195;2025/OGM/0004;6;F;internet;Pustki Cisowskie-Demptowo
+1196;2025/OGM/0004,2025/OGM/0012;31;F;internet;Śródmieście
+1197;2025/OGM/0004;34;M;internet;Pustki Cisowskie-Demptowo
+1198;2025/OGM/0004;50;M;internet;Wielki Kack
+1199;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+1200;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+1201;2025/OGM/0004;35;M;internet;Witomino
+1202;2025/OGM/0012;29;M;internet;Chwarzno-Wiczlino
+1203;2025/OGM/0004;4;M;internet;Pustki Cisowskie-Demptowo
+1204;2025/OGM/0004;38;F;internet;Mały Kack
+1205;2025/OGM/0004,2025/OGM/0012;33;M;internet;Dąbrowa
+1206;2025/OGM/0004;43;F;internet;Mały Kack
+1207;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+1208;2025/OGM/0004;42;F;internet;Cisowa
+1209;2025/OGM/0004;11;F;internet;Mały Kack
+1210;2025/OGM/0012;59;F;internet;Orłowo
+1211;2025/OGM/0004,2025/OGM/0012;32;F;internet;Babie Doły
+1213;2025/OGM/0012;43;M;internet;Oksywie
+1214;2025/OGM/0004;17;M;internet;Mały Kack
+1215;2025/OGM/0004,2025/OGM/0012;46;M;internet;Grabówek
+1216;2025/OGM/0004;70;M;internet;Obłuże
+1217;2025/OGM/0004,2025/OGM/0012;34;F;internet;Obłuże
+1218;2025/OGM/0004;26;M;internet;Dąbrowa
+1220;2025/OGM/0012;7;M;internet;Oksywie
+1221;2025/OGM/0004;38;M;internet;Chylonia
+1222;2025/OGM/0004;21;F;internet;Wielki Kack
+1223;2025/OGM/0004;20;F;internet;Obłuże
+1224;2025/OGM/0004;44;M;internet;Mały Kack
+1225;2025/OGM/0004,2025/OGM/0012;6;M;internet;Obłuże
+1226;2025/OGM/0012;12;M;internet;Oksywie
+1227;2025/OGM/0004;30;F;internet;Witomino
+1228;2025/OGM/0012;19;M;internet;Witomino
+1229;2025/OGM/0004,2025/OGM/0012;36;M;internet;Obłuże
+1230;2025/OGM/0004;55;F;internet;Pustki Cisowskie-Demptowo
+1231;2025/OGM/0004,2025/OGM/0012;3;F;internet;Obłuże
+1232;2025/OGM/0004;31;F;internet;Wielki Kack
+1233;2025/OGM/0012;34;F;internet;Wielki Kack
+1234;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+1235;2025/OGM/0004;36;F;internet;Karwiny
+1236;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+1237;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+1238;2025/OGM/0004,2025/OGM/0012;66;F;internet;Obłuże
+1239;2025/OGM/0004;31;M;internet;Wielki Kack
+1241;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+1242;2025/OGM/0004,2025/OGM/0012;48;M;internet;Oksywie
+1243;2025/OGM/0004;30;F;internet;Dąbrowa
+1245;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wielki Kack
+1246;2025/OGM/0004,2025/OGM/0012;34;M;internet;Grabówek
+1247;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+1248;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+1250;2025/OGM/0004;37;F;internet;Wielki Kack
+1252;2025/OGM/0004;74;F;internet;Chylonia
+1253;2025/OGM/0004;45;M;internet;Wzgórze Św. Maksymiliana
+1254;2025/OGM/0004;37;M;internet;Wielki Kack
+1255;2025/OGM/0004;60;F;internet;Witomino
+1256;2025/OGM/0004;13;F;internet;Pustki Cisowskie-Demptowo
+1257;2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+1258;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+1259;2025/OGM/0004;10;M;internet;Wielki Kack
+1260;2025/OGM/0004;6;M;internet;Wielki Kack
+1261;2025/OGM/0004;33;F;internet;Dąbrowa
+1262;2025/OGM/0004;43;M;internet;Dąbrowa
+1263;2025/OGM/0004;31;M;internet;Chwarzno-Wiczlino
+1264;2025/OGM/0004;21;F;internet;Chylonia
+1265;2025/OGM/0004,2025/OGM/0012;25;M;internet;Chylonia
+1266;2025/OGM/0004;11;F;internet;Wielki Kack
+1267;2025/OGM/0004,2025/OGM/0012;23;M;internet;Karwiny
+1268;2025/OGM/0004;60;M;internet;Wielki Kack
+1269;2025/OGM/0004;43;F;internet;Chylonia
+1270;2025/OGM/0004,2025/OGM/0012;32;F;internet;Pogórze
+1271;2025/OGM/0012;38;F;internet;Witomino
+1272;2025/OGM/0012;69;M;internet;Orłowo
+1273;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+1274;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+1275;2025/OGM/0004;48;M;internet;Obłuże
+1276;2025/OGM/0004;6;M;internet;Dąbrowa
+1277;2025/OGM/0004;15;F;internet;Wielki Kack
+1278;2025/OGM/0004;38;F;internet;Leszczynki
+1279;2025/OGM/0004;53;M;internet;Chylonia
+1280;2025/OGM/0004;75;F;internet;Obłuże
+1281;2025/OGM/0004;4;F;internet;Dąbrowa
+1282;2025/OGM/0004;31;F;internet;Wielki Kack
+1283;2025/OGM/0012;32;F;internet;Wielki Kack
+1284;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+1285;2025/OGM/0004;75;M;internet;Obłuże
+1287;2025/OGM/0004;40;F;internet;Wielki Kack
+1288;2025/OGM/0004;33;M;internet;Wielki Kack
+1289;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+1290;2025/OGM/0004,2025/OGM/0012;19;M;internet;Śródmieście
+1291;2025/OGM/0004;5;M;internet;Wielki Kack
+1292;2025/OGM/0004;50;F;internet;Wielki Kack
+1293;2025/OGM/0012;52;M;internet;Mały Kack
+1294;2025/OGM/0004;42;F;internet;Wielki Kack
+1295;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+1296;2025/OGM/0004,2025/OGM/0012;37;F;internet;Działki Leśne
+1297;2025/OGM/0004;37;M;internet;Chylonia
+1298;2025/OGM/0004;40;F;internet;Cisowa
+1299;2025/OGM/0004,2025/OGM/0012;44;M;internet;Działki Leśne
+1300;2025/OGM/0004,2025/OGM/0012;14;F;internet;Chwarzno-Wiczlino
+1301;2025/OGM/0004;50;M;internet;Obłuże
+1302;2025/OGM/0004;44;M;internet;Dąbrowa
+1303;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+1304;2025/OGM/0004;50;M;internet;Chylonia
+1305;2025/OGM/0012;55;M;internet;Chwarzno-Wiczlino
+1306;2025/OGM/0004;28;F;internet;Dąbrowa
+1308;2025/OGM/0004,2025/OGM/0012;5;M;internet;Działki Leśne
+1309;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+1311;2025/OGM/0012;54;F;internet;Śródmieście
+1312;2025/OGM/0004,2025/OGM/0012;50;F;internet;Grabówek
+1313;2025/OGM/0004,2025/OGM/0012;48;M;internet;Cisowa
+1314;2025/OGM/0012;22;M;internet;Chwarzno-Wiczlino
+1315;2025/OGM/0004,2025/OGM/0012;51;M;internet;Wzgórze Św. Maksymiliana
+1316;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+1317;2025/OGM/0004;63;F;internet;Dąbrowa
+1318;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+1319;2025/OGM/0004;51;M;internet;Pustki Cisowskie-Demptowo
+1320;2025/OGM/0004;40;F;internet;Redłowo
+1321;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+1322;2025/OGM/0004;39;M;internet;Witomino
+1323;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+1324;2025/OGM/0004;49;F;internet;Obłuże
+1325;2025/OGM/0004;12;F;internet;Witomino
+1326;2025/OGM/0004;34;F;internet;Wzgórze Św. Maksymiliana
+1327;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+1328;2025/OGM/0004;9;M;internet;Witomino
+1329;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+1330;2025/OGM/0004,2025/OGM/0012;31;F;internet;Witomino
+1331;2025/OGM/0004;38;M;internet;Wielki Kack
+1332;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+1333;2025/OGM/0004;73;M;internet;Witomino
+1334;2025/OGM/0004;80;F;internet;Chwarzno-Wiczlino
+1335;2025/OGM/0004;73;M;internet;Dąbrowa
+1336;2025/OGM/0012;16;F;internet;Pustki Cisowskie-Demptowo
+1337;2025/OGM/0004;70;F;internet;Witomino
+1338;2025/OGM/0012;16;M;internet;Wielki Kack
+1339;2025/OGM/0004;8;F;internet;Wielki Kack
+1340;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+1341;2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+1343;2025/OGM/0004;12;M;internet;Chwarzno-Wiczlino
+1344;2025/OGM/0004,2025/OGM/0012;35;M;internet;Oksywie
+1345;2025/OGM/0004;3;F;internet;Wielki Kack
+1346;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+1347;2025/OGM/0004;11;F;internet;Chwarzno-Wiczlino
+1348;2025/OGM/0012;42;F;internet;Witomino
+1349;2025/OGM/0004;44;F;internet;Orłowo
+1351;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+1352;2025/OGM/0004;11;F;internet;Chwarzno-Wiczlino
+1353;2025/OGM/0012;31;F;internet;Obłuże
+1354;2025/OGM/0004;39;F;internet;Chylonia
+1355;2025/OGM/0004,2025/OGM/0012;34;F;internet;Pustki Cisowskie-Demptowo
+1356;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+1358;2025/OGM/0004;72;M;internet;Pogórze
+1359;2025/OGM/0004,2025/OGM/0012;25;F;internet;Cisowa
+1360;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+1361;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+1362;2025/OGM/0004;40;M;internet;Witomino
+1363;2025/OGM/0004,2025/OGM/0012;;F;internet;Pustki Cisowskie-Demptowo
+1364;2025/OGM/0004,2025/OGM/0012;64;F;internet;Mały Kack
+1365;2025/OGM/0004;42;F;internet;Obłuże
+1366;2025/OGM/0012;39;F;internet;Witomino
+1367;2025/OGM/0004;37;M;internet;Chylonia
+1368;2025/OGM/0012;40;F;internet;Witomino
+1369;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+1370;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+1371;2025/OGM/0004;41;F;internet;Cisowa
+1372;2025/OGM/0004,2025/OGM/0012;36;M;internet;Pustki Cisowskie-Demptowo
+1373;2025/OGM/0004;38;F;internet;Wielki Kack
+1374;2025/OGM/0012;39;M;internet;Witomino
+1375;2025/OGM/0004,2025/OGM/0012;47;M;internet;Cisowa
+1376;2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+1377;2025/OGM/0004;5;F;internet;Wielki Kack
+1378;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+1379;2025/OGM/0004,2025/OGM/0012;69;M;internet;Mały Kack
+1380;2025/OGM/0004;34;M;internet;Mały Kack
+1381;2025/OGM/0004;39;F;internet;Witomino
+1382;2025/OGM/0004;49;F;internet;Działki Leśne
+1383;2025/OGM/0004,2025/OGM/0012;75;F;internet;Karwiny
+1384;2025/OGM/0004;40;M;internet;Mały Kack
+1385;2025/OGM/0004;23;M;internet;Śródmieście
+1386;2025/OGM/0004;28;M;internet;Mały Kack
+1387;2025/OGM/0004;16;M;internet;Chwarzno-Wiczlino
+1388;2025/OGM/0004;40;M;internet;Wielki Kack
+1390;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+1391;2025/OGM/0004;50;F;internet;Oksywie
+1393;2025/OGM/0004,2025/OGM/0012;47;M;internet;Oksywie
+1395;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chylonia
+1396;2025/OGM/0004;9;M;internet;Wielki Kack
+1397;2025/OGM/0004;37;F;internet;Obłuże
+1398;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+1399;2025/OGM/0004;5;F;internet;Wielki Kack
+1400;2025/OGM/0004;37;F;internet;Wielki Kack
+1401;2025/OGM/0012;29;F;internet;Kamienna Góra
+1402;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chwarzno-Wiczlino
+1403;2025/OGM/0004;41;F;internet;Śródmieście
+1404;2025/OGM/0004,2025/OGM/0012;47;M;internet;Mały Kack
+1405;2025/OGM/0004;42;F;internet;Obłuże
+1406;2025/OGM/0012;24;F;internet;Chylonia
+1407;2025/OGM/0012;36;F;internet;Mały Kack
+1408;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+1409;2025/OGM/0004;31;F;internet;Wielki Kack
+1410;2025/OGM/0004;41;F;internet;Wielki Kack
+1411;2025/OGM/0004;11;F;internet;Wielki Kack
+1412;2025/OGM/0004;44;M;internet;Witomino
+1413;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pogórze
+1414;2025/OGM/0004;14;M;internet;Wielki Kack
+1415;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wzgórze Św. Maksymiliana
+1416;2025/OGM/0004;13;M;internet;Witomino
+1417;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+1418;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chylonia
+1419;2025/OGM/0004;51;M;internet;Wzgórze Św. Maksymiliana
+1420;2025/OGM/0004;8;M;internet;Witomino
+1421;2025/OGM/0004;2;M;internet;Witomino
+1422;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+1423;2025/OGM/0004;41;F;internet;Działki Leśne
+1426;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+1427;2025/OGM/0004;45;F;internet;Witomino
+1428;2025/OGM/0004;21;M;internet;Orłowo
+1429;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+1430;2025/OGM/0004,2025/OGM/0012;23;F;internet;Oksywie
+1431;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+1432;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+1433;2025/OGM/0012;65;F;internet;Chwarzno-Wiczlino
+1434;2025/OGM/0012;50;M;internet;Mały Kack
+1435;2025/OGM/0004;41;M;internet;Wielki Kack
+1436;2025/OGM/0004;41;M;internet;Wielki Kack
+1437;2025/OGM/0004;37;F;internet;Oksywie
+1438;2025/OGM/0004;54;M;internet;Leszczynki
+1439;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+1440;2025/OGM/0012;33;F;internet;Wielki Kack
+1441;2025/OGM/0012;41;F;internet;Wielki Kack
+1442;2025/OGM/0004;38;F;internet;Wielki Kack
+1443;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+1444;2025/OGM/0004,2025/OGM/0012;57;F;internet;Grabówek
+1445;2025/OGM/0012;5;F;internet;Wielki Kack
+1446;2025/OGM/0004;37;F;internet;Wielki Kack
+1447;2025/OGM/0012;2;M;internet;Wielki Kack
+1448;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+1449;2025/OGM/0004,2025/OGM/0012;52;F;internet;Mały Kack
+1450;2025/OGM/0012;40;F;internet;Obłuże
+1452;2025/OGM/0004,2025/OGM/0012;46;F;internet;Oksywie
+1453;2025/OGM/0012;15;M;internet;Oksywie
+1454;2025/OGM/0004;59;M;internet;Redłowo
+1455;2025/OGM/0012;41;F;internet;Oksywie
+1456;2025/OGM/0004,2025/OGM/0012;89;F;internet;Redłowo
+1457;2025/OGM/0004;58;M;internet;Dąbrowa
+1458;2025/OGM/0004;46;F;internet;Cisowa
+1459;2025/OGM/0004;45;M;internet;Obłuże
+1461;2025/OGM/0012;31;F;internet;Cisowa
+1462;2025/OGM/0004;31;F;internet;Grabówek
+1465;2025/OGM/0004;39;M;internet;Wielki Kack
+1466;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+1467;2025/OGM/0004,2025/OGM/0012;42;M;internet;Cisowa
+1470;2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+1471;2025/OGM/0012;48;F;internet;Pustki Cisowskie-Demptowo
+1472;2025/OGM/0004;46;F;internet;Orłowo
+1473;2025/OGM/0004;36;M;internet;Wielki Kack
+1474;2025/OGM/0004;21;F;internet;Pustki Cisowskie-Demptowo
+1476;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+1477;2025/OGM/0012;44;F;internet;Witomino
+1478;2025/OGM/0004;22;M;internet;Chylonia
+1479;2025/OGM/0012;51;F;internet;Orłowo
+1480;2025/OGM/0004;40;M;internet;Mały Kack
+1481;2025/OGM/0004;6;F;internet;Mały Kack
+1482;2025/OGM/0004;4;M;internet;Mały Kack
+1483;2025/OGM/0004;39;F;internet;Mały Kack
+1484;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+1485;2025/OGM/0004,2025/OGM/0012;14;F;internet;Dąbrowa
+1486;2025/OGM/0004,2025/OGM/0012;11;M;internet;Dąbrowa
+1487;2025/OGM/0004,2025/OGM/0012;74;F;internet;Wielki Kack
+1488;2025/OGM/0012;55;M;internet;Orłowo
+1489;2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+1490;2025/OGM/0012;54;F;internet;Obłuże
+1491;2025/OGM/0004;43;F;internet;Karwiny
+1492;2025/OGM/0004,2025/OGM/0012;15;F;internet;Wielki Kack
+1493;2025/OGM/0004,2025/OGM/0012;13;F;internet;Karwiny
+1494;2025/OGM/0004;37;F;internet;Dąbrowa
+1495;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+1496;2025/OGM/0004;8;M;internet;Chwarzno-Wiczlino
+1497;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+1499;2025/OGM/0012;32;M;internet;Działki Leśne
+1500;2025/OGM/0004;35;F;internet;Pogórze
+1501;2025/OGM/0004;58;F;internet;Pogórze
+1502;2025/OGM/0004;40;M;internet;Witomino
+1504;2025/OGM/0004;43;M;internet;Oksywie
+1505;2025/OGM/0004;40;M;internet;Dąbrowa
+1506;2025/OGM/0004;65;F;internet;Dąbrowa
+1507;2025/OGM/0004;45;F;internet;Orłowo
+1508;2025/OGM/0004;34;F;internet;Wielki Kack
+1509;2025/OGM/0004;5;M;internet;Dąbrowa
+1511;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+1512;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pogórze
+1513;2025/OGM/0004;44;M;internet;Obłuże
+1515;2025/OGM/0004;43;F;internet;Pustki Cisowskie-Demptowo
+1516;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+1517;2025/OGM/0004;54;M;internet;Chylonia
+1518;2025/OGM/0004;29;M;internet;Chylonia
+1519;2025/OGM/0004;29;M;internet;Śródmieście
+1520;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+1521;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+1522;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+1523;2025/OGM/0004,2025/OGM/0012;30;M;internet;Mały Kack
+1524;2025/OGM/0004;46;F;internet;Wielki Kack
+1525;2025/OGM/0012;29;M;internet;Oksywie
+1526;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+1528;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+1529;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+1530;2025/OGM/0004,2025/OGM/0012;12;M;internet;Mały Kack
+1531;2025/OGM/0004,2025/OGM/0012;7;M;internet;Mały Kack
+1532;2025/OGM/0004;81;F;internet;Witomino
+1533;2025/OGM/0004,2025/OGM/0012;24;F;internet;Wielki Kack
+1534;2025/OGM/0004,2025/OGM/0012;10;F;internet;Mały Kack
+1536;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+1537;2025/OGM/0012;50;F;internet;Grabówek
+1538;2025/OGM/0004;24;F;internet;Wielki Kack
+1539;2025/OGM/0004;72;M;internet;Pustki Cisowskie-Demptowo
+1540;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+1541;2025/OGM/0004;29;F;internet;Mały Kack
+1542;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+1543;2025/OGM/0004,2025/OGM/0012;44;M;internet;Karwiny
+1544;2025/OGM/0004;47;M;internet;Chwarzno-Wiczlino
+1545;2025/OGM/0012;34;F;internet;Witomino
+1546;2025/OGM/0004;27;F;internet;Mały Kack
+1547;2025/OGM/0012;60;F;internet;Kamienna Góra
+1548;2025/OGM/0004;32;F;internet;Śródmieście
+1549;2025/OGM/0012;30;F;internet;Wielki Kack
+1550;2025/OGM/0004;44;F;internet;Mały Kack
+1551;2025/OGM/0004,2025/OGM/0012;36;M;internet;Mały Kack
+1552;2025/OGM/0004,2025/OGM/0012;33;M;internet;Oksywie
+1553;2025/OGM/0004;34;F;internet;Oksywie
+1554;2025/OGM/0004;36;F;internet;Grabówek
+1556;2025/OGM/0004;33;M;internet;Orłowo
+1557;2025/OGM/0004;37;F;internet;Pogórze
+1558;2025/OGM/0004,2025/OGM/0012;9;M;internet;Obłuże
+1559;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+1560;2025/OGM/0004;38;F;internet;Grabówek
+1561;2025/OGM/0004,2025/OGM/0012;51;F;internet;Śródmieście
+1562;2025/OGM/0004,2025/OGM/0012;70;M;internet;Obłuże
+1563;2025/OGM/0012;38;M;internet;Pogórze
+1564;2025/OGM/0004,2025/OGM/0012;50;M;internet;Grabówek
+1565;2025/OGM/0004,2025/OGM/0012;19;F;internet;Oksywie
+1566;2025/OGM/0004,2025/OGM/0012;38;M;internet;Pogórze
+1567;2025/OGM/0004;48;F;internet;Pogórze
+1568;2025/OGM/0012;45;M;internet;Witomino
+1570;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+1571;2025/OGM/0004;51;F;internet;Obłuże
+1572;2025/OGM/0004,2025/OGM/0012;49;F;internet;Dąbrowa
+1573;2025/OGM/0004;38;M;internet;Wielki Kack
+1574;2025/OGM/0012;12;F;internet;Chylonia
+1575;2025/OGM/0004,2025/OGM/0012;37;M;internet;Grabówek
+1576;2025/OGM/0004,2025/OGM/0012;41;M;internet;Obłuże
+1577;2025/OGM/0012;45;F;internet;Witomino
+1578;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+1579;2025/OGM/0004;38;M;internet;Mały Kack
+1580;2025/OGM/0004;61;M;internet;Pustki Cisowskie-Demptowo
+1581;2025/OGM/0004;45;F;internet;Wielki Kack
+1582;2025/OGM/0004;48;F;internet;Chylonia
+1583;2025/OGM/0004;43;M;internet;Chylonia
+1584;2025/OGM/0012;33;M;internet;Chylonia
+1585;2025/OGM/0012;51;M;internet;Mały Kack
+1586;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+1587;2025/OGM/0012;43;F;internet;Obłuże
+1588;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+1589;2025/OGM/0004;33;F;internet;Mały Kack
+1590;2025/OGM/0004,2025/OGM/0012;40;M;internet;Kamienna Góra
+1591;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+1592;2025/OGM/0004;76;F;internet;Babie Doły
+1593;2025/OGM/0004,2025/OGM/0012;63;F;internet;Kamienna Góra
+1594;2025/OGM/0004,2025/OGM/0012;71;F;internet;Karwiny
+1595;2025/OGM/0004,2025/OGM/0012;9;F;internet;Wielki Kack
+1596;2025/OGM/0004;53;F;internet;Pustki Cisowskie-Demptowo
+1597;2025/OGM/0004,2025/OGM/0012;54;F;internet;Mały Kack
+1598;2025/OGM/0012;35;F;internet;Oksywie
+1599;2025/OGM/0004,2025/OGM/0012;61;M;internet;Działki Leśne
+1600;2025/OGM/0012;50;F;internet;Witomino
+1601;2025/OGM/0004,2025/OGM/0012;7;M;internet;Wielki Kack
+1602;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pustki Cisowskie-Demptowo
+1603;2025/OGM/0004;46;F;internet;Dąbrowa
+1604;2025/OGM/0004,2025/OGM/0012;59;F;internet;Działki Leśne
+1605;2025/OGM/0004,2025/OGM/0012;58;F;internet;Chylonia
+1607;2025/OGM/0004,2025/OGM/0012;45;M;internet;Karwiny
+1608;2025/OGM/0004;40;M;internet;Karwiny
+1609;2025/OGM/0004;51;F;internet;Dąbrowa
+1610;2025/OGM/0004,2025/OGM/0012;47;M;internet;Oksywie
+1611;2025/OGM/0004;29;M;internet;Śródmieście
+1612;2025/OGM/0004;33;M;internet;Wielki Kack
+1613;2025/OGM/0004;51;M;internet;Mały Kack
+1614;2025/OGM/0004,2025/OGM/0012;20;M;internet;Chwarzno-Wiczlino
+1615;2025/OGM/0004;35;M;internet;Wielki Kack
+1617;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+1618;2025/OGM/0004,2025/OGM/0012;24;M;internet;Karwiny
+1619;2025/OGM/0004;54;F;internet;Pogórze
+1620;2025/OGM/0004,2025/OGM/0012;48;M;internet;Oksywie
+1621;2025/OGM/0004;56;M;internet;Pogórze
+1622;2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+1623;2025/OGM/0004;56;M;internet;Wielki Kack
+1624;2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+1625;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+1626;2025/OGM/0012;43;M;internet;Leszczynki
+1627;2025/OGM/0004;43;M;internet;Oksywie
+1628;2025/OGM/0012;35;F;internet;Redłowo
+1629;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+1630;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+1631;2025/OGM/0004;31;F;internet;Chylonia
+1632;2025/OGM/0004;57;F;internet;Wielki Kack
+1633;2025/OGM/0004;39;F;internet;Chylonia
+1634;2025/OGM/0004;65;F;internet;Oksywie
+1635;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wzgórze Św. Maksymiliana
+1636;2025/OGM/0004;35;M;internet;Karwiny
+1637;2025/OGM/0004;18;F;internet;Dąbrowa
+1638;2025/OGM/0004,2025/OGM/0012;37;F;internet;Witomino
+1639;2025/OGM/0004;71;M;internet;Wielki Kack
+1640;2025/OGM/0004,2025/OGM/0012;22;M;internet;Śródmieście
+1641;2025/OGM/0004,2025/OGM/0012;43;F;internet;Grabówek
+1642;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+1643;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+1644;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+1645;2025/OGM/0012;38;F;internet;Chylonia
+1646;2025/OGM/0012;35;F;internet;Mały Kack
+1648;2025/OGM/0004;43;F;internet;Wielki Kack
+1649;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chylonia
+1650;2025/OGM/0004,2025/OGM/0012;38;M;internet;Pogórze
+1651;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wzgórze Św. Maksymiliana
+1652;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+1653;2025/OGM/0004,2025/OGM/0012;52;M;internet;Wielki Kack
+1655;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+1656;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chwarzno-Wiczlino
+1657;2025/OGM/0004;50;F;internet;Witomino
+1658;2025/OGM/0004,2025/OGM/0012;15;F;internet;Dąbrowa
+1659;2025/OGM/0012;42;F;internet;Obłuże
+1660;2025/OGM/0004;41;F;internet;Grabówek
+1661;2025/OGM/0004,2025/OGM/0012;44;M;internet;Obłuże
+1662;2025/OGM/0004;40;M;internet;Chylonia
+1663;2025/OGM/0004,2025/OGM/0012;32;M;internet;Pogórze
+1664;2025/OGM/0004,2025/OGM/0012;6;F;internet;Obłuże
+1665;2025/OGM/0004,2025/OGM/0012;26;F;internet;Dąbrowa
+1666;2025/OGM/0004,2025/OGM/0012;13;M;internet;Obłuże
+1667;2025/OGM/0004,2025/OGM/0012;69;F;internet;Oksywie
+1668;2025/OGM/0004,2025/OGM/0012;43;F;internet;Grabówek
+1669;2025/OGM/0004;31;F;internet;Wielki Kack
+1670;2025/OGM/0004,2025/OGM/0012;43;M;internet;Wielki Kack
+1671;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+1672;2025/OGM/0004;38;F;internet;Mały Kack
+1673;2025/OGM/0004;50;F;internet;Oksywie
+1674;2025/OGM/0012;29;F;internet;Pustki Cisowskie-Demptowo
+1675;2025/OGM/0004,2025/OGM/0012;48;M;internet;Grabówek
+1676;2025/OGM/0004;5;M;internet;Mały Kack
+1677;2025/OGM/0004,2025/OGM/0012;63;F;internet;Babie Doły
+1678;2025/OGM/0012;30;F;internet;Oksywie
+1680;2025/OGM/0004;63;F;internet;Witomino
+1681;2025/OGM/0004;55;F;internet;Chwarzno-Wiczlino
+1682;2025/OGM/0004;61;M;internet;Grabówek
+1683;2025/OGM/0004,2025/OGM/0012;52;F;internet;Babie Doły
+1684;2025/OGM/0012;61;F;internet;Pustki Cisowskie-Demptowo
+1685;2025/OGM/0004;46;M;internet;Grabówek
+1686;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+1689;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chylonia
+1690;2025/OGM/0004;32;M;internet;Cisowa
+1691;2025/OGM/0004;39;F;internet;Wielki Kack
+1692;2025/OGM/0004;47;F;internet;Pogórze
+1693;2025/OGM/0012;38;M;internet;Wielki Kack
+1694;2025/OGM/0012;55;M;internet;Chwarzno-Wiczlino
+1695;2025/OGM/0012;70;F;internet;
+1696;2025/OGM/0004;31;F;internet;Oksywie
+1697;2025/OGM/0004;77;F;internet;Obłuże
+1698;2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+1699;2025/OGM/0004,2025/OGM/0012;49;M;internet;Karwiny
+1700;2025/OGM/0004;5;M;internet;Oksywie
+1701;2025/OGM/0004;78;F;internet;Obłuże
+1702;2025/OGM/0004,2025/OGM/0012;70;M;internet;Mały Kack
+1703;2025/OGM/0012;51;F;internet;Kamienna Góra
+1704;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+1705;2025/OGM/0004;30;M;internet;Działki Leśne
+1706;2025/OGM/0004;1;M;internet;Wielki Kack
+1707;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+1708;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chylonia
+1709;2025/OGM/0004;56;M;internet;Oksywie
+1710;2025/OGM/0012;32;F;internet;Chylonia
+1711;2025/OGM/0004,2025/OGM/0012;17;F;internet;Chylonia
+1712;2025/OGM/0004;27;M;internet;Oksywie
+1713;2025/OGM/0012;44;F;internet;Mały Kack
+1714;2025/OGM/0004;29;M;internet;Śródmieście
+1715;2025/OGM/0012;45;F;internet;Śródmieście
+1716;2025/OGM/0004;41;M;internet;Oksywie
+1717;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chylonia
+1718;2025/OGM/0004,2025/OGM/0012;46;F;internet;Śródmieście
+1719;2025/OGM/0004;32;F;internet;Chylonia
+1720;2025/OGM/0004;44;F;internet;Leszczynki
+1721;2025/OGM/0004;24;F;internet;Śródmieście
+1724;2025/OGM/0004;32;M;internet;Chylonia
+1726;2025/OGM/0012;40;F;internet;Witomino
+1727;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+1728;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+1730;2025/OGM/0004;40;M;internet;Witomino
+1731;2025/OGM/0004;47;M;internet;Kamienna Góra
+1733;2025/OGM/0004;52;M;internet;Pustki Cisowskie-Demptowo
+1734;2025/OGM/0004;61;M;internet;Wielki Kack
+1735;2025/OGM/0004;51;F;internet;Chylonia
+1737;2025/OGM/0004,2025/OGM/0012;40;M;internet;Dąbrowa
+1738;2025/OGM/0012;65;F;internet;Działki Leśne
+1739;2025/OGM/0004,2025/OGM/0012;56;M;internet;Dąbrowa
+1740;2025/OGM/0004;14;M;internet;Wielki Kack
+1741;2025/OGM/0004;47;F;internet;Chwarzno-Wiczlino
+1742;2025/OGM/0004;86;F;internet;Działki Leśne
+1743;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+1744;2025/OGM/0004;44;F;internet;Obłuże
+1745;2025/OGM/0004,2025/OGM/0012;36;M;internet;Grabówek
+1746;2025/OGM/0012;35;F;internet;Witomino
+1747;2025/OGM/0004;32;M;internet;Chylonia
+1748;2025/OGM/0004,2025/OGM/0012;37;M;internet;Witomino
+1749;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+1750;2025/OGM/0012;49;F;internet;Chylonia
+1751;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+1752;2025/OGM/0004;55;F;internet;Redłowo
+1753;2025/OGM/0004;72;F;internet;Karwiny
+1754;2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+1755;2025/OGM/0004;37;F;internet;Obłuże
+1756;2025/OGM/0004,2025/OGM/0012;41;M;internet;Śródmieście
+1757;2025/OGM/0004;44;F;internet;Mały Kack
+1758;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+1759;2025/OGM/0004,2025/OGM/0012;49;M;internet;Witomino
+1760;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+1761;2025/OGM/0004,2025/OGM/0012;48;F;internet;Kamienna Góra
+1762;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+1763;2025/OGM/0004,2025/OGM/0012;48;M;internet;Działki Leśne
+1764;2025/OGM/0004,2025/OGM/0012;28;F;internet;Orłowo
+1766;2025/OGM/0004,2025/OGM/0012;25;M;internet;Oksywie
+1767;2025/OGM/0004,2025/OGM/0012;46;M;internet;Mały Kack
+1768;2025/OGM/0004;26;F;internet;Pustki Cisowskie-Demptowo
+1769;2025/OGM/0004,2025/OGM/0012;46;M;internet;Karwiny
+1770;2025/OGM/0012;49;M;internet;Wielki Kack
+1771;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+1772;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pogórze
+1773;2025/OGM/0012;44;F;internet;Wielki Kack
+1774;2025/OGM/0004,2025/OGM/0012;39;F;internet;Śródmieście
+1775;2025/OGM/0004;68;M;internet;Wielki Kack
+1776;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+1777;2025/OGM/0004,2025/OGM/0012;35;M;internet;Oksywie
+1778;2025/OGM/0004;46;M;internet;Mały Kack
+1779;2025/OGM/0004,2025/OGM/0012;52;M;internet;Mały Kack
+1780;2025/OGM/0004;67;F;internet;Wielki Kack
+1781;2025/OGM/0004;21;M;internet;Chwarzno-Wiczlino
+1782;2025/OGM/0004;16;M;internet;Wielki Kack
+1783;2025/OGM/0004;31;M;internet;Grabówek
+1785;2025/OGM/0004,2025/OGM/0012;59;F;internet;Pustki Cisowskie-Demptowo
+1786;2025/OGM/0012;31;M;internet;Witomino
+1787;2025/OGM/0004;40;F;internet;Wielki Kack
+1788;2025/OGM/0012;33;M;internet;Mały Kack
+1789;2025/OGM/0004,2025/OGM/0012;43;M;internet;Śródmieście
+1790;2025/OGM/0004,2025/OGM/0012;19;F;internet;Dąbrowa
+1792;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+1793;2025/OGM/0004,2025/OGM/0012;44;F;internet;Obłuże
+1794;2025/OGM/0012;42;M;internet;Działki Leśne
+1795;2025/OGM/0012;42;M;internet;Chylonia
+1796;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+1797;2025/OGM/0004;32;M;internet;Leszczynki
+1798;2025/OGM/0012;31;F;internet;Wielki Kack
+1799;2025/OGM/0004,2025/OGM/0012;28;M;internet;Mały Kack
+1801;2025/OGM/0004;36;F;internet;Wielki Kack
+1802;2025/OGM/0004;37;F;internet;Wielki Kack
+1803;2025/OGM/0004,2025/OGM/0012;26;M;internet;Wzgórze Św. Maksymiliana
+1804;2025/OGM/0004;36;F;internet;Oksywie
+1805;2025/OGM/0004;64;M;internet;Karwiny
+1806;2025/OGM/0004;26;M;internet;Witomino
+1810;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+1811;2025/OGM/0004;19;M;internet;Cisowa
+1814;2025/OGM/0004,2025/OGM/0012;44;F;internet;Redłowo
+1815;2025/OGM/0004,2025/OGM/0012;52;F;internet;Oksywie
+1816;2025/OGM/0012;39;F;internet;Mały Kack
+1817;2025/OGM/0004,2025/OGM/0012;42;F;internet;Cisowa
+1818;2025/OGM/0004;35;F;internet;Mały Kack
+1819;2025/OGM/0004;34;F;internet;Chylonia
+1820;2025/OGM/0012;9;F;internet;Mały Kack
+1821;2025/OGM/0004;48;F;internet;Śródmieście
+1822;2025/OGM/0004,2025/OGM/0012;9;F;internet;Redłowo
+1823;2025/OGM/0012;6;M;internet;Mały Kack
+1824;2025/OGM/0012;41;F;internet;Mały Kack
+1825;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+1826;2025/OGM/0004;61;M;internet;Chylonia
+1827;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+1828;2025/OGM/0004;36;F;internet;Obłuże
+1829;2025/OGM/0004,2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+1831;2025/OGM/0012;44;F;internet;Witomino
+1834;2025/OGM/0012;79;M;internet;Mały Kack
+1835;2025/OGM/0004;22;M;internet;Oksywie
+1836;2025/OGM/0004;29;M;internet;Wielki Kack
+1837;2025/OGM/0004;36;M;internet;Cisowa
+1838;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+1839;2025/OGM/0012;47;F;internet;Chylonia
+1840;2025/OGM/0004,2025/OGM/0012;40;F;internet;Karwiny
+1841;2025/OGM/0004,2025/OGM/0012;34;M;internet;Śródmieście
+1842;2025/OGM/0004;47;M;internet;Dąbrowa
+1843;2025/OGM/0004,2025/OGM/0012;41;F;internet;Cisowa
+1844;2025/OGM/0012;46;M;internet;Chylonia
+1845;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+1846;2025/OGM/0004,2025/OGM/0012;32;M;internet;Działki Leśne
+1847;2025/OGM/0012;39;F;internet;Mały Kack
+1848;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+1849;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+1850;2025/OGM/0004,2025/OGM/0012;11;F;internet;Działki Leśne
+1851;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+1852;2025/OGM/0012;38;F;internet;Wzgórze Św. Maksymiliana
+1853;2025/OGM/0012;42;M;internet;Śródmieście
+1854;2025/OGM/0004;50;M;internet;Wielki Kack
+1855;2025/OGM/0004;35;F;internet;Chylonia
+1857;2025/OGM/0004,2025/OGM/0012;33;M;internet;Mały Kack
+1859;2025/OGM/0004,2025/OGM/0012;21;M;internet;Chwarzno-Wiczlino
+1860;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+1861;2025/OGM/0004,2025/OGM/0012;32;F;internet;Witomino
+1863;2025/OGM/0004;39;M;internet;Pogórze
+1864;2025/OGM/0004,2025/OGM/0012;30;M;internet;Wielki Kack
+1865;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+1866;2025/OGM/0012;34;F;internet;Babie Doły
+1868;2025/OGM/0004;41;F;internet;Wzgórze Św. Maksymiliana
+1869;2025/OGM/0004;71;F;internet;Wzgórze Św. Maksymiliana
+1870;2025/OGM/0004,2025/OGM/0012;73;F;internet;Witomino
+1871;2025/OGM/0004,2025/OGM/0012;77;M;internet;Witomino
+1872;2025/OGM/0012;31;M;internet;Cisowa
+1873;2025/OGM/0004;11;F;internet;Wielki Kack
+1874;2025/OGM/0004;28;M;internet;Chylonia
+1876;2025/OGM/0004,2025/OGM/0012;31;F;internet;Karwiny
+1877;2025/OGM/0004,2025/OGM/0012;43;M;internet;Wielki Kack
+1878;2025/OGM/0004,2025/OGM/0012;26;M;internet;Śródmieście
+1879;2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+1880;2025/OGM/0004,2025/OGM/0012;13;F;internet;Wielki Kack
+1881;2025/OGM/0004,2025/OGM/0012;11;F;internet;Wielki Kack
+1882;2025/OGM/0004;71;F;internet;Wielki Kack
+1883;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+1884;2025/OGM/0004,2025/OGM/0012;56;M;internet;Chwarzno-Wiczlino
+1885;2025/OGM/0004,2025/OGM/0012;60;F;internet;Śródmieście
+1886;2025/OGM/0012;37;F;internet;Chylonia
+1887;2025/OGM/0004;61;M;internet;Wielki Kack
+1888;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+1889;2025/OGM/0004,2025/OGM/0012;5;F;internet;Mały Kack
+1890;2025/OGM/0004;40;F;internet;Redłowo
+1891;2025/OGM/0004;45;F;internet;Dąbrowa
+1892;2025/OGM/0012;34;M;internet;Wzgórze Św. Maksymiliana
+1893;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+1894;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+1895;2025/OGM/0004;46;M;internet;Cisowa
+1897;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+1900;2025/OGM/0012;48;M;internet;Kamienna Góra
+1903;2025/OGM/0004;47;F;internet;Dąbrowa
+1905;2025/OGM/0004,2025/OGM/0012;34;F;internet;Obłuże
+1906;2025/OGM/0004;61;F;internet;Chylonia
+1907;2025/OGM/0004;38;F;internet;Babie Doły
+1908;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+1910;2025/OGM/0004,2025/OGM/0012;32;F;internet;Obłuże
+1911;2025/OGM/0004;70;F;internet;Karwiny
+1912;2025/OGM/0004;42;M;internet;Babie Doły
+1913;2025/OGM/0004;39;F;internet;Mały Kack
+1914;2025/OGM/0004;62;F;internet;Wzgórze Św. Maksymiliana
+1915;2025/OGM/0004;9;F;internet;Babie Doły
+1916;2025/OGM/0004;49;M;internet;Chylonia
+1917;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+1918;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+1920;2025/OGM/0004;35;F;internet;Mały Kack
+1921;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+1922;2025/OGM/0004,2025/OGM/0012;50;F;internet;Babie Doły
+1923;2025/OGM/0004;46;M;internet;Mały Kack
+1924;2025/OGM/0004;67;F;internet;Wielki Kack
+1925;2025/OGM/0004;51;M;internet;Babie Doły
+1926;2025/OGM/0004,2025/OGM/0012;54;M;internet;Wielki Kack
+1927;2025/OGM/0012;48;M;internet;Pustki Cisowskie-Demptowo
+1928;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+1930;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+1931;2025/OGM/0004,2025/OGM/0012;79;F;internet;Wielki Kack
+1932;2025/OGM/0004;30;M;internet;Obłuże
+1933;2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+1934;2025/OGM/0004;33;M;internet;Wielki Kack
+1935;2025/OGM/0004,2025/OGM/0012;22;F;internet;Babie Doły
+1936;2025/OGM/0004;31;F;internet;Babie Doły
+1937;2025/OGM/0004;30;F;internet;Witomino
+1938;2025/OGM/0004;25;M;internet;Śródmieście
+1939;2025/OGM/0004;44;F;internet;Witomino
+1940;2025/OGM/0004,2025/OGM/0012;51;F;internet;Witomino
+1941;2025/OGM/0004;9;M;internet;Babie Doły
+1942;2025/OGM/0004;23;M;internet;Chwarzno-Wiczlino
+1943;2025/OGM/0004,2025/OGM/0012;5;M;internet;Babie Doły
+1944;2025/OGM/0004;44;M;internet;Wielki Kack
+1945;2025/OGM/0004;11;F;internet;Babie Doły
+1946;2025/OGM/0004;42;F;internet;Wielki Kack
+1947;2025/OGM/0004,2025/OGM/0012;51;F;internet;Babie Doły
+1948;2025/OGM/0004;33;M;internet;Chylonia
+1949;2025/OGM/0004;50;M;internet;Chylonia
+1951;2025/OGM/0004,2025/OGM/0012;37;F;internet;Śródmieście
+1954;2025/OGM/0004;33;F;internet;Karwiny
+1955;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+1956;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+1957;2025/OGM/0012;56;M;internet;Chylonia
+1958;2025/OGM/0004,2025/OGM/0012;78;F;internet;Śródmieście
+1959;2025/OGM/0004,2025/OGM/0012;53;M;internet;Babie Doły
+1960;2025/OGM/0004,2025/OGM/0012;53;M;internet;Witomino
+1961;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+1962;2025/OGM/0004;44;M;internet;Kamienna Góra
+1963;2025/OGM/0012;26;M;internet;Chylonia
+1964;2025/OGM/0012;49;M;internet;Działki Leśne
+1965;2025/OGM/0004;30;F;internet;Mały Kack
+1967;2025/OGM/0004,2025/OGM/0012;50;M;internet;Cisowa
+1968;2025/OGM/0004;31;M;internet;Witomino
+1969;2025/OGM/0004;57;F;internet;Dąbrowa
+1971;2025/OGM/0004;37;M;internet;Chylonia
+1972;2025/OGM/0004;36;F;internet;Wielki Kack
+1973;2025/OGM/0004;44;M;internet;Obłuże
+1974;2025/OGM/0004,2025/OGM/0012;58;M;internet;Wzgórze Św. Maksymiliana
+1975;2025/OGM/0012;27;M;internet;Śródmieście
+1976;2025/OGM/0004,2025/OGM/0012;60;F;internet;Grabówek
+1977;2025/OGM/0004;36;F;internet;Wielki Kack
+1978;2025/OGM/0004;51;F;internet;Chylonia
+1979;2025/OGM/0004;36;M;internet;Oksywie
+1980;2025/OGM/0012;64;M;internet;Obłuże
+1981;2025/OGM/0004;37;M;internet;Wielki Kack
+1982;2025/OGM/0004;65;F;internet;Śródmieście
+1984;2025/OGM/0004,2025/OGM/0012;35;F;internet;Babie Doły
+1985;2025/OGM/0004;32;F;internet;Babie Doły
+1986;2025/OGM/0004;7;F;internet;Cisowa
+1987;2025/OGM/0012;52;F;internet;Orłowo
+1988;2025/OGM/0004,2025/OGM/0012;52;M;internet;Chylonia
+1989;2025/OGM/0004;20;F;internet;Pustki Cisowskie-Demptowo
+1990;2025/OGM/0004;41;F;internet;Wielki Kack
+1991;2025/OGM/0004,2025/OGM/0012;25;M;internet;Dąbrowa
+1992;2025/OGM/0012;52;M;internet;Orłowo
+1993;2025/OGM/0004;24;F;internet;Witomino
+1994;2025/OGM/0012;39;F;internet;Witomino
+1995;2025/OGM/0004;26;F;internet;Wielki Kack
+1996;2025/OGM/0012;20;F;internet;Orłowo
+1997;2025/OGM/0004;44;F;internet;Babie Doły
+1998;2025/OGM/0004;39;F;internet;Witomino
+1999;2025/OGM/0004,2025/OGM/0012;26;F;internet;Wielki Kack
+2000;2025/OGM/0004;57;F;internet;Wielki Kack
+2001;2025/OGM/0004;40;M;internet;Witomino
+2002;2025/OGM/0004;62;M;internet;Wielki Kack
+2003;2025/OGM/0004;12;F;internet;Witomino
+2005;2025/OGM/0004;37;F;internet;Chylonia
+2006;2025/OGM/0004;7;F;internet;Witomino
+2007;2025/OGM/0012;33;M;internet;Śródmieście
+2008;2025/OGM/0004;32;F;internet;Chylonia
+2010;2025/OGM/0004,2025/OGM/0012;33;F;internet;Witomino
+2013;2025/OGM/0004,2025/OGM/0012;28;M;internet;Witomino
+2014;2025/OGM/0004;7;F;internet;Cisowa
+2015;2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+2017;2025/OGM/0004;29;F;internet;Wielki Kack
+2018;2025/OGM/0004,2025/OGM/0012;41;F;internet;Kamienna Góra
+2019;2025/OGM/0012;27;M;internet;Oksywie
+2020;2025/OGM/0004;39;M;internet;Chylonia
+2021;2025/OGM/0004,2025/OGM/0012;80;F;internet;Chwarzno-Wiczlino
+2023;2025/OGM/0012;40;F;internet;Witomino
+2024;2025/OGM/0012;47;M;internet;Kamienna Góra
+2025;2025/OGM/0012;33;F;internet;Witomino
+2026;2025/OGM/0004,2025/OGM/0012;33;F;internet;Witomino
+2027;2025/OGM/0004;38;M;internet;Witomino
+2028;2025/OGM/0004;42;M;internet;Witomino
+2030;2025/OGM/0012;32;M;internet;Witomino
+2031;2025/OGM/0004;37;M;internet;Obłuże
+2032;2025/OGM/0004;42;F;internet;Wielki Kack
+2033;2025/OGM/0004;32;F;internet;Wielki Kack
+2034;2025/OGM/0004,2025/OGM/0012;32;F;internet;Oksywie
+2036;2025/OGM/0004;4;M;internet;Wielki Kack
+2037;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+2038;2025/OGM/0004;26;F;internet;Chylonia
+2040;2025/OGM/0012;36;F;internet;Witomino
+2041;2025/OGM/0004;72;M;internet;Chylonia
+2043;2025/OGM/0004;60;M;internet;Wielki Kack
+2044;2025/OGM/0004;41;M;internet;Dąbrowa
+2045;2025/OGM/0004;30;F;internet;Karwiny
+2046;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+2047;2025/OGM/0004;24;M;internet;Wielki Kack
+2048;2025/OGM/0004;65;F;internet;Wzgórze Św. Maksymiliana
+2049;2025/OGM/0004;44;F;internet;Chylonia
+2050;2025/OGM/0004;50;M;internet;Babie Doły
+2051;2025/OGM/0004;40;M;internet;Obłuże
+2052;2025/OGM/0004,2025/OGM/0012;29;M;internet;Dąbrowa
+2053;2025/OGM/0004;48;F;internet;Witomino
+2054;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+2055;2025/OGM/0004,2025/OGM/0012;72;M;internet;Kamienna Góra
+2056;2025/OGM/0004;27;M;internet;Pogórze
+2057;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chylonia
+2059;2025/OGM/0004;89;F;internet;Redłowo
+2060;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+2061;2025/OGM/0004,2025/OGM/0012;24;F;internet;Redłowo
+2063;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+2064;2025/OGM/0004,2025/OGM/0012;23;F;internet;Wielki Kack
+2065;2025/OGM/0004;51;M;internet;Wielki Kack
+2066;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+2067;2025/OGM/0004,2025/OGM/0012;25;F;internet;Grabówek
+2068;2025/OGM/0004;33;M;internet;Wielki Kack
+2069;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+2071;2025/OGM/0004;54;F;internet;Leszczynki
+2072;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+2073;2025/OGM/0004,2025/OGM/0012;20;M;internet;Obłuże
+2074;2025/OGM/0004;36;F;internet;Obłuże
+2075;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+2076;2025/OGM/0004;44;F;internet;Karwiny
+2077;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+2078;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+2079;2025/OGM/0004;32;M;internet;Kamienna Góra
+2080;2025/OGM/0004;47;M;internet;Śródmieście
+2081;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+2082;2025/OGM/0004,2025/OGM/0012;32;F;internet;Oksywie
+2083;2025/OGM/0004;2;M;internet;Orłowo
+2084;2025/OGM/0004;45;F;internet;Karwiny
+2085;2025/OGM/0004;21;M;internet;Chwarzno-Wiczlino
+2086;2025/OGM/0004;51;F;internet;Dąbrowa
+2087;2025/OGM/0012;40;F;internet;Witomino
+2088;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+2089;2025/OGM/0004;42;F;internet;Obłuże
+2090;2025/OGM/0004;54;F;internet;Wielki Kack
+2091;2025/OGM/0012;46;F;internet;Chylonia
+2092;2025/OGM/0004,2025/OGM/0012;65;F;internet;Dąbrowa
+2093;2025/OGM/0004,2025/OGM/0012;31;F;internet;Śródmieście
+2094;2025/OGM/0012;31;F;internet;Mały Kack
+2095;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+2096;2025/OGM/0004;83;F;internet;Chylonia
+2097;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chylonia
+2098;2025/OGM/0004,2025/OGM/0012;21;M;internet;Witomino
+2099;2025/OGM/0012;65;F;internet;Chwarzno-Wiczlino
+2101;2025/OGM/0004;42;M;internet;Chylonia
+2102;2025/OGM/0004,2025/OGM/0012;28;F;internet;Cisowa
+2103;2025/OGM/0004,2025/OGM/0012;54;F;internet;Chylonia
+2104;2025/OGM/0004;38;M;internet;Obłuże
+2105;2025/OGM/0012;42;F;internet;Mały Kack
+2106;2025/OGM/0004;49;F;internet;Chylonia
+2107;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+2108;2025/OGM/0004,2025/OGM/0012;36;M;internet;Witomino
+2109;2025/OGM/0004,2025/OGM/0012;34;F;internet;Witomino
+2110;2025/OGM/0004,2025/OGM/0012;59;M;internet;Chylonia
+2111;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wielki Kack
+2112;2025/OGM/0004,2025/OGM/0012;27;F;internet;Chwarzno-Wiczlino
+2113;2025/OGM/0004;51;F;internet;Oksywie
+2114;2025/OGM/0004;55;F;internet;Cisowa
+2115;2025/OGM/0012;39;F;internet;Oksywie
+2116;2025/OGM/0012;7;M;internet;Mały Kack
+2117;2025/OGM/0004;30;M;internet;Wielki Kack
+2118;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+2119;2025/OGM/0004;23;M;internet;Witomino
+2120;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+2121;2025/OGM/0012;44;F;internet;Wielki Kack
+2122;2025/OGM/0004,2025/OGM/0012;86;F;internet;Śródmieście
+2123;2025/OGM/0004;36;F;internet;Witomino
+2124;2025/OGM/0004;44;M;internet;Wielki Kack
+2125;2025/OGM/0004,2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+2127;2025/OGM/0004;41;F;internet;Pustki Cisowskie-Demptowo
+2128;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+2129;2025/OGM/0004;39;F;internet;Wielki Kack
+2130;2025/OGM/0004;46;F;internet;Wielki Kack
+2131;2025/OGM/0004;50;F;internet;Redłowo
+2132;2025/OGM/0004;52;F;internet;Witomino
+2133;2025/OGM/0004,2025/OGM/0012;28;M;internet;Leszczynki
+2134;2025/OGM/0004,2025/OGM/0012;40;F;internet;Dąbrowa
+2135;2025/OGM/0004,2025/OGM/0012;56;F;internet;Karwiny
+2136;2025/OGM/0004;42;M;internet;Wielki Kack
+2137;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+2138;2025/OGM/0004;44;F;internet;Dąbrowa
+2139;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+2140;2025/OGM/0004;30;M;internet;Mały Kack
+2142;2025/OGM/0004;33;F;internet;Wielki Kack
+2143;2025/OGM/0004;58;F;internet;Karwiny
+2144;2025/OGM/0004;44;F;internet;Mały Kack
+2146;2025/OGM/0012;65;F;internet;Witomino
+2147;2025/OGM/0004;37;F;internet;Grabówek
+2148;2025/OGM/0004,2025/OGM/0012;43;F;internet;Dąbrowa
+2149;2025/OGM/0004;62;F;internet;Wielki Kack
+2150;2025/OGM/0004,2025/OGM/0012;58;F;internet;Leszczynki
+2152;2025/OGM/0004,2025/OGM/0012;21;F;internet;Chwarzno-Wiczlino
+2153;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+2154;2025/OGM/0004;80;M;internet;Redłowo
+2155;2025/OGM/0004,2025/OGM/0012;49;M;internet;Wzgórze Św. Maksymiliana
+2156;2025/OGM/0012;37;F;internet;Chylonia
+2157;2025/OGM/0012;46;M;internet;Chylonia
+2158;2025/OGM/0004;39;F;internet;Cisowa
+2159;2025/OGM/0004;31;F;internet;Wielki Kack
+2160;2025/OGM/0012;80;F;internet;Leszczynki
+2161;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+2162;2025/OGM/0012;39;M;internet;Śródmieście
+2163;2025/OGM/0004,2025/OGM/0012;71;F;internet;Pogórze
+2164;2025/OGM/0012;40;F;internet;Oksywie
+2165;2025/OGM/0004;30;F;internet;Wielki Kack
+2167;2025/OGM/0004;34;F;internet;Chylonia
+2168;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+2169;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+2170;2025/OGM/0004;5;M;internet;Wielki Kack
+2171;2025/OGM/0012;56;F;internet;Chwarzno-Wiczlino
+2172;2025/OGM/0004;22;F;internet;Chwarzno-Wiczlino
+2173;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+2174;2025/OGM/0004;41;M;internet;Chylonia
+2177;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+2178;2025/OGM/0004,2025/OGM/0012;72;F;internet;Dąbrowa
+2180;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+2181;2025/OGM/0012;31;F;internet;Mały Kack
+2183;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+2184;2025/OGM/0004;40;F;internet;Dąbrowa
+2185;2025/OGM/0004;52;F;internet;Wielki Kack
+2186;2025/OGM/0004,2025/OGM/0012;12;M;internet;Pogórze
+2187;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chylonia
+2189;2025/OGM/0004,2025/OGM/0012;51;M;internet;Obłuże
+2190;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+2191;2025/OGM/0004;59;M;internet;Śródmieście
+2192;2025/OGM/0004,2025/OGM/0012;49;F;internet;Pogórze
+2193;2025/OGM/0004,2025/OGM/0012;45;M;internet;Babie Doły
+2194;2025/OGM/0004,2025/OGM/0012;73;F;internet;Pogórze
+2195;2025/OGM/0012;83;M;internet;Redłowo
+2197;2025/OGM/0004;38;M;internet;Chylonia
+2198;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+2199;2025/OGM/0004,2025/OGM/0012;72;M;internet;Pogórze
+2200;2025/OGM/0004;50;F;internet;Grabówek
+2201;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wielki Kack
+2203;2025/OGM/0004;47;F;internet;Leszczynki
+2204;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+2207;2025/OGM/0004;24;F;internet;Wielki Kack
+2209;2025/OGM/0012;9;M;internet;Witomino
+2210;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chylonia
+2211;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+2213;2025/OGM/0004,2025/OGM/0012;6;M;internet;Wielki Kack
+2214;2025/OGM/0004;45;M;internet;Grabówek
+2216;2025/OGM/0004;41;F;internet;Grabówek
+2217;2025/OGM/0004,2025/OGM/0012;32;F;internet;Grabówek
+2218;2025/OGM/0012;33;F;internet;Mały Kack
+2220;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+2221;2025/OGM/0004,2025/OGM/0012;22;F;internet;Wielki Kack
+2222;2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+2223;2025/OGM/0004;37;F;internet;Obłuże
+2224;2025/OGM/0012;62;F;internet;Chylonia
+2225;2025/OGM/0012;48;F;internet;Wielki Kack
+2227;2025/OGM/0004,2025/OGM/0012;77;F;internet;Wielki Kack
+2228;2025/OGM/0004,2025/OGM/0012;34;M;internet;Mały Kack
+2229;2025/OGM/0004,2025/OGM/0012;2;M;internet;Mały Kack
+2230;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+2231;2025/OGM/0004,2025/OGM/0012;28;M;internet;Pustki Cisowskie-Demptowo
+2232;2025/OGM/0012;43;F;internet;Dąbrowa
+2233;2025/OGM/0004,2025/OGM/0012;5;F;internet;Mały Kack
+2234;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+2235;2025/OGM/0012;43;M;internet;Dąbrowa
+2236;2025/OGM/0012;13;F;internet;Dąbrowa
+2237;2025/OGM/0004,2025/OGM/0012;13;F;internet;Wielki Kack
+2238;2025/OGM/0004;27;M;internet;Oksywie
+2239;2025/OGM/0004,2025/OGM/0012;26;F;internet;Grabówek
+2240;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+2241;2025/OGM/0012;11;M;internet;Dąbrowa
+2242;2025/OGM/0004,2025/OGM/0012;33;F;internet;Grabówek
+2243;2025/OGM/0004;63;F;internet;Chwarzno-Wiczlino
+2244;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+2245;2025/OGM/0004,2025/OGM/0012;47;M;internet;Chwarzno-Wiczlino
+2246;2025/OGM/0004;65;M;internet;Chwarzno-Wiczlino
+2247;2025/OGM/0004;40;M;internet;Dąbrowa
+2248;2025/OGM/0004;42;M;internet;Redłowo
+2249;2025/OGM/0004;8;M;internet;Chwarzno-Wiczlino
+2250;2025/OGM/0004;3;M;internet;Chwarzno-Wiczlino
+2251;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+2253;2025/OGM/0004;55;F;internet;Chwarzno-Wiczlino
+2254;2025/OGM/0004;43;F;internet;Wielki Kack
+2256;2025/OGM/0012;46;F;internet;Chylonia
+2257;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+2258;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+2259;2025/OGM/0012;44;F;internet;Chylonia
+2260;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+2261;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+2262;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+2263;2025/OGM/0004;28;F;internet;Witomino
+2264;2025/OGM/0004;25;F;internet;Karwiny
+2265;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+2266;2025/OGM/0004,2025/OGM/0012;57;F;internet;Mały Kack
+2267;2025/OGM/0004,2025/OGM/0012;9;F;internet;Wielki Kack
+2268;2025/OGM/0004,2025/OGM/0012;68;F;internet;Dąbrowa
+2269;2025/OGM/0004,2025/OGM/0012;5;M;internet;Wielki Kack
+2270;2025/OGM/0004;52;F;internet;Grabówek
+2271;2025/OGM/0004;32;F;internet;Mały Kack
+2272;2025/OGM/0004;15;M;internet;Wielki Kack
+2273;2025/OGM/0012;57;F;internet;Babie Doły
+2274;2025/OGM/0004;22;F;internet;Oksywie
+2276;2025/OGM/0004,2025/OGM/0012;72;M;internet;Dąbrowa
+2277;2025/OGM/0004,2025/OGM/0012;29;F;internet;Grabówek
+2278;2025/OGM/0004;45;M;internet;Wielki Kack
+2279;2025/OGM/0004;40;F;internet;Chylonia
+2280;2025/OGM/0004;31;F;internet;Obłuże
+2281;2025/OGM/0004;43;M;internet;Witomino
+2282;2025/OGM/0004;39;M;internet;Grabówek
+2283;2025/OGM/0012;38;F;internet;Wzgórze Św. Maksymiliana
+2284;2025/OGM/0004;46;F;internet;Chylonia
+2285;2025/OGM/0004,2025/OGM/0012;69;F;internet;Wielki Kack
+2286;2025/OGM/0004;43;M;internet;Karwiny
+2287;2025/OGM/0004;44;F;internet;Witomino
+2288;2025/OGM/0004;46;F;internet;Chylonia
+2289;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+2290;2025/OGM/0012;48;F;internet;Chylonia
+2291;2025/OGM/0004;37;F;internet;Babie Doły
+2292;2025/OGM/0012;46;M;internet;Chylonia
+2293;2025/OGM/0004;78;M;internet;Redłowo
+2294;2025/OGM/0004;3;F;internet;Babie Doły
+2295;2025/OGM/0012;13;F;internet;Chylonia
+2296;2025/OGM/0004,2025/OGM/0012;21;M;internet;Babie Doły
+2298;2025/OGM/0004,2025/OGM/0012;64;M;internet;Babie Doły
+2299;2025/OGM/0004,2025/OGM/0012;42;F;internet;Cisowa
+2300;2025/OGM/0012;17;M;internet;Chylonia
+2301;2025/OGM/0004,2025/OGM/0012;57;M;internet;Oksywie
+2304;2025/OGM/0004,2025/OGM/0012;71;M;internet;Cisowa
+2305;2025/OGM/0004,2025/OGM/0012;36;F;internet;Redłowo
+2306;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chylonia
+2307;2025/OGM/0004;61;F;internet;Cisowa
+2309;2025/OGM/0004;47;M;internet;Mały Kack
+2310;2025/OGM/0004,2025/OGM/0012;7;F;internet;Redłowo
+2312;2025/OGM/0004,2025/OGM/0012;3;M;internet;Redłowo
+2313;2025/OGM/0004;39;M;internet;Wielki Kack
+2314;2025/OGM/0004,2025/OGM/0012;64;F;internet;Cisowa
+2315;2025/OGM/0004;77;F;internet;Redłowo
+2316;2025/OGM/0004;41;M;internet;Mały Kack
+2317;2025/OGM/0004;9;F;internet;Wielki Kack
+2318;2025/OGM/0004,2025/OGM/0012;31;F;internet;Mały Kack
+2320;2025/OGM/0004;39;M;internet;Dąbrowa
+2322;2025/OGM/0004;38;M;internet;Chylonia
+2323;2025/OGM/0004;58;F;internet;Wielki Kack
+2324;2025/OGM/0004;37;M;internet;Wielki Kack
+2325;2025/OGM/0004;69;F;internet;Pogórze
+2326;2025/OGM/0004;42;F;internet;Wzgórze Św. Maksymiliana
+2327;2025/OGM/0004;54;M;internet;Chylonia
+2328;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+2330;2025/OGM/0004;47;M;internet;Witomino
+2331;2025/OGM/0004,2025/OGM/0012;21;F;internet;Wielki Kack
+2332;2025/OGM/0004;52;F;internet;Chylonia
+2333;2025/OGM/0004;38;F;internet;Wielki Kack
+2334;2025/OGM/0004,2025/OGM/0012;41;F;internet;Obłuże
+2335;2025/OGM/0004;20;F;internet;Chylonia
+2336;2025/OGM/0004;36;F;internet;Redłowo
+2337;2025/OGM/0004,2025/OGM/0012;71;F;internet;Witomino
+2338;2025/OGM/0004;45;F;internet;Karwiny
+2339;2025/OGM/0004,2025/OGM/0012;90;F;internet;Leszczynki
+2340;2025/OGM/0004,2025/OGM/0012;44;F;internet;Dąbrowa
+2341;2025/OGM/0012;43;F;internet;Kamienna Góra
+2342;2025/OGM/0004;42;M;internet;Witomino
+2343;2025/OGM/0004,2025/OGM/0012;54;F;internet;Karwiny
+2344;2025/OGM/0004,2025/OGM/0012;21;M;internet;Wielki Kack
+2345;2025/OGM/0004;60;F;internet;Wielki Kack
+2346;2025/OGM/0004;45;M;internet;Witomino
+2347;2025/OGM/0004;6;F;internet;Chylonia
+2348;2025/OGM/0012;47;F;internet;Oksywie
+2349;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chylonia
+2350;2025/OGM/0004;51;M;internet;Grabówek
+2351;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chylonia
+2352;2025/OGM/0004,2025/OGM/0012;22;F;internet;Mały Kack
+2353;2025/OGM/0004,2025/OGM/0012;45;M;internet;Dąbrowa
+2356;2025/OGM/0004,2025/OGM/0012;37;F;internet;Witomino
+2357;2025/OGM/0004;37;M;internet;Witomino
+2358;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+2359;2025/OGM/0004,2025/OGM/0012;12;F;internet;Dąbrowa
+2360;2025/OGM/0012;38;F;internet;Witomino
+2361;2025/OGM/0004,2025/OGM/0012;8;F;internet;Witomino
+2362;2025/OGM/0004,2025/OGM/0012;15;F;internet;Dąbrowa
+2364;2025/OGM/0004;34;M;internet;Witomino
+2365;2025/OGM/0004,2025/OGM/0012;2;M;internet;Dąbrowa
+2366;2025/OGM/0004,2025/OGM/0012;9;M;internet;Witomino
+2367;2025/OGM/0004;19;M;internet;Wielki Kack
+2368;2025/OGM/0004,2025/OGM/0012;37;F;internet;Dąbrowa
+2371;2025/OGM/0004,2025/OGM/0012;64;F;internet;Witomino
+2373;2025/OGM/0004;39;M;internet;Wzgórze Św. Maksymiliana
+2375;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+2376;2025/OGM/0012;39;F;internet;Wielki Kack
+2377;2025/OGM/0004,2025/OGM/0012;67;M;internet;Witomino
+2378;2025/OGM/0004;40;F;internet;Wzgórze Św. Maksymiliana
+2379;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+2380;2025/OGM/0012;46;F;internet;Pustki Cisowskie-Demptowo
+2381;2025/OGM/0012;10;F;internet;Wielki Kack
+2382;2025/OGM/0004;4;F;internet;Wzgórze Św. Maksymiliana
+2384;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+2385;2025/OGM/0004,2025/OGM/0012;41;M;internet;Cisowa
+2386;2025/OGM/0004;41;M;internet;Działki Leśne
+2388;2025/OGM/0004,2025/OGM/0012;12;F;internet;Cisowa
+2389;2025/OGM/0012;19;M;internet;Wielki Kack
+2390;2025/OGM/0004;9;F;internet;Wielki Kack
+2391;2025/OGM/0004,2025/OGM/0012;6;F;internet;Cisowa
+2392;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+2393;2025/OGM/0012;34;F;internet;Kamienna Góra
+2395;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+2399;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+2400;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+2401;2025/OGM/0004,2025/OGM/0012;48;F;internet;Witomino
+2402;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+2403;2025/OGM/0004,2025/OGM/0012;24;M;internet;Chylonia
+2404;2025/OGM/0004;39;F;internet;Witomino
+2407;2025/OGM/0012;3;M;internet;Obłuże
+2408;2025/OGM/0012;38;F;internet;Chylonia
+2409;2025/OGM/0004;71;F;internet;Wzgórze Św. Maksymiliana
+2411;2025/OGM/0004;51;F;internet;Wielki Kack
+2412;2025/OGM/0012;51;F;internet;Witomino
+2413;2025/OGM/0012;9;M;internet;Witomino
+2414;2025/OGM/0004;35;M;internet;Wielki Kack
+2417;2025/OGM/0004,2025/OGM/0012;74;M;internet;Redłowo
+2418;2025/OGM/0004,2025/OGM/0012;34;F;internet;Redłowo
+2419;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+2420;2025/OGM/0004,2025/OGM/0012;74;F;internet;Wielki Kack
+2421;2025/OGM/0012;47;M;internet;Witomino
+2422;2025/OGM/0004,2025/OGM/0012;52;F;internet;Chylonia
+2423;2025/OGM/0012;44;M;internet;Pustki Cisowskie-Demptowo
+2424;2025/OGM/0012;47;F;internet;Mały Kack
+2425;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+2426;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+2427;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wielki Kack
+2428;2025/OGM/0004;88;F;internet;Dąbrowa
+2429;2025/OGM/0004;28;M;internet;Grabówek
+2430;2025/OGM/0004;61;F;internet;Dąbrowa
+2431;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+2433;2025/OGM/0004;32;F;internet;Dąbrowa
+2434;2025/OGM/0012;17;M;internet;Mały Kack
+2435;2025/OGM/0004;63;M;internet;Dąbrowa
+2436;2025/OGM/0004;40;F;internet;Mały Kack
+2438;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+2439;2025/OGM/0004;33;F;internet;Dąbrowa
+2440;2025/OGM/0004,2025/OGM/0012;47;F;internet;Witomino
+2442;2025/OGM/0012;5;M;internet;Obłuże
+2445;2025/OGM/0012;37;M;internet;Obłuże
+2446;2025/OGM/0012;20;M;internet;Mały Kack
+2447;2025/OGM/0004,2025/OGM/0012;52;F;internet;Pustki Cisowskie-Demptowo
+2448;2025/OGM/0012;48;M;internet;Mały Kack
+2449;2025/OGM/0004,2025/OGM/0012;51;M;internet;Oksywie
+2450;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+2451;2025/OGM/0004;69;F;internet;Witomino
+2452;2025/OGM/0004,2025/OGM/0012;10;F;internet;Pustki Cisowskie-Demptowo
+2453;2025/OGM/0012;70;F;internet;Mały Kack
+2454;2025/OGM/0004;33;F;internet;Wielki Kack
+2455;2025/OGM/0004,2025/OGM/0012;43;F;internet;Cisowa
+2456;2025/OGM/0004;41;M;internet;Wielki Kack
+2457;2025/OGM/0004;38;F;internet;Wielki Kack
+2458;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pogórze
+2459;2025/OGM/0004;69;M;internet;Wielki Kack
+2460;2025/OGM/0004,2025/OGM/0012;42;F;internet;Dąbrowa
+2462;2025/OGM/0004,2025/OGM/0012;25;F;internet;Pogórze
+2463;2025/OGM/0004,2025/OGM/0012;74;F;internet;Śródmieście
+2464;2025/OGM/0004;61;M;internet;Obłuże
+2465;2025/OGM/0004,2025/OGM/0012;30;F;internet;Wielki Kack
+2466;2025/OGM/0004;35;F;internet;Chylonia
+2467;2025/OGM/0004;54;F;internet;Chylonia
+2468;2025/OGM/0004,2025/OGM/0012;3;F;internet;Wielki Kack
+2469;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+2470;2025/OGM/0012;33;M;internet;Działki Leśne
+2471;2025/OGM/0004;39;F;internet;Cisowa
+2472;2025/OGM/0004,2025/OGM/0012;1;M;internet;Wielki Kack
+2473;2025/OGM/0004;40;F;internet;Obłuże
+2474;2025/OGM/0004,2025/OGM/0012;31;F;internet;Grabówek
+2476;2025/OGM/0004,2025/OGM/0012;74;F;internet;Wielki Kack
+2477;2025/OGM/0004,2025/OGM/0012;74;M;internet;Wielki Kack
+2478;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+2479;2025/OGM/0012;32;M;internet;Pustki Cisowskie-Demptowo
+2480;2025/OGM/0004;41;F;internet;Wielki Kack
+2481;2025/OGM/0004;29;F;internet;Pogórze
+2482;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wielki Kack
+2483;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+2484;2025/OGM/0004;46;F;internet;Cisowa
+2485;2025/OGM/0004,2025/OGM/0012;75;M;internet;Cisowa
+2487;2025/OGM/0004,2025/OGM/0012;8;F;internet;Wielki Kack
+2488;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+2489;2025/OGM/0004;35;M;internet;Pogórze
+2490;2025/OGM/0004,2025/OGM/0012;41;M;internet;Cisowa
+2491;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+2492;2025/OGM/0004;35;M;internet;Oksywie
+2493;2025/OGM/0004,2025/OGM/0012;31;F;internet;Mały Kack
+2494;2025/OGM/0004;44;F;internet;Pogórze
+2495;2025/OGM/0004;29;F;internet;Redłowo
+2496;2025/OGM/0004;36;F;internet;Witomino
+2497;2025/OGM/0004;1;F;internet;Redłowo
+2498;2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+2499;2025/OGM/0004;30;M;internet;Oksywie
+2500;2025/OGM/0004;34;F;internet;Oksywie
+2502;2025/OGM/0004;58;F;internet;Wielki Kack
+2503;2025/OGM/0004;42;F;internet;Karwiny
+2504;2025/OGM/0004;39;M;internet;Wielki Kack
+2505;2025/OGM/0004;33;F;internet;Witomino
+2506;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+2507;2025/OGM/0004;70;M;internet;Witomino
+2508;2025/OGM/0004;28;F;internet;Witomino
+2509;2025/OGM/0004,2025/OGM/0012;66;F;internet;Orłowo
+2510;2025/OGM/0004;83;F;internet;Witomino
+2511;2025/OGM/0004;29;M;internet;Cisowa
+2512;2025/OGM/0004;34;F;internet;Chylonia
+2513;2025/OGM/0004;54;F;internet;Pogórze
+2514;2025/OGM/0004;38;M;internet;Witomino
+2515;2025/OGM/0004;56;F;internet;Cisowa
+2516;2025/OGM/0004;44;F;internet;Witomino
+2517;2025/OGM/0012;37;F;internet;Pogórze
+2518;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+2519;2025/OGM/0004;29;F;internet;Kamienna Góra
+2520;2025/OGM/0004;29;F;internet;Cisowa
+2521;2025/OGM/0004;8;M;internet;Witomino
+2523;2025/OGM/0004;3;M;internet;Obłuże
+2524;2025/OGM/0004;46;M;internet;Orłowo
+2525;2025/OGM/0004;6;M;internet;Witomino
+2527;2025/OGM/0004;7;F;internet;Witomino
+2528;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+2529;2025/OGM/0004;;M;internet;Redłowo
+2530;2025/OGM/0004;15;F;internet;Witomino
+2531;2025/OGM/0004;12;M;internet;Witomino
+2532;2025/OGM/0004;18;F;internet;Cisowa
+2533;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+2534;2025/OGM/0004;44;F;internet;Cisowa
+2535;2025/OGM/0004;29;F;internet;Chylonia
+2536;2025/OGM/0004;34;F;internet;Wielki Kack
+2537;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+2538;2025/OGM/0004;38;M;internet;Wielki Kack
+2539;2025/OGM/0004,2025/OGM/0012;45;F;internet;Oksywie
+2540;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+2542;2025/OGM/0004,2025/OGM/0012;54;F;internet;Cisowa
+2543;2025/OGM/0004;62;F;internet;Wielki Kack
+2544;2025/OGM/0004,2025/OGM/0012;24;F;internet;Dąbrowa
+2545;2025/OGM/0004;21;M;internet;Chylonia
+2546;2025/OGM/0004;61;M;internet;Witomino
+2548;2025/OGM/0004;25;M;internet;Cisowa
+2549;2025/OGM/0004;40;M;internet;Mały Kack
+2550;2025/OGM/0004,2025/OGM/0012;30;M;internet;Grabówek
+2551;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+2552;2025/OGM/0004;34;F;internet;Oksywie
+2553;2025/OGM/0004;32;M;internet;Wzgórze Św. Maksymiliana
+2554;2025/OGM/0004;36;M;internet;Wielki Kack
+2555;2025/OGM/0004,2025/OGM/0012;33;F;internet;Śródmieście
+2556;2025/OGM/0004,2025/OGM/0012;5;F;internet;Chylonia
+2557;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+2558;2025/OGM/0004;6;M;internet;Wielki Kack
+2559;2025/OGM/0004;12;F;internet;Mały Kack
+2560;2025/OGM/0004;6;M;internet;Wielki Kack
+2561;2025/OGM/0004;10;F;internet;Mały Kack
+2562;2025/OGM/0004;2;M;internet;Mały Kack
+2563;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+2564;2025/OGM/0004;49;F;internet;Witomino
+2565;2025/OGM/0004;20;F;internet;Cisowa
+2566;2025/OGM/0004;32;F;internet;Karwiny
+2567;2025/OGM/0004;68;F;internet;Oksywie
+2568;2025/OGM/0004,2025/OGM/0012;50;F;internet;Dąbrowa
+2569;2025/OGM/0004;34;M;internet;Wielki Kack
+2570;2025/OGM/0004,2025/OGM/0012;5;F;internet;Witomino
+2571;2025/OGM/0012;26;M;internet;Witomino
+2572;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chylonia
+2573;2025/OGM/0004;25;F;internet;Witomino
+2574;2025/OGM/0004,2025/OGM/0012;59;M;internet;Wzgórze Św. Maksymiliana
+2575;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+2576;2025/OGM/0004;45;F;internet;Obłuże
+2577;2025/OGM/0004,2025/OGM/0012;31;F;internet;Orłowo
+2578;2025/OGM/0004;27;F;internet;Chwarzno-Wiczlino
+2579;2025/OGM/0012;56;M;internet;Wzgórze Św. Maksymiliana
+2580;2025/OGM/0004,2025/OGM/0012;34;F;internet;Oksywie
+2581;2025/OGM/0004;51;F;internet;Wielki Kack
+2582;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+2583;2025/OGM/0004,2025/OGM/0012;36;F;internet;Karwiny
+2584;2025/OGM/0004;37;M;internet;Śródmieście
+2585;2025/OGM/0004,2025/OGM/0012;54;F;internet;Mały Kack
+2586;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+2587;2025/OGM/0004;48;M;internet;Wielki Kack
+2588;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+2589;2025/OGM/0004,2025/OGM/0012;49;F;internet;Pogórze
+2590;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pogórze
+2591;2025/OGM/0004;39;F;internet;Mały Kack
+2592;2025/OGM/0004;25;F;internet;Obłuże
+2593;2025/OGM/0004;31;F;internet;Redłowo
+2595;2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+2596;2025/OGM/0004;36;M;internet;Śródmieście
+2597;2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+2598;2025/OGM/0004;76;F;internet;Witomino
+2599;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+2600;2025/OGM/0004;30;F;internet;Oksywie
+2601;2025/OGM/0004,2025/OGM/0012;46;F;internet;Pustki Cisowskie-Demptowo
+2603;2025/OGM/0004,2025/OGM/0012;79;F;internet;Wielki Kack
+2605;2025/OGM/0012;29;M;internet;
+2606;2025/OGM/0004;49;F;internet;Pogórze
+2607;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+2609;2025/OGM/0004,2025/OGM/0012;54;F;internet;Karwiny
+2610;2025/OGM/0004,2025/OGM/0012;17;F;internet;Orłowo
+2611;2025/OGM/0004;49;M;internet;Pogórze
+2612;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+2613;2025/OGM/0004;32;F;internet;Mały Kack
+2614;2025/OGM/0004,2025/OGM/0012;46;F;internet;Orłowo
+2615;2025/OGM/0012;40;F;internet;Śródmieście
+2616;2025/OGM/0012;43;F;internet;Witomino
+2617;2025/OGM/0004;76;F;internet;Pogórze
+2618;2025/OGM/0004;35;F;internet;Chylonia
+2619;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+2620;2025/OGM/0004;40;F;internet;Grabówek
+2621;2025/OGM/0004;44;F;internet;Grabówek
+2622;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chylonia
+2623;2025/OGM/0004,2025/OGM/0012;56;F;internet;Grabówek
+2625;2025/OGM/0012;21;M;internet;Działki Leśne
+2626;2025/OGM/0004;35;M;internet;Grabówek
+2627;2025/OGM/0004;46;F;internet;Leszczynki
+2628;2025/OGM/0012;36;M;internet;Działki Leśne
+2629;2025/OGM/0004;55;F;internet;Orłowo
+2631;2025/OGM/0004;32;M;internet;Śródmieście
+2632;2025/OGM/0004;35;F;internet;Wielki Kack
+2633;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+2635;2025/OGM/0004;3;F;internet;Śródmieście
+2636;2025/OGM/0004;39;F;internet;Wielki Kack
+2638;2025/OGM/0004;32;F;internet;Śródmieście
+2639;2025/OGM/0012;63;F;internet;Mały Kack
+2640;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+2641;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+2642;2025/OGM/0004;20;M;internet;Cisowa
+2643;2025/OGM/0004;44;F;internet;Witomino
+2644;2025/OGM/0004;35;M;internet;Grabówek
+2645;2025/OGM/0004;62;F;internet;Grabówek
+2646;2025/OGM/0004;46;M;internet;Wielki Kack
+2647;2025/OGM/0004;55;M;internet;Wielki Kack
+2648;2025/OGM/0004,2025/OGM/0012;46;M;internet;Witomino
+2649;2025/OGM/0004;38;F;internet;Działki Leśne
+2650;2025/OGM/0012;50;F;internet;Chylonia
+2651;2025/OGM/0004;37;F;internet;Witomino
+2652;2025/OGM/0012;;M;internet;Witomino
+2653;2025/OGM/0012;5;M;internet;Witomino
+2654;2025/OGM/0004,2025/OGM/0012;43;M;internet;Orłowo
+2655;2025/OGM/0012;54;M;internet;Chylonia
+2656;2025/OGM/0012;65;F;internet;Witomino
+2657;2025/OGM/0004,2025/OGM/0012;47;M;internet;Dąbrowa
+2658;2025/OGM/0012;30;F;internet;Witomino
+2659;2025/OGM/0004,2025/OGM/0012;58;M;internet;Witomino
+2660;2025/OGM/0012;71;F;internet;Witomino
+2663;2025/OGM/0004,2025/OGM/0012;59;F;internet;Witomino
+2664;2025/OGM/0012;71;M;internet;Witomino
+2665;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+2666;2025/OGM/0004,2025/OGM/0012;43;M;internet;Wielki Kack
+2667;2025/OGM/0004;41;M;internet;Śródmieście
+2668;2025/OGM/0012;50;F;internet;Orłowo
+2669;2025/OGM/0004;38;M;internet;Wielki Kack
+2670;2025/OGM/0004,2025/OGM/0012;35;M;internet;Obłuże
+2671;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+2672;2025/OGM/0004;39;M;internet;Dąbrowa
+2673;2025/OGM/0004,2025/OGM/0012;34;F;internet;Cisowa
+2674;2025/OGM/0004,2025/OGM/0012;33;F;internet;Witomino
+2675;2025/OGM/0004;22;F;internet;Obłuże
+2678;2025/OGM/0012;40;F;internet;Pogórze
+2679;2025/OGM/0012;40;F;internet;Witomino
+2680;2025/OGM/0004;32;F;internet;Redłowo
+2682;2025/OGM/0004,2025/OGM/0012;35;F;internet;Cisowa
+2683;2025/OGM/0012;40;F;internet;Witomino
+2684;2025/OGM/0004,2025/OGM/0012;52;F;internet;Redłowo
+2685;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+2687;2025/OGM/0004;36;F;internet;Mały Kack
+2688;2025/OGM/0004;7;F;internet;Mały Kack
+2689;2025/OGM/0004;4;M;internet;Mały Kack
+2690;2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+2691;2025/OGM/0004;41;F;internet;Mały Kack
+2692;2025/OGM/0004;32;F;internet;Mały Kack
+2693;2025/OGM/0004;1;F;internet;Mały Kack
+2694;2025/OGM/0004;11;M;internet;Mały Kack
+2695;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wzgórze Św. Maksymiliana
+2696;2025/OGM/0004;9;M;internet;Mały Kack
+2697;2025/OGM/0004,2025/OGM/0012;46;F;internet;Karwiny
+2698;2025/OGM/0004;35;M;internet;Mały Kack
+2699;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+2700;2025/OGM/0012;61;F;internet;Chylonia
+2701;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chylonia
+2702;2025/OGM/0004,2025/OGM/0012;64;F;internet;Działki Leśne
+2703;2025/OGM/0004,2025/OGM/0012;29;M;internet;Chylonia
+2704;2025/OGM/0004;30;F;internet;Pustki Cisowskie-Demptowo
+2705;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+2706;2025/OGM/0004;1;M;internet;Pustki Cisowskie-Demptowo
+2707;2025/OGM/0012;70;M;internet;Chylonia
+2708;2025/OGM/0012;18;M;internet;Chylonia
+2709;2025/OGM/0004;39;F;internet;Mały Kack
+2710;2025/OGM/0004,2025/OGM/0012;85;F;internet;Chylonia
+2711;2025/OGM/0012;64;F;internet;Leszczynki
+2712;2025/OGM/0004,2025/OGM/0012;47;F;internet;Śródmieście
+2713;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+2714;2025/OGM/0004,2025/OGM/0012;88;M;internet;Chylonia
+2715;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+2716;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+2717;2025/OGM/0004;19;F;internet;Babie Doły
+2718;2025/OGM/0004,2025/OGM/0012;40;F;internet;Śródmieście
+2720;2025/OGM/0004;36;F;internet;Wielki Kack
+2721;2025/OGM/0012;48;M;internet;Witomino
+2722;2025/OGM/0012;43;F;internet;Śródmieście
+2723;2025/OGM/0004;4;M;internet;Wielki Kack
+2724;2025/OGM/0004;33;F;internet;Oksywie
+2725;2025/OGM/0004,2025/OGM/0012;44;F;internet;Pustki Cisowskie-Demptowo
+2726;2025/OGM/0004;;F;internet;Wielki Kack
+2727;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+2728;2025/OGM/0004;60;F;internet;Wielki Kack
+2729;2025/OGM/0004,2025/OGM/0012;69;F;internet;Karwiny
+2730;2025/OGM/0004,2025/OGM/0012;26;M;internet;Mały Kack
+2731;2025/OGM/0004,2025/OGM/0012;27;M;internet;Śródmieście
+2732;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+2733;2025/OGM/0004;44;M;internet;Wielki Kack
+2734;2025/OGM/0004,2025/OGM/0012;28;F;internet;Grabówek
+2735;2025/OGM/0004;27;M;internet;Witomino
+2736;2025/OGM/0004;42;F;internet;Chylonia
+2737;2025/OGM/0004,2025/OGM/0012;34;M;internet;Śródmieście
+2738;2025/OGM/0004,2025/OGM/0012;47;F;internet;Śródmieście
+2739;2025/OGM/0004;35;F;internet;Śródmieście
+2740;2025/OGM/0004;27;F;internet;Witomino
+2741;2025/OGM/0004;25;M;internet;Leszczynki
+2742;2025/OGM/0004,2025/OGM/0012;33;F;internet;Mały Kack
+2743;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+2744;2025/OGM/0004,2025/OGM/0012;58;F;internet;Kamienna Góra
+2745;2025/OGM/0004,2025/OGM/0012;58;F;internet;Grabówek
+2746;2025/OGM/0004,2025/OGM/0012;38;F;internet;Orłowo
+2747;2025/OGM/0012;49;F;internet;Leszczynki
+2748;2025/OGM/0004;24;F;internet;Grabówek
+2749;2025/OGM/0004,2025/OGM/0012;44;F;internet;Karwiny
+2751;2025/OGM/0004,2025/OGM/0012;53;F;internet;Działki Leśne
+2753;2025/OGM/0012;37;M;internet;Witomino
+2754;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+2755;2025/OGM/0012;11;M;internet;Witomino
+2756;2025/OGM/0012;8;M;internet;Witomino
+2757;2025/OGM/0004;51;M;internet;Wielki Kack
+2758;2025/OGM/0004;37;M;internet;Pogórze
+2759;2025/OGM/0012;49;F;internet;Witomino
+2760;2025/OGM/0004;31;M;internet;Działki Leśne
+2761;2025/OGM/0004;42;M;internet;Mały Kack
+2762;2025/OGM/0004,2025/OGM/0012;30;F;internet;Śródmieście
+2763;2025/OGM/0004,2025/OGM/0012;63;F;internet;Grabówek
+2764;2025/OGM/0004,2025/OGM/0012;42;M;internet;Cisowa
+2765;2025/OGM/0004,2025/OGM/0012;64;M;internet;Grabówek
+2766;2025/OGM/0012;46;F;internet;Witomino
+2767;2025/OGM/0004;23;F;internet;Wielki Kack
+2768;2025/OGM/0004;25;F;internet;Cisowa
+2770;2025/OGM/0004,2025/OGM/0012;41;M;internet;Kamienna Góra
+2771;2025/OGM/0004,2025/OGM/0012;48;M;internet;Mały Kack
+2772;2025/OGM/0004;72;F;internet;Redłowo
+2773;2025/OGM/0004;35;F;internet;Leszczynki
+2774;2025/OGM/0004;41;F;internet;Mały Kack
+2775;2025/OGM/0004;28;F;internet;Wzgórze Św. Maksymiliana
+2776;2025/OGM/0004;33;F;internet;Cisowa
+2777;2025/OGM/0012;36;M;internet;Mały Kack
+2778;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+2779;2025/OGM/0012;40;M;internet;Redłowo
+2780;2025/OGM/0004;57;F;internet;Chwarzno-Wiczlino
+2781;2025/OGM/0004,2025/OGM/0012;53;M;internet;Śródmieście
+2782;2025/OGM/0004,2025/OGM/0012;39;M;internet;Witomino
+2783;2025/OGM/0004;36;M;internet;Grabówek
+2784;2025/OGM/0004;43;M;internet;Witomino
+2785;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wielki Kack
+2786;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+2787;2025/OGM/0004;34;F;internet;Mały Kack
+2788;2025/OGM/0004;16;F;internet;Redłowo
+2789;2025/OGM/0004;35;M;internet;Mały Kack
+2790;2025/OGM/0004,2025/OGM/0012;35;F;internet;Oksywie
+2791;2025/OGM/0004;;F;internet;Mały Kack
+2792;2025/OGM/0004;7;M;internet;Mały Kack
+2794;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wielki Kack
+2795;2025/OGM/0004,2025/OGM/0012;39;F;internet;Orłowo
+2796;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+2797;2025/OGM/0004;40;F;internet;Obłuże
+2798;2025/OGM/0004;34;M;internet;Karwiny
+2799;2025/OGM/0004;42;F;internet;Witomino
+2800;2025/OGM/0004;65;F;internet;Chylonia
+2801;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+2802;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+2803;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+2804;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+2805;2025/OGM/0004,2025/OGM/0012;33;F;internet;Śródmieście
+2806;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+2807;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+2808;2025/OGM/0012;15;M;internet;Pustki Cisowskie-Demptowo
+2809;2025/OGM/0012;41;F;internet;Grabówek
+2810;2025/OGM/0012;13;F;internet;Pustki Cisowskie-Demptowo
+2811;2025/OGM/0004;50;M;internet;Mały Kack
+2812;2025/OGM/0004;46;F;internet;Witomino
+2813;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+2814;2025/OGM/0004,2025/OGM/0012;55;F;internet;Witomino
+2815;2025/OGM/0004;31;M;internet;Mały Kack
+2816;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+2817;2025/OGM/0004;37;F;internet;Dąbrowa
+2818;2025/OGM/0012;39;M;internet;Witomino
+2819;2025/OGM/0004,2025/OGM/0012;3;F;internet;Wielki Kack
+2820;2025/OGM/0012;70;F;internet;Mały Kack
+2821;2025/OGM/0012;64;F;internet;Śródmieście
+2822;2025/OGM/0012;40;M;internet;Śródmieście
+2823;2025/OGM/0004;27;M;internet;Pustki Cisowskie-Demptowo
+2824;2025/OGM/0012;47;F;internet;Witomino
+2825;2025/OGM/0004;72;M;internet;Witomino
+2827;2025/OGM/0004;37;F;internet;Witomino
+2828;2025/OGM/0012;19;F;internet;Grabówek
+2829;2025/OGM/0012;35;F;internet;Babie Doły
+2830;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+2831;2025/OGM/0004;62;F;internet;Wielki Kack
+2832;2025/OGM/0004,2025/OGM/0012;40;M;internet;Babie Doły
+2833;2025/OGM/0012;45;F;internet;Orłowo
+2834;2025/OGM/0004;41;F;internet;Obłuże
+2835;2025/OGM/0004;60;F;internet;Chwarzno-Wiczlino
+2836;2025/OGM/0012;91;M;internet;Wielki Kack
+2837;2025/OGM/0012;38;M;internet;Działki Leśne
+2838;2025/OGM/0012;38;F;internet;Działki Leśne
+2839;2025/OGM/0004;33;F;internet;Cisowa
+2840;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+2841;2025/OGM/0004,2025/OGM/0012;35;F;internet;Babie Doły
+2842;2025/OGM/0004;59;F;internet;Cisowa
+2843;2025/OGM/0004;71;F;internet;Witomino
+2844;2025/OGM/0004,2025/OGM/0012;22;F;internet;Wielki Kack
+2845;2025/OGM/0004;77;M;internet;Obłuże
+2846;2025/OGM/0012;9;M;internet;Witomino
+2847;2025/OGM/0004;47;F;internet;Wielki Kack
+2849;2025/OGM/0004;25;F;internet;Witomino
+2850;2025/OGM/0004;31;F;internet;Wielki Kack
+2852;2025/OGM/0004;36;M;internet;Oksywie
+2853;2025/OGM/0012;7;F;internet;Witomino
+2854;2025/OGM/0004;46;F;internet;Wielki Kack
+2855;2025/OGM/0004;75;F;internet;Obłuże
+2856;2025/OGM/0012;42;M;internet;Witomino
+2857;2025/OGM/0004,2025/OGM/0012;33;F;internet;Mały Kack
+2859;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+2860;2025/OGM/0012;53;F;internet;Chylonia
+2861;2025/OGM/0012;77;F;internet;Mały Kack
+2863;2025/OGM/0004,2025/OGM/0012;;F;internet;Mały Kack
+2864;2025/OGM/0004;45;F;internet;Cisowa
+2865;2025/OGM/0004,2025/OGM/0012;36;M;internet;Mały Kack
+2867;2025/OGM/0012;42;M;internet;Witomino
+2868;2025/OGM/0004,2025/OGM/0012;40;F;internet;Cisowa
+2869;2025/OGM/0004,2025/OGM/0012;35;F;internet;Dąbrowa
+2870;2025/OGM/0004;36;F;internet;Chylonia
+2871;2025/OGM/0012;67;M;internet;Chwarzno-Wiczlino
+2872;2025/OGM/0012;66;F;internet;Chwarzno-Wiczlino
+2874;2025/OGM/0004;39;M;internet;Witomino
+2875;2025/OGM/0012;19;M;internet;Pustki Cisowskie-Demptowo
+2876;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+2877;2025/OGM/0004;39;M;internet;Grabówek
+2878;2025/OGM/0004;45;M;internet;Witomino
+2879;2025/OGM/0004;7;F;internet;Witomino
+2880;2025/OGM/0004,2025/OGM/0012;21;F;internet;Witomino
+2881;2025/OGM/0004;11;M;internet;Witomino
+2882;2025/OGM/0012;36;M;internet;Redłowo
+2883;2025/OGM/0004;27;F;internet;Mały Kack
+2884;2025/OGM/0004,2025/OGM/0012;32;F;internet;Cisowa
+2885;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+2886;2025/OGM/0004;28;F;internet;Karwiny
+2887;2025/OGM/0012;54;F;internet;Pustki Cisowskie-Demptowo
+2888;2025/OGM/0004,2025/OGM/0012;31;F;internet;Działki Leśne
+2889;2025/OGM/0012;28;F;internet;Śródmieście
+2890;2025/OGM/0004;37;F;internet;Witomino
+2891;2025/OGM/0004,2025/OGM/0012;40;F;internet;Cisowa
+2892;2025/OGM/0004,2025/OGM/0012;24;F;internet;Wielki Kack
+2893;2025/OGM/0004;26;M;internet;Wielki Kack
+2894;2025/OGM/0004,2025/OGM/0012;11;F;internet;Wielki Kack
+2895;2025/OGM/0004;32;F;internet;Dąbrowa
+2896;2025/OGM/0004,2025/OGM/0012;28;F;internet;Pogórze
+2897;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+2898;2025/OGM/0004;58;M;internet;Mały Kack
+2899;2025/OGM/0004,2025/OGM/0012;44;F;internet;Grabówek
+2900;2025/OGM/0004;32;M;internet;Dąbrowa
+2901;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+2902;2025/OGM/0004,2025/OGM/0012;37;F;internet;Oksywie
+2903;2025/OGM/0004;28;F;internet;Wielki Kack
+2905;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+2906;2025/OGM/0004;31;F;internet;Chylonia
+2907;2025/OGM/0004;33;F;internet;Chylonia
+2908;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+2909;2025/OGM/0004;37;M;internet;Chylonia
+2910;2025/OGM/0004;46;F;internet;Wielki Kack
+2911;2025/OGM/0004,2025/OGM/0012;41;M;internet;Dąbrowa
+2912;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+2913;2025/OGM/0004,2025/OGM/0012;;F;internet;Chwarzno-Wiczlino
+2914;2025/OGM/0004;33;M;internet;Witomino
+2915;2025/OGM/0004;4;F;internet;Dąbrowa
+2916;2025/OGM/0004;60;M;internet;Dąbrowa
+2917;2025/OGM/0004,2025/OGM/0012;24;F;internet;Obłuże
+2918;2025/OGM/0004;82;M;internet;Cisowa
+2919;2025/OGM/0012;68;F;internet;Śródmieście
+2920;2025/OGM/0004,2025/OGM/0012;64;F;internet;Redłowo
+2921;2025/OGM/0004;65;F;internet;Chwarzno-Wiczlino
+2922;2025/OGM/0004,2025/OGM/0012;52;F;internet;Mały Kack
+2923;2025/OGM/0004,2025/OGM/0012;25;F;internet;Witomino
+2924;2025/OGM/0004;35;M;internet;Mały Kack
+2926;2025/OGM/0004;47;F;internet;Cisowa
+2927;2025/OGM/0004,2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+2928;2025/OGM/0004;40;F;internet;Witomino
+2929;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+2930;2025/OGM/0004;62;F;internet;Witomino
+2931;2025/OGM/0012;33;M;internet;Pustki Cisowskie-Demptowo
+2932;2025/OGM/0004;13;F;internet;Witomino
+2933;2025/OGM/0004;32;M;internet;Witomino
+2934;2025/OGM/0004;10;M;internet;Witomino
+2936;2025/OGM/0004,2025/OGM/0012;20;M;internet;Witomino
+2937;2025/OGM/0004,2025/OGM/0012;37;M;internet;Obłuże
+2938;2025/OGM/0004;42;F;internet;Karwiny
+2941;2025/OGM/0004;49;M;internet;Śródmieście
+2942;2025/OGM/0004,2025/OGM/0012;49;F;internet;Babie Doły
+2943;2025/OGM/0012;32;F;internet;Witomino
+2944;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+2945;2025/OGM/0012;19;M;internet;Wielki Kack
+2946;2025/OGM/0004,2025/OGM/0012;75;M;internet;Witomino
+2947;2025/OGM/0004,2025/OGM/0012;10;F;internet;Witomino
+2948;2025/OGM/0004,2025/OGM/0012;40;F;internet;Grabówek
+2949;2025/OGM/0004;42;M;internet;Mały Kack
+2950;2025/OGM/0004;7;F;internet;Dąbrowa
+2951;2025/OGM/0004,2025/OGM/0012;7;F;internet;Witomino
+2952;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+2953;2025/OGM/0004;10;M;internet;Dąbrowa
+2954;2025/OGM/0004,2025/OGM/0012;40;M;internet;Witomino
+2955;2025/OGM/0004;50;M;internet;Wielki Kack
+2956;2025/OGM/0004,2025/OGM/0012;72;F;internet;Witomino
+2957;2025/OGM/0012;46;F;internet;Mały Kack
+2958;2025/OGM/0012;41;M;internet;Redłowo
+2959;2025/OGM/0004,2025/OGM/0012;40;M;internet;Grabówek
+2960;2025/OGM/0004;20;F;internet;Mały Kack
+2962;2025/OGM/0004;43;M;internet;Karwiny
+2963;2025/OGM/0004,2025/OGM/0012;31;M;internet;Orłowo
+2964;2025/OGM/0004;68;M;internet;Dąbrowa
+2965;2025/OGM/0004;32;M;internet;Oksywie
+2966;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+2967;2025/OGM/0004;68;F;internet;Dąbrowa
+2968;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+2969;2025/OGM/0004;41;F;internet;Wielki Kack
+2970;2025/OGM/0004,2025/OGM/0012;11;M;internet;Wielki Kack
+2971;2025/OGM/0004,2025/OGM/0012;42;F;internet;Witomino
+2972;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chylonia
+2973;2025/OGM/0004,2025/OGM/0012;48;F;internet;Pustki Cisowskie-Demptowo
+2974;2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+2975;2025/OGM/0004,2025/OGM/0012;9;F;internet;Wielki Kack
+2976;2025/OGM/0004,2025/OGM/0012;48;M;internet;Witomino
+2977;2025/OGM/0004,2025/OGM/0012;54;M;internet;Pustki Cisowskie-Demptowo
+2978;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+2979;2025/OGM/0004;21;M;internet;Działki Leśne
+2980;2025/OGM/0004,2025/OGM/0012;15;M;internet;Pustki Cisowskie-Demptowo
+2981;2025/OGM/0004;34;F;internet;Witomino
+2982;2025/OGM/0004;70;M;internet;Cisowa
+2983;2025/OGM/0004,2025/OGM/0012;34;F;internet;Dąbrowa
+2985;2025/OGM/0004,2025/OGM/0012;17;F;internet;Pustki Cisowskie-Demptowo
+2986;2025/OGM/0004;25;F;internet;Obłuże
+2987;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+2988;2025/OGM/0004;47;F;internet;Obłuże
+2989;2025/OGM/0004,2025/OGM/0012;53;F;internet;Cisowa
+2990;2025/OGM/0012;65;F;internet;Pogórze
+2992;2025/OGM/0012;75;M;internet;Mały Kack
+2993;2025/OGM/0004;32;M;internet;Witomino
+2994;2025/OGM/0012;67;M;internet;Pogórze
+2995;2025/OGM/0004,2025/OGM/0012;35;F;internet;Działki Leśne
+2996;2025/OGM/0004;29;F;internet;Obłuże
+2997;2025/OGM/0004,2025/OGM/0012;20;F;internet;Wielki Kack
+2998;2025/OGM/0004,2025/OGM/0012;41;M;internet;Oksywie
+2999;2025/OGM/0004;1;M;internet;Obłuże
+3000;2025/OGM/0004,2025/OGM/0012;36;M;internet;Dąbrowa
+3001;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+3002;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+3003;2025/OGM/0012;84;F;internet;Witomino
+3004;2025/OGM/0004;55;M;internet;Chylonia
+3005;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+3006;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+3007;2025/OGM/0004;30;M;internet;Pustki Cisowskie-Demptowo
+3008;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+3010;2025/OGM/0004;31;M;internet;Chwarzno-Wiczlino
+3011;2025/OGM/0004;24;M;internet;Witomino
+3012;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+3013;2025/OGM/0004,2025/OGM/0012;65;F;internet;Chwarzno-Wiczlino
+3014;2025/OGM/0004;51;M;internet;Wielki Kack
+3015;2025/OGM/0004;16;M;internet;Chwarzno-Wiczlino
+3016;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+3017;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+3018;2025/OGM/0004;33;F;internet;Cisowa
+3019;2025/OGM/0004,2025/OGM/0012;55;F;internet;Mały Kack
+3020;2025/OGM/0004;18;F;internet;Wielki Kack
+3021;2025/OGM/0004;61;M;internet;Chylonia
+3022;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chylonia
+3023;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+3024;2025/OGM/0004,2025/OGM/0012;4;M;internet;Mały Kack
+3026;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+3027;2025/OGM/0004;13;M;internet;Chwarzno-Wiczlino
+3028;2025/OGM/0012;28;M;internet;Witomino
+3029;2025/OGM/0004;41;F;internet;Mały Kack
+3030;2025/OGM/0012;73;M;internet;Witomino
+3031;2025/OGM/0004;34;F;internet;Grabówek
+3032;2025/OGM/0004;30;F;internet;Grabówek
+3033;2025/OGM/0004,2025/OGM/0012;40;M;internet;Obłuże
+3034;2025/OGM/0004;32;F;internet;Chylonia
+3035;2025/OGM/0004;51;M;internet;Mały Kack
+3037;2025/OGM/0004;9;F;internet;Mały Kack
+3038;2025/OGM/0012;75;F;internet;Mały Kack
+3040;2025/OGM/0004,2025/OGM/0012;25;M;internet;Pustki Cisowskie-Demptowo
+3041;2025/OGM/0004;24;F;internet;Cisowa
+3043;2025/OGM/0004;34;M;internet;Chylonia
+3044;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wielki Kack
+3045;2025/OGM/0004,2025/OGM/0012;40;F;internet;Śródmieście
+3046;2025/OGM/0004;42;M;internet;Orłowo
+3047;2025/OGM/0012;37;M;internet;Witomino
+3048;2025/OGM/0004,2025/OGM/0012;81;M;internet;Witomino
+3050;2025/OGM/0004,2025/OGM/0012;42;F;internet;Witomino
+3052;2025/OGM/0004;40;F;internet;Obłuże
+3053;2025/OGM/0012;42;F;internet;Oksywie
+3055;2025/OGM/0004,2025/OGM/0012;53;F;internet;Grabówek
+3056;2025/OGM/0004;41;M;internet;Obłuże
+3057;2025/OGM/0004,2025/OGM/0012;52;F;internet;Dąbrowa
+3058;2025/OGM/0004,2025/OGM/0012;19;F;internet;Chwarzno-Wiczlino
+3059;2025/OGM/0004,2025/OGM/0012;22;M;internet;Działki Leśne
+3060;2025/OGM/0004,2025/OGM/0012;80;F;internet;Witomino
+3061;2025/OGM/0004,2025/OGM/0012;50;F;internet;Witomino
+3062;2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+3063;2025/OGM/0004;39;F;internet;Obłuże
+3064;2025/OGM/0004,2025/OGM/0012;74;F;internet;Witomino
+3065;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+3066;2025/OGM/0004,2025/OGM/0012;52;M;internet;Dąbrowa
+3067;2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+3068;2025/OGM/0004,2025/OGM/0012;24;M;internet;Chwarzno-Wiczlino
+3069;2025/OGM/0004;79;F;internet;Witomino
+3070;2025/OGM/0004;36;F;internet;Witomino
+3071;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+3073;2025/OGM/0004;40;F;internet;Mały Kack
+3074;2025/OGM/0004,2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+3075;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+3076;2025/OGM/0004;61;M;internet;Witomino
+3077;2025/OGM/0012;70;M;internet;Chylonia
+3078;2025/OGM/0004;50;F;internet;Wielki Kack
+3079;2025/OGM/0004;28;M;internet;Wielki Kack
+3080;2025/OGM/0004;27;F;internet;Śródmieście
+3081;2025/OGM/0004;86;F;internet;Witomino
+3083;2025/OGM/0004;4;M;internet;Cisowa
+3084;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+3085;2025/OGM/0004;35;M;internet;Wielki Kack
+3086;2025/OGM/0004;59;F;internet;Pustki Cisowskie-Demptowo
+3087;2025/OGM/0004;1;M;internet;Pustki Cisowskie-Demptowo
+3088;2025/OGM/0004,2025/OGM/0012;67;M;internet;Wielki Kack
+3089;2025/OGM/0004;5;F;internet;Chwarzno-Wiczlino
+3092;2025/OGM/0004;50;F;internet;Działki Leśne
+3093;2025/OGM/0004;50;M;internet;Obłuże
+3094;2025/OGM/0004,2025/OGM/0012;37;F;internet;Śródmieście
+3095;2025/OGM/0004,2025/OGM/0012;41;F;internet;Babie Doły
+3097;2025/OGM/0004;29;M;internet;Chylonia
+3098;2025/OGM/0004,2025/OGM/0012;14;M;internet;Działki Leśne
+3099;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+3100;2025/OGM/0004;33;F;internet;Wielki Kack
+3101;2025/OGM/0004;54;F;internet;Obłuże
+3102;2025/OGM/0012;47;M;internet;Chylonia
+3103;2025/OGM/0012;57;M;internet;Pustki Cisowskie-Demptowo
+3104;2025/OGM/0004;75;F;internet;Chylonia
+3105;2025/OGM/0004;27;M;internet;Witomino
+3106;2025/OGM/0004;52;F;internet;Wzgórze Św. Maksymiliana
+3107;2025/OGM/0004;30;F;internet;Wielki Kack
+3108;2025/OGM/0004;7;M;internet;Wielki Kack
+3109;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+3110;2025/OGM/0004;75;F;internet;Witomino
+3111;2025/OGM/0004;73;M;internet;Wielki Kack
+3112;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wzgórze Św. Maksymiliana
+3113;2025/OGM/0004;35;F;internet;Witomino
+3114;2025/OGM/0004,2025/OGM/0012;60;F;internet;Oksywie
+3115;2025/OGM/0004,2025/OGM/0012;58;F;internet;Wielki Kack
+3116;2025/OGM/0012;40;F;internet;Chylonia
+3117;2025/OGM/0004,2025/OGM/0012;89;M;internet;Karwiny
+3118;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+3119;2025/OGM/0004;33;M;internet;Wielki Kack
+3120;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chylonia
+3121;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+3122;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+3123;2025/OGM/0004;69;F;internet;Cisowa
+3124;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+3125;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+3126;2025/OGM/0004;82;F;internet;Witomino
+3127;2025/OGM/0004,2025/OGM/0012;27;F;internet;Witomino
+3129;2025/OGM/0004,2025/OGM/0012;25;F;internet;Cisowa
+3130;2025/OGM/0004,2025/OGM/0012;57;M;internet;Dąbrowa
+3132;2025/OGM/0004;39;F;internet;Witomino
+3133;2025/OGM/0004,2025/OGM/0012;34;M;internet;Witomino
+3134;2025/OGM/0004;54;M;internet;Pogórze
+3135;2025/OGM/0004;81;M;internet;Witomino
+3136;2025/OGM/0004,2025/OGM/0012;21;M;internet;Cisowa
+3137;2025/OGM/0004;36;M;internet;Obłuże
+3138;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+3139;2025/OGM/0004;40;M;internet;Witomino
+3140;2025/OGM/0004;21;M;internet;Grabówek
+3141;2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+3142;2025/OGM/0004;36;F;internet;Obłuże
+3143;2025/OGM/0004;31;F;internet;Pogórze
+3144;2025/OGM/0004,2025/OGM/0012;27;M;internet;Wielki Kack
+3145;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chylonia
+3146;2025/OGM/0004;29;F;internet;Oksywie
+3147;2025/OGM/0012;71;F;internet;Kamienna Góra
+3148;2025/OGM/0004;21;F;internet;Śródmieście
+3149;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+3151;2025/OGM/0004,2025/OGM/0012;57;F;internet;Oksywie
+3152;2025/OGM/0004;39;M;internet;Mały Kack
+3153;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+3154;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+3156;2025/OGM/0004;28;F;internet;Dąbrowa
+3157;2025/OGM/0012;31;F;internet;Chylonia
+3158;2025/OGM/0004;41;M;internet;Mały Kack
+3159;2025/OGM/0004;30;M;internet;Grabówek
+3160;2025/OGM/0004,2025/OGM/0012;38;F;internet;Oksywie
+3161;2025/OGM/0004,2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+3162;2025/OGM/0004;34;F;internet;Dąbrowa
+3163;2025/OGM/0004;55;M;internet;Chwarzno-Wiczlino
+3164;2025/OGM/0004;39;F;internet;Pustki Cisowskie-Demptowo
+3165;2025/OGM/0004;37;F;internet;Oksywie
+3166;2025/OGM/0004;36;F;internet;Dąbrowa
+3167;2025/OGM/0004;35;F;internet;Obłuże
+3168;2025/OGM/0004;34;F;internet;Cisowa
+3169;2025/OGM/0004;37;F;internet;Wielki Kack
+3170;2025/OGM/0012;28;M;internet;Chwarzno-Wiczlino
+3171;2025/OGM/0004;31;F;internet;Chwarzno-Wiczlino
+3172;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+3173;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+3174;2025/OGM/0004,2025/OGM/0012;41;F;internet;Śródmieście
+3175;2025/OGM/0004,2025/OGM/0012;42;M;internet;Pustki Cisowskie-Demptowo
+3176;2025/OGM/0004,2025/OGM/0012;41;F;internet;Oksywie
+3177;2025/OGM/0004;43;F;internet;Pogórze
+3178;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wzgórze Św. Maksymiliana
+3179;2025/OGM/0004;61;F;internet;Chylonia
+3180;2025/OGM/0004,2025/OGM/0012;23;M;internet;Śródmieście
+3181;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+3182;2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+3183;2025/OGM/0004,2025/OGM/0012;50;M;internet;Pogórze
+3184;2025/OGM/0012;7;F;internet;Chylonia
+3185;2025/OGM/0004;28;M;internet;Śródmieście
+3186;2025/OGM/0004,2025/OGM/0012;15;F;internet;Pustki Cisowskie-Demptowo
+3187;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+3188;2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+3189;2025/OGM/0004;45;F;internet;Wzgórze Św. Maksymiliana
+3190;2025/OGM/0012;70;F;internet;Chwarzno-Wiczlino
+3191;2025/OGM/0004,2025/OGM/0012;26;F;internet;Działki Leśne
+3192;2025/OGM/0004;50;M;internet;Oksywie
+3193;2025/OGM/0012;4;M;internet;Mały Kack
+3194;2025/OGM/0004;56;M;internet;Babie Doły
+3195;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+3196;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+3197;2025/OGM/0012;38;M;internet;Redłowo
+3198;2025/OGM/0004,2025/OGM/0012;65;F;internet;Chylonia
+3199;2025/OGM/0012;8;M;internet;Chylonia
+3200;2025/OGM/0004;85;F;internet;Chylonia
+3201;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+3202;2025/OGM/0012;2;F;internet;Mały Kack
+3203;2025/OGM/0004,2025/OGM/0012;50;F;internet;Babie Doły
+3204;2025/OGM/0004,2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+3205;2025/OGM/0004,2025/OGM/0012;43;M;internet;Oksywie
+3206;2025/OGM/0004;50;M;internet;Leszczynki
+3207;2025/OGM/0012;19;M;internet;Wielki Kack
+3208;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+3210;2025/OGM/0012;4;M;internet;Chylonia
+3211;2025/OGM/0004;44;F;internet;Obłuże
+3212;2025/OGM/0004,2025/OGM/0012;13;M;internet;Oksywie
+3213;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wzgórze Św. Maksymiliana
+3214;2025/OGM/0004,2025/OGM/0012;35;F;internet;Redłowo
+3215;2025/OGM/0004;36;M;internet;Wielki Kack
+3216;2025/OGM/0004;39;F;internet;Cisowa
+3217;2025/OGM/0004;35;F;internet;Chylonia
+3218;2025/OGM/0004;41;F;internet;Wzgórze Św. Maksymiliana
+3219;2025/OGM/0004,2025/OGM/0012;11;M;internet;Oksywie
+3220;2025/OGM/0004;46;F;internet;Chwarzno-Wiczlino
+3221;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chylonia
+3222;2025/OGM/0004,2025/OGM/0012;13;M;internet;Mały Kack
+3223;2025/OGM/0004;42;F;internet;Karwiny
+3224;2025/OGM/0004;36;M;internet;Działki Leśne
+3225;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+3226;2025/OGM/0004;25;M;internet;Działki Leśne
+3227;2025/OGM/0012;36;F;internet;Pustki Cisowskie-Demptowo
+3229;2025/OGM/0004,2025/OGM/0012;30;M;internet;Karwiny
+3230;2025/OGM/0004;35;F;internet;Mały Kack
+3231;2025/OGM/0004;35;F;internet;Mały Kack
+3232;2025/OGM/0004;40;F;internet;Oksywie
+3233;2025/OGM/0012;47;M;internet;Śródmieście
+3234;2025/OGM/0004,2025/OGM/0012;27;F;internet;Oksywie
+3235;2025/OGM/0012;70;F;internet;Śródmieście
+3236;2025/OGM/0012;81;F;internet;Witomino
+3237;2025/OGM/0012;57;M;internet;Chylonia
+3238;2025/OGM/0004,2025/OGM/0012;22;M;internet;Leszczynki
+3239;2025/OGM/0004;36;F;internet;Redłowo
+3240;2025/OGM/0004,2025/OGM/0012;20;M;internet;Chwarzno-Wiczlino
+3241;2025/OGM/0004;3;M;internet;Mały Kack
+3242;2025/OGM/0004;27;M;internet;Leszczynki
+3243;2025/OGM/0004;6;F;internet;Mały Kack
+3245;2025/OGM/0004;27;F;internet;Chwarzno-Wiczlino
+3246;2025/OGM/0004;38;M;internet;Oksywie
+3247;2025/OGM/0004;43;M;internet;Chylonia
+3248;2025/OGM/0004;30;M;internet;Wzgórze Św. Maksymiliana
+3249;2025/OGM/0004;49;M;internet;Dąbrowa
+3250;2025/OGM/0004;40;F;internet;Wzgórze Św. Maksymiliana
+3251;2025/OGM/0004;7;F;internet;Chwarzno-Wiczlino
+3252;2025/OGM/0012;35;F;internet;Oksywie
+3253;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chwarzno-Wiczlino
+3254;2025/OGM/0004;47;F;internet;Chwarzno-Wiczlino
+3255;2025/OGM/0004;35;M;internet;Wielki Kack
+3256;2025/OGM/0004,2025/OGM/0012;59;F;internet;Śródmieście
+3257;2025/OGM/0012;5;F;internet;Oksywie
+3258;2025/OGM/0004;41;M;internet;Pogórze
+3259;2025/OGM/0004;39;M;internet;Wielki Kack
+3260;2025/OGM/0004;31;F;internet;Obłuże
+3261;2025/OGM/0004;33;M;internet;Karwiny
+3262;2025/OGM/0004;40;F;internet;Grabówek
+3263;2025/OGM/0004,2025/OGM/0012;36;M;internet;Mały Kack
+3265;2025/OGM/0012;35;F;internet;Działki Leśne
+3266;2025/OGM/0004,2025/OGM/0012;70;F;internet;Wielki Kack
+3267;2025/OGM/0004,2025/OGM/0012;42;F;internet;Dąbrowa
+3268;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chylonia
+3269;2025/OGM/0004;47;M;internet;Chwarzno-Wiczlino
+3270;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chylonia
+3271;2025/OGM/0004;26;F;internet;Śródmieście
+3272;2025/OGM/0004;32;F;internet;Witomino
+3273;2025/OGM/0004;59;F;internet;Mały Kack
+3274;2025/OGM/0004,2025/OGM/0012;32;F;internet;Oksywie
+3275;2025/OGM/0004;38;M;internet;Oksywie
+3276;2025/OGM/0004;20;F;internet;Chwarzno-Wiczlino
+3277;2025/OGM/0004,2025/OGM/0012;49;F;internet;Redłowo
+3278;2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+3279;2025/OGM/0004;28;M;internet;Obłuże
+3280;2025/OGM/0004;32;M;internet;Redłowo
+3281;2025/OGM/0004,2025/OGM/0012;46;M;internet;Obłuże
+3282;2025/OGM/0012;30;M;internet;Kamienna Góra
+3283;2025/OGM/0004,2025/OGM/0012;48;M;internet;Redłowo
+3284;2025/OGM/0004;14;M;internet;Chwarzno-Wiczlino
+3285;2025/OGM/0004;31;F;internet;Karwiny
+3286;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pustki Cisowskie-Demptowo
+3287;2025/OGM/0004,2025/OGM/0012;58;F;internet;Śródmieście
+3288;2025/OGM/0004,2025/OGM/0012;19;M;internet;Redłowo
+3290;2025/OGM/0004,2025/OGM/0012;22;F;internet;Obłuże
+3291;2025/OGM/0012;61;F;internet;Działki Leśne
+3292;2025/OGM/0004,2025/OGM/0012;49;M;internet;Witomino
+3293;2025/OGM/0004;68;F;internet;Mały Kack
+3294;2025/OGM/0004;28;F;internet;Obłuże
+3295;2025/OGM/0004;32;F;internet;Wzgórze Św. Maksymiliana
+3296;2025/OGM/0004;58;F;internet;Obłuże
+3297;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chylonia
+3298;2025/OGM/0012;32;M;internet;Chylonia
+3299;2025/OGM/0004;39;F;internet;Babie Doły
+3300;2025/OGM/0004,2025/OGM/0012;29;F;internet;Grabówek
+3301;2025/OGM/0004,2025/OGM/0012;29;F;internet;Obłuże
+3302;2025/OGM/0004,2025/OGM/0012;43;F;internet;Babie Doły
+3303;2025/OGM/0004;44;F;internet;Grabówek
+3304;2025/OGM/0004;28;F;internet;Chylonia
+3305;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+3306;2025/OGM/0004,2025/OGM/0012;67;M;internet;Babie Doły
+3307;2025/OGM/0004;30;F;internet;Witomino
+3308;2025/OGM/0004;8;M;internet;Babie Doły
+3309;2025/OGM/0004,2025/OGM/0012;38;F;internet;Grabówek
+3310;2025/OGM/0004,2025/OGM/0012;22;M;internet;Chwarzno-Wiczlino
+3311;2025/OGM/0004,2025/OGM/0012;65;F;internet;Babie Doły
+3312;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+3313;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+3314;2025/OGM/0012;30;F;internet;Oksywie
+3315;2025/OGM/0004;38;F;internet;Orłowo
+3316;2025/OGM/0004,2025/OGM/0012;58;F;internet;Chwarzno-Wiczlino
+3317;2025/OGM/0004,2025/OGM/0012;33;M;internet;Babie Doły
+3318;2025/OGM/0004;49;F;internet;Oksywie
+3319;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chylonia
+3320;2025/OGM/0004;44;F;internet;Cisowa
+3321;2025/OGM/0012;39;M;internet;Wielki Kack
+3322;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+3323;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+3324;2025/OGM/0004;48;F;internet;Karwiny
+3325;2025/OGM/0004;42;F;internet;Grabówek
+3326;2025/OGM/0012;28;M;internet;Chylonia
+3327;2025/OGM/0012;23;F;internet;Chwarzno-Wiczlino
+3328;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+3329;2025/OGM/0004;25;M;internet;Babie Doły
+3330;2025/OGM/0004;41;F;internet;Witomino
+3331;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chylonia
+3332;2025/OGM/0004,2025/OGM/0012;33;F;internet;Śródmieście
+3333;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+3334;2025/OGM/0004;52;M;internet;Grabówek
+3335;2025/OGM/0004;47;F;internet;Chwarzno-Wiczlino
+3336;2025/OGM/0004;65;M;internet;Oksywie
+3337;2025/OGM/0004,2025/OGM/0012;83;F;internet;Witomino
+3339;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+3340;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pustki Cisowskie-Demptowo
+3341;2025/OGM/0012;26;M;internet;Działki Leśne
+3342;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+3343;2025/OGM/0004;48;F;internet;Babie Doły
+3344;2025/OGM/0004;48;F;internet;Grabówek
+3345;2025/OGM/0004,2025/OGM/0012;68;M;internet;Mały Kack
+3346;2025/OGM/0004,2025/OGM/0012;33;M;internet;Cisowa
+3347;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+3348;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chylonia
+3349;2025/OGM/0004,2025/OGM/0012;44;F;internet;Cisowa
+3350;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+3351;2025/OGM/0004,2025/OGM/0012;26;F;internet;Redłowo
+3352;2025/OGM/0004;41;F;internet;Karwiny
+3353;2025/OGM/0004;43;F;internet;Dąbrowa
+3354;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+3356;2025/OGM/0004;39;F;internet;Chylonia
+3357;2025/OGM/0004;2;M;internet;Cisowa
+3358;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+3359;2025/OGM/0004;33;F;internet;Chylonia
+3360;2025/OGM/0004,2025/OGM/0012;24;M;internet;Chwarzno-Wiczlino
+3361;2025/OGM/0004,2025/OGM/0012;50;F;internet;Karwiny
+3362;2025/OGM/0004;5;F;internet;Cisowa
+3363;2025/OGM/0012;31;F;internet;Śródmieście
+3364;2025/OGM/0004;22;F;internet;Babie Doły
+3365;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+3366;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+3368;2025/OGM/0012;25;F;internet;Witomino
+3369;2025/OGM/0004,2025/OGM/0012;46;F;internet;Grabówek
+3370;2025/OGM/0012;18;M;internet;Mały Kack
+3371;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pogórze
+3372;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+3373;2025/OGM/0004;28;M;internet;Działki Leśne
+3374;2025/OGM/0012;45;M;internet;Witomino
+3375;2025/OGM/0004;40;F;internet;Pogórze
+3376;2025/OGM/0004,2025/OGM/0012;23;F;internet;Chwarzno-Wiczlino
+3378;2025/OGM/0004;37;M;internet;Mały Kack
+3379;2025/OGM/0004,2025/OGM/0012;32;M;internet;Obłuże
+3380;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+3381;2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+3382;2025/OGM/0004;23;F;internet;Leszczynki
+3384;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+3385;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+3386;2025/OGM/0004;29;F;internet;Redłowo
+3387;2025/OGM/0004;51;F;internet;Obłuże
+3388;2025/OGM/0004,2025/OGM/0012;35;F;internet;Redłowo
+3389;2025/OGM/0004,2025/OGM/0012;40;F;internet;Redłowo
+3391;2025/OGM/0004;27;F;internet;Śródmieście
+3392;2025/OGM/0004;45;M;internet;Obłuże
+3393;2025/OGM/0004;25;F;internet;Witomino
+3394;2025/OGM/0012;1;F;internet;Chwarzno-Wiczlino
+3395;2025/OGM/0004,2025/OGM/0012;68;M;internet;Leszczynki
+3396;2025/OGM/0004;38;F;internet;Wielki Kack
+3398;2025/OGM/0012;51;M;internet;Redłowo
+3399;2025/OGM/0004,2025/OGM/0012;18;M;internet;Oksywie
+3400;2025/OGM/0004,2025/OGM/0012;33;M;internet;Witomino
+3401;2025/OGM/0004;30;M;internet;Wielki Kack
+3402;2025/OGM/0004;44;F;internet;Dąbrowa
+3404;2025/OGM/0012;68;F;internet;Wielki Kack
+3405;2025/OGM/0004;9;M;internet;Karwiny
+3407;2025/OGM/0004;32;F;internet;Obłuże
+3408;2025/OGM/0004,2025/OGM/0012;18;F;internet;Chylonia
+3409;2025/OGM/0004,2025/OGM/0012;18;M;internet;Chylonia
+3410;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+3411;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+3412;2025/OGM/0004;30;F;internet;Obłuże
+3413;2025/OGM/0004,2025/OGM/0012;44;F;internet;Babie Doły
+3414;2025/OGM/0012;41;F;internet;Chylonia
+3415;2025/OGM/0004;54;F;internet;Dąbrowa
+3416;2025/OGM/0004;37;F;internet;Działki Leśne
+3417;2025/OGM/0004;42;F;internet;Obłuże
+3418;2025/OGM/0004,2025/OGM/0012;42;F;internet;Orłowo
+3419;2025/OGM/0004;5;F;internet;Karwiny
+3420;2025/OGM/0004;34;F;internet;Pogórze
+3421;2025/OGM/0004;49;F;internet;Chwarzno-Wiczlino
+3422;2025/OGM/0004;25;F;internet;Redłowo
+3423;2025/OGM/0004;35;M;internet;Chylonia
+3424;2025/OGM/0012;101;M;internet;Wielki Kack
+3425;2025/OGM/0004;48;F;internet;Chylonia
+3426;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+3427;2025/OGM/0004,2025/OGM/0012;25;F;internet;Orłowo
+3428;2025/OGM/0012;37;F;internet;Mały Kack
+3430;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+3431;2025/OGM/0004;6;M;internet;Śródmieście
+3432;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+3433;2025/OGM/0004;15;M;internet;Chylonia
+3434;2025/OGM/0004,2025/OGM/0012;33;M;internet;Karwiny
+3435;2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+3436;2025/OGM/0004;9;M;internet;Chylonia
+3437;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+3438;2025/OGM/0004;83;F;internet;Chylonia
+3440;2025/OGM/0004;34;F;internet;Śródmieście
+3441;2025/OGM/0004;26;F;internet;Wielki Kack
+3442;2025/OGM/0004;32;F;internet;Oksywie
+3443;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wzgórze Św. Maksymiliana
+3444;2025/OGM/0012;70;M;internet;Działki Leśne
+3445;2025/OGM/0004,2025/OGM/0012;57;F;internet;Wielki Kack
+3446;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+3447;2025/OGM/0012;53;F;internet;Chylonia
+3448;2025/OGM/0004,2025/OGM/0012;33;M;internet;Witomino
+3449;2025/OGM/0004;57;M;internet;Dąbrowa
+3450;2025/OGM/0004;52;F;internet;Śródmieście
+3451;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+3452;2025/OGM/0004;52;M;internet;Chwarzno-Wiczlino
+3453;2025/OGM/0004;45;F;internet;Mały Kack
+3454;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+3455;2025/OGM/0004;56;F;internet;Dąbrowa
+3456;2025/OGM/0004,2025/OGM/0012;33;F;internet;Obłuże
+3457;2025/OGM/0004;55;F;internet;Wielki Kack
+3458;2025/OGM/0012;50;F;internet;Mały Kack
+3459;2025/OGM/0004;37;F;internet;Redłowo
+3460;2025/OGM/0004,2025/OGM/0012;44;M;internet;Grabówek
+3461;2025/OGM/0004;61;F;internet;Cisowa
+3463;2025/OGM/0004;43;F;internet;Obłuże
+3464;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+3466;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+3467;2025/OGM/0004,2025/OGM/0012;43;F;internet;Witomino
+3468;2025/OGM/0004;31;F;internet;Obłuże
+3469;2025/OGM/0004;49;M;internet;Mały Kack
+3470;2025/OGM/0004,2025/OGM/0012;29;F;internet;Redłowo
+3471;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+3472;2025/OGM/0004,2025/OGM/0012;58;F;internet;Babie Doły
+3473;2025/OGM/0004,2025/OGM/0012;36;F;internet;Oksywie
+3474;2025/OGM/0004;36;F;internet;Śródmieście
+3475;2025/OGM/0004,2025/OGM/0012;37;F;internet;Cisowa
+3476;2025/OGM/0004;64;M;internet;Wielki Kack
+3477;2025/OGM/0004,2025/OGM/0012;23;F;internet;Obłuże
+3478;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+3479;2025/OGM/0004;32;M;internet;Pustki Cisowskie-Demptowo
+3481;2025/OGM/0004;25;F;internet;Witomino
+3482;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+3483;2025/OGM/0004;26;F;internet;Dąbrowa
+3484;2025/OGM/0004;31;F;internet;Witomino
+3485;2025/OGM/0004;64;F;internet;Chwarzno-Wiczlino
+3486;2025/OGM/0004,2025/OGM/0012;54;F;internet;Babie Doły
+3487;2025/OGM/0004;49;M;internet;Mały Kack
+3488;2025/OGM/0004,2025/OGM/0012;31;M;internet;Wzgórze Św. Maksymiliana
+3489;2025/OGM/0004,2025/OGM/0012;31;F;internet;Obłuże
+3490;2025/OGM/0012;64;F;internet;Wielki Kack
+3491;2025/OGM/0004;35;F;internet;Redłowo
+3493;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+3494;2025/OGM/0012;31;F;internet;Chylonia
+3495;2025/OGM/0004,2025/OGM/0012;21;F;internet;Kamienna Góra
+3496;2025/OGM/0004;20;M;internet;Cisowa
+3497;2025/OGM/0004,2025/OGM/0012;38;M;internet;Dąbrowa
+3498;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+3499;2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+3500;2025/OGM/0004;39;F;internet;Śródmieście
+3501;2025/OGM/0004;29;M;internet;Witomino
+3502;2025/OGM/0004;33;F;internet;Witomino
+3503;2025/OGM/0004,2025/OGM/0012;47;F;internet;Śródmieście
+3504;2025/OGM/0004,2025/OGM/0012;43;M;internet;Witomino
+3505;2025/OGM/0004,2025/OGM/0012;42;F;internet;Oksywie
+3506;2025/OGM/0012;39;F;internet;Wielki Kack
+3507;2025/OGM/0004;37;F;internet;Działki Leśne
+3508;2025/OGM/0004;78;F;internet;Cisowa
+3509;2025/OGM/0004;55;F;internet;Pogórze
+3510;2025/OGM/0004;41;M;internet;Mały Kack
+3511;2025/OGM/0004,2025/OGM/0012;33;M;internet;Cisowa
+3512;2025/OGM/0004;52;F;internet;Śródmieście
+3513;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+3514;2025/OGM/0004;29;F;internet;Oksywie
+3515;2025/OGM/0004;39;M;internet;Wzgórze Św. Maksymiliana
+3516;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+3517;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pustki Cisowskie-Demptowo
+3518;2025/OGM/0004,2025/OGM/0012;85;F;internet;Chylonia
+3519;2025/OGM/0004,2025/OGM/0012;37;F;internet;Witomino
+3520;2025/OGM/0004,2025/OGM/0012;35;M;internet;Dąbrowa
+3521;2025/OGM/0004,2025/OGM/0012;30;F;internet;Obłuże
+3522;2025/OGM/0004;52;F;internet;Obłuże
+3523;2025/OGM/0004;51;F;internet;Obłuże
+3524;2025/OGM/0004,2025/OGM/0012;31;M;internet;Śródmieście
+3525;2025/OGM/0004,2025/OGM/0012;60;M;internet;Pustki Cisowskie-Demptowo
+3526;2025/OGM/0004,2025/OGM/0012;22;F;internet;Dąbrowa
+3528;2025/OGM/0004,2025/OGM/0012;55;M;internet;Chwarzno-Wiczlino
+3529;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+3530;2025/OGM/0012;34;F;internet;Babie Doły
+3531;2025/OGM/0004;42;M;internet;Mały Kack
+3532;2025/OGM/0004;38;F;internet;Obłuże
+3533;2025/OGM/0004;36;M;internet;Działki Leśne
+3534;2025/OGM/0004;62;F;internet;Obłuże
+3535;2025/OGM/0004,2025/OGM/0012;29;F;internet;Pogórze
+3536;2025/OGM/0004;11;M;internet;Babie Doły
+3537;2025/OGM/0004;62;F;internet;Cisowa
+3538;2025/OGM/0012;22;M;internet;Chwarzno-Wiczlino
+3540;2025/OGM/0004;20;M;internet;Dąbrowa
+3541;2025/OGM/0004;28;F;internet;Wielki Kack
+3542;2025/OGM/0012;7;M;internet;Babie Doły
+3543;2025/OGM/0004;36;M;internet;Wielki Kack
+3544;2025/OGM/0004,2025/OGM/0012;28;F;internet;Śródmieście
+3545;2025/OGM/0004,2025/OGM/0012;47;M;internet;Leszczynki
+3546;2025/OGM/0004,2025/OGM/0012;31;F;internet;Śródmieście
+3548;2025/OGM/0004,2025/OGM/0012;67;F;internet;Pogórze
+3549;2025/OGM/0004,2025/OGM/0012;33;F;internet;Mały Kack
+3550;2025/OGM/0004;37;F;internet;Babie Doły
+3551;2025/OGM/0004,2025/OGM/0012;67;M;internet;Cisowa
+3553;2025/OGM/0004;19;F;internet;Chwarzno-Wiczlino
+3554;2025/OGM/0004,2025/OGM/0012;37;F;internet;Działki Leśne
+3555;2025/OGM/0004;36;F;internet;Wzgórze Św. Maksymiliana
+3557;2025/OGM/0004,2025/OGM/0012;28;F;internet;Chylonia
+3558;2025/OGM/0012;58;F;internet;Chwarzno-Wiczlino
+3559;2025/OGM/0012;34;F;internet;Redłowo
+3560;2025/OGM/0012;31;M;internet;Mały Kack
+3561;2025/OGM/0012;44;F;internet;Wzgórze Św. Maksymiliana
+3562;2025/OGM/0004;46;F;internet;Wielki Kack
+3563;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+3564;2025/OGM/0004;14;M;internet;Wielki Kack
+3565;2025/OGM/0004,2025/OGM/0012;39;F;internet;Oksywie
+3567;2025/OGM/0012;44;M;internet;Kamienna Góra
+3568;2025/OGM/0012;39;M;internet;Witomino
+3569;2025/OGM/0004;31;M;internet;Wielki Kack
+3571;2025/OGM/0004,2025/OGM/0012;30;F;internet;Grabówek
+3572;2025/OGM/0004;46;F;internet;Wzgórze Św. Maksymiliana
+3573;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+3574;2025/OGM/0004;41;F;internet;Dąbrowa
+3575;2025/OGM/0004;32;F;internet;Grabówek
+3576;2025/OGM/0004;49;M;internet;Wzgórze Św. Maksymiliana
+3577;2025/OGM/0004;29;F;internet;Pogórze
+3579;2025/OGM/0004;58;F;internet;Witomino
+3581;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+3582;2025/OGM/0004;41;M;internet;Wzgórze Św. Maksymiliana
+3583;2025/OGM/0004;22;M;internet;Pogórze
+3584;2025/OGM/0004;58;F;internet;Obłuże
+3585;2025/OGM/0004,2025/OGM/0012;35;M;internet;Oksywie
+3587;2025/OGM/0004,2025/OGM/0012;50;F;internet;Babie Doły
+3588;2025/OGM/0004,2025/OGM/0012;41;F;internet;Redłowo
+3589;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+3590;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+3591;2025/OGM/0004;42;M;internet;Babie Doły
+3592;2025/OGM/0004;85;F;internet;Chylonia
+3593;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chylonia
+3594;2025/OGM/0004,2025/OGM/0012;33;F;internet;Obłuże
+3595;2025/OGM/0004,2025/OGM/0012;6;F;internet;Babie Doły
+3596;2025/OGM/0012;41;F;internet;Redłowo
+3597;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+3598;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+3599;2025/OGM/0012;20;F;internet;Wzgórze Św. Maksymiliana
+3600;2025/OGM/0004,2025/OGM/0012;71;F;internet;Chwarzno-Wiczlino
+3601;2025/OGM/0004;35;F;internet;Chylonia
+3602;2025/OGM/0012;57;F;internet;Babie Doły
+3604;2025/OGM/0012;12;M;internet;Chylonia
+3605;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+3606;2025/OGM/0004;30;F;internet;Chylonia
+3607;2025/OGM/0004,2025/OGM/0012;84;M;internet;Chylonia
+3608;2025/OGM/0004;46;F;internet;Chwarzno-Wiczlino
+3609;2025/OGM/0012;43;F;internet;Oksywie
+3610;2025/OGM/0012;70;F;internet;Chylonia
+3611;2025/OGM/0004;76;F;internet;Obłuże
+3612;2025/OGM/0012;78;M;internet;Mały Kack
+3613;2025/OGM/0004;22;M;internet;Oksywie
+3614;2025/OGM/0012;74;F;internet;Witomino
+3615;2025/OGM/0012;67;M;internet;Babie Doły
+3616;2025/OGM/0004;11;F;internet;Wielki Kack
+3617;2025/OGM/0004,2025/OGM/0012;24;F;internet;Dąbrowa
+3618;2025/OGM/0012;90;M;internet;Wzgórze Św. Maksymiliana
+3620;2025/OGM/0004,2025/OGM/0012;29;M;internet;Leszczynki
+3621;2025/OGM/0004;50;F;internet;Witomino
+3622;2025/OGM/0012;56;M;internet;Chylonia
+3623;2025/OGM/0004;50;M;internet;Obłuże
+3625;2025/OGM/0004;41;M;internet;Wielki Kack
+3626;2025/OGM/0004;54;F;internet;Dąbrowa
+3627;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+3628;2025/OGM/0004,2025/OGM/0012;71;F;internet;Babie Doły
+3629;2025/OGM/0012;27;M;internet;Witomino
+3630;2025/OGM/0004;51;F;internet;Obłuże
+3631;2025/OGM/0004,2025/OGM/0012;45;F;internet;Babie Doły
+3632;2025/OGM/0012;81;M;internet;Witomino
+3634;2025/OGM/0004;74;F;internet;Witomino
+3635;2025/OGM/0004;9;F;internet;Wielki Kack
+3636;2025/OGM/0004;56;F;internet;Chwarzno-Wiczlino
+3637;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+3638;2025/OGM/0004;34;M;internet;Chylonia
+3639;2025/OGM/0004,2025/OGM/0012;57;F;internet;Wielki Kack
+3640;2025/OGM/0004;18;M;internet;Śródmieście
+3641;2025/OGM/0004;71;M;internet;Chylonia
+3642;2025/OGM/0004;54;F;internet;Pogórze
+3643;2025/OGM/0004;48;M;internet;Karwiny
+3644;2025/OGM/0012;26;M;internet;Witomino
+3645;2025/OGM/0004,2025/OGM/0012;64;F;internet;Babie Doły
+3646;2025/OGM/0004;40;F;internet;Obłuże
+3647;2025/OGM/0004;49;F;internet;Witomino
+3648;2025/OGM/0004;9;F;internet;Wielki Kack
+3649;2025/OGM/0012;64;F;internet;Chylonia
+3651;2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+3652;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+3654;2025/OGM/0004,2025/OGM/0012;21;F;internet;Grabówek
+3656;2025/OGM/0004;68;F;internet;Wielki Kack
+3657;2025/OGM/0004;38;F;internet;Chylonia
+3658;2025/OGM/0004;33;M;internet;Cisowa
+3659;2025/OGM/0004;65;M;internet;Obłuże
+3660;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+3661;2025/OGM/0012;71;M;internet;Wielki Kack
+3662;2025/OGM/0004;46;F;internet;Oksywie
+3664;2025/OGM/0004;74;F;internet;Chylonia
+3665;2025/OGM/0004;39;F;internet;Wielki Kack
+3666;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+3667;2025/OGM/0012;74;F;internet;Chylonia
+3668;2025/OGM/0004,2025/OGM/0012;22;F;internet;Chwarzno-Wiczlino
+3669;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+3670;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+3671;2025/OGM/0012;74;F;internet;Babie Doły
+3672;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+3673;2025/OGM/0004;40;F;internet;Wielki Kack
+3674;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+3675;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+3676;2025/OGM/0004;58;F;internet;Chwarzno-Wiczlino
+3677;2025/OGM/0004;50;F;internet;Działki Leśne
+3678;2025/OGM/0004;30;F;internet;Śródmieście
+3679;2025/OGM/0004;36;M;internet;Chylonia
+3680;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+3681;2025/OGM/0012;73;F;internet;Babie Doły
+3682;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+3683;2025/OGM/0004;6;M;internet;Chwarzno-Wiczlino
+3684;2025/OGM/0004;20;M;internet;Wielki Kack
+3685;2025/OGM/0012;76;M;internet;Babie Doły
+3686;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+3687;2025/OGM/0004,2025/OGM/0012;41;M;internet;Witomino
+3688;2025/OGM/0012;72;F;internet;Chylonia
+3689;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+3691;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+3692;2025/OGM/0004;73;F;internet;Babie Doły
+3693;2025/OGM/0012;64;F;internet;Witomino
+3694;2025/OGM/0004;16;M;internet;Witomino
+3695;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+3696;2025/OGM/0004;35;M;internet;Wielki Kack
+3697;2025/OGM/0004;46;F;internet;Grabówek
+3698;2025/OGM/0004;75;F;internet;Babie Doły
+3699;2025/OGM/0004,2025/OGM/0012;72;F;internet;Chylonia
+3700;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+3702;2025/OGM/0004,2025/OGM/0012;69;F;internet;Wielki Kack
+3703;2025/OGM/0004,2025/OGM/0012;64;F;internet;Babie Doły
+3704;2025/OGM/0004;5;M;internet;Wielki Kack
+3705;2025/OGM/0004,2025/OGM/0012;21;M;internet;Obłuże
+3706;2025/OGM/0004;74;M;internet;Chwarzno-Wiczlino
+3707;2025/OGM/0004;36;M;internet;Wielki Kack
+3708;2025/OGM/0004;28;F;internet;Grabówek
+3709;2025/OGM/0012;50;F;internet;Chylonia
+3710;2025/OGM/0012;23;M;internet;Obłuże
+3711;2025/OGM/0004;26;F;internet;Oksywie
+3712;2025/OGM/0004;37;F;internet;Działki Leśne
+3713;2025/OGM/0012;46;F;internet;Pustki Cisowskie-Demptowo
+3715;2025/OGM/0012;66;F;internet;Pustki Cisowskie-Demptowo
+3716;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pogórze
+3718;2025/OGM/0004;34;M;internet;Działki Leśne
+3719;2025/OGM/0004;64;M;internet;Babie Doły
+3720;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+3721;2025/OGM/0004;21;M;internet;Obłuże
+3722;2025/OGM/0004,2025/OGM/0012;29;M;internet;Oksywie
+3723;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+3724;2025/OGM/0004,2025/OGM/0012;32;F;internet;Cisowa
+3725;2025/OGM/0004;32;F;internet;Leszczynki
+3726;2025/OGM/0004,2025/OGM/0012;60;F;internet;Wielki Kack
+3727;2025/OGM/0004,2025/OGM/0012;50;M;internet;Witomino
+3728;2025/OGM/0004;54;F;internet;Grabówek
+3729;2025/OGM/0004;50;F;internet;Dąbrowa
+3730;2025/OGM/0004;16;M;internet;Obłuże
+3731;2025/OGM/0004;33;M;internet;Dąbrowa
+3732;2025/OGM/0012;54;M;internet;Oksywie
+3733;2025/OGM/0012;23;M;internet;Babie Doły
+3734;2025/OGM/0004;64;F;internet;Babie Doły
+3737;2025/OGM/0004;65;M;internet;Babie Doły
+3738;2025/OGM/0004,2025/OGM/0012;68;F;internet;Chylonia
+3739;2025/OGM/0004;40;F;internet;Obłuże
+3741;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+3742;2025/OGM/0004;41;F;internet;Redłowo
+3744;2025/OGM/0004;50;M;internet;Pogórze
+3745;2025/OGM/0004;30;F;internet;Orłowo
+3746;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pogórze
+3748;2025/OGM/0004,2025/OGM/0012;44;F;internet;Pustki Cisowskie-Demptowo
+3750;2025/OGM/0004;49;F;internet;Cisowa
+3751;2025/OGM/0004,2025/OGM/0012;43;M;internet;Pogórze
+3752;2025/OGM/0004,2025/OGM/0012;39;M;internet;Grabówek
+3753;2025/OGM/0004,2025/OGM/0012;27;F;internet;Grabówek
+3756;2025/OGM/0012;60;F;internet;Wzgórze Św. Maksymiliana
+3757;2025/OGM/0012;31;F;internet;Śródmieście
+3758;2025/OGM/0004,2025/OGM/0012;9;M;internet;Pogórze
+3759;2025/OGM/0004;30;F;internet;Redłowo
+3761;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+3762;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+3763;2025/OGM/0004,2025/OGM/0012;7;F;internet;Pogórze
+3764;2025/OGM/0012;37;F;internet;Chylonia
+3765;2025/OGM/0004;47;M;internet;Oksywie
+3766;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+3767;2025/OGM/0012;30;F;internet;Chylonia
+3768;2025/OGM/0004;60;M;internet;Obłuże
+3769;2025/OGM/0004,2025/OGM/0012;39;M;internet;Obłuże
+3770;2025/OGM/0004,2025/OGM/0012;44;F;internet;Cisowa
+3771;2025/OGM/0004,2025/OGM/0012;43;M;internet;Pustki Cisowskie-Demptowo
+3772;2025/OGM/0004,2025/OGM/0012;32;F;internet;Witomino
+3774;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+3775;2025/OGM/0004;70;F;internet;Babie Doły
+3776;2025/OGM/0004,2025/OGM/0012;14;M;internet;Pustki Cisowskie-Demptowo
+3778;2025/OGM/0004;41;F;internet;Śródmieście
+3779;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+3780;2025/OGM/0004;71;M;internet;Babie Doły
+3781;2025/OGM/0012;35;M;internet;Śródmieście
+3782;2025/OGM/0004;5;M;internet;Dąbrowa
+3783;2025/OGM/0004,2025/OGM/0012;6;F;internet;Pustki Cisowskie-Demptowo
+3784;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+3786;2025/OGM/0004;40;F;internet;Obłuże
+3787;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wzgórze Św. Maksymiliana
+3788;2025/OGM/0004,2025/OGM/0012;5;F;internet;Chylonia
+3789;2025/OGM/0012;22;F;internet;Mały Kack
+3790;2025/OGM/0004,2025/OGM/0012;27;F;internet;Chylonia
+3791;2025/OGM/0004;38;F;internet;Babie Doły
+3793;2025/OGM/0012;63;F;internet;Mały Kack
+3794;2025/OGM/0012;46;F;internet;Chylonia
+3795;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+3796;2025/OGM/0004;67;F;internet;Wielki Kack
+3797;2025/OGM/0004;33;F;internet;Pogórze
+3798;2025/OGM/0012;71;M;internet;Mały Kack
+3799;2025/OGM/0012;51;F;internet;Witomino
+3800;2025/OGM/0004;53;F;internet;Oksywie
+3803;2025/OGM/0004,2025/OGM/0012;46;F;internet;Karwiny
+3804;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pogórze
+3805;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+3806;2025/OGM/0004;26;M;internet;Witomino
+3807;2025/OGM/0004;26;M;internet;Babie Doły
+3808;2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+3810;2025/OGM/0012;74;F;internet;Wielki Kack
+3811;2025/OGM/0004,2025/OGM/0012;21;M;internet;Pogórze
+3812;2025/OGM/0004,2025/OGM/0012;20;M;internet;Obłuże
+3813;2025/OGM/0004;77;F;internet;Cisowa
+3814;2025/OGM/0004;50;M;internet;Oksywie
+3815;2025/OGM/0004,2025/OGM/0012;76;F;internet;Oksywie
+3816;2025/OGM/0004,2025/OGM/0012;68;M;internet;Babie Doły
+3817;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chylonia
+3818;2025/OGM/0004;36;F;internet;Dąbrowa
+3819;2025/OGM/0004,2025/OGM/0012;6;F;internet;Obłuże
+3820;2025/OGM/0004,2025/OGM/0012;69;F;internet;Babie Doły
+3821;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+3822;2025/OGM/0004,2025/OGM/0012;61;M;internet;Redłowo
+3823;2025/OGM/0004;35;F;internet;Karwiny
+3825;2025/OGM/0004;24;M;internet;Grabówek
+3827;2025/OGM/0004;37;F;internet;Działki Leśne
+3828;2025/OGM/0004;40;F;internet;Chylonia
+3829;2025/OGM/0012;32;M;internet;Chylonia
+3830;2025/OGM/0004,2025/OGM/0012;87;M;internet;Oksywie
+3831;2025/OGM/0004,2025/OGM/0012;15;M;internet;Karwiny
+3833;2025/OGM/0012;49;F;internet;Babie Doły
+3835;2025/OGM/0012;49;M;internet;Babie Doły
+3836;2025/OGM/0004,2025/OGM/0012;34;M;internet;Karwiny
+3837;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+3838;2025/OGM/0004;24;M;internet;Dąbrowa
+3839;2025/OGM/0004;49;F;internet;Babie Doły
+3840;2025/OGM/0004;83;F;internet;Mały Kack
+3841;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+3842;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+3843;2025/OGM/0012;13;M;internet;Babie Doły
+3844;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chylonia
+3846;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wielki Kack
+3847;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+3848;2025/OGM/0004,2025/OGM/0012;68;M;internet;Babie Doły
+3849;2025/OGM/0004,2025/OGM/0012;43;M;internet;Oksywie
+3850;2025/OGM/0004;43;F;internet;Grabówek
+3851;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wzgórze Św. Maksymiliana
+3852;2025/OGM/0004;20;M;internet;Karwiny
+3853;2025/OGM/0004,2025/OGM/0012;17;F;internet;Chwarzno-Wiczlino
+3854;2025/OGM/0004,2025/OGM/0012;7;F;internet;Chylonia
+3855;2025/OGM/0004,2025/OGM/0012;47;F;internet;Witomino
+3856;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+3857;2025/OGM/0004,2025/OGM/0012;54;F;internet;Oksywie
+3858;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+3859;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+3860;2025/OGM/0004;24;F;internet;Oksywie
+3861;2025/OGM/0004;22;M;internet;Grabówek
+3862;2025/OGM/0004,2025/OGM/0012;69;F;internet;Śródmieście
+3864;2025/OGM/0004;44;M;internet;Grabówek
+3865;2025/OGM/0004;49;M;internet;Oksywie
+3866;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+3867;2025/OGM/0004;40;F;internet;Wielki Kack
+3868;2025/OGM/0004;35;M;internet;Chylonia
+3871;2025/OGM/0004;39;M;internet;Dąbrowa
+3872;2025/OGM/0004;34;F;internet;Obłuże
+3873;2025/OGM/0012;46;F;internet;Babie Doły
+3874;2025/OGM/0012;45;F;internet;Działki Leśne
+3875;2025/OGM/0004,2025/OGM/0012;29;M;internet;Chylonia
+3876;2025/OGM/0004;33;M;internet;Dąbrowa
+3877;2025/OGM/0004,2025/OGM/0012;14;M;internet;Oksywie
+3878;2025/OGM/0012;78;F;internet;Cisowa
+3879;2025/OGM/0004;49;M;internet;Wielki Kack
+3880;2025/OGM/0004,2025/OGM/0012;38;F;internet;Grabówek
+3881;2025/OGM/0004;8;F;internet;Wielki Kack
+3882;2025/OGM/0004,2025/OGM/0012;31;M;internet;Wielki Kack
+3883;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+3884;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chwarzno-Wiczlino
+3885;2025/OGM/0004;5;M;internet;Wielki Kack
+3886;2025/OGM/0004;65;M;internet;Dąbrowa
+3887;2025/OGM/0004;51;F;internet;Oksywie
+3888;2025/OGM/0004;56;F;internet;Mały Kack
+3889;2025/OGM/0004,2025/OGM/0012;67;F;internet;Dąbrowa
+3891;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+3892;2025/OGM/0012;30;M;internet;Oksywie
+3893;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+3894;2025/OGM/0004,2025/OGM/0012;73;F;internet;Cisowa
+3895;2025/OGM/0012;45;F;internet;Grabówek
+3896;2025/OGM/0004;30;F;internet;Chylonia
+3897;2025/OGM/0004,2025/OGM/0012;35;F;internet;Śródmieście
+3898;2025/OGM/0012;44;F;internet;Witomino
+3899;2025/OGM/0012;41;F;internet;Obłuże
+3900;2025/OGM/0012;47;M;internet;Chwarzno-Wiczlino
+3901;2025/OGM/0012;38;F;internet;Oksywie
+3903;2025/OGM/0004;44;M;internet;Witomino
+3904;2025/OGM/0004;40;F;internet;Pogórze
+3905;2025/OGM/0012;49;F;internet;Oksywie
+3906;2025/OGM/0012;36;M;internet;Chylonia
+3908;2025/OGM/0004;65;F;internet;Dąbrowa
+3909;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+3910;2025/OGM/0004,2025/OGM/0012;55;F;internet;Babie Doły
+3911;2025/OGM/0012;35;F;internet;Witomino
+3914;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+3915;2025/OGM/0004;37;F;internet;Chylonia
+3916;2025/OGM/0004,2025/OGM/0012;39;F;internet;Śródmieście
+3917;2025/OGM/0004;46;M;internet;Mały Kack
+3918;2025/OGM/0012;73;F;internet;Pustki Cisowskie-Demptowo
+3919;2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+3920;2025/OGM/0004;33;M;internet;Oksywie
+3921;2025/OGM/0004;5;F;internet;Mały Kack
+3923;2025/OGM/0004,2025/OGM/0012;47;M;internet;Oksywie
+3924;2025/OGM/0004;8;M;internet;Mały Kack
+3925;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+3926;2025/OGM/0004,2025/OGM/0012;18;M;internet;Obłuże
+3927;2025/OGM/0004;44;F;internet;Mały Kack
+3928;2025/OGM/0004,2025/OGM/0012;74;M;internet;Pustki Cisowskie-Demptowo
+3930;2025/OGM/0012;26;F;internet;Obłuże
+3931;2025/OGM/0004,2025/OGM/0012;40;F;internet;Działki Leśne
+3932;2025/OGM/0004;16;F;internet;Chylonia
+3933;2025/OGM/0004;26;F;internet;Mały Kack
+3934;2025/OGM/0004;56;M;internet;Chylonia
+3935;2025/OGM/0004;26;F;internet;Dąbrowa
+3937;2025/OGM/0004,2025/OGM/0012;73;M;internet;Pogórze
+3938;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+3939;2025/OGM/0012;9;M;internet;Wielki Kack
+3940;2025/OGM/0004,2025/OGM/0012;69;F;internet;Chylonia
+3941;2025/OGM/0004;44;F;internet;Wielki Kack
+3943;2025/OGM/0012;8;M;internet;Wielki Kack
+3944;2025/OGM/0004;32;M;internet;Wielki Kack
+3945;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wielki Kack
+3946;2025/OGM/0012;36;F;internet;Wielki Kack
+3947;2025/OGM/0004;44;F;internet;Mały Kack
+3948;2025/OGM/0004;48;F;internet;Mały Kack
+3950;2025/OGM/0004;37;F;internet;Mały Kack
+3951;2025/OGM/0012;28;M;internet;Grabówek
+3953;2025/OGM/0004;11;F;internet;Mały Kack
+3955;2025/OGM/0004;40;M;internet;Mały Kack
+3956;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+3957;2025/OGM/0004;14;M;internet;Mały Kack
+3958;2025/OGM/0004;48;F;internet;Wielki Kack
+3959;2025/OGM/0004;44;M;internet;Mały Kack
+3960;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+3961;2025/OGM/0004;7;M;internet;Mały Kack
+3962;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chylonia
+3963;2025/OGM/0004,2025/OGM/0012;27;F;internet;Witomino
+3964;2025/OGM/0004,2025/OGM/0012;65;M;internet;Leszczynki
+3966;2025/OGM/0012;4;M;internet;Mały Kack
+3967;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+3968;2025/OGM/0004;28;M;internet;Wzgórze Św. Maksymiliana
+3970;2025/OGM/0004;22;M;internet;Chwarzno-Wiczlino
+3971;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+3972;2025/OGM/0004,2025/OGM/0012;8;F;internet;Mały Kack
+3973;2025/OGM/0004,2025/OGM/0012;30;F;internet;Orłowo
+3974;2025/OGM/0012;51;F;internet;Mały Kack
+3975;2025/OGM/0004;28;F;internet;Wzgórze Św. Maksymiliana
+3976;2025/OGM/0004,2025/OGM/0012;33;F;internet;Oksywie
+3977;2025/OGM/0004;41;F;internet;Chylonia
+3978;2025/OGM/0004;30;F;internet;Orłowo
+3979;2025/OGM/0004;30;M;internet;Chwarzno-Wiczlino
+3980;2025/OGM/0004;34;M;internet;Witomino
+3981;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+3982;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+3983;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+3984;2025/OGM/0004,2025/OGM/0012;35;F;internet;Śródmieście
+3985;2025/OGM/0004;33;F;internet;Chylonia
+3986;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+3987;2025/OGM/0004;40;F;internet;Chylonia
+3988;2025/OGM/0004;77;F;internet;Obłuże
+3990;2025/OGM/0004;35;F;internet;Śródmieście
+3991;2025/OGM/0004;35;F;internet;Wzgórze Św. Maksymiliana
+3993;2025/OGM/0004;5;F;internet;Śródmieście
+3994;2025/OGM/0004;40;M;internet;Śródmieście
+3995;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+3996;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+3997;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+3999;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+4000;2025/OGM/0004;10;M;internet;Śródmieście
+4001;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+4002;2025/OGM/0004;25;F;internet;Obłuże
+4003;2025/OGM/0004,2025/OGM/0012;35;M;internet;Babie Doły
+4004;2025/OGM/0004,2025/OGM/0012;53;M;internet;Śródmieście
+4005;2025/OGM/0004;21;M;internet;Cisowa
+4006;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chylonia
+4007;2025/OGM/0004;65;M;internet;Pustki Cisowskie-Demptowo
+4008;2025/OGM/0012;40;F;internet;Babie Doły
+4009;2025/OGM/0012;27;F;internet;Pogórze
+4010;2025/OGM/0012;69;F;internet;Pustki Cisowskie-Demptowo
+4011;2025/OGM/0004,2025/OGM/0012;32;F;internet;Obłuże
+4012;2025/OGM/0004;12;F;internet;Babie Doły
+4013;2025/OGM/0004;42;M;internet;Mały Kack
+4014;2025/OGM/0004,2025/OGM/0012;55;F;internet;Cisowa
+4015;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+4016;2025/OGM/0004;6;F;internet;Babie Doły
+4017;2025/OGM/0004;39;F;internet;Chylonia
+4018;2025/OGM/0004;32;M;internet;Obłuże
+4020;2025/OGM/0004;36;F;internet;Mały Kack
+4021;2025/OGM/0012;73;F;internet;Witomino
+4022;2025/OGM/0012;4;M;internet;Babie Doły
+4023;2025/OGM/0004,2025/OGM/0012;38;M;internet;Oksywie
+4024;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+4026;2025/OGM/0004;36;F;internet;Cisowa
+4027;2025/OGM/0004;40;M;internet;Babie Doły
+4028;2025/OGM/0012;43;F;internet;
+4029;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4030;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+4031;2025/OGM/0004;31;F;internet;Oksywie
+4032;2025/OGM/0004;41;F;internet;Wielki Kack
+4033;2025/OGM/0004;57;M;internet;Śródmieście
+4034;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+4035;2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+4036;2025/OGM/0004,2025/OGM/0012;4;M;internet;Chwarzno-Wiczlino
+4037;2025/OGM/0004;40;M;internet;Wielki Kack
+4038;2025/OGM/0004;42;F;internet;Wzgórze Św. Maksymiliana
+4039;2025/OGM/0012;13;M;internet;Mały Kack
+4040;2025/OGM/0004;26;M;internet;Babie Doły
+4041;2025/OGM/0004,2025/OGM/0012;48;F;internet;Pustki Cisowskie-Demptowo
+4042;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+4043;2025/OGM/0004;37;F;internet;Dąbrowa
+4045;2025/OGM/0004;40;F;internet;Babie Doły
+4046;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+4047;2025/OGM/0004;32;M;internet;Obłuże
+4048;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+4049;2025/OGM/0004;51;M;internet;Babie Doły
+4050;2025/OGM/0004;44;M;internet;Dąbrowa
+4051;2025/OGM/0004;7;F;internet;Babie Doły
+4052;2025/OGM/0004,2025/OGM/0012;59;F;internet;Pogórze
+4053;2025/OGM/0004;52;M;internet;Chwarzno-Wiczlino
+4054;2025/OGM/0004;45;M;internet;Babie Doły
+4055;2025/OGM/0004;49;M;internet;Chylonia
+4056;2025/OGM/0004;6;M;internet;Dąbrowa
+4057;2025/OGM/0004;50;M;internet;Cisowa
+4058;2025/OGM/0004,2025/OGM/0012;37;M;internet;Witomino
+4060;2025/OGM/0004,2025/OGM/0012;75;M;internet;Mały Kack
+4061;2025/OGM/0012;47;F;internet;Chylonia
+4062;2025/OGM/0004;4;F;internet;Dąbrowa
+4063;2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+4064;2025/OGM/0012;60;M;internet;Pogórze
+4065;2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+4066;2025/OGM/0004;36;F;internet;Wzgórze Św. Maksymiliana
+4067;2025/OGM/0004,2025/OGM/0012;34;M;internet;Orłowo
+4068;2025/OGM/0004;49;F;internet;Chwarzno-Wiczlino
+4069;2025/OGM/0012;53;M;internet;Chylonia
+4070;2025/OGM/0012;70;F;internet;Mały Kack
+4071;2025/OGM/0012;50;M;internet;Mały Kack
+4072;2025/OGM/0004;40;F;internet;Dąbrowa
+4073;2025/OGM/0012;41;M;internet;Pogórze
+4074;2025/OGM/0012;47;M;internet;Babie Doły
+4076;2025/OGM/0004;47;F;internet;Grabówek
+4077;2025/OGM/0012;43;F;internet;Babie Doły
+4079;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+4080;2025/OGM/0004,2025/OGM/0012;22;F;internet;Chwarzno-Wiczlino
+4081;2025/OGM/0004,2025/OGM/0012;5;M;internet;Oksywie
+4082;2025/OGM/0004;48;F;internet;Babie Doły
+4083;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+4084;2025/OGM/0012;9;F;internet;Mały Kack
+4086;2025/OGM/0004;78;M;internet;Obłuże
+4087;2025/OGM/0004,2025/OGM/0012;43;M;internet;Babie Doły
+4088;2025/OGM/0004;26;M;internet;Dąbrowa
+4089;2025/OGM/0004;68;M;internet;Mały Kack
+4090;2025/OGM/0004;42;M;internet;Działki Leśne
+4091;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+4092;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+4093;2025/OGM/0004;59;F;internet;Orłowo
+4094;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pogórze
+4095;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chylonia
+4096;2025/OGM/0004;75;F;internet;Obłuże
+4097;2025/OGM/0004;41;M;internet;Obłuże
+4098;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+4100;2025/OGM/0004,2025/OGM/0012;69;M;internet;Działki Leśne
+4101;2025/OGM/0004;54;F;internet;Obłuże
+4102;2025/OGM/0004,2025/OGM/0012;45;F;internet;Babie Doły
+4103;2025/OGM/0004;22;M;internet;Witomino
+4104;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+4105;2025/OGM/0012;31;M;internet;Redłowo
+4106;2025/OGM/0004,2025/OGM/0012;45;M;internet;Babie Doły
+4107;2025/OGM/0004;33;M;internet;Mały Kack
+4108;2025/OGM/0004,2025/OGM/0012;30;F;internet;Cisowa
+4110;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+4111;2025/OGM/0004,2025/OGM/0012;26;M;internet;Dąbrowa
+4112;2025/OGM/0004;36;F;internet;Chylonia
+4113;2025/OGM/0004;39;M;internet;Karwiny
+4114;2025/OGM/0004,2025/OGM/0012;15;F;internet;Dąbrowa
+4115;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+4116;2025/OGM/0004,2025/OGM/0012;18;M;internet;Babie Doły
+4117;2025/OGM/0004;49;F;internet;Chylonia
+4118;2025/OGM/0004;36;M;internet;Obłuże
+4119;2025/OGM/0004;32;F;internet;Redłowo
+4120;2025/OGM/0004,2025/OGM/0012;18;F;internet;Chwarzno-Wiczlino
+4121;2025/OGM/0004;38;M;internet;Cisowa
+4123;2025/OGM/0004,2025/OGM/0012;40;M;internet;Śródmieście
+4124;2025/OGM/0004;34;F;internet;Grabówek
+4125;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+4126;2025/OGM/0004;50;M;internet;Obłuże
+4127;2025/OGM/0004;8;M;internet;Grabówek
+4128;2025/OGM/0004;27;M;internet;Chwarzno-Wiczlino
+4129;2025/OGM/0004,2025/OGM/0012;44;F;internet;Oksywie
+4130;2025/OGM/0004,2025/OGM/0012;38;F;internet;Cisowa
+4131;2025/OGM/0004;17;F;internet;Działki Leśne
+4132;2025/OGM/0004;8;F;internet;Grabówek
+4133;2025/OGM/0004;44;M;internet;Karwiny
+4134;2025/OGM/0012;47;F;internet;Babie Doły
+4135;2025/OGM/0004;52;M;internet;Działki Leśne
+4136;2025/OGM/0004;45;M;internet;Wielki Kack
+4137;2025/OGM/0004,2025/OGM/0012;35;F;internet;Działki Leśne
+4138;2025/OGM/0004;44;F;internet;Wielki Kack
+4139;2025/OGM/0004,2025/OGM/0012;41;M;internet;Redłowo
+4140;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+4141;2025/OGM/0004,2025/OGM/0012;11;M;internet;Witomino
+4142;2025/OGM/0012;34;M;internet;Wzgórze Św. Maksymiliana
+4143;2025/OGM/0004;38;F;internet;Mały Kack
+4144;2025/OGM/0004,2025/OGM/0012;27;M;internet;Oksywie
+4145;2025/OGM/0004;39;F;internet;Obłuże
+4146;2025/OGM/0004;10;M;internet;Mały Kack
+4147;2025/OGM/0012;8;F;internet;Mały Kack
+4148;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+4149;2025/OGM/0004;34;F;internet;Cisowa
+4150;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+4151;2025/OGM/0004,2025/OGM/0012;34;F;internet;Witomino
+4152;2025/OGM/0004;25;M;internet;Obłuże
+4153;2025/OGM/0004;37;F;internet;Mały Kack
+4154;2025/OGM/0004,2025/OGM/0012;38;F;internet;Babie Doły
+4155;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+4156;2025/OGM/0004,2025/OGM/0012;17;F;internet;Obłuże
+4157;2025/OGM/0004,2025/OGM/0012;39;M;internet;Pustki Cisowskie-Demptowo
+4158;2025/OGM/0012;51;M;internet;Redłowo
+4159;2025/OGM/0004,2025/OGM/0012;39;F;internet;Dąbrowa
+4160;2025/OGM/0004,2025/OGM/0012;59;M;internet;Chylonia
+4161;2025/OGM/0012;45;M;internet;Orłowo
+4162;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+4163;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+4164;2025/OGM/0012;4;M;internet;Babie Doły
+4165;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+4166;2025/OGM/0004;34;F;internet;Obłuże
+4167;2025/OGM/0004,2025/OGM/0012;16;F;internet;Babie Doły
+4168;2025/OGM/0004,2025/OGM/0012;7;F;internet;Mały Kack
+4169;2025/OGM/0004;9;M;internet;Oksywie
+4170;2025/OGM/0004;39;M;internet;Mały Kack
+4171;2025/OGM/0004;35;F;internet;Obłuże
+4172;2025/OGM/0004,2025/OGM/0012;40;M;internet;Leszczynki
+4173;2025/OGM/0012;38;F;internet;Śródmieście
+4174;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+4175;2025/OGM/0004,2025/OGM/0012;8;F;internet;Babie Doły
+4176;2025/OGM/0004;35;F;internet;Oksywie
+4177;2025/OGM/0004,2025/OGM/0012;42;F;internet;Orłowo
+4178;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+4179;2025/OGM/0004,2025/OGM/0012;31;F;internet;Pogórze
+4180;2025/OGM/0004;38;F;internet;Mały Kack
+4181;2025/OGM/0004;26;M;internet;Orłowo
+4182;2025/OGM/0004;39;M;internet;Mały Kack
+4183;2025/OGM/0004,2025/OGM/0012;3;M;internet;Babie Doły
+4184;2025/OGM/0004;27;F;internet;Śródmieście
+4185;2025/OGM/0004,2025/OGM/0012;37;M;internet;Mały Kack
+4186;2025/OGM/0004,2025/OGM/0012;5;F;internet;Obłuże
+4187;2025/OGM/0004,2025/OGM/0012;9;M;internet;Babie Doły
+4188;2025/OGM/0004,2025/OGM/0012;15;M;internet;Orłowo
+4189;2025/OGM/0004;32;F;internet;Witomino
+4190;2025/OGM/0004;8;F;internet;Babie Doły
+4191;2025/OGM/0004,2025/OGM/0012;36;F;internet;Śródmieście
+4192;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4193;2025/OGM/0004,2025/OGM/0012;55;F;internet;Witomino
+4195;2025/OGM/0004;40;F;internet;Cisowa
+4196;2025/OGM/0004,2025/OGM/0012;48;M;internet;Orłowo
+4198;2025/OGM/0004;11;M;internet;Cisowa
+4199;2025/OGM/0004;38;F;internet;Dąbrowa
+4200;2025/OGM/0004,2025/OGM/0012;11;M;internet;Orłowo
+4202;2025/OGM/0004,2025/OGM/0012;39;M;internet;Dąbrowa
+4203;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+4204;2025/OGM/0004,2025/OGM/0012;53;M;internet;Cisowa
+4205;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+4206;2025/OGM/0004;40;M;internet;Wielki Kack
+4207;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4208;2025/OGM/0004,2025/OGM/0012;12;M;internet;Pustki Cisowskie-Demptowo
+4209;2025/OGM/0004,2025/OGM/0012;10;M;internet;Dąbrowa
+4210;2025/OGM/0004;36;M;internet;Witomino
+4211;2025/OGM/0004,2025/OGM/0012;15;F;internet;Pustki Cisowskie-Demptowo
+4212;2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+4214;2025/OGM/0004,2025/OGM/0012;65;F;internet;Wielki Kack
+4217;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pustki Cisowskie-Demptowo
+4220;2025/OGM/0004;51;M;internet;Mały Kack
+4221;2025/OGM/0004;29;F;internet;Pogórze
+4222;2025/OGM/0004,2025/OGM/0012;44;F;internet;
+4223;2025/OGM/0004;32;F;internet;Działki Leśne
+4224;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+4225;2025/OGM/0004;37;F;internet;Śródmieście
+4226;2025/OGM/0012;31;F;internet;Witomino
+4227;2025/OGM/0004,2025/OGM/0012;46;M;internet;Pustki Cisowskie-Demptowo
+4228;2025/OGM/0004;47;F;internet;Pogórze
+4230;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+4231;2025/OGM/0004;45;F;internet;Obłuże
+4232;2025/OGM/0004;28;M;internet;Oksywie
+4233;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+4235;2025/OGM/0004;24;F;internet;Wielki Kack
+4236;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+4237;2025/OGM/0004,2025/OGM/0012;54;F;internet;Kamienna Góra
+4238;2025/OGM/0004,2025/OGM/0012;59;M;internet;Kamienna Góra
+4239;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wielki Kack
+4240;2025/OGM/0004,2025/OGM/0012;33;F;internet;Obłuże
+4241;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wzgórze Św. Maksymiliana
+4242;2025/OGM/0004;5;M;internet;Pustki Cisowskie-Demptowo
+4243;2025/OGM/0012;35;F;internet;Wielki Kack
+4244;2025/OGM/0004,2025/OGM/0012;50;F;internet;Śródmieście
+4245;2025/OGM/0004;37;F;internet;Chylonia
+4246;2025/OGM/0012;16;F;internet;Wielki Kack
+4247;2025/OGM/0004,2025/OGM/0012;36;F;internet;Dąbrowa
+4248;2025/OGM/0012;30;M;internet;Chwarzno-Wiczlino
+4249;2025/OGM/0004;14;M;internet;Pustki Cisowskie-Demptowo
+4250;2025/OGM/0004,2025/OGM/0012;24;F;internet;Pogórze
+4251;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+4253;2025/OGM/0004;13;M;internet;Pustki Cisowskie-Demptowo
+4254;2025/OGM/0004,2025/OGM/0012;8;F;internet;Dąbrowa
+4255;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+4256;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+4257;2025/OGM/0012;28;M;internet;Mały Kack
+4258;2025/OGM/0004;6;M;internet;Dąbrowa
+4259;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+4260;2025/OGM/0004;18;F;internet;Wielki Kack
+4261;2025/OGM/0004;44;F;internet;Wielki Kack
+4262;2025/OGM/0004,2025/OGM/0012;24;F;internet;Kamienna Góra
+4263;2025/OGM/0012;58;M;internet;Redłowo
+4264;2025/OGM/0004;50;M;internet;Witomino
+4265;2025/OGM/0004;26;M;internet;Grabówek
+4266;2025/OGM/0012;28;M;internet;Witomino
+4267;2025/OGM/0004;46;F;internet;Mały Kack
+4268;2025/OGM/0004;45;F;internet;Chylonia
+4269;2025/OGM/0004;37;F;internet;Działki Leśne
+4270;2025/OGM/0004;31;M;internet;Oksywie
+4272;2025/OGM/0004,2025/OGM/0012;54;F;internet;Leszczynki
+4273;2025/OGM/0004,2025/OGM/0012;50;F;internet;Karwiny
+4274;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+4275;2025/OGM/0004,2025/OGM/0012;23;F;internet;Leszczynki
+4276;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+4278;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+4279;2025/OGM/0004;50;M;internet;Pustki Cisowskie-Demptowo
+4280;2025/OGM/0012;63;M;internet;Redłowo
+4281;2025/OGM/0004;61;F;internet;Kamienna Góra
+4282;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+4283;2025/OGM/0012;49;F;internet;Witomino
+4284;2025/OGM/0012;89;F;internet;Redłowo
+4285;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+4286;2025/OGM/0004;43;F;internet;Cisowa
+4287;2025/OGM/0004;39;F;internet;Grabówek
+4288;2025/OGM/0004;13;F;internet;Cisowa
+4289;2025/OGM/0012;41;F;internet;Orłowo
+4290;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+4291;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+4292;2025/OGM/0004;53;M;internet;Cisowa
+4293;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+4294;2025/OGM/0004;38;F;internet;Wzgórze Św. Maksymiliana
+4295;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chylonia
+4296;2025/OGM/0004;40;F;internet;Cisowa
+4297;2025/OGM/0004;22;F;internet;Mały Kack
+4298;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+4299;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+4300;2025/OGM/0004;39;F;internet;Karwiny
+4301;2025/OGM/0004,2025/OGM/0012;32;M;internet;Cisowa
+4302;2025/OGM/0004;49;M;internet;Obłuże
+4303;2025/OGM/0004,2025/OGM/0012;25;F;internet;Cisowa
+4304;2025/OGM/0004;28;F;internet;Oksywie
+4305;2025/OGM/0012;28;M;internet;Śródmieście
+4306;2025/OGM/0012;27;F;internet;Oksywie
+4307;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+4308;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+4309;2025/OGM/0004,2025/OGM/0012;3;M;internet;Chwarzno-Wiczlino
+4310;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+4311;2025/OGM/0004,2025/OGM/0012;63;F;internet;Cisowa
+4313;2025/OGM/0004;71;M;internet;Pogórze
+4314;2025/OGM/0004,2025/OGM/0012;23;M;internet;Orłowo
+4315;2025/OGM/0004,2025/OGM/0012;;M;internet;Chwarzno-Wiczlino
+4317;2025/OGM/0004,2025/OGM/0012;45;M;internet;Pustki Cisowskie-Demptowo
+4318;2025/OGM/0004,2025/OGM/0012;64;M;internet;Cisowa
+4319;2025/OGM/0012;45;F;internet;Działki Leśne
+4321;2025/OGM/0004;23;M;internet;Mały Kack
+4322;2025/OGM/0004,2025/OGM/0012;69;F;internet;Chylonia
+4323;2025/OGM/0004,2025/OGM/0012;44;M;internet;Działki Leśne
+4324;2025/OGM/0004;42;F;internet;Mały Kack
+4326;2025/OGM/0012;73;F;internet;Oksywie
+4327;2025/OGM/0012;43;F;internet;Babie Doły
+4328;2025/OGM/0004,2025/OGM/0012;61;F;internet;Wielki Kack
+4329;2025/OGM/0012;37;F;internet;Pogórze
+4330;2025/OGM/0012;37;F;internet;Działki Leśne
+4331;2025/OGM/0004;27;M;internet;Chwarzno-Wiczlino
+4332;2025/OGM/0012;43;F;internet;Oksywie
+4333;2025/OGM/0004,2025/OGM/0012;31;M;internet;Wielki Kack
+4334;2025/OGM/0004;35;F;internet;Obłuże
+4335;2025/OGM/0004;41;F;internet;Redłowo
+4336;2025/OGM/0012;64;F;internet;Pustki Cisowskie-Demptowo
+4337;2025/OGM/0004,2025/OGM/0012;22;M;internet;Cisowa
+4338;2025/OGM/0004;78;F;internet;Chylonia
+4339;2025/OGM/0012;44;M;internet;Działki Leśne
+4341;2025/OGM/0004;28;M;internet;Dąbrowa
+4342;2025/OGM/0004;38;F;internet;Obłuże
+4343;2025/OGM/0004;31;F;internet;Oksywie
+4344;2025/OGM/0012;48;M;internet;Chylonia
+4345;2025/OGM/0004;26;M;internet;Chwarzno-Wiczlino
+4346;2025/OGM/0004;47;F;internet;Redłowo
+4347;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+4348;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+4349;2025/OGM/0004;50;F;internet;Wielki Kack
+4350;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+4351;2025/OGM/0004;27;F;internet;Chwarzno-Wiczlino
+4352;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+4353;2025/OGM/0004;40;F;internet;Witomino
+4355;2025/OGM/0004,2025/OGM/0012;33;F;internet;Witomino
+4356;2025/OGM/0012;55;M;internet;Chylonia
+4357;2025/OGM/0012;37;F;internet;Witomino
+4358;2025/OGM/0004,2025/OGM/0012;44;M;internet;Oksywie
+4359;2025/OGM/0012;36;F;internet;Śródmieście
+4360;2025/OGM/0004,2025/OGM/0012;15;F;internet;Cisowa
+4361;2025/OGM/0004;34;F;internet;Witomino
+4362;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chylonia
+4363;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+4364;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+4365;2025/OGM/0004,2025/OGM/0012;10;F;internet;Cisowa
+4366;2025/OGM/0004,2025/OGM/0012;30;M;internet;Chwarzno-Wiczlino
+4367;2025/OGM/0012;35;F;internet;Oksywie
+4368;2025/OGM/0012;39;M;internet;Mały Kack
+4369;2025/OGM/0004;5;M;internet;Chwarzno-Wiczlino
+4371;2025/OGM/0012;39;F;internet;Babie Doły
+4372;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+4373;2025/OGM/0004;35;F;internet;Wielki Kack
+4374;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4375;2025/OGM/0004;37;M;internet;Śródmieście
+4376;2025/OGM/0004,2025/OGM/0012;25;F;internet;Obłuże
+4377;2025/OGM/0004;46;M;internet;Witomino
+4378;2025/OGM/0004;44;M;internet;Mały Kack
+4381;2025/OGM/0012;42;F;internet;Kamienna Góra
+4382;2025/OGM/0004;29;F;internet;Obłuże
+4383;2025/OGM/0004;30;F;internet;Śródmieście
+4384;2025/OGM/0012;18;F;internet;Leszczynki
+4385;2025/OGM/0004,2025/OGM/0012;29;M;internet;Oksywie
+4386;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+4388;2025/OGM/0004;61;F;internet;Śródmieście
+4389;2025/OGM/0004;21;F;internet;Leszczynki
+4390;2025/OGM/0004;38;F;internet;Cisowa
+4391;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4392;2025/OGM/0012;38;F;internet;Pogórze
+4393;2025/OGM/0004;35;F;internet;Cisowa
+4394;2025/OGM/0012;40;F;internet;Witomino
+4395;2025/OGM/0004;28;F;internet;Witomino
+4396;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+4399;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+4400;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+4401;2025/OGM/0004;50;F;internet;Cisowa
+4402;2025/OGM/0004;47;F;internet;Mały Kack
+4405;2025/OGM/0004;50;M;internet;Cisowa
+4406;2025/OGM/0004,2025/OGM/0012;48;F;internet;Witomino
+4407;2025/OGM/0004;72;F;internet;Pogórze
+4408;2025/OGM/0004,2025/OGM/0012;66;F;internet;Babie Doły
+4409;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+4410;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+4411;2025/OGM/0004;50;M;internet;Mały Kack
+4412;2025/OGM/0004;40;F;internet;Wielki Kack
+4413;2025/OGM/0012;55;F;internet;Śródmieście
+4414;2025/OGM/0004;40;F;internet;Oksywie
+4415;2025/OGM/0004,2025/OGM/0012;26;F;internet;Pogórze
+4416;2025/OGM/0004;7;F;internet;Mały Kack
+4418;2025/OGM/0004;51;M;internet;Cisowa
+4419;2025/OGM/0004,2025/OGM/0012;35;M;internet;Witomino
+4421;2025/OGM/0004;30;M;internet;Chwarzno-Wiczlino
+4422;2025/OGM/0012;20;M;internet;Wielki Kack
+4423;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+4424;2025/OGM/0004;33;F;internet;Babie Doły
+4425;2025/OGM/0012;4;F;internet;Chwarzno-Wiczlino
+4426;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+4427;2025/OGM/0004;36;F;internet;Redłowo
+4428;2025/OGM/0004;26;M;internet;Mały Kack
+4429;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+4430;2025/OGM/0004;44;M;internet;Mały Kack
+4431;2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+4432;2025/OGM/0004,2025/OGM/0012;41;F;internet;Grabówek
+4433;2025/OGM/0004,2025/OGM/0012;67;F;internet;Działki Leśne
+4434;2025/OGM/0004;11;M;internet;Dąbrowa
+4435;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+4437;2025/OGM/0012;41;F;internet;Mały Kack
+4438;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+4439;2025/OGM/0004;16;F;internet;Dąbrowa
+4440;2025/OGM/0004;43;M;internet;Witomino
+4441;2025/OGM/0004;42;M;internet;Mały Kack
+4442;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+4443;2025/OGM/0004;40;F;internet;Wielki Kack
+4444;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+4445;2025/OGM/0004;33;M;internet;Obłuże
+4446;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+4447;2025/OGM/0004;47;F;internet;Cisowa
+4448;2025/OGM/0004;31;M;internet;Oksywie
+4449;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+4450;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+4451;2025/OGM/0004,2025/OGM/0012;56;M;internet;Chwarzno-Wiczlino
+4452;2025/OGM/0004;37;M;internet;Karwiny
+4453;2025/OGM/0012;46;M;internet;Redłowo
+4454;2025/OGM/0004,2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+4455;2025/OGM/0004;40;F;internet;Cisowa
+4456;2025/OGM/0004,2025/OGM/0012;32;F;internet;Oksywie
+4457;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+4458;2025/OGM/0004;8;F;internet;Cisowa
+4459;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+4460;2025/OGM/0004;43;M;internet;Pogórze
+4461;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wzgórze Św. Maksymiliana
+4462;2025/OGM/0004,2025/OGM/0012;38;M;internet;Oksywie
+4463;2025/OGM/0004,2025/OGM/0012;10;M;internet;Oksywie
+4464;2025/OGM/0004,2025/OGM/0012;43;F;internet;Karwiny
+4465;2025/OGM/0004,2025/OGM/0012;33;M;internet;Śródmieście
+4466;2025/OGM/0004;38;M;internet;Wielki Kack
+4467;2025/OGM/0004,2025/OGM/0012;4;F;internet;Oksywie
+4468;2025/OGM/0012;15;M;internet;Obłuże
+4469;2025/OGM/0012;21;F;internet;Obłuże
+4470;2025/OGM/0004;57;M;internet;Wielki Kack
+4471;2025/OGM/0004,2025/OGM/0012;66;M;internet;Śródmieście
+4472;2025/OGM/0004;34;F;internet;Pustki Cisowskie-Demptowo
+4473;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4475;2025/OGM/0004;67;F;internet;Pogórze
+4476;2025/OGM/0004;47;M;internet;Grabówek
+4477;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+4478;2025/OGM/0012;47;F;internet;Witomino
+4479;2025/OGM/0012;46;F;internet;Obłuże
+4481;2025/OGM/0004;29;F;internet;Pustki Cisowskie-Demptowo
+4482;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+4483;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+4484;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+4485;2025/OGM/0004,2025/OGM/0012;38;M;internet;Grabówek
+4486;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+4488;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+4489;2025/OGM/0012;55;F;internet;Wielki Kack
+4490;2025/OGM/0004,2025/OGM/0012;15;F;internet;Pustki Cisowskie-Demptowo
+4491;2025/OGM/0004,2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+4492;2025/OGM/0012;82;F;internet;Wielki Kack
+4493;2025/OGM/0004;57;F;internet;Witomino
+4494;2025/OGM/0004;36;F;internet;Obłuże
+4495;2025/OGM/0012;33;F;internet;Działki Leśne
+4496;2025/OGM/0004;9;M;internet;Obłuże
+4497;2025/OGM/0004;61;F;internet;Mały Kack
+4498;2025/OGM/0004;44;F;internet;Wielki Kack
+4500;2025/OGM/0004;23;M;internet;Obłuże
+4501;2025/OGM/0004;75;F;internet;Obłuże
+4502;2025/OGM/0004,2025/OGM/0012;58;F;internet;Cisowa
+4503;2025/OGM/0004,2025/OGM/0012;40;F;internet;Oksywie
+4504;2025/OGM/0004,2025/OGM/0012;44;M;internet;Pogórze
+4505;2025/OGM/0012;21;F;internet;Obłuże
+4506;2025/OGM/0004;33;M;internet;Mały Kack
+4507;2025/OGM/0004,2025/OGM/0012;41;F;internet;Obłuże
+4508;2025/OGM/0012;40;M;internet;Chylonia
+4509;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+4510;2025/OGM/0004,2025/OGM/0012;30;M;internet;Oksywie
+4511;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+4512;2025/OGM/0004,2025/OGM/0012;42;M;internet;Obłuże
+4513;2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+4514;2025/OGM/0004,2025/OGM/0012;11;F;internet;Obłuże
+4515;2025/OGM/0004,2025/OGM/0012;7;M;internet;Obłuże
+4516;2025/OGM/0004;63;F;internet;Dąbrowa
+4517;2025/OGM/0004;38;F;internet;Grabówek
+4518;2025/OGM/0004;52;M;internet;Wielki Kack
+4519;2025/OGM/0004;25;M;internet;Wzgórze Św. Maksymiliana
+4520;2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+4521;2025/OGM/0004,2025/OGM/0012;69;F;internet;Pustki Cisowskie-Demptowo
+4522;2025/OGM/0012;7;F;internet;Obłuże
+4523;2025/OGM/0004,2025/OGM/0012;29;F;internet;Wielki Kack
+4524;2025/OGM/0004,2025/OGM/0012;40;F;internet;Babie Doły
+4525;2025/OGM/0004;23;M;internet;Działki Leśne
+4526;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+4527;2025/OGM/0004;43;M;internet;Witomino
+4528;2025/OGM/0012;24;M;internet;Śródmieście
+4529;2025/OGM/0012;5;M;internet;Obłuże
+4530;2025/OGM/0004;36;F;internet;Babie Doły
+4531;2025/OGM/0004,2025/OGM/0012;45;M;internet;Babie Doły
+4532;2025/OGM/0004,2025/OGM/0012;31;F;internet;Grabówek
+4533;2025/OGM/0012;49;F;internet;Redłowo
+4534;2025/OGM/0004;37;M;internet;Dąbrowa
+4535;2025/OGM/0004;9;F;internet;Babie Doły
+4536;2025/OGM/0004;30;M;internet;Pogórze
+4538;2025/OGM/0004,2025/OGM/0012;4;F;internet;Babie Doły
+4539;2025/OGM/0004,2025/OGM/0012;50;F;internet;Witomino
+4540;2025/OGM/0004;20;F;internet;Chylonia
+4541;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+4542;2025/OGM/0004,2025/OGM/0012;48;F;internet;Cisowa
+4543;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+4544;2025/OGM/0004;36;M;internet;Śródmieście
+4545;2025/OGM/0004;38;M;internet;Karwiny
+4546;2025/OGM/0012;47;F;internet;Mały Kack
+4547;2025/OGM/0012;37;F;internet;Witomino
+4548;2025/OGM/0012;74;M;internet;Wielki Kack
+4549;2025/OGM/0012;25;F;internet;Wzgórze Św. Maksymiliana
+4551;2025/OGM/0012;10;M;internet;Mały Kack
+4552;2025/OGM/0004;70;M;internet;Pogórze
+4554;2025/OGM/0004,2025/OGM/0012;51;F;internet;Oksywie
+4555;2025/OGM/0012;6;M;internet;Mały Kack
+4556;2025/OGM/0004,2025/OGM/0012;33;F;internet;Śródmieście
+4557;2025/OGM/0012;34;M;internet;Śródmieście
+4558;2025/OGM/0004;9;F;internet;Oksywie
+4559;2025/OGM/0004;33;F;internet;Leszczynki
+4560;2025/OGM/0004;6;F;internet;Oksywie
+4561;2025/OGM/0004;44;F;internet;Cisowa
+4562;2025/OGM/0012;70;F;internet;Chylonia
+4563;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+4564;2025/OGM/0012;76;M;internet;Leszczynki
+4565;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+4566;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+4567;2025/OGM/0004,2025/OGM/0012;60;F;internet;Chylonia
+4568;2025/OGM/0004;32;M;internet;Obłuże
+4569;2025/OGM/0004;47;F;internet;Chwarzno-Wiczlino
+4570;2025/OGM/0004;37;F;internet;Mały Kack
+4571;2025/OGM/0004,2025/OGM/0012;32;M;internet;Mały Kack
+4572;2025/OGM/0004,2025/OGM/0012;84;F;internet;Działki Leśne
+4574;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+4575;2025/OGM/0004;75;F;internet;Chwarzno-Wiczlino
+4576;2025/OGM/0004,2025/OGM/0012;1;M;internet;Mały Kack
+4578;2025/OGM/0004,2025/OGM/0012;75;F;internet;Wielki Kack
+4579;2025/OGM/0004;37;F;internet;Mały Kack
+4580;2025/OGM/0012;30;M;internet;Chwarzno-Wiczlino
+4582;2025/OGM/0004,2025/OGM/0012;34;F;internet;Śródmieście
+4583;2025/OGM/0004;41;F;internet;Babie Doły
+4584;2025/OGM/0004;77;M;internet;Wielki Kack
+4585;2025/OGM/0004;40;F;internet;Wielki Kack
+4586;2025/OGM/0004,2025/OGM/0012;32;F;internet;Kamienna Góra
+4587;2025/OGM/0004;41;F;internet;Wielki Kack
+4588;2025/OGM/0004;23;F;internet;Obłuże
+4589;2025/OGM/0012;32;F;internet;Chylonia
+4591;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+4592;2025/OGM/0004;31;F;internet;Mały Kack
+4593;2025/OGM/0004;27;M;internet;Działki Leśne
+4594;2025/OGM/0004,2025/OGM/0012;21;M;internet;Obłuże
+4595;2025/OGM/0004;34;F;internet;Obłuże
+4596;2025/OGM/0004;34;F;internet;Orłowo
+4597;2025/OGM/0004,2025/OGM/0012;;M;internet;Chwarzno-Wiczlino
+4598;2025/OGM/0004;30;M;internet;Cisowa
+4599;2025/OGM/0004;47;F;internet;Wielki Kack
+4601;2025/OGM/0012;39;M;internet;Dąbrowa
+4602;2025/OGM/0004;32;F;internet;Babie Doły
+4603;2025/OGM/0004;39;M;internet;Redłowo
+4604;2025/OGM/0004;32;M;internet;Pustki Cisowskie-Demptowo
+4605;2025/OGM/0004;3;F;internet;Cisowa
+4606;2025/OGM/0004;30;M;internet;Redłowo
+4607;2025/OGM/0004;;M;internet;Cisowa
+4608;2025/OGM/0004,2025/OGM/0012;54;F;internet;Działki Leśne
+4609;2025/OGM/0004,2025/OGM/0012;70;M;internet;Cisowa
+4610;2025/OGM/0004;29;F;internet;Cisowa
+4612;2025/OGM/0004,2025/OGM/0012;35;F;internet;Dąbrowa
+4613;2025/OGM/0004,2025/OGM/0012;51;F;internet;Obłuże
+4614;2025/OGM/0004;54;F;internet;Babie Doły
+4615;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+4617;2025/OGM/0004;45;F;internet;Wzgórze Św. Maksymiliana
+4619;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pogórze
+4620;2025/OGM/0004,2025/OGM/0012;25;M;internet;Mały Kack
+4622;2025/OGM/0004;59;F;internet;Cisowa
+4624;2025/OGM/0004;59;F;internet;Chwarzno-Wiczlino
+4625;2025/OGM/0004;46;M;internet;Oksywie
+4629;2025/OGM/0004,2025/OGM/0012;68;F;internet;Cisowa
+4630;2025/OGM/0004;46;M;internet;Oksywie
+4632;2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+4634;2025/OGM/0004;53;M;internet;Obłuże
+4635;2025/OGM/0004;35;F;internet;Chylonia
+4636;2025/OGM/0004;44;F;internet;Działki Leśne
+4637;2025/OGM/0004;56;M;internet;Działki Leśne
+4638;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+4639;2025/OGM/0004;48;F;internet;Chylonia
+4640;2025/OGM/0004;29;F;internet;Witomino
+4641;2025/OGM/0004;17;M;internet;Działki Leśne
+4642;2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+4643;2025/OGM/0004;16;M;internet;Wielki Kack
+4644;2025/OGM/0004;49;F;internet;Mały Kack
+4645;2025/OGM/0004;62;F;internet;Kamienna Góra
+4646;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+4647;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+4648;2025/OGM/0012;21;M;internet;Działki Leśne
+4649;2025/OGM/0004;14;F;internet;Działki Leśne
+4650;2025/OGM/0012;73;F;internet;Witomino
+4651;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+4652;2025/OGM/0004;41;F;internet;Redłowo
+4653;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wzgórze Św. Maksymiliana
+4654;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+4655;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pogórze
+4656;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+4657;2025/OGM/0004,2025/OGM/0012;47;F;internet;Cisowa
+4658;2025/OGM/0004,2025/OGM/0012;72;F;internet;Chwarzno-Wiczlino
+4659;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+4660;2025/OGM/0004,2025/OGM/0012;56;M;internet;Witomino
+4661;2025/OGM/0012;48;M;internet;Witomino
+4662;2025/OGM/0012;62;F;internet;Działki Leśne
+4664;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+4665;2025/OGM/0004;51;F;internet;Witomino
+4666;2025/OGM/0004;11;M;internet;Witomino
+4667;2025/OGM/0004;17;M;internet;Dąbrowa
+4668;2025/OGM/0004,2025/OGM/0012;25;F;internet;Cisowa
+4669;2025/OGM/0012;98;F;internet;Działki Leśne
+4670;2025/OGM/0004,2025/OGM/0012;22;F;internet;Dąbrowa
+4671;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+4672;2025/OGM/0012;62;M;internet;Działki Leśne
+4673;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+4674;2025/OGM/0004;4;F;internet;Chwarzno-Wiczlino
+4675;2025/OGM/0004,2025/OGM/0012;55;M;internet;Oksywie
+4676;2025/OGM/0004;6;F;internet;Witomino
+4677;2025/OGM/0004;25;F;internet;Wzgórze Św. Maksymiliana
+4678;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+4679;2025/OGM/0012;18;M;internet;Działki Leśne
+4680;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+4681;2025/OGM/0004,2025/OGM/0012;15;M;internet;Oksywie
+4682;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+4683;2025/OGM/0004;17;M;internet;Witomino
+4684;2025/OGM/0012;14;M;internet;Działki Leśne
+4686;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+4687;2025/OGM/0004,2025/OGM/0012;15;M;internet;Oksywie
+4688;2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+4690;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4691;2025/OGM/0004;37;M;internet;Witomino
+4692;2025/OGM/0004;46;F;internet;Mały Kack
+4693;2025/OGM/0004,2025/OGM/0012;11;F;internet;Oksywie
+4694;2025/OGM/0004,2025/OGM/0012;55;F;internet;Chwarzno-Wiczlino
+4696;2025/OGM/0004;20;M;internet;Chwarzno-Wiczlino
+4697;2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+4698;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+4699;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+4700;2025/OGM/0004;65;F;internet;Babie Doły
+4701;2025/OGM/0004;72;F;internet;Wielki Kack
+4702;2025/OGM/0004,2025/OGM/0012;67;M;internet;Chwarzno-Wiczlino
+4704;2025/OGM/0012;13;F;internet;Chwarzno-Wiczlino
+4705;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+4706;2025/OGM/0004,2025/OGM/0012;58;F;internet;Chwarzno-Wiczlino
+4707;2025/OGM/0004;68;F;internet;Chylonia
+4709;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+4710;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+4712;2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+4713;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+4714;2025/OGM/0004;69;M;internet;Chylonia
+4715;2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+4716;2025/OGM/0004,2025/OGM/0012;45;M;internet;Grabówek
+4717;2025/OGM/0004,2025/OGM/0012;5;M;internet;Chwarzno-Wiczlino
+4718;2025/OGM/0004,2025/OGM/0012;33;M;internet;
+4719;2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+4720;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+4721;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+4722;2025/OGM/0012;43;M;internet;Oksywie
+4723;2025/OGM/0004;61;M;internet;Pustki Cisowskie-Demptowo
+4725;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+4726;2025/OGM/0004;48;F;internet;Grabówek
+4727;2025/OGM/0012;38;F;internet;Oksywie
+4728;2025/OGM/0004;45;F;internet;Śródmieście
+4729;2025/OGM/0004;56;M;internet;Oksywie
+4730;2025/OGM/0012;7;F;internet;Oksywie
+4731;2025/OGM/0004,2025/OGM/0012;36;M;internet;Obłuże
+4732;2025/OGM/0004;17;M;internet;Śródmieście
+4734;2025/OGM/0004;57;F;internet;Chylonia
+4735;2025/OGM/0004;73;F;internet;Mały Kack
+4736;2025/OGM/0012;68;M;internet;Śródmieście
+4738;2025/OGM/0004;64;M;internet;Chwarzno-Wiczlino
+4740;2025/OGM/0012;69;M;internet;Mały Kack
+4743;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+4744;2025/OGM/0004;69;F;internet;Mały Kack
+4746;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+4748;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+4752;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+4753;2025/OGM/0012;25;F;internet;Chwarzno-Wiczlino
+4754;2025/OGM/0004,2025/OGM/0012;26;M;internet;Śródmieście
+4755;2025/OGM/0004;35;F;internet;Redłowo
+4756;2025/OGM/0012;42;F;internet;Chylonia
+4757;2025/OGM/0004,2025/OGM/0012;17;F;internet;Pustki Cisowskie-Demptowo
+4758;2025/OGM/0004;45;F;internet;Oksywie
+4761;2025/OGM/0004;22;F;internet;Oksywie
+4762;2025/OGM/0004;72;M;internet;Oksywie
+4763;2025/OGM/0012;40;M;internet;Chylonia
+4764;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+4766;2025/OGM/0004;22;M;internet;Witomino
+4767;2025/OGM/0004,2025/OGM/0012;47;M;internet;Witomino
+4768;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+4769;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+4770;2025/OGM/0012;60;F;internet;Grabówek
+4771;2025/OGM/0004;43;F;internet;Pustki Cisowskie-Demptowo
+4772;2025/OGM/0004;40;F;internet;Mały Kack
+4773;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+4774;2025/OGM/0012;41;M;internet;Działki Leśne
+4775;2025/OGM/0004;40;F;internet;Leszczynki
+4776;2025/OGM/0012;73;F;internet;Kamienna Góra
+4777;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+4778;2025/OGM/0004;17;M;internet;Pustki Cisowskie-Demptowo
+4779;2025/OGM/0012;69;F;internet;Chylonia
+4780;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+4781;2025/OGM/0012;10;F;internet;Działki Leśne
+4782;2025/OGM/0004;11;F;internet;Pustki Cisowskie-Demptowo
+4783;2025/OGM/0004;38;M;internet;Chylonia
+4784;2025/OGM/0004;35;M;internet;Cisowa
+4785;2025/OGM/0004;11;M;internet;Pustki Cisowskie-Demptowo
+4786;2025/OGM/0004;67;M;internet;Chwarzno-Wiczlino
+4787;2025/OGM/0004,2025/OGM/0012;82;F;internet;Cisowa
+4788;2025/OGM/0004;9;M;internet;Pustki Cisowskie-Demptowo
+4790;2025/OGM/0004;53;F;internet;Oksywie
+4791;2025/OGM/0004;5;F;internet;Pustki Cisowskie-Demptowo
+4792;2025/OGM/0004,2025/OGM/0012;35;F;internet;Cisowa
+4794;2025/OGM/0004;75;F;internet;Pustki Cisowskie-Demptowo
+4795;2025/OGM/0004,2025/OGM/0012;44;M;internet;Śródmieście
+4796;2025/OGM/0004;43;F;internet;Pustki Cisowskie-Demptowo
+4798;2025/OGM/0004,2025/OGM/0012;47;M;internet;Śródmieście
+4799;2025/OGM/0004;46;M;internet;Cisowa
+4800;2025/OGM/0004;69;F;internet;Chwarzno-Wiczlino
+4801;2025/OGM/0004,2025/OGM/0012;42;M;internet;Chylonia
+4802;2025/OGM/0012;67;M;internet;Oksywie
+4803;2025/OGM/0004;16;M;internet;Witomino
+4804;2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+4805;2025/OGM/0004;32;M;internet;Wielki Kack
+4807;2025/OGM/0004,2025/OGM/0012;44;M;internet;Mały Kack
+4808;2025/OGM/0012;31;M;internet;Wzgórze Św. Maksymiliana
+4809;2025/OGM/0004,2025/OGM/0012;74;F;internet;Oksywie
+4810;2025/OGM/0004;49;M;internet;Chwarzno-Wiczlino
+4811;2025/OGM/0004;75;M;internet;Grabówek
+4813;2025/OGM/0012;35;F;internet;Pogórze
+4814;2025/OGM/0004;43;F;internet;Chylonia
+4815;2025/OGM/0004,2025/OGM/0012;70;M;internet;Obłuże
+4816;2025/OGM/0004;49;F;internet;Cisowa
+4817;2025/OGM/0004,2025/OGM/0012;56;F;internet;Redłowo
+4818;2025/OGM/0004,2025/OGM/0012;1;F;internet;Mały Kack
+4819;2025/OGM/0004;55;M;internet;Chwarzno-Wiczlino
+4820;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+4822;2025/OGM/0012;50;M;internet;Witomino
+4825;2025/OGM/0004;10;F;internet;Chwarzno-Wiczlino
+4828;2025/OGM/0004;27;F;internet;Chylonia
+4829;2025/OGM/0004,2025/OGM/0012;71;F;internet;Oksywie
+4830;2025/OGM/0004,2025/OGM/0012;30;F;internet;Leszczynki
+4832;2025/OGM/0004;20;M;internet;Pogórze
+4833;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+4834;2025/OGM/0012;52;M;internet;Babie Doły
+4835;2025/OGM/0004;34;F;internet;Chylonia
+4836;2025/OGM/0004,2025/OGM/0012;38;M;internet;Obłuże
+4837;2025/OGM/0004;29;F;internet;Chylonia
+4838;2025/OGM/0004,2025/OGM/0012;28;M;internet;Babie Doły
+4839;2025/OGM/0004;27;M;internet;Chylonia
+4840;2025/OGM/0004;21;M;internet;Chylonia
+4841;2025/OGM/0004,2025/OGM/0012;50;F;internet;Chylonia
+4842;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+4843;2025/OGM/0004;4;F;internet;Oksywie
+4844;2025/OGM/0004;39;M;internet;Wielki Kack
+4845;2025/OGM/0012;75;M;internet;Pogórze
+4846;2025/OGM/0004;11;F;internet;Obłuże
+4847;2025/OGM/0004;54;M;internet;Chwarzno-Wiczlino
+4848;2025/OGM/0004;57;F;internet;Chylonia
+4850;2025/OGM/0004;43;F;internet;Obłuże
+4851;2025/OGM/0012;41;F;internet;Śródmieście
+4852;2025/OGM/0004;39;F;internet;Działki Leśne
+4853;2025/OGM/0004;61;M;internet;Grabówek
+4854;2025/OGM/0004;41;F;internet;Chylonia
+4855;2025/OGM/0004;48;F;internet;Chylonia
+4856;2025/OGM/0012;49;M;internet;Chylonia
+4857;2025/OGM/0004;44;F;internet;Oksywie
+4858;2025/OGM/0004,2025/OGM/0012;32;M;internet;Chylonia
+4859;2025/OGM/0004;48;M;internet;Chylonia
+4860;2025/OGM/0004,2025/OGM/0012;37;M;internet;Oksywie
+4861;2025/OGM/0004;12;F;internet;Oksywie
+4862;2025/OGM/0004;33;M;internet;Dąbrowa
+4863;2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+4864;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+4865;2025/OGM/0004;15;M;internet;Chylonia
+4866;2025/OGM/0004;13;F;internet;Chylonia
+4867;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4868;2025/OGM/0004;7;M;internet;Chwarzno-Wiczlino
+4869;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+4870;2025/OGM/0004;31;F;internet;Cisowa
+4871;2025/OGM/0012;34;F;internet;Redłowo
+4872;2025/OGM/0004;34;M;internet;Śródmieście
+4873;2025/OGM/0004;45;F;internet;Wielki Kack
+4874;2025/OGM/0004,2025/OGM/0012;20;F;internet;Orłowo
+4875;2025/OGM/0004,2025/OGM/0012;11;M;internet;Pustki Cisowskie-Demptowo
+4876;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+4877;2025/OGM/0004;44;F;internet;Śródmieście
+4878;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+4879;2025/OGM/0004,2025/OGM/0012;49;F;internet;Grabówek
+4880;2025/OGM/0012;78;F;internet;Chwarzno-Wiczlino
+4881;2025/OGM/0004,2025/OGM/0012;15;F;internet;Grabówek
+4882;2025/OGM/0012;79;M;internet;Chwarzno-Wiczlino
+4883;2025/OGM/0004,2025/OGM/0012;12;M;internet;Grabówek
+4886;2025/OGM/0004;20;F;internet;Chwarzno-Wiczlino
+4887;2025/OGM/0004,2025/OGM/0012;42;F;internet;Cisowa
+4888;2025/OGM/0012;56;F;internet;Wzgórze Św. Maksymiliana
+4889;2025/OGM/0004,2025/OGM/0012;55;F;internet;Oksywie
+4890;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+4891;2025/OGM/0004;38;F;internet;Redłowo
+4892;2025/OGM/0004;6;F;internet;Cisowa
+4893;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+4894;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+4895;2025/OGM/0004,2025/OGM/0012;44;M;internet;Obłuże
+4896;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+4897;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wzgórze Św. Maksymiliana
+4898;2025/OGM/0004,2025/OGM/0012;7;F;internet;Cisowa
+4899;2025/OGM/0004,2025/OGM/0012;12;M;internet;Wielki Kack
+4900;2025/OGM/0004,2025/OGM/0012;40;F;internet;Leszczynki
+4901;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+4902;2025/OGM/0004,2025/OGM/0012;4;M;internet;Cisowa
+4903;2025/OGM/0004;28;F;internet;Chwarzno-Wiczlino
+4904;2025/OGM/0004,2025/OGM/0012;10;M;internet;Wielki Kack
+4905;2025/OGM/0004;45;M;internet;Cisowa
+4906;2025/OGM/0004;51;F;internet;Chwarzno-Wiczlino
+4907;2025/OGM/0004;65;F;internet;Chwarzno-Wiczlino
+4908;2025/OGM/0004;;F;internet;Wielki Kack
+4909;2025/OGM/0004;72;M;internet;Chwarzno-Wiczlino
+4910;2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+4911;2025/OGM/0004;31;F;internet;Chylonia
+4913;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wielki Kack
+4914;2025/OGM/0004,2025/OGM/0012;53;F;internet;Redłowo
+4918;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+4919;2025/OGM/0004,2025/OGM/0012;50;F;internet;Obłuże
+4921;2025/OGM/0004,2025/OGM/0012;20;F;internet;Śródmieście
+4922;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chylonia
+4923;2025/OGM/0004;47;F;internet;Dąbrowa
+4924;2025/OGM/0012;62;F;internet;Oksywie
+4927;2025/OGM/0004;46;F;internet;Działki Leśne
+4928;2025/OGM/0012;65;M;internet;Oksywie
+4929;2025/OGM/0004,2025/OGM/0012;81;F;internet;Śródmieście
+4930;2025/OGM/0004,2025/OGM/0012;75;F;internet;Mały Kack
+4932;2025/OGM/0004,2025/OGM/0012;52;M;internet;Obłuże
+4933;2025/OGM/0004,2025/OGM/0012;31;M;internet;Babie Doły
+4934;2025/OGM/0004,2025/OGM/0012;25;F;internet;Witomino
+4935;2025/OGM/0004;32;F;internet;Oksywie
+4936;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+4937;2025/OGM/0012;35;M;internet;Chylonia
+4938;2025/OGM/0004,2025/OGM/0012;7;M;internet;Oksywie
+4939;2025/OGM/0004;45;M;internet;Działki Leśne
+4940;2025/OGM/0004,2025/OGM/0012;53;F;internet;Obłuże
+4941;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+4942;2025/OGM/0004;53;F;internet;Chylonia
+4943;2025/OGM/0012;5;M;internet;Chylonia
+4944;2025/OGM/0004,2025/OGM/0012;28;F;internet;Babie Doły
+4945;2025/OGM/0012;72;F;internet;Grabówek
+4946;2025/OGM/0004;55;F;internet;Kamienna Góra
+4947;2025/OGM/0004;26;M;internet;Chwarzno-Wiczlino
+4948;2025/OGM/0004,2025/OGM/0012;40;M;internet;Grabówek
+4949;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+4950;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+4951;2025/OGM/0012;62;F;internet;Orłowo
+4952;2025/OGM/0004;34;F;internet;Wielki Kack
+4953;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+4954;2025/OGM/0004,2025/OGM/0012;71;F;internet;Śródmieście
+4955;2025/OGM/0004;64;F;internet;Pustki Cisowskie-Demptowo
+4956;2025/OGM/0004;35;F;internet;Pustki Cisowskie-Demptowo
+4957;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+4958;2025/OGM/0012;78;M;internet;Witomino
+4959;2025/OGM/0012;32;F;internet;Chylonia
+4960;2025/OGM/0012;34;M;internet;Pustki Cisowskie-Demptowo
+4961;2025/OGM/0004,2025/OGM/0012;54;F;internet;Oksywie
+4962;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+4963;2025/OGM/0012;44;M;internet;Śródmieście
+4964;2025/OGM/0004,2025/OGM/0012;46;M;internet;Dąbrowa
+4965;2025/OGM/0012;55;F;internet;Chwarzno-Wiczlino
+4966;2025/OGM/0012;47;F;internet;Witomino
+4967;2025/OGM/0004,2025/OGM/0012;50;M;internet;Orłowo
+4968;2025/OGM/0004;33;M;internet;Witomino
+4969;2025/OGM/0004;38;M;internet;Mały Kack
+4970;2025/OGM/0012;52;F;internet;Śródmieście
+4971;2025/OGM/0004;47;F;internet;Działki Leśne
+4972;2025/OGM/0004;45;F;internet;Dąbrowa
+4973;2025/OGM/0004;51;F;internet;Obłuże
+4974;2025/OGM/0004;34;F;internet;Oksywie
+4975;2025/OGM/0004,2025/OGM/0012;37;M;internet;Mały Kack
+4976;2025/OGM/0004,2025/OGM/0012;17;M;internet;Obłuże
+4977;2025/OGM/0004;39;M;internet;Pustki Cisowskie-Demptowo
+4978;2025/OGM/0004,2025/OGM/0012;21;M;internet;Obłuże
+4980;2025/OGM/0004;46;F;internet;Wielki Kack
+4981;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+4982;2025/OGM/0004;52;F;internet;Chylonia
+4983;2025/OGM/0004;31;M;internet;Chylonia
+4984;2025/OGM/0012;75;F;internet;Śródmieście
+4985;2025/OGM/0004,2025/OGM/0012;32;F;internet;Kamienna Góra
+4986;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+4988;2025/OGM/0004,2025/OGM/0012;36;F;internet;Oksywie
+4989;2025/OGM/0004;37;F;internet;Mały Kack
+4991;2025/OGM/0004;73;F;internet;Oksywie
+4992;2025/OGM/0004;66;M;internet;Chwarzno-Wiczlino
+4993;2025/OGM/0004,2025/OGM/0012;42;M;internet;Chylonia
+4994;2025/OGM/0004,2025/OGM/0012;43;F;internet;Śródmieście
+4995;2025/OGM/0004;45;M;internet;Mały Kack
+4996;2025/OGM/0004;70;F;internet;Oksywie
+4998;2025/OGM/0004;47;F;internet;Redłowo
+4999;2025/OGM/0004,2025/OGM/0012;40;F;internet;Redłowo
+5000;2025/OGM/0004,2025/OGM/0012;37;M;internet;Grabówek
+5002;2025/OGM/0004;36;F;internet;Oksywie
+5003;2025/OGM/0012;46;F;internet;Witomino
+5004;2025/OGM/0012;45;M;internet;Witomino
+5005;2025/OGM/0004;40;F;internet;Obłuże
+5006;2025/OGM/0004;37;M;internet;Śródmieście
+5007;2025/OGM/0004;18;M;internet;Redłowo
+5008;2025/OGM/0004;34;M;internet;Śródmieście
+5009;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+5010;2025/OGM/0012;15;F;internet;Witomino
+5011;2025/OGM/0004;10;F;internet;Redłowo
+5012;2025/OGM/0004;28;M;internet;Śródmieście
+5013;2025/OGM/0004;57;F;internet;Obłuże
+5014;2025/OGM/0012;68;F;internet;Witomino
+5015;2025/OGM/0004,2025/OGM/0012;49;F;internet;Mały Kack
+5016;2025/OGM/0004;71;F;internet;Pogórze
+5017;2025/OGM/0004;73;M;internet;Dąbrowa
+5018;2025/OGM/0004,2025/OGM/0012;15;F;internet;Mały Kack
+5019;2025/OGM/0004;47;M;internet;Redłowo
+5020;2025/OGM/0004;38;M;internet;Mały Kack
+5021;2025/OGM/0004;72;F;internet;Redłowo
+5022;2025/OGM/0004;79;F;internet;Oksywie
+5023;2025/OGM/0004;36;F;internet;Chylonia
+5024;2025/OGM/0004,2025/OGM/0012;33;F;internet;Witomino
+5025;2025/OGM/0004;78;M;internet;Redłowo
+5026;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+5028;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+5030;2025/OGM/0004,2025/OGM/0012;10;M;internet;Wielki Kack
+5031;2025/OGM/0004;67;F;internet;Orłowo
+5032;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+5035;2025/OGM/0004;47;M;internet;Witomino
+5036;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+5037;2025/OGM/0004,2025/OGM/0012;29;F;internet;Śródmieście
+5038;2025/OGM/0004,2025/OGM/0012;66;F;internet;Chwarzno-Wiczlino
+5039;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+5041;2025/OGM/0004,2025/OGM/0012;61;F;internet;Dąbrowa
+5043;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+5044;2025/OGM/0004;67;M;internet;Dąbrowa
+5045;2025/OGM/0004,2025/OGM/0012;65;F;internet;Obłuże
+5046;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+5047;2025/OGM/0004;54;F;internet;Dąbrowa
+5048;2025/OGM/0004;23;M;internet;Dąbrowa
+5049;2025/OGM/0004;41;F;internet;Mały Kack
+5050;2025/OGM/0004;6;M;internet;Witomino
+5052;2025/OGM/0012;71;M;internet;Chwarzno-Wiczlino
+5053;2025/OGM/0004;9;M;internet;Wielki Kack
+5054;2025/OGM/0004;9;F;internet;Witomino
+5055;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+5056;2025/OGM/0004;6;F;internet;Wielki Kack
+5057;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+5058;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+5059;2025/OGM/0004,2025/OGM/0012;68;F;internet;Śródmieście
+5060;2025/OGM/0004,2025/OGM/0012;68;M;internet;Śródmieście
+5061;2025/OGM/0004;19;F;internet;Dąbrowa
+5062;2025/OGM/0012;42;F;internet;Witomino
+5063;2025/OGM/0012;30;F;internet;Redłowo
+5064;2025/OGM/0012;42;M;internet;Witomino
+5065;2025/OGM/0004,2025/OGM/0012;16;M;internet;Witomino
+5066;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+5067;2025/OGM/0012;57;M;internet;Cisowa
+5068;2025/OGM/0004,2025/OGM/0012;11;M;internet;Witomino
+5069;2025/OGM/0004,2025/OGM/0012;9;M;internet;Witomino
+5070;2025/OGM/0004;66;F;internet;Działki Leśne
+5071;2025/OGM/0004;49;M;internet;Wielki Kack
+5072;2025/OGM/0004;46;F;internet;Wielki Kack
+5073;2025/OGM/0004;43;F;internet;Dąbrowa
+5074;2025/OGM/0004,2025/OGM/0012;43;F;internet;Śródmieście
+5075;2025/OGM/0004;15;F;internet;Dąbrowa
+5076;2025/OGM/0004;11;F;internet;Dąbrowa
+5077;2025/OGM/0012;43;F;internet;Witomino
+5078;2025/OGM/0004;42;M;internet;Oksywie
+5079;2025/OGM/0004;39;M;internet;Śródmieście
+5081;2025/OGM/0004;26;M;internet;Obłuże
+5082;2025/OGM/0004;56;M;internet;Cisowa
+5083;2025/OGM/0012;55;F;internet;Chwarzno-Wiczlino
+5084;2025/OGM/0004;19;M;internet;Cisowa
+5085;2025/OGM/0004;47;F;internet;Obłuże
+5086;2025/OGM/0004;66;F;internet;Dąbrowa
+5087;2025/OGM/0004;46;F;internet;Obłuże
+5088;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+5089;2025/OGM/0012;51;F;internet;Oksywie
+5090;2025/OGM/0004;38;F;internet;Obłuże
+5092;2025/OGM/0004;58;F;internet;Mały Kack
+5094;2025/OGM/0004,2025/OGM/0012;76;M;internet;Pustki Cisowskie-Demptowo
+5095;2025/OGM/0004;10;F;internet;Obłuże
+5096;2025/OGM/0004;53;M;internet;Chwarzno-Wiczlino
+5097;2025/OGM/0004;4;F;internet;Pustki Cisowskie-Demptowo
+5098;2025/OGM/0004;43;M;internet;Obłuże
+5099;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+5101;2025/OGM/0004,2025/OGM/0012;57;F;internet;Pustki Cisowskie-Demptowo
+5103;2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+5105;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pogórze
+5106;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+5108;2025/OGM/0004,2025/OGM/0012;74;F;internet;Pustki Cisowskie-Demptowo
+5109;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+5112;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+5113;2025/OGM/0004,2025/OGM/0012;52;M;internet;Oksywie
+5114;2025/OGM/0012;72;F;internet;Oksywie
+5115;2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+5116;2025/OGM/0004,2025/OGM/0012;29;F;internet;Śródmieście
+5117;2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+5118;2025/OGM/0004;35;M;internet;Chylonia
+5119;2025/OGM/0012;75;M;internet;Oksywie
+5120;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+5121;2025/OGM/0004;73;F;internet;Oksywie
+5122;2025/OGM/0004,2025/OGM/0012;43;F;internet;Orłowo
+5123;2025/OGM/0004;37;F;internet;Chylonia
+5124;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+5125;2025/OGM/0004,2025/OGM/0012;52;M;internet;Dąbrowa
+5127;2025/OGM/0004;32;M;internet;Obłuże
+5129;2025/OGM/0004;26;M;internet;Wzgórze Św. Maksymiliana
+5130;2025/OGM/0004;19;M;internet;Chwarzno-Wiczlino
+5131;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+5132;2025/OGM/0004;53;F;internet;Obłuże
+5133;2025/OGM/0004;33;M;internet;Witomino
+5134;2025/OGM/0004;36;F;internet;Obłuże
+5135;2025/OGM/0004;47;F;internet;Pustki Cisowskie-Demptowo
+5136;2025/OGM/0004;48;F;internet;Chylonia
+5137;2025/OGM/0012;36;F;internet;Oksywie
+5138;2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+5140;2025/OGM/0004,2025/OGM/0012;68;F;internet;Wielki Kack
+5141;2025/OGM/0004;66;F;internet;Chylonia
+5142;2025/OGM/0012;28;F;internet;Witomino
+5143;2025/OGM/0012;40;F;internet;Witomino
+5144;2025/OGM/0004;60;F;internet;Witomino
+5145;2025/OGM/0004;43;F;internet;Redłowo
+5146;2025/OGM/0004,2025/OGM/0012;67;F;internet;Oksywie
+5147;2025/OGM/0012;59;M;internet;Witomino
+5148;2025/OGM/0004,2025/OGM/0012;64;F;internet;Obłuże
+5149;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+5151;2025/OGM/0004;51;M;internet;Dąbrowa
+5152;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+5153;2025/OGM/0004;42;M;internet;Redłowo
+5154;2025/OGM/0004;74;F;internet;Obłuże
+5155;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+5156;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+5157;2025/OGM/0004;40;M;internet;Obłuże
+5158;2025/OGM/0012;44;M;internet;Redłowo
+5159;2025/OGM/0004;42;M;internet;Witomino
+5160;2025/OGM/0004,2025/OGM/0012;60;F;internet;Wielki Kack
+5161;2025/OGM/0004;43;F;internet;Mały Kack
+5162;2025/OGM/0012;65;M;internet;Babie Doły
+5163;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chylonia
+5164;2025/OGM/0012;64;F;internet;Babie Doły
+5165;2025/OGM/0012;70;M;internet;Mały Kack
+5166;2025/OGM/0012;42;F;internet;Mały Kack
+5168;2025/OGM/0004;33;F;internet;Wzgórze Św. Maksymiliana
+5169;2025/OGM/0004;35;M;internet;Wielki Kack
+5170;2025/OGM/0004,2025/OGM/0012;56;F;internet;Mały Kack
+5171;2025/OGM/0004;59;F;internet;Chwarzno-Wiczlino
+5172;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+5173;2025/OGM/0004,2025/OGM/0012;81;F;internet;Śródmieście
+5174;2025/OGM/0004,2025/OGM/0012;43;F;internet;Oksywie
+5175;2025/OGM/0004;33;M;internet;Oksywie
+5176;2025/OGM/0004,2025/OGM/0012;29;F;internet;Mały Kack
+5177;2025/OGM/0004,2025/OGM/0012;15;M;internet;Mały Kack
+5178;2025/OGM/0004;33;F;internet;Oksywie
+5179;2025/OGM/0004;25;F;internet;Pustki Cisowskie-Demptowo
+5180;2025/OGM/0004,2025/OGM/0012;12;F;internet;Mały Kack
+5181;2025/OGM/0004;37;F;internet;Babie Doły
+5182;2025/OGM/0004,2025/OGM/0012;18;F;internet;Oksywie
+5183;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+5184;2025/OGM/0004;50;F;internet;Chylonia
+5185;2025/OGM/0004,2025/OGM/0012;44;M;internet;Mały Kack
+5186;2025/OGM/0004;37;M;internet;Babie Doły
+5187;2025/OGM/0004;42;F;internet;Wielki Kack
+5188;2025/OGM/0004,2025/OGM/0012;41;F;internet;Oksywie
+5189;2025/OGM/0004;47;M;internet;Oksywie
+5190;2025/OGM/0004;46;F;internet;Witomino
+5191;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+5192;2025/OGM/0004;73;F;internet;Babie Doły
+5193;2025/OGM/0004;53;M;internet;Obłuże
+5194;2025/OGM/0004;75;F;internet;Babie Doły
+5195;2025/OGM/0004,2025/OGM/0012;8;M;internet;Oksywie
+5196;2025/OGM/0012;39;F;internet;Śródmieście
+5197;2025/OGM/0004;71;M;internet;Babie Doły
+5198;2025/OGM/0004;5;M;internet;Babie Doły
+5199;2025/OGM/0004;8;M;internet;Babie Doły
+5200;2025/OGM/0004,2025/OGM/0012;42;F;internet;Obłuże
+5202;2025/OGM/0012;33;F;internet;Oksywie
+5203;2025/OGM/0004,2025/OGM/0012;18;M;internet;Leszczynki
+5204;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+5205;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+5206;2025/OGM/0004,2025/OGM/0012;28;M;internet;Oksywie
+5207;2025/OGM/0004,2025/OGM/0012;19;M;internet;Leszczynki
+5209;2025/OGM/0004;37;F;internet;Cisowa
+5210;2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+5212;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+5214;2025/OGM/0004;20;M;internet;Oksywie
+5215;2025/OGM/0004;32;M;internet;Wielki Kack
+5216;2025/OGM/0004;72;M;internet;Babie Doły
+5217;2025/OGM/0004,2025/OGM/0012;13;M;internet;Babie Doły
+5218;2025/OGM/0004;48;F;internet;Mały Kack
+5219;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+5220;2025/OGM/0004;41;F;internet;Pustki Cisowskie-Demptowo
+5221;2025/OGM/0004,2025/OGM/0012;7;M;internet;Babie Doły
+5222;2025/OGM/0004,2025/OGM/0012;31;F;internet;Obłuże
+5223;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+5224;2025/OGM/0004;48;M;internet;Wielki Kack
+5225;2025/OGM/0004;43;F;internet;Mały Kack
+5226;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+5227;2025/OGM/0004,2025/OGM/0012;32;M;internet;Pogórze
+5228;2025/OGM/0004,2025/OGM/0012;29;F;internet;Pogórze
+5229;2025/OGM/0004;34;F;internet;Obłuże
+5230;2025/OGM/0004,2025/OGM/0012;44;F;internet;Obłuże
+5231;2025/OGM/0004;41;F;internet;Orłowo
+5232;2025/OGM/0004;5;F;internet;Chwarzno-Wiczlino
+5233;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+5234;2025/OGM/0012;35;F;internet;Mały Kack
+5235;2025/OGM/0004;53;M;internet;Dąbrowa
+5236;2025/OGM/0004;1;F;internet;Chwarzno-Wiczlino
+5237;2025/OGM/0004,2025/OGM/0012;40;F;internet;Oksywie
+5238;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+5239;2025/OGM/0004,2025/OGM/0012;45;M;internet;Dąbrowa
+5241;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+5242;2025/OGM/0004;24;M;internet;Chylonia
+5243;2025/OGM/0012;32;F;internet;Babie Doły
+5244;2025/OGM/0012;71;F;internet;Obłuże
+5245;2025/OGM/0004;16;F;internet;Chwarzno-Wiczlino
+5246;2025/OGM/0012;37;M;internet;Obłuże
+5247;2025/OGM/0004;42;F;internet;Śródmieście
+5248;2025/OGM/0004;66;F;internet;Mały Kack
+5250;2025/OGM/0004;59;F;internet;Wielki Kack
+5251;2025/OGM/0004;38;F;internet;Wielki Kack
+5254;2025/OGM/0012;14;F;internet;Mały Kack
+5256;2025/OGM/0004,2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+5257;2025/OGM/0004,2025/OGM/0012;56;F;internet;Witomino
+5258;2025/OGM/0004;11;M;internet;Mały Kack
+5259;2025/OGM/0004,2025/OGM/0012;23;F;internet;Obłuże
+5260;2025/OGM/0012;19;M;internet;Chwarzno-Wiczlino
+5261;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wzgórze Św. Maksymiliana
+5262;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+5263;2025/OGM/0004;41;M;internet;Mały Kack
+5265;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+5266;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+5268;2025/OGM/0004;48;M;internet;Grabówek
+5269;2025/OGM/0004;30;M;internet;Dąbrowa
+5270;2025/OGM/0004;23;M;internet;Chylonia
+5271;2025/OGM/0004;50;M;internet;Obłuże
+5272;2025/OGM/0004;40;F;internet;Oksywie
+5273;2025/OGM/0004,2025/OGM/0012;39;F;internet;Orłowo
+5274;2025/OGM/0004;29;F;internet;Dąbrowa
+5275;2025/OGM/0004;39;F;internet;Cisowa
+5276;2025/OGM/0004;42;M;internet;Karwiny
+5277;2025/OGM/0004,2025/OGM/0012;54;F;internet;Karwiny
+5278;2025/OGM/0004,2025/OGM/0012;17;M;internet;Dąbrowa
+5279;2025/OGM/0004,2025/OGM/0012;64;F;internet;Mały Kack
+5280;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+5281;2025/OGM/0004;27;F;internet;Mały Kack
+5282;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+5283;2025/OGM/0004,2025/OGM/0012;51;F;internet;Kamienna Góra
+5284;2025/OGM/0004;36;F;internet;Obłuże
+5285;2025/OGM/0004;8;F;internet;Wielki Kack
+5286;2025/OGM/0004;25;F;internet;Dąbrowa
+5287;2025/OGM/0012;6;F;internet;Obłuże
+5288;2025/OGM/0004,2025/OGM/0012;37;F;internet;Działki Leśne
+5289;2025/OGM/0004,2025/OGM/0012;24;M;internet;Grabówek
+5290;2025/OGM/0004;46;F;internet;Chwarzno-Wiczlino
+5291;2025/OGM/0004,2025/OGM/0012;31;F;internet;Babie Doły
+5292;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+5293;2025/OGM/0004;31;M;internet;Chwarzno-Wiczlino
+5294;2025/OGM/0004,2025/OGM/0012;29;F;internet;Dąbrowa
+5296;2025/OGM/0004,2025/OGM/0012;44;F;internet;Karwiny
+5297;2025/OGM/0012;39;F;internet;Chylonia
+5298;2025/OGM/0012;33;F;internet;Śródmieście
+5299;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+5300;2025/OGM/0004;29;M;internet;Pogórze
+5301;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+5302;2025/OGM/0004;28;F;internet;Oksywie
+5303;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+5304;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+5305;2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+5306;2025/OGM/0004;47;M;internet;Chwarzno-Wiczlino
+5307;2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+5308;2025/OGM/0004,2025/OGM/0012;16;F;internet;Dąbrowa
+5310;2025/OGM/0004;33;M;internet;Śródmieście
+5311;2025/OGM/0004;74;F;internet;Dąbrowa
+5312;2025/OGM/0004;9;M;internet;Mały Kack
+5313;2025/OGM/0004,2025/OGM/0012;49;F;internet;Śródmieście
+5314;2025/OGM/0004,2025/OGM/0012;29;M;internet;Oksywie
+5315;2025/OGM/0004,2025/OGM/0012;11;M;internet;Babie Doły
+5316;2025/OGM/0004;47;F;internet;Wielki Kack
+5317;2025/OGM/0004,2025/OGM/0012;9;M;internet;Babie Doły
+5318;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+5319;2025/OGM/0004;47;M;internet;Mały Kack
+5321;2025/OGM/0004;50;M;internet;Wielki Kack
+5322;2025/OGM/0004,2025/OGM/0012;21;F;internet;Mały Kack
+5324;2025/OGM/0004;42;F;internet;Mały Kack
+5325;2025/OGM/0004;43;F;internet;Obłuże
+5326;2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+5327;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+5328;2025/OGM/0004;36;M;internet;Chylonia
+5329;2025/OGM/0012;28;M;internet;Chylonia
+5330;2025/OGM/0012;46;F;internet;Mały Kack
+5331;2025/OGM/0004;14;M;internet;Chwarzno-Wiczlino
+5332;2025/OGM/0004;85;F;internet;Chwarzno-Wiczlino
+5333;2025/OGM/0004;9;M;internet;Mały Kack
+5334;2025/OGM/0004;70;F;internet;Wielki Kack
+5335;2025/OGM/0004;28;F;internet;Pogórze
+5336;2025/OGM/0004;34;M;internet;Karwiny
+5337;2025/OGM/0004;35;F;internet;Mały Kack
+5338;2025/OGM/0012;46;F;internet;Wielki Kack
+5339;2025/OGM/0004,2025/OGM/0012;54;M;internet;Cisowa
+5340;2025/OGM/0004;68;M;internet;Dąbrowa
+5341;2025/OGM/0004;45;F;internet;Wielki Kack
+5342;2025/OGM/0004;38;M;internet;Śródmieście
+5343;2025/OGM/0012;38;F;internet;Mały Kack
+5344;2025/OGM/0004;68;F;internet;Dąbrowa
+5345;2025/OGM/0012;35;M;internet;Oksywie
+5346;2025/OGM/0004;38;M;internet;Obłuże
+5347;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chylonia
+5348;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+5349;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+5350;2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+5351;2025/OGM/0012;49;F;internet;Obłuże
+5352;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+5353;2025/OGM/0004;39;M;internet;Wielki Kack
+5354;2025/OGM/0004,2025/OGM/0012;18;F;internet;Wielki Kack
+5355;2025/OGM/0004;36;M;internet;Chylonia
+5356;2025/OGM/0004;34;M;internet;Pustki Cisowskie-Demptowo
+5357;2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+5358;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+5359;2025/OGM/0004;33;F;internet;Chylonia
+5360;2025/OGM/0012;28;M;internet;Chylonia
+5361;2025/OGM/0004;38;M;internet;Chylonia
+5362;2025/OGM/0012;41;M;internet;Oksywie
+5363;2025/OGM/0004;44;M;internet;Cisowa
+5364;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+5366;2025/OGM/0004;54;F;internet;Wielki Kack
+5368;2025/OGM/0012;40;F;internet;Chylonia
+5369;2025/OGM/0012;45;F;internet;Orłowo
+5370;2025/OGM/0004;30;M;internet;Chwarzno-Wiczlino
+5371;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+5372;2025/OGM/0004;35;M;internet;Cisowa
+5373;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+5374;2025/OGM/0004,2025/OGM/0012;45;F;internet;Pustki Cisowskie-Demptowo
+5376;2025/OGM/0012;14;M;internet;Redłowo
+5377;2025/OGM/0004,2025/OGM/0012;15;M;internet;Chwarzno-Wiczlino
+5378;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+5379;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+5380;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+5381;2025/OGM/0004,2025/OGM/0012;34;F;internet;Witomino
+5382;2025/OGM/0012;37;F;internet;Redłowo
+5383;2025/OGM/0004,2025/OGM/0012;10;M;internet;Obłuże
+5385;2025/OGM/0012;39;M;internet;Witomino
+5386;2025/OGM/0004,2025/OGM/0012;9;M;internet;Witomino
+5387;2025/OGM/0004;7;F;internet;Dąbrowa
+5388;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+5389;2025/OGM/0004,2025/OGM/0012;11;F;internet;Witomino
+5391;2025/OGM/0012;43;F;internet;Oksywie
+5392;2025/OGM/0012;10;F;internet;Oksywie
+5393;2025/OGM/0004,2025/OGM/0012;15;M;internet;Obłuże
+5394;2025/OGM/0004;50;M;internet;Chwarzno-Wiczlino
+5395;2025/OGM/0004;54;M;internet;Pustki Cisowskie-Demptowo
+5397;2025/OGM/0004,2025/OGM/0012;61;M;internet;Chwarzno-Wiczlino
+5398;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+5399;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+5400;2025/OGM/0004,2025/OGM/0012;33;F;internet;Obłuże
+5402;2025/OGM/0004,2025/OGM/0012;49;F;internet;Dąbrowa
+5403;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+5405;2025/OGM/0004;20;M;internet;Wielki Kack
+5406;2025/OGM/0004;35;F;internet;Obłuże
+5407;2025/OGM/0004,2025/OGM/0012;7;M;internet;Chwarzno-Wiczlino
+5408;2025/OGM/0004;52;F;internet;Obłuże
+5409;2025/OGM/0004,2025/OGM/0012;34;F;internet;Oksywie
+5410;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+5411;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+5412;2025/OGM/0004;52;F;internet;Pogórze
+5413;2025/OGM/0012;32;M;internet;Działki Leśne
+5414;2025/OGM/0004,2025/OGM/0012;28;M;internet;Pustki Cisowskie-Demptowo
+5415;2025/OGM/0004,2025/OGM/0012;52;M;internet;Cisowa
+5416;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+5418;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+5419;2025/OGM/0004;54;F;internet;Oksywie
+5420;2025/OGM/0012;53;F;internet;Chylonia
+5421;2025/OGM/0004;36;M;internet;Wielki Kack
+5422;2025/OGM/0004;62;F;internet;Dąbrowa
+5423;2025/OGM/0004;27;F;internet;Mały Kack
+5424;2025/OGM/0004;22;M;internet;Chylonia
+5425;2025/OGM/0012;38;F;internet;Redłowo
+5426;2025/OGM/0012;15;M;internet;Chylonia
+5427;2025/OGM/0012;67;F;internet;Mały Kack
+5428;2025/OGM/0004;41;M;internet;Witomino
+5429;2025/OGM/0012;80;F;internet;Chylonia
+5430;2025/OGM/0004;58;F;internet;Wielki Kack
+5431;2025/OGM/0012;54;M;internet;Chylonia
+5432;2025/OGM/0004;57;M;internet;Wielki Kack
+5433;2025/OGM/0004;33;M;internet;Wielki Kack
+5434;2025/OGM/0004,2025/OGM/0012;54;F;internet;Leszczynki
+5435;2025/OGM/0004;37;M;internet;Mały Kack
+5436;2025/OGM/0012;45;F;internet;Obłuże
+5437;2025/OGM/0004,2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+5438;2025/OGM/0004,2025/OGM/0012;30;F;internet;Witomino
+5439;2025/OGM/0004;43;F;internet;Mały Kack
+5440;2025/OGM/0004,2025/OGM/0012;58;F;internet;Mały Kack
+5441;2025/OGM/0004;78;F;internet;Kamienna Góra
+5442;2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+5443;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+5444;2025/OGM/0004;74;M;internet;Mały Kack
+5445;2025/OGM/0004;8;F;internet;Chwarzno-Wiczlino
+5446;2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+5447;2025/OGM/0004,2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+5448;2025/OGM/0004,2025/OGM/0012;65;F;internet;Śródmieście
+5449;2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+5450;2025/OGM/0004,2025/OGM/0012;36;F;internet;Karwiny
+5451;2025/OGM/0012;50;F;internet;Mały Kack
+5452;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+5453;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+5454;2025/OGM/0004,2025/OGM/0012;7;F;internet;Śródmieście
+5455;2025/OGM/0004,2025/OGM/0012;4;F;internet;Śródmieście
+5456;2025/OGM/0012;32;F;internet;Witomino
+5457;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+5458;2025/OGM/0012;14;F;internet;Mały Kack
+5459;2025/OGM/0004,2025/OGM/0012;68;F;internet;Dąbrowa
+5460;2025/OGM/0012;7;M;internet;Mały Kack
+5461;2025/OGM/0004;46;M;internet;Mały Kack
+5462;2025/OGM/0012;52;M;internet;Mały Kack
+5463;2025/OGM/0004;41;M;internet;Mały Kack
+5464;2025/OGM/0004,2025/OGM/0012;28;M;internet;Redłowo
+5465;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+5466;2025/OGM/0012;40;M;internet;Wielki Kack
+5467;2025/OGM/0004;51;F;internet;Chwarzno-Wiczlino
+5468;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+5469;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+5470;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+5471;2025/OGM/0004;37;F;internet;Działki Leśne
+5472;2025/OGM/0012;8;F;internet;Wielki Kack
+5473;2025/OGM/0012;32;M;internet;Chwarzno-Wiczlino
+5474;2025/OGM/0012;3;F;internet;Wielki Kack
+5475;2025/OGM/0004;57;M;internet;Obłuże
+5476;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+5477;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+5478;2025/OGM/0004;66;F;internet;Witomino
+5480;2025/OGM/0004;33;M;internet;Wielki Kack
+5485;2025/OGM/0004,2025/OGM/0012;49;F;internet;Śródmieście
+5486;2025/OGM/0012;19;M;internet;Śródmieście
+5487;2025/OGM/0004;35;F;internet;Wzgórze Św. Maksymiliana
+5488;2025/OGM/0004;40;M;internet;Wielki Kack
+5490;2025/OGM/0004;40;M;internet;Dąbrowa
+5491;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wzgórze Św. Maksymiliana
+5492;2025/OGM/0004,2025/OGM/0012;4;F;internet;Wzgórze Św. Maksymiliana
+5493;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+5494;2025/OGM/0004;50;M;internet;Dąbrowa
+5495;2025/OGM/0004;50;F;internet;Dąbrowa
+5497;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+5498;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+5499;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+5500;2025/OGM/0004,2025/OGM/0012;18;F;internet;Chwarzno-Wiczlino
+5501;2025/OGM/0004,2025/OGM/0012;47;M;internet;Obłuże
+5502;2025/OGM/0004;44;F;internet;Babie Doły
+5503;2025/OGM/0004;35;M;internet;Redłowo
+5504;2025/OGM/0012;34;M;internet;Redłowo
+5505;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+5506;2025/OGM/0004,2025/OGM/0012;12;M;internet;Dąbrowa
+5507;2025/OGM/0004;49;F;internet;Wielki Kack
+5508;2025/OGM/0004;7;F;internet;Wielki Kack
+5509;2025/OGM/0004;18;M;internet;Wielki Kack
+5510;2025/OGM/0004,2025/OGM/0012;9;F;internet;Śródmieście
+5511;2025/OGM/0012;25;F;internet;Wielki Kack
+5512;2025/OGM/0004,2025/OGM/0012;46;F;internet;Śródmieście
+5513;2025/OGM/0004;67;F;internet;Redłowo
+5515;2025/OGM/0004;73;F;internet;Grabówek
+5516;2025/OGM/0004;29;F;internet;Karwiny
+5517;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+5519;2025/OGM/0004;10;M;internet;Chwarzno-Wiczlino
+5520;2025/OGM/0004;49;F;internet;Mały Kack
+5521;2025/OGM/0004;13;F;internet;Chwarzno-Wiczlino
+5522;2025/OGM/0004;44;F;internet;Witomino
+5523;2025/OGM/0012;26;F;internet;Wzgórze Św. Maksymiliana
+5526;2025/OGM/0004,2025/OGM/0012;55;F;internet;Chylonia
+5528;2025/OGM/0004;40;M;internet;Śródmieście
+5530;2025/OGM/0004,2025/OGM/0012;43;F;internet;Oksywie
+5532;2025/OGM/0004;52;M;internet;Dąbrowa
+5534;2025/OGM/0004;34;F;internet;Chylonia
+5535;2025/OGM/0004,2025/OGM/0012;49;F;internet;Witomino
+5536;2025/OGM/0004,2025/OGM/0012;37;F;internet;Śródmieście
+5537;2025/OGM/0004;37;M;internet;Chylonia
+5538;2025/OGM/0004,2025/OGM/0012;48;M;internet;Witomino
+5539;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+5540;2025/OGM/0004,2025/OGM/0012;43;M;internet;Witomino
+5541;2025/OGM/0004,2025/OGM/0012;18;M;internet;Witomino
+5542;2025/OGM/0004,2025/OGM/0012;14;F;internet;Witomino
+5543;2025/OGM/0012;77;M;internet;Babie Doły
+5544;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+5545;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+5547;2025/OGM/0004,2025/OGM/0012;50;F;internet;Witomino
+5548;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+5549;2025/OGM/0004,2025/OGM/0012;46;F;internet;Obłuże
+5551;2025/OGM/0004;13;F;internet;Wielki Kack
+5552;2025/OGM/0004,2025/OGM/0012;17;F;internet;Obłuże
+5553;2025/OGM/0004,2025/OGM/0012;12;M;internet;Obłuże
+5554;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+5555;2025/OGM/0004;17;M;internet;Leszczynki
+5556;2025/OGM/0004;39;F;internet;Obłuże
+5557;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+5558;2025/OGM/0004,2025/OGM/0012;50;F;internet;Cisowa
+5559;2025/OGM/0012;28;M;internet;Oksywie
+5560;2025/OGM/0004;41;M;internet;Witomino
+5561;2025/OGM/0012;48;F;internet;Oksywie
+5562;2025/OGM/0004,2025/OGM/0012;48;F;internet;Oksywie
+5563;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+5564;2025/OGM/0004,2025/OGM/0012;51;M;internet;Witomino
+5565;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+5566;2025/OGM/0004,2025/OGM/0012;31;F;internet;Karwiny
+5567;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+5568;2025/OGM/0004;59;M;internet;Witomino
+5569;2025/OGM/0004;52;F;internet;Wielki Kack
+5570;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+5571;2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+5572;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+5573;2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+5574;2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+5575;2025/OGM/0004,2025/OGM/0012;27;F;internet;Witomino
+5576;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+5577;2025/OGM/0004,2025/OGM/0012;57;F;internet;Mały Kack
+5578;2025/OGM/0012;69;M;internet;Chwarzno-Wiczlino
+5580;2025/OGM/0012;68;F;internet;Chwarzno-Wiczlino
+5581;2025/OGM/0004;89;F;internet;Mały Kack
+5583;2025/OGM/0004,2025/OGM/0012;53;F;internet;Mały Kack
+5584;2025/OGM/0004;29;F;internet;Cisowa
+5585;2025/OGM/0004,2025/OGM/0012;19;F;internet;Mały Kack
+5586;2025/OGM/0004;34;F;internet;Obłuże
+5587;2025/OGM/0004,2025/OGM/0012;31;F;internet;Śródmieście
+5588;2025/OGM/0004,2025/OGM/0012;28;F;internet;Chylonia
+5589;2025/OGM/0004,2025/OGM/0012;17;F;internet;Mały Kack
+5590;2025/OGM/0004,2025/OGM/0012;53;M;internet;Mały Kack
+5591;2025/OGM/0012;33;M;internet;Kamienna Góra
+5592;2025/OGM/0004;36;F;internet;Chylonia
+5593;2025/OGM/0012;69;F;internet;Chwarzno-Wiczlino
+5594;2025/OGM/0004;40;F;internet;Wielki Kack
+5595;2025/OGM/0004,2025/OGM/0012;40;F;internet;Obłuże
+5596;2025/OGM/0004;39;M;internet;Chylonia
+5597;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+5598;2025/OGM/0004;26;F;internet;Redłowo
+5599;2025/OGM/0004,2025/OGM/0012;16;F;internet;Witomino
+5600;2025/OGM/0004,2025/OGM/0012;42;F;internet;Oksywie
+5601;2025/OGM/0004;57;F;internet;Chylonia
+5602;2025/OGM/0012;39;M;internet;Oksywie
+5604;2025/OGM/0004;75;F;internet;Witomino
+5605;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+5606;2025/OGM/0004,2025/OGM/0012;56;F;internet;Wielki Kack
+5607;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+5608;2025/OGM/0004;16;M;internet;Oksywie
+5609;2025/OGM/0012;22;M;internet;Działki Leśne
+5610;2025/OGM/0004;60;M;internet;Kamienna Góra
+5611;2025/OGM/0004,2025/OGM/0012;17;M;internet;Chwarzno-Wiczlino
+5612;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+5613;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+5614;2025/OGM/0004,2025/OGM/0012;17;F;internet;Redłowo
+5615;2025/OGM/0004;42;F;internet;Obłuże
+5616;2025/OGM/0004,2025/OGM/0012;39;M;internet;Obłuże
+5617;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+5618;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+5619;2025/OGM/0004,2025/OGM/0012;6;M;internet;Obłuże
+5620;2025/OGM/0004,2025/OGM/0012;4;M;internet;Obłuże
+5621;2025/OGM/0004,2025/OGM/0012;72;F;internet;Chylonia
+5622;2025/OGM/0004;7;F;internet;Chwarzno-Wiczlino
+5623;2025/OGM/0004;35;F;internet;Wielki Kack
+5624;2025/OGM/0004;36;M;internet;Wielki Kack
+5625;2025/OGM/0004;51;F;internet;Karwiny
+5626;2025/OGM/0004,2025/OGM/0012;15;M;internet;Chwarzno-Wiczlino
+5627;2025/OGM/0004;8;F;internet;Wielki Kack
+5628;2025/OGM/0012;71;F;internet;Chylonia
+5629;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+5630;2025/OGM/0004;39;F;internet;Śródmieście
+5631;2025/OGM/0004;6;F;internet;Wielki Kack
+5632;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+5633;2025/OGM/0004;68;F;internet;Pogórze
+5634;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+5635;2025/OGM/0004;59;F;internet;Chylonia
+5636;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+5637;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+5638;2025/OGM/0004;42;M;internet;Chylonia
+5639;2025/OGM/0004,2025/OGM/0012;79;F;internet;Witomino
+5640;2025/OGM/0012;40;F;internet;Śródmieście
+5641;2025/OGM/0004;45;F;internet;Pogórze
+5642;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+5643;2025/OGM/0004,2025/OGM/0012;3;M;internet;Chwarzno-Wiczlino
+5644;2025/OGM/0004;41;M;internet;Redłowo
+5645;2025/OGM/0004,2025/OGM/0012;1;F;internet;Chwarzno-Wiczlino
+5646;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+5647;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+5648;2025/OGM/0004;10;F;internet;Pustki Cisowskie-Demptowo
+5649;2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+5650;2025/OGM/0012;60;F;internet;Chylonia
+5651;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+5652;2025/OGM/0004;46;M;internet;Obłuże
+5654;2025/OGM/0004;8;F;internet;Pustki Cisowskie-Demptowo
+5655;2025/OGM/0012;82;F;internet;Chylonia
+5656;2025/OGM/0004;28;F;internet;Chwarzno-Wiczlino
+5657;2025/OGM/0004,2025/OGM/0012;64;F;internet;Chwarzno-Wiczlino
+5658;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+5659;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+5660;2025/OGM/0004;40;F;internet;Chylonia
+5661;2025/OGM/0012;23;F;internet;Mały Kack
+5662;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+5663;2025/OGM/0004;29;F;internet;Witomino
+5664;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+5665;2025/OGM/0004,2025/OGM/0012;51;F;internet;Obłuże
+5666;2025/OGM/0012;31;M;internet;Redłowo
+5667;2025/OGM/0004,2025/OGM/0012;23;F;internet;Chwarzno-Wiczlino
+5668;2025/OGM/0012;72;F;internet;Witomino
+5669;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+5670;2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+5671;2025/OGM/0004;77;M;internet;Wielki Kack
+5672;2025/OGM/0004;74;M;internet;Witomino
+5673;2025/OGM/0004,2025/OGM/0012;77;F;internet;Redłowo
+5674;2025/OGM/0004,2025/OGM/0012;73;F;internet;Witomino
+5675;2025/OGM/0004,2025/OGM/0012;77;M;internet;Redłowo
+5676;2025/OGM/0004,2025/OGM/0012;22;M;internet;Śródmieście
+5677;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+5678;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+5679;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+5680;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+5682;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+5683;2025/OGM/0004,2025/OGM/0012;58;M;internet;Redłowo
+5684;2025/OGM/0004,2025/OGM/0012;54;F;internet;Kamienna Góra
+5685;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+5687;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+5688;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+5689;2025/OGM/0004;35;M;internet;Cisowa
+5690;2025/OGM/0004;18;F;internet;Wielki Kack
+5691;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+5692;2025/OGM/0004;21;M;internet;Wielki Kack
+5693;2025/OGM/0004;42;F;internet;Mały Kack
+5694;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+5695;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+5696;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+5697;2025/OGM/0004,2025/OGM/0012;44;M;internet;Dąbrowa
+5698;2025/OGM/0004,2025/OGM/0012;33;F;internet;Redłowo
+5700;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+5701;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+5702;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+5703;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chwarzno-Wiczlino
+5704;2025/OGM/0004;61;F;internet;Wielki Kack
+5705;2025/OGM/0004;57;F;internet;Chwarzno-Wiczlino
+5706;2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+5707;2025/OGM/0012;27;M;internet;Pustki Cisowskie-Demptowo
+5708;2025/OGM/0004;22;M;internet;Chwarzno-Wiczlino
+5709;2025/OGM/0004;37;F;internet;Chylonia
+5710;2025/OGM/0004;42;F;internet;Dąbrowa
+5711;2025/OGM/0004;45;F;internet;Pogórze
+5712;2025/OGM/0004;23;F;internet;Chwarzno-Wiczlino
+5713;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+5714;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+5715;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+5716;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+5717;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+5718;2025/OGM/0004;44;M;internet;Witomino
+5719;2025/OGM/0012;37;F;internet;Śródmieście
+5722;2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+5723;2025/OGM/0012;67;F;internet;Redłowo
+5724;2025/OGM/0004;51;F;internet;Wielki Kack
+5725;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+5726;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+5727;2025/OGM/0004,2025/OGM/0012;65;F;internet;Chwarzno-Wiczlino
+5728;2025/OGM/0004;27;F;internet;Chylonia
+5729;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+5730;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+5731;2025/OGM/0004,2025/OGM/0012;48;F;internet;Grabówek
+5732;2025/OGM/0012;69;M;internet;Mały Kack
+5733;2025/OGM/0012;44;M;internet;Karwiny
+5734;2025/OGM/0004;42;F;internet;Mały Kack
+5735;2025/OGM/0004;12;M;internet;Wielki Kack
+5737;2025/OGM/0004,2025/OGM/0012;54;F;internet;Mały Kack
+5739;2025/OGM/0004;39;M;internet;Karwiny
+5740;2025/OGM/0004;68;F;internet;Pogórze
+5741;2025/OGM/0004;36;F;internet;Śródmieście
+5742;2025/OGM/0004,2025/OGM/0012;41;M;internet;Śródmieście
+5744;2025/OGM/0004;2;M;internet;Śródmieście
+5745;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+5746;2025/OGM/0004;4;F;internet;Karwiny
+5747;2025/OGM/0004;48;F;internet;Oksywie
+5748;2025/OGM/0004;6;F;internet;Śródmieście
+5749;2025/OGM/0004;1;F;internet;Karwiny
+5750;2025/OGM/0004;76;M;internet;Wielki Kack
+5751;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+5752;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+5753;2025/OGM/0004,2025/OGM/0012;49;F;internet;Dąbrowa
+5754;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+5755;2025/OGM/0012;54;M;internet;Pustki Cisowskie-Demptowo
+5756;2025/OGM/0004,2025/OGM/0012;48;M;internet;Mały Kack
+5757;2025/OGM/0004;42;F;internet;Mały Kack
+5758;2025/OGM/0004,2025/OGM/0012;28;M;internet;Cisowa
+5759;2025/OGM/0004;69;F;internet;Wielki Kack
+5760;2025/OGM/0012;47;M;internet;Witomino
+5761;2025/OGM/0004;19;F;internet;Cisowa
+5762;2025/OGM/0012;17;M;internet;Mały Kack
+5763;2025/OGM/0004;57;F;internet;Babie Doły
+5764;2025/OGM/0004,2025/OGM/0012;41;F;internet;Orłowo
+5765;2025/OGM/0012;3;F;internet;Witomino
+5766;2025/OGM/0004;75;F;internet;Kamienna Góra
+5767;2025/OGM/0012;20;M;internet;Kamienna Góra
+5768;2025/OGM/0004;49;F;internet;Wzgórze Św. Maksymiliana
+5769;2025/OGM/0012;13;F;internet;Mały Kack
+5770;2025/OGM/0004;17;F;internet;Chwarzno-Wiczlino
+5771;2025/OGM/0004;32;F;internet;Cisowa
+5772;2025/OGM/0004;32;F;internet;Oksywie
+5773;2025/OGM/0004;56;M;internet;Kamienna Góra
+5774;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+5775;2025/OGM/0012;72;F;internet;Mały Kack
+5776;2025/OGM/0004;45;M;internet;Chylonia
+5777;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+5778;2025/OGM/0004;88;M;internet;Śródmieście
+5779;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+5780;2025/OGM/0012;47;F;internet;Śródmieście
+5781;2025/OGM/0004,2025/OGM/0012;29;F;internet;Grabówek
+5782;2025/OGM/0004;3;F;internet;Witomino
+5783;2025/OGM/0004;50;M;internet;Pogórze
+5784;2025/OGM/0004;1;F;internet;Witomino
+5785;2025/OGM/0004;42;M;internet;Oksywie
+5786;2025/OGM/0012;16;F;internet;Śródmieście
+5787;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+5788;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+5789;2025/OGM/0012;33;M;internet;Leszczynki
+5790;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chwarzno-Wiczlino
+5791;2025/OGM/0012;7;F;internet;Leszczynki
+5792;2025/OGM/0004;35;M;internet;Mały Kack
+5793;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+5794;2025/OGM/0004;3;M;internet;Mały Kack
+5795;2025/OGM/0004;51;F;internet;Obłuże
+5796;2025/OGM/0004;92;M;internet;Chwarzno-Wiczlino
+5797;2025/OGM/0004;79;F;internet;Chwarzno-Wiczlino
+5798;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+5799;2025/OGM/0004;70;F;internet;Chylonia
+5800;2025/OGM/0004;42;F;internet;Wielki Kack
+5801;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+5802;2025/OGM/0004;45;M;internet;Wielki Kack
+5803;2025/OGM/0004;84;M;internet;Chwarzno-Wiczlino
+5804;2025/OGM/0004;41;F;internet;Mały Kack
+5805;2025/OGM/0004,2025/OGM/0012;46;M;internet;Wielki Kack
+5806;2025/OGM/0004,2025/OGM/0012;28;F;internet;Redłowo
+5807;2025/OGM/0004;60;F;internet;Pustki Cisowskie-Demptowo
+5808;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+5809;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+5810;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+5811;2025/OGM/0012;41;F;internet;Oksywie
+5812;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chylonia
+5813;2025/OGM/0004,2025/OGM/0012;7;F;internet;Orłowo
+5814;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+5815;2025/OGM/0004;67;F;internet;Mały Kack
+5816;2025/OGM/0004,2025/OGM/0012;16;M;internet;Mały Kack
+5817;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+5818;2025/OGM/0012;43;F;internet;Śródmieście
+5819;2025/OGM/0004;30;F;internet;Babie Doły
+5820;2025/OGM/0004,2025/OGM/0012;38;F;internet;Grabówek
+5821;2025/OGM/0004,2025/OGM/0012;46;M;internet;Obłuże
+5822;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+5823;2025/OGM/0012;48;M;internet;Redłowo
+5824;2025/OGM/0004;35;F;internet;Redłowo
+5826;2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+5827;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+5828;2025/OGM/0012;30;M;internet;Chwarzno-Wiczlino
+5829;2025/OGM/0004;12;F;internet;Obłuże
+5830;2025/OGM/0012;16;F;internet;Redłowo
+5831;2025/OGM/0004;39;M;internet;Oksywie
+5832;2025/OGM/0004;47;F;internet;Obłuże
+5833;2025/OGM/0012;15;M;internet;Redłowo
+5834;2025/OGM/0004;42;M;internet;Obłuże
+5835;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+5836;2025/OGM/0004;20;F;internet;Wielki Kack
+5837;2025/OGM/0012;47;F;internet;Redłowo
+5838;2025/OGM/0012;16;F;internet;Obłuże
+5839;2025/OGM/0012;48;F;internet;Śródmieście
+5840;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+5841;2025/OGM/0004;33;F;internet;Grabówek
+5842;2025/OGM/0012;74;F;internet;Obłuże
+5843;2025/OGM/0004;39;M;internet;Mały Kack
+5844;2025/OGM/0004,2025/OGM/0012;36;F;internet;Redłowo
+5845;2025/OGM/0004,2025/OGM/0012;35;F;internet;Oksywie
+5846;2025/OGM/0004;28;F;internet;Chwarzno-Wiczlino
+5847;2025/OGM/0004;75;M;internet;Obłuże
+5848;2025/OGM/0004;37;F;internet;Obłuże
+5849;2025/OGM/0004;8;M;internet;Obłuże
+5850;2025/OGM/0004;20;M;internet;Obłuże
+5851;2025/OGM/0012;55;M;internet;Obłuże
+5852;2025/OGM/0012;53;F;internet;Mały Kack
+5853;2025/OGM/0004;46;F;internet;Obłuże
+5854;2025/OGM/0004;84;F;internet;Obłuże
+5855;2025/OGM/0012;86;M;internet;Chylonia
+5856;2025/OGM/0004;33;F;internet;Cisowa
+5857;2025/OGM/0012;77;F;internet;Babie Doły
+5858;2025/OGM/0012;76;M;internet;Mały Kack
+5859;2025/OGM/0004;11;F;internet;Babie Doły
+5860;2025/OGM/0012;19;M;internet;Babie Doły
+5861;2025/OGM/0004;52;M;internet;Babie Doły
+5862;2025/OGM/0004;24;M;internet;Mały Kack
+5863;2025/OGM/0012;48;F;internet;Mały Kack
+5864;2025/OGM/0004;46;F;internet;Babie Doły
+5865;2025/OGM/0004;57;M;internet;Mały Kack
+5866;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+5867;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+5868;2025/OGM/0004,2025/OGM/0012;11;F;internet;Redłowo
+5869;2025/OGM/0004;19;F;internet;Mały Kack
+5870;2025/OGM/0004,2025/OGM/0012;18;F;internet;Chwarzno-Wiczlino
+5871;2025/OGM/0004;45;M;internet;Obłuże
+5874;2025/OGM/0012;35;F;internet;Wielki Kack
+5875;2025/OGM/0004,2025/OGM/0012;40;F;internet;Pustki Cisowskie-Demptowo
+5876;2025/OGM/0004;32;F;internet;Orłowo
+5877;2025/OGM/0012;65;M;internet;Obłuże
+5878;2025/OGM/0004,2025/OGM/0012;29;M;internet;Dąbrowa
+5879;2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+5880;2025/OGM/0004,2025/OGM/0012;72;F;internet;Oksywie
+5881;2025/OGM/0012;31;F;internet;Witomino
+5882;2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+5883;2025/OGM/0012;29;F;internet;Obłuże
+5884;2025/OGM/0012;3;F;internet;Witomino
+5885;2025/OGM/0004;24;F;internet;Chwarzno-Wiczlino
+5886;2025/OGM/0004;43;F;internet;Obłuże
+5887;2025/OGM/0012;61;M;internet;Chwarzno-Wiczlino
+5888;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+5889;2025/OGM/0004,2025/OGM/0012;66;F;internet;Pustki Cisowskie-Demptowo
+5890;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+5892;2025/OGM/0004;44;F;internet;Pustki Cisowskie-Demptowo
+5893;2025/OGM/0004;73;F;internet;Obłuże
+5894;2025/OGM/0004;11;M;internet;Pustki Cisowskie-Demptowo
+5895;2025/OGM/0004;13;F;internet;Pustki Cisowskie-Demptowo
+5896;2025/OGM/0004;38;M;internet;Pustki Cisowskie-Demptowo
+5897;2025/OGM/0004;77;M;internet;Obłuże
+5899;2025/OGM/0004;45;M;internet;Pustki Cisowskie-Demptowo
+5900;2025/OGM/0012;35;M;internet;Śródmieście
+5901;2025/OGM/0004;24;M;internet;Mały Kack
+5902;2025/OGM/0012;51;F;internet;Działki Leśne
+5903;2025/OGM/0012;60;F;internet;Chwarzno-Wiczlino
+5905;2025/OGM/0004,2025/OGM/0012;30;M;internet;Chylonia
+5906;2025/OGM/0004;73;F;internet;Obłuże
+5908;2025/OGM/0004;36;F;internet;Karwiny
+5909;2025/OGM/0004;55;F;internet;Wielki Kack
+5910;2025/OGM/0004,2025/OGM/0012;18;M;internet;Obłuże
+5911;2025/OGM/0004;29;M;internet;Chwarzno-Wiczlino
+5913;2025/OGM/0004;70;F;internet;Oksywie
+5914;2025/OGM/0004;44;M;internet;Mały Kack
+5915;2025/OGM/0004;10;M;internet;Pustki Cisowskie-Demptowo
+5916;2025/OGM/0004;58;M;internet;Wielki Kack
+5917;2025/OGM/0004;38;F;internet;Obłuże
+5918;2025/OGM/0004;48;F;internet;Mały Kack
+5919;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+5920;2025/OGM/0004;22;F;internet;Wielki Kack
+5921;2025/OGM/0012;37;F;internet;Pogórze
+5922;2025/OGM/0012;68;F;internet;Chwarzno-Wiczlino
+5923;2025/OGM/0012;14;F;internet;Pogórze
+5925;2025/OGM/0004;54;F;internet;Oksywie
+5927;2025/OGM/0004;71;M;internet;Pustki Cisowskie-Demptowo
+5928;2025/OGM/0004,2025/OGM/0012;73;F;internet;Kamienna Góra
+5929;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+5931;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+5932;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+5933;2025/OGM/0004;46;F;internet;Oksywie
+5934;2025/OGM/0004;72;F;internet;Leszczynki
+5935;2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+5936;2025/OGM/0004,2025/OGM/0012;44;F;internet;Pogórze
+5937;2025/OGM/0012;49;M;internet;Redłowo
+5938;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+5940;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+5941;2025/OGM/0004;18;F;internet;Wielki Kack
+5942;2025/OGM/0004;49;M;internet;Obłuże
+5943;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wzgórze Św. Maksymiliana
+5945;2025/OGM/0004,2025/OGM/0012;33;M;internet;Działki Leśne
+5946;2025/OGM/0004,2025/OGM/0012;85;F;internet;Wzgórze Św. Maksymiliana
+5947;2025/OGM/0004;70;F;internet;Pogórze
+5948;2025/OGM/0004;68;M;internet;Leszczynki
+5949;2025/OGM/0004;21;M;internet;Wielki Kack
+5950;2025/OGM/0004,2025/OGM/0012;65;F;internet;Wzgórze Św. Maksymiliana
+5951;2025/OGM/0004;18;F;internet;Chwarzno-Wiczlino
+5952;2025/OGM/0004;14;M;internet;Obłuże
+5953;2025/OGM/0004;50;M;internet;Chylonia
+5954;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+5955;2025/OGM/0004;18;F;internet;Obłuże
+5956;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wzgórze Św. Maksymiliana
+5957;2025/OGM/0004;39;M;internet;Obłuże
+5958;2025/OGM/0004,2025/OGM/0012;11;M;internet;Wzgórze Św. Maksymiliana
+5959;2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+5960;2025/OGM/0004,2025/OGM/0012;35;F;internet;Cisowa
+5961;2025/OGM/0004;75;M;internet;Pustki Cisowskie-Demptowo
+5962;2025/OGM/0004;23;M;internet;Dąbrowa
+5963;2025/OGM/0012;36;F;internet;Witomino
+5964;2025/OGM/0004;48;F;internet;Obłuże
+5965;2025/OGM/0004;62;M;internet;Chylonia
+5966;2025/OGM/0004;29;F;internet;Witomino
+5967;2025/OGM/0004;73;F;internet;Pustki Cisowskie-Demptowo
+5968;2025/OGM/0004,2025/OGM/0012;28;M;internet;Cisowa
+5969;2025/OGM/0012;64;F;internet;Śródmieście
+5970;2025/OGM/0004,2025/OGM/0012;52;M;internet;Cisowa
+5971;2025/OGM/0004;74;F;internet;Cisowa
+5972;2025/OGM/0004;59;M;internet;Chwarzno-Wiczlino
+5973;2025/OGM/0004;72;F;internet;Pustki Cisowskie-Demptowo
+5974;2025/OGM/0004,2025/OGM/0012;69;M;internet;Śródmieście
+5975;2025/OGM/0004;36;F;internet;Wielki Kack
+5976;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+5977;2025/OGM/0004;60;F;internet;Chwarzno-Wiczlino
+5978;2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+5979;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+5980;2025/OGM/0004;33;M;internet;Karwiny
+5981;2025/OGM/0012;14;F;internet;Chwarzno-Wiczlino
+5982;2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+5983;2025/OGM/0004;66;F;internet;Oksywie
+5984;2025/OGM/0004,2025/OGM/0012;62;F;internet;Orłowo
+5985;2025/OGM/0004;45;M;internet;Oksywie
+5987;2025/OGM/0004,2025/OGM/0012;57;F;internet;Chwarzno-Wiczlino
+5988;2025/OGM/0004;19;F;internet;Karwiny
+5989;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+5990;2025/OGM/0004;38;F;internet;Cisowa
+5991;2025/OGM/0004;48;F;internet;Obłuże
+5992;2025/OGM/0012;34;M;internet;Pogórze
+5993;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+5995;2025/OGM/0004;30;F;internet;Oksywie
+5996;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+5997;2025/OGM/0004;45;M;internet;Wzgórze Św. Maksymiliana
+5998;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+5999;2025/OGM/0004;75;M;internet;Oksywie
+6000;2025/OGM/0004,2025/OGM/0012;34;M;internet;Witomino
+6001;2025/OGM/0004;18;M;internet;Oksywie
+6002;2025/OGM/0004;39;M;internet;Grabówek
+6003;2025/OGM/0004;66;M;internet;Obłuże
+6004;2025/OGM/0004;72;F;internet;Babie Doły
+6005;2025/OGM/0004;2;F;internet;Chwarzno-Wiczlino
+6006;2025/OGM/0012;44;F;internet;Babie Doły
+6007;2025/OGM/0004;75;M;internet;Chwarzno-Wiczlino
+6010;2025/OGM/0004;19;F;internet;Redłowo
+6011;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+6013;2025/OGM/0004;28;F;internet;Wielki Kack
+6014;2025/OGM/0004,2025/OGM/0012;24;F;internet;Pustki Cisowskie-Demptowo
+6016;2025/OGM/0004;38;F;internet;Wielki Kack
+6017;2025/OGM/0004;40;M;internet;Wielki Kack
+6018;2025/OGM/0004;51;M;internet;Wielki Kack
+6019;2025/OGM/0004;20;M;internet;Śródmieście
+6020;2025/OGM/0004;90;F;internet;Śródmieście
+6022;2025/OGM/0004;21;F;internet;Mały Kack
+6023;2025/OGM/0012;29;F;internet;Wielki Kack
+6024;2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+6025;2025/OGM/0012;3;M;internet;Wielki Kack
+6026;2025/OGM/0004;41;M;internet;Cisowa
+6027;2025/OGM/0004,2025/OGM/0012;46;F;internet;Babie Doły
+6029;2025/OGM/0004;81;M;internet;Chwarzno-Wiczlino
+6030;2025/OGM/0012;32;M;internet;Wielki Kack
+6031;2025/OGM/0004,2025/OGM/0012;58;M;internet;Wielki Kack
+6033;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wielki Kack
+6035;2025/OGM/0004;52;F;internet;Chwarzno-Wiczlino
+6037;2025/OGM/0004,2025/OGM/0012;27;F;internet;Pustki Cisowskie-Demptowo
+6038;2025/OGM/0004,2025/OGM/0012;82;F;internet;Wielki Kack
+6039;2025/OGM/0004;28;F;internet;Chylonia
+6041;2025/OGM/0004,2025/OGM/0012;82;F;internet;Wielki Kack
+6042;2025/OGM/0004;35;M;internet;Wielki Kack
+6044;2025/OGM/0004,2025/OGM/0012;34;F;internet;Pustki Cisowskie-Demptowo
+6045;2025/OGM/0004;10;F;internet;Leszczynki
+6046;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+6047;2025/OGM/0004;6;M;internet;Leszczynki
+6049;2025/OGM/0004,2025/OGM/0012;15;M;internet;Chylonia
+6050;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+6051;2025/OGM/0004,2025/OGM/0012;18;F;internet;Pustki Cisowskie-Demptowo
+6052;2025/OGM/0004,2025/OGM/0012;45;F;internet;Cisowa
+6053;2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+6054;2025/OGM/0004,2025/OGM/0012;3;F;internet;Pustki Cisowskie-Demptowo
+6055;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+6056;2025/OGM/0004,2025/OGM/0012;19;M;internet;Wielki Kack
+6057;2025/OGM/0004,2025/OGM/0012;27;F;internet;Pustki Cisowskie-Demptowo
+6058;2025/OGM/0004;20;M;internet;Chwarzno-Wiczlino
+6059;2025/OGM/0004;67;F;internet;Wielki Kack
+6060;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+6061;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+6062;2025/OGM/0004;53;F;internet;Wielki Kack
+6063;2025/OGM/0004,2025/OGM/0012;32;F;internet;Karwiny
+6064;2025/OGM/0004,2025/OGM/0012;50;M;internet;Obłuże
+6065;2025/OGM/0004,2025/OGM/0012;64;F;internet;Wielki Kack
+6067;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+6068;2025/OGM/0004;42;F;internet;Wielki Kack
+6069;2025/OGM/0012;46;F;internet;Witomino
+6070;2025/OGM/0012;36;M;internet;Pustki Cisowskie-Demptowo
+6071;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+6072;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+6074;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+6075;2025/OGM/0004;4;F;internet;Pustki Cisowskie-Demptowo
+6076;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+6077;2025/OGM/0004;57;F;internet;Babie Doły
+6078;2025/OGM/0004;42;M;internet;Cisowa
+6079;2025/OGM/0012;61;F;internet;Babie Doły
+6080;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+6081;2025/OGM/0004;27;F;internet;Wielki Kack
+6082;2025/OGM/0012;1;F;internet;Pustki Cisowskie-Demptowo
+6083;2025/OGM/0004;40;M;internet;Wielki Kack
+6084;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+6085;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+6086;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+6087;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+6088;2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+6089;2025/OGM/0004,2025/OGM/0012;2;F;internet;Mały Kack
+6090;2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+6091;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wielki Kack
+6092;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+6093;2025/OGM/0012;39;M;internet;Mały Kack
+6094;2025/OGM/0004;37;F;internet;Witomino
+6095;2025/OGM/0004;37;M;internet;Babie Doły
+6096;2025/OGM/0004,2025/OGM/0012;48;F;internet;Babie Doły
+6097;2025/OGM/0004;54;F;internet;Wielki Kack
+6099;2025/OGM/0012;61;F;internet;Redłowo
+6100;2025/OGM/0012;36;F;internet;Pustki Cisowskie-Demptowo
+6101;2025/OGM/0004;31;M;internet;Śródmieście
+6102;2025/OGM/0004;15;F;internet;Wielki Kack
+6103;2025/OGM/0012;68;M;internet;Śródmieście
+6104;2025/OGM/0004;39;F;internet;Chylonia
+6105;2025/OGM/0012;69;F;internet;Śródmieście
+6106;2025/OGM/0012;40;F;internet;Śródmieście
+6107;2025/OGM/0004;41;M;internet;Witomino
+6108;2025/OGM/0012;40;M;internet;Śródmieście
+6109;2025/OGM/0004;39;F;internet;Chylonia
+6110;2025/OGM/0004;45;M;internet;Chylonia
+6111;2025/OGM/0012;40;F;internet;Witomino
+6116;2025/OGM/0004,2025/OGM/0012;27;F;internet;Chwarzno-Wiczlino
+6117;2025/OGM/0004,2025/OGM/0012;31;M;internet;Pustki Cisowskie-Demptowo
+6118;2025/OGM/0004;33;F;internet;Wielki Kack
+6119;2025/OGM/0004;41;F;internet;Wielki Kack
+6120;2025/OGM/0004;47;M;internet;Dąbrowa
+6121;2025/OGM/0004;8;M;internet;Wielki Kack
+6122;2025/OGM/0004;43;M;internet;Mały Kack
+6124;2025/OGM/0004;46;M;internet;Mały Kack
+6125;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+6126;2025/OGM/0004;42;M;internet;Wielki Kack
+6127;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+6128;2025/OGM/0004,2025/OGM/0012;34;M;internet;Obłuże
+6129;2025/OGM/0004;37;M;internet;Wielki Kack
+6130;2025/OGM/0004;48;F;internet;Mały Kack
+6131;2025/OGM/0004;8;F;internet;Mały Kack
+6132;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+6133;2025/OGM/0004,2025/OGM/0012;44;F;internet;Cisowa
+6134;2025/OGM/0012;78;F;internet;Śródmieście
+6135;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+6136;2025/OGM/0004;27;M;internet;Dąbrowa
+6137;2025/OGM/0004,2025/OGM/0012;72;F;internet;Obłuże
+6138;2025/OGM/0012;51;F;internet;Śródmieście
+6139;2025/OGM/0004;40;F;internet;Mały Kack
+6140;2025/OGM/0012;32;F;internet;Obłuże
+6142;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+6143;2025/OGM/0004;5;M;internet;Mały Kack
+6144;2025/OGM/0004;34;F;internet;Mały Kack
+6145;2025/OGM/0012;65;M;internet;Oksywie
+6146;2025/OGM/0004;39;M;internet;Obłuże
+6148;2025/OGM/0004;2;M;internet;Mały Kack
+6149;2025/OGM/0004;6;F;internet;Obłuże
+6150;2025/OGM/0004;35;M;internet;Mały Kack
+6151;2025/OGM/0004;8;F;internet;Obłuże
+6152;2025/OGM/0004;14;F;internet;Mały Kack
+6154;2025/OGM/0004;3;F;internet;Mały Kack
+6155;2025/OGM/0004;1;F;internet;Mały Kack
+6157;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+6159;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+6160;2025/OGM/0004;30;F;internet;Wielki Kack
+6161;2025/OGM/0004;50;F;internet;Wielki Kack
+6162;2025/OGM/0004;44;M;internet;Wielki Kack
+6163;2025/OGM/0004,2025/OGM/0012;32;M;internet;Pustki Cisowskie-Demptowo
+6164;2025/OGM/0004;18;M;internet;Wielki Kack
+6165;2025/OGM/0004;51;F;internet;Obłuże
+6166;2025/OGM/0012;18;F;internet;Wielki Kack
+6167;2025/OGM/0012;52;F;internet;Wielki Kack
+6168;2025/OGM/0004;21;M;internet;Pustki Cisowskie-Demptowo
+6169;2025/OGM/0012;53;M;internet;Mały Kack
+6170;2025/OGM/0004,2025/OGM/0012;31;F;internet;Pustki Cisowskie-Demptowo
+6171;2025/OGM/0004,2025/OGM/0012;37;F;internet;Karwiny
+6172;2025/OGM/0012;52;F;internet;Oksywie
+6173;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+6174;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+6175;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chylonia
+6176;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+6177;2025/OGM/0004;47;M;internet;Wielki Kack
+6178;2025/OGM/0012;70;F;internet;Pustki Cisowskie-Demptowo
+6179;2025/OGM/0012;13;F;internet;Wielki Kack
+6180;2025/OGM/0004;62;F;internet;Wielki Kack
+6181;2025/OGM/0012;70;M;internet;Pustki Cisowskie-Demptowo
+6182;2025/OGM/0004;59;M;internet;Mały Kack
+6184;2025/OGM/0004;25;F;internet;Wielki Kack
+6185;2025/OGM/0012;71;F;internet;Obłuże
+6186;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+6187;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+6188;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+6189;2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+6191;2025/OGM/0004;80;F;internet;Chwarzno-Wiczlino
+6192;2025/OGM/0004;40;F;internet;Witomino
+6193;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+6194;2025/OGM/0004,2025/OGM/0012;24;F;internet;Wielki Kack
+6195;2025/OGM/0004;6;M;internet;Witomino
+6196;2025/OGM/0004;20;F;internet;Dąbrowa
+6197;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+6198;2025/OGM/0012;46;M;internet;Pustki Cisowskie-Demptowo
+6199;2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+6200;2025/OGM/0004;87;M;internet;Chwarzno-Wiczlino
+6204;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+6205;2025/OGM/0004,2025/OGM/0012;53;M;internet;Wielki Kack
+6206;2025/OGM/0012;61;M;internet;Wielki Kack
+6207;2025/OGM/0004;62;F;internet;Wielki Kack
+6208;2025/OGM/0004;43;M;internet;Wielki Kack
+6211;2025/OGM/0012;19;M;internet;Pustki Cisowskie-Demptowo
+6213;2025/OGM/0004,2025/OGM/0012;34;F;internet;Oksywie
+6214;2025/OGM/0004;26;F;internet;Działki Leśne
+6215;2025/OGM/0004,2025/OGM/0012;29;M;internet;Cisowa
+6216;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+6217;2025/OGM/0004,2025/OGM/0012;44;F;internet;Oksywie
+6218;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+6219;2025/OGM/0004;22;M;internet;Wielki Kack
+6220;2025/OGM/0004,2025/OGM/0012;3;M;internet;Witomino
+6221;2025/OGM/0004;35;F;internet;Wielki Kack
+6222;2025/OGM/0004;43;F;internet;Dąbrowa
+6223;2025/OGM/0004;1;F;internet;Wielki Kack
+6225;2025/OGM/0004;3;M;internet;Wielki Kack
+6226;2025/OGM/0004;78;F;internet;Pustki Cisowskie-Demptowo
+6230;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+6231;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+6232;2025/OGM/0004;58;M;internet;Mały Kack
+6233;2025/OGM/0004,2025/OGM/0012;42;F;internet;Orłowo
+6234;2025/OGM/0004;80;M;internet;Pustki Cisowskie-Demptowo
+6235;2025/OGM/0004,2025/OGM/0012;41;M;internet;Cisowa
+6236;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+6237;2025/OGM/0004;25;F;internet;Cisowa
+6238;2025/OGM/0004,2025/OGM/0012;15;F;internet;Cisowa
+6239;2025/OGM/0004,2025/OGM/0012;13;F;internet;Cisowa
+6241;2025/OGM/0004,2025/OGM/0012;10;F;internet;Cisowa
+6242;2025/OGM/0004,2025/OGM/0012;31;F;internet;Dąbrowa
+6243;2025/OGM/0004;76;F;internet;Działki Leśne
+6245;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chylonia
+6246;2025/OGM/0004;40;M;internet;Wielki Kack
+6247;2025/OGM/0004;70;F;internet;Witomino
+6248;2025/OGM/0004;33;M;internet;Wielki Kack
+6250;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+6251;2025/OGM/0004,2025/OGM/0012;10;F;internet;Mały Kack
+6252;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+6253;2025/OGM/0012;47;M;internet;Mały Kack
+6254;2025/OGM/0004,2025/OGM/0012;46;F;internet;Babie Doły
+6255;2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+6256;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+6257;2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+6258;2025/OGM/0012;72;F;internet;Obłuże
+6259;2025/OGM/0004;39;F;internet;Chylonia
+6260;2025/OGM/0012;19;F;internet;Chwarzno-Wiczlino
+6261;2025/OGM/0004;19;M;internet;Oksywie
+6262;2025/OGM/0012;73;M;internet;Obłuże
+6263;2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+6264;2025/OGM/0012;57;F;internet;Kamienna Góra
+6265;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+6266;2025/OGM/0004,2025/OGM/0012;32;F;internet;Oksywie
+6267;2025/OGM/0004;24;F;internet;Pogórze
+6268;2025/OGM/0004;40;F;internet;Mały Kack
+6269;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+6270;2025/OGM/0004;54;M;internet;Kamienna Góra
+6271;2025/OGM/0004;45;M;internet;Grabówek
+6272;2025/OGM/0004,2025/OGM/0012;30;M;internet;Cisowa
+6273;2025/OGM/0004;8;M;internet;Wzgórze Św. Maksymiliana
+6274;2025/OGM/0004;5;M;internet;Wzgórze Św. Maksymiliana
+6275;2025/OGM/0004;38;F;internet;Wzgórze Św. Maksymiliana
+6276;2025/OGM/0004;72;F;internet;Oksywie
+6277;2025/OGM/0004,2025/OGM/0012;68;M;internet;Oksywie
+6278;2025/OGM/0004;57;F;internet;Babie Doły
+6279;2025/OGM/0012;52;M;internet;Chwarzno-Wiczlino
+6280;2025/OGM/0012;46;M;internet;Redłowo
+6281;2025/OGM/0004,2025/OGM/0012;23;F;internet;Babie Doły
+6282;2025/OGM/0004;64;F;internet;Pogórze
+6283;2025/OGM/0004,2025/OGM/0012;58;M;internet;Witomino
+6284;2025/OGM/0012;43;F;internet;Wielki Kack
+6285;2025/OGM/0004;39;M;internet;Dąbrowa
+6287;2025/OGM/0012;47;M;internet;Wielki Kack
+6288;2025/OGM/0004;44;M;internet;Kamienna Góra
+6290;2025/OGM/0012;15;M;internet;Wielki Kack
+6291;2025/OGM/0004,2025/OGM/0012;54;F;internet;Oksywie
+6292;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+6293;2025/OGM/0012;10;F;internet;Wielki Kack
+6294;2025/OGM/0004;47;F;internet;Kamienna Góra
+6296;2025/OGM/0004,2025/OGM/0012;56;M;internet;Cisowa
+6297;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+6298;2025/OGM/0004,2025/OGM/0012;52;M;internet;Działki Leśne
+6299;2025/OGM/0004;43;F;internet;Cisowa
+6300;2025/OGM/0004;7;F;internet;Kamienna Góra
+6301;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+6302;2025/OGM/0012;13;M;internet;Wielki Kack
+6303;2025/OGM/0004;47;F;internet;Mały Kack
+6304;2025/OGM/0004,2025/OGM/0012;40;M;internet;Oksywie
+6305;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+6306;2025/OGM/0012;36;F;internet;Wielki Kack
+6307;2025/OGM/0004;33;F;internet;Pogórze
+6308;2025/OGM/0012;34;M;internet;Śródmieście
+6309;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+6311;2025/OGM/0004,2025/OGM/0012;16;F;internet;Chwarzno-Wiczlino
+6312;2025/OGM/0012;5;F;internet;Wielki Kack
+6313;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+6314;2025/OGM/0004;65;M;internet;Witomino
+6315;2025/OGM/0012;37;M;internet;Wielki Kack
+6316;2025/OGM/0004,2025/OGM/0012;5;M;internet;Chwarzno-Wiczlino
+6317;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+6318;2025/OGM/0004;28;F;internet;Mały Kack
+6319;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+6321;2025/OGM/0004,2025/OGM/0012;27;F;internet;Chwarzno-Wiczlino
+6322;2025/OGM/0004;47;F;internet;Karwiny
+6323;2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+6324;2025/OGM/0004,2025/OGM/0012;50;F;internet;Obłuże
+6325;2025/OGM/0012;67;F;internet;Śródmieście
+6326;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+6327;2025/OGM/0004;37;M;internet;Pustki Cisowskie-Demptowo
+6328;2025/OGM/0004;26;M;internet;Mały Kack
+6329;2025/OGM/0004,2025/OGM/0012;17;F;internet;Śródmieście
+6330;2025/OGM/0004;29;F;internet;Chylonia
+6331;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+6332;2025/OGM/0004;35;M;internet;Wielki Kack
+6333;2025/OGM/0004,2025/OGM/0012;24;M;internet;Obłuże
+6334;2025/OGM/0004;37;F;internet;Cisowa
+6335;2025/OGM/0004,2025/OGM/0012;50;M;internet;Pogórze
+6336;2025/OGM/0004;13;M;internet;Cisowa
+6337;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+6339;2025/OGM/0004;40;M;internet;Mały Kack
+6340;2025/OGM/0004;29;F;internet;Śródmieście
+6341;2025/OGM/0004;35;F;internet;Mały Kack
+6342;2025/OGM/0004;7;F;internet;Wielki Kack
+6343;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+6345;2025/OGM/0004;8;M;internet;Mały Kack
+6346;2025/OGM/0004;3;F;internet;Wielki Kack
+6347;2025/OGM/0004;6;F;internet;Mały Kack
+6348;2025/OGM/0004;31;F;internet;Wielki Kack
+6349;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+6350;2025/OGM/0004,2025/OGM/0012;54;F;internet;Oksywie
+6351;2025/OGM/0004;7;M;internet;Chwarzno-Wiczlino
+6352;2025/OGM/0004;8;M;internet;Chwarzno-Wiczlino
+6353;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+6354;2025/OGM/0004;57;F;internet;Dąbrowa
+6355;2025/OGM/0004;10;M;internet;Witomino
+6356;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+6357;2025/OGM/0004;49;F;internet;Wzgórze Św. Maksymiliana
+6358;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+6359;2025/OGM/0012;8;F;internet;Wzgórze Św. Maksymiliana
+6360;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+6362;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+6364;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+6365;2025/OGM/0012;52;F;internet;Mały Kack
+6366;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+6367;2025/OGM/0004,2025/OGM/0012;26;F;internet;Mały Kack
+6368;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+6369;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+6370;2025/OGM/0004;31;M;internet;Grabówek
+6371;2025/OGM/0004,2025/OGM/0012;17;M;internet;Chwarzno-Wiczlino
+6372;2025/OGM/0004;56;F;internet;Wzgórze Św. Maksymiliana
+6373;2025/OGM/0004,2025/OGM/0012;3;F;internet;Wielki Kack
+6374;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+6375;2025/OGM/0004;51;F;internet;Oksywie
+6376;2025/OGM/0004;75;F;internet;Witomino
+6377;2025/OGM/0004;49;M;internet;Wielki Kack
+6378;2025/OGM/0004;8;F;internet;Pustki Cisowskie-Demptowo
+6379;2025/OGM/0004;41;F;internet;Wzgórze Św. Maksymiliana
+6380;2025/OGM/0004;75;F;internet;Oksywie
+6381;2025/OGM/0004;44;M;internet;Chylonia
+6382;2025/OGM/0004;60;M;internet;Chwarzno-Wiczlino
+6383;2025/OGM/0004;49;F;internet;Cisowa
+6384;2025/OGM/0004,2025/OGM/0012;66;F;internet;Chwarzno-Wiczlino
+6385;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+6386;2025/OGM/0012;64;F;internet;Chwarzno-Wiczlino
+6387;2025/OGM/0004;6;M;internet;Wzgórze Św. Maksymiliana
+6388;2025/OGM/0004;2;M;internet;Pustki Cisowskie-Demptowo
+6389;2025/OGM/0004,2025/OGM/0012;67;M;internet;Chwarzno-Wiczlino
+6390;2025/OGM/0004;9;F;internet;Wzgórze Św. Maksymiliana
+6391;2025/OGM/0004;52;F;internet;Chwarzno-Wiczlino
+6392;2025/OGM/0004;12;M;internet;Cisowa
+6393;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+6394;2025/OGM/0004;6;M;internet;Pustki Cisowskie-Demptowo
+6395;2025/OGM/0004,2025/OGM/0012;33;M;internet;Mały Kack
+6396;2025/OGM/0012;19;M;internet;Pustki Cisowskie-Demptowo
+6397;2025/OGM/0012;18;M;internet;Działki Leśne
+6398;2025/OGM/0004,2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+6400;2025/OGM/0004,2025/OGM/0012;22;F;internet;Chwarzno-Wiczlino
+6401;2025/OGM/0004;23;F;internet;Obłuże
+6402;2025/OGM/0012;52;F;internet;Pustki Cisowskie-Demptowo
+6403;2025/OGM/0012;50;M;internet;Cisowa
+6404;2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+6406;2025/OGM/0004;18;M;internet;Cisowa
+6407;2025/OGM/0004;4;M;internet;Wielki Kack
+6408;2025/OGM/0012;69;F;internet;Mały Kack
+6409;2025/OGM/0004;36;F;internet;Witomino
+6410;2025/OGM/0004;21;M;internet;Dąbrowa
+6411;2025/OGM/0004;60;F;internet;Chylonia
+6412;2025/OGM/0004;6;M;internet;Witomino
+6413;2025/OGM/0004;4;M;internet;Wielki Kack
+6415;2025/OGM/0012;39;F;internet;Kamienna Góra
+6416;2025/OGM/0004,2025/OGM/0012;66;F;internet;Wzgórze Św. Maksymiliana
+6417;2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+6418;2025/OGM/0004;39;M;internet;Witomino
+6419;2025/OGM/0004,2025/OGM/0012;29;M;internet;Obłuże
+6421;2025/OGM/0012;24;F;internet;Chylonia
+6422;2025/OGM/0012;67;M;internet;Pustki Cisowskie-Demptowo
+6423;2025/OGM/0004;40;F;internet;Pogórze
+6424;2025/OGM/0004;60;M;internet;Wielki Kack
+6425;2025/OGM/0004;27;M;internet;Chwarzno-Wiczlino
+6426;2025/OGM/0004;45;F;internet;Cisowa
+6427;2025/OGM/0004;13;M;internet;Cisowa
+6428;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+6429;2025/OGM/0012;46;M;internet;Wzgórze Św. Maksymiliana
+6430;2025/OGM/0004;27;F;internet;Pustki Cisowskie-Demptowo
+6431;2025/OGM/0004;71;M;internet;Wielki Kack
+6432;2025/OGM/0004;33;M;internet;Pustki Cisowskie-Demptowo
+6433;2025/OGM/0004;32;F;internet;Chylonia
+6434;2025/OGM/0012;8;F;internet;Wzgórze Św. Maksymiliana
+6435;2025/OGM/0004;55;F;internet;Wzgórze Św. Maksymiliana
+6436;2025/OGM/0004;67;F;internet;Wielki Kack
+6437;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+6438;2025/OGM/0004;70;F;internet;Wzgórze Św. Maksymiliana
+6439;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+6440;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+6441;2025/OGM/0004;10;M;internet;Obłuże
+6442;2025/OGM/0012;44;M;internet;Pustki Cisowskie-Demptowo
+6443;2025/OGM/0012;41;M;internet;Wzgórze Św. Maksymiliana
+6444;2025/OGM/0012;7;F;internet;Wzgórze Św. Maksymiliana
+6445;2025/OGM/0004;25;F;internet;Obłuże
+6446;2025/OGM/0004;60;F;internet;Obłuże
+6447;2025/OGM/0004,2025/OGM/0012;94;F;internet;Obłuże
+6448;2025/OGM/0004;34;F;internet;Wielki Kack
+6449;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+6450;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+6451;2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+6452;2025/OGM/0004,2025/OGM/0012;12;M;internet;Wielki Kack
+6453;2025/OGM/0004,2025/OGM/0012;15;M;internet;Mały Kack
+6454;2025/OGM/0004;41;M;internet;Redłowo
+6456;2025/OGM/0004,2025/OGM/0012;11;M;internet;Mały Kack
+6457;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+6458;2025/OGM/0004,2025/OGM/0012;66;F;internet;Cisowa
+6459;2025/OGM/0004;50;F;internet;Obłuże
+6460;2025/OGM/0004;42;M;internet;Wielki Kack
+6461;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+6462;2025/OGM/0004;36;F;internet;Wzgórze Św. Maksymiliana
+6463;2025/OGM/0004,2025/OGM/0012;48;F;internet;Babie Doły
+6464;2025/OGM/0004;75;F;internet;Śródmieście
+6465;2025/OGM/0012;38;F;internet;Orłowo
+6466;2025/OGM/0004;7;F;internet;Mały Kack
+6468;2025/OGM/0004;34;F;internet;Mały Kack
+6469;2025/OGM/0004;6;M;internet;Śródmieście
+6470;2025/OGM/0012;44;M;internet;Witomino
+6472;2025/OGM/0012;7;F;internet;Wielki Kack
+6473;2025/OGM/0004,2025/OGM/0012;70;F;internet;Chwarzno-Wiczlino
+6475;2025/OGM/0004,2025/OGM/0012;7;F;internet;Wzgórze Św. Maksymiliana
+6477;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+6479;2025/OGM/0012;42;F;internet;Wielki Kack
+6480;2025/OGM/0004;51;F;internet;Mały Kack
+6481;2025/OGM/0004;50;M;internet;Działki Leśne
+6482;2025/OGM/0004;75;M;internet;Chylonia
+6483;2025/OGM/0004;78;F;internet;Śródmieście
+6484;2025/OGM/0004;41;M;internet;Oksywie
+6485;2025/OGM/0004;25;M;internet;Śródmieście
+6486;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+6487;2025/OGM/0004,2025/OGM/0012;41;F;internet;Karwiny
+6488;2025/OGM/0004,2025/OGM/0012;42;M;internet;Śródmieście
+6489;2025/OGM/0004;36;F;internet;Wielki Kack
+6490;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+6491;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+6492;2025/OGM/0004,2025/OGM/0012;7;M;internet;Chwarzno-Wiczlino
+6493;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+6494;2025/OGM/0004;32;M;internet;Cisowa
+6495;2025/OGM/0004;52;F;internet;Chwarzno-Wiczlino
+6496;2025/OGM/0004;34;M;internet;Wzgórze Św. Maksymiliana
+6497;2025/OGM/0012;31;M;internet;Działki Leśne
+6498;2025/OGM/0004,2025/OGM/0012;12;F;internet;Śródmieście
+6499;2025/OGM/0004,2025/OGM/0012;74;F;internet;Redłowo
+6500;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+6501;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+6502;2025/OGM/0004;55;F;internet;Wielki Kack
+6503;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+6504;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+6505;2025/OGM/0004;29;F;internet;Wielki Kack
+6506;2025/OGM/0004;73;M;internet;Działki Leśne
+6507;2025/OGM/0004;36;F;internet;Pogórze
+6508;2025/OGM/0004;88;F;internet;Wielki Kack
+6509;2025/OGM/0004;9;M;internet;Pogórze
+6510;2025/OGM/0004;59;M;internet;Wielki Kack
+6511;2025/OGM/0004;7;M;internet;Pogórze
+6512;2025/OGM/0004,2025/OGM/0012;49;F;internet;Babie Doły
+6513;2025/OGM/0012;49;F;internet;Pogórze
+6514;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+6515;2025/OGM/0004;47;F;internet;Obłuże
+6516;2025/OGM/0012;20;F;internet;Pogórze
+6517;2025/OGM/0012;81;F;internet;Babie Doły
+6518;2025/OGM/0004,2025/OGM/0012;44;M;internet;Cisowa
+6519;2025/OGM/0012;13;F;internet;Pogórze
+6520;2025/OGM/0004,2025/OGM/0012;12;M;internet;Cisowa
+6521;2025/OGM/0004,2025/OGM/0012;50;F;internet;Chylonia
+6523;2025/OGM/0004,2025/OGM/0012;68;F;internet;Cisowa
+6524;2025/OGM/0004,2025/OGM/0012;9;F;internet;Cisowa
+6525;2025/OGM/0004,2025/OGM/0012;7;F;internet;Cisowa
+6526;2025/OGM/0004,2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+6527;2025/OGM/0004;4;M;internet;Mały Kack
+6528;2025/OGM/0004,2025/OGM/0012;4;F;internet;Cisowa
+6529;2025/OGM/0004;29;F;internet;Śródmieście
+6530;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pustki Cisowskie-Demptowo
+6531;2025/OGM/0004;46;M;internet;Chylonia
+6532;2025/OGM/0004,2025/OGM/0012;15;M;internet;Pustki Cisowskie-Demptowo
+6533;2025/OGM/0012;62;F;internet;Wzgórze Św. Maksymiliana
+6534;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+6535;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+6536;2025/OGM/0012;24;F;internet;Pustki Cisowskie-Demptowo
+6537;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+6539;2025/OGM/0004,2025/OGM/0012;46;F;internet;Cisowa
+6541;2025/OGM/0012;14;M;internet;Cisowa
+6543;2025/OGM/0004;62;F;internet;Kamienna Góra
+6544;2025/OGM/0004;71;F;internet;Redłowo
+6545;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+6546;2025/OGM/0004,2025/OGM/0012;47;M;internet;Cisowa
+6548;2025/OGM/0012;41;M;internet;Pogórze
+6549;2025/OGM/0004,2025/OGM/0012;45;M;internet;Pustki Cisowskie-Demptowo
+6550;2025/OGM/0004,2025/OGM/0012;42;M;internet;Redłowo
+6551;2025/OGM/0004;61;M;internet;Działki Leśne
+6552;2025/OGM/0004;39;M;internet;Wzgórze Św. Maksymiliana
+6553;2025/OGM/0004;48;F;internet;Cisowa
+6554;2025/OGM/0004;37;M;internet;Wzgórze Św. Maksymiliana
+6555;2025/OGM/0004;44;F;internet;Chylonia
+6556;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+6557;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+6558;2025/OGM/0004;42;F;internet;Mały Kack
+6560;2025/OGM/0004;50;F;internet;Leszczynki
+6562;2025/OGM/0004,2025/OGM/0012;64;M;internet;Wielki Kack
+6563;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chylonia
+6565;2025/OGM/0012;41;F;internet;Chylonia
+6566;2025/OGM/0004;51;M;internet;Cisowa
+6567;2025/OGM/0004;57;F;internet;Wielki Kack
+6568;2025/OGM/0004;52;F;internet;Wielki Kack
+6569;2025/OGM/0004;15;F;internet;Wielki Kack
+6570;2025/OGM/0004;46;F;internet;Leszczynki
+6571;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+6572;2025/OGM/0004;45;F;internet;Oksywie
+6573;2025/OGM/0004;19;M;internet;Wielki Kack
+6574;2025/OGM/0004,2025/OGM/0012;45;M;internet;Oksywie
+6575;2025/OGM/0012;13;M;internet;Pogórze
+6576;2025/OGM/0012;11;M;internet;Pogórze
+6577;2025/OGM/0012;6;M;internet;Pustki Cisowskie-Demptowo
+6578;2025/OGM/0004;37;F;internet;Mały Kack
+6579;2025/OGM/0004,2025/OGM/0012;35;F;internet;Pogórze
+6580;2025/OGM/0004;38;M;internet;Mały Kack
+6581;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+6583;2025/OGM/0004;39;F;internet;Kamienna Góra
+6584;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+6585;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+6586;2025/OGM/0004,2025/OGM/0012;27;F;internet;Mały Kack
+6587;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chylonia
+6588;2025/OGM/0004;6;F;internet;Grabówek
+6589;2025/OGM/0004;34;M;internet;Babie Doły
+6590;2025/OGM/0004;43;F;internet;Babie Doły
+6591;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+6592;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wielki Kack
+6593;2025/OGM/0004,2025/OGM/0012;15;M;internet;Leszczynki
+6594;2025/OGM/0004;35;M;internet;Obłuże
+6595;2025/OGM/0004;54;F;internet;Wielki Kack
+6596;2025/OGM/0004;36;M;internet;Obłuże
+6597;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+6598;2025/OGM/0012;29;M;internet;Witomino
+6599;2025/OGM/0004;81;M;internet;Wielki Kack
+6600;2025/OGM/0004;77;F;internet;Wielki Kack
+6601;2025/OGM/0004;47;F;internet;Cisowa
+6602;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chylonia
+6603;2025/OGM/0004;73;F;internet;Witomino
+6604;2025/OGM/0004;47;M;internet;Cisowa
+6606;2025/OGM/0004;15;M;internet;Cisowa
+6607;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chylonia
+6608;2025/OGM/0004;19;M;internet;Cisowa
+6609;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+6610;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+6611;2025/OGM/0004,2025/OGM/0012;42;F;internet;Karwiny
+6612;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+6613;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+6614;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+6615;2025/OGM/0012;5;F;internet;Chwarzno-Wiczlino
+6616;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+6617;2025/OGM/0012;;F;internet;Wielki Kack
+6618;2025/OGM/0004,2025/OGM/0012;32;M;internet;Pustki Cisowskie-Demptowo
+6619;2025/OGM/0004,2025/OGM/0012;32;F;internet;Pustki Cisowskie-Demptowo
+6620;2025/OGM/0004;15;F;internet;Wielki Kack
+6621;2025/OGM/0012;4;M;internet;Chwarzno-Wiczlino
+6622;2025/OGM/0004,2025/OGM/0012;18;F;internet;Mały Kack
+6623;2025/OGM/0004;76;M;internet;Chwarzno-Wiczlino
+6624;2025/OGM/0004;76;F;internet;Chwarzno-Wiczlino
+6626;2025/OGM/0004,2025/OGM/0012;89;F;internet;Babie Doły
+6627;2025/OGM/0004;36;F;internet;Cisowa
+6628;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+6629;2025/OGM/0012;52;F;internet;Pustki Cisowskie-Demptowo
+6630;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+6631;2025/OGM/0012;4;M;internet;Chwarzno-Wiczlino
+6632;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pustki Cisowskie-Demptowo
+6633;2025/OGM/0004,2025/OGM/0012;13;M;internet;Redłowo
+6634;2025/OGM/0004,2025/OGM/0012;50;F;internet;Obłuże
+6635;2025/OGM/0004,2025/OGM/0012;63;M;internet;Śródmieście
+6636;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+6637;2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+6638;2025/OGM/0004;41;F;internet;Chylonia
+6640;2025/OGM/0004,2025/OGM/0012;4;F;internet;Chwarzno-Wiczlino
+6641;2025/OGM/0012;55;M;internet;Pustki Cisowskie-Demptowo
+6642;2025/OGM/0004,2025/OGM/0012;38;F;internet;Działki Leśne
+6643;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+6644;2025/OGM/0004,2025/OGM/0012;37;M;internet;Działki Leśne
+6646;2025/OGM/0004;36;F;internet;Obłuże
+6647;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+6648;2025/OGM/0004;40;F;internet;Chylonia
+6649;2025/OGM/0004;14;F;internet;Chylonia
+6650;2025/OGM/0004;25;M;internet;Śródmieście
+6651;2025/OGM/0004;44;M;internet;Chylonia
+6652;2025/OGM/0004;41;F;internet;Obłuże
+6653;2025/OGM/0004;38;F;internet;Leszczynki
+6654;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+6655;2025/OGM/0012;68;F;internet;Pogórze
+6656;2025/OGM/0004;9;M;internet;Obłuże
+6657;2025/OGM/0004;3;F;internet;Obłuże
+6658;2025/OGM/0004;40;F;internet;Karwiny
+6659;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+6661;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+6662;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+6663;2025/OGM/0004;10;F;internet;Chwarzno-Wiczlino
+6664;2025/OGM/0004;5;F;internet;Chwarzno-Wiczlino
+6665;2025/OGM/0004;5;M;internet;Chwarzno-Wiczlino
+6669;2025/OGM/0012;18;F;internet;Wielki Kack
+6670;2025/OGM/0004,2025/OGM/0012;35;F;internet;Oksywie
+6672;2025/OGM/0004;49;F;internet;Mały Kack
+6673;2025/OGM/0004;40;F;internet;Wzgórze Św. Maksymiliana
+6674;2025/OGM/0004,2025/OGM/0012;37;M;internet;Oksywie
+6676;2025/OGM/0004;60;F;internet;Wielki Kack
+6677;2025/OGM/0004,2025/OGM/0012;11;M;internet;Oksywie
+6678;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+6679;2025/OGM/0004,2025/OGM/0012;32;F;internet;Pustki Cisowskie-Demptowo
+6680;2025/OGM/0004,2025/OGM/0012;9;F;internet;Oksywie
+6681;2025/OGM/0004,2025/OGM/0012;15;F;internet;Mały Kack
+6682;2025/OGM/0004;10;M;internet;Pustki Cisowskie-Demptowo
+6685;2025/OGM/0004,2025/OGM/0012;9;M;internet;Mały Kack
+6686;2025/OGM/0004,2025/OGM/0012;48;M;internet;Mały Kack
+6687;2025/OGM/0004;49;F;internet;Witomino
+6688;2025/OGM/0004;41;F;internet;Mały Kack
+6689;2025/OGM/0012;54;M;internet;Oksywie
+6690;2025/OGM/0004,2025/OGM/0012;29;F;internet;Cisowa
+6691;2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+6692;2025/OGM/0004,2025/OGM/0012;26;M;internet;Redłowo
+6693;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+6694;2025/OGM/0004;32;M;internet;Wielki Kack
+6695;2025/OGM/0012;43;F;internet;Pogórze
+6696;2025/OGM/0004,2025/OGM/0012;91;F;internet;Mały Kack
+6698;2025/OGM/0004,2025/OGM/0012;59;F;internet;Mały Kack
+6699;2025/OGM/0004;24;F;internet;Chwarzno-Wiczlino
+6700;2025/OGM/0004,2025/OGM/0012;17;F;internet;Witomino
+6701;2025/OGM/0004;46;M;internet;Witomino
+6702;2025/OGM/0004,2025/OGM/0012;24;M;internet;Obłuże
+6703;2025/OGM/0004,2025/OGM/0012;27;M;internet;Orłowo
+6704;2025/OGM/0004;39;M;internet;Wzgórze Św. Maksymiliana
+6705;2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+6706;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+6707;2025/OGM/0012;40;F;internet;Pustki Cisowskie-Demptowo
+6708;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+6710;2025/OGM/0004,2025/OGM/0012;5;M;internet;Chwarzno-Wiczlino
+6711;2025/OGM/0004;60;F;internet;Mały Kack
+6712;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+6713;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+6714;2025/OGM/0012;10;F;internet;Pustki Cisowskie-Demptowo
+6715;2025/OGM/0004,2025/OGM/0012;30;M;internet;Chwarzno-Wiczlino
+6716;2025/OGM/0004,2025/OGM/0012;19;F;internet;Witomino
+6717;2025/OGM/0004,2025/OGM/0012;48;F;internet;Witomino
+6718;2025/OGM/0004,2025/OGM/0012;52;M;internet;Witomino
+6719;2025/OGM/0012;28;M;internet;Witomino
+6720;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+6723;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+6724;2025/OGM/0004;35;F;internet;Chylonia
+6725;2025/OGM/0004;19;F;internet;Witomino
+6726;2025/OGM/0004;20;M;internet;Chwarzno-Wiczlino
+6727;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chylonia
+6728;2025/OGM/0004;62;F;internet;Wielki Kack
+6729;2025/OGM/0004;20;M;internet;Chwarzno-Wiczlino
+6730;2025/OGM/0004;43;F;internet;Witomino
+6731;2025/OGM/0004,2025/OGM/0012;32;F;internet;Cisowa
+6732;2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+6733;2025/OGM/0004;37;F;internet;Chylonia
+6734;2025/OGM/0004;53;M;internet;Chwarzno-Wiczlino
+6735;2025/OGM/0004;36;M;internet;Śródmieście
+6736;2025/OGM/0004;17;M;internet;Chylonia
+6737;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+6738;2025/OGM/0004,2025/OGM/0012;27;M;internet;Pogórze
+6739;2025/OGM/0004;55;F;internet;Pustki Cisowskie-Demptowo
+6740;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+6741;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+6742;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+6743;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+6744;2025/OGM/0004;32;F;internet;Oksywie
+6745;2025/OGM/0004,2025/OGM/0012;31;F;internet;Cisowa
+6746;2025/OGM/0004;27;M;internet;Chwarzno-Wiczlino
+6747;2025/OGM/0012;47;F;internet;Oksywie
+6748;2025/OGM/0004;37;M;internet;Pustki Cisowskie-Demptowo
+6749;2025/OGM/0004;37;F;internet;Chylonia
+6750;2025/OGM/0004;12;F;internet;Pustki Cisowskie-Demptowo
+6751;2025/OGM/0012;35;F;internet;Chylonia
+6752;2025/OGM/0004;4;M;internet;Pustki Cisowskie-Demptowo
+6753;2025/OGM/0012;5;F;internet;Chylonia
+6754;2025/OGM/0004;58;M;internet;Mały Kack
+6755;2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+6756;2025/OGM/0012;73;F;internet;Mały Kack
+6757;2025/OGM/0004,2025/OGM/0012;40;M;internet;Wielki Kack
+6758;2025/OGM/0012;71;F;internet;Pogórze
+6759;2025/OGM/0004;2;F;internet;Śródmieście
+6760;2025/OGM/0004;28;M;internet;Śródmieście
+6761;2025/OGM/0004;41;M;internet;Cisowa
+6762;2025/OGM/0004;40;F;internet;Cisowa
+6763;2025/OGM/0004;77;F;internet;Cisowa
+6765;2025/OGM/0004;13;F;internet;Cisowa
+6766;2025/OGM/0004;11;M;internet;Cisowa
+6767;2025/OGM/0004;24;F;internet;Mały Kack
+6768;2025/OGM/0004,2025/OGM/0012;20;F;internet;Wielki Kack
+6769;2025/OGM/0004;52;M;internet;Mały Kack
+6770;2025/OGM/0004;51;F;internet;Mały Kack
+6772;2025/OGM/0012;51;M;internet;Redłowo
+6773;2025/OGM/0012;32;F;internet;Pustki Cisowskie-Demptowo
+6774;2025/OGM/0004;34;F;internet;Witomino
+6775;2025/OGM/0004;35;F;internet;Redłowo
+6776;2025/OGM/0004;9;M;internet;Witomino
+6777;2025/OGM/0004;5;F;internet;Witomino
+6778;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+6779;2025/OGM/0004;19;M;internet;Pustki Cisowskie-Demptowo
+6780;2025/OGM/0004;40;M;internet;Witomino
+6781;2025/OGM/0004;41;F;internet;Witomino
+6782;2025/OGM/0004,2025/OGM/0012;49;M;internet;Obłuże
+6784;2025/OGM/0004;36;F;internet;Karwiny
+6785;2025/OGM/0004;36;M;internet;Obłuże
+6786;2025/OGM/0004;33;F;internet;Obłuże
+6787;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+6788;2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+6789;2025/OGM/0004;40;M;internet;Chylonia
+6790;2025/OGM/0004;39;F;internet;Pogórze
+6791;2025/OGM/0004;27;M;internet;Oksywie
+6792;2025/OGM/0004,2025/OGM/0012;10;M;internet;Pogórze
+6793;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+6794;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+6795;2025/OGM/0004,2025/OGM/0012;7;M;internet;Obłuże
+6796;2025/OGM/0012;34;M;internet;Oksywie
+6797;2025/OGM/0004,2025/OGM/0012;65;F;internet;Pogórze
+6798;2025/OGM/0012;69;F;internet;Śródmieście
+6799;2025/OGM/0004,2025/OGM/0012;72;M;internet;Pogórze
+6800;2025/OGM/0004,2025/OGM/0012;42;M;internet;Pogórze
+6801;2025/OGM/0004;26;F;internet;Wzgórze Św. Maksymiliana
+6802;2025/OGM/0004;43;M;internet;Dąbrowa
+6803;2025/OGM/0004,2025/OGM/0012;43;F;internet;Dąbrowa
+6804;2025/OGM/0012;40;F;internet;Witomino
+6805;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+6806;2025/OGM/0004;38;F;internet;Chylonia
+6807;2025/OGM/0012;30;M;internet;Chylonia
+6808;2025/OGM/0004,2025/OGM/0012;40;M;internet;Dąbrowa
+6809;2025/OGM/0012;49;F;internet;Witomino
+6810;2025/OGM/0012;54;M;internet;Redłowo
+6811;2025/OGM/0004;33;M;internet;Leszczynki
+6812;2025/OGM/0004;40;F;internet;Wielki Kack
+6813;2025/OGM/0004;47;F;internet;Dąbrowa
+6814;2025/OGM/0004;19;M;internet;Witomino
+6815;2025/OGM/0004;46;F;internet;Mały Kack
+6816;2025/OGM/0004;50;M;internet;Witomino
+6817;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+6818;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pustki Cisowskie-Demptowo
+6819;2025/OGM/0004,2025/OGM/0012;51;M;internet;Wielki Kack
+6820;2025/OGM/0012;4;F;internet;Chylonia
+6821;2025/OGM/0012;72;F;internet;Chwarzno-Wiczlino
+6822;2025/OGM/0004;32;F;internet;Wielki Kack
+6823;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+6824;2025/OGM/0004;51;M;internet;Witomino
+6825;2025/OGM/0012;11;F;internet;Wielki Kack
+6826;2025/OGM/0004;34;M;internet;Śródmieście
+6827;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+6828;2025/OGM/0012;43;F;internet;Wzgórze Św. Maksymiliana
+6829;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+6830;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+6831;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+6832;2025/OGM/0012;40;M;internet;Mały Kack
+6833;2025/OGM/0004;36;M;internet;Cisowa
+6834;2025/OGM/0012;40;F;internet;Mały Kack
+6835;2025/OGM/0004,2025/OGM/0012;15;F;internet;Witomino
+6836;2025/OGM/0012;76;M;internet;Mały Kack
+6837;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wielki Kack
+6838;2025/OGM/0004,2025/OGM/0012;86;F;internet;Witomino
+6839;2025/OGM/0012;5;M;internet;Mały Kack
+6840;2025/OGM/0012;75;F;internet;Mały Kack
+6841;2025/OGM/0004,2025/OGM/0012;30;F;internet;Wielki Kack
+6842;2025/OGM/0012;39;M;internet;Cisowa
+6843;2025/OGM/0012;47;M;internet;Redłowo
+6844;2025/OGM/0012;74;M;internet;Mały Kack
+6845;2025/OGM/0004,2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+6846;2025/OGM/0004,2025/OGM/0012;85;M;internet;Witomino
+6847;2025/OGM/0004;59;M;internet;Witomino
+6848;2025/OGM/0004;8;M;internet;Chylonia
+6849;2025/OGM/0004;7;M;internet;Chylonia
+6850;2025/OGM/0012;37;F;internet;Cisowa
+6851;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+6852;2025/OGM/0004;42;M;internet;Karwiny
+6853;2025/OGM/0004,2025/OGM/0012;36;M;internet;Mały Kack
+6854;2025/OGM/0004,2025/OGM/0012;32;M;internet;Chylonia
+6855;2025/OGM/0004;21;M;internet;Chwarzno-Wiczlino
+6856;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+6857;2025/OGM/0004,2025/OGM/0012;46;M;internet;Pogórze
+6858;2025/OGM/0004,2025/OGM/0012;43;F;internet;Witomino
+6859;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+6860;2025/OGM/0004,2025/OGM/0012;17;F;internet;Witomino
+6861;2025/OGM/0004;27;F;internet;Śródmieście
+6862;2025/OGM/0004;43;F;internet;Śródmieście
+6863;2025/OGM/0012;63;F;internet;Chylonia
+6864;2025/OGM/0004,2025/OGM/0012;11;M;internet;Witomino
+6865;2025/OGM/0004,2025/OGM/0012;31;M;internet;Wielki Kack
+6866;2025/OGM/0004,2025/OGM/0012;5;F;internet;Witomino
+6867;2025/OGM/0004,2025/OGM/0012;12;M;internet;Mały Kack
+6869;2025/OGM/0004;45;F;internet;Dąbrowa
+6870;2025/OGM/0004,2025/OGM/0012;80;F;internet;Witomino
+6871;2025/OGM/0004;14;M;internet;Dąbrowa
+6872;2025/OGM/0004;44;M;internet;Wielki Kack
+6873;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+6874;2025/OGM/0004,2025/OGM/0012;33;F;internet;Mały Kack
+6875;2025/OGM/0004;32;M;internet;Wielki Kack
+6876;2025/OGM/0012;64;F;internet;Chylonia
+6877;2025/OGM/0004;17;F;internet;Chwarzno-Wiczlino
+6878;2025/OGM/0004,2025/OGM/0012;37;F;internet;Orłowo
+6879;2025/OGM/0004;13;F;internet;Chwarzno-Wiczlino
+6880;2025/OGM/0004;55;F;internet;Śródmieście
+6881;2025/OGM/0004;10;F;internet;Chwarzno-Wiczlino
+6882;2025/OGM/0004;30;F;internet;Wielki Kack
+6883;2025/OGM/0012;72;M;internet;Chylonia
+6884;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wielki Kack
+6885;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wielki Kack
+6886;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+6887;2025/OGM/0004;43;M;internet;Wielki Kack
+6888;2025/OGM/0004,2025/OGM/0012;15;F;internet;Wielki Kack
+6889;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+6890;2025/OGM/0004,2025/OGM/0012;16;F;internet;Babie Doły
+6891;2025/OGM/0004,2025/OGM/0012;53;M;internet;Mały Kack
+6892;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wielki Kack
+6893;2025/OGM/0004,2025/OGM/0012;57;M;internet;Chylonia
+6894;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+6895;2025/OGM/0004,2025/OGM/0012;15;F;internet;Mały Kack
+6896;2025/OGM/0004,2025/OGM/0012;11;F;internet;Wielki Kack
+6897;2025/OGM/0004,2025/OGM/0012;86;F;internet;Chylonia
+6898;2025/OGM/0004,2025/OGM/0012;9;F;internet;Działki Leśne
+6899;2025/OGM/0004;42;M;internet;Dąbrowa
+6900;2025/OGM/0012;47;F;internet;Oksywie
+6901;2025/OGM/0012;48;M;internet;Działki Leśne
+6902;2025/OGM/0004;50;M;internet;Oksywie
+6903;2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+6904;2025/OGM/0004;18;M;internet;Oksywie
+6905;2025/OGM/0004;81;M;internet;Cisowa
+6906;2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+6907;2025/OGM/0012;52;M;internet;Działki Leśne
+6908;2025/OGM/0004;49;M;internet;Oksywie
+6909;2025/OGM/0004,2025/OGM/0012;48;F;internet;Dąbrowa
+6910;2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+6911;2025/OGM/0004;77;F;internet;Cisowa
+6912;2025/OGM/0004;57;M;internet;Wielki Kack
+6913;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+6914;2025/OGM/0004;46;F;internet;Witomino
+6915;2025/OGM/0004,2025/OGM/0012;33;M;internet;Pustki Cisowskie-Demptowo
+6916;2025/OGM/0004,2025/OGM/0012;49;F;internet;Pustki Cisowskie-Demptowo
+6917;2025/OGM/0004;64;F;internet;Wielki Kack
+6918;2025/OGM/0004,2025/OGM/0012;29;M;internet;Oksywie
+6920;2025/OGM/0004;70;F;internet;Dąbrowa
+6921;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+6923;2025/OGM/0004,2025/OGM/0012;13;F;internet;Pustki Cisowskie-Demptowo
+6924;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+6925;2025/OGM/0004;76;F;internet;Wielki Kack
+6926;2025/OGM/0004;22;M;internet;Obłuże
+6927;2025/OGM/0004;28;F;internet;Śródmieście
+6928;2025/OGM/0012;63;M;internet;Śródmieście
+6929;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+6930;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+6931;2025/OGM/0004,2025/OGM/0012;35;M;internet;Działki Leśne
+6932;2025/OGM/0004;80;F;internet;Obłuże
+6933;2025/OGM/0012;36;F;internet;Działki Leśne
+6934;2025/OGM/0012;59;F;internet;Mały Kack
+6935;2025/OGM/0012;5;M;internet;Działki Leśne
+6937;2025/OGM/0012;3;F;internet;Działki Leśne
+6938;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+6939;2025/OGM/0012;2;F;internet;Działki Leśne
+6940;2025/OGM/0004;47;F;internet;Pustki Cisowskie-Demptowo
+6942;2025/OGM/0004,2025/OGM/0012;94;F;internet;Cisowa
+6943;2025/OGM/0004,2025/OGM/0012;7;M;internet;Chwarzno-Wiczlino
+6944;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+6946;2025/OGM/0004;50;M;internet;Witomino
+6947;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+6948;2025/OGM/0012;57;M;internet;Witomino
+6949;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+6950;2025/OGM/0004,2025/OGM/0012;54;F;internet;Witomino
+6951;2025/OGM/0004;46;F;internet;Wielki Kack
+6952;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+6953;2025/OGM/0004,2025/OGM/0012;1;M;internet;Chwarzno-Wiczlino
+6954;2025/OGM/0004,2025/OGM/0012;77;F;internet;Babie Doły
+6955;2025/OGM/0004,2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+6956;2025/OGM/0012;30;M;internet;Oksywie
+6958;2025/OGM/0004;41;M;internet;Mały Kack
+6960;2025/OGM/0004,2025/OGM/0012;44;F;internet;Leszczynki
+6961;2025/OGM/0004,2025/OGM/0012;54;M;internet;Pustki Cisowskie-Demptowo
+6962;2025/OGM/0004;68;M;internet;Wielki Kack
+6964;2025/OGM/0004,2025/OGM/0012;57;M;internet;Pustki Cisowskie-Demptowo
+6965;2025/OGM/0004,2025/OGM/0012;12;M;internet;Leszczynki
+6966;2025/OGM/0004,2025/OGM/0012;5;M;internet;Leszczynki
+6968;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+6969;2025/OGM/0012;74;M;internet;Witomino
+6970;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+6971;2025/OGM/0004,2025/OGM/0012;40;F;internet;Dąbrowa
+6972;2025/OGM/0004,2025/OGM/0012;86;F;internet;Chylonia
+6973;2025/OGM/0004,2025/OGM/0012;45;M;internet;Leszczynki
+6974;2025/OGM/0004,2025/OGM/0012;79;F;internet;Chylonia
+6975;2025/OGM/0004,2025/OGM/0012;85;F;internet;Chylonia
+6976;2025/OGM/0004,2025/OGM/0012;40;M;internet;Dąbrowa
+6977;2025/OGM/0004;58;M;internet;Wielki Kack
+6978;2025/OGM/0004;40;F;internet;Mały Kack
+6979;2025/OGM/0012;48;F;internet;Działki Leśne
+6980;2025/OGM/0012;29;F;internet;Śródmieście
+6981;2025/OGM/0004;42;M;internet;Śródmieście
+6982;2025/OGM/0004;41;F;internet;Cisowa
+6983;2025/OGM/0004,2025/OGM/0012;62;F;internet;Chwarzno-Wiczlino
+6984;2025/OGM/0004;7;F;internet;Wielki Kack
+6985;2025/OGM/0012;51;M;internet;Karwiny
+6986;2025/OGM/0004;10;F;internet;Wielki Kack
+6987;2025/OGM/0004;16;M;internet;Chwarzno-Wiczlino
+6988;2025/OGM/0004,2025/OGM/0012;30;F;internet;Cisowa
+6989;2025/OGM/0004,2025/OGM/0012;30;M;internet;Cisowa
+6990;2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+6991;2025/OGM/0004,2025/OGM/0012;31;F;internet;Obłuże
+6992;2025/OGM/0004;62;F;internet;Pustki Cisowskie-Demptowo
+6993;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+6994;2025/OGM/0004;26;M;internet;Obłuże
+6995;2025/OGM/0004,2025/OGM/0012;56;M;internet;Pustki Cisowskie-Demptowo
+6998;2025/OGM/0004;48;M;internet;Mały Kack
+6999;2025/OGM/0004;76;F;internet;Oksywie
+7001;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+7002;2025/OGM/0004;15;M;internet;Mały Kack
+7003;2025/OGM/0004;12;F;internet;Wielki Kack
+7004;2025/OGM/0004;41;M;internet;Wielki Kack
+7005;2025/OGM/0004,2025/OGM/0012;15;F;internet;Cisowa
+7006;2025/OGM/0004;63;F;internet;Wielki Kack
+7007;2025/OGM/0004;55;F;internet;Obłuże
+7008;2025/OGM/0004;59;F;internet;Wzgórze Św. Maksymiliana
+7009;2025/OGM/0004;66;M;internet;Wielki Kack
+7010;2025/OGM/0004;63;F;internet;Cisowa
+7011;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+7012;2025/OGM/0004;90;F;internet;Wielki Kack
+7013;2025/OGM/0004;12;F;internet;Wielki Kack
+7014;2025/OGM/0012;45;M;internet;Śródmieście
+7015;2025/OGM/0004,2025/OGM/0012;62;F;internet;Redłowo
+7016;2025/OGM/0012;11;M;internet;Śródmieście
+7017;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+7018;2025/OGM/0012;69;M;internet;Pogórze
+7019;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+7020;2025/OGM/0004;40;F;internet;Chylonia
+7021;2025/OGM/0012;11;M;internet;Pustki Cisowskie-Demptowo
+7022;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chwarzno-Wiczlino
+7023;2025/OGM/0004;26;F;internet;Wielki Kack
+7024;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+7026;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+7027;2025/OGM/0004,2025/OGM/0012;70;F;internet;Wielki Kack
+7028;2025/OGM/0004;52;M;internet;Wielki Kack
+7029;2025/OGM/0004;20;M;internet;Obłuże
+7030;2025/OGM/0012;53;M;internet;Pustki Cisowskie-Demptowo
+7031;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+7032;2025/OGM/0004;14;M;internet;Wielki Kack
+7033;2025/OGM/0004;29;M;internet;Mały Kack
+7034;2025/OGM/0004;50;F;internet;Kamienna Góra
+7035;2025/OGM/0004;59;M;internet;Kamienna Góra
+7036;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+7037;2025/OGM/0004;48;M;internet;Pustki Cisowskie-Demptowo
+7038;2025/OGM/0004;40;F;internet;Wielki Kack
+7039;2025/OGM/0004;72;F;internet;Pustki Cisowskie-Demptowo
+7040;2025/OGM/0004;10;M;internet;Wielki Kack
+7041;2025/OGM/0004,2025/OGM/0012;35;M;internet;Śródmieście
+7042;2025/OGM/0004;42;M;internet;Mały Kack
+7043;2025/OGM/0004;9;M;internet;Wielki Kack
+7044;2025/OGM/0012;40;F;internet;Mały Kack
+7045;2025/OGM/0004;1;M;internet;Wielki Kack
+7046;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wzgórze Św. Maksymiliana
+7047;2025/OGM/0004;13;M;internet;Mały Kack
+7048;2025/OGM/0004,2025/OGM/0012;66;F;internet;Karwiny
+7049;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wielki Kack
+7050;2025/OGM/0004;9;M;internet;Mały Kack
+7051;2025/OGM/0004;22;M;internet;Mały Kack
+7052;2025/OGM/0004;43;M;internet;Chylonia
+7053;2025/OGM/0004;49;F;internet;Mały Kack
+7055;2025/OGM/0004;76;F;internet;Mały Kack
+7056;2025/OGM/0004,2025/OGM/0012;25;M;internet;Chwarzno-Wiczlino
+7058;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wielki Kack
+7059;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+7060;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+7061;2025/OGM/0012;40;F;internet;Redłowo
+7062;2025/OGM/0004,2025/OGM/0012;33;F;internet;Pogórze
+7063;2025/OGM/0004,2025/OGM/0012;16;F;internet;Śródmieście
+7064;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+7065;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+7066;2025/OGM/0004,2025/OGM/0012;21;M;internet;Śródmieście
+7067;2025/OGM/0004;41;M;internet;Cisowa
+7068;2025/OGM/0004;64;M;internet;Mały Kack
+7070;2025/OGM/0004,2025/OGM/0012;26;M;internet;Wielki Kack
+7071;2025/OGM/0004,2025/OGM/0012;10;M;internet;Cisowa
+7072;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+7073;2025/OGM/0004,2025/OGM/0012;45;F;internet;Karwiny
+7074;2025/OGM/0004,2025/OGM/0012;9;F;internet;Cisowa
+7075;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chwarzno-Wiczlino
+7076;2025/OGM/0004;56;F;internet;Karwiny
+7077;2025/OGM/0004,2025/OGM/0012;43;F;internet;Cisowa
+7078;2025/OGM/0004;65;M;internet;Witomino
+7079;2025/OGM/0004,2025/OGM/0012;44;M;internet;Mały Kack
+7080;2025/OGM/0012;77;M;internet;Babie Doły
+7081;2025/OGM/0004,2025/OGM/0012;42;M;internet;Grabówek
+7082;2025/OGM/0004;47;M;internet;Wielki Kack
+7083;2025/OGM/0004,2025/OGM/0012;65;F;internet;Chylonia
+7084;2025/OGM/0004;46;F;internet;Wielki Kack
+7085;2025/OGM/0004,2025/OGM/0012;75;F;internet;Obłuże
+7086;2025/OGM/0004;43;F;internet;
+7087;2025/OGM/0004;34;F;internet;Mały Kack
+7088;2025/OGM/0004;10;M;internet;Wielki Kack
+7089;2025/OGM/0004,2025/OGM/0012;76;M;internet;Obłuże
+7090;2025/OGM/0004;19;F;internet;Wielki Kack
+7091;2025/OGM/0004;21;M;internet;Wielki Kack
+7092;2025/OGM/0004,2025/OGM/0012;9;F;internet;Grabówek
+7093;2025/OGM/0004;42;M;internet;Cisowa
+7094;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+7095;2025/OGM/0012;30;M;internet;Babie Doły
+7096;2025/OGM/0004,2025/OGM/0012;79;F;internet;Mały Kack
+7097;2025/OGM/0012;66;F;internet;Pogórze
+7098;2025/OGM/0004,2025/OGM/0012;39;M;internet;Dąbrowa
+7099;2025/OGM/0004,2025/OGM/0012;7;M;internet;Grabówek
+7100;2025/OGM/0004;58;F;internet;Leszczynki
+7101;2025/OGM/0012;36;F;internet;Pustki Cisowskie-Demptowo
+7102;2025/OGM/0004;72;F;internet;Cisowa
+7103;2025/OGM/0012;64;M;internet;Pogórze
+7105;2025/OGM/0004;41;F;internet;Mały Kack
+7106;2025/OGM/0004;73;F;internet;Obłuże
+7107;2025/OGM/0004;29;M;internet;Cisowa
+7108;2025/OGM/0004,2025/OGM/0012;81;M;internet;Karwiny
+7109;2025/OGM/0004;34;F;internet;Cisowa
+7110;2025/OGM/0004;11;M;internet;Mały Kack
+7111;2025/OGM/0004;6;M;internet;Mały Kack
+7112;2025/OGM/0004;35;M;internet;Cisowa
+7113;2025/OGM/0004;76;M;internet;Obłuże
+7114;2025/OGM/0004;41;M;internet;Wielki Kack
+7115;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+7116;2025/OGM/0004;38;F;internet;Pustki Cisowskie-Demptowo
+7117;2025/OGM/0004;59;M;internet;Obłuże
+7118;2025/OGM/0004,2025/OGM/0012;72;F;internet;Wielki Kack
+7119;2025/OGM/0004;41;F;internet;Mały Kack
+7121;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+7122;2025/OGM/0004,2025/OGM/0012;77;M;internet;Wielki Kack
+7123;2025/OGM/0004,2025/OGM/0012;76;F;internet;Witomino
+7124;2025/OGM/0004,2025/OGM/0012;59;F;internet;Obłuże
+7125;2025/OGM/0012;42;M;internet;Mały Kack
+7126;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+7127;2025/OGM/0004,2025/OGM/0012;55;F;internet;Karwiny
+7128;2025/OGM/0004,2025/OGM/0012;75;F;internet;Cisowa
+7129;2025/OGM/0012;12;F;internet;Mały Kack
+7130;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+7131;2025/OGM/0012;63;F;internet;Oksywie
+7132;2025/OGM/0012;14;F;internet;Mały Kack
+7133;2025/OGM/0004;39;M;internet;Wielki Kack
+7134;2025/OGM/0012;42;F;internet;Mały Kack
+7135;2025/OGM/0004;71;F;internet;Pogórze
+7137;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+7138;2025/OGM/0004;69;F;internet;Grabówek
+7139;2025/OGM/0004;58;F;internet;Mały Kack
+7140;2025/OGM/0004,2025/OGM/0012;45;F;internet;Obłuże
+7141;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+7142;2025/OGM/0004;11;M;internet;Leszczynki
+7143;2025/OGM/0012;46;F;internet;Babie Doły
+7144;2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+7145;2025/OGM/0004,2025/OGM/0012;10;F;internet;Obłuże
+7146;2025/OGM/0012;79;M;internet;Witomino
+7147;2025/OGM/0004;47;M;internet;Dąbrowa
+7148;2025/OGM/0004;67;F;internet;Chylonia
+7149;2025/OGM/0004,2025/OGM/0012;75;F;internet;Oksywie
+7150;2025/OGM/0004,2025/OGM/0012;21;F;internet;Obłuże
+7151;2025/OGM/0004;66;F;internet;Pustki Cisowskie-Demptowo
+7152;2025/OGM/0004;12;M;internet;Babie Doły
+7153;2025/OGM/0004;56;M;internet;Karwiny
+7154;2025/OGM/0004;16;M;internet;Babie Doły
+7155;2025/OGM/0004;66;M;internet;Chylonia
+7156;2025/OGM/0004;71;M;internet;Pustki Cisowskie-Demptowo
+7157;2025/OGM/0004;43;F;internet;Dąbrowa
+7158;2025/OGM/0004;59;F;internet;Śródmieście
+7159;2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+7160;2025/OGM/0004;67;M;internet;Śródmieście
+7161;2025/OGM/0004,2025/OGM/0012;48;M;internet;Babie Doły
+7162;2025/OGM/0004;2;M;internet;Dąbrowa
+7163;2025/OGM/0004;15;F;internet;Pustki Cisowskie-Demptowo
+7164;2025/OGM/0012;3;F;internet;Wielki Kack
+7165;2025/OGM/0004;6;M;internet;Dąbrowa
+7166;2025/OGM/0004;31;M;internet;Pustki Cisowskie-Demptowo
+7167;2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+7168;2025/OGM/0004;4;F;internet;Dąbrowa
+7169;2025/OGM/0004;17;F;internet;Śródmieście
+7170;2025/OGM/0012;37;M;internet;Wielki Kack
+7171;2025/OGM/0004;46;M;internet;Karwiny
+7173;2025/OGM/0012;35;F;internet;Wielki Kack
+7174;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+7175;2025/OGM/0004;31;F;internet;Śródmieście
+7176;2025/OGM/0004;69;F;internet;Mały Kack
+7177;2025/OGM/0004;44;F;internet;Dąbrowa
+7178;2025/OGM/0004;70;M;internet;Mały Kack
+7179;2025/OGM/0004;31;M;internet;Chylonia
+7180;2025/OGM/0004;28;F;internet;Chylonia
+7181;2025/OGM/0004,2025/OGM/0012;21;F;internet;Dąbrowa
+7182;2025/OGM/0004;39;F;internet;Obłuże
+7183;2025/OGM/0004,2025/OGM/0012;12;F;internet;Mały Kack
+7186;2025/OGM/0004,2025/OGM/0012;13;M;internet;Mały Kack
+7188;2025/OGM/0004;42;F;internet;Chylonia
+7190;2025/OGM/0012;25;F;internet;Witomino
+7191;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+7192;2025/OGM/0012;49;F;internet;Chylonia
+7193;2025/OGM/0004;48;F;internet;Oksywie
+7194;2025/OGM/0004;46;F;internet;Chylonia
+7195;2025/OGM/0004;55;M;internet;Oksywie
+7198;2025/OGM/0004;41;M;internet;Babie Doły
+7199;2025/OGM/0004;73;F;internet;Oksywie
+7201;2025/OGM/0004;77;M;internet;Oksywie
+7202;2025/OGM/0004;47;F;internet;Chwarzno-Wiczlino
+7204;2025/OGM/0004;22;M;internet;Oksywie
+7205;2025/OGM/0004;16;M;internet;Chwarzno-Wiczlino
+7206;2025/OGM/0004;16;F;internet;Oksywie
+7207;2025/OGM/0004,2025/OGM/0012;68;F;internet;Śródmieście
+7208;2025/OGM/0004;32;M;internet;Mały Kack
+7209;2025/OGM/0004,2025/OGM/0012;27;F;internet;Mały Kack
+7210;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+7211;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+7212;2025/OGM/0012;72;F;internet;Oksywie
+7213;2025/OGM/0004,2025/OGM/0012;19;F;internet;Chwarzno-Wiczlino
+7214;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+7216;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+7217;2025/OGM/0004;32;F;internet;Mały Kack
+7219;2025/OGM/0012;71;M;internet;Chwarzno-Wiczlino
+7221;2025/OGM/0004;69;F;internet;Leszczynki
+7222;2025/OGM/0004;13;F;internet;Chwarzno-Wiczlino
+7223;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+7224;2025/OGM/0004;51;M;internet;Obłuże
+7226;2025/OGM/0004,2025/OGM/0012;46;F;internet;Babie Doły
+7227;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+7228;2025/OGM/0004,2025/OGM/0012;1;M;internet;Mały Kack
+7229;2025/OGM/0004;38;F;internet;Wielki Kack
+7230;2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+7231;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+7232;2025/OGM/0004;48;F;internet;Mały Kack
+7233;2025/OGM/0004;41;M;internet;Wielki Kack
+7234;2025/OGM/0004;12;M;internet;Wielki Kack
+7235;2025/OGM/0004,2025/OGM/0012;41;F;internet;Karwiny
+7236;2025/OGM/0004;10;F;internet;Wielki Kack
+7237;2025/OGM/0004,2025/OGM/0012;40;M;internet;Karwiny
+7238;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+7239;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+7240;2025/OGM/0004,2025/OGM/0012;13;F;internet;Karwiny
+7241;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+7242;2025/OGM/0004,2025/OGM/0012;3;M;internet;Chwarzno-Wiczlino
+7243;2025/OGM/0004;42;M;internet;Karwiny
+7244;2025/OGM/0004;8;M;internet;Karwiny
+7245;2025/OGM/0004;38;F;internet;Karwiny
+7246;2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+7247;2025/OGM/0004;53;F;internet;Wielki Kack
+7248;2025/OGM/0004;22;M;internet;Wielki Kack
+7249;2025/OGM/0004;51;M;internet;Wielki Kack
+7250;2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+7251;2025/OGM/0004,2025/OGM/0012;43;F;internet;Działki Leśne
+7252;2025/OGM/0012;48;F;internet;Wzgórze Św. Maksymiliana
+7253;2025/OGM/0004;50;F;internet;Obłuże
+7254;2025/OGM/0004;28;M;internet;Wielki Kack
+7255;2025/OGM/0004;9;M;internet;Redłowo
+7256;2025/OGM/0004;51;M;internet;Obłuże
+7257;2025/OGM/0004;35;M;internet;Chylonia
+7258;2025/OGM/0012;49;M;internet;Wzgórze Św. Maksymiliana
+7259;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+7260;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+7263;2025/OGM/0012;11;M;internet;Wzgórze Św. Maksymiliana
+7264;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+7265;2025/OGM/0012;9;M;internet;Wzgórze Św. Maksymiliana
+7267;2025/OGM/0012;4;M;internet;Wzgórze Św. Maksymiliana
+7269;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chylonia
+7270;2025/OGM/0004;50;M;internet;Obłuże
+7271;2025/OGM/0004,2025/OGM/0012;26;M;internet;Działki Leśne
+7272;2025/OGM/0004;35;M;internet;Obłuże
+7273;2025/OGM/0004,2025/OGM/0012;28;M;internet;Chwarzno-Wiczlino
+7274;2025/OGM/0004,2025/OGM/0012;44;F;internet;Mały Kack
+7275;2025/OGM/0012;64;M;internet;Działki Leśne
+7276;2025/OGM/0012;24;F;internet;Witomino
+7277;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+7278;2025/OGM/0004,2025/OGM/0012;41;M;internet;Obłuże
+7279;2025/OGM/0004,2025/OGM/0012;17;M;internet;Pustki Cisowskie-Demptowo
+7280;2025/OGM/0004;55;M;internet;Chylonia
+7282;2025/OGM/0004,2025/OGM/0012;11;M;internet;Pustki Cisowskie-Demptowo
+7283;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+7284;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+7285;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+7286;2025/OGM/0012;34;F;internet;Pogórze
+7287;2025/OGM/0004;41;M;internet;Wielki Kack
+7288;2025/OGM/0004,2025/OGM/0012;31;F;internet;Oksywie
+7289;2025/OGM/0004;32;M;internet;Oksywie
+7290;2025/OGM/0012;64;F;internet;Grabówek
+7291;2025/OGM/0004;51;F;internet;Orłowo
+7292;2025/OGM/0004;41;F;internet;Wzgórze Św. Maksymiliana
+7293;2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+7294;2025/OGM/0012;68;F;internet;Pustki Cisowskie-Demptowo
+7295;2025/OGM/0012;35;M;internet;Wzgórze Św. Maksymiliana
+7296;2025/OGM/0004;49;M;internet;Wielki Kack
+7297;2025/OGM/0004,2025/OGM/0012;11;M;internet;Mały Kack
+7298;2025/OGM/0004,2025/OGM/0012;52;F;internet;Witomino
+7300;2025/OGM/0012;55;M;internet;Chwarzno-Wiczlino
+7301;2025/OGM/0004;36;F;internet;Witomino
+7302;2025/OGM/0004;23;M;internet;Chylonia
+7303;2025/OGM/0004,2025/OGM/0012;19;M;internet;Chwarzno-Wiczlino
+7304;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+7305;2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+7306;2025/OGM/0004,2025/OGM/0012;57;M;internet;Dąbrowa
+7307;2025/OGM/0004,2025/OGM/0012;7;M;internet;Mały Kack
+7308;2025/OGM/0004;57;M;internet;Pustki Cisowskie-Demptowo
+7309;2025/OGM/0004,2025/OGM/0012;39;F;internet;Grabówek
+7310;2025/OGM/0012;;F;internet;Wzgórze Św. Maksymiliana
+7311;2025/OGM/0004,2025/OGM/0012;52;F;internet;Dąbrowa
+7313;2025/OGM/0004;40;F;internet;Dąbrowa
+7314;2025/OGM/0004;38;M;internet;Chylonia
+7317;2025/OGM/0004;54;M;internet;Oksywie
+7318;2025/OGM/0004;37;F;internet;Witomino
+7319;2025/OGM/0004;37;F;internet;Obłuże
+7320;2025/OGM/0004;26;F;internet;Pustki Cisowskie-Demptowo
+7321;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+7322;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+7323;2025/OGM/0004;50;F;internet;Witomino
+7324;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+7325;2025/OGM/0004;37;F;internet;Witomino
+7326;2025/OGM/0004;15;M;internet;Wielki Kack
+7327;2025/OGM/0004,2025/OGM/0012;36;M;internet;Śródmieście
+7328;2025/OGM/0004;40;M;internet;Wielki Kack
+7329;2025/OGM/0004;35;M;internet;Pustki Cisowskie-Demptowo
+7330;2025/OGM/0004;13;M;internet;Wielki Kack
+7331;2025/OGM/0004;29;F;internet;Witomino
+7332;2025/OGM/0012;78;F;internet;Wielki Kack
+7334;2025/OGM/0004,2025/OGM/0012;47;M;internet;Wielki Kack
+7335;2025/OGM/0004;41;M;internet;Dąbrowa
+7336;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+7337;2025/OGM/0004;23;F;internet;Wielki Kack
+7338;2025/OGM/0012;48;F;internet;Oksywie
+7339;2025/OGM/0004,2025/OGM/0012;37;M;internet;Witomino
+7340;2025/OGM/0012;49;M;internet;Oksywie
+7341;2025/OGM/0004;12;F;internet;Babie Doły
+7342;2025/OGM/0004,2025/OGM/0012;9;M;internet;Babie Doły
+7344;2025/OGM/0004;39;M;internet;Wielki Kack
+7345;2025/OGM/0012;5;F;internet;Witomino
+7346;2025/OGM/0004;45;F;internet;Dąbrowa
+7347;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+7348;2025/OGM/0004;40;F;internet;Wielki Kack
+7349;2025/OGM/0012;56;F;internet;Chwarzno-Wiczlino
+7350;2025/OGM/0012;32;F;internet;Wzgórze Św. Maksymiliana
+7351;2025/OGM/0004;43;M;internet;Wielki Kack
+7352;2025/OGM/0004;42;F;internet;Dąbrowa
+7353;2025/OGM/0012;53;F;internet;Witomino
+7354;2025/OGM/0004;8;M;internet;Wielki Kack
+7355;2025/OGM/0004;42;F;internet;Grabówek
+7356;2025/OGM/0012;24;M;internet;Chwarzno-Wiczlino
+7358;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+7359;2025/OGM/0012;81;F;internet;Chwarzno-Wiczlino
+7361;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+7362;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chylonia
+7363;2025/OGM/0004;6;F;internet;Pustki Cisowskie-Demptowo
+7364;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+7365;2025/OGM/0004,2025/OGM/0012;73;F;internet;Leszczynki
+7367;2025/OGM/0012;14;F;internet;Pustki Cisowskie-Demptowo
+7368;2025/OGM/0004,2025/OGM/0012;31;F;internet;Obłuże
+7369;2025/OGM/0004,2025/OGM/0012;93;F;internet;Chylonia
+7370;2025/OGM/0004,2025/OGM/0012;7;F;internet;Obłuże
+7371;2025/OGM/0004;34;F;internet;Grabówek
+7372;2025/OGM/0004,2025/OGM/0012;13;M;internet;Śródmieście
+7373;2025/OGM/0004,2025/OGM/0012;49;F;internet;Redłowo
+7374;2025/OGM/0012;40;F;internet;Działki Leśne
+7375;2025/OGM/0012;76;F;internet;Działki Leśne
+7376;2025/OGM/0004,2025/OGM/0012;21;M;internet;Redłowo
+7377;2025/OGM/0004,2025/OGM/0012;16;M;internet;Redłowo
+7378;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+7379;2025/OGM/0004,2025/OGM/0012;4;M;internet;Chylonia
+7380;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+7381;2025/OGM/0004,2025/OGM/0012;11;M;internet;Redłowo
+7382;2025/OGM/0004,2025/OGM/0012;44;F;internet;Karwiny
+7383;2025/OGM/0004,2025/OGM/0012;50;M;internet;Śródmieście
+7384;2025/OGM/0004,2025/OGM/0012;7;F;internet;Chylonia
+7385;2025/OGM/0004,2025/OGM/0012;32;F;internet;Witomino
+7386;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chylonia
+7387;2025/OGM/0004,2025/OGM/0012;49;F;internet;Śródmieście
+7388;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+7389;2025/OGM/0004,2025/OGM/0012;52;F;internet;Witomino
+7390;2025/OGM/0004,2025/OGM/0012;14;F;internet;Karwiny
+7391;2025/OGM/0004;36;F;internet;Śródmieście
+7392;2025/OGM/0004,2025/OGM/0012;84;F;internet;Śródmieście
+7393;2025/OGM/0004,2025/OGM/0012;49;M;internet;Karwiny
+7394;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+7395;2025/OGM/0004,2025/OGM/0012;89;M;internet;Śródmieście
+7396;2025/OGM/0004,2025/OGM/0012;68;F;internet;Wielki Kack
+7397;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+7398;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+7399;2025/OGM/0004,2025/OGM/0012;30;F;internet;Śródmieście
+7400;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+7401;2025/OGM/0012;57;M;internet;Śródmieście
+7402;2025/OGM/0004;40;F;internet;Wielki Kack
+7403;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+7404;2025/OGM/0004,2025/OGM/0012;75;M;internet;Wielki Kack
+7405;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+7406;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+7407;2025/OGM/0004;38;F;internet;Wielki Kack
+7408;2025/OGM/0004;13;M;internet;Wielki Kack
+7409;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+7410;2025/OGM/0004;10;F;internet;Wielki Kack
+7411;2025/OGM/0004;43;F;internet;Wielki Kack
+7412;2025/OGM/0004;8;M;internet;Wielki Kack
+7413;2025/OGM/0004;28;F;internet;Karwiny
+7414;2025/OGM/0004;40;M;internet;Wielki Kack
+7415;2025/OGM/0004,2025/OGM/0012;19;M;internet;Pustki Cisowskie-Demptowo
+7416;2025/OGM/0004;72;M;internet;Wielki Kack
+7418;2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+7419;2025/OGM/0004;69;F;internet;Wielki Kack
+7420;2025/OGM/0004;13;F;internet;Wielki Kack
+7421;2025/OGM/0004;57;F;internet;Orłowo
+7422;2025/OGM/0004,2025/OGM/0012;15;M;internet;Śródmieście
+7423;2025/OGM/0012;45;F;internet;Śródmieście
+7424;2025/OGM/0004,2025/OGM/0012;37;F;internet;Witomino
+7428;2025/OGM/0004;32;F;internet;Cisowa
+7429;2025/OGM/0004,2025/OGM/0012;25;M;internet;Chylonia
+7431;2025/OGM/0012;8;F;internet;Cisowa
+7432;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chylonia
+7433;2025/OGM/0004;34;F;internet;Oksywie
+7434;2025/OGM/0004;28;F;internet;Wzgórze Św. Maksymiliana
+7435;2025/OGM/0004;37;F;internet;Babie Doły
+7436;2025/OGM/0004;5;F;internet;Cisowa
+7437;2025/OGM/0004;13;F;internet;Oksywie
+7438;2025/OGM/0004;9;F;internet;Babie Doły
+7439;2025/OGM/0004;15;F;internet;Wielki Kack
+7440;2025/OGM/0004;6;M;internet;Babie Doły
+7441;2025/OGM/0004,2025/OGM/0012;17;M;internet;Witomino
+7442;2025/OGM/0004;7;M;internet;Oksywie
+7443;2025/OGM/0004;49;M;internet;Babie Doły
+7444;2025/OGM/0004;5;F;internet;Oksywie
+7445;2025/OGM/0004;39;F;internet;Dąbrowa
+7446;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+7447;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+7448;2025/OGM/0004,2025/OGM/0012;39;M;internet;Pustki Cisowskie-Demptowo
+7449;2025/OGM/0004;47;M;internet;Witomino
+7450;2025/OGM/0004;26;M;internet;Oksywie
+7451;2025/OGM/0004;63;F;internet;Śródmieście
+7452;2025/OGM/0012;34;F;internet;Pustki Cisowskie-Demptowo
+7453;2025/OGM/0004;13;M;internet;Wzgórze Św. Maksymiliana
+7454;2025/OGM/0004;51;M;internet;Wzgórze Św. Maksymiliana
+7455;2025/OGM/0012;55;F;internet;Mały Kack
+7456;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+7457;2025/OGM/0012;18;M;internet;Chylonia
+7458;2025/OGM/0012;53;M;internet;Mały Kack
+7459;2025/OGM/0004;32;F;internet;Chylonia
+7460;2025/OGM/0004;29;M;internet;Chylonia
+7461;2025/OGM/0004;37;F;internet;Pustki Cisowskie-Demptowo
+7462;2025/OGM/0004;56;F;internet;Witomino
+7463;2025/OGM/0012;16;F;internet;Mały Kack
+7464;2025/OGM/0004;41;M;internet;Mały Kack
+7465;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+7466;2025/OGM/0004;30;M;internet;Pustki Cisowskie-Demptowo
+7467;2025/OGM/0012;45;F;internet;Chylonia
+7468;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+7469;2025/OGM/0012;57;M;internet;Witomino
+7470;2025/OGM/0004;14;M;internet;Pustki Cisowskie-Demptowo
+7471;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+7472;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+7473;2025/OGM/0004;12;M;internet;Pustki Cisowskie-Demptowo
+7474;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+7475;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wielki Kack
+7476;2025/OGM/0004;37;F;internet;Obłuże
+7477;2025/OGM/0004,2025/OGM/0012;5;M;internet;Chwarzno-Wiczlino
+7478;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+7479;2025/OGM/0004;36;M;internet;Obłuże
+7480;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+7481;2025/OGM/0004;43;F;internet;Pogórze
+7482;2025/OGM/0004;40;F;internet;Chylonia
+7483;2025/OGM/0004,2025/OGM/0012;60;M;internet;Dąbrowa
+7484;2025/OGM/0004,2025/OGM/0012;56;M;internet;Wielki Kack
+7485;2025/OGM/0004,2025/OGM/0012;57;F;internet;Dąbrowa
+7486;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+7487;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chwarzno-Wiczlino
+7488;2025/OGM/0004;14;F;internet;Cisowa
+7489;2025/OGM/0012;28;F;internet;Pustki Cisowskie-Demptowo
+7490;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+7491;2025/OGM/0004,2025/OGM/0012;18;F;internet;Wielki Kack
+7492;2025/OGM/0004;38;F;internet;Chylonia
+7493;2025/OGM/0004,2025/OGM/0012;52;M;internet;Mały Kack
+7494;2025/OGM/0004,2025/OGM/0012;25;F;internet;Grabówek
+7495;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+7496;2025/OGM/0004,2025/OGM/0012;16;F;internet;Chwarzno-Wiczlino
+7497;2025/OGM/0004;49;M;internet;Karwiny
+7498;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+7499;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+7500;2025/OGM/0004;48;F;internet;Karwiny
+7501;2025/OGM/0004;20;M;internet;Karwiny
+7502;2025/OGM/0012;11;M;internet;Witomino
+7503;2025/OGM/0012;61;F;internet;Mały Kack
+7504;2025/OGM/0004,2025/OGM/0012;10;M;internet;Mały Kack
+7505;2025/OGM/0012;8;F;internet;Witomino
+7506;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+7507;2025/OGM/0012;29;F;internet;Witomino
+7508;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+7510;2025/OGM/0012;44;M;internet;Chylonia
+7513;2025/OGM/0004,2025/OGM/0012;29;M;internet;Obłuże
+7515;2025/OGM/0012;24;F;internet;Pustki Cisowskie-Demptowo
+7517;2025/OGM/0004;52;F;internet;Wielki Kack
+7519;2025/OGM/0004;78;F;internet;Obłuże
+7520;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+7521;2025/OGM/0004,2025/OGM/0012;12;F;internet;Witomino
+7522;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+7523;2025/OGM/0004;6;F;internet;Wielki Kack
+7524;2025/OGM/0004;50;F;internet;Pustki Cisowskie-Demptowo
+7525;2025/OGM/0004,2025/OGM/0012;55;F;internet;Redłowo
+7526;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+7527;2025/OGM/0004;49;M;internet;Wielki Kack
+7528;2025/OGM/0004,2025/OGM/0012;16;F;internet;Wielki Kack
+7529;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wielki Kack
+7530;2025/OGM/0004,2025/OGM/0012;39;F;internet;Dąbrowa
+7531;2025/OGM/0004;6;M;internet;Dąbrowa
+7532;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wzgórze Św. Maksymiliana
+7533;2025/OGM/0004,2025/OGM/0012;15;M;internet;Wzgórze Św. Maksymiliana
+7534;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wzgórze Św. Maksymiliana
+7535;2025/OGM/0012;39;M;internet;Pustki Cisowskie-Demptowo
+7536;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+7537;2025/OGM/0012;68;F;internet;Chylonia
+7539;2025/OGM/0004;49;M;internet;Oksywie
+7540;2025/OGM/0004,2025/OGM/0012;24;M;internet;Obłuże
+7541;2025/OGM/0004;19;M;internet;Leszczynki
+7542;2025/OGM/0004;22;F;internet;Pustki Cisowskie-Demptowo
+7543;2025/OGM/0004;23;M;internet;Chylonia
+7544;2025/OGM/0004;24;M;internet;Pogórze
+7546;2025/OGM/0012;38;M;internet;Działki Leśne
+7547;2025/OGM/0004,2025/OGM/0012;31;M;internet;Obłuże
+7548;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+7549;2025/OGM/0004;45;F;internet;Witomino
+7550;2025/OGM/0004;37;F;internet;Obłuże
+7551;2025/OGM/0012;43;F;internet;Pustki Cisowskie-Demptowo
+7552;2025/OGM/0004,2025/OGM/0012;34;F;internet;Leszczynki
+7553;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+7554;2025/OGM/0004,2025/OGM/0012;35;F;internet;Śródmieście
+7555;2025/OGM/0012;45;M;internet;Mały Kack
+7556;2025/OGM/0004;38;F;internet;Mały Kack
+7557;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+7558;2025/OGM/0012;41;M;internet;Witomino
+7559;2025/OGM/0004,2025/OGM/0012;47;M;internet;Babie Doły
+7560;2025/OGM/0004,2025/OGM/0012;43;F;internet;Babie Doły
+7562;2025/OGM/0004;59;M;internet;Wzgórze Św. Maksymiliana
+7564;2025/OGM/0004;36;M;internet;Cisowa
+7565;2025/OGM/0012;49;F;internet;Śródmieście
+7566;2025/OGM/0004,2025/OGM/0012;21;M;internet;Witomino
+7567;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wzgórze Św. Maksymiliana
+7569;2025/OGM/0004,2025/OGM/0012;18;M;internet;Śródmieście
+7570;2025/OGM/0012;76;F;internet;Śródmieście
+7571;2025/OGM/0004;70;F;internet;Wielki Kack
+7572;2025/OGM/0004;45;F;internet;Śródmieście
+7573;2025/OGM/0004;28;F;internet;Cisowa
+7574;2025/OGM/0004,2025/OGM/0012;31;F;internet;Witomino
+7575;2025/OGM/0004;45;M;internet;Wielki Kack
+7577;2025/OGM/0004;74;F;internet;Wzgórze Św. Maksymiliana
+7578;2025/OGM/0012;42;F;internet;Witomino
+7579;2025/OGM/0004;41;M;internet;Dąbrowa
+7580;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chylonia
+7581;2025/OGM/0004;41;F;internet;Dąbrowa
+7583;2025/OGM/0004,2025/OGM/0012;44;F;internet;Obłuże
+7584;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+7585;2025/OGM/0004,2025/OGM/0012;17;F;internet;Grabówek
+7586;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+7587;2025/OGM/0012;78;M;internet;Chwarzno-Wiczlino
+7588;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pustki Cisowskie-Demptowo
+7589;2025/OGM/0004,2025/OGM/0012;3;M;internet;Chwarzno-Wiczlino
+7590;2025/OGM/0004;38;F;internet;Witomino
+7591;2025/OGM/0012;54;F;internet;Chylonia
+7592;2025/OGM/0004,2025/OGM/0012;32;F;internet;Grabówek
+7594;2025/OGM/0004;4;M;internet;Witomino
+7595;2025/OGM/0004;40;F;internet;Chylonia
+7596;2025/OGM/0004,2025/OGM/0012;38;M;internet;Redłowo
+7598;2025/OGM/0004;1;F;internet;Witomino
+7599;2025/OGM/0004;51;M;internet;Grabówek
+7600;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+7601;2025/OGM/0004;32;F;internet;Dąbrowa
+7602;2025/OGM/0004,2025/OGM/0012;21;F;internet;Pogórze
+7603;2025/OGM/0004;6;M;internet;Witomino
+7604;2025/OGM/0004,2025/OGM/0012;65;F;internet;Orłowo
+7605;2025/OGM/0004,2025/OGM/0012;38;F;internet;Grabówek
+7606;2025/OGM/0004,2025/OGM/0012;67;F;internet;Dąbrowa
+7607;2025/OGM/0004;66;F;internet;Mały Kack
+7608;2025/OGM/0004;39;M;internet;Witomino
+7610;2025/OGM/0004;37;M;internet;Pustki Cisowskie-Demptowo
+7611;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+7612;2025/OGM/0004;71;M;internet;Mały Kack
+7613;2025/OGM/0004;46;M;internet;Mały Kack
+7614;2025/OGM/0004;45;M;internet;Działki Leśne
+7615;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pogórze
+7616;2025/OGM/0004,2025/OGM/0012;32;M;internet;Pustki Cisowskie-Demptowo
+7618;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pogórze
+7620;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+7622;2025/OGM/0012;43;F;internet;Chylonia
+7623;2025/OGM/0004,2025/OGM/0012;53;M;internet;Redłowo
+7625;2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+7626;2025/OGM/0004,2025/OGM/0012;38;F;internet;Leszczynki
+7627;2025/OGM/0004;39;F;internet;Dąbrowa
+7628;2025/OGM/0004;10;M;internet;Działki Leśne
+7632;2025/OGM/0004;43;F;internet;Grabówek
+7635;2025/OGM/0004;39;M;internet;Karwiny
+7637;2025/OGM/0012;17;F;internet;Witomino
+7638;2025/OGM/0004;46;F;internet;Działki Leśne
+7639;2025/OGM/0012;37;F;internet;Orłowo
+7640;2025/OGM/0004;48;F;internet;Karwiny
+7641;2025/OGM/0004;42;M;internet;Śródmieście
+7642;2025/OGM/0004,2025/OGM/0012;60;F;internet;Śródmieście
+7643;2025/OGM/0004;59;F;internet;Mały Kack
+7644;2025/OGM/0004;61;M;internet;Mały Kack
+7645;2025/OGM/0012;80;F;internet;Śródmieście
+7646;2025/OGM/0004;48;M;internet;Chylonia
+7648;2025/OGM/0004;39;F;internet;Witomino
+7650;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+7651;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+7652;2025/OGM/0004;15;M;internet;Obłuże
+7653;2025/OGM/0004;43;F;internet;Pustki Cisowskie-Demptowo
+7654;2025/OGM/0004;1;M;internet;Mały Kack
+7655;2025/OGM/0004;8;M;internet;Obłuże
+7656;2025/OGM/0004;10;F;internet;Witomino
+7657;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+7658;2025/OGM/0004,2025/OGM/0012;39;F;internet;Oksywie
+7659;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+7660;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wzgórze Św. Maksymiliana
+7661;2025/OGM/0004,2025/OGM/0012;39;F;internet;Dąbrowa
+7662;2025/OGM/0012;41;F;internet;Leszczynki
+7663;2025/OGM/0004;5;F;internet;Witomino
+7664;2025/OGM/0004;50;F;internet;Obłuże
+7665;2025/OGM/0004;49;F;internet;Dąbrowa
+7666;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+7667;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+7668;2025/OGM/0004;31;F;internet;Karwiny
+7669;2025/OGM/0004,2025/OGM/0012;57;F;internet;Mały Kack
+7670;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+7671;2025/OGM/0004,2025/OGM/0012;48;F;internet;Dąbrowa
+7672;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+7673;2025/OGM/0004,2025/OGM/0012;67;F;internet;Karwiny
+7674;2025/OGM/0004;39;M;internet;Obłuże
+7675;2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+7676;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+7677;2025/OGM/0004;37;F;internet;Obłuże
+7678;2025/OGM/0004;59;F;internet;Chylonia
+7679;2025/OGM/0004,2025/OGM/0012;48;M;internet;Witomino
+7680;2025/OGM/0004;37;M;internet;Karwiny
+7681;2025/OGM/0004;34;F;internet;Działki Leśne
+7682;2025/OGM/0004;40;F;internet;Obłuże
+7683;2025/OGM/0004;9;M;internet;Śródmieście
+7684;2025/OGM/0004;42;M;internet;Obłuże
+7685;2025/OGM/0004,2025/OGM/0012;7;F;internet;Chwarzno-Wiczlino
+7686;2025/OGM/0004;45;F;internet;Grabówek
+7688;2025/OGM/0004;13;M;internet;Obłuże
+7689;2025/OGM/0004;5;F;internet;Chwarzno-Wiczlino
+7690;2025/OGM/0012;67;M;internet;Chwarzno-Wiczlino
+7691;2025/OGM/0004;7;F;internet;Obłuże
+7692;2025/OGM/0004;66;F;internet;Leszczynki
+7693;2025/OGM/0004;40;F;internet;Wielki Kack
+7694;2025/OGM/0012;64;F;internet;Chwarzno-Wiczlino
+7695;2025/OGM/0004;8;M;internet;Wielki Kack
+7696;2025/OGM/0004;15;M;internet;Wielki Kack
+7697;2025/OGM/0004;39;M;internet;Wielki Kack
+7698;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+7699;2025/OGM/0004;46;F;internet;Wielki Kack
+7700;2025/OGM/0004;35;M;internet;Chylonia
+7701;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+7702;2025/OGM/0012;10;M;internet;Witomino
+7703;2025/OGM/0012;7;M;internet;Witomino
+7704;2025/OGM/0012;56;M;internet;Witomino
+7705;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+7706;2025/OGM/0004;72;M;internet;Pustki Cisowskie-Demptowo
+7707;2025/OGM/0004;72;F;internet;Pustki Cisowskie-Demptowo
+7708;2025/OGM/0004;37;F;internet;Chylonia
+7709;2025/OGM/0004,2025/OGM/0012;70;F;internet;Wielki Kack
+7710;2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+7711;2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+7712;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+7713;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+7714;2025/OGM/0012;51;M;internet;Chwarzno-Wiczlino
+7716;2025/OGM/0012;37;F;internet;Wzgórze Św. Maksymiliana
+7717;2025/OGM/0004;91;F;internet;Pustki Cisowskie-Demptowo
+7719;2025/OGM/0004;36;M;internet;Dąbrowa
+7720;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+7721;2025/OGM/0004,2025/OGM/0012;75;F;internet;Witomino
+7722;2025/OGM/0004;41;F;internet;Wielki Kack
+7723;2025/OGM/0004;35;F;internet;Grabówek
+7724;2025/OGM/0004;47;F;internet;Obłuże
+7725;2025/OGM/0004;39;F;internet;Oksywie
+7726;2025/OGM/0004,2025/OGM/0012;46;F;internet;Witomino
+7727;2025/OGM/0004,2025/OGM/0012;45;M;internet;Oksywie
+7728;2025/OGM/0012;40;F;internet;Działki Leśne
+7729;2025/OGM/0004;30;F;internet;Wielki Kack
+7730;2025/OGM/0004;34;F;internet;Wielki Kack
+7731;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+7732;2025/OGM/0012;46;F;internet;Wielki Kack
+7733;2025/OGM/0004,2025/OGM/0012;4;M;internet;Chwarzno-Wiczlino
+7734;2025/OGM/0004;22;M;internet;Redłowo
+7735;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pogórze
+7736;2025/OGM/0004,2025/OGM/0012;45;F;internet;Mały Kack
+7737;2025/OGM/0004,2025/OGM/0012;12;M;internet;Wielki Kack
+7738;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+7739;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+7740;2025/OGM/0004;28;M;internet;Wielki Kack
+7741;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+7742;2025/OGM/0012;50;F;internet;Śródmieście
+7743;2025/OGM/0004;33;F;internet;Mały Kack
+7744;2025/OGM/0012;51;M;internet;Śródmieście
+7745;2025/OGM/0004;38;F;internet;Wielki Kack
+7746;2025/OGM/0004;8;M;internet;Wielki Kack
+7747;2025/OGM/0004;39;F;internet;Wielki Kack
+7748;2025/OGM/0004;4;F;internet;Wielki Kack
+7749;2025/OGM/0004;46;F;internet;Wielki Kack
+7750;2025/OGM/0004;40;F;internet;Mały Kack
+7751;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+7752;2025/OGM/0012;79;F;internet;
+7753;2025/OGM/0004,2025/OGM/0012;56;M;internet;Wielki Kack
+7754;2025/OGM/0004;25;F;internet;Chwarzno-Wiczlino
+7755;2025/OGM/0004;7;M;internet;Mały Kack
+7756;2025/OGM/0004;35;F;internet;Obłuże
+7757;2025/OGM/0004;10;M;internet;Mały Kack
+7758;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+7759;2025/OGM/0004,2025/OGM/0012;51;M;internet;Mały Kack
+7760;2025/OGM/0004;39;F;internet;Witomino
+7762;2025/OGM/0004,2025/OGM/0012;54;F;internet;Mały Kack
+7763;2025/OGM/0004;60;M;internet;Wielki Kack
+7764;2025/OGM/0004;33;M;internet;Chylonia
+7765;2025/OGM/0004,2025/OGM/0012;19;M;internet;Pustki Cisowskie-Demptowo
+7766;2025/OGM/0004,2025/OGM/0012;13;F;internet;Mały Kack
+7767;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+7768;2025/OGM/0004;36;F;internet;Orłowo
+7770;2025/OGM/0004;30;M;internet;Mały Kack
+7771;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+7772;2025/OGM/0004,2025/OGM/0012;69;F;internet;Karwiny
+7773;2025/OGM/0004,2025/OGM/0012;82;F;internet;Śródmieście
+7774;2025/OGM/0004;36;M;internet;Orłowo
+7775;2025/OGM/0004,2025/OGM/0012;73;F;internet;Karwiny
+7776;2025/OGM/0004;8;F;internet;Orłowo
+7777;2025/OGM/0004;81;F;internet;Wielki Kack
+7778;2025/OGM/0004;42;F;internet;Cisowa
+7779;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+7780;2025/OGM/0004,2025/OGM/0012;49;M;internet;Mały Kack
+7781;2025/OGM/0004;5;M;internet;Orłowo
+7782;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chylonia
+7783;2025/OGM/0004;77;F;internet;Działki Leśne
+7784;2025/OGM/0004;50;F;internet;Mały Kack
+7785;2025/OGM/0004;45;F;internet;Dąbrowa
+7786;2025/OGM/0004;13;M;internet;Cisowa
+7787;2025/OGM/0004;31;F;internet;Działki Leśne
+7788;2025/OGM/0004,2025/OGM/0012;42;M;internet;Witomino
+7789;2025/OGM/0004;61;F;internet;Kamienna Góra
+7790;2025/OGM/0004;18;M;internet;Cisowa
+7791;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+7792;2025/OGM/0012;45;F;internet;Działki Leśne
+7793;2025/OGM/0004;36;F;internet;Chylonia
+7794;2025/OGM/0004;61;M;internet;Cisowa
+7795;2025/OGM/0004;36;F;internet;Śródmieście
+7796;2025/OGM/0004;46;F;internet;Redłowo
+7798;2025/OGM/0012;70;M;internet;Chwarzno-Wiczlino
+7799;2025/OGM/0012;44;M;internet;Mały Kack
+7800;2025/OGM/0004,2025/OGM/0012;69;F;internet;Chwarzno-Wiczlino
+7801;2025/OGM/0004;50;M;internet;Obłuże
+7802;2025/OGM/0004,2025/OGM/0012;34;M;internet;Dąbrowa
+7803;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+7805;2025/OGM/0012;54;F;internet;Pogórze
+7806;2025/OGM/0004;26;M;internet;Redłowo
+7807;2025/OGM/0004;48;F;internet;Karwiny
+7808;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+7809;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+7810;2025/OGM/0004;54;F;internet;Wielki Kack
+7811;2025/OGM/0004;35;F;internet;Chylonia
+7812;2025/OGM/0004;37;F;internet;Mały Kack
+7813;2025/OGM/0012;60;M;internet;Śródmieście
+7814;2025/OGM/0004;47;M;internet;Karwiny
+7815;2025/OGM/0004;20;M;internet;Wielki Kack
+7816;2025/OGM/0004;79;M;internet;Witomino
+7817;2025/OGM/0004;45;F;internet;Wzgórze Św. Maksymiliana
+7818;2025/OGM/0004;87;M;internet;Witomino
+7819;2025/OGM/0004;72;M;internet;Karwiny
+7820;2025/OGM/0012;38;M;internet;Chylonia
+7822;2025/OGM/0004;40;F;internet;Kamienna Góra
+7823;2025/OGM/0004;85;F;internet;Witomino
+7824;2025/OGM/0004,2025/OGM/0012;58;F;internet;Cisowa
+7825;2025/OGM/0004;35;M;internet;Grabówek
+7826;2025/OGM/0004;41;F;internet;Dąbrowa
+7827;2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+7828;2025/OGM/0004;54;M;internet;Wielki Kack
+7829;2025/OGM/0004,2025/OGM/0012;55;M;internet;Mały Kack
+7830;2025/OGM/0004;76;F;internet;Witomino
+7831;2025/OGM/0004;54;F;internet;Śródmieście
+7832;2025/OGM/0004;82;F;internet;Witomino
+7833;2025/OGM/0004;77;F;internet;Witomino
+7834;2025/OGM/0004;5;F;internet;Wielki Kack
+7835;2025/OGM/0012;70;F;internet;Wielki Kack
+7836;2025/OGM/0004;2;F;internet;Wielki Kack
+7837;2025/OGM/0004;24;F;internet;Cisowa
+7838;2025/OGM/0004;75;F;internet;Witomino
+7839;2025/OGM/0004;14;F;internet;Dąbrowa
+7840;2025/OGM/0004,2025/OGM/0012;40;M;internet;Wielki Kack
+7841;2025/OGM/0012;56;M;internet;Działki Leśne
+7842;2025/OGM/0004,2025/OGM/0012;48;M;internet;Mały Kack
+7843;2025/OGM/0004;6;F;internet;Dąbrowa
+7845;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+7846;2025/OGM/0004;71;F;internet;Pogórze
+7847;2025/OGM/0004,2025/OGM/0012;76;F;internet;Chwarzno-Wiczlino
+7848;2025/OGM/0004,2025/OGM/0012;32;M;internet;Mały Kack
+7849;2025/OGM/0004;71;M;internet;Pogórze
+7850;2025/OGM/0012;31;F;internet;Redłowo
+7851;2025/OGM/0004,2025/OGM/0012;9;F;internet;Wielki Kack
+7852;2025/OGM/0004;45;F;internet;Babie Doły
+7853;2025/OGM/0004,2025/OGM/0012;76;M;internet;Chwarzno-Wiczlino
+7854;2025/OGM/0004;79;F;internet;Witomino
+7855;2025/OGM/0004,2025/OGM/0012;3;M;internet;Wielki Kack
+7857;2025/OGM/0004,2025/OGM/0012;16;M;internet;Witomino
+7858;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+7859;2025/OGM/0004,2025/OGM/0012;69;F;internet;Wzgórze Św. Maksymiliana
+7860;2025/OGM/0004,2025/OGM/0012;19;F;internet;Chwarzno-Wiczlino
+7861;2025/OGM/0012;32;F;internet;Dąbrowa
+7862;2025/OGM/0004;88;F;internet;Witomino
+7863;2025/OGM/0004;16;M;internet;Pogórze
+7864;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+7865;2025/OGM/0004,2025/OGM/0012;20;M;internet;Witomino
+7866;2025/OGM/0004,2025/OGM/0012;56;M;internet;Śródmieście
+7867;2025/OGM/0004,2025/OGM/0012;21;F;internet;Chylonia
+7868;2025/OGM/0004,2025/OGM/0012;24;F;internet;Cisowa
+7869;2025/OGM/0004;35;M;internet;Wielki Kack
+7870;2025/OGM/0004;21;F;internet;Chwarzno-Wiczlino
+7871;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+7872;2025/OGM/0004,2025/OGM/0012;73;M;internet;Witomino
+7873;2025/OGM/0004;36;F;internet;Oksywie
+7874;2025/OGM/0004;16;M;internet;Chylonia
+7875;2025/OGM/0004;35;F;internet;Wielki Kack
+7876;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+7877;2025/OGM/0004,2025/OGM/0012;73;F;internet;Witomino
+7878;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+7879;2025/OGM/0004,2025/OGM/0012;39;M;internet;Dąbrowa
+7880;2025/OGM/0012;37;F;internet;Oksywie
+7881;2025/OGM/0004,2025/OGM/0012;44;M;internet;Cisowa
+7882;2025/OGM/0004;38;M;internet;Oksywie
+7883;2025/OGM/0004;31;F;internet;Mały Kack
+7884;2025/OGM/0004,2025/OGM/0012;54;M;internet;Wielki Kack
+7885;2025/OGM/0012;19;M;internet;Chwarzno-Wiczlino
+7886;2025/OGM/0004;34;M;internet;Wielki Kack
+7888;2025/OGM/0004,2025/OGM/0012;76;F;internet;Karwiny
+7890;2025/OGM/0004;42;F;internet;Karwiny
+7891;2025/OGM/0012;76;M;internet;Pustki Cisowskie-Demptowo
+7892;2025/OGM/0012;7;M;internet;Wielki Kack
+7893;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+7894;2025/OGM/0012;6;M;internet;Wielki Kack
+7895;2025/OGM/0004;39;F;internet;Orłowo
+7896;2025/OGM/0004;20;M;internet;Pustki Cisowskie-Demptowo
+7897;2025/OGM/0004;10;F;internet;Babie Doły
+7898;2025/OGM/0004;68;M;internet;Obłuże
+7899;2025/OGM/0004,2025/OGM/0012;39;M;internet;Mały Kack
+7901;2025/OGM/0004;61;F;internet;Leszczynki
+7902;2025/OGM/0004;45;M;internet;Wzgórze Św. Maksymiliana
+7903;2025/OGM/0004;2;M;internet;Pogórze
+7904;2025/OGM/0004,2025/OGM/0012;16;F;internet;Leszczynki
+7905;2025/OGM/0004,2025/OGM/0012;77;F;internet;Leszczynki
+7906;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+7907;2025/OGM/0004,2025/OGM/0012;33;F;internet;Karwiny
+7908;2025/OGM/0004,2025/OGM/0012;67;M;internet;Leszczynki
+7909;2025/OGM/0004;31;M;internet;Dąbrowa
+7910;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+7912;2025/OGM/0004;28;F;internet;Wielki Kack
+7913;2025/OGM/0004;58;F;internet;Obłuże
+7915;2025/OGM/0004,2025/OGM/0012;35;F;internet;Leszczynki
+7916;2025/OGM/0004;54;F;internet;Karwiny
+7917;2025/OGM/0004,2025/OGM/0012;6;F;internet;Grabówek
+7918;2025/OGM/0004;32;F;internet;Pustki Cisowskie-Demptowo
+7919;2025/OGM/0004,2025/OGM/0012;5;F;internet;Grabówek
+7920;2025/OGM/0004;58;F;internet;Pogórze
+7921;2025/OGM/0004;75;F;internet;Karwiny
+7923;2025/OGM/0004;58;F;internet;Witomino
+7924;2025/OGM/0004,2025/OGM/0012;36;F;internet;Pogórze
+7925;2025/OGM/0012;75;F;internet;Pogórze
+7926;2025/OGM/0004;48;M;internet;Chylonia
+7927;2025/OGM/0004;51;M;internet;Redłowo
+7928;2025/OGM/0004;43;F;internet;Witomino
+7930;2025/OGM/0004;42;F;internet;Dąbrowa
+7931;2025/OGM/0004,2025/OGM/0012;24;M;internet;Wielki Kack
+7932;2025/OGM/0004;41;F;internet;Cisowa
+7934;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+7935;2025/OGM/0004,2025/OGM/0012;33;F;internet;Działki Leśne
+7937;2025/OGM/0012;66;F;internet;Śródmieście
+7938;2025/OGM/0004;27;M;internet;Wielki Kack
+7939;2025/OGM/0004;76;F;internet;Redłowo
+7940;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pustki Cisowskie-Demptowo
+7941;2025/OGM/0012;39;M;internet;Redłowo
+7942;2025/OGM/0004;67;F;internet;Pogórze
+7943;2025/OGM/0004;39;M;internet;Dąbrowa
+7944;2025/OGM/0004;33;M;internet;Karwiny
+7945;2025/OGM/0004,2025/OGM/0012;52;M;internet;Wielki Kack
+7947;2025/OGM/0004;69;F;internet;Redłowo
+7948;2025/OGM/0004;32;M;internet;Redłowo
+7949;2025/OGM/0004;7;F;internet;Pogórze
+7950;2025/OGM/0004;51;M;internet;Grabówek
+7951;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+7952;2025/OGM/0004;42;F;internet;Chylonia
+7953;2025/OGM/0012;27;F;internet;Pogórze
+7954;2025/OGM/0004,2025/OGM/0012;47;F;internet;Orłowo
+7955;2025/OGM/0012;37;M;internet;Witomino
+7957;2025/OGM/0004;41;F;internet;Wielki Kack
+7958;2025/OGM/0012;3;M;internet;Pustki Cisowskie-Demptowo
+7959;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+7960;2025/OGM/0004;15;M;internet;Wielki Kack
+7961;2025/OGM/0012;37;F;internet;Redłowo
+7962;2025/OGM/0012;2;M;internet;Pustki Cisowskie-Demptowo
+7963;2025/OGM/0012;8;F;internet;Redłowo
+7964;2025/OGM/0004,2025/OGM/0012;79;F;internet;Redłowo
+7965;2025/OGM/0004;37;M;internet;Obłuże
+7966;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+7968;2025/OGM/0004;8;F;internet;Redłowo
+7969;2025/OGM/0004,2025/OGM/0012;35;M;internet;Pogórze
+7970;2025/OGM/0004;45;F;internet;Redłowo
+7971;2025/OGM/0004;42;F;internet;Redłowo
+7972;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+7974;2025/OGM/0004;28;F;internet;Oksywie
+7975;2025/OGM/0004;47;F;internet;Wielki Kack
+7976;2025/OGM/0004;74;F;internet;Pogórze
+7977;2025/OGM/0004;39;F;internet;Obłuże
+7978;2025/OGM/0012;72;F;internet;Redłowo
+7979;2025/OGM/0004;71;M;internet;Cisowa
+7980;2025/OGM/0004,2025/OGM/0012;36;M;internet;Pustki Cisowskie-Demptowo
+7981;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+7983;2025/OGM/0004;37;M;internet;Redłowo
+7984;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+7985;2025/OGM/0004;20;M;internet;Chwarzno-Wiczlino
+7986;2025/OGM/0004;71;M;internet;Redłowo
+7987;2025/OGM/0004;69;F;internet;Redłowo
+7988;2025/OGM/0004;56;F;internet;Babie Doły
+7989;2025/OGM/0004;49;F;internet;Redłowo
+7990;2025/OGM/0004,2025/OGM/0012;25;F;internet;Wielki Kack
+7991;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+7992;2025/OGM/0004;18;F;internet;Pogórze
+7993;2025/OGM/0004;36;F;internet;Redłowo
+7994;2025/OGM/0004;33;F;internet;Oksywie
+7995;2025/OGM/0004,2025/OGM/0012;2;F;internet;Mały Kack
+7996;2025/OGM/0004;18;F;internet;Pogórze
+7997;2025/OGM/0004;7;F;internet;Redłowo
+7998;2025/OGM/0004;2;F;internet;Redłowo
+7999;2025/OGM/0004,2025/OGM/0012;41;F;internet;Babie Doły
+8000;2025/OGM/0004;38;F;internet;Śródmieście
+8001;2025/OGM/0004;49;F;internet;Wielki Kack
+8002;2025/OGM/0004;62;F;internet;Pogórze
+8003;2025/OGM/0012;71;F;internet;Redłowo
+8004;2025/OGM/0004;41;F;internet;Wielki Kack
+8005;2025/OGM/0004;34;M;internet;Witomino
+8006;2025/OGM/0012;50;F;internet;Pogórze
+8007;2025/OGM/0012;47;M;internet;Cisowa
+8008;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+8009;2025/OGM/0012;51;F;internet;Witomino
+8010;2025/OGM/0004,2025/OGM/0012;37;F;internet;Leszczynki
+8012;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+8013;2025/OGM/0004;70;F;internet;Chwarzno-Wiczlino
+8014;2025/OGM/0004;40;M;internet;Wielki Kack
+8016;2025/OGM/0004;32;F;internet;Wielki Kack
+8017;2025/OGM/0004;18;M;internet;Obłuże
+8019;2025/OGM/0004;36;F;internet;Leszczynki
+8021;2025/OGM/0004;72;F;internet;Pustki Cisowskie-Demptowo
+8022;2025/OGM/0004;4;F;internet;Leszczynki
+8023;2025/OGM/0012;77;M;internet;Redłowo
+8024;2025/OGM/0004;54;M;internet;Pustki Cisowskie-Demptowo
+8025;2025/OGM/0004;54;M;internet;Witomino
+8026;2025/OGM/0004,2025/OGM/0012;52;M;internet;Witomino
+8027;2025/OGM/0012;28;F;internet;Redłowo
+8028;2025/OGM/0004;22;M;internet;Wielki Kack
+8029;2025/OGM/0004;75;F;internet;Pogórze
+8030;2025/OGM/0004;20;M;internet;Wielki Kack
+8031;2025/OGM/0004;29;M;internet;Orłowo
+8032;2025/OGM/0004;48;M;internet;Obłuże
+8033;2025/OGM/0012;3;F;internet;Orłowo
+8034;2025/OGM/0012;59;F;internet;Orłowo
+8035;2025/OGM/0004;30;M;internet;Karwiny
+8036;2025/OGM/0004;2;M;internet;Wielki Kack
+8037;2025/OGM/0004;46;M;internet;Dąbrowa
+8038;2025/OGM/0004,2025/OGM/0012;40;F;internet;Obłuże
+8039;2025/OGM/0012;14;F;internet;Pogórze
+8040;2025/OGM/0012;36;F;internet;Redłowo
+8041;2025/OGM/0004,2025/OGM/0012;51;M;internet;Chwarzno-Wiczlino
+8042;2025/OGM/0004,2025/OGM/0012;62;F;internet;Grabówek
+8043;2025/OGM/0012;74;F;internet;Pogórze
+8044;2025/OGM/0004;43;M;internet;Karwiny
+8045;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+8046;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wzgórze Św. Maksymiliana
+8047;2025/OGM/0004,2025/OGM/0012;53;F;internet;Pogórze
+8048;2025/OGM/0004,2025/OGM/0012;49;F;internet;Działki Leśne
+8049;2025/OGM/0012;85;F;internet;Redłowo
+8050;2025/OGM/0004;39;M;internet;Kamienna Góra
+8051;2025/OGM/0012;32;F;internet;Pogórze
+8052;2025/OGM/0004,2025/OGM/0012;8;F;internet;Śródmieście
+8053;2025/OGM/0004,2025/OGM/0012;57;M;internet;Pogórze
+8054;2025/OGM/0004,2025/OGM/0012;27;M;internet;Grabówek
+8055;2025/OGM/0004,2025/OGM/0012;21;M;internet;Obłuże
+8056;2025/OGM/0004;78;F;internet;Redłowo
+8057;2025/OGM/0012;60;M;internet;Orłowo
+8058;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wzgórze Św. Maksymiliana
+8059;2025/OGM/0004,2025/OGM/0012;72;M;internet;Obłuże
+8060;2025/OGM/0004;35;F;internet;Oksywie
+8061;2025/OGM/0004;52;F;internet;Witomino
+8062;2025/OGM/0004;44;M;internet;Obłuże
+8063;2025/OGM/0004;56;F;internet;Dąbrowa
+8064;2025/OGM/0012;45;F;internet;Pustki Cisowskie-Demptowo
+8065;2025/OGM/0012;58;F;internet;Pogórze
+8066;2025/OGM/0012;70;F;internet;Pustki Cisowskie-Demptowo
+8067;2025/OGM/0004;45;F;internet;Mały Kack
+8068;2025/OGM/0004,2025/OGM/0012;53;F;internet;Cisowa
+8069;2025/OGM/0004;14;F;internet;Mały Kack
+8070;2025/OGM/0004;72;F;internet;Redłowo
+8071;2025/OGM/0004;69;F;internet;Pustki Cisowskie-Demptowo
+8072;2025/OGM/0004;69;F;internet;Pogórze
+8073;2025/OGM/0004;61;F;internet;Karwiny
+8074;2025/OGM/0004;71;M;internet;Pogórze
+8075;2025/OGM/0004;19;F;internet;Pustki Cisowskie-Demptowo
+8076;2025/OGM/0004;24;M;internet;Dąbrowa
+8077;2025/OGM/0004;41;M;internet;Mały Kack
+8078;2025/OGM/0004;40;M;internet;Pogórze
+8079;2025/OGM/0012;40;F;internet;Mały Kack
+8082;2025/OGM/0012;10;M;internet;Mały Kack
+8084;2025/OGM/0004;41;M;internet;Mały Kack
+8085;2025/OGM/0004;36;F;internet;Karwiny
+8086;2025/OGM/0012;8;M;internet;Mały Kack
+8087;2025/OGM/0004;6;F;internet;Pogórze
+8088;2025/OGM/0004;68;M;internet;Mały Kack
+8089;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+8091;2025/OGM/0012;40;M;internet;Mały Kack
+8092;2025/OGM/0004;40;F;internet;Mały Kack
+8093;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+8094;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+8095;2025/OGM/0004;44;F;internet;Redłowo
+8096;2025/OGM/0004;9;M;internet;Mały Kack
+8097;2025/OGM/0012;49;M;internet;Mały Kack
+8098;2025/OGM/0004;19;F;internet;Chwarzno-Wiczlino
+8099;2025/OGM/0012;59;M;internet;Wielki Kack
+8101;2025/OGM/0004;12;F;internet;Mały Kack
+8102;2025/OGM/0012;7;M;internet;Mały Kack
+8103;2025/OGM/0004,2025/OGM/0012;69;F;internet;Dąbrowa
+8104;2025/OGM/0004;58;M;internet;Grabówek
+8105;2025/OGM/0004;77;F;internet;Dąbrowa
+8106;2025/OGM/0004;42;F;internet;Obłuże
+8107;2025/OGM/0004;77;M;internet;Dąbrowa
+8108;2025/OGM/0004,2025/OGM/0012;57;F;internet;Redłowo
+8109;2025/OGM/0004;19;M;internet;Pustki Cisowskie-Demptowo
+8110;2025/OGM/0004;20;F;internet;Chylonia
+8111;2025/OGM/0004;42;F;internet;Grabówek
+8112;2025/OGM/0004,2025/OGM/0012;69;F;internet;Obłuże
+8113;2025/OGM/0004;37;F;internet;Mały Kack
+8114;2025/OGM/0004;33;F;internet;Cisowa
+8115;2025/OGM/0012;12;M;internet;Redłowo
+8116;2025/OGM/0004;6;F;internet;Mały Kack
+8117;2025/OGM/0004;52;M;internet;Grabówek
+8118;2025/OGM/0004;49;F;internet;Grabówek
+8119;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+8120;2025/OGM/0004;19;M;internet;Grabówek
+8121;2025/OGM/0004;27;M;internet;Grabówek
+8122;2025/OGM/0012;9;M;internet;Redłowo
+8123;2025/OGM/0004;39;F;internet;Dąbrowa
+8124;2025/OGM/0004;36;F;internet;Wielki Kack
+8125;2025/OGM/0012;35;M;internet;Leszczynki
+8126;2025/OGM/0004;90;M;internet;Grabówek
+8127;2025/OGM/0012;54;M;internet;Redłowo
+8129;2025/OGM/0004;29;M;internet;Chylonia
+8130;2025/OGM/0004;83;F;internet;Grabówek
+8131;2025/OGM/0004,2025/OGM/0012;44;F;internet;Orłowo
+8132;2025/OGM/0004;46;F;internet;Grabówek
+8133;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+8134;2025/OGM/0004,2025/OGM/0012;51;M;internet;Chwarzno-Wiczlino
+8135;2025/OGM/0004;48;F;internet;Kamienna Góra
+8136;2025/OGM/0004,2025/OGM/0012;13;F;internet;Wielki Kack
+8137;2025/OGM/0004,2025/OGM/0012;77;F;internet;Oksywie
+8139;2025/OGM/0004;19;M;internet;Grabówek
+8140;2025/OGM/0004;85;F;internet;Dąbrowa
+8141;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+8142;2025/OGM/0004;69;M;internet;Dąbrowa
+8143;2025/OGM/0004;39;M;internet;Mały Kack
+8144;2025/OGM/0004,2025/OGM/0012;30;F;internet;Wzgórze Św. Maksymiliana
+8145;2025/OGM/0004,2025/OGM/0012;45;F;internet;Grabówek
+8146;2025/OGM/0004;75;F;internet;Dąbrowa
+8147;2025/OGM/0004,2025/OGM/0012;9;M;internet;Leszczynki
+8148;2025/OGM/0004;74;M;internet;Dąbrowa
+8149;2025/OGM/0004,2025/OGM/0012;11;F;internet;Leszczynki
+8150;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+8151;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+8152;2025/OGM/0004;56;F;internet;Wzgórze Św. Maksymiliana
+8153;2025/OGM/0004;71;F;internet;Dąbrowa
+8154;2025/OGM/0004;53;F;internet;Wielki Kack
+8155;2025/OGM/0004;39;F;internet;Grabówek
+8156;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+8157;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+8159;2025/OGM/0004;37;M;internet;Wielki Kack
+8160;2025/OGM/0004;1;M;internet;Wielki Kack
+8161;2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+8162;2025/OGM/0004,2025/OGM/0012;15;F;internet;Kamienna Góra
+8163;2025/OGM/0004,2025/OGM/0012;20;M;internet;Kamienna Góra
+8164;2025/OGM/0004,2025/OGM/0012;65;F;internet;Oksywie
+8165;2025/OGM/0004;8;F;internet;Wielki Kack
+8166;2025/OGM/0004;15;M;internet;Witomino
+8167;2025/OGM/0004;33;F;internet;Leszczynki
+8168;2025/OGM/0004;12;M;internet;Witomino
+8169;2025/OGM/0004,2025/OGM/0012;53;M;internet;Wielki Kack
+8171;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+8172;2025/OGM/0004,2025/OGM/0012;19;M;internet;Orłowo
+8174;2025/OGM/0004;25;M;internet;Wzgórze Św. Maksymiliana
+8175;2025/OGM/0004;17;M;internet;Chwarzno-Wiczlino
+8176;2025/OGM/0004;49;M;internet;Chylonia
+8177;2025/OGM/0004,2025/OGM/0012;48;F;internet;Orłowo
+8178;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+8180;2025/OGM/0004,2025/OGM/0012;8;F;internet;Mały Kack
+8181;2025/OGM/0004,2025/OGM/0012;41;F;internet;Obłuże
+8182;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+8183;2025/OGM/0004,2025/OGM/0012;74;F;internet;Chylonia
+8184;2025/OGM/0004;44;F;internet;Cisowa
+8185;2025/OGM/0004,2025/OGM/0012;75;F;internet;Wielki Kack
+8186;2025/OGM/0004;71;F;internet;Cisowa
+8187;2025/OGM/0004,2025/OGM/0012;43;F;internet;Witomino
+8188;2025/OGM/0004;77;M;internet;Cisowa
+8189;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+8190;2025/OGM/0012;48;M;internet;Oksywie
+8191;2025/OGM/0004;39;M;internet;Cisowa
+8192;2025/OGM/0004,2025/OGM/0012;20;M;internet;Wielki Kack
+8193;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+8195;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+8196;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+8197;2025/OGM/0012;45;F;internet;Oksywie
+8198;2025/OGM/0004,2025/OGM/0012;85;F;internet;Witomino
+8199;2025/OGM/0004,2025/OGM/0012;7;M;internet;Witomino
+8200;2025/OGM/0004;8;F;internet;Cisowa
+8201;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+8202;2025/OGM/0004,2025/OGM/0012;12;M;internet;Witomino
+8203;2025/OGM/0004,2025/OGM/0012;75;F;internet;Witomino
+8204;2025/OGM/0004,2025/OGM/0012;12;M;internet;Oksywie
+8205;2025/OGM/0004;46;F;internet;Wielki Kack
+8206;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+8207;2025/OGM/0004;6;F;internet;Cisowa
+8208;2025/OGM/0012;34;F;internet;Śródmieście
+8209;2025/OGM/0004;47;M;internet;Wielki Kack
+8210;2025/OGM/0004,2025/OGM/0012;77;M;internet;Witomino
+8211;2025/OGM/0004,2025/OGM/0012;21;F;internet;Leszczynki
+8212;2025/OGM/0004;16;M;internet;Wielki Kack
+8213;2025/OGM/0004;38;M;internet;Śródmieście
+8214;2025/OGM/0004;38;M;internet;Wielki Kack
+8216;2025/OGM/0004;12;M;internet;Wielki Kack
+8218;2025/OGM/0004;38;F;internet;Wielki Kack
+8219;2025/OGM/0004,2025/OGM/0012;66;M;internet;Obłuże
+8220;2025/OGM/0004;9;F;internet;Wielki Kack
+8221;2025/OGM/0004;25;M;internet;Dąbrowa
+8222;2025/OGM/0004;26;F;internet;Grabówek
+8223;2025/OGM/0004;31;F;internet;Dąbrowa
+8224;2025/OGM/0004;68;F;internet;Wielki Kack
+8226;2025/OGM/0004;6;F;internet;Wielki Kack
+8227;2025/OGM/0004;72;F;internet;Cisowa
+8228;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+8229;2025/OGM/0012;60;F;internet;Witomino
+8230;2025/OGM/0004;34;F;internet;Witomino
+8231;2025/OGM/0004,2025/OGM/0012;53;F;internet;Redłowo
+8232;2025/OGM/0004;40;M;internet;
+8233;2025/OGM/0004;10;F;internet;Witomino
+8234;2025/OGM/0004;73;F;internet;Obłuże
+8235;2025/OGM/0004;33;M;internet;Pogórze
+8236;2025/OGM/0004,2025/OGM/0012;14;F;internet;Redłowo
+8239;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+8240;2025/OGM/0004,2025/OGM/0012;60;M;internet;Redłowo
+8241;2025/OGM/0012;9;M;internet;Chylonia
+8242;2025/OGM/0004;79;M;internet;Obłuże
+8243;2025/OGM/0004;42;F;internet;Dąbrowa
+8244;2025/OGM/0004;63;F;internet;Cisowa
+8245;2025/OGM/0004,2025/OGM/0012;52;F;internet;Mały Kack
+8246;2025/OGM/0004;49;F;internet;Wielki Kack
+8247;2025/OGM/0012;7;M;internet;Chylonia
+8248;2025/OGM/0004,2025/OGM/0012;22;M;internet;Wielki Kack
+8249;2025/OGM/0004,2025/OGM/0012;51;M;internet;Mały Kack
+8250;2025/OGM/0004;27;F;internet;Działki Leśne
+8251;2025/OGM/0004;34;F;internet;Pustki Cisowskie-Demptowo
+8252;2025/OGM/0004;72;M;internet;Dąbrowa
+8253;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+8254;2025/OGM/0004;31;F;internet;Cisowa
+8255;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+8257;2025/OGM/0004,2025/OGM/0012;27;F;internet;Obłuże
+8260;2025/OGM/0004;30;F;internet;Obłuże
+8261;2025/OGM/0004,2025/OGM/0012;48;M;internet;Pustki Cisowskie-Demptowo
+8262;2025/OGM/0004,2025/OGM/0012;23;F;internet;Wielki Kack
+8263;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wielki Kack
+8264;2025/OGM/0004,2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+8265;2025/OGM/0004;56;F;internet;Chylonia
+8266;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+8267;2025/OGM/0004,2025/OGM/0012;21;F;internet;Chwarzno-Wiczlino
+8269;2025/OGM/0004,2025/OGM/0012;13;F;internet;Karwiny
+8270;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+8271;2025/OGM/0004;61;F;internet;Grabówek
+8272;2025/OGM/0004;32;F;internet;Dąbrowa
+8273;2025/OGM/0012;58;F;internet;Chwarzno-Wiczlino
+8274;2025/OGM/0004;61;F;internet;Wielki Kack
+8275;2025/OGM/0004;34;F;internet;Redłowo
+8276;2025/OGM/0012;30;F;internet;Redłowo
+8277;2025/OGM/0004;44;M;internet;Wielki Kack
+8278;2025/OGM/0004,2025/OGM/0012;49;M;internet;Mały Kack
+8279;2025/OGM/0004;44;F;internet;Wielki Kack
+8280;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+8281;2025/OGM/0004;14;M;internet;Wielki Kack
+8282;2025/OGM/0012;33;F;internet;Wzgórze Św. Maksymiliana
+8283;2025/OGM/0012;33;M;internet;Wzgórze Św. Maksymiliana
+8284;2025/OGM/0012;45;F;internet;Witomino
+8285;2025/OGM/0004,2025/OGM/0012;15;F;internet;Mały Kack
+8286;2025/OGM/0004;12;M;internet;Wielki Kack
+8287;2025/OGM/0004,2025/OGM/0012;10;F;internet;Mały Kack
+8288;2025/OGM/0004;8;M;internet;Wielki Kack
+8289;2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+8290;2025/OGM/0004,2025/OGM/0012;32;M;internet;Cisowa
+8291;2025/OGM/0004,2025/OGM/0012;38;F;internet;Oksywie
+8292;2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+8293;2025/OGM/0004;32;F;internet;Cisowa
+8294;2025/OGM/0004;28;F;internet;Śródmieście
+8295;2025/OGM/0004,2025/OGM/0012;31;F;internet;Redłowo
+8296;2025/OGM/0004;23;F;internet;Dąbrowa
+8297;2025/OGM/0004,2025/OGM/0012;39;M;internet;Śródmieście
+8298;2025/OGM/0004;51;F;internet;Dąbrowa
+8299;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+8300;2025/OGM/0012;40;F;internet;Mały Kack
+8301;2025/OGM/0004;5;F;internet;Wielki Kack
+8302;2025/OGM/0004;1;M;internet;Wielki Kack
+8303;2025/OGM/0004;35;M;internet;Wielki Kack
+8304;2025/OGM/0004;48;F;internet;Obłuże
+8305;2025/OGM/0004,2025/OGM/0012;72;F;internet;Dąbrowa
+8306;2025/OGM/0004,2025/OGM/0012;76;F;internet;Pustki Cisowskie-Demptowo
+8307;2025/OGM/0004;37;M;internet;Redłowo
+8308;2025/OGM/0004;55;F;internet;Wielki Kack
+8309;2025/OGM/0004,2025/OGM/0012;75;F;internet;Pustki Cisowskie-Demptowo
+8310;2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+8311;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+8312;2025/OGM/0004;33;F;internet;Chylonia
+8313;2025/OGM/0004;56;F;internet;Leszczynki
+8314;2025/OGM/0012;38;F;internet;Chylonia
+8315;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+8316;2025/OGM/0012;12;M;internet;Leszczynki
+8317;2025/OGM/0012;47;M;internet;Redłowo
+8318;2025/OGM/0012;45;M;internet;Chylonia
+8319;2025/OGM/0004;6;M;internet;Pustki Cisowskie-Demptowo
+8320;2025/OGM/0004,2025/OGM/0012;18;M;internet;Chylonia
+8321;2025/OGM/0004;44;F;internet;Działki Leśne
+8322;2025/OGM/0004;4;M;internet;Pustki Cisowskie-Demptowo
+8324;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+8326;2025/OGM/0004,2025/OGM/0012;52;M;internet;Wielki Kack
+8327;2025/OGM/0004;53;F;internet;Witomino
+8328;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+8329;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+8331;2025/OGM/0012;31;F;internet;Witomino
+8332;2025/OGM/0004;37;F;internet;Mały Kack
+8333;2025/OGM/0004;9;F;internet;Mały Kack
+8334;2025/OGM/0004;42;F;internet;Mały Kack
+8335;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+8336;2025/OGM/0004,2025/OGM/0012;23;M;internet;Witomino
+8337;2025/OGM/0004;41;F;internet;Pogórze
+8338;2025/OGM/0004;7;M;internet;Mały Kack
+8339;2025/OGM/0004;73;F;internet;Mały Kack
+8340;2025/OGM/0004;40;F;internet;Mały Kack
+8341;2025/OGM/0004;71;M;internet;Mały Kack
+8342;2025/OGM/0004;36;F;internet;Obłuże
+8343;2025/OGM/0004;40;M;internet;Wielki Kack
+8344;2025/OGM/0004;8;M;internet;Wielki Kack
+8345;2025/OGM/0004;25;M;internet;Dąbrowa
+8346;2025/OGM/0004;4;F;internet;Wielki Kack
+8347;2025/OGM/0004,2025/OGM/0012;50;F;internet;Mały Kack
+8348;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+8349;2025/OGM/0004,2025/OGM/0012;18;M;internet;Oksywie
+8350;2025/OGM/0004,2025/OGM/0012;49;M;internet;Witomino
+8351;2025/OGM/0004,2025/OGM/0012;26;M;internet;Witomino
+8352;2025/OGM/0012;67;F;internet;Śródmieście
+8353;2025/OGM/0004,2025/OGM/0012;19;M;internet;Chylonia
+8354;2025/OGM/0004,2025/OGM/0012;16;F;internet;Witomino
+8355;2025/OGM/0004;26;M;internet;Pustki Cisowskie-Demptowo
+8359;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wielki Kack
+8360;2025/OGM/0004;34;F;internet;Grabówek
+8361;2025/OGM/0004;56;F;internet;Cisowa
+8362;2025/OGM/0004;43;M;internet;Cisowa
+8363;2025/OGM/0004;37;M;internet;Witomino
+8364;2025/OGM/0012;51;M;internet;Oksywie
+8365;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+8366;2025/OGM/0012;58;F;internet;Kamienna Góra
+8367;2025/OGM/0012;58;M;internet;Śródmieście
+8368;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+8369;2025/OGM/0004;19;F;internet;Grabówek
+8370;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+8371;2025/OGM/0004;45;F;internet;Dąbrowa
+8372;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chylonia
+8373;2025/OGM/0004;49;F;internet;Działki Leśne
+8374;2025/OGM/0012;22;M;internet;Witomino
+8375;2025/OGM/0004;32;M;internet;Wielki Kack
+8376;2025/OGM/0004,2025/OGM/0012;46;F;internet;Oksywie
+8377;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+8378;2025/OGM/0012;31;F;internet;Działki Leśne
+8379;2025/OGM/0004;40;F;internet;Wielki Kack
+8380;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+8381;2025/OGM/0004;29;F;internet;Chylonia
+8383;2025/OGM/0004,2025/OGM/0012;66;F;internet;Pogórze
+8384;2025/OGM/0004;37;F;internet;Dąbrowa
+8385;2025/OGM/0004,2025/OGM/0012;41;F;internet;Cisowa
+8386;2025/OGM/0012;42;F;internet;Witomino
+8388;2025/OGM/0004,2025/OGM/0012;47;M;internet;Chylonia
+8389;2025/OGM/0004;38;F;internet;Oksywie
+8392;2025/OGM/0004;43;M;internet;Mały Kack
+8393;2025/OGM/0004;38;F;internet;Obłuże
+8394;2025/OGM/0004;58;F;internet;Chylonia
+8395;2025/OGM/0004;10;M;internet;Mały Kack
+8396;2025/OGM/0004;8;M;internet;Mały Kack
+8397;2025/OGM/0004;30;M;internet;Chylonia
+8398;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pogórze
+8399;2025/OGM/0004;5;M;internet;Mały Kack
+8400;2025/OGM/0004;70;F;internet;Pogórze
+8401;2025/OGM/0004;38;F;internet;Mały Kack
+8402;2025/OGM/0004;41;M;internet;Śródmieście
+8403;2025/OGM/0004;85;F;internet;Chylonia
+8404;2025/OGM/0004;43;F;internet;Obłuże
+8405;2025/OGM/0004;42;M;internet;Mały Kack
+8406;2025/OGM/0004,2025/OGM/0012;48;F;internet;Śródmieście
+8407;2025/OGM/0004,2025/OGM/0012;53;F;internet;Witomino
+8408;2025/OGM/0004;42;F;internet;Karwiny
+8409;2025/OGM/0012;75;M;internet;Pustki Cisowskie-Demptowo
+8410;2025/OGM/0004,2025/OGM/0012;48;F;internet;Mały Kack
+8411;2025/OGM/0004;88;M;internet;Chylonia
+8412;2025/OGM/0004;31;M;internet;Wzgórze Św. Maksymiliana
+8413;2025/OGM/0004;10;M;internet;Karwiny
+8415;2025/OGM/0012;46;F;internet;Kamienna Góra
+8416;2025/OGM/0012;66;F;internet;Pogórze
+8418;2025/OGM/0004;41;F;internet;Mały Kack
+8420;2025/OGM/0004,2025/OGM/0012;57;M;internet;Wielki Kack
+8421;2025/OGM/0004;45;F;internet;Dąbrowa
+8422;2025/OGM/0004;34;F;internet;Wielki Kack
+8423;2025/OGM/0004;46;F;internet;Pogórze
+8424;2025/OGM/0004;7;M;internet;Wielki Kack
+8425;2025/OGM/0004;5;M;internet;Wielki Kack
+8426;2025/OGM/0004;48;F;internet;Redłowo
+8427;2025/OGM/0012;52;F;internet;Pustki Cisowskie-Demptowo
+8429;2025/OGM/0004,2025/OGM/0012;52;M;internet;Witomino
+8430;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+8431;2025/OGM/0012;16;F;internet;Pustki Cisowskie-Demptowo
+8433;2025/OGM/0004;45;M;internet;Mały Kack
+8434;2025/OGM/0012;43;F;internet;Wzgórze Św. Maksymiliana
+8435;2025/OGM/0004;10;M;internet;Mały Kack
+8436;2025/OGM/0004;45;M;internet;Orłowo
+8437;2025/OGM/0012;54;M;internet;Chylonia
+8438;2025/OGM/0004;38;M;internet;Redłowo
+8439;2025/OGM/0004;44;F;internet;Pogórze
+8440;2025/OGM/0004,2025/OGM/0012;60;M;internet;Karwiny
+8441;2025/OGM/0012;44;F;internet;Mały Kack
+8442;2025/OGM/0004,2025/OGM/0012;23;F;internet;Chwarzno-Wiczlino
+8443;2025/OGM/0004,2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+8444;2025/OGM/0004;54;F;internet;Wielki Kack
+8445;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+8446;2025/OGM/0004;43;F;internet;Grabówek
+8447;2025/OGM/0004;44;M;internet;Wielki Kack
+8448;2025/OGM/0004;34;F;internet;Wielki Kack
+8449;2025/OGM/0004;39;M;internet;Pustki Cisowskie-Demptowo
+8450;2025/OGM/0004;37;F;internet;Wielki Kack
+8451;2025/OGM/0004;43;F;internet;Wielki Kack
+8452;2025/OGM/0004,2025/OGM/0012;52;F;internet;Cisowa
+8453;2025/OGM/0004;40;F;internet;Mały Kack
+8454;2025/OGM/0004;39;F;internet;Dąbrowa
+8455;2025/OGM/0004;69;F;internet;Dąbrowa
+8456;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+8457;2025/OGM/0004,2025/OGM/0012;37;M;internet;Pustki Cisowskie-Demptowo
+8458;2025/OGM/0012;31;F;internet;Obłuże
+8459;2025/OGM/0004,2025/OGM/0012;69;M;internet;Wielki Kack
+8460;2025/OGM/0004;83;F;internet;Wielki Kack
+8461;2025/OGM/0004;52;F;internet;Mały Kack
+8462;2025/OGM/0004,2025/OGM/0012;42;F;internet;Obłuże
+8463;2025/OGM/0004,2025/OGM/0012;47;F;internet;Kamienna Góra
+8464;2025/OGM/0004,2025/OGM/0012;43;F;internet;Dąbrowa
+8465;2025/OGM/0004;34;F;internet;Redłowo
+8466;2025/OGM/0004,2025/OGM/0012;34;F;internet;Obłuże
+8467;2025/OGM/0004;43;F;internet;Redłowo
+8468;2025/OGM/0004,2025/OGM/0012;42;M;internet;Dąbrowa
+8469;2025/OGM/0004;16;F;internet;Śródmieście
+8470;2025/OGM/0004;47;M;internet;Śródmieście
+8472;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+8473;2025/OGM/0004;46;F;internet;Cisowa
+8474;2025/OGM/0004,2025/OGM/0012;31;M;internet;Dąbrowa
+8475;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chylonia
+8476;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+8477;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+8478;2025/OGM/0004,2025/OGM/0012;3;F;internet;Wielki Kack
+8479;2025/OGM/0004,2025/OGM/0012;16;F;internet;Babie Doły
+8480;2025/OGM/0004,2025/OGM/0012;55;F;internet;Chwarzno-Wiczlino
+8481;2025/OGM/0004,2025/OGM/0012;13;F;internet;Babie Doły
+8482;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wzgórze Św. Maksymiliana
+8483;2025/OGM/0004;25;M;internet;Chylonia
+8484;2025/OGM/0004;43;M;internet;Karwiny
+8486;2025/OGM/0004;44;F;internet;Karwiny
+8487;2025/OGM/0004;39;F;internet;Pogórze
+8488;2025/OGM/0004,2025/OGM/0012;45;F;internet;Mały Kack
+8489;2025/OGM/0012;10;M;internet;Pogórze
+8490;2025/OGM/0004,2025/OGM/0012;34;M;internet;Wielki Kack
+8491;2025/OGM/0012;15;F;internet;Mały Kack
+8492;2025/OGM/0004;8;M;internet;Pogórze
+8495;2025/OGM/0004;37;F;internet;Grabówek
+8496;2025/OGM/0004,2025/OGM/0012;40;F;internet;Orłowo
+8498;2025/OGM/0012;9;M;internet;Mały Kack
+8499;2025/OGM/0004,2025/OGM/0012;48;F;internet;Redłowo
+8500;2025/OGM/0012;4;F;internet;Mały Kack
+8502;2025/OGM/0004;45;F;internet;Cisowa
+8503;2025/OGM/0004;55;M;internet;Cisowa
+8504;2025/OGM/0004;45;F;internet;Wzgórze Św. Maksymiliana
+8505;2025/OGM/0004;18;M;internet;Cisowa
+8506;2025/OGM/0004,2025/OGM/0012;40;M;internet;Wielki Kack
+8507;2025/OGM/0004;75;F;internet;Cisowa
+8508;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+8510;2025/OGM/0004,2025/OGM/0012;47;F;internet;Obłuże
+8511;2025/OGM/0004;33;F;internet;Chylonia
+8512;2025/OGM/0012;45;M;internet;Mały Kack
+8513;2025/OGM/0004;53;M;internet;Cisowa
+8514;2025/OGM/0004,2025/OGM/0012;27;F;internet;Leszczynki
+8515;2025/OGM/0004;8;F;internet;Wielki Kack
+8517;2025/OGM/0004,2025/OGM/0012;6;F;internet;Witomino
+8518;2025/OGM/0004;73;M;internet;Chwarzno-Wiczlino
+8519;2025/OGM/0004,2025/OGM/0012;44;F;internet;Cisowa
+8521;2025/OGM/0004;13;F;internet;Babie Doły
+8522;2025/OGM/0004;9;M;internet;Obłuże
+8523;2025/OGM/0012;32;M;internet;Grabówek
+8524;2025/OGM/0012;48;M;internet;Chylonia
+8525;2025/OGM/0012;40;M;internet;Obłuże
+8526;2025/OGM/0004;37;F;internet;Wielki Kack
+8527;2025/OGM/0004;10;M;internet;Wielki Kack
+8529;2025/OGM/0004;8;M;internet;Wielki Kack
+8530;2025/OGM/0012;62;F;internet;Kamienna Góra
+8531;2025/OGM/0004;69;M;internet;Pustki Cisowskie-Demptowo
+8532;2025/OGM/0004,2025/OGM/0012;37;F;internet;Śródmieście
+8533;2025/OGM/0004;13;M;internet;Chwarzno-Wiczlino
+8534;2025/OGM/0004;74;F;internet;Wielki Kack
+8535;2025/OGM/0012;33;F;internet;Leszczynki
+8536;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+8537;2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+8538;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+8539;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+8540;2025/OGM/0004;37;F;internet;Oksywie
+8541;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chylonia
+8542;2025/OGM/0004;47;F;internet;Chylonia
+8543;2025/OGM/0004;49;F;internet;Chwarzno-Wiczlino
+8544;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+8545;2025/OGM/0004;40;F;internet;Pogórze
+8546;2025/OGM/0004;57;F;internet;Działki Leśne
+8548;2025/OGM/0004;53;F;internet;Oksywie
+8549;2025/OGM/0004;53;F;internet;Wielki Kack
+8550;2025/OGM/0004;51;F;internet;Oksywie
+8551;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pogórze
+8552;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+8553;2025/OGM/0004;38;F;internet;Chylonia
+8554;2025/OGM/0004,2025/OGM/0012;47;F;internet;Leszczynki
+8555;2025/OGM/0004;92;F;internet;Działki Leśne
+8556;2025/OGM/0004;68;M;internet;Cisowa
+8557;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wzgórze Św. Maksymiliana
+8558;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+8559;2025/OGM/0004;44;F;internet;Dąbrowa
+8560;2025/OGM/0004;43;F;internet;Dąbrowa
+8561;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+8562;2025/OGM/0012;12;M;internet;Pustki Cisowskie-Demptowo
+8564;2025/OGM/0004;57;F;internet;Witomino
+8565;2025/OGM/0004;75;M;internet;Chylonia
+8566;2025/OGM/0012;53;F;internet;Śródmieście
+8567;2025/OGM/0012;50;F;internet;Obłuże
+8568;2025/OGM/0004;42;F;internet;Obłuże
+8569;2025/OGM/0004,2025/OGM/0012;53;F;internet;Karwiny
+8570;2025/OGM/0004;39;M;internet;Śródmieście
+8571;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+8572;2025/OGM/0012;29;F;internet;Działki Leśne
+8573;2025/OGM/0004;71;F;internet;Chylonia
+8574;2025/OGM/0012;51;F;internet;Chylonia
+8575;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+8576;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+8577;2025/OGM/0004;40;F;internet;Śródmieście
+8578;2025/OGM/0004;57;F;internet;Witomino
+8579;2025/OGM/0004,2025/OGM/0012;31;M;internet;Witomino
+8580;2025/OGM/0004;59;F;internet;Chylonia
+8581;2025/OGM/0012;53;F;internet;Witomino
+8582;2025/OGM/0012;77;F;internet;Witomino
+8583;2025/OGM/0012;47;F;internet;Działki Leśne
+8585;2025/OGM/0004,2025/OGM/0012;60;F;internet;Pustki Cisowskie-Demptowo
+8586;2025/OGM/0004;62;F;internet;Chylonia
+8587;2025/OGM/0004,2025/OGM/0012;45;M;internet;Pogórze
+8588;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+8590;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+8591;2025/OGM/0004;53;M;internet;Cisowa
+8593;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+8595;2025/OGM/0004,2025/OGM/0012;47;F;internet;Redłowo
+8596;2025/OGM/0004;82;M;internet;Cisowa
+8597;2025/OGM/0004,2025/OGM/0012;10;F;internet;Wielki Kack
+8598;2025/OGM/0004;62;F;internet;Wzgórze Św. Maksymiliana
+8599;2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+8600;2025/OGM/0004;43;F;internet;Mały Kack
+8602;2025/OGM/0012;26;F;internet;Mały Kack
+8603;2025/OGM/0004;65;F;internet;Pogórze
+8604;2025/OGM/0004;56;F;internet;Wielki Kack
+8605;2025/OGM/0012;76;M;internet;Chwarzno-Wiczlino
+8606;2025/OGM/0004;60;M;internet;Pogórze
+8607;2025/OGM/0004;35;M;internet;Mały Kack
+8608;2025/OGM/0012;44;M;internet;Leszczynki
+8609;2025/OGM/0012;74;F;internet;Orłowo
+8611;2025/OGM/0004;46;F;internet;Chwarzno-Wiczlino
+8612;2025/OGM/0004;86;M;internet;Chylonia
+8613;2025/OGM/0004,2025/OGM/0012;9;F;internet;Wielki Kack
+8614;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+8615;2025/OGM/0004;81;F;internet;Chylonia
+8616;2025/OGM/0012;45;F;internet;Orłowo
+8617;2025/OGM/0004,2025/OGM/0012;39;F;internet;Działki Leśne
+8618;2025/OGM/0004;31;F;internet;Obłuże
+8619;2025/OGM/0004;77;F;internet;Witomino
+8620;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+8621;2025/OGM/0004;41;F;internet;Pogórze
+8622;2025/OGM/0004;80;F;internet;Witomino
+8623;2025/OGM/0004;66;F;internet;Cisowa
+8624;2025/OGM/0004,2025/OGM/0012;37;F;internet;Oksywie
+8625;2025/OGM/0004,2025/OGM/0012;6;M;internet;Dąbrowa
+8626;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+8627;2025/OGM/0012;22;F;internet;Orłowo
+8628;2025/OGM/0004;74;F;internet;Witomino
+8629;2025/OGM/0004,2025/OGM/0012;3;M;internet;Dąbrowa
+8630;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+8631;2025/OGM/0004,2025/OGM/0012;2;F;internet;Wielki Kack
+8632;2025/OGM/0004;46;F;internet;Chwarzno-Wiczlino
+8634;2025/OGM/0004,2025/OGM/0012;66;F;internet;Śródmieście
+8635;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+8636;2025/OGM/0004,2025/OGM/0012;33;M;internet;Mały Kack
+8637;2025/OGM/0012;8;M;internet;Chylonia
+8638;2025/OGM/0004;62;M;internet;Wielki Kack
+8639;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+8641;2025/OGM/0004,2025/OGM/0012;74;M;internet;Śródmieście
+8642;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+8643;2025/OGM/0004,2025/OGM/0012;59;F;internet;Leszczynki
+8644;2025/OGM/0004;9;M;internet;Pustki Cisowskie-Demptowo
+8645;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chylonia
+8646;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+8648;2025/OGM/0004;74;M;internet;Cisowa
+8650;2025/OGM/0012;57;F;internet;Chylonia
+8651;2025/OGM/0004;41;M;internet;Pogórze
+8652;2025/OGM/0004;43;F;internet;Redłowo
+8653;2025/OGM/0004;54;F;internet;Dąbrowa
+8654;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+8655;2025/OGM/0012;43;M;internet;Witomino
+8656;2025/OGM/0004;68;M;internet;Cisowa
+8657;2025/OGM/0004;68;F;internet;Cisowa
+8658;2025/OGM/0012;37;F;internet;Redłowo
+8659;2025/OGM/0004;45;F;internet;Leszczynki
+8660;2025/OGM/0004;26;F;internet;Śródmieście
+8661;2025/OGM/0004,2025/OGM/0012;41;M;internet;Redłowo
+8662;2025/OGM/0004;31;M;internet;Obłuże
+8663;2025/OGM/0004,2025/OGM/0012;25;F;internet;Redłowo
+8665;2025/OGM/0012;19;M;internet;Chylonia
+8666;2025/OGM/0012;51;F;internet;Chylonia
+8668;2025/OGM/0004;71;F;internet;Cisowa
+8670;2025/OGM/0004;44;F;internet;Karwiny
+8672;2025/OGM/0012;28;M;internet;Chylonia
+8673;2025/OGM/0004,2025/OGM/0012;24;F;internet;Chylonia
+8674;2025/OGM/0004;42;M;internet;Obłuże
+8675;2025/OGM/0004;44;F;internet;Działki Leśne
+8677;2025/OGM/0004,2025/OGM/0012;58;F;internet;Oksywie
+8678;2025/OGM/0004;49;F;internet;Cisowa
+8679;2025/OGM/0004;77;F;internet;Cisowa
+8681;2025/OGM/0004;41;F;internet;Witomino
+8682;2025/OGM/0004;7;M;internet;Witomino
+8683;2025/OGM/0004;30;F;internet;Wzgórze Św. Maksymiliana
+8684;2025/OGM/0004;52;M;internet;Śródmieście
+8685;2025/OGM/0004,2025/OGM/0012;22;M;internet;Chwarzno-Wiczlino
+8686;2025/OGM/0004,2025/OGM/0012;38;M;internet;Grabówek
+8688;2025/OGM/0004;40;F;internet;Cisowa
+8690;2025/OGM/0004;34;F;internet;Pogórze
+8691;2025/OGM/0004;69;F;internet;Cisowa
+8692;2025/OGM/0004;24;F;internet;Mały Kack
+8693;2025/OGM/0004;48;F;internet;Obłuże
+8694;2025/OGM/0012;63;F;internet;Śródmieście
+8695;2025/OGM/0004,2025/OGM/0012;25;M;internet;Chwarzno-Wiczlino
+8696;2025/OGM/0004;53;M;internet;Wielki Kack
+8697;2025/OGM/0004,2025/OGM/0012;46;F;internet;Oksywie
+8698;2025/OGM/0004;74;F;internet;Cisowa
+8699;2025/OGM/0004,2025/OGM/0012;31;M;internet;Działki Leśne
+8700;2025/OGM/0004,2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+8701;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+8702;2025/OGM/0004;21;F;internet;Grabówek
+8704;2025/OGM/0004,2025/OGM/0012;14;F;internet;Pustki Cisowskie-Demptowo
+8705;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+8707;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+8708;2025/OGM/0004;47;M;internet;Pustki Cisowskie-Demptowo
+8709;2025/OGM/0004,2025/OGM/0012;31;F;internet;Pustki Cisowskie-Demptowo
+8710;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+8711;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+8712;2025/OGM/0004,2025/OGM/0012;37;M;internet;Grabówek
+8714;2025/OGM/0004;73;F;internet;Obłuże
+8715;2025/OGM/0004,2025/OGM/0012;77;F;internet;Grabówek
+8716;2025/OGM/0004;33;M;internet;Cisowa
+8717;2025/OGM/0004;43;F;internet;Mały Kack
+8718;2025/OGM/0004;14;F;internet;Pustki Cisowskie-Demptowo
+8719;2025/OGM/0004;18;M;internet;Pustki Cisowskie-Demptowo
+8720;2025/OGM/0004,2025/OGM/0012;54;M;internet;Pustki Cisowskie-Demptowo
+8721;2025/OGM/0004,2025/OGM/0012;41;M;internet;Działki Leśne
+8722;2025/OGM/0004;43;M;internet;Mały Kack
+8724;2025/OGM/0004,2025/OGM/0012;10;M;internet;Mały Kack
+8725;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+8726;2025/OGM/0004;28;M;internet;Dąbrowa
+8727;2025/OGM/0004,2025/OGM/0012;37;F;internet;Grabówek
+8728;2025/OGM/0004,2025/OGM/0012;40;F;internet;Obłuże
+8729;2025/OGM/0012;59;F;internet;Orłowo
+8730;2025/OGM/0004;41;F;internet;Obłuże
+8731;2025/OGM/0004;55;F;internet;Cisowa
+8732;2025/OGM/0004;71;M;internet;Wielki Kack
+8734;2025/OGM/0004,2025/OGM/0012;71;F;internet;Wielki Kack
+8735;2025/OGM/0004;35;F;internet;Obłuże
+8736;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+8737;2025/OGM/0004;4;F;internet;Obłuże
+8738;2025/OGM/0004;36;F;internet;Wielki Kack
+8740;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wzgórze Św. Maksymiliana
+8741;2025/OGM/0004;21;M;internet;Chylonia
+8742;2025/OGM/0004;35;F;internet;Karwiny
+8743;2025/OGM/0004,2025/OGM/0012;34;F;internet;Śródmieście
+8744;2025/OGM/0004;43;F;internet;Leszczynki
+8745;2025/OGM/0004;26;F;internet;Grabówek
+8746;2025/OGM/0004;31;M;internet;Grabówek
+8747;2025/OGM/0004;61;F;internet;Wzgórze Św. Maksymiliana
+8748;2025/OGM/0004,2025/OGM/0012;10;F;internet;Śródmieście
+8749;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+8750;2025/OGM/0004,2025/OGM/0012;5;M;internet;Śródmieście
+8751;2025/OGM/0004,2025/OGM/0012;28;M;internet;Śródmieście
+8752;2025/OGM/0004,2025/OGM/0012;39;M;internet;Śródmieście
+8753;2025/OGM/0004;40;F;internet;Witomino
+8754;2025/OGM/0004;76;F;internet;Obłuże
+8755;2025/OGM/0004;43;M;internet;Witomino
+8756;2025/OGM/0004,2025/OGM/0012;43;F;internet;Redłowo
+8757;2025/OGM/0004;53;F;internet;Karwiny
+8758;2025/OGM/0004,2025/OGM/0012;42;M;internet;Śródmieście
+8759;2025/OGM/0004;49;F;internet;Obłuże
+8760;2025/OGM/0004;57;M;internet;Karwiny
+8761;2025/OGM/0004;40;F;internet;Mały Kack
+8762;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+8763;2025/OGM/0004;49;F;internet;Obłuże
+8764;2025/OGM/0004;15;M;internet;Karwiny
+8765;2025/OGM/0004;40;F;internet;Witomino
+8766;2025/OGM/0004;25;F;internet;Redłowo
+8767;2025/OGM/0004,2025/OGM/0012;49;F;internet;Śródmieście
+8769;2025/OGM/0004;70;F;internet;Grabówek
+8770;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+8771;2025/OGM/0004;48;M;internet;Obłuże
+8773;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+8774;2025/OGM/0004;51;F;internet;Obłuże
+8775;2025/OGM/0012;53;F;internet;Orłowo
+8776;2025/OGM/0004;75;M;internet;Pustki Cisowskie-Demptowo
+8777;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+8779;2025/OGM/0012;51;F;internet;Witomino
+8780;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+8781;2025/OGM/0004;3;M;internet;Cisowa
+8782;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+8783;2025/OGM/0004;14;F;internet;Cisowa
+8785;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+8786;2025/OGM/0004;37;F;internet;Cisowa
+8787;2025/OGM/0012;32;F;internet;Chylonia
+8788;2025/OGM/0004;43;F;internet;Grabówek
+8789;2025/OGM/0004;3;M;internet;Cisowa
+8790;2025/OGM/0004,2025/OGM/0012;49;F;internet;Pogórze
+8791;2025/OGM/0012;16;M;internet;Leszczynki
+8792;2025/OGM/0004;44;F;internet;Oksywie
+8793;2025/OGM/0004;41;F;internet;Mały Kack
+8794;2025/OGM/0004;50;F;internet;Dąbrowa
+8795;2025/OGM/0004;30;F;internet;Mały Kack
+8797;2025/OGM/0004;42;M;internet;Obłuże
+8798;2025/OGM/0004,2025/OGM/0012;52;F;internet;Mały Kack
+8800;2025/OGM/0004,2025/OGM/0012;50;M;internet;Obłuże
+8801;2025/OGM/0004;15;M;internet;Obłuże
+8802;2025/OGM/0004;34;F;internet;Chylonia
+8803;2025/OGM/0004;27;M;internet;Redłowo
+8804;2025/OGM/0004;10;M;internet;Obłuże
+8805;2025/OGM/0004;34;F;internet;Wielki Kack
+8806;2025/OGM/0004,2025/OGM/0012;46;F;internet;Obłuże
+8807;2025/OGM/0004,2025/OGM/0012;50;F;internet;Mały Kack
+8808;2025/OGM/0004;43;F;internet;Redłowo
+8809;2025/OGM/0004;37;F;internet;Wzgórze Św. Maksymiliana
+8810;2025/OGM/0012;8;F;internet;Redłowo
+8811;2025/OGM/0004,2025/OGM/0012;10;F;internet;Mały Kack
+8812;2025/OGM/0004;49;M;internet;Chylonia
+8813;2025/OGM/0012;8;F;internet;Redłowo
+8814;2025/OGM/0004;34;M;internet;Chylonia
+8815;2025/OGM/0004;29;M;internet;Chwarzno-Wiczlino
+8816;2025/OGM/0004;10;F;internet;Cisowa
+8817;2025/OGM/0004;14;M;internet;Mały Kack
+8818;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+8819;2025/OGM/0012;73;F;internet;Chylonia
+8820;2025/OGM/0004,2025/OGM/0012;20;F;internet;Mały Kack
+8821;2025/OGM/0012;71;F;internet;Orłowo
+8822;2025/OGM/0004;51;M;internet;Chwarzno-Wiczlino
+8823;2025/OGM/0004;58;M;internet;Wielki Kack
+8825;2025/OGM/0004;81;F;internet;Chylonia
+8827;2025/OGM/0004;57;F;internet;Orłowo
+8829;2025/OGM/0004;34;M;internet;Obłuże
+8830;2025/OGM/0004;47;M;internet;Leszczynki
+8831;2025/OGM/0012;43;F;internet;Orłowo
+8832;2025/OGM/0004;25;F;internet;Grabówek
+8833;2025/OGM/0012;39;F;internet;Chylonia
+8834;2025/OGM/0004,2025/OGM/0012;33;F;internet;Mały Kack
+8835;2025/OGM/0004;71;F;internet;Orłowo
+8836;2025/OGM/0004;66;F;internet;Chwarzno-Wiczlino
+8837;2025/OGM/0004;30;M;internet;Cisowa
+8838;2025/OGM/0004;23;F;internet;Mały Kack
+8840;2025/OGM/0012;79;F;internet;Orłowo
+8842;2025/OGM/0004,2025/OGM/0012;44;M;internet;Działki Leśne
+8843;2025/OGM/0004;16;F;internet;Oksywie
+8845;2025/OGM/0004;57;F;internet;Orłowo
+8846;2025/OGM/0004;32;M;internet;Pogórze
+8848;2025/OGM/0004;26;F;internet;Obłuże
+8849;2025/OGM/0004;64;F;internet;Pogórze
+8850;2025/OGM/0012;64;M;internet;Pogórze
+8851;2025/OGM/0004;44;M;internet;Dąbrowa
+8852;2025/OGM/0012;70;F;internet;Karwiny
+8853;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+8855;2025/OGM/0004;44;F;internet;Chylonia
+8856;2025/OGM/0004;78;F;internet;Chylonia
+8857;2025/OGM/0004;41;M;internet;Cisowa
+8858;2025/OGM/0012;39;F;internet;Chylonia
+8859;2025/OGM/0004;76;F;internet;Mały Kack
+8860;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+8862;2025/OGM/0004,2025/OGM/0012;48;M;internet;Karwiny
+8864;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+8865;2025/OGM/0012;63;F;internet;Chwarzno-Wiczlino
+8866;2025/OGM/0004;40;F;internet;Wielki Kack
+8867;2025/OGM/0012;64;M;internet;Chwarzno-Wiczlino
+8868;2025/OGM/0004,2025/OGM/0012;17;M;internet;Chylonia
+8869;2025/OGM/0004;68;F;internet;Pustki Cisowskie-Demptowo
+8870;2025/OGM/0012;76;F;internet;Mały Kack
+8871;2025/OGM/0004;51;M;internet;Cisowa
+8872;2025/OGM/0004;45;M;internet;Babie Doły
+8873;2025/OGM/0012;56;F;internet;Śródmieście
+8874;2025/OGM/0004;70;M;internet;Witomino
+8875;2025/OGM/0004;50;F;internet;Cisowa
+8876;2025/OGM/0004;39;F;internet;Orłowo
+8877;2025/OGM/0004;28;M;internet;Dąbrowa
+8878;2025/OGM/0004;75;F;internet;Grabówek
+8879;2025/OGM/0004;70;F;internet;Cisowa
+8880;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+8882;2025/OGM/0004;33;F;internet;Obłuże
+8883;2025/OGM/0004;67;M;internet;Grabówek
+8884;2025/OGM/0012;36;F;internet;Pogórze
+8885;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pogórze
+8886;2025/OGM/0004;96;M;internet;Grabówek
+8887;2025/OGM/0012;9;F;internet;Pogórze
+8888;2025/OGM/0004;3;F;internet;Obłuże
+8889;2025/OGM/0004;94;F;internet;Grabówek
+8890;2025/OGM/0004;1;F;internet;Obłuże
+8891;2025/OGM/0012;4;M;internet;Pogórze
+8892;2025/OGM/0004,2025/OGM/0012;39;M;internet;Pogórze
+8893;2025/OGM/0004,2025/OGM/0012;19;F;internet;Chwarzno-Wiczlino
+8895;2025/OGM/0004,2025/OGM/0012;36;F;internet;Pogórze
+8896;2025/OGM/0004;68;F;internet;Chwarzno-Wiczlino
+8897;2025/OGM/0004,2025/OGM/0012;50;F;internet;Obłuże
+8898;2025/OGM/0004;78;F;internet;Witomino
+8900;2025/OGM/0004,2025/OGM/0012;31;F;internet;Mały Kack
+8901;2025/OGM/0012;31;F;internet;Chylonia
+8902;2025/OGM/0012;46;F;internet;Chylonia
+8903;2025/OGM/0004;15;M;internet;Chylonia
+8905;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+8906;2025/OGM/0004,2025/OGM/0012;51;F;internet;Witomino
+8909;2025/OGM/0004;56;F;internet;Witomino
+8911;2025/OGM/0004;68;F;internet;Cisowa
+8912;2025/OGM/0004;77;F;internet;Oksywie
+8913;2025/OGM/0004;28;F;internet;Grabówek
+8915;2025/OGM/0004;50;F;internet;Chylonia
+8916;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+8918;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+8919;2025/OGM/0004;28;F;internet;Cisowa
+8920;2025/OGM/0004,2025/OGM/0012;18;M;internet;Pustki Cisowskie-Demptowo
+8921;2025/OGM/0004;16;F;internet;Działki Leśne
+8922;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+8923;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chylonia
+8924;2025/OGM/0004;33;M;internet;Redłowo
+8925;2025/OGM/0004;44;F;internet;Witomino
+8926;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+8927;2025/OGM/0012;72;M;internet;Działki Leśne
+8928;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+8929;2025/OGM/0012;39;M;internet;Witomino
+8930;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+8931;2025/OGM/0004,2025/OGM/0012;75;F;internet;Chwarzno-Wiczlino
+8932;2025/OGM/0004;37;F;internet;Mały Kack
+8933;2025/OGM/0012;72;F;internet;Działki Leśne
+8934;2025/OGM/0012;58;M;internet;Witomino
+8935;2025/OGM/0004;44;M;internet;Grabówek
+8936;2025/OGM/0004,2025/OGM/0012;74;M;internet;Chwarzno-Wiczlino
+8937;2025/OGM/0012;43;M;internet;Obłuże
+8938;2025/OGM/0004,2025/OGM/0012;38;M;internet;Pogórze
+8940;2025/OGM/0004;47;F;internet;Cisowa
+8941;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pogórze
+8942;2025/OGM/0004;49;M;internet;Cisowa
+8943;2025/OGM/0004;30;F;internet;Pogórze
+8944;2025/OGM/0004;54;M;internet;Chwarzno-Wiczlino
+8945;2025/OGM/0004;17;F;internet;Cisowa
+8946;2025/OGM/0012;35;M;internet;Mały Kack
+8947;2025/OGM/0012;51;F;internet;Mały Kack
+8948;2025/OGM/0004;41;F;internet;Mały Kack
+8949;2025/OGM/0004;70;F;internet;Oksywie
+8950;2025/OGM/0012;4;F;internet;Mały Kack
+8951;2025/OGM/0012;21;F;internet;Mały Kack
+8952;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+8953;2025/OGM/0004;55;F;internet;Oksywie
+8954;2025/OGM/0012;3;M;internet;Mały Kack
+8957;2025/OGM/0004,2025/OGM/0012;46;F;internet;Witomino
+8958;2025/OGM/0012;41;M;internet;Wzgórze Św. Maksymiliana
+8959;2025/OGM/0004;39;M;internet;Wielki Kack
+8960;2025/OGM/0012;35;F;internet;Mały Kack
+8961;2025/OGM/0012;14;F;internet;Mały Kack
+8962;2025/OGM/0012;53;M;internet;Mały Kack
+8964;2025/OGM/0012;32;F;internet;Redłowo
+8965;2025/OGM/0004;90;F;internet;Grabówek
+8967;2025/OGM/0012;41;F;internet;Redłowo
+8969;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+8971;2025/OGM/0004;77;M;internet;Mały Kack
+8972;2025/OGM/0012;48;F;internet;Wielki Kack
+8973;2025/OGM/0004,2025/OGM/0012;11;F;internet;Redłowo
+8974;2025/OGM/0012;17;F;internet;Wielki Kack
+8975;2025/OGM/0012;9;F;internet;Wielki Kack
+8976;2025/OGM/0004,2025/OGM/0012;50;M;internet;Dąbrowa
+8977;2025/OGM/0004;23;F;internet;Chylonia
+8978;2025/OGM/0012;14;F;internet;Wielki Kack
+8979;2025/OGM/0004,2025/OGM/0012;31;M;internet;Orłowo
+8980;2025/OGM/0012;70;F;internet;Wielki Kack
+8981;2025/OGM/0004;63;F;internet;Dąbrowa
+8982;2025/OGM/0004;45;F;internet;Wielki Kack
+8983;2025/OGM/0004;39;M;internet;Dąbrowa
+8984;2025/OGM/0012;78;M;internet;Wielki Kack
+8985;2025/OGM/0004;69;M;internet;Dąbrowa
+8986;2025/OGM/0004,2025/OGM/0012;35;F;internet;Cisowa
+8987;2025/OGM/0004;51;F;internet;Chwarzno-Wiczlino
+8988;2025/OGM/0004,2025/OGM/0012;53;M;internet;Wielki Kack
+8989;2025/OGM/0004;47;M;internet;Chwarzno-Wiczlino
+8990;2025/OGM/0004,2025/OGM/0012;58;F;internet;Witomino
+8991;2025/OGM/0004;32;F;internet;Pogórze
+8992;2025/OGM/0004;51;M;internet;Pogórze
+8994;2025/OGM/0012;73;F;internet;Mały Kack
+8995;2025/OGM/0004,2025/OGM/0012;72;F;internet;Chwarzno-Wiczlino
+8996;2025/OGM/0004;6;F;internet;Pogórze
+8997;2025/OGM/0004;1;F;internet;Pogórze
+8999;2025/OGM/0004;45;F;internet;Witomino
+9000;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chylonia
+9001;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+9002;2025/OGM/0004;51;M;internet;Witomino
+9003;2025/OGM/0004;52;F;internet;Wielki Kack
+9004;2025/OGM/0004;17;F;internet;Obłuże
+9005;2025/OGM/0004;59;F;internet;Chwarzno-Wiczlino
+9007;2025/OGM/0012;56;F;internet;Wielki Kack
+9008;2025/OGM/0004,2025/OGM/0012;38;M;internet;Obłuże
+9009;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chylonia
+9010;2025/OGM/0004,2025/OGM/0012;14;F;internet;Chwarzno-Wiczlino
+9011;2025/OGM/0004;59;M;internet;Chwarzno-Wiczlino
+9012;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+9013;2025/OGM/0004;10;M;internet;Wielki Kack
+9014;2025/OGM/0004,2025/OGM/0012;16;M;internet;Chylonia
+9015;2025/OGM/0012;65;F;internet;Wielki Kack
+9016;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+9018;2025/OGM/0004;49;M;internet;Mały Kack
+9019;2025/OGM/0004;31;F;internet;Chylonia
+9020;2025/OGM/0012;32;F;internet;Grabówek
+9021;2025/OGM/0012;49;M;internet;Wielki Kack
+9022;2025/OGM/0004,2025/OGM/0012;51;F;internet;Witomino
+9023;2025/OGM/0012;40;F;internet;Oksywie
+9024;2025/OGM/0004;72;M;internet;Działki Leśne
+9025;2025/OGM/0012;10;F;internet;Oksywie
+9026;2025/OGM/0004;44;F;internet;Witomino
+9027;2025/OGM/0012;15;F;internet;Oksywie
+9028;2025/OGM/0004;42;F;internet;Dąbrowa
+9030;2025/OGM/0004;56;F;internet;Grabówek
+9031;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+9032;2025/OGM/0012;42;F;internet;Witomino
+9033;2025/OGM/0004;29;M;internet;Wielki Kack
+9034;2025/OGM/0004;45;F;internet;Redłowo
+9035;2025/OGM/0004,2025/OGM/0012;21;F;internet;Wielki Kack
+9036;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+9037;2025/OGM/0004;36;F;internet;Dąbrowa
+9038;2025/OGM/0004;53;F;internet;Mały Kack
+9039;2025/OGM/0004;57;F;internet;Obłuże
+9040;2025/OGM/0004;49;F;internet;Mały Kack
+9041;2025/OGM/0004;56;F;internet;Oksywie
+9042;2025/OGM/0012;76;F;internet;Pogórze
+9043;2025/OGM/0012;31;F;internet;Witomino
+9045;2025/OGM/0004;61;F;internet;Wielki Kack
+9046;2025/OGM/0004,2025/OGM/0012;21;F;internet;Mały Kack
+9047;2025/OGM/0004;41;M;internet;Wielki Kack
+9050;2025/OGM/0004,2025/OGM/0012;50;F;internet;Oksywie
+9053;2025/OGM/0004;10;M;internet;Wielki Kack
+9054;2025/OGM/0004;30;F;internet;Obłuże
+9055;2025/OGM/0004;8;F;internet;Wielki Kack
+9057;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wzgórze Św. Maksymiliana
+9058;2025/OGM/0004;20;F;internet;Mały Kack
+9059;2025/OGM/0004,2025/OGM/0012;67;F;internet;Wielki Kack
+9060;2025/OGM/0004;25;F;internet;Mały Kack
+9061;2025/OGM/0004;52;M;internet;Mały Kack
+9063;2025/OGM/0012;51;F;internet;Chylonia
+9065;2025/OGM/0004;66;F;internet;Dąbrowa
+9066;2025/OGM/0004;35;M;internet;Chylonia
+9067;2025/OGM/0004;17;M;internet;Wielki Kack
+9068;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+9069;2025/OGM/0004;42;F;internet;Obłuże
+9070;2025/OGM/0004,2025/OGM/0012;17;M;internet;Mały Kack
+9071;2025/OGM/0004;21;F;internet;Wielki Kack
+9072;2025/OGM/0004;37;M;internet;Dąbrowa
+9073;2025/OGM/0004,2025/OGM/0012;4;F;internet;Obłuże
+9074;2025/OGM/0012;38;F;internet;Pustki Cisowskie-Demptowo
+9075;2025/OGM/0004;58;M;internet;Wielki Kack
+9078;2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+9079;2025/OGM/0004;35;F;internet;Redłowo
+9080;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+9081;2025/OGM/0012;32;F;internet;Śródmieście
+9082;2025/OGM/0012;51;F;internet;Działki Leśne
+9083;2025/OGM/0004;41;F;internet;Działki Leśne
+9084;2025/OGM/0004;48;F;internet;Działki Leśne
+9085;2025/OGM/0012;40;F;internet;Działki Leśne
+9086;2025/OGM/0004;38;F;internet;Działki Leśne
+9087;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+9088;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+9089;2025/OGM/0004;41;F;internet;Mały Kack
+9090;2025/OGM/0012;42;F;internet;Chylonia
+9091;2025/OGM/0004;33;M;internet;Działki Leśne
+9092;2025/OGM/0004,2025/OGM/0012;44;M;internet;Mały Kack
+9093;2025/OGM/0004,2025/OGM/0012;49;M;internet;Mały Kack
+9094;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wielki Kack
+9095;2025/OGM/0012;61;F;internet;Mały Kack
+9096;2025/OGM/0004;26;F;internet;Mały Kack
+9097;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+9098;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wzgórze Św. Maksymiliana
+9099;2025/OGM/0004,2025/OGM/0012;32;F;internet;Działki Leśne
+9101;2025/OGM/0004;48;F;internet;Działki Leśne
+9102;2025/OGM/0004;44;M;internet;Pustki Cisowskie-Demptowo
+9103;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+9104;2025/OGM/0004,2025/OGM/0012;66;F;internet;Działki Leśne
+9105;2025/OGM/0004;38;F;internet;Pustki Cisowskie-Demptowo
+9106;2025/OGM/0012;32;M;internet;Działki Leśne
+9107;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+9108;2025/OGM/0004;25;F;internet;Działki Leśne
+9109;2025/OGM/0004,2025/OGM/0012;40;M;internet;Witomino
+9110;2025/OGM/0004,2025/OGM/0012;7;M;internet;Mały Kack
+9111;2025/OGM/0004;32;M;internet;Działki Leśne
+9112;2025/OGM/0012;61;F;internet;Pustki Cisowskie-Demptowo
+9113;2025/OGM/0004,2025/OGM/0012;32;F;internet;Cisowa
+9114;2025/OGM/0004,2025/OGM/0012;2;M;internet;Mały Kack
+9115;2025/OGM/0012;41;F;internet;Chylonia
+9116;2025/OGM/0004,2025/OGM/0012;46;M;internet;Mały Kack
+9117;2025/OGM/0004,2025/OGM/0012;32;F;internet;Działki Leśne
+9118;2025/OGM/0004;6;F;internet;Wielki Kack
+9119;2025/OGM/0004;41;F;internet;Wielki Kack
+9120;2025/OGM/0004;13;F;internet;Obłuże
+9121;2025/OGM/0004;4;F;internet;Wielki Kack
+9122;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+9123;2025/OGM/0004;60;F;internet;Chylonia
+9124;2025/OGM/0004;33;F;internet;Wielki Kack
+9125;2025/OGM/0004;43;F;internet;Cisowa
+9126;2025/OGM/0004;25;M;internet;Chylonia
+9127;2025/OGM/0012;15;M;internet;Obłuże
+9128;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+9129;2025/OGM/0004;38;F;internet;Dąbrowa
+9130;2025/OGM/0004;47;M;internet;Redłowo
+9131;2025/OGM/0004,2025/OGM/0012;48;F;internet;Oksywie
+9132;2025/OGM/0004;34;F;internet;Obłuże
+9133;2025/OGM/0004;13;M;internet;Redłowo
+9134;2025/OGM/0004;9;M;internet;Redłowo
+9135;2025/OGM/0004;38;M;internet;Działki Leśne
+9136;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+9137;2025/OGM/0004;44;F;internet;Redłowo
+9139;2025/OGM/0004;39;F;internet;Karwiny
+9143;2025/OGM/0004;43;F;internet;Chylonia
+9144;2025/OGM/0004;47;F;internet;Działki Leśne
+9145;2025/OGM/0004;34;F;internet;Działki Leśne
+9146;2025/OGM/0004;25;F;internet;Działki Leśne
+9148;2025/OGM/0012;72;F;internet;Działki Leśne
+9149;2025/OGM/0012;37;F;internet;Mały Kack
+9150;2025/OGM/0004;58;F;internet;Wielki Kack
+9151;2025/OGM/0004;30;F;internet;Grabówek
+9152;2025/OGM/0004,2025/OGM/0012;32;F;internet;Karwiny
+9153;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+9154;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wielki Kack
+9155;2025/OGM/0004;25;F;internet;Mały Kack
+9156;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+9157;2025/OGM/0004,2025/OGM/0012;31;M;internet;Grabówek
+9158;2025/OGM/0004,2025/OGM/0012;7;M;internet;Wielki Kack
+9159;2025/OGM/0004,2025/OGM/0012;34;F;internet;Pustki Cisowskie-Demptowo
+9160;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+9161;2025/OGM/0004;41;F;internet;Wielki Kack
+9162;2025/OGM/0004,2025/OGM/0012;39;F;internet;Redłowo
+9163;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+9164;2025/OGM/0004;17;F;internet;Wielki Kack
+9165;2025/OGM/0012;31;F;internet;Mały Kack
+9166;2025/OGM/0004,2025/OGM/0012;36;F;internet;Redłowo
+9167;2025/OGM/0004;19;M;internet;Wielki Kack
+9168;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+9169;2025/OGM/0004;25;F;internet;Działki Leśne
+9170;2025/OGM/0004;45;M;internet;Śródmieście
+9171;2025/OGM/0004;42;F;internet;Działki Leśne
+9172;2025/OGM/0004,2025/OGM/0012;46;F;internet;Śródmieście
+9173;2025/OGM/0004,2025/OGM/0012;47;F;internet;Babie Doły
+9174;2025/OGM/0004,2025/OGM/0012;19;M;internet;Śródmieście
+9176;2025/OGM/0004,2025/OGM/0012;75;F;internet;Obłuże
+9177;2025/OGM/0004,2025/OGM/0012;45;M;internet;Orłowo
+9178;2025/OGM/0004;47;M;internet;Działki Leśne
+9179;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wzgórze Św. Maksymiliana
+9180;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+9181;2025/OGM/0004,2025/OGM/0012;56;F;internet;Oksywie
+9182;2025/OGM/0004,2025/OGM/0012;6;M;internet;Obłuże
+9183;2025/OGM/0012;66;F;internet;Wzgórze Św. Maksymiliana
+9184;2025/OGM/0004,2025/OGM/0012;37;M;internet;Obłuże
+9185;2025/OGM/0004,2025/OGM/0012;;M;internet;Obłuże
+9186;2025/OGM/0004,2025/OGM/0012;11;F;internet;Witomino
+9188;2025/OGM/0004;29;F;internet;Redłowo
+9189;2025/OGM/0004,2025/OGM/0012;9;F;internet;Witomino
+9190;2025/OGM/0004;6;F;internet;Śródmieście
+9191;2025/OGM/0004;9;M;internet;Mały Kack
+9192;2025/OGM/0004,2025/OGM/0012;44;F;internet;Witomino
+9193;2025/OGM/0012;32;M;internet;Kamienna Góra
+9195;2025/OGM/0004;7;F;internet;Mały Kack
+9196;2025/OGM/0004;24;F;internet;Cisowa
+9197;2025/OGM/0004;19;M;internet;Leszczynki
+9198;2025/OGM/0004;20;M;internet;Pustki Cisowskie-Demptowo
+9199;2025/OGM/0004;42;M;internet;Mały Kack
+9200;2025/OGM/0004;46;M;internet;Witomino
+9201;2025/OGM/0004,2025/OGM/0012;50;M;internet;Mały Kack
+9202;2025/OGM/0012;47;M;internet;Witomino
+9203;2025/OGM/0004;24;M;internet;Chylonia
+9205;2025/OGM/0012;39;F;internet;Śródmieście
+9208;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chylonia
+9209;2025/OGM/0004;41;F;internet;Działki Leśne
+9210;2025/OGM/0004,2025/OGM/0012;51;M;internet;Działki Leśne
+9211;2025/OGM/0012;40;F;internet;Działki Leśne
+9212;2025/OGM/0004;48;M;internet;Wielki Kack
+9214;2025/OGM/0004;35;F;internet;Pogórze
+9215;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+9216;2025/OGM/0004;67;M;internet;Działki Leśne
+9217;2025/OGM/0004;34;F;internet;Leszczynki
+9218;2025/OGM/0004;43;F;internet;Pustki Cisowskie-Demptowo
+9219;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+9220;2025/OGM/0012;45;F;internet;Pustki Cisowskie-Demptowo
+9221;2025/OGM/0012;46;M;internet;Pustki Cisowskie-Demptowo
+9222;2025/OGM/0012;18;F;internet;Pustki Cisowskie-Demptowo
+9223;2025/OGM/0012;14;M;internet;Pustki Cisowskie-Demptowo
+9224;2025/OGM/0012;14;F;internet;Pustki Cisowskie-Demptowo
+9225;2025/OGM/0012;54;F;internet;Witomino
+9226;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wzgórze Św. Maksymiliana
+9227;2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+9228;2025/OGM/0004;57;M;internet;Działki Leśne
+9229;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+9230;2025/OGM/0004,2025/OGM/0012;65;M;internet;Pustki Cisowskie-Demptowo
+9231;2025/OGM/0012;62;F;internet;Działki Leśne
+9232;2025/OGM/0012;41;F;internet;Redłowo
+9233;2025/OGM/0004;47;M;internet;Pustki Cisowskie-Demptowo
+9234;2025/OGM/0004;31;M;internet;Pustki Cisowskie-Demptowo
+9235;2025/OGM/0004,2025/OGM/0012;32;F;internet;Witomino
+9236;2025/OGM/0004,2025/OGM/0012;37;M;internet;Oksywie
+9237;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+9238;2025/OGM/0004;19;F;internet;Mały Kack
+9239;2025/OGM/0004;43;F;internet;Mały Kack
+9240;2025/OGM/0004,2025/OGM/0012;42;F;internet;Obłuże
+9241;2025/OGM/0004;30;F;internet;Karwiny
+9242;2025/OGM/0004,2025/OGM/0012;17;M;internet;Pogórze
+9243;2025/OGM/0004,2025/OGM/0012;33;M;internet;Oksywie
+9244;2025/OGM/0012;15;M;internet;Grabówek
+9246;2025/OGM/0004,2025/OGM/0012;37;M;internet;Pustki Cisowskie-Demptowo
+9247;2025/OGM/0004;12;F;internet;Mały Kack
+9248;2025/OGM/0004;52;M;internet;Mały Kack
+9249;2025/OGM/0004,2025/OGM/0012;36;F;internet;Pustki Cisowskie-Demptowo
+9250;2025/OGM/0004,2025/OGM/0012;16;M;internet;Pustki Cisowskie-Demptowo
+9251;2025/OGM/0012;17;F;internet;Wielki Kack
+9252;2025/OGM/0004,2025/OGM/0012;5;F;internet;Pustki Cisowskie-Demptowo
+9253;2025/OGM/0004,2025/OGM/0012;24;F;internet;Leszczynki
+9254;2025/OGM/0004;38;M;internet;Redłowo
+9255;2025/OGM/0004,2025/OGM/0012;3;F;internet;Pustki Cisowskie-Demptowo
+9256;2025/OGM/0012;18;F;internet;Oksywie
+9258;2025/OGM/0012;47;M;internet;Babie Doły
+9259;2025/OGM/0012;45;F;internet;Babie Doły
+9260;2025/OGM/0004;37;F;internet;Redłowo
+9261;2025/OGM/0004;39;F;internet;Mały Kack
+9262;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+9263;2025/OGM/0004,2025/OGM/0012;54;F;internet;Cisowa
+9264;2025/OGM/0012;51;F;internet;Cisowa
+9265;2025/OGM/0004,2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+9266;2025/OGM/0004,2025/OGM/0012;81;F;internet;Chylonia
+9267;2025/OGM/0004,2025/OGM/0012;32;F;internet;Cisowa
+9268;2025/OGM/0012;50;M;internet;Pustki Cisowskie-Demptowo
+9269;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+9270;2025/OGM/0012;57;F;internet;Działki Leśne
+9271;2025/OGM/0004,2025/OGM/0012;42;F;internet;Witomino
+9272;2025/OGM/0012;47;M;internet;Chwarzno-Wiczlino
+9273;2025/OGM/0004;61;F;internet;Pustki Cisowskie-Demptowo
+9274;2025/OGM/0004;48;M;internet;Cisowa
+9275;2025/OGM/0012;41;M;internet;Oksywie
+9276;2025/OGM/0004,2025/OGM/0012;71;M;internet;Pogórze
+9277;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+9278;2025/OGM/0004;17;F;internet;Cisowa
+9280;2025/OGM/0004;62;F;internet;Cisowa
+9283;2025/OGM/0012;67;M;internet;Śródmieście
+9284;2025/OGM/0004,2025/OGM/0012;46;F;internet;Obłuże
+9285;2025/OGM/0004;39;F;internet;Dąbrowa
+9286;2025/OGM/0004;56;M;internet;Cisowa
+9287;2025/OGM/0004;55;M;internet;Mały Kack
+9288;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+9291;2025/OGM/0004;53;M;internet;Karwiny
+9292;2025/OGM/0012;41;F;internet;Pogórze
+9293;2025/OGM/0012;66;F;internet;Pogórze
+9294;2025/OGM/0004,2025/OGM/0012;9;M;internet;Obłuże
+9295;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+9296;2025/OGM/0004;45;F;internet;Mały Kack
+9297;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chwarzno-Wiczlino
+9298;2025/OGM/0004;44;F;internet;Obłuże
+9299;2025/OGM/0004;47;M;internet;Pogórze
+9300;2025/OGM/0004;12;F;internet;Obłuże
+9301;2025/OGM/0004;15;M;internet;Pogórze
+9302;2025/OGM/0004;39;M;internet;Wielki Kack
+9303;2025/OGM/0004;34;F;internet;Witomino
+9304;2025/OGM/0004;15;M;internet;Pogórze
+9305;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+9306;2025/OGM/0004;28;M;internet;Śródmieście
+9307;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+9308;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+9309;2025/OGM/0004;36;F;internet;Chylonia
+9310;2025/OGM/0004;57;F;internet;Cisowa
+9311;2025/OGM/0004;60;F;internet;Witomino
+9312;2025/OGM/0004;62;M;internet;Cisowa
+9313;2025/OGM/0004;55;F;internet;Dąbrowa
+9314;2025/OGM/0012;74;F;internet;Chylonia
+9315;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+9316;2025/OGM/0004;33;M;internet;Wzgórze Św. Maksymiliana
+9317;2025/OGM/0004;22;M;internet;Śródmieście
+9318;2025/OGM/0004;71;F;internet;Pustki Cisowskie-Demptowo
+9320;2025/OGM/0004,2025/OGM/0012;20;M;internet;Chwarzno-Wiczlino
+9321;2025/OGM/0004,2025/OGM/0012;36;M;internet;Działki Leśne
+9322;2025/OGM/0004;67;M;internet;Pustki Cisowskie-Demptowo
+9324;2025/OGM/0004;40;F;internet;Wielki Kack
+9325;2025/OGM/0004;51;F;internet;Wielki Kack
+9326;2025/OGM/0004;45;M;internet;Grabówek
+9328;2025/OGM/0004;6;F;internet;Grabówek
+9329;2025/OGM/0004;50;M;internet;Działki Leśne
+9330;2025/OGM/0004;9;F;internet;Grabówek
+9331;2025/OGM/0004;52;F;internet;Wielki Kack
+9332;2025/OGM/0004,2025/OGM/0012;49;F;internet;Pustki Cisowskie-Demptowo
+9333;2025/OGM/0012;70;F;internet;Chwarzno-Wiczlino
+9334;2025/OGM/0004;45;F;internet;Grabówek
+9335;2025/OGM/0004;22;M;internet;Karwiny
+9336;2025/OGM/0012;34;M;internet;Orłowo
+9337;2025/OGM/0004,2025/OGM/0012;80;F;internet;Pustki Cisowskie-Demptowo
+9338;2025/OGM/0004;17;F;internet;Chylonia
+9339;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+9340;2025/OGM/0004;46;M;internet;Wzgórze Św. Maksymiliana
+9341;2025/OGM/0004;43;F;internet;Dąbrowa
+9343;2025/OGM/0004;39;M;internet;Obłuże
+9344;2025/OGM/0004;29;M;internet;Pustki Cisowskie-Demptowo
+9345;2025/OGM/0004;13;F;internet;Dąbrowa
+9346;2025/OGM/0004;9;F;internet;Dąbrowa
+9348;2025/OGM/0004;19;M;internet;Mały Kack
+9349;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+9350;2025/OGM/0004;8;M;internet;Dąbrowa
+9351;2025/OGM/0004;3;M;internet;Pustki Cisowskie-Demptowo
+9352;2025/OGM/0004,2025/OGM/0012;19;F;internet;Dąbrowa
+9353;2025/OGM/0004;;F;internet;Pustki Cisowskie-Demptowo
+9354;2025/OGM/0004;40;F;internet;Dąbrowa
+9356;2025/OGM/0004;55;F;internet;Chylonia
+9357;2025/OGM/0004;36;M;internet;Grabówek
+9359;2025/OGM/0012;43;M;internet;Redłowo
+9360;2025/OGM/0004;44;F;internet;Mały Kack
+9361;2025/OGM/0004;46;M;internet;Dąbrowa
+9362;2025/OGM/0004;39;M;internet;Wielki Kack
+9364;2025/OGM/0004;39;M;internet;Leszczynki
+9365;2025/OGM/0004,2025/OGM/0012;54;M;internet;Chylonia
+9366;2025/OGM/0004;25;F;internet;Obłuże
+9367;2025/OGM/0004;47;F;internet;Oksywie
+9368;2025/OGM/0012;4;M;internet;Pustki Cisowskie-Demptowo
+9369;2025/OGM/0004,2025/OGM/0012;43;F;internet;Redłowo
+9370;2025/OGM/0004;49;F;internet;Cisowa
+9371;2025/OGM/0004;34;F;internet;Cisowa
+9372;2025/OGM/0012;63;F;internet;Witomino
+9373;2025/OGM/0004;39;F;internet;Działki Leśne
+9374;2025/OGM/0004;29;M;internet;Obłuże
+9375;2025/OGM/0004,2025/OGM/0012;38;M;internet;Obłuże
+9376;2025/OGM/0012;40;F;internet;Orłowo
+9377;2025/OGM/0004;34;F;internet;Działki Leśne
+9378;2025/OGM/0004;37;F;internet;Dąbrowa
+9379;2025/OGM/0012;48;M;internet;Wielki Kack
+9380;2025/OGM/0004,2025/OGM/0012;45;M;internet;Działki Leśne
+9381;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+9382;2025/OGM/0004;42;M;internet;Dąbrowa
+9383;2025/OGM/0012;13;M;internet;Orłowo
+9384;2025/OGM/0004;72;F;internet;Dąbrowa
+9385;2025/OGM/0004;56;M;internet;Obłuże
+9386;2025/OGM/0012;43;M;internet;Orłowo
+9387;2025/OGM/0004;72;M;internet;Dąbrowa
+9388;2025/OGM/0004;7;F;internet;Dąbrowa
+9389;2025/OGM/0004;25;M;internet;Dąbrowa
+9391;2025/OGM/0012;24;F;internet;Witomino
+9393;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+9394;2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+9396;2025/OGM/0004,2025/OGM/0012;52;F;internet;Leszczynki
+9398;2025/OGM/0004;36;F;internet;Obłuże
+9399;2025/OGM/0004;3;F;internet;Obłuże
+9400;2025/OGM/0004;1;M;internet;Obłuże
+9401;2025/OGM/0004;58;M;internet;Chwarzno-Wiczlino
+9402;2025/OGM/0004,2025/OGM/0012;74;F;internet;Obłuże
+9403;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+9404;2025/OGM/0004;31;F;internet;Dąbrowa
+9405;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+9406;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+9407;2025/OGM/0004,2025/OGM/0012;74;M;internet;Dąbrowa
+9408;2025/OGM/0004,2025/OGM/0012;2;F;internet;Wielki Kack
+9409;2025/OGM/0004,2025/OGM/0012;45;F;internet;Pustki Cisowskie-Demptowo
+9410;2025/OGM/0004;36;M;internet;Karwiny
+9411;2025/OGM/0004;48;F;internet;Mały Kack
+9412;2025/OGM/0004,2025/OGM/0012;49;F;internet;Śródmieście
+9413;2025/OGM/0004,2025/OGM/0012;74;F;internet;Dąbrowa
+9414;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+9415;2025/OGM/0004,2025/OGM/0012;10;F;internet;Grabówek
+9416;2025/OGM/0004;43;F;internet;Działki Leśne
+9417;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+9418;2025/OGM/0004,2025/OGM/0012;39;F;internet;Śródmieście
+9419;2025/OGM/0004,2025/OGM/0012;31;F;internet;Cisowa
+9420;2025/OGM/0004,2025/OGM/0012;58;F;internet;Witomino
+9421;2025/OGM/0004;39;F;internet;Obłuże
+9422;2025/OGM/0004;70;F;internet;Obłuże
+9423;2025/OGM/0004,2025/OGM/0012;13;F;internet;Dąbrowa
+9424;2025/OGM/0004,2025/OGM/0012;;F;internet;Pustki Cisowskie-Demptowo
+9425;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+9426;2025/OGM/0004;70;F;internet;Dąbrowa
+9427;2025/OGM/0012;39;F;internet;Witomino
+9428;2025/OGM/0004;70;M;internet;Chylonia
+9429;2025/OGM/0004;42;F;internet;Dąbrowa
+9431;2025/OGM/0004;40;F;internet;Wielki Kack
+9433;2025/OGM/0004,2025/OGM/0012;66;M;internet;Dąbrowa
+9435;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+9436;2025/OGM/0004;9;F;internet;Witomino
+9437;2025/OGM/0004;33;F;internet;Cisowa
+9438;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+9439;2025/OGM/0004;4;M;internet;Chwarzno-Wiczlino
+9440;2025/OGM/0004;30;F;internet;Pogórze
+9441;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+9442;2025/OGM/0012;12;F;internet;Witomino
+9443;2025/OGM/0004;3;F;internet;Chwarzno-Wiczlino
+9444;2025/OGM/0004,2025/OGM/0012;38;M;internet;Działki Leśne
+9445;2025/OGM/0004,2025/OGM/0012;40;F;internet;Grabówek
+9446;2025/OGM/0004;41;F;internet;Leszczynki
+9447;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+9448;2025/OGM/0004,2025/OGM/0012;20;M;internet;Chylonia
+9449;2025/OGM/0004;51;F;internet;Chylonia
+9450;2025/OGM/0004;45;M;internet;Leszczynki
+9451;2025/OGM/0004,2025/OGM/0012;57;F;internet;Obłuże
+9452;2025/OGM/0004;15;F;internet;Chylonia
+9453;2025/OGM/0004;34;M;internet;Cisowa
+9454;2025/OGM/0004,2025/OGM/0012;13;M;internet;Leszczynki
+9455;2025/OGM/0004;73;F;internet;Działki Leśne
+9456;2025/OGM/0004,2025/OGM/0012;54;M;internet;Witomino
+9457;2025/OGM/0012;12;F;internet;Oksywie
+9458;2025/OGM/0004,2025/OGM/0012;6;F;internet;Leszczynki
+9459;2025/OGM/0004;53;M;internet;Dąbrowa
+9460;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+9461;2025/OGM/0012;8;F;internet;Chylonia
+9462;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chylonia
+9463;2025/OGM/0004,2025/OGM/0012;19;M;internet;Witomino
+9464;2025/OGM/0004,2025/OGM/0012;11;F;internet;Obłuże
+9465;2025/OGM/0012;16;M;internet;Babie Doły
+9466;2025/OGM/0004,2025/OGM/0012;42;M;internet;Dąbrowa
+9467;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+9468;2025/OGM/0012;14;F;internet;Babie Doły
+9469;2025/OGM/0004;70;F;internet;Chylonia
+9470;2025/OGM/0012;18;M;internet;Babie Doły
+9471;2025/OGM/0004;45;F;internet;Obłuże
+9472;2025/OGM/0004;76;F;internet;Dąbrowa
+9473;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+9474;2025/OGM/0004,2025/OGM/0012;46;M;internet;Obłuże
+9475;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+9476;2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+9477;2025/OGM/0004,2025/OGM/0012;12;M;internet;Dąbrowa
+9478;2025/OGM/0004,2025/OGM/0012;9;F;internet;Dąbrowa
+9479;2025/OGM/0004,2025/OGM/0012;43;F;internet;Witomino
+9480;2025/OGM/0004,2025/OGM/0012;6;F;internet;Dąbrowa
+9481;2025/OGM/0004,2025/OGM/0012;48;F;internet;Karwiny
+9482;2025/OGM/0004;43;M;internet;Działki Leśne
+9483;2025/OGM/0004,2025/OGM/0012;41;M;internet;Dąbrowa
+9484;2025/OGM/0004,2025/OGM/0012;42;F;internet;Orłowo
+9485;2025/OGM/0004;77;F;internet;Pustki Cisowskie-Demptowo
+9487;2025/OGM/0004;19;F;internet;Śródmieście
+9488;2025/OGM/0004;21;F;internet;Pustki Cisowskie-Demptowo
+9489;2025/OGM/0012;21;F;internet;Witomino
+9490;2025/OGM/0004;20;F;internet;Witomino
+9491;2025/OGM/0004,2025/OGM/0012;36;M;internet;Dąbrowa
+9492;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+9493;2025/OGM/0012;53;F;internet;Redłowo
+9494;2025/OGM/0004;35;M;internet;Pogórze
+9495;2025/OGM/0004;59;F;internet;Chylonia
+9496;2025/OGM/0004;39;M;internet;Śródmieście
+9499;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+9500;2025/OGM/0004;35;F;internet;Kamienna Góra
+9501;2025/OGM/0004;83;M;internet;Chwarzno-Wiczlino
+9502;2025/OGM/0004,2025/OGM/0012;41;M;internet;Karwiny
+9504;2025/OGM/0004;23;M;internet;Grabówek
+9505;2025/OGM/0012;51;F;internet;Pogórze
+9506;2025/OGM/0004;54;M;internet;Pogórze
+9507;2025/OGM/0004;42;F;internet;Mały Kack
+9509;2025/OGM/0004;50;F;internet;Mały Kack
+9510;2025/OGM/0004;2;M;internet;Pogórze
+9511;2025/OGM/0004;39;F;internet;Dąbrowa
+9512;2025/OGM/0004;29;M;internet;Wzgórze Św. Maksymiliana
+9514;2025/OGM/0004;49;M;internet;Kamienna Góra
+9515;2025/OGM/0012;45;M;internet;Działki Leśne
+9516;2025/OGM/0004;17;M;internet;Kamienna Góra
+9517;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+9518;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+9519;2025/OGM/0012;45;F;internet;Mały Kack
+9520;2025/OGM/0012;23;F;internet;Dąbrowa
+9521;2025/OGM/0004;31;M;internet;Pustki Cisowskie-Demptowo
+9522;2025/OGM/0012;23;F;internet;Redłowo
+9523;2025/OGM/0012;53;F;internet;Działki Leśne
+9524;2025/OGM/0004;50;M;internet;Obłuże
+9525;2025/OGM/0004;78;F;internet;Chylonia
+9526;2025/OGM/0004,2025/OGM/0012;46;F;internet;Orłowo
+9527;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+9528;2025/OGM/0004;24;M;internet;Leszczynki
+9529;2025/OGM/0004;72;F;internet;Chylonia
+9530;2025/OGM/0004;67;F;internet;Dąbrowa
+9531;2025/OGM/0012;62;F;internet;Orłowo
+9532;2025/OGM/0004;68;M;internet;Dąbrowa
+9533;2025/OGM/0004;50;F;internet;Działki Leśne
+9534;2025/OGM/0012;26;F;internet;Orłowo
+9535;2025/OGM/0004;33;F;internet;Pogórze
+9536;2025/OGM/0004,2025/OGM/0012;19;F;internet;Orłowo
+9537;2025/OGM/0004;34;F;internet;Dąbrowa
+9538;2025/OGM/0004;36;M;internet;Dąbrowa
+9539;2025/OGM/0004;22;F;internet;Wielki Kack
+9540;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+9541;2025/OGM/0004;40;M;internet;Wielki Kack
+9542;2025/OGM/0004;51;F;internet;Mały Kack
+9543;2025/OGM/0004;21;F;internet;Mały Kack
+9544;2025/OGM/0012;44;F;internet;Witomino
+9545;2025/OGM/0004;20;F;internet;Grabówek
+9546;2025/OGM/0004,2025/OGM/0012;57;F;internet;Kamienna Góra
+9547;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+9548;2025/OGM/0004;42;F;internet;Mały Kack
+9550;2025/OGM/0004;41;F;internet;Pustki Cisowskie-Demptowo
+9551;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+9552;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+9553;2025/OGM/0004,2025/OGM/0012;48;F;internet;Redłowo
+9554;2025/OGM/0012;35;F;internet;Chylonia
+9555;2025/OGM/0004;71;F;internet;Pustki Cisowskie-Demptowo
+9556;2025/OGM/0004;12;F;internet;Pustki Cisowskie-Demptowo
+9557;2025/OGM/0004;50;F;internet;Wielki Kack
+9558;2025/OGM/0004,2025/OGM/0012;35;F;internet;Babie Doły
+9559;2025/OGM/0004;9;M;internet;Pustki Cisowskie-Demptowo
+9560;2025/OGM/0004,2025/OGM/0012;5;F;internet;Babie Doły
+9561;2025/OGM/0004,2025/OGM/0012;38;M;internet;Babie Doły
+9562;2025/OGM/0004;48;F;internet;Chylonia
+9563;2025/OGM/0004,2025/OGM/0012;32;F;internet;Pustki Cisowskie-Demptowo
+9564;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+9565;2025/OGM/0004;49;M;internet;Chwarzno-Wiczlino
+9566;2025/OGM/0004;38;M;internet;Działki Leśne
+9567;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+9569;2025/OGM/0004;48;F;internet;Wielki Kack
+9570;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+9571;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+9572;2025/OGM/0004;37;F;internet;Pogórze
+9573;2025/OGM/0004;39;F;internet;Witomino
+9574;2025/OGM/0004,2025/OGM/0012;21;M;internet;Wielki Kack
+9575;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+9576;2025/OGM/0004,2025/OGM/0012;16;M;internet;Wielki Kack
+9577;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wielki Kack
+9578;2025/OGM/0004,2025/OGM/0012;49;M;internet;Wielki Kack
+9579;2025/OGM/0004;53;F;internet;Pustki Cisowskie-Demptowo
+9580;2025/OGM/0004;72;M;internet;Wielki Kack
+9581;2025/OGM/0012;51;F;internet;Cisowa
+9582;2025/OGM/0004;34;F;internet;Redłowo
+9583;2025/OGM/0004;33;F;internet;Oksywie
+9584;2025/OGM/0004;66;M;internet;Dąbrowa
+9585;2025/OGM/0004;47;M;internet;Mały Kack
+9586;2025/OGM/0012;54;M;internet;Mały Kack
+9587;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+9588;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+9589;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wzgórze Św. Maksymiliana
+9590;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wzgórze Św. Maksymiliana
+9591;2025/OGM/0004,2025/OGM/0012;27;F;internet;Leszczynki
+9592;2025/OGM/0012;86;F;internet;Kamienna Góra
+9593;2025/OGM/0004;34;F;internet;Chylonia
+9594;2025/OGM/0004,2025/OGM/0012;70;M;internet;Dąbrowa
+9595;2025/OGM/0012;35;M;internet;Wielki Kack
+9596;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+9597;2025/OGM/0012;37;F;internet;Mały Kack
+9598;2025/OGM/0004,2025/OGM/0012;4;F;internet;Wielki Kack
+9599;2025/OGM/0004,2025/OGM/0012;46;F;internet;Cisowa
+9600;2025/OGM/0012;10;F;internet;Mały Kack
+9601;2025/OGM/0012;37;F;internet;Pustki Cisowskie-Demptowo
+9602;2025/OGM/0004;48;M;internet;Dąbrowa
+9603;2025/OGM/0012;6;M;internet;Mały Kack
+9604;2025/OGM/0004;45;M;internet;Witomino
+9605;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+9606;2025/OGM/0004;62;F;internet;Chwarzno-Wiczlino
+9607;2025/OGM/0004;44;F;internet;Witomino
+9608;2025/OGM/0004;47;M;internet;Cisowa
+9609;2025/OGM/0004,2025/OGM/0012;86;M;internet;Leszczynki
+9610;2025/OGM/0004;74;F;internet;Witomino
+9611;2025/OGM/0004;72;F;internet;Chylonia
+9613;2025/OGM/0004;79;M;internet;Witomino
+9614;2025/OGM/0012;11;M;internet;Pustki Cisowskie-Demptowo
+9615;2025/OGM/0004;43;M;internet;Kamienna Góra
+9616;2025/OGM/0004;7;F;internet;Witomino
+9617;2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+9618;2025/OGM/0004;40;M;internet;Mały Kack
+9619;2025/OGM/0004;14;F;internet;Witomino
+9620;2025/OGM/0004;27;M;internet;Chwarzno-Wiczlino
+9621;2025/OGM/0004;47;F;internet;Wzgórze Św. Maksymiliana
+9622;2025/OGM/0004;7;F;internet;Witomino
+9623;2025/OGM/0012;10;F;internet;Pustki Cisowskie-Demptowo
+9624;2025/OGM/0004;31;M;internet;Cisowa
+9625;2025/OGM/0004;7;F;internet;Witomino
+9626;2025/OGM/0004;31;F;internet;Cisowa
+9627;2025/OGM/0004;38;F;internet;Mały Kack
+9628;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+9629;2025/OGM/0004;49;F;internet;Wielki Kack
+9630;2025/OGM/0004;8;F;internet;Mały Kack
+9631;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+9632;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+9633;2025/OGM/0004;1;F;internet;Mały Kack
+9634;2025/OGM/0004;72;M;internet;Pustki Cisowskie-Demptowo
+9635;2025/OGM/0004;5;F;internet;Mały Kack
+9636;2025/OGM/0004,2025/OGM/0012;69;F;internet;Grabówek
+9638;2025/OGM/0004,2025/OGM/0012;26;M;internet;Mały Kack
+9639;2025/OGM/0004;68;F;internet;Pogórze
+9641;2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+9642;2025/OGM/0012;9;M;internet;Pustki Cisowskie-Demptowo
+9643;2025/OGM/0004,2025/OGM/0012;54;F;internet;Dąbrowa
+9644;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+9645;2025/OGM/0004;37;M;internet;Mały Kack
+9646;2025/OGM/0004;21;M;internet;Karwiny
+9647;2025/OGM/0004;26;F;internet;Redłowo
+9648;2025/OGM/0004,2025/OGM/0012;55;M;internet;Dąbrowa
+9649;2025/OGM/0004;55;F;internet;Obłuże
+9650;2025/OGM/0004;42;M;internet;Leszczynki
+9651;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wzgórze Św. Maksymiliana
+9652;2025/OGM/0004;13;F;internet;Pustki Cisowskie-Demptowo
+9653;2025/OGM/0004;32;F;internet;Działki Leśne
+9654;2025/OGM/0004;52;F;internet;Dąbrowa
+9655;2025/OGM/0004;13;F;internet;Pustki Cisowskie-Demptowo
+9656;2025/OGM/0004;21;M;internet;Dąbrowa
+9657;2025/OGM/0004,2025/OGM/0012;33;F;internet;Witomino
+9658;2025/OGM/0004;47;M;internet;Dąbrowa
+9659;2025/OGM/0004,2025/OGM/0012;40;F;internet;Cisowa
+9660;2025/OGM/0004;53;F;internet;Witomino
+9661;2025/OGM/0004;26;F;internet;Dąbrowa
+9662;2025/OGM/0004;67;F;internet;Pustki Cisowskie-Demptowo
+9663;2025/OGM/0004;48;F;internet;Redłowo
+9664;2025/OGM/0004,2025/OGM/0012;39;M;internet;Mały Kack
+9665;2025/OGM/0004,2025/OGM/0012;16;F;internet;Mały Kack
+9666;2025/OGM/0004,2025/OGM/0012;7;F;internet;Mały Kack
+9667;2025/OGM/0004;51;F;internet;Cisowa
+9668;2025/OGM/0012;62;F;internet;Pustki Cisowskie-Demptowo
+9669;2025/OGM/0004;40;F;internet;Redłowo
+9670;2025/OGM/0004,2025/OGM/0012;14;F;internet;Mały Kack
+9671;2025/OGM/0004;70;F;internet;Cisowa
+9672;2025/OGM/0004;77;F;internet;Cisowa
+9673;2025/OGM/0004,2025/OGM/0012;13;F;internet;Mały Kack
+9674;2025/OGM/0004,2025/OGM/0012;22;F;internet;Cisowa
+9675;2025/OGM/0004;20;F;internet;Chwarzno-Wiczlino
+9676;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+9677;2025/OGM/0004;19;M;internet;Cisowa
+9678;2025/OGM/0004,2025/OGM/0012;;F;internet;Mały Kack
+9679;2025/OGM/0004;38;M;internet;Pustki Cisowskie-Demptowo
+9680;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+9681;2025/OGM/0004;66;M;internet;Cisowa
+9682;2025/OGM/0004,2025/OGM/0012;37;M;internet;Śródmieście
+9683;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+9684;2025/OGM/0004;61;F;internet;Chylonia
+9685;2025/OGM/0004,2025/OGM/0012;48;M;internet;Mały Kack
+9686;2025/OGM/0004;49;F;internet;Dąbrowa
+9687;2025/OGM/0004;74;F;internet;Cisowa
+9688;2025/OGM/0004,2025/OGM/0012;35;F;internet;Leszczynki
+9689;2025/OGM/0004;44;M;internet;Śródmieście
+9690;2025/OGM/0004,2025/OGM/0012;2;F;internet;Śródmieście
+9691;2025/OGM/0004;50;F;internet;Wielki Kack
+9692;2025/OGM/0004,2025/OGM/0012;46;F;internet;Działki Leśne
+9693;2025/OGM/0004,2025/OGM/0012;31;F;internet;Śródmieście
+9694;2025/OGM/0004;33;F;internet;Cisowa
+9695;2025/OGM/0004;32;F;internet;Pogórze
+9696;2025/OGM/0004,2025/OGM/0012;32;M;internet;Leszczynki
+9697;2025/OGM/0004,2025/OGM/0012;87;M;internet;Wielki Kack
+9698;2025/OGM/0004,2025/OGM/0012;40;F;internet;Karwiny
+9699;2025/OGM/0004;54;M;internet;Chylonia
+9700;2025/OGM/0012;33;F;internet;Redłowo
+9701;2025/OGM/0004,2025/OGM/0012;70;F;internet;Mały Kack
+9702;2025/OGM/0004;25;M;internet;Dąbrowa
+9703;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+9704;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+9705;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+9706;2025/OGM/0004,2025/OGM/0012;2;F;internet;Mały Kack
+9707;2025/OGM/0012;71;F;internet;Witomino
+9708;2025/OGM/0004;39;F;internet;Śródmieście
+9709;2025/OGM/0012;38;F;internet;Witomino
+9710;2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+9711;2025/OGM/0004;58;M;internet;Mały Kack
+9712;2025/OGM/0004;64;F;internet;Mały Kack
+9713;2025/OGM/0012;65;F;internet;Cisowa
+9714;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+9715;2025/OGM/0004;37;F;internet;Cisowa
+9716;2025/OGM/0004,2025/OGM/0012;35;M;internet;Cisowa
+9717;2025/OGM/0004;45;M;internet;Dąbrowa
+9718;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+9720;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chylonia
+9721;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+9722;2025/OGM/0004,2025/OGM/0012;50;M;internet;Oksywie
+9723;2025/OGM/0004;21;M;internet;Pustki Cisowskie-Demptowo
+9724;2025/OGM/0012;35;F;internet;Karwiny
+9725;2025/OGM/0004;48;M;internet;Śródmieście
+9726;2025/OGM/0004;55;M;internet;Mały Kack
+9727;2025/OGM/0004,2025/OGM/0012;47;F;internet;Oksywie
+9728;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+9729;2025/OGM/0004,2025/OGM/0012;60;M;internet;Witomino
+9730;2025/OGM/0012;34;M;internet;Chylonia
+9731;2025/OGM/0004,2025/OGM/0012;72;F;internet;Witomino
+9732;2025/OGM/0004,2025/OGM/0012;7;F;internet;Pustki Cisowskie-Demptowo
+9733;2025/OGM/0004;15;F;internet;Pustki Cisowskie-Demptowo
+9734;2025/OGM/0004;45;M;internet;Cisowa
+9735;2025/OGM/0012;55;M;internet;Chwarzno-Wiczlino
+9737;2025/OGM/0004,2025/OGM/0012;53;F;internet;Witomino
+9739;2025/OGM/0012;47;F;internet;Mały Kack
+9740;2025/OGM/0004;40;F;internet;Cisowa
+9741;2025/OGM/0012;75;F;internet;Dąbrowa
+9742;2025/OGM/0004;56;F;internet;Oksywie
+9743;2025/OGM/0004;51;M;internet;Oksywie
+9745;2025/OGM/0004;40;M;internet;Cisowa
+9746;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+9747;2025/OGM/0004;62;F;internet;Wielki Kack
+9748;2025/OGM/0004;45;F;internet;Karwiny
+9749;2025/OGM/0004;8;F;internet;Witomino
+9750;2025/OGM/0004;72;F;internet;Wielki Kack
+9751;2025/OGM/0004,2025/OGM/0012;46;M;internet;Obłuże
+9752;2025/OGM/0004,2025/OGM/0012;71;F;internet;Witomino
+9753;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+9754;2025/OGM/0004,2025/OGM/0012;73;M;internet;Wielki Kack
+9755;2025/OGM/0004,2025/OGM/0012;27;F;internet;Cisowa
+9756;2025/OGM/0012;72;M;internet;Pustki Cisowskie-Demptowo
+9757;2025/OGM/0004;72;F;internet;Redłowo
+9758;2025/OGM/0004,2025/OGM/0012;10;M;internet;Wielki Kack
+9759;2025/OGM/0004;69;F;internet;Wielki Kack
+9760;2025/OGM/0012;66;M;internet;Redłowo
+9761;2025/OGM/0004;39;F;internet;Cisowa
+9762;2025/OGM/0012;54;F;internet;Karwiny
+9763;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pustki Cisowskie-Demptowo
+9764;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+9765;2025/OGM/0004;38;M;internet;Działki Leśne
+9766;2025/OGM/0004,2025/OGM/0012;38;F;internet;Grabówek
+9767;2025/OGM/0004,2025/OGM/0012;27;M;internet;Cisowa
+9768;2025/OGM/0004;16;M;internet;Działki Leśne
+9769;2025/OGM/0004;38;F;internet;Działki Leśne
+9770;2025/OGM/0004;14;M;internet;Cisowa
+9771;2025/OGM/0012;40;F;internet;Obłuże
+9772;2025/OGM/0004;30;F;internet;Wielki Kack
+9774;2025/OGM/0012;43;M;internet;Orłowo
+9775;2025/OGM/0004;45;M;internet;Działki Leśne
+9776;2025/OGM/0004;35;F;internet;Mały Kack
+9777;2025/OGM/0004;33;F;internet;Grabówek
+9778;2025/OGM/0004,2025/OGM/0012;10;M;internet;Cisowa
+9779;2025/OGM/0004;67;M;internet;Obłuże
+9780;2025/OGM/0004,2025/OGM/0012;43;F;internet;Cisowa
+9781;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+9783;2025/OGM/0004,2025/OGM/0012;50;F;internet;Witomino
+9784;2025/OGM/0004,2025/OGM/0012;42;M;internet;Redłowo
+9785;2025/OGM/0012;37;M;internet;Witomino
+9786;2025/OGM/0012;61;M;internet;Babie Doły
+9787;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wielki Kack
+9789;2025/OGM/0004,2025/OGM/0012;69;M;internet;Działki Leśne
+9790;2025/OGM/0004;68;M;internet;Oksywie
+9791;2025/OGM/0012;22;F;internet;Chylonia
+9792;2025/OGM/0012;55;F;internet;Śródmieście
+9793;2025/OGM/0004,2025/OGM/0012;26;F;internet;Mały Kack
+9794;2025/OGM/0004;83;F;internet;Leszczynki
+9795;2025/OGM/0004;36;F;internet;Witomino
+9796;2025/OGM/0012;56;F;internet;Babie Doły
+9797;2025/OGM/0004,2025/OGM/0012;27;F;internet;Pustki Cisowskie-Demptowo
+9798;2025/OGM/0004,2025/OGM/0012;69;F;internet;Oksywie
+9799;2025/OGM/0004,2025/OGM/0012;3;F;internet;Mały Kack
+9800;2025/OGM/0004;66;F;internet;Grabówek
+9801;2025/OGM/0004,2025/OGM/0012;52;F;internet;Działki Leśne
+9802;2025/OGM/0004;18;M;internet;Chwarzno-Wiczlino
+9804;2025/OGM/0004;23;F;internet;Witomino
+9805;2025/OGM/0004;44;F;internet;Witomino
+9806;2025/OGM/0004;26;M;internet;Chwarzno-Wiczlino
+9807;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+9808;2025/OGM/0004;32;F;internet;Pustki Cisowskie-Demptowo
+9809;2025/OGM/0004,2025/OGM/0012;42;F;internet;Karwiny
+9810;2025/OGM/0004,2025/OGM/0012;51;M;internet;Śródmieście
+9811;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wielki Kack
+9812;2025/OGM/0004;22;F;internet;Oksywie
+9813;2025/OGM/0004;68;F;internet;Chwarzno-Wiczlino
+9814;2025/OGM/0004;90;M;internet;Leszczynki
+9815;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wzgórze Św. Maksymiliana
+9816;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wzgórze Św. Maksymiliana
+9817;2025/OGM/0012;35;F;internet;Pustki Cisowskie-Demptowo
+9818;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+9819;2025/OGM/0004,2025/OGM/0012;62;M;internet;Cisowa
+9820;2025/OGM/0004,2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+9821;2025/OGM/0004;33;F;internet;Dąbrowa
+9822;2025/OGM/0004,2025/OGM/0012;43;F;internet;Obłuże
+9823;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+9824;2025/OGM/0012;26;F;internet;Oksywie
+9825;2025/OGM/0004;40;M;internet;Mały Kack
+9826;2025/OGM/0004;16;M;internet;Chwarzno-Wiczlino
+9827;2025/OGM/0004;41;M;internet;Cisowa
+9828;2025/OGM/0004,2025/OGM/0012;11;M;internet;Chwarzno-Wiczlino
+9829;2025/OGM/0004,2025/OGM/0012;60;F;internet;Cisowa
+9830;2025/OGM/0004;20;F;internet;Obłuże
+9831;2025/OGM/0004;54;F;internet;Babie Doły
+9832;2025/OGM/0004;52;M;internet;Wielki Kack
+9833;2025/OGM/0004,2025/OGM/0012;47;M;internet;Orłowo
+9834;2025/OGM/0004;38;F;internet;Pogórze
+9835;2025/OGM/0004;22;M;internet;Działki Leśne
+9836;2025/OGM/0004,2025/OGM/0012;42;F;internet;Obłuże
+9837;2025/OGM/0004,2025/OGM/0012;36;F;internet;Śródmieście
+9838;2025/OGM/0004,2025/OGM/0012;40;M;internet;Obłuże
+9839;2025/OGM/0004;71;M;internet;Wielki Kack
+9840;2025/OGM/0004;15;M;internet;Obłuże
+9841;2025/OGM/0004;55;M;internet;Babie Doły
+9842;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+9843;2025/OGM/0004;10;M;internet;Pustki Cisowskie-Demptowo
+9844;2025/OGM/0004;73;F;internet;Redłowo
+9845;2025/OGM/0004;60;M;internet;Chwarzno-Wiczlino
+9846;2025/OGM/0004,2025/OGM/0012;25;F;internet;Śródmieście
+9847;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+9848;2025/OGM/0004;13;M;internet;Pustki Cisowskie-Demptowo
+9849;2025/OGM/0004;54;M;internet;Chylonia
+9850;2025/OGM/0004,2025/OGM/0012;47;F;internet;Śródmieście
+9851;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+9852;2025/OGM/0012;32;F;internet;Chylonia
+9853;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+9854;2025/OGM/0012;64;F;internet;Śródmieście
+9855;2025/OGM/0004;51;M;internet;Redłowo
+9856;2025/OGM/0004,2025/OGM/0012;35;F;internet;Grabówek
+9857;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chylonia
+9858;2025/OGM/0004;33;F;internet;Cisowa
+9859;2025/OGM/0004;74;M;internet;Wielki Kack
+9860;2025/OGM/0004,2025/OGM/0012;23;M;internet;Cisowa
+9861;2025/OGM/0004;28;M;internet;Obłuże
+9862;2025/OGM/0004,2025/OGM/0012;43;F;internet;Redłowo
+9863;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chylonia
+9864;2025/OGM/0004;5;M;internet;Chylonia
+9865;2025/OGM/0004,2025/OGM/0012;64;M;internet;Obłuże
+9866;2025/OGM/0004;34;F;internet;Cisowa
+9867;2025/OGM/0004;2;M;internet;Chylonia
+9868;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+9869;2025/OGM/0004;75;F;internet;Witomino
+9870;2025/OGM/0012;74;F;internet;Witomino
+9871;2025/OGM/0004;47;M;internet;Wzgórze Św. Maksymiliana
+9872;2025/OGM/0004;10;F;internet;Cisowa
+9873;2025/OGM/0004;35;M;internet;Chylonia
+9874;2025/OGM/0004,2025/OGM/0012;50;F;internet;Redłowo
+9875;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+9876;2025/OGM/0004;3;F;internet;Cisowa
+9877;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+9878;2025/OGM/0012;49;F;internet;Oksywie
+9879;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+9880;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+9881;2025/OGM/0012;29;F;internet;Oksywie
+9882;2025/OGM/0012;1;M;internet;Chwarzno-Wiczlino
+9883;2025/OGM/0004;46;F;internet;Dąbrowa
+9884;2025/OGM/0004,2025/OGM/0012;71;M;internet;Chylonia
+9885;2025/OGM/0004,2025/OGM/0012;48;M;internet;Pustki Cisowskie-Demptowo
+9886;2025/OGM/0004,2025/OGM/0012;52;M;internet;Witomino
+9887;2025/OGM/0012;5;F;internet;Chwarzno-Wiczlino
+9888;2025/OGM/0012;35;M;internet;Chylonia
+9889;2025/OGM/0004,2025/OGM/0012;10;F;internet;Dąbrowa
+9890;2025/OGM/0004;32;M;internet;Chylonia
+9891;2025/OGM/0012;10;F;internet;Chylonia
+9892;2025/OGM/0012;8;M;internet;Chylonia
+9893;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+9894;2025/OGM/0012;63;F;internet;Działki Leśne
+9895;2025/OGM/0012;72;F;internet;Oksywie
+9896;2025/OGM/0012;55;F;internet;Mały Kack
+9898;2025/OGM/0012;22;F;internet;Witomino
+9899;2025/OGM/0004,2025/OGM/0012;73;F;internet;Działki Leśne
+9900;2025/OGM/0004,2025/OGM/0012;46;M;internet;Redłowo
+9901;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+9903;2025/OGM/0004,2025/OGM/0012;75;F;internet;Działki Leśne
+9904;2025/OGM/0004,2025/OGM/0012;59;M;internet;Oksywie
+9905;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+9906;2025/OGM/0004,2025/OGM/0012;69;F;internet;Wielki Kack
+9907;2025/OGM/0004;21;M;internet;Dąbrowa
+9908;2025/OGM/0004,2025/OGM/0012;4;F;internet;Wielki Kack
+9909;2025/OGM/0004;75;M;internet;Chylonia
+9910;2025/OGM/0004;69;F;internet;Chylonia
+9911;2025/OGM/0004;36;F;internet;Cisowa
+9912;2025/OGM/0012;66;M;internet;Działki Leśne
+9913;2025/OGM/0012;39;M;internet;Oksywie
+9914;2025/OGM/0004,2025/OGM/0012;19;M;internet;Obłuże
+9915;2025/OGM/0004;42;F;internet;Grabówek
+9916;2025/OGM/0004;36;F;internet;Mały Kack
+9917;2025/OGM/0004;68;F;internet;Obłuże
+9918;2025/OGM/0004;74;F;internet;Obłuże
+9919;2025/OGM/0004;37;F;internet;Leszczynki
+9920;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+9921;2025/OGM/0004;40;M;internet;Dąbrowa
+9922;2025/OGM/0004;61;F;internet;Obłuże
+9923;2025/OGM/0012;40;F;internet;Chylonia
+9924;2025/OGM/0004;70;F;internet;Obłuże
+9925;2025/OGM/0004;44;F;internet;Wielki Kack
+9926;2025/OGM/0004,2025/OGM/0012;61;F;internet;Obłuże
+9927;2025/OGM/0004,2025/OGM/0012;11;F;internet;Dąbrowa
+9928;2025/OGM/0004,2025/OGM/0012;22;F;internet;Śródmieście
+9929;2025/OGM/0004;61;M;internet;Mały Kack
+9931;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+9932;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wzgórze Św. Maksymiliana
+9933;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wzgórze Św. Maksymiliana
+9934;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wzgórze Św. Maksymiliana
+9935;2025/OGM/0004;23;M;internet;Redłowo
+9936;2025/OGM/0004,2025/OGM/0012;74;M;internet;Chwarzno-Wiczlino
+9937;2025/OGM/0004;35;M;internet;Mały Kack
+9938;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wzgórze Św. Maksymiliana
+9939;2025/OGM/0004,2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+9940;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+9941;2025/OGM/0004;41;M;internet;Mały Kack
+9942;2025/OGM/0004;65;F;internet;Babie Doły
+9943;2025/OGM/0004;51;F;internet;Pustki Cisowskie-Demptowo
+9944;2025/OGM/0004,2025/OGM/0012;37;M;internet;Obłuże
+9945;2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+9946;2025/OGM/0012;32;F;internet;Wielki Kack
+9947;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+9948;2025/OGM/0004,2025/OGM/0012;43;M;internet;Obłuże
+9950;2025/OGM/0004;41;F;internet;Działki Leśne
+9951;2025/OGM/0004;40;M;internet;Cisowa
+9952;2025/OGM/0004;62;F;internet;Wielki Kack
+9953;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chylonia
+9954;2025/OGM/0012;46;F;internet;Działki Leśne
+9955;2025/OGM/0004;18;M;internet;Dąbrowa
+9956;2025/OGM/0004;28;F;internet;Wielki Kack
+9957;2025/OGM/0004;28;M;internet;Wielki Kack
+9958;2025/OGM/0004;42;F;internet;Dąbrowa
+9960;2025/OGM/0004,2025/OGM/0012;63;M;internet;Babie Doły
+9961;2025/OGM/0004;12;F;internet;Wielki Kack
+9962;2025/OGM/0004,2025/OGM/0012;70;F;internet;Wielki Kack
+9963;2025/OGM/0004,2025/OGM/0012;67;F;internet;Obłuże
+9965;2025/OGM/0004,2025/OGM/0012;70;F;internet;Chwarzno-Wiczlino
+9967;2025/OGM/0004;23;M;internet;Chwarzno-Wiczlino
+9968;2025/OGM/0012;74;F;internet;Śródmieście
+9969;2025/OGM/0004,2025/OGM/0012;34;F;internet;Obłuże
+9970;2025/OGM/0012;23;F;internet;Pustki Cisowskie-Demptowo
+9974;2025/OGM/0012;9;F;internet;Pustki Cisowskie-Demptowo
+9975;2025/OGM/0004;39;M;internet;Obłuże
+9976;2025/OGM/0004;34;F;internet;Wielki Kack
+9977;2025/OGM/0004;44;F;internet;Cisowa
+9979;2025/OGM/0004;38;M;internet;Działki Leśne
+9980;2025/OGM/0012;72;F;internet;Pustki Cisowskie-Demptowo
+9981;2025/OGM/0004;40;F;internet;Karwiny
+9982;2025/OGM/0012;73;M;internet;Pustki Cisowskie-Demptowo
+9983;2025/OGM/0004;44;F;internet;Chylonia
+9984;2025/OGM/0012;18;M;internet;Chwarzno-Wiczlino
+9985;2025/OGM/0004;48;M;internet;Chylonia
+9986;2025/OGM/0004,2025/OGM/0012;7;M;internet;Śródmieście
+9987;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+9988;2025/OGM/0004;39;F;internet;Cisowa
+9989;2025/OGM/0004,2025/OGM/0012;11;F;internet;Pustki Cisowskie-Demptowo
+9990;2025/OGM/0012;44;F;internet;Śródmieście
+9991;2025/OGM/0004;48;F;internet;Redłowo
+9994;2025/OGM/0004;41;F;internet;Obłuże
+9995;2025/OGM/0004;9;F;internet;Działki Leśne
+9996;2025/OGM/0004;11;M;internet;Obłuże
+9997;2025/OGM/0004,2025/OGM/0012;71;F;internet;Śródmieście
+9998;2025/OGM/0004;34;M;internet;Mały Kack
+10000;2025/OGM/0004,2025/OGM/0012;63;F;internet;Śródmieście
+10001;2025/OGM/0004;45;F;internet;Chylonia
+10003;2025/OGM/0004;46;F;internet;Działki Leśne
+10004;2025/OGM/0012;76;F;internet;Witomino
+10005;2025/OGM/0004,2025/OGM/0012;63;F;internet;Wielki Kack
+10006;2025/OGM/0012;79;M;internet;Witomino
+10007;2025/OGM/0004;15;F;internet;Działki Leśne
+10009;2025/OGM/0004;20;F;internet;Działki Leśne
+10011;2025/OGM/0012;35;F;internet;Oksywie
+10012;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+10013;2025/OGM/0004;37;M;internet;Wielki Kack
+10014;2025/OGM/0012;27;F;internet;Witomino
+10016;2025/OGM/0004;45;F;internet;Wielki Kack
+10017;2025/OGM/0004;68;M;internet;Wielki Kack
+10018;2025/OGM/0004;43;F;internet;Karwiny
+10019;2025/OGM/0004,2025/OGM/0012;30;F;internet;Śródmieście
+10020;2025/OGM/0004;43;F;internet;Chylonia
+10021;2025/OGM/0004;23;M;internet;Wielki Kack
+10022;2025/OGM/0004;44;M;internet;Chylonia
+10023;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+10024;2025/OGM/0004,2025/OGM/0012;3;F;internet;Chwarzno-Wiczlino
+10025;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+10026;2025/OGM/0004;56;F;internet;Wielki Kack
+10027;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+10028;2025/OGM/0012;73;M;internet;Oksywie
+10029;2025/OGM/0004;62;M;internet;Wielki Kack
+10031;2025/OGM/0004,2025/OGM/0012;52;F;internet;Dąbrowa
+10032;2025/OGM/0004;32;M;internet;Cisowa
+10033;2025/OGM/0012;72;F;internet;Oksywie
+10036;2025/OGM/0004;44;F;internet;Grabówek
+10037;2025/OGM/0012;46;F;internet;Pustki Cisowskie-Demptowo
+10038;2025/OGM/0004,2025/OGM/0012;69;F;internet;Dąbrowa
+10039;2025/OGM/0004;26;F;internet;Wielki Kack
+10040;2025/OGM/0004;41;M;internet;Dąbrowa
+10041;2025/OGM/0004;41;M;internet;Pogórze
+10043;2025/OGM/0004;25;F;internet;Pogórze
+10044;2025/OGM/0004;66;F;internet;Pogórze
+10045;2025/OGM/0004,2025/OGM/0012;18;M;internet;Wielki Kack
+10046;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+10047;2025/OGM/0012;39;F;internet;Wielki Kack
+10048;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+10049;2025/OGM/0004;4;F;internet;Wielki Kack
+10050;2025/OGM/0004;18;M;internet;Chwarzno-Wiczlino
+10051;2025/OGM/0004;12;F;internet;Wielki Kack
+10052;2025/OGM/0004,2025/OGM/0012;47;F;internet;Oksywie
+10053;2025/OGM/0004;15;F;internet;Wielki Kack
+10054;2025/OGM/0012;51;M;internet;Wielki Kack
+10055;2025/OGM/0004,2025/OGM/0012;24;F;internet;Wielki Kack
+10056;2025/OGM/0004;50;M;internet;Wielki Kack
+10057;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wielki Kack
+10058;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+10059;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+10060;2025/OGM/0004;50;F;internet;Wielki Kack
+10061;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wielki Kack
+10062;2025/OGM/0012;65;F;internet;Działki Leśne
+10063;2025/OGM/0004,2025/OGM/0012;42;M;internet;Pustki Cisowskie-Demptowo
+10064;2025/OGM/0004;34;M;internet;Cisowa
+10065;2025/OGM/0004,2025/OGM/0012;71;M;internet;Śródmieście
+10066;2025/OGM/0004;43;F;internet;Karwiny
+10067;2025/OGM/0004;48;F;internet;Śródmieście
+10068;2025/OGM/0004;75;F;internet;Pustki Cisowskie-Demptowo
+10069;2025/OGM/0004,2025/OGM/0012;45;F;internet;Babie Doły
+10070;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+10071;2025/OGM/0004,2025/OGM/0012;57;F;internet;Leszczynki
+10072;2025/OGM/0004,2025/OGM/0012;27;F;internet;Karwiny
+10073;2025/OGM/0004,2025/OGM/0012;27;F;internet;Śródmieście
+10075;2025/OGM/0004;36;M;internet;Pogórze
+10076;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+10077;2025/OGM/0004,2025/OGM/0012;46;F;internet;Pogórze
+10078;2025/OGM/0004,2025/OGM/0012;58;F;internet;Dąbrowa
+10079;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+10080;2025/OGM/0004;47;F;internet;Obłuże
+10081;2025/OGM/0004,2025/OGM/0012;13;M;internet;Pogórze
+10082;2025/OGM/0004;53;M;internet;Obłuże
+10083;2025/OGM/0004,2025/OGM/0012;18;M;internet;Pogórze
+10084;2025/OGM/0004;50;F;internet;Wielki Kack
+10085;2025/OGM/0004;42;F;internet;Obłuże
+10086;2025/OGM/0004;52;M;internet;Wielki Kack
+10087;2025/OGM/0012;35;M;internet;Wielki Kack
+10088;2025/OGM/0004;13;F;internet;Obłuże
+10089;2025/OGM/0012;51;F;internet;Witomino
+10090;2025/OGM/0004,2025/OGM/0012;9;F;internet;Wielki Kack
+10091;2025/OGM/0004;21;M;internet;Wielki Kack
+10092;2025/OGM/0012;65;F;internet;Obłuże
+10093;2025/OGM/0012;54;M;internet;Redłowo
+10094;2025/OGM/0012;72;F;internet;Witomino
+10095;2025/OGM/0004;23;M;internet;Obłuże
+10096;2025/OGM/0004;33;F;internet;Dąbrowa
+10097;2025/OGM/0004;28;M;internet;Chwarzno-Wiczlino
+10098;2025/OGM/0004,2025/OGM/0012;55;M;internet;Pustki Cisowskie-Demptowo
+10099;2025/OGM/0004;70;M;internet;Dąbrowa
+10100;2025/OGM/0004;46;M;internet;Wielki Kack
+10101;2025/OGM/0004;52;F;internet;Działki Leśne
+10102;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+10103;2025/OGM/0012;36;F;internet;Mały Kack
+10104;2025/OGM/0004,2025/OGM/0012;16;M;internet;Pustki Cisowskie-Demptowo
+10105;2025/OGM/0004,2025/OGM/0012;56;M;internet;Pustki Cisowskie-Demptowo
+10106;2025/OGM/0004,2025/OGM/0012;54;F;internet;Chylonia
+10107;2025/OGM/0004,2025/OGM/0012;5;F;internet;Pustki Cisowskie-Demptowo
+10108;2025/OGM/0004;30;F;internet;Śródmieście
+10109;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+10110;2025/OGM/0004;47;F;internet;Pustki Cisowskie-Demptowo
+10111;2025/OGM/0004,2025/OGM/0012;44;F;internet;Pustki Cisowskie-Demptowo
+10112;2025/OGM/0004,2025/OGM/0012;24;M;internet;Działki Leśne
+10113;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+10114;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wielki Kack
+10115;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+10116;2025/OGM/0004,2025/OGM/0012;21;M;internet;Działki Leśne
+10117;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+10118;2025/OGM/0004;16;M;internet;Pustki Cisowskie-Demptowo
+10120;2025/OGM/0012;40;M;internet;Redłowo
+10121;2025/OGM/0004;76;M;internet;Karwiny
+10122;2025/OGM/0004,2025/OGM/0012;57;F;internet;Redłowo
+10123;2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+10124;2025/OGM/0004,2025/OGM/0012;78;F;internet;Dąbrowa
+10125;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+10126;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+10127;2025/OGM/0004;51;M;internet;Pustki Cisowskie-Demptowo
+10128;2025/OGM/0004;38;F;internet;Działki Leśne
+10129;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pogórze
+10130;2025/OGM/0004,2025/OGM/0012;34;F;internet;Oksywie
+10131;2025/OGM/0004;7;F;internet;Działki Leśne
+10132;2025/OGM/0004;5;M;internet;Działki Leśne
+10133;2025/OGM/0004;34;M;internet;Obłuże
+10134;2025/OGM/0004;32;F;internet;Obłuże
+10135;2025/OGM/0004,2025/OGM/0012;42;F;internet;Cisowa
+10136;2025/OGM/0004;43;F;internet;Mały Kack
+10137;2025/OGM/0004,2025/OGM/0012;39;M;internet;Pustki Cisowskie-Demptowo
+10138;2025/OGM/0004;41;F;internet;Obłuże
+10139;2025/OGM/0004,2025/OGM/0012;15;F;internet;Chylonia
+10140;2025/OGM/0004;9;M;internet;Obłuże
+10141;2025/OGM/0004;38;F;internet;Wzgórze Św. Maksymiliana
+10142;2025/OGM/0004;3;F;internet;Obłuże
+10143;2025/OGM/0004,2025/OGM/0012;66;F;internet;Karwiny
+10144;2025/OGM/0004;56;F;internet;Obłuże
+10145;2025/OGM/0004,2025/OGM/0012;8;F;internet;Cisowa
+10146;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+10147;2025/OGM/0004;45;M;internet;Wzgórze Św. Maksymiliana
+10149;2025/OGM/0004,2025/OGM/0012;58;F;internet;Cisowa
+10150;2025/OGM/0004,2025/OGM/0012;6;F;internet;Cisowa
+10151;2025/OGM/0004;4;M;internet;Wzgórze Św. Maksymiliana
+10152;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+10153;2025/OGM/0004,2025/OGM/0012;57;M;internet;Cisowa
+10154;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+10156;2025/OGM/0012;38;F;internet;Redłowo
+10157;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+10158;2025/OGM/0004,2025/OGM/0012;75;F;internet;Chwarzno-Wiczlino
+10159;2025/OGM/0012;34;F;internet;Oksywie
+10160;2025/OGM/0004,2025/OGM/0012;30;M;internet;Wielki Kack
+10162;2025/OGM/0004;39;M;internet;Dąbrowa
+10163;2025/OGM/0004;40;M;internet;Dąbrowa
+10164;2025/OGM/0012;6;F;internet;Redłowo
+10165;2025/OGM/0004,2025/OGM/0012;31;M;internet;Oksywie
+10166;2025/OGM/0012;3;F;internet;Redłowo
+10167;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chylonia
+10168;2025/OGM/0004;39;F;internet;Wielki Kack
+10169;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+10170;2025/OGM/0004;36;F;internet;Wielki Kack
+10171;2025/OGM/0004,2025/OGM/0012;40;F;internet;Pustki Cisowskie-Demptowo
+10172;2025/OGM/0012;38;F;internet;Mały Kack
+10173;2025/OGM/0004;8;M;internet;Wielki Kack
+10174;2025/OGM/0012;39;F;internet;Witomino
+10175;2025/OGM/0012;42;F;internet;Redłowo
+10176;2025/OGM/0004;11;F;internet;Wielki Kack
+10177;2025/OGM/0004;69;F;internet;Leszczynki
+10178;2025/OGM/0012;34;F;internet;Redłowo
+10179;2025/OGM/0012;8;M;internet;Witomino
+10180;2025/OGM/0004;70;M;internet;Leszczynki
+10181;2025/OGM/0004;63;F;internet;Mały Kack
+10182;2025/OGM/0004;14;M;internet;Leszczynki
+10183;2025/OGM/0004;65;M;internet;Cisowa
+10184;2025/OGM/0004,2025/OGM/0012;27;F;internet;Mały Kack
+10185;2025/OGM/0004,2025/OGM/0012;6;F;internet;Witomino
+10186;2025/OGM/0012;38;F;internet;Działki Leśne
+10187;2025/OGM/0004;20;M;internet;Leszczynki
+10188;2025/OGM/0004;66;M;internet;Mały Kack
+10189;2025/OGM/0004;46;F;internet;Leszczynki
+10190;2025/OGM/0004;51;M;internet;Chwarzno-Wiczlino
+10191;2025/OGM/0004;75;F;internet;Mały Kack
+10192;2025/OGM/0004;42;M;internet;Redłowo
+10193;2025/OGM/0004;49;M;internet;Leszczynki
+10194;2025/OGM/0004,2025/OGM/0012;2;M;internet;Witomino
+10195;2025/OGM/0004;58;M;internet;Wielki Kack
+10196;2025/OGM/0004;35;F;internet;Karwiny
+10198;2025/OGM/0004,2025/OGM/0012;31;F;internet;Mały Kack
+10199;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+10200;2025/OGM/0004;48;F;internet;Leszczynki
+10202;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+10203;2025/OGM/0004;30;F;internet;Wielki Kack
+10205;2025/OGM/0004;50;F;internet;Obłuże
+10206;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wzgórze Św. Maksymiliana
+10207;2025/OGM/0004;67;F;internet;Mały Kack
+10208;2025/OGM/0004;6;M;internet;Grabówek
+10210;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+10211;2025/OGM/0012;45;M;internet;Pustki Cisowskie-Demptowo
+10212;2025/OGM/0004,2025/OGM/0012;44;F;internet;Dąbrowa
+10213;2025/OGM/0012;19;M;internet;Chwarzno-Wiczlino
+10215;2025/OGM/0012;57;F;internet;Wzgórze Św. Maksymiliana
+10216;2025/OGM/0004;58;F;internet;Witomino
+10217;2025/OGM/0012;79;M;internet;Chwarzno-Wiczlino
+10218;2025/OGM/0012;48;M;internet;Witomino
+10219;2025/OGM/0004;46;M;internet;Grabówek
+10220;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+10221;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+10222;2025/OGM/0004,2025/OGM/0012;46;F;internet;Dąbrowa
+10223;2025/OGM/0004,2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+10224;2025/OGM/0004;33;M;internet;Pogórze
+10225;2025/OGM/0004;32;F;internet;Pogórze
+10226;2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+10227;2025/OGM/0004;5;M;internet;Pogórze
+10228;2025/OGM/0004;;M;internet;Wzgórze Św. Maksymiliana
+10230;2025/OGM/0004;56;F;internet;Pogórze
+10231;2025/OGM/0004;46;F;internet;Wielki Kack
+10233;2025/OGM/0012;61;M;internet;Kamienna Góra
+10234;2025/OGM/0012;50;M;internet;Chwarzno-Wiczlino
+10235;2025/OGM/0004;38;M;internet;Mały Kack
+10236;2025/OGM/0004;25;F;internet;Cisowa
+10237;2025/OGM/0004;17;F;internet;Witomino
+10238;2025/OGM/0004;38;F;internet;Obłuże
+10239;2025/OGM/0004;28;M;internet;Chylonia
+10241;2025/OGM/0004,2025/OGM/0012;32;F;internet;Mały Kack
+10243;2025/OGM/0004;35;M;internet;Karwiny
+10245;2025/OGM/0012;40;M;internet;Orłowo
+10246;2025/OGM/0004;36;M;internet;Wielki Kack
+10247;2025/OGM/0004;5;F;internet;Wielki Kack
+10248;2025/OGM/0004;2;F;internet;Wielki Kack
+10249;2025/OGM/0004,2025/OGM/0012;15;F;internet;Cisowa
+10250;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+10251;2025/OGM/0004,2025/OGM/0012;40;F;internet;Babie Doły
+10252;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+10253;2025/OGM/0012;24;M;internet;Obłuże
+10254;2025/OGM/0004;51;F;internet;Wielki Kack
+10255;2025/OGM/0004;30;M;internet;Chylonia
+10256;2025/OGM/0004,2025/OGM/0012;48;F;internet;Orłowo
+10257;2025/OGM/0004,2025/OGM/0012;74;F;internet;Wielki Kack
+10258;2025/OGM/0004;21;F;internet;Wielki Kack
+10259;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+10260;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+10261;2025/OGM/0004,2025/OGM/0012;45;F;internet;Babie Doły
+10262;2025/OGM/0004,2025/OGM/0012;58;F;internet;Witomino
+10263;2025/OGM/0004;43;M;internet;Wielki Kack
+10264;2025/OGM/0004;44;F;internet;Działki Leśne
+10265;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chwarzno-Wiczlino
+10266;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+10267;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+10268;2025/OGM/0004;14;M;internet;Chwarzno-Wiczlino
+10269;2025/OGM/0004;41;F;internet;Wielki Kack
+10271;2025/OGM/0004,2025/OGM/0012;23;M;internet;Pustki Cisowskie-Demptowo
+10272;2025/OGM/0004,2025/OGM/0012;45;M;internet;Pogórze
+10273;2025/OGM/0004;44;F;internet;Śródmieście
+10274;2025/OGM/0004;42;F;internet;Karwiny
+10275;2025/OGM/0004;8;F;internet;Wielki Kack
+10276;2025/OGM/0012;56;F;internet;Chwarzno-Wiczlino
+10277;2025/OGM/0004;50;F;internet;Wielki Kack
+10278;2025/OGM/0004,2025/OGM/0012;56;F;internet;Wielki Kack
+10279;2025/OGM/0004,2025/OGM/0012;45;F;internet;Działki Leśne
+10280;2025/OGM/0004;85;F;internet;Wielki Kack
+10281;2025/OGM/0004;38;F;internet;Chylonia
+10282;2025/OGM/0004;28;M;internet;Dąbrowa
+10283;2025/OGM/0004;62;F;internet;Działki Leśne
+10284;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+10285;2025/OGM/0004;43;F;internet;Obłuże
+10286;2025/OGM/0004;45;M;internet;Obłuże
+10287;2025/OGM/0004;10;M;internet;Obłuże
+10288;2025/OGM/0004;8;F;internet;Obłuże
+10289;2025/OGM/0012;47;M;internet;Wzgórze Św. Maksymiliana
+10290;2025/OGM/0004;58;F;internet;Wielki Kack
+10291;2025/OGM/0004;43;M;internet;Witomino
+10293;2025/OGM/0004;5;M;internet;Obłuże
+10294;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+10295;2025/OGM/0004;47;M;internet;Chwarzno-Wiczlino
+10296;2025/OGM/0004;3;F;internet;Obłuże
+10298;2025/OGM/0004;3;M;internet;Obłuże
+10299;2025/OGM/0012;37;F;internet;Pustki Cisowskie-Demptowo
+10301;2025/OGM/0004;45;F;internet;Obłuże
+10304;2025/OGM/0012;45;F;internet;Mały Kack
+10305;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+10307;2025/OGM/0004;47;F;internet;Wielki Kack
+10309;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wielki Kack
+10310;2025/OGM/0004;65;F;internet;Wielki Kack
+10312;2025/OGM/0004;5;M;internet;Chwarzno-Wiczlino
+10313;2025/OGM/0004,2025/OGM/0012;52;F;internet;Leszczynki
+10315;2025/OGM/0004;68;M;internet;Wielki Kack
+10316;2025/OGM/0012;44;F;internet;Witomino
+10317;2025/OGM/0004;7;M;internet;Chwarzno-Wiczlino
+10319;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+10320;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+10321;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+10324;2025/OGM/0004;3;F;internet;Obłuże
+10325;2025/OGM/0004,2025/OGM/0012;46;M;internet;Oksywie
+10327;2025/OGM/0004;8;F;internet;Obłuże
+10328;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+10329;2025/OGM/0004;24;F;internet;Redłowo
+10330;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+10331;2025/OGM/0004;62;M;internet;Chwarzno-Wiczlino
+10332;2025/OGM/0004,2025/OGM/0012;6;M;internet;Dąbrowa
+10333;2025/OGM/0004,2025/OGM/0012;5;M;internet;Dąbrowa
+10334;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chylonia
+10335;2025/OGM/0004,2025/OGM/0012;50;M;internet;Dąbrowa
+10336;2025/OGM/0004;41;M;internet;Dąbrowa
+10337;2025/OGM/0004;35;M;internet;Chylonia
+10338;2025/OGM/0004;7;M;internet;Działki Leśne
+10339;2025/OGM/0004;38;F;internet;Obłuże
+10340;2025/OGM/0004,2025/OGM/0012;45;F;internet;Pogórze
+10341;2025/OGM/0004;4;M;internet;Mały Kack
+10342;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+10343;2025/OGM/0004;15;F;internet;Mały Kack
+10344;2025/OGM/0004;39;F;internet;Obłuże
+10345;2025/OGM/0004;55;M;internet;Obłuże
+10346;2025/OGM/0004,2025/OGM/0012;69;F;internet;Pogórze
+10347;2025/OGM/0004;40;M;internet;Redłowo
+10348;2025/OGM/0012;73;F;internet;Redłowo
+10349;2025/OGM/0004;53;F;internet;Wielki Kack
+10350;2025/OGM/0012;51;F;internet;Śródmieście
+10351;2025/OGM/0004;43;F;internet;Pustki Cisowskie-Demptowo
+10353;2025/OGM/0004;28;F;internet;Wielki Kack
+10355;2025/OGM/0004;48;M;internet;Obłuże
+10356;2025/OGM/0004,2025/OGM/0012;40;F;internet;Oksywie
+10357;2025/OGM/0004;14;F;internet;Pustki Cisowskie-Demptowo
+10358;2025/OGM/0004;51;F;internet;Wielki Kack
+10360;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+10361;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+10362;2025/OGM/0004;33;F;internet;Śródmieście
+10363;2025/OGM/0004;11;F;internet;Pustki Cisowskie-Demptowo
+10364;2025/OGM/0004;9;M;internet;Wielki Kack
+10365;2025/OGM/0004,2025/OGM/0012;15;F;internet;Pustki Cisowskie-Demptowo
+10366;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+10367;2025/OGM/0004;7;M;internet;Pustki Cisowskie-Demptowo
+10369;2025/OGM/0004;35;F;internet;Redłowo
+10370;2025/OGM/0004;55;F;internet;Śródmieście
+10371;2025/OGM/0004,2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+10372;2025/OGM/0004,2025/OGM/0012;45;M;internet;Pustki Cisowskie-Demptowo
+10373;2025/OGM/0004;66;M;internet;Oksywie
+10374;2025/OGM/0004;29;M;internet;Działki Leśne
+10375;2025/OGM/0004;2;M;internet;Śródmieście
+10376;2025/OGM/0012;51;M;internet;Obłuże
+10377;2025/OGM/0004,2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+10378;2025/OGM/0004;54;M;internet;Chwarzno-Wiczlino
+10379;2025/OGM/0004;44;F;internet;Wielki Kack
+10380;2025/OGM/0004;49;F;internet;Wielki Kack
+10381;2025/OGM/0004;40;M;internet;Wielki Kack
+10382;2025/OGM/0004;90;M;internet;
+10383;2025/OGM/0004;23;F;internet;Wielki Kack
+10384;2025/OGM/0004;51;F;internet;Dąbrowa
+10385;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+10386;2025/OGM/0004;53;M;internet;Obłuże
+10388;2025/OGM/0004;43;M;internet;Pustki Cisowskie-Demptowo
+10389;2025/OGM/0004;34;M;internet;Cisowa
+10390;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+10391;2025/OGM/0004;30;M;internet;Dąbrowa
+10392;2025/OGM/0004;54;F;internet;Wielki Kack
+10393;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+10394;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+10395;2025/OGM/0004;32;F;internet;Wielki Kack
+10396;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+10397;2025/OGM/0004,2025/OGM/0012;46;F;internet;Karwiny
+10398;2025/OGM/0012;60;F;internet;Dąbrowa
+10399;2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+10400;2025/OGM/0012;62;M;internet;Dąbrowa
+10401;2025/OGM/0004;62;M;internet;Kamienna Góra
+10403;2025/OGM/0012;46;M;internet;Wzgórze Św. Maksymiliana
+10405;2025/OGM/0004;35;F;internet;Chylonia
+10407;2025/OGM/0012;32;M;internet;Dąbrowa
+10409;2025/OGM/0004;53;F;internet;Wielki Kack
+10410;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+10411;2025/OGM/0004,2025/OGM/0012;15;F;internet;Witomino
+10412;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+10413;2025/OGM/0004;30;F;internet;Oksywie
+10414;2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+10416;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+10417;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+10418;2025/OGM/0004,2025/OGM/0012;31;F;internet;Pogórze
+10419;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+10420;2025/OGM/0004,2025/OGM/0012;36;F;internet;Leszczynki
+10421;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+10422;2025/OGM/0012;29;F;internet;Wielki Kack
+10423;2025/OGM/0004;47;M;internet;Działki Leśne
+10424;2025/OGM/0004,2025/OGM/0012;3;M;internet;Cisowa
+10425;2025/OGM/0012;3;M;internet;Wielki Kack
+10426;2025/OGM/0004;28;M;internet;Śródmieście
+10427;2025/OGM/0004;47;F;internet;Śródmieście
+10428;2025/OGM/0004;37;F;internet;Dąbrowa
+10429;2025/OGM/0004;37;F;internet;Babie Doły
+10430;2025/OGM/0004;13;F;internet;Śródmieście
+10431;2025/OGM/0012;40;M;internet;Mały Kack
+10432;2025/OGM/0004;43;M;internet;Dąbrowa
+10433;2025/OGM/0004,2025/OGM/0012;54;F;internet;Witomino
+10434;2025/OGM/0004,2025/OGM/0012;42;F;internet;Grabówek
+10435;2025/OGM/0004;28;F;internet;Wzgórze Św. Maksymiliana
+10436;2025/OGM/0004;74;F;internet;Grabówek
+10437;2025/OGM/0012;77;F;internet;Wzgórze Św. Maksymiliana
+10438;2025/OGM/0004;43;F;internet;Cisowa
+10439;2025/OGM/0004;87;M;internet;Kamienna Góra
+10440;2025/OGM/0004;47;F;internet;Chwarzno-Wiczlino
+10441;2025/OGM/0004;46;F;internet;Wielki Kack
+10442;2025/OGM/0004;20;M;internet;Wielki Kack
+10443;2025/OGM/0004,2025/OGM/0012;39;M;internet;Babie Doły
+10444;2025/OGM/0004;40;M;internet;Cisowa
+10445;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+10446;2025/OGM/0004;67;M;internet;Kamienna Góra
+10447;2025/OGM/0004;56;M;internet;Pustki Cisowskie-Demptowo
+10448;2025/OGM/0004;15;F;internet;Wielki Kack
+10449;2025/OGM/0004;77;M;internet;Kamienna Góra
+10450;2025/OGM/0004,2025/OGM/0012;4;F;internet;Wielki Kack
+10451;2025/OGM/0004,2025/OGM/0012;46;M;internet;Karwiny
+10452;2025/OGM/0012;58;F;internet;Mały Kack
+10453;2025/OGM/0004;46;F;internet;Mały Kack
+10454;2025/OGM/0004,2025/OGM/0012;;F;internet;Wielki Kack
+10455;2025/OGM/0004;38;M;internet;Wielki Kack
+10456;2025/OGM/0004;11;F;internet;Karwiny
+10457;2025/OGM/0004;46;F;internet;Mały Kack
+10458;2025/OGM/0004;46;M;internet;Mały Kack
+10459;2025/OGM/0004;33;F;internet;Cisowa
+10460;2025/OGM/0004;81;F;internet;Wzgórze Św. Maksymiliana
+10461;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chylonia
+10462;2025/OGM/0004;32;F;internet;Cisowa
+10463;2025/OGM/0004;40;F;internet;Cisowa
+10464;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+10466;2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+10467;2025/OGM/0004;10;F;internet;Wielki Kack
+10468;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chylonia
+10469;2025/OGM/0004;7;F;internet;Wielki Kack
+10470;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chylonia
+10471;2025/OGM/0004;73;F;internet;Wzgórze Św. Maksymiliana
+10472;2025/OGM/0004,2025/OGM/0012;11;F;internet;Pustki Cisowskie-Demptowo
+10473;2025/OGM/0004;51;F;internet;Cisowa
+10474;2025/OGM/0004;53;M;internet;Cisowa
+10475;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+10476;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wielki Kack
+10477;2025/OGM/0004;19;M;internet;Cisowa
+10478;2025/OGM/0004;41;F;internet;Wielki Kack
+10480;2025/OGM/0004,2025/OGM/0012;41;F;internet;Grabówek
+10481;2025/OGM/0004;73;F;internet;Wielki Kack
+10482;2025/OGM/0004;74;M;internet;Wielki Kack
+10483;2025/OGM/0004,2025/OGM/0012;69;F;internet;Babie Doły
+10484;2025/OGM/0004,2025/OGM/0012;58;F;internet;Chylonia
+10485;2025/OGM/0012;39;F;internet;Pogórze
+10486;2025/OGM/0004;50;M;internet;Wielki Kack
+10487;2025/OGM/0004;10;F;internet;Chwarzno-Wiczlino
+10488;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+10489;2025/OGM/0004;45;F;internet;Wielki Kack
+10491;2025/OGM/0004;14;M;internet;Wielki Kack
+10492;2025/OGM/0004;27;M;internet;Śródmieście
+10493;2025/OGM/0004;12;F;internet;Wielki Kack
+10494;2025/OGM/0004;7;F;internet;Wielki Kack
+10495;2025/OGM/0004;40;M;internet;Obłuże
+10496;2025/OGM/0012;74;F;internet;Witomino
+10497;2025/OGM/0004;39;F;internet;Oksywie
+10498;2025/OGM/0004;40;F;internet;Dąbrowa
+10499;2025/OGM/0004,2025/OGM/0012;30;F;internet;Pustki Cisowskie-Demptowo
+10500;2025/OGM/0004;88;F;internet;Oksywie
+10501;2025/OGM/0004;83;M;internet;Oksywie
+10502;2025/OGM/0004,2025/OGM/0012;57;F;internet;Karwiny
+10503;2025/OGM/0012;22;M;internet;Witomino
+10504;2025/OGM/0004;82;F;internet;Oksywie
+10505;2025/OGM/0004;57;M;internet;Oksywie
+10506;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+10507;2025/OGM/0004;55;F;internet;Oksywie
+10508;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+10509;2025/OGM/0004,2025/OGM/0012;63;M;internet;Babie Doły
+10510;2025/OGM/0012;38;F;internet;Mały Kack
+10511;2025/OGM/0004;35;M;internet;Dąbrowa
+10512;2025/OGM/0012;51;F;internet;Śródmieście
+10513;2025/OGM/0004;45;F;internet;Wielki Kack
+10514;2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+10515;2025/OGM/0004,2025/OGM/0012;51;M;internet;Redłowo
+10516;2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+10517;2025/OGM/0004;20;M;internet;Mały Kack
+10518;2025/OGM/0004;72;M;internet;Obłuże
+10519;2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+10520;2025/OGM/0012;32;F;internet;Wielki Kack
+10521;2025/OGM/0012;20;F;internet;Kamienna Góra
+10522;2025/OGM/0004,2025/OGM/0012;35;M;internet;Cisowa
+10523;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+10524;2025/OGM/0004;44;F;internet;Chylonia
+10525;2025/OGM/0004;29;M;internet;Obłuże
+10526;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+10527;2025/OGM/0004;49;M;internet;Wielki Kack
+10528;2025/OGM/0004;54;F;internet;Cisowa
+10529;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+10530;2025/OGM/0012;46;F;internet;Witomino
+10531;2025/OGM/0004,2025/OGM/0012;10;M;internet;Cisowa
+10532;2025/OGM/0012;33;M;internet;Pustki Cisowskie-Demptowo
+10533;2025/OGM/0004;13;M;internet;Wielki Kack
+10534;2025/OGM/0004;37;M;internet;Redłowo
+10535;2025/OGM/0004;57;M;internet;Oksywie
+10536;2025/OGM/0004;37;F;internet;Pustki Cisowskie-Demptowo
+10537;2025/OGM/0004;35;F;internet;Śródmieście
+10538;2025/OGM/0004;36;F;internet;Dąbrowa
+10539;2025/OGM/0004;41;M;internet;Śródmieście
+10540;2025/OGM/0004;24;M;internet;Śródmieście
+10541;2025/OGM/0004;30;F;internet;Wielki Kack
+10542;2025/OGM/0004;41;M;internet;Dąbrowa
+10543;2025/OGM/0004;17;F;internet;Chylonia
+10544;2025/OGM/0004,2025/OGM/0012;74;F;internet;Dąbrowa
+10546;2025/OGM/0004,2025/OGM/0012;73;M;internet;Dąbrowa
+10548;2025/OGM/0004;35;M;internet;Wielki Kack
+10549;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+10550;2025/OGM/0004;65;M;internet;Wielki Kack
+10551;2025/OGM/0004;47;M;internet;Wielki Kack
+10552;2025/OGM/0004,2025/OGM/0012;27;M;internet;Chwarzno-Wiczlino
+10553;2025/OGM/0004;49;F;internet;Mały Kack
+10554;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+10556;2025/OGM/0004;33;F;internet;Karwiny
+10557;2025/OGM/0004;14;M;internet;Chwarzno-Wiczlino
+10558;2025/OGM/0004;52;M;internet;Śródmieście
+10559;2025/OGM/0004;63;M;internet;Witomino
+10560;2025/OGM/0004;10;M;internet;Chwarzno-Wiczlino
+10561;2025/OGM/0004;11;M;internet;Wielki Kack
+10562;2025/OGM/0012;55;F;internet;Cisowa
+10563;2025/OGM/0004;71;F;internet;Obłuże
+10564;2025/OGM/0004;36;F;internet;Orłowo
+10565;2025/OGM/0004;39;F;internet;Karwiny
+10566;2025/OGM/0004;48;M;internet;Wielki Kack
+10567;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+10568;2025/OGM/0004;64;M;internet;Dąbrowa
+10569;2025/OGM/0012;76;M;internet;Pustki Cisowskie-Demptowo
+10570;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+10571;2025/OGM/0004;65;F;internet;Chwarzno-Wiczlino
+10572;2025/OGM/0004;41;F;internet;Dąbrowa
+10573;2025/OGM/0004;52;F;internet;Wielki Kack
+10575;2025/OGM/0004;54;F;internet;Karwiny
+10576;2025/OGM/0004,2025/OGM/0012;14;M;internet;Pogórze
+10578;2025/OGM/0004;32;F;internet;Cisowa
+10579;2025/OGM/0004;13;F;internet;Wielki Kack
+10580;2025/OGM/0004,2025/OGM/0012;8;M;internet;Pogórze
+10582;2025/OGM/0004,2025/OGM/0012;51;M;internet;Wielki Kack
+10583;2025/OGM/0012;77;M;internet;Kamienna Góra
+10584;2025/OGM/0004,2025/OGM/0012;12;M;internet;Pogórze
+10586;2025/OGM/0004;81;F;internet;Mały Kack
+10587;2025/OGM/0012;73;F;internet;
+10588;2025/OGM/0012;65;M;internet;Chylonia
+10589;2025/OGM/0004;23;F;internet;Mały Kack
+10590;2025/OGM/0004;66;M;internet;Wzgórze Św. Maksymiliana
+10591;2025/OGM/0004;47;M;internet;Pogórze
+10592;2025/OGM/0004;46;F;internet;Wzgórze Św. Maksymiliana
+10593;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+10594;2025/OGM/0012;38;M;internet;Redłowo
+10595;2025/OGM/0004;48;F;internet;Mały Kack
+10596;2025/OGM/0012;67;M;internet;Działki Leśne
+10598;2025/OGM/0012;80;M;internet;Mały Kack
+10599;2025/OGM/0004;43;M;internet;Wzgórze Św. Maksymiliana
+10600;2025/OGM/0004;72;F;internet;Leszczynki
+10601;2025/OGM/0012;71;F;internet;Witomino
+10602;2025/OGM/0004;75;F;internet;Kamienna Góra
+10603;2025/OGM/0012;21;M;internet;Redłowo
+10604;2025/OGM/0004;63;F;internet;Leszczynki
+10605;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+10606;2025/OGM/0004;47;F;internet;Mały Kack
+10607;2025/OGM/0012;71;F;internet;Grabówek
+10608;2025/OGM/0004;40;F;internet;Chylonia
+10609;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+10611;2025/OGM/0004;41;M;internet;Chylonia
+10612;2025/OGM/0004;34;F;internet;Obłuże
+10613;2025/OGM/0004;2;F;internet;Chylonia
+10614;2025/OGM/0004;38;M;internet;Obłuże
+10615;2025/OGM/0004;25;F;internet;Chylonia
+10616;2025/OGM/0004;8;F;internet;Obłuże
+10617;2025/OGM/0004;53;F;internet;Wielki Kack
+10618;2025/OGM/0012;36;M;internet;Chylonia
+10619;2025/OGM/0004;3;F;internet;Obłuże
+10620;2025/OGM/0004;24;F;internet;Chylonia
+10621;2025/OGM/0004,2025/OGM/0012;20;M;internet;Redłowo
+10622;2025/OGM/0004;37;F;internet;Dąbrowa
+10623;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wielki Kack
+10624;2025/OGM/0004,2025/OGM/0012;51;F;internet;Obłuże
+10625;2025/OGM/0004,2025/OGM/0012;56;F;internet;Chylonia
+10626;2025/OGM/0004;34;M;internet;Oksywie
+10627;2025/OGM/0004,2025/OGM/0012;4;M;internet;Wielki Kack
+10628;2025/OGM/0004,2025/OGM/0012;51;M;internet;Obłuże
+10629;2025/OGM/0004,2025/OGM/0012;16;F;internet;Wielki Kack
+10630;2025/OGM/0004,2025/OGM/0012;25;F;internet;Obłuże
+10631;2025/OGM/0004;63;F;internet;Pustki Cisowskie-Demptowo
+10632;2025/OGM/0004;77;F;internet;Witomino
+10633;2025/OGM/0004,2025/OGM/0012;18;F;internet;Obłuże
+10634;2025/OGM/0004,2025/OGM/0012;42;F;internet;Oksywie
+10635;2025/OGM/0004,2025/OGM/0012;73;F;internet;Obłuże
+10636;2025/OGM/0004,2025/OGM/0012;3;M;internet;Wielki Kack
+10637;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+10638;2025/OGM/0004;28;M;internet;Karwiny
+10639;2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+10640;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+10641;2025/OGM/0004;28;M;internet;Leszczynki
+10642;2025/OGM/0004;13;F;internet;Chwarzno-Wiczlino
+10643;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+10644;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+10645;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+10646;2025/OGM/0012;72;F;internet;Oksywie
+10647;2025/OGM/0004;16;F;internet;Obłuże
+10648;2025/OGM/0012;68;M;internet;Śródmieście
+10649;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+10650;2025/OGM/0004;73;F;internet;Cisowa
+10651;2025/OGM/0012;64;F;internet;Obłuże
+10652;2025/OGM/0004;44;M;internet;Mały Kack
+10653;2025/OGM/0004,2025/OGM/0012;78;F;internet;Cisowa
+10654;2025/OGM/0004;18;F;internet;Wielki Kack
+10655;2025/OGM/0004,2025/OGM/0012;50;M;internet;Dąbrowa
+10656;2025/OGM/0004;43;M;internet;Śródmieście
+10657;2025/OGM/0004;47;M;internet;Wielki Kack
+10658;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chylonia
+10659;2025/OGM/0012;65;F;internet;Śródmieście
+10660;2025/OGM/0012;33;F;internet;Mały Kack
+10661;2025/OGM/0004,2025/OGM/0012;27;F;internet;Pogórze
+10662;2025/OGM/0004;14;F;internet;Wielki Kack
+10663;2025/OGM/0004,2025/OGM/0012;72;M;internet;Działki Leśne
+10664;2025/OGM/0004;29;M;internet;Chylonia
+10666;2025/OGM/0004;30;F;internet;Chylonia
+10667;2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+10669;2025/OGM/0004;46;F;internet;Witomino
+10670;2025/OGM/0004,2025/OGM/0012;55;F;internet;Grabówek
+10671;2025/OGM/0004;65;M;internet;Chylonia
+10672;2025/OGM/0004;19;M;internet;Redłowo
+10673;2025/OGM/0012;60;F;internet;Chylonia
+10674;2025/OGM/0004;17;M;internet;Redłowo
+10675;2025/OGM/0004;37;M;internet;Oksywie
+10676;2025/OGM/0012;41;F;internet;Cisowa
+10677;2025/OGM/0004;45;M;internet;Cisowa
+10678;2025/OGM/0012;72;F;internet;Witomino
+10679;2025/OGM/0004;71;F;internet;Cisowa
+10680;2025/OGM/0004;34;F;internet;Śródmieście
+10682;2025/OGM/0004;38;F;internet;Chylonia
+10683;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+10684;2025/OGM/0004;57;F;internet;Witomino
+10685;2025/OGM/0004;82;M;internet;Witomino
+10686;2025/OGM/0012;27;M;internet;Witomino
+10687;2025/OGM/0004;36;F;internet;Redłowo
+10688;2025/OGM/0012;66;F;internet;Wielki Kack
+10689;2025/OGM/0012;40;F;internet;Wielki Kack
+10690;2025/OGM/0004;76;M;internet;Witomino
+10691;2025/OGM/0004;76;F;internet;Wzgórze Św. Maksymiliana
+10692;2025/OGM/0004;17;M;internet;Chylonia
+10693;2025/OGM/0004;67;F;internet;Babie Doły
+10694;2025/OGM/0004;36;M;internet;Redłowo
+10695;2025/OGM/0004;42;F;internet;Wielki Kack
+10696;2025/OGM/0004,2025/OGM/0012;54;M;internet;Redłowo
+10697;2025/OGM/0004;73;M;internet;Wzgórze Św. Maksymiliana
+10698;2025/OGM/0004,2025/OGM/0012;19;F;internet;Dąbrowa
+10699;2025/OGM/0004;72;F;internet;Leszczynki
+10700;2025/OGM/0004;15;M;internet;Mały Kack
+10701;2025/OGM/0004;38;M;internet;Działki Leśne
+10702;2025/OGM/0004;29;F;internet;Redłowo
+10703;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+10706;2025/OGM/0004,2025/OGM/0012;50;M;internet;Redłowo
+10719;2025/OGM/0004,2025/OGM/0012;27;F;internet;Cisowa
+10723;2025/OGM/0004;73;F;internet;Leszczynki
+10725;2025/OGM/0004;35;F;internet;Mały Kack
+10727;2025/OGM/0004;45;M;internet;Pustki Cisowskie-Demptowo
+10728;2025/OGM/0004;2;M;internet;Mały Kack
+10731;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+10732;2025/OGM/0004;1;F;internet;Mały Kack
+10733;2025/OGM/0004;43;M;internet;Mały Kack
+10734;2025/OGM/0004;73;F;internet;Chylonia
+10735;2025/OGM/0004;5;F;internet;Mały Kack
+10737;2025/OGM/0004,2025/OGM/0012;29;M;internet;Witomino
+10738;2025/OGM/0004;69;F;internet;Wielki Kack
+10740;2025/OGM/0004,2025/OGM/0012;32;M;internet;Działki Leśne
+10741;2025/OGM/0004;72;M;internet;Leszczynki
+10742;2025/OGM/0004;6;F;internet;Mały Kack
+10743;2025/OGM/0012;79;F;internet;Witomino
+10745;2025/OGM/0004;30;M;internet;Pogórze
+10746;2025/OGM/0004;57;F;internet;Chwarzno-Wiczlino
+10748;2025/OGM/0004;8;M;internet;Mały Kack
+10749;2025/OGM/0004,2025/OGM/0012;1;F;internet;Pogórze
+10751;2025/OGM/0004,2025/OGM/0012;3;F;internet;Pogórze
+10753;2025/OGM/0004;37;F;internet;Mały Kack
+10755;2025/OGM/0004;67;M;internet;Leszczynki
+10756;2025/OGM/0004;55;F;internet;Śródmieście
+10759;2025/OGM/0004,2025/OGM/0012;34;M;internet;Wielki Kack
+10760;2025/OGM/0004;43;F;internet;Cisowa
+10761;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+10762;2025/OGM/0004,2025/OGM/0012;20;F;internet;Karwiny
+10768;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+10769;2025/OGM/0004,2025/OGM/0012;17;F;internet;Chwarzno-Wiczlino
+10770;2025/OGM/0004;66;M;internet;Wielki Kack
+10772;2025/OGM/0004;37;M;internet;Mały Kack
+10773;2025/OGM/0004;26;M;internet;Wielki Kack
+10775;2025/OGM/0004;53;F;internet;Wielki Kack
+10776;2025/OGM/0004;77;M;internet;Pustki Cisowskie-Demptowo
+10778;2025/OGM/0004;30;M;internet;Oksywie
+10779;2025/OGM/0004;63;F;internet;Wielki Kack
+10781;2025/OGM/0004;74;F;internet;Pustki Cisowskie-Demptowo
+10782;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+10783;2025/OGM/0004;23;M;internet;Wielki Kack
+10784;2025/OGM/0004;66;F;internet;Mały Kack
+10785;2025/OGM/0004;66;M;internet;Pogórze
+10786;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+10787;2025/OGM/0004;32;F;internet;Pogórze
+10788;2025/OGM/0004,2025/OGM/0012;34;F;internet;Pustki Cisowskie-Demptowo
+10789;2025/OGM/0004;12;M;internet;Cisowa
+10791;2025/OGM/0004,2025/OGM/0012;60;F;internet;Witomino
+10792;2025/OGM/0004,2025/OGM/0012;6;F;internet;Pustki Cisowskie-Demptowo
+10793;2025/OGM/0004,2025/OGM/0012;6;F;internet;Pustki Cisowskie-Demptowo
+10794;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+10796;2025/OGM/0004,2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+10798;2025/OGM/0004;45;M;internet;Wielki Kack
+10799;2025/OGM/0004,2025/OGM/0012;53;F;internet;Śródmieście
+10800;2025/OGM/0004;48;M;internet;Chwarzno-Wiczlino
+10801;2025/OGM/0012;16;M;internet;Chylonia
+10802;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+10803;2025/OGM/0004;30;M;internet;Mały Kack
+10804;2025/OGM/0004;54;F;internet;Działki Leśne
+10805;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+10806;2025/OGM/0004;40;M;internet;Grabówek
+10807;2025/OGM/0012;8;F;internet;Chylonia
+10808;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+10809;2025/OGM/0012;7;M;internet;Chylonia
+10810;2025/OGM/0012;57;F;internet;Redłowo
+10811;2025/OGM/0004;67;M;internet;Oksywie
+10812;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+10814;2025/OGM/0004;53;M;internet;Obłuże
+10815;2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+10816;2025/OGM/0004;65;M;internet;Wielki Kack
+10817;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+10819;2025/OGM/0004;50;M;internet;Chwarzno-Wiczlino
+10820;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+10821;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+10822;2025/OGM/0004;12;M;internet;Karwiny
+10823;2025/OGM/0012;76;F;internet;Chylonia
+10824;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+10826;2025/OGM/0004;63;F;internet;Chylonia
+10827;2025/OGM/0004,2025/OGM/0012;61;F;internet;Leszczynki
+10828;2025/OGM/0012;48;F;internet;Chylonia
+10830;2025/OGM/0004;26;F;internet;Leszczynki
+10831;2025/OGM/0004,2025/OGM/0012;62;M;internet;Leszczynki
+10832;2025/OGM/0004,2025/OGM/0012;43;M;internet;Karwiny
+10833;2025/OGM/0004;58;F;internet;Mały Kack
+10834;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+10835;2025/OGM/0012;49;F;internet;Chylonia
+10836;2025/OGM/0004,2025/OGM/0012;43;M;internet;Witomino
+10838;2025/OGM/0004,2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+10839;2025/OGM/0004,2025/OGM/0012;29;F;internet;Pustki Cisowskie-Demptowo
+10841;2025/OGM/0004;52;F;internet;Wielki Kack
+10842;2025/OGM/0012;81;M;internet;Wielki Kack
+10843;2025/OGM/0004;30;M;internet;Chylonia
+10844;2025/OGM/0004;40;M;internet;Mały Kack
+10845;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+10846;2025/OGM/0004;43;F;internet;Mały Kack
+10847;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+10848;2025/OGM/0004,2025/OGM/0012;25;M;internet;Wzgórze Św. Maksymiliana
+10849;2025/OGM/0012;30;F;internet;Działki Leśne
+10850;2025/OGM/0004,2025/OGM/0012;59;F;internet;Pustki Cisowskie-Demptowo
+10851;2025/OGM/0004,2025/OGM/0012;22;F;internet;Pustki Cisowskie-Demptowo
+10852;2025/OGM/0012;40;F;internet;Pustki Cisowskie-Demptowo
+10853;2025/OGM/0004;18;M;internet;Redłowo
+10854;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+10855;2025/OGM/0012;36;F;internet;Redłowo
+10856;2025/OGM/0004,2025/OGM/0012;23;F;internet;Cisowa
+10857;2025/OGM/0012;30;M;internet;Grabówek
+10858;2025/OGM/0004;25;F;internet;Cisowa
+10859;2025/OGM/0012;33;F;internet;Pustki Cisowskie-Demptowo
+10860;2025/OGM/0004;43;M;internet;Pustki Cisowskie-Demptowo
+10861;2025/OGM/0004,2025/OGM/0012;54;F;internet;Witomino
+10862;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+10863;2025/OGM/0004;33;M;internet;Mały Kack
+10864;2025/OGM/0004,2025/OGM/0012;20;F;internet;Śródmieście
+10865;2025/OGM/0012;81;F;internet;Pustki Cisowskie-Demptowo
+10866;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+10867;2025/OGM/0004,2025/OGM/0012;22;F;internet;Chylonia
+10868;2025/OGM/0012;80;F;internet;Pustki Cisowskie-Demptowo
+10869;2025/OGM/0004,2025/OGM/0012;84;M;internet;Pustki Cisowskie-Demptowo
+10870;2025/OGM/0004;36;F;internet;Obłuże
+10871;2025/OGM/0004;22;M;internet;Babie Doły
+10872;2025/OGM/0012;80;M;internet;Pustki Cisowskie-Demptowo
+10873;2025/OGM/0004;41;M;internet;Obłuże
+10874;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chylonia
+10875;2025/OGM/0004,2025/OGM/0012;11;F;internet;Obłuże
+10876;2025/OGM/0004,2025/OGM/0012;57;F;internet;Mały Kack
+10877;2025/OGM/0004;7;M;internet;Obłuże
+10878;2025/OGM/0004;5;F;internet;Obłuże
+10879;2025/OGM/0012;8;M;internet;Orłowo
+10880;2025/OGM/0004;17;M;internet;Obłuże
+10881;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chylonia
+10882;2025/OGM/0004;65;F;internet;Pustki Cisowskie-Demptowo
+10883;2025/OGM/0004;61;M;internet;Obłuże
+10884;2025/OGM/0004;40;F;internet;Orłowo
+10885;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wzgórze Św. Maksymiliana
+10887;2025/OGM/0004,2025/OGM/0012;59;M;internet;Mały Kack
+10888;2025/OGM/0004,2025/OGM/0012;39;M;internet;Redłowo
+10889;2025/OGM/0012;69;F;internet;Redłowo
+10890;2025/OGM/0004;40;F;internet;Mały Kack
+10891;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+10893;2025/OGM/0004,2025/OGM/0012;14;F;internet;Chwarzno-Wiczlino
+10894;2025/OGM/0004;25;M;internet;Wielki Kack
+10895;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+10896;2025/OGM/0012;72;F;internet;Pustki Cisowskie-Demptowo
+10897;2025/OGM/0004;40;M;internet;Mały Kack
+10898;2025/OGM/0004;38;F;internet;Mały Kack
+10899;2025/OGM/0004;64;F;internet;Mały Kack
+10900;2025/OGM/0004,2025/OGM/0012;49;F;internet;Kamienna Góra
+10902;2025/OGM/0004,2025/OGM/0012;55;M;internet;Śródmieście
+10903;2025/OGM/0004;70;F;internet;Wielki Kack
+10904;2025/OGM/0004;66;F;internet;Chwarzno-Wiczlino
+10905;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wzgórze Św. Maksymiliana
+10906;2025/OGM/0004,2025/OGM/0012;18;M;internet;Oksywie
+10907;2025/OGM/0004,2025/OGM/0012;16;M;internet;Redłowo
+10908;2025/OGM/0004;72;M;internet;Wielki Kack
+10909;2025/OGM/0004;45;M;internet;Wielki Kack
+10910;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chwarzno-Wiczlino
+10911;2025/OGM/0004;48;F;internet;Grabówek
+10912;2025/OGM/0012;74;F;internet;Babie Doły
+10913;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+10914;2025/OGM/0012;49;F;internet;Pustki Cisowskie-Demptowo
+10915;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+10916;2025/OGM/0004,2025/OGM/0012;49;F;internet;Śródmieście
+10918;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wielki Kack
+10922;2025/OGM/0004;24;M;internet;Pustki Cisowskie-Demptowo
+10923;2025/OGM/0004;45;F;internet;Dąbrowa
+10924;2025/OGM/0012;45;M;internet;Wielki Kack
+10925;2025/OGM/0004;53;F;internet;Wielki Kack
+10926;2025/OGM/0004;35;M;internet;Wielki Kack
+10927;2025/OGM/0004;49;M;internet;Wielki Kack
+10928;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+10929;2025/OGM/0012;43;F;internet;Karwiny
+10930;2025/OGM/0004;49;F;internet;Redłowo
+10931;2025/OGM/0004;13;M;internet;Karwiny
+10932;2025/OGM/0004;64;F;internet;Chylonia
+10933;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+10935;2025/OGM/0004,2025/OGM/0012;18;F;internet;Witomino
+10936;2025/OGM/0012;27;M;internet;Chylonia
+10937;2025/OGM/0004;40;M;internet;Dąbrowa
+10938;2025/OGM/0004,2025/OGM/0012;22;F;internet;Wielki Kack
+10939;2025/OGM/0004,2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+10940;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+10941;2025/OGM/0004,2025/OGM/0012;26;M;internet;Chylonia
+10942;2025/OGM/0004;62;M;internet;Obłuże
+10943;2025/OGM/0004,2025/OGM/0012;43;F;internet;Karwiny
+10944;2025/OGM/0004;77;M;internet;Grabówek
+10945;2025/OGM/0004,2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+10946;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+10947;2025/OGM/0004;37;F;internet;Obłuże
+10948;2025/OGM/0004;19;M;internet;Wielki Kack
+10949;2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+10950;2025/OGM/0012;14;M;internet;Chylonia
+10951;2025/OGM/0004,2025/OGM/0012;51;F;internet;Obłuże
+10953;2025/OGM/0004;44;M;internet;Wielki Kack
+10954;2025/OGM/0004;54;F;internet;Babie Doły
+10955;2025/OGM/0004;38;F;internet;Karwiny
+10956;2025/OGM/0012;32;F;internet;Oksywie
+10957;2025/OGM/0004;75;M;internet;Wielki Kack
+10958;2025/OGM/0004,2025/OGM/0012;12;M;internet;Dąbrowa
+10959;2025/OGM/0004,2025/OGM/0012;43;F;internet;Dąbrowa
+10961;2025/OGM/0004,2025/OGM/0012;16;F;internet;Dąbrowa
+10962;2025/OGM/0004;62;M;internet;Wielki Kack
+10963;2025/OGM/0004;64;M;internet;Mały Kack
+10965;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+10967;2025/OGM/0004;60;F;internet;Chwarzno-Wiczlino
+10968;2025/OGM/0004;13;M;internet;Redłowo
+10969;2025/OGM/0004,2025/OGM/0012;73;F;internet;Wielki Kack
+10970;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+10972;2025/OGM/0012;66;F;internet;Chylonia
+10973;2025/OGM/0004;64;F;internet;Witomino
+10974;2025/OGM/0012;32;F;internet;Witomino
+10976;2025/OGM/0012;69;M;internet;Chylonia
+10977;2025/OGM/0004,2025/OGM/0012;37;M;internet;Karwiny
+10978;2025/OGM/0004,2025/OGM/0012;40;F;internet;Śródmieście
+10979;2025/OGM/0012;67;M;internet;Chylonia
+10980;2025/OGM/0004;42;M;internet;Mały Kack
+10981;2025/OGM/0004,2025/OGM/0012;54;F;internet;Chwarzno-Wiczlino
+10982;2025/OGM/0004;38;F;internet;Chylonia
+10983;2025/OGM/0012;42;F;internet;Chylonia
+10984;2025/OGM/0004;53;F;internet;Cisowa
+10985;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chylonia
+10986;2025/OGM/0004;10;F;internet;Cisowa
+10987;2025/OGM/0012;43;M;internet;Obłuże
+10988;2025/OGM/0004;43;M;internet;Pustki Cisowskie-Demptowo
+10989;2025/OGM/0004,2025/OGM/0012;56;F;internet;Babie Doły
+10990;2025/OGM/0004;55;M;internet;Cisowa
+10991;2025/OGM/0004;39;F;internet;Mały Kack
+10992;2025/OGM/0004;28;M;internet;Cisowa
+10993;2025/OGM/0004;11;M;internet;Pustki Cisowskie-Demptowo
+10994;2025/OGM/0012;39;F;internet;Obłuże
+10995;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+10996;2025/OGM/0004;22;M;internet;Cisowa
+10997;2025/OGM/0012;51;F;internet;Chylonia
+10998;2025/OGM/0004;69;M;internet;Chylonia
+10999;2025/OGM/0004;3;F;internet;Mały Kack
+11000;2025/OGM/0004;34;M;internet;Wielki Kack
+11001;2025/OGM/0004;53;F;internet;Redłowo
+11002;2025/OGM/0004;25;M;internet;Wielki Kack
+11003;2025/OGM/0004;40;F;internet;Dąbrowa
+11004;2025/OGM/0004,2025/OGM/0012;66;F;internet;Chylonia
+11005;2025/OGM/0004;37;F;internet;Dąbrowa
+11006;2025/OGM/0004;36;M;internet;Kamienna Góra
+11007;2025/OGM/0012;25;F;internet;Dąbrowa
+11008;2025/OGM/0004,2025/OGM/0012;49;F;internet;Witomino
+11009;2025/OGM/0012;56;F;internet;Dąbrowa
+11010;2025/OGM/0004,2025/OGM/0012;53;F;internet;Babie Doły
+11011;2025/OGM/0004;33;F;internet;Dąbrowa
+11012;2025/OGM/0004;37;F;internet;Wielki Kack
+11013;2025/OGM/0012;10;F;internet;Wielki Kack
+11014;2025/OGM/0004,2025/OGM/0012;53;F;internet;Działki Leśne
+11015;2025/OGM/0004;63;F;internet;Redłowo
+11016;2025/OGM/0004,2025/OGM/0012;15;M;internet;Babie Doły
+11017;2025/OGM/0012;19;M;internet;Wielki Kack
+11018;2025/OGM/0004,2025/OGM/0012;43;F;internet;Działki Leśne
+11019;2025/OGM/0004;5;M;internet;Wielki Kack
+11020;2025/OGM/0012;17;M;internet;Wielki Kack
+11021;2025/OGM/0012;39;F;internet;Wielki Kack
+11022;2025/OGM/0004,2025/OGM/0012;20;M;internet;Babie Doły
+11023;2025/OGM/0004;32;M;internet;Wielki Kack
+11024;2025/OGM/0004;42;F;internet;Wielki Kack
+11025;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+11026;2025/OGM/0004;38;M;internet;Dąbrowa
+11027;2025/OGM/0004;48;F;internet;Karwiny
+11028;2025/OGM/0004,2025/OGM/0012;49;F;internet;Redłowo
+11029;2025/OGM/0004;63;F;internet;Pogórze
+11030;2025/OGM/0012;61;F;internet;Pogórze
+11031;2025/OGM/0004;71;F;internet;Karwiny
+11032;2025/OGM/0004,2025/OGM/0012;24;F;internet;Wielki Kack
+11033;2025/OGM/0004,2025/OGM/0012;17;M;internet;Redłowo
+11034;2025/OGM/0004,2025/OGM/0012;76;F;internet;Redłowo
+11035;2025/OGM/0004;33;F;internet;Dąbrowa
+11036;2025/OGM/0004;45;M;internet;Cisowa
+11037;2025/OGM/0004;25;M;internet;Cisowa
+11038;2025/OGM/0004;41;M;internet;Babie Doły
+11039;2025/OGM/0004,2025/OGM/0012;46;M;internet;Wielki Kack
+11040;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+11041;2025/OGM/0012;64;F;internet;Chwarzno-Wiczlino
+11042;2025/OGM/0004,2025/OGM/0012;18;M;internet;Wielki Kack
+11044;2025/OGM/0012;53;M;internet;Witomino
+11045;2025/OGM/0004,2025/OGM/0012;22;M;internet;Witomino
+11046;2025/OGM/0004,2025/OGM/0012;20;F;internet;Witomino
+11047;2025/OGM/0004,2025/OGM/0012;54;F;internet;Witomino
+11048;2025/OGM/0004;50;F;internet;Pustki Cisowskie-Demptowo
+11049;2025/OGM/0004,2025/OGM/0012;56;F;internet;Witomino
+11050;2025/OGM/0012;33;M;internet;Pogórze
+11051;2025/OGM/0004;36;F;internet;Pogórze
+11052;2025/OGM/0004,2025/OGM/0012;52;F;internet;Witomino
+11053;2025/OGM/0004,2025/OGM/0012;36;M;internet;Śródmieście
+11054;2025/OGM/0004;31;M;internet;Wielki Kack
+11055;2025/OGM/0004,2025/OGM/0012;22;F;internet;Witomino
+11056;2025/OGM/0004;59;M;internet;Pogórze
+11057;2025/OGM/0004,2025/OGM/0012;52;F;internet;Cisowa
+11058;2025/OGM/0004;60;F;internet;Pogórze
+11059;2025/OGM/0012;33;M;internet;Wielki Kack
+11060;2025/OGM/0004,2025/OGM/0012;73;F;internet;Dąbrowa
+11061;2025/OGM/0012;66;M;internet;Chwarzno-Wiczlino
+11062;2025/OGM/0004;;F;internet;Wielki Kack
+11063;2025/OGM/0004;5;M;internet;Pogórze
+11064;2025/OGM/0004;31;F;internet;Wielki Kack
+11065;2025/OGM/0004;51;F;internet;Mały Kack
+11066;2025/OGM/0012;1;M;internet;Wielki Kack
+11067;2025/OGM/0004;28;F;internet;Chwarzno-Wiczlino
+11068;2025/OGM/0004;21;M;internet;Mały Kack
+11069;2025/OGM/0004;23;M;internet;Mały Kack
+11070;2025/OGM/0004;29;M;internet;Mały Kack
+11071;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wzgórze Św. Maksymiliana
+11072;2025/OGM/0004;9;M;internet;Witomino
+11073;2025/OGM/0004;36;M;internet;Pogórze
+11074;2025/OGM/0004;18;F;internet;Śródmieście
+11075;2025/OGM/0004;25;M;internet;Dąbrowa
+11076;2025/OGM/0004,2025/OGM/0012;29;F;internet;Cisowa
+11077;2025/OGM/0004;42;M;internet;Mały Kack
+11078;2025/OGM/0004;49;F;internet;Chylonia
+11079;2025/OGM/0012;56;F;internet;Wielki Kack
+11080;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+11081;2025/OGM/0004;45;M;internet;Witomino
+11082;2025/OGM/0012;26;F;internet;Działki Leśne
+11083;2025/OGM/0012;18;M;internet;Witomino
+11084;2025/OGM/0004;19;M;internet;Orłowo
+11085;2025/OGM/0004,2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+11086;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+11087;2025/OGM/0004,2025/OGM/0012;38;M;internet;Działki Leśne
+11088;2025/OGM/0004;3;F;internet;Babie Doły
+11089;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+11090;2025/OGM/0012;50;M;internet;Pustki Cisowskie-Demptowo
+11091;2025/OGM/0004;37;M;internet;Działki Leśne
+11092;2025/OGM/0004;28;F;internet;Śródmieście
+11093;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+11094;2025/OGM/0004;10;M;internet;Oksywie
+11095;2025/OGM/0004;36;F;internet;Dąbrowa
+11096;2025/OGM/0004,2025/OGM/0012;15;F;internet;Mały Kack
+11097;2025/OGM/0012;52;F;internet;Dąbrowa
+11098;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+11099;2025/OGM/0004,2025/OGM/0012;37;F;internet;Śródmieście
+11100;2025/OGM/0012;64;M;internet;Chylonia
+11101;2025/OGM/0004,2025/OGM/0012;9;M;internet;Mały Kack
+11102;2025/OGM/0004;41;F;internet;Pustki Cisowskie-Demptowo
+11103;2025/OGM/0004;76;M;internet;Oksywie
+11104;2025/OGM/0004;46;M;internet;Mały Kack
+11105;2025/OGM/0004,2025/OGM/0012;35;M;internet;Śródmieście
+11106;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+11107;2025/OGM/0004,2025/OGM/0012;38;M;internet;Witomino
+11108;2025/OGM/0012;73;F;internet;Pustki Cisowskie-Demptowo
+11111;2025/OGM/0004,2025/OGM/0012;36;F;internet;Redłowo
+11112;2025/OGM/0004;44;M;internet;Działki Leśne
+11114;2025/OGM/0004,2025/OGM/0012;42;M;internet;Oksywie
+11115;2025/OGM/0012;78;M;internet;Pustki Cisowskie-Demptowo
+11116;2025/OGM/0004,2025/OGM/0012;37;M;internet;Cisowa
+11117;2025/OGM/0004;43;F;internet;Wielki Kack
+11120;2025/OGM/0004,2025/OGM/0012;24;M;internet;Chwarzno-Wiczlino
+11121;2025/OGM/0004,2025/OGM/0012;54;F;internet;Dąbrowa
+11122;2025/OGM/0004,2025/OGM/0012;39;M;internet;Mały Kack
+11123;2025/OGM/0004,2025/OGM/0012;60;F;internet;Chylonia
+11124;2025/OGM/0012;8;M;internet;Wielki Kack
+11125;2025/OGM/0004,2025/OGM/0012;54;F;internet;Obłuże
+11126;2025/OGM/0004;16;F;internet;Witomino
+11127;2025/OGM/0004;41;M;internet;Pustki Cisowskie-Demptowo
+11128;2025/OGM/0004;46;F;internet;Cisowa
+11129;2025/OGM/0004;5;F;internet;Mały Kack
+11130;2025/OGM/0004;;F;internet;Mały Kack
+11131;2025/OGM/0004;29;M;internet;Wielki Kack
+11132;2025/OGM/0004,2025/OGM/0012;34;F;internet;Orłowo
+11133;2025/OGM/0004;8;F;internet;Witomino
+11134;2025/OGM/0004;27;F;internet;Wielki Kack
+11135;2025/OGM/0012;11;F;internet;Wielki Kack
+11137;2025/OGM/0004,2025/OGM/0012;1;F;internet;Orłowo
+11138;2025/OGM/0004;71;F;internet;Wielki Kack
+11139;2025/OGM/0004,2025/OGM/0012;65;M;internet;Oksywie
+11140;2025/OGM/0012;41;M;internet;Wielki Kack
+11141;2025/OGM/0004,2025/OGM/0012;35;M;internet;Pustki Cisowskie-Demptowo
+11142;2025/OGM/0004,2025/OGM/0012;31;F;internet;Pustki Cisowskie-Demptowo
+11143;2025/OGM/0004;40;M;internet;Śródmieście
+11144;2025/OGM/0004;27;M;internet;Oksywie
+11145;2025/OGM/0004;24;F;internet;Oksywie
+11146;2025/OGM/0004;;F;internet;Babie Doły
+11147;2025/OGM/0004;34;M;internet;Wielki Kack
+11148;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+11149;2025/OGM/0004,2025/OGM/0012;21;F;internet;Chwarzno-Wiczlino
+11150;2025/OGM/0004;41;F;internet;Działki Leśne
+11151;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+11152;2025/OGM/0004;35;M;internet;Działki Leśne
+11153;2025/OGM/0004,2025/OGM/0012;42;F;internet;Śródmieście
+11154;2025/OGM/0004;32;F;internet;Wielki Kack
+11155;2025/OGM/0004;38;M;internet;Wielki Kack
+11156;2025/OGM/0004,2025/OGM/0012;43;M;internet;Babie Doły
+11157;2025/OGM/0004;39;M;internet;Cisowa
+11158;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+11159;2025/OGM/0004;37;F;internet;Cisowa
+11160;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+11161;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+11162;2025/OGM/0004;10;F;internet;Cisowa
+11163;2025/OGM/0004,2025/OGM/0012;50;M;internet;Działki Leśne
+11164;2025/OGM/0004;43;M;internet;Dąbrowa
+11165;2025/OGM/0004;32;M;internet;Wielki Kack
+11166;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+11167;2025/OGM/0004,2025/OGM/0012;61;F;internet;Mały Kack
+11168;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+11169;2025/OGM/0012;41;F;internet;Redłowo
+11170;2025/OGM/0004;60;F;internet;Dąbrowa
+11171;2025/OGM/0012;6;F;internet;Redłowo
+11173;2025/OGM/0012;44;M;internet;Redłowo
+11174;2025/OGM/0004,2025/OGM/0012;18;M;internet;Chwarzno-Wiczlino
+11176;2025/OGM/0004;51;F;internet;Obłuże
+11177;2025/OGM/0004;49;M;internet;Dąbrowa
+11178;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+11179;2025/OGM/0004;40;F;internet;Cisowa
+11180;2025/OGM/0004,2025/OGM/0012;56;M;internet;Śródmieście
+11181;2025/OGM/0012;36;F;internet;Śródmieście
+11182;2025/OGM/0004,2025/OGM/0012;46;M;internet;Oksywie
+11183;2025/OGM/0004,2025/OGM/0012;75;M;internet;Oksywie
+11184;2025/OGM/0004,2025/OGM/0012;15;F;internet;Oksywie
+11185;2025/OGM/0004,2025/OGM/0012;60;F;internet;Chylonia
+11186;2025/OGM/0004,2025/OGM/0012;59;M;internet;Chylonia
+11187;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chylonia
+11188;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chylonia
+11189;2025/OGM/0004,2025/OGM/0012;29;F;internet;Mały Kack
+11190;2025/OGM/0012;73;M;internet;Pogórze
+11191;2025/OGM/0012;70;F;internet;Pogórze
+11193;2025/OGM/0004;53;F;internet;Witomino
+11195;2025/OGM/0004;21;M;internet;Mały Kack
+11197;2025/OGM/0004;90;F;internet;Pustki Cisowskie-Demptowo
+11198;2025/OGM/0004,2025/OGM/0012;65;M;internet;Mały Kack
+11199;2025/OGM/0004;41;M;internet;Obłuże
+11200;2025/OGM/0012;39;F;internet;Witomino
+11201;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pustki Cisowskie-Demptowo
+11202;2025/OGM/0004,2025/OGM/0012;42;F;internet;Dąbrowa
+11203;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+11204;2025/OGM/0004,2025/OGM/0012;56;F;internet;Karwiny
+11205;2025/OGM/0004;42;F;internet;Obłuże
+11206;2025/OGM/0004,2025/OGM/0012;43;F;internet;Babie Doły
+11207;2025/OGM/0004,2025/OGM/0012;12;F;internet;Oksywie
+11208;2025/OGM/0012;40;F;internet;Witomino
+11209;2025/OGM/0004;55;F;internet;Dąbrowa
+11210;2025/OGM/0004,2025/OGM/0012;49;F;internet;Cisowa
+11211;2025/OGM/0004;55;M;internet;Redłowo
+11212;2025/OGM/0004;19;F;internet;Mały Kack
+11213;2025/OGM/0004;30;M;internet;Wielki Kack
+11214;2025/OGM/0004;36;F;internet;Cisowa
+11215;2025/OGM/0004;23;F;internet;Obłuże
+11216;2025/OGM/0004;34;M;internet;Mały Kack
+11217;2025/OGM/0004;65;M;internet;Śródmieście
+11218;2025/OGM/0012;48;F;internet;Redłowo
+11219;2025/OGM/0004;42;M;internet;Witomino
+11220;2025/OGM/0004;44;F;internet;Pustki Cisowskie-Demptowo
+11221;2025/OGM/0012;35;M;internet;Wielki Kack
+11222;2025/OGM/0004;38;F;internet;Pustki Cisowskie-Demptowo
+11223;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+11224;2025/OGM/0012;1;F;internet;Wielki Kack
+11225;2025/OGM/0004,2025/OGM/0012;10;F;internet;Pustki Cisowskie-Demptowo
+11226;2025/OGM/0004;46;F;internet;Cisowa
+11227;2025/OGM/0004,2025/OGM/0012;6;M;internet;Pustki Cisowskie-Demptowo
+11228;2025/OGM/0012;48;F;internet;Witomino
+11229;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+11230;2025/OGM/0004;48;M;internet;Cisowa
+11231;2025/OGM/0004,2025/OGM/0012;26;F;internet;Wielki Kack
+11232;2025/OGM/0004;73;F;internet;Cisowa
+11233;2025/OGM/0004;38;M;internet;Śródmieście
+11234;2025/OGM/0004;46;F;internet;Cisowa
+11235;2025/OGM/0004,2025/OGM/0012;44;F;internet;Redłowo
+11236;2025/OGM/0004;8;M;internet;Cisowa
+11237;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+11238;2025/OGM/0004;17;F;internet;Cisowa
+11239;2025/OGM/0004,2025/OGM/0012;79;M;internet;Wielki Kack
+11240;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+11241;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+11242;2025/OGM/0004;73;F;internet;Witomino
+11243;2025/OGM/0004,2025/OGM/0012;8;F;internet;Oksywie
+11244;2025/OGM/0004,2025/OGM/0012;13;M;internet;Oksywie
+11245;2025/OGM/0004,2025/OGM/0012;27;F;internet;Dąbrowa
+11246;2025/OGM/0004;56;M;internet;Pustki Cisowskie-Demptowo
+11247;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+11248;2025/OGM/0004;17;F;internet;Pustki Cisowskie-Demptowo
+11249;2025/OGM/0004;15;F;internet;Chwarzno-Wiczlino
+11250;2025/OGM/0004;57;F;internet;Cisowa
+11251;2025/OGM/0012;38;F;internet;Działki Leśne
+11252;2025/OGM/0004;10;M;internet;Pustki Cisowskie-Demptowo
+11253;2025/OGM/0004;71;F;internet;Chwarzno-Wiczlino
+11254;2025/OGM/0004;21;F;internet;Chwarzno-Wiczlino
+11255;2025/OGM/0004,2025/OGM/0012;41;F;internet;Grabówek
+11257;2025/OGM/0004,2025/OGM/0012;43;M;internet;Grabówek
+11258;2025/OGM/0004,2025/OGM/0012;33;F;internet;Orłowo
+11259;2025/OGM/0004,2025/OGM/0012;6;M;internet;Grabówek
+11260;2025/OGM/0004,2025/OGM/0012;40;M;internet;Pogórze
+11262;2025/OGM/0004,2025/OGM/0012;42;M;internet;Redłowo
+11264;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+11265;2025/OGM/0004;35;F;internet;Oksywie
+11266;2025/OGM/0004;25;F;internet;Grabówek
+11267;2025/OGM/0004,2025/OGM/0012;31;F;internet;Cisowa
+11268;2025/OGM/0004;52;F;internet;Wzgórze Św. Maksymiliana
+11269;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+11270;2025/OGM/0004;70;M;internet;Pustki Cisowskie-Demptowo
+11271;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+11272;2025/OGM/0004;39;M;internet;Oksywie
+11273;2025/OGM/0004;72;F;internet;Pogórze
+11274;2025/OGM/0004;42;M;internet;Dąbrowa
+11275;2025/OGM/0004;44;F;internet;Wielki Kack
+11276;2025/OGM/0004;52;M;internet;Wzgórze Św. Maksymiliana
+11277;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+11278;2025/OGM/0004,2025/OGM/0012;5;F;internet;Redłowo
+11279;2025/OGM/0004;14;F;internet;Wielki Kack
+11280;2025/OGM/0004,2025/OGM/0012;8;F;internet;Mały Kack
+11281;2025/OGM/0004,2025/OGM/0012;49;F;internet;Oksywie
+11282;2025/OGM/0004;12;F;internet;Wielki Kack
+11283;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+11284;2025/OGM/0004;8;F;internet;Wielki Kack
+11285;2025/OGM/0004,2025/OGM/0012;46;M;internet;Redłowo
+11286;2025/OGM/0004;4;F;internet;Wielki Kack
+11287;2025/OGM/0004,2025/OGM/0012;2;M;internet;Redłowo
+11288;2025/OGM/0004,2025/OGM/0012;10;M;internet;Redłowo
+11289;2025/OGM/0004;47;F;internet;Oksywie
+11290;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+11291;2025/OGM/0004;46;M;internet;Wielki Kack
+11292;2025/OGM/0004;72;F;internet;Pustki Cisowskie-Demptowo
+11293;2025/OGM/0004,2025/OGM/0012;31;F;internet;Działki Leśne
+11294;2025/OGM/0004,2025/OGM/0012;22;F;internet;Pogórze
+11295;2025/OGM/0004;57;F;internet;Chylonia
+11296;2025/OGM/0004;54;F;internet;Chwarzno-Wiczlino
+11297;2025/OGM/0004;47;F;internet;Dąbrowa
+11298;2025/OGM/0004,2025/OGM/0012;29;F;internet;Obłuże
+11299;2025/OGM/0004;57;F;internet;Wielki Kack
+11300;2025/OGM/0004;18;F;internet;Dąbrowa
+11301;2025/OGM/0004,2025/OGM/0012;3;M;internet;Pogórze
+11302;2025/OGM/0004;76;F;internet;Dąbrowa
+11303;2025/OGM/0004;5;F;internet;Chylonia
+11304;2025/OGM/0012;42;M;internet;Redłowo
+11305;2025/OGM/0004;61;F;internet;Pustki Cisowskie-Demptowo
+11306;2025/OGM/0004,2025/OGM/0012;55;F;internet;Mały Kack
+11307;2025/OGM/0004;50;M;internet;Witomino
+11308;2025/OGM/0004;72;F;internet;Chylonia
+11309;2025/OGM/0004;74;M;internet;Chylonia
+11310;2025/OGM/0004;39;F;internet;Działki Leśne
+11311;2025/OGM/0004,2025/OGM/0012;57;M;internet;Mały Kack
+11312;2025/OGM/0004;66;F;internet;Chylonia
+11313;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chylonia
+11314;2025/OGM/0004;48;M;internet;Działki Leśne
+11315;2025/OGM/0004;10;F;internet;Działki Leśne
+11316;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+11317;2025/OGM/0004;9;F;internet;Działki Leśne
+11318;2025/OGM/0004,2025/OGM/0012;25;F;internet;Cisowa
+11319;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+11320;2025/OGM/0004;71;M;internet;Oksywie
+11321;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+11322;2025/OGM/0004,2025/OGM/0012;57;F;internet;Śródmieście
+11323;2025/OGM/0004,2025/OGM/0012;28;M;internet;Cisowa
+11324;2025/OGM/0004,2025/OGM/0012;75;F;internet;Pustki Cisowskie-Demptowo
+11325;2025/OGM/0012;44;F;internet;Wielki Kack
+11326;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+11327;2025/OGM/0012;16;M;internet;Wielki Kack
+11328;2025/OGM/0004;43;M;internet;Wielki Kack
+11329;2025/OGM/0004;21;M;internet;Wielki Kack
+11330;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+11331;2025/OGM/0012;52;F;internet;Wielki Kack
+11332;2025/OGM/0004;59;F;internet;Cisowa
+11333;2025/OGM/0004,2025/OGM/0012;68;F;internet;Śródmieście
+11334;2025/OGM/0004,2025/OGM/0012;2;F;internet;Wielki Kack
+11335;2025/OGM/0004;55;F;internet;Wielki Kack
+11336;2025/OGM/0004,2025/OGM/0012;25;M;internet;Chwarzno-Wiczlino
+11337;2025/OGM/0004,2025/OGM/0012;69;M;internet;Śródmieście
+11338;2025/OGM/0004,2025/OGM/0012;41;F;internet;Karwiny
+11339;2025/OGM/0004;59;M;internet;Oksywie
+11340;2025/OGM/0012;47;F;internet;Śródmieście
+11341;2025/OGM/0004;63;F;internet;Oksywie
+11342;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+11343;2025/OGM/0004;73;M;internet;Karwiny
+11344;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+11345;2025/OGM/0004,2025/OGM/0012;42;F;internet;Redłowo
+11347;2025/OGM/0004;8;F;internet;Chylonia
+11348;2025/OGM/0004;51;M;internet;Chwarzno-Wiczlino
+11349;2025/OGM/0004;46;M;internet;Chylonia
+11350;2025/OGM/0004;36;F;internet;Wielki Kack
+11351;2025/OGM/0004;51;M;internet;Chylonia
+11352;2025/OGM/0004;2;M;internet;Wielki Kack
+11353;2025/OGM/0004;76;F;internet;Pustki Cisowskie-Demptowo
+11355;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+11356;2025/OGM/0004;28;F;internet;Chylonia
+11357;2025/OGM/0004;46;F;internet;Chylonia
+11358;2025/OGM/0004,2025/OGM/0012;49;F;internet;Grabówek
+11359;2025/OGM/0004,2025/OGM/0012;49;M;internet;Wielki Kack
+11360;2025/OGM/0004;53;M;internet;Redłowo
+11361;2025/OGM/0004,2025/OGM/0012;41;M;internet;Cisowa
+11362;2025/OGM/0004,2025/OGM/0012;17;F;internet;Grabówek
+11363;2025/OGM/0004;44;F;internet;Pustki Cisowskie-Demptowo
+11364;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+11365;2025/OGM/0004;52;F;internet;Wielki Kack
+11366;2025/OGM/0004,2025/OGM/0012;44;M;internet;Grabówek
+11367;2025/OGM/0004;77;M;internet;Dąbrowa
+11368;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pustki Cisowskie-Demptowo
+11369;2025/OGM/0004;35;M;internet;
+11370;2025/OGM/0004;75;F;internet;Dąbrowa
+11371;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+11372;2025/OGM/0012;54;M;internet;Chwarzno-Wiczlino
+11373;2025/OGM/0004;24;F;internet;Wielki Kack
+11374;2025/OGM/0004,2025/OGM/0012;9;M;internet;Pustki Cisowskie-Demptowo
+11375;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+11376;2025/OGM/0004;47;F;internet;Obłuże
+11378;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+11379;2025/OGM/0012;54;M;internet;Mały Kack
+11380;2025/OGM/0004,2025/OGM/0012;39;F;internet;Redłowo
+11381;2025/OGM/0004;46;F;internet;Mały Kack
+11382;2025/OGM/0004,2025/OGM/0012;76;F;internet;Chylonia
+11383;2025/OGM/0004;36;F;internet;Cisowa
+11384;2025/OGM/0004,2025/OGM/0012;32;M;internet;Cisowa
+11385;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wzgórze Św. Maksymiliana
+11386;2025/OGM/0004;36;F;internet;Oksywie
+11387;2025/OGM/0004;75;F;internet;Karwiny
+11388;2025/OGM/0004;29;M;internet;Śródmieście
+11389;2025/OGM/0012;38;F;internet;Wielki Kack
+11390;2025/OGM/0004,2025/OGM/0012;70;F;internet;Dąbrowa
+11391;2025/OGM/0012;1;F;internet;Wielki Kack
+11392;2025/OGM/0004;65;F;internet;Mały Kack
+11393;2025/OGM/0004;34;F;internet;Cisowa
+11394;2025/OGM/0004;4;F;internet;Cisowa
+11395;2025/OGM/0004;41;F;internet;Chylonia
+11397;2025/OGM/0004;77;M;internet;Chylonia
+11399;2025/OGM/0004,2025/OGM/0012;51;M;internet;Wielki Kack
+11400;2025/OGM/0012;73;F;internet;Karwiny
+11401;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chylonia
+11402;2025/OGM/0004;67;F;internet;Dąbrowa
+11403;2025/OGM/0004;28;F;internet;Karwiny
+11405;2025/OGM/0004;76;M;internet;Karwiny
+11406;2025/OGM/0004;67;M;internet;Dąbrowa
+11407;2025/OGM/0004,2025/OGM/0012;69;M;internet;Wielki Kack
+11408;2025/OGM/0004,2025/OGM/0012;67;F;internet;Wielki Kack
+11410;2025/OGM/0012;71;F;internet;Karwiny
+11411;2025/OGM/0004;30;F;internet;Cisowa
+11412;2025/OGM/0004;78;M;internet;Witomino
+11413;2025/OGM/0012;34;F;internet;Mały Kack
+11414;2025/OGM/0004;73;F;internet;Witomino
+11415;2025/OGM/0004,2025/OGM/0012;54;F;internet;Obłuże
+11416;2025/OGM/0004;46;F;internet;Mały Kack
+11417;2025/OGM/0004,2025/OGM/0012;55;F;internet;Dąbrowa
+11418;2025/OGM/0004;7;M;internet;Wielki Kack
+11419;2025/OGM/0004,2025/OGM/0012;42;F;internet;Karwiny
+11421;2025/OGM/0004;27;M;internet;Wzgórze Św. Maksymiliana
+11422;2025/OGM/0004,2025/OGM/0012;41;M;internet;Karwiny
+11423;2025/OGM/0012;63;M;internet;Mały Kack
+11424;2025/OGM/0004,2025/OGM/0012;14;M;internet;Karwiny
+11425;2025/OGM/0004,2025/OGM/0012;12;M;internet;Karwiny
+11426;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+11427;2025/OGM/0004;41;F;internet;Witomino
+11428;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+11429;2025/OGM/0004,2025/OGM/0012;35;F;internet;Pustki Cisowskie-Demptowo
+11430;2025/OGM/0004;14;F;internet;Mały Kack
+11431;2025/OGM/0004,2025/OGM/0012;38;M;internet;Pustki Cisowskie-Demptowo
+11432;2025/OGM/0004,2025/OGM/0012;41;M;internet;Pustki Cisowskie-Demptowo
+11433;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+11434;2025/OGM/0004;16;M;internet;Mały Kack
+11435;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+11436;2025/OGM/0004,2025/OGM/0012;53;F;internet;Witomino
+11437;2025/OGM/0004;46;M;internet;Mały Kack
+11438;2025/OGM/0004;47;M;internet;Mały Kack
+11439;2025/OGM/0004,2025/OGM/0012;9;F;internet;Pustki Cisowskie-Demptowo
+11440;2025/OGM/0004,2025/OGM/0012;4;F;internet;Pustki Cisowskie-Demptowo
+11441;2025/OGM/0004,2025/OGM/0012;1;M;internet;Pustki Cisowskie-Demptowo
+11442;2025/OGM/0004,2025/OGM/0012;54;M;internet;Obłuże
+11443;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+11444;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chwarzno-Wiczlino
+11446;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+11447;2025/OGM/0004,2025/OGM/0012;51;F;internet;Dąbrowa
+11449;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+11450;2025/OGM/0004;29;M;internet;Cisowa
+11451;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chylonia
+11452;2025/OGM/0004;58;F;internet;Mały Kack
+11453;2025/OGM/0004;12;F;internet;Pustki Cisowskie-Demptowo
+11454;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+11456;2025/OGM/0004;39;F;internet;Pogórze
+11457;2025/OGM/0012;78;F;internet;Chylonia
+11458;2025/OGM/0012;37;M;internet;Redłowo
+11459;2025/OGM/0004,2025/OGM/0012;30;M;internet;Mały Kack
+11460;2025/OGM/0004;49;M;internet;Grabówek
+11461;2025/OGM/0004;86;F;internet;Leszczynki
+11462;2025/OGM/0004;57;M;internet;Redłowo
+11463;2025/OGM/0004;31;M;internet;Wielki Kack
+11464;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+11465;2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+11466;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+11467;2025/OGM/0004;83;F;internet;Wielki Kack
+11468;2025/OGM/0004;15;M;internet;Chwarzno-Wiczlino
+11469;2025/OGM/0004;66;F;internet;Dąbrowa
+11470;2025/OGM/0004,2025/OGM/0012;75;M;internet;Pustki Cisowskie-Demptowo
+11471;2025/OGM/0012;30;M;internet;Cisowa
+11472;2025/OGM/0004;42;F;internet;Wielki Kack
+11474;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+11475;2025/OGM/0004;64;F;internet;Chylonia
+11476;2025/OGM/0004;34;F;internet;Dąbrowa
+11477;2025/OGM/0004;8;F;internet;Pustki Cisowskie-Demptowo
+11478;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+11479;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+11481;2025/OGM/0004;78;F;internet;Grabówek
+11482;2025/OGM/0004;6;F;internet;Pustki Cisowskie-Demptowo
+11484;2025/OGM/0004;66;F;internet;Chylonia
+11485;2025/OGM/0004;64;F;internet;Pustki Cisowskie-Demptowo
+11486;2025/OGM/0004;18;F;internet;Chylonia
+11487;2025/OGM/0004;88;F;internet;Chylonia
+11488;2025/OGM/0004;76;F;internet;Wielki Kack
+11489;2025/OGM/0012;43;M;internet;Mały Kack
+11490;2025/OGM/0004;63;F;internet;Pustki Cisowskie-Demptowo
+11491;2025/OGM/0004;72;F;internet;Chylonia
+11492;2025/OGM/0012;24;M;internet;Oksywie
+11494;2025/OGM/0004,2025/OGM/0012;16;M;internet;Dąbrowa
+11495;2025/OGM/0012;74;F;internet;Witomino
+11496;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+11497;2025/OGM/0004;74;F;internet;Wielki Kack
+11499;2025/OGM/0004,2025/OGM/0012;60;F;internet;Dąbrowa
+11500;2025/OGM/0012;40;F;internet;Śródmieście
+11501;2025/OGM/0012;40;M;internet;Mały Kack
+11503;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+11504;2025/OGM/0012;38;F;internet;Pustki Cisowskie-Demptowo
+11505;2025/OGM/0012;55;M;internet;Witomino
+11506;2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+11507;2025/OGM/0004;43;F;internet;Dąbrowa
+11509;2025/OGM/0004;60;M;internet;Wielki Kack
+11510;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+11511;2025/OGM/0012;68;F;internet;Pustki Cisowskie-Demptowo
+11512;2025/OGM/0004;72;F;internet;Dąbrowa
+11513;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+11514;2025/OGM/0004;27;F;internet;Oksywie
+11515;2025/OGM/0012;72;M;internet;Pustki Cisowskie-Demptowo
+11516;2025/OGM/0004;75;M;internet;Dąbrowa
+11518;2025/OGM/0004;61;M;internet;Grabówek
+11519;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+11520;2025/OGM/0004;52;M;internet;Dąbrowa
+11521;2025/OGM/0012;35;F;internet;Grabówek
+11522;2025/OGM/0004;19;M;internet;Obłuże
+11523;2025/OGM/0012;3;F;internet;Pustki Cisowskie-Demptowo
+11524;2025/OGM/0004,2025/OGM/0012;19;F;internet;Karwiny
+11525;2025/OGM/0004,2025/OGM/0012;18;F;internet;Orłowo
+11526;2025/OGM/0004;35;M;internet;Oksywie
+11527;2025/OGM/0012;18;F;internet;Obłuże
+11528;2025/OGM/0004;56;F;internet;Pustki Cisowskie-Demptowo
+11529;2025/OGM/0004;41;M;internet;Redłowo
+11530;2025/OGM/0004;18;F;internet;Grabówek
+11531;2025/OGM/0012;41;M;internet;Pustki Cisowskie-Demptowo
+11532;2025/OGM/0004;78;M;internet;Obłuże
+11533;2025/OGM/0004,2025/OGM/0012;43;F;internet;Grabówek
+11534;2025/OGM/0012;54;F;internet;Wielki Kack
+11535;2025/OGM/0004,2025/OGM/0012;19;F;internet;Redłowo
+11536;2025/OGM/0004;67;M;internet;Leszczynki
+11537;2025/OGM/0004;19;F;internet;Oksywie
+11538;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+11539;2025/OGM/0004;18;M;internet;Oksywie
+11540;2025/OGM/0004;65;F;internet;Wielki Kack
+11541;2025/OGM/0004;36;F;internet;Grabówek
+11544;2025/OGM/0004;31;F;internet;Wielki Kack
+11545;2025/OGM/0004;41;F;internet;Wielki Kack
+11546;2025/OGM/0012;17;F;internet;Śródmieście
+11547;2025/OGM/0004,2025/OGM/0012;25;F;internet;Oksywie
+11548;2025/OGM/0004;38;F;internet;Wielki Kack
+11549;2025/OGM/0004,2025/OGM/0012;29;M;internet;Grabówek
+11551;2025/OGM/0004;27;F;internet;Mały Kack
+11552;2025/OGM/0004;68;M;internet;Wielki Kack
+11553;2025/OGM/0004;18;M;internet;Wielki Kack
+11554;2025/OGM/0004,2025/OGM/0012;40;M;internet;Orłowo
+11556;2025/OGM/0004,2025/OGM/0012;43;M;internet;Grabówek
+11558;2025/OGM/0004;79;F;internet;Wielki Kack
+11559;2025/OGM/0012;28;M;internet;Oksywie
+11561;2025/OGM/0004;71;M;internet;Grabówek
+11562;2025/OGM/0004,2025/OGM/0012;48;F;internet;Obłuże
+11563;2025/OGM/0004,2025/OGM/0012;40;F;internet;Obłuże
+11564;2025/OGM/0004;42;F;internet;Mały Kack
+11565;2025/OGM/0004;40;F;internet;Leszczynki
+11566;2025/OGM/0004;70;M;internet;Leszczynki
+11567;2025/OGM/0004;15;M;internet;Wielki Kack
+11568;2025/OGM/0004,2025/OGM/0012;52;M;internet;Chylonia
+11569;2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+11570;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chylonia
+11571;2025/OGM/0012;64;M;internet;Witomino
+11572;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+11573;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+11574;2025/OGM/0004;70;M;internet;Dąbrowa
+11575;2025/OGM/0004;55;F;internet;Grabówek
+11576;2025/OGM/0004,2025/OGM/0012;76;F;internet;Obłuże
+11577;2025/OGM/0004;21;M;internet;Mały Kack
+11578;2025/OGM/0004,2025/OGM/0012;17;M;internet;Pogórze
+11579;2025/OGM/0004,2025/OGM/0012;46;M;internet;Pogórze
+11580;2025/OGM/0004;75;F;internet;Grabówek
+11581;2025/OGM/0004;77;F;internet;Pustki Cisowskie-Demptowo
+11582;2025/OGM/0004,2025/OGM/0012;44;M;internet;Pustki Cisowskie-Demptowo
+11583;2025/OGM/0004;39;F;internet;Śródmieście
+11584;2025/OGM/0004;50;F;internet;Leszczynki
+11585;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+11587;2025/OGM/0004,2025/OGM/0012;31;M;internet;Mały Kack
+11588;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+11589;2025/OGM/0004,2025/OGM/0012;54;F;internet;Chylonia
+11590;2025/OGM/0012;43;F;internet;Witomino
+11591;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+11592;2025/OGM/0004;71;F;internet;Leszczynki
+11593;2025/OGM/0004;3;F;internet;Mały Kack
+11594;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+11595;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chylonia
+11596;2025/OGM/0004,2025/OGM/0012;12;M;internet;Pustki Cisowskie-Demptowo
+11597;2025/OGM/0012;54;M;internet;Babie Doły
+11598;2025/OGM/0004;67;F;internet;Witomino
+11599;2025/OGM/0004;26;M;internet;Grabówek
+11600;2025/OGM/0004;60;M;internet;Mały Kack
+11601;2025/OGM/0004;50;F;internet;Leszczynki
+11602;2025/OGM/0004;60;F;internet;Mały Kack
+11603;2025/OGM/0004;38;F;internet;Cisowa
+11604;2025/OGM/0004;36;F;internet;Dąbrowa
+11605;2025/OGM/0004;28;M;internet;Śródmieście
+11606;2025/OGM/0004,2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+11607;2025/OGM/0004,2025/OGM/0012;36;F;internet;Obłuże
+11608;2025/OGM/0004;57;F;internet;Pustki Cisowskie-Demptowo
+11609;2025/OGM/0004,2025/OGM/0012;83;M;internet;Wzgórze Św. Maksymiliana
+11610;2025/OGM/0004,2025/OGM/0012;15;M;internet;Pustki Cisowskie-Demptowo
+11611;2025/OGM/0004;35;M;internet;Dąbrowa
+11612;2025/OGM/0012;52;M;internet;Chylonia
+11613;2025/OGM/0004,2025/OGM/0012;75;F;internet;Wzgórze Św. Maksymiliana
+11614;2025/OGM/0004,2025/OGM/0012;40;M;internet;Pustki Cisowskie-Demptowo
+11615;2025/OGM/0004;58;M;internet;Mały Kack
+11616;2025/OGM/0004;33;F;internet;Mały Kack
+11617;2025/OGM/0012;78;F;internet;Leszczynki
+11618;2025/OGM/0004;67;F;internet;Cisowa
+11619;2025/OGM/0004,2025/OGM/0012;15;M;internet;Pustki Cisowskie-Demptowo
+11620;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+11621;2025/OGM/0012;44;M;internet;Redłowo
+11622;2025/OGM/0004,2025/OGM/0012;63;F;internet;Chylonia
+11623;2025/OGM/0004;54;F;internet;Mały Kack
+11624;2025/OGM/0004;73;F;internet;Leszczynki
+11625;2025/OGM/0004;35;F;internet;Cisowa
+11626;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+11627;2025/OGM/0004;69;M;internet;Śródmieście
+11628;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+11629;2025/OGM/0004;79;F;internet;Grabówek
+11630;2025/OGM/0004;72;F;internet;Wielki Kack
+11631;2025/OGM/0004,2025/OGM/0012;35;F;internet;Karwiny
+11632;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+11633;2025/OGM/0004,2025/OGM/0012;55;F;internet;Dąbrowa
+11634;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+11635;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+11636;2025/OGM/0012;74;M;internet;Grabówek
+11637;2025/OGM/0004;48;F;internet;Mały Kack
+11638;2025/OGM/0004,2025/OGM/0012;44;F;internet;Cisowa
+11639;2025/OGM/0004;54;F;internet;Pustki Cisowskie-Demptowo
+11640;2025/OGM/0004;49;F;internet;Chylonia
+11641;2025/OGM/0012;44;F;internet;Babie Doły
+11642;2025/OGM/0012;43;F;internet;Śródmieście
+11643;2025/OGM/0004;74;M;internet;Cisowa
+11645;2025/OGM/0004;19;F;internet;Mały Kack
+11646;2025/OGM/0004;44;F;internet;Obłuże
+11647;2025/OGM/0004;36;F;internet;Wielki Kack
+11648;2025/OGM/0004,2025/OGM/0012;27;F;internet;Grabówek
+11649;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+11650;2025/OGM/0004;47;F;internet;Karwiny
+11651;2025/OGM/0004;63;F;internet;Pogórze
+11652;2025/OGM/0004,2025/OGM/0012;60;F;internet;Witomino
+11653;2025/OGM/0004;44;M;internet;Wielki Kack
+11654;2025/OGM/0004,2025/OGM/0012;77;M;internet;Leszczynki
+11655;2025/OGM/0004,2025/OGM/0012;70;F;internet;Witomino
+11656;2025/OGM/0004;31;F;internet;Mały Kack
+11657;2025/OGM/0004,2025/OGM/0012;40;F;internet;Pustki Cisowskie-Demptowo
+11658;2025/OGM/0004,2025/OGM/0012;50;M;internet;Pustki Cisowskie-Demptowo
+11660;2025/OGM/0004,2025/OGM/0012;9;M;internet;Pustki Cisowskie-Demptowo
+11661;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+11662;2025/OGM/0004,2025/OGM/0012;1;F;internet;Pustki Cisowskie-Demptowo
+11663;2025/OGM/0004;41;F;internet;Orłowo
+11664;2025/OGM/0004;46;F;internet;Chylonia
+11665;2025/OGM/0004;21;F;internet;Dąbrowa
+11666;2025/OGM/0012;33;F;internet;Wielki Kack
+11668;2025/OGM/0004;56;F;internet;Witomino
+11669;2025/OGM/0004,2025/OGM/0012;68;M;internet;Pustki Cisowskie-Demptowo
+11670;2025/OGM/0004,2025/OGM/0012;77;F;internet;Wielki Kack
+11671;2025/OGM/0004;47;F;internet;Babie Doły
+11672;2025/OGM/0004;62;F;internet;Śródmieście
+11673;2025/OGM/0012;70;M;internet;Grabówek
+11674;2025/OGM/0004,2025/OGM/0012;78;M;internet;Wielki Kack
+11675;2025/OGM/0004;15;M;internet;Babie Doły
+11679;2025/OGM/0004;21;F;internet;Chylonia
+11681;2025/OGM/0012;54;M;internet;Wielki Kack
+11685;2025/OGM/0004;66;F;internet;Grabówek
+11688;2025/OGM/0004,2025/OGM/0012;71;F;internet;Pustki Cisowskie-Demptowo
+11690;2025/OGM/0004;39;M;internet;Wielki Kack
+11692;2025/OGM/0004;50;F;internet;Wzgórze Św. Maksymiliana
+11693;2025/OGM/0004;50;F;internet;Wielki Kack
+11700;2025/OGM/0004,2025/OGM/0012;34;M;internet;Witomino
+11703;2025/OGM/0004,2025/OGM/0012;62;F;internet;Chylonia
+11704;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chylonia
+11705;2025/OGM/0004,2025/OGM/0012;20;F;internet;Wzgórze Św. Maksymiliana
+11706;2025/OGM/0004,2025/OGM/0012;65;M;internet;Chylonia
+11708;2025/OGM/0004,2025/OGM/0012;69;M;internet;Karwiny
+11709;2025/OGM/0004;70;F;internet;Chylonia
+11710;2025/OGM/0004;17;F;internet;Chwarzno-Wiczlino
+11711;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+11712;2025/OGM/0004;76;M;internet;Chylonia
+11715;2025/OGM/0004;55;M;internet;Obłuże
+11716;2025/OGM/0004;22;M;internet;Obłuże
+11717;2025/OGM/0004,2025/OGM/0012;12;F;internet;Mały Kack
+11718;2025/OGM/0004;67;F;internet;Mały Kack
+11719;2025/OGM/0004;40;M;internet;Śródmieście
+11720;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+11721;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+11722;2025/OGM/0004,2025/OGM/0012;60;F;internet;Chwarzno-Wiczlino
+11725;2025/OGM/0012;58;F;internet;Pustki Cisowskie-Demptowo
+11726;2025/OGM/0004;39;F;internet;Dąbrowa
+11728;2025/OGM/0004,2025/OGM/0012;61;M;internet;Chwarzno-Wiczlino
+11729;2025/OGM/0004;49;F;internet;Obłuże
+11731;2025/OGM/0004;25;F;internet;Obłuże
+11733;2025/OGM/0004,2025/OGM/0012;38;M;internet;Witomino
+11735;2025/OGM/0004;52;F;internet;Obłuże
+11736;2025/OGM/0004,2025/OGM/0012;88;F;internet;Chwarzno-Wiczlino
+11737;2025/OGM/0004;21;F;internet;Orłowo
+11738;2025/OGM/0004,2025/OGM/0012;68;F;internet;Witomino
+11739;2025/OGM/0004,2025/OGM/0012;68;M;internet;Witomino
+11740;2025/OGM/0004;35;F;internet;Dąbrowa
+11742;2025/OGM/0004;25;M;internet;Chwarzno-Wiczlino
+11744;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+11745;2025/OGM/0004,2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+11746;2025/OGM/0004,2025/OGM/0012;51;M;internet;Obłuże
+11747;2025/OGM/0004;35;F;internet;Witomino
+11748;2025/OGM/0004;52;M;internet;Dąbrowa
+11750;2025/OGM/0004;48;F;internet;Witomino
+11751;2025/OGM/0004;40;F;internet;Wielki Kack
+11752;2025/OGM/0012;49;F;internet;Witomino
+11753;2025/OGM/0004;44;F;internet;Karwiny
+11754;2025/OGM/0004;73;F;internet;Oksywie
+11755;2025/OGM/0012;26;M;internet;Witomino
+11757;2025/OGM/0004;42;F;internet;Obłuże
+11758;2025/OGM/0004;79;M;internet;Oksywie
+11760;2025/OGM/0004;71;F;internet;Chylonia
+11761;2025/OGM/0004;36;M;internet;Dąbrowa
+11762;2025/OGM/0004,2025/OGM/0012;46;M;internet;Wielki Kack
+11763;2025/OGM/0004,2025/OGM/0012;35;M;internet;Oksywie
+11764;2025/OGM/0012;68;M;internet;Chylonia
+11765;2025/OGM/0004;75;F;internet;Witomino
+11766;2025/OGM/0004;38;M;internet;Mały Kack
+11767;2025/OGM/0004;16;M;internet;Wielki Kack
+11768;2025/OGM/0012;77;M;internet;Witomino
+11769;2025/OGM/0004;35;F;internet;Mały Kack
+11770;2025/OGM/0004;25;M;internet;Pogórze
+11772;2025/OGM/0004;57;M;internet;Pogórze
+11773;2025/OGM/0012;78;F;internet;Mały Kack
+11775;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+11777;2025/OGM/0012;40;F;internet;Wzgórze Św. Maksymiliana
+11778;2025/OGM/0004;53;M;internet;Chylonia
+11779;2025/OGM/0004;15;M;internet;Wielki Kack
+11781;2025/OGM/0004,2025/OGM/0012;37;M;internet;Dąbrowa
+11782;2025/OGM/0004;26;M;internet;Karwiny
+11783;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+11784;2025/OGM/0012;73;F;internet;Witomino
+11785;2025/OGM/0004,2025/OGM/0012;56;F;internet;Oksywie
+11786;2025/OGM/0004;15;M;internet;Mały Kack
+11787;2025/OGM/0004,2025/OGM/0012;12;F;internet;Mały Kack
+11788;2025/OGM/0004;22;F;internet;Chwarzno-Wiczlino
+11790;2025/OGM/0004,2025/OGM/0012;8;F;internet;Mały Kack
+11791;2025/OGM/0004;28;F;internet;Wielki Kack
+11792;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+11793;2025/OGM/0004;45;F;internet;Redłowo
+11794;2025/OGM/0012;53;M;internet;Redłowo
+11795;2025/OGM/0004;54;F;internet;Dąbrowa
+11796;2025/OGM/0004;56;M;internet;Dąbrowa
+11797;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+11799;2025/OGM/0012;70;M;internet;Śródmieście
+11801;2025/OGM/0004;52;F;internet;Wielki Kack
+11802;2025/OGM/0004;57;F;internet;Mały Kack
+11804;2025/OGM/0004;37;F;internet;Wielki Kack
+11806;2025/OGM/0004;33;F;internet;Cisowa
+11807;2025/OGM/0004;45;F;internet;Wielki Kack
+11808;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+11809;2025/OGM/0012;43;F;internet;Obłuże
+11811;2025/OGM/0004;30;M;internet;Wielki Kack
+11813;2025/OGM/0012;72;F;internet;Pustki Cisowskie-Demptowo
+11814;2025/OGM/0004;42;M;internet;Śródmieście
+11815;2025/OGM/0004,2025/OGM/0012;40;M;internet;Mały Kack
+11816;2025/OGM/0012;38;F;internet;Działki Leśne
+11817;2025/OGM/0004;40;M;internet;Mały Kack
+11818;2025/OGM/0004;11;F;internet;Działki Leśne
+11819;2025/OGM/0012;45;F;internet;Witomino
+11820;2025/OGM/0004;30;F;internet;Działki Leśne
+11821;2025/OGM/0004,2025/OGM/0012;7;F;internet;Chylonia
+11822;2025/OGM/0012;7;F;internet;Witomino
+11823;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+11824;2025/OGM/0004;41;F;internet;Mały Kack
+11825;2025/OGM/0004;31;F;internet;Chwarzno-Wiczlino
+11826;2025/OGM/0004;69;F;internet;Dąbrowa
+11827;2025/OGM/0004;41;F;internet;Orłowo
+11828;2025/OGM/0012;54;F;internet;Mały Kack
+11829;2025/OGM/0004;42;F;internet;Orłowo
+11830;2025/OGM/0004,2025/OGM/0012;52;M;internet;Witomino
+11831;2025/OGM/0012;8;F;internet;Działki Leśne
+11832;2025/OGM/0004;12;M;internet;Wielki Kack
+11833;2025/OGM/0004;44;M;internet;Orłowo
+11834;2025/OGM/0004;14;M;internet;Mały Kack
+11835;2025/OGM/0004;67;F;internet;Cisowa
+11836;2025/OGM/0004;12;M;internet;Orłowo
+11837;2025/OGM/0004;33;M;internet;Działki Leśne
+11838;2025/OGM/0004;11;M;internet;Mały Kack
+11839;2025/OGM/0004;26;M;internet;Cisowa
+11840;2025/OGM/0004;4;F;internet;Działki Leśne
+11841;2025/OGM/0004;72;F;internet;Orłowo
+11842;2025/OGM/0004,2025/OGM/0012;40;F;internet;Redłowo
+11843;2025/OGM/0004;47;F;internet;Orłowo
+11844;2025/OGM/0004;17;M;internet;Wielki Kack
+11847;2025/OGM/0004;29;M;internet;Kamienna Góra
+11848;2025/OGM/0004;59;M;internet;Mały Kack
+11849;2025/OGM/0004,2025/OGM/0012;27;M;internet;Karwiny
+11850;2025/OGM/0004,2025/OGM/0012;25;F;internet;Redłowo
+11851;2025/OGM/0012;42;F;internet;Witomino
+11852;2025/OGM/0004;32;F;internet;Mały Kack
+11853;2025/OGM/0012;48;M;internet;Mały Kack
+11854;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chylonia
+11855;2025/OGM/0004;73;F;internet;Witomino
+11856;2025/OGM/0004;71;F;internet;Wielki Kack
+11860;2025/OGM/0004;16;F;internet;Karwiny
+11861;2025/OGM/0004;48;F;internet;Dąbrowa
+11862;2025/OGM/0004;46;F;internet;Leszczynki
+11863;2025/OGM/0004,2025/OGM/0012;22;F;internet;Chwarzno-Wiczlino
+11864;2025/OGM/0004,2025/OGM/0012;14;F;internet;Grabówek
+11866;2025/OGM/0012;40;M;internet;Redłowo
+11867;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+11868;2025/OGM/0004;48;M;internet;Wielki Kack
+11869;2025/OGM/0012;68;F;internet;Chylonia
+11871;2025/OGM/0004,2025/OGM/0012;34;F;internet;Witomino
+11872;2025/OGM/0004;36;F;internet;Cisowa
+11873;2025/OGM/0004;44;M;internet;Cisowa
+11876;2025/OGM/0004,2025/OGM/0012;9;F;internet;Witomino
+11877;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+11878;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+11879;2025/OGM/0004,2025/OGM/0012;37;M;internet;Witomino
+11880;2025/OGM/0012;36;M;internet;Witomino
+11882;2025/OGM/0004,2025/OGM/0012;63;F;internet;Witomino
+11886;2025/OGM/0004,2025/OGM/0012;34;F;internet;Babie Doły
+11888;2025/OGM/0004,2025/OGM/0012;33;M;internet;Pustki Cisowskie-Demptowo
+11889;2025/OGM/0004,2025/OGM/0012;45;F;internet;Pogórze
+11891;2025/OGM/0004,2025/OGM/0012;56;M;internet;Witomino
+11892;2025/OGM/0004,2025/OGM/0012;53;F;internet;Cisowa
+11894;2025/OGM/0004,2025/OGM/0012;16;M;internet;Witomino
+11895;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+11896;2025/OGM/0012;27;F;internet;Wzgórze Św. Maksymiliana
+11899;2025/OGM/0004,2025/OGM/0012;45;M;internet;Cisowa
+11900;2025/OGM/0004,2025/OGM/0012;90;M;internet;Wzgórze Św. Maksymiliana
+11901;2025/OGM/0004,2025/OGM/0012;11;M;internet;Cisowa
+11902;2025/OGM/0004,2025/OGM/0012;54;F;internet;Działki Leśne
+11903;2025/OGM/0004;29;F;internet;Redłowo
+11904;2025/OGM/0004,2025/OGM/0012;61;F;internet;Chylonia
+11905;2025/OGM/0004;53;F;internet;Oksywie
+11906;2025/OGM/0004;49;M;internet;Dąbrowa
+11907;2025/OGM/0004;43;M;internet;Mały Kack
+11908;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chylonia
+11909;2025/OGM/0004;52;M;internet;Oksywie
+11910;2025/OGM/0004;53;F;internet;Chylonia
+11911;2025/OGM/0004;36;F;internet;Mały Kack
+11912;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chylonia
+11913;2025/OGM/0012;78;F;internet;Witomino
+11914;2025/OGM/0004,2025/OGM/0012;5;F;internet;Chylonia
+11915;2025/OGM/0004;58;F;internet;Wielki Kack
+11916;2025/OGM/0004;39;M;internet;Karwiny
+11917;2025/OGM/0004;28;F;internet;Dąbrowa
+11918;2025/OGM/0004;35;M;internet;Pustki Cisowskie-Demptowo
+11919;2025/OGM/0004;11;F;internet;Wielki Kack
+11920;2025/OGM/0004;39;F;internet;Mały Kack
+11922;2025/OGM/0004;8;F;internet;Wielki Kack
+11923;2025/OGM/0004;17;M;internet;Wielki Kack
+11924;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+11925;2025/OGM/0004;19;F;internet;Obłuże
+11926;2025/OGM/0004;26;F;internet;Śródmieście
+11927;2025/OGM/0004;43;F;internet;Działki Leśne
+11928;2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+11930;2025/OGM/0004,2025/OGM/0012;55;M;internet;Mały Kack
+11931;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+11933;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+11935;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+11939;2025/OGM/0004;48;F;internet;Działki Leśne
+11940;2025/OGM/0004,2025/OGM/0012;24;M;internet;Witomino
+11941;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chylonia
+11942;2025/OGM/0004;49;F;internet;Chylonia
+11943;2025/OGM/0004;22;M;internet;Chylonia
+11944;2025/OGM/0004;32;M;internet;Dąbrowa
+11945;2025/OGM/0004,2025/OGM/0012;51;F;internet;Cisowa
+11946;2025/OGM/0004,2025/OGM/0012;19;F;internet;Karwiny
+11948;2025/OGM/0004;33;M;internet;Dąbrowa
+11949;2025/OGM/0012;36;M;internet;Obłuże
+11950;2025/OGM/0004;44;F;internet;Wielki Kack
+11951;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+11952;2025/OGM/0004,2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+11954;2025/OGM/0004;10;F;internet;Chylonia
+11955;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wzgórze Św. Maksymiliana
+11956;2025/OGM/0004;58;F;internet;Wielki Kack
+11957;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+11958;2025/OGM/0004;47;F;internet;Wielki Kack
+11960;2025/OGM/0004,2025/OGM/0012;55;M;internet;Dąbrowa
+11961;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+11962;2025/OGM/0004;34;F;internet;Wielki Kack
+11963;2025/OGM/0004,2025/OGM/0012;12;M;internet;Pustki Cisowskie-Demptowo
+11964;2025/OGM/0004;3;M;internet;Wielki Kack
+11965;2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+11966;2025/OGM/0004,2025/OGM/0012;5;M;internet;Pustki Cisowskie-Demptowo
+11968;2025/OGM/0004,2025/OGM/0012;48;M;internet;Pustki Cisowskie-Demptowo
+11970;2025/OGM/0004,2025/OGM/0012;75;F;internet;Pustki Cisowskie-Demptowo
+11971;2025/OGM/0004;41;M;internet;Wielki Kack
+11972;2025/OGM/0004;69;M;internet;Karwiny
+11973;2025/OGM/0012;42;F;internet;Pogórze
+11974;2025/OGM/0004;42;M;internet;Wielki Kack
+11975;2025/OGM/0012;9;M;internet;Pogórze
+11976;2025/OGM/0004,2025/OGM/0012;73;F;internet;Karwiny
+11977;2025/OGM/0004,2025/OGM/0012;44;M;internet;Pogórze
+11978;2025/OGM/0004,2025/OGM/0012;74;M;internet;Pustki Cisowskie-Demptowo
+11979;2025/OGM/0004;55;M;internet;Mały Kack
+11980;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+11981;2025/OGM/0012;59;M;internet;Pustki Cisowskie-Demptowo
+11983;2025/OGM/0004;39;M;internet;Śródmieście
+11984;2025/OGM/0004,2025/OGM/0012;67;F;internet;Karwiny
+11985;2025/OGM/0012;78;F;internet;Pustki Cisowskie-Demptowo
+11986;2025/OGM/0004,2025/OGM/0012;47;M;internet;Śródmieście
+11987;2025/OGM/0004,2025/OGM/0012;48;F;internet;Śródmieście
+11988;2025/OGM/0004;41;F;internet;Wielki Kack
+11989;2025/OGM/0004,2025/OGM/0012;20;F;internet;Śródmieście
+11990;2025/OGM/0004;50;F;internet;Karwiny
+11991;2025/OGM/0004,2025/OGM/0012;51;F;internet;Mały Kack
+11992;2025/OGM/0004,2025/OGM/0012;17;F;internet;Śródmieście
+11994;2025/OGM/0004,2025/OGM/0012;10;F;internet;Śródmieście
+11995;2025/OGM/0012;77;F;internet;Pustki Cisowskie-Demptowo
+11996;2025/OGM/0004,2025/OGM/0012;18;F;internet;Dąbrowa
+11997;2025/OGM/0004;33;F;internet;Obłuże
+11998;2025/OGM/0012;39;F;internet;Chylonia
+11999;2025/OGM/0004;42;M;internet;Mały Kack
+12000;2025/OGM/0004,2025/OGM/0012;44;F;internet;Karwiny
+12003;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wielki Kack
+12005;2025/OGM/0012;48;M;internet;Oksywie
+12006;2025/OGM/0012;68;M;internet;Witomino
+12007;2025/OGM/0004;48;M;internet;Pustki Cisowskie-Demptowo
+12008;2025/OGM/0004,2025/OGM/0012;41;F;internet;Oksywie
+12009;2025/OGM/0004;12;F;internet;Wielki Kack
+12010;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+12011;2025/OGM/0004;8;M;internet;Wielki Kack
+12012;2025/OGM/0004;27;F;internet;Chylonia
+12013;2025/OGM/0004;6;F;internet;Wielki Kack
+12014;2025/OGM/0004;21;M;internet;Pustki Cisowskie-Demptowo
+12015;2025/OGM/0004;8;F;internet;Obłuże
+12016;2025/OGM/0004;3;M;internet;Obłuże
+12017;2025/OGM/0012;50;F;internet;Śródmieście
+12018;2025/OGM/0004;59;F;internet;Śródmieście
+12019;2025/OGM/0012;30;M;internet;Obłuże
+12020;2025/OGM/0004,2025/OGM/0012;50;F;internet;Mały Kack
+12021;2025/OGM/0012;68;F;internet;Witomino
+12022;2025/OGM/0004,2025/OGM/0012;90;F;internet;Śródmieście
+12023;2025/OGM/0004;11;M;internet;Cisowa
+12025;2025/OGM/0004;41;F;internet;Śródmieście
+12026;2025/OGM/0012;79;M;internet;Wielki Kack
+12027;2025/OGM/0004;57;M;internet;Śródmieście
+12028;2025/OGM/0004,2025/OGM/0012;16;F;internet;Chylonia
+12029;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wielki Kack
+12031;2025/OGM/0004;31;F;internet;Pogórze
+12032;2025/OGM/0004;45;M;internet;Pogórze
+12033;2025/OGM/0004,2025/OGM/0012;60;M;internet;Mały Kack
+12034;2025/OGM/0004,2025/OGM/0012;60;F;internet;Mały Kack
+12035;2025/OGM/0004;50;F;internet;Obłuże
+12036;2025/OGM/0004;56;F;internet;Pustki Cisowskie-Demptowo
+12037;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+12038;2025/OGM/0012;31;F;internet;Mały Kack
+12039;2025/OGM/0004;72;F;internet;Obłuże
+12040;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+12041;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+12042;2025/OGM/0012;67;F;internet;Śródmieście
+12043;2025/OGM/0004;49;F;internet;Mały Kack
+12044;2025/OGM/0004,2025/OGM/0012;12;M;internet;Karwiny
+12045;2025/OGM/0004;75;F;internet;Pustki Cisowskie-Demptowo
+12046;2025/OGM/0004;9;M;internet;Karwiny
+12048;2025/OGM/0012;20;F;internet;Śródmieście
+12049;2025/OGM/0012;18;M;internet;Śródmieście
+12050;2025/OGM/0012;56;F;internet;Śródmieście
+12051;2025/OGM/0004;12;M;internet;Mały Kack
+12052;2025/OGM/0004;4;M;internet;Śródmieście
+12053;2025/OGM/0004,2025/OGM/0012;18;M;internet;Mały Kack
+12054;2025/OGM/0004;54;F;internet;Chylonia
+12055;2025/OGM/0004;8;F;internet;Śródmieście
+12056;2025/OGM/0004;6;M;internet;Śródmieście
+12057;2025/OGM/0004;46;F;internet;Mały Kack
+12058;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wzgórze Św. Maksymiliana
+12059;2025/OGM/0004;79;F;internet;Chylonia
+12060;2025/OGM/0012;27;M;internet;Wielki Kack
+12061;2025/OGM/0004,2025/OGM/0012;72;F;internet;Chylonia
+12062;2025/OGM/0004,2025/OGM/0012;76;F;internet;Wielki Kack
+12063;2025/OGM/0004;16;M;internet;Chylonia
+12064;2025/OGM/0004,2025/OGM/0012;76;M;internet;Wielki Kack
+12065;2025/OGM/0004;26;F;internet;Redłowo
+12066;2025/OGM/0004,2025/OGM/0012;53;M;internet;Wielki Kack
+12068;2025/OGM/0004,2025/OGM/0012;24;F;internet;Wielki Kack
+12069;2025/OGM/0004;35;M;internet;Mały Kack
+12070;2025/OGM/0004,2025/OGM/0012;27;M;internet;Wielki Kack
+12071;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chylonia
+12072;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+12073;2025/OGM/0004,2025/OGM/0012;42;F;internet;Witomino
+12075;2025/OGM/0004;36;M;internet;Wielki Kack
+12076;2025/OGM/0004;33;F;internet;Chylonia
+12077;2025/OGM/0012;37;F;internet;Wielki Kack
+12078;2025/OGM/0004,2025/OGM/0012;33;F;internet;Redłowo
+12079;2025/OGM/0004;7;F;internet;Cisowa
+12080;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+12081;2025/OGM/0004;37;M;internet;Wielki Kack
+12082;2025/OGM/0004;3;M;internet;Pustki Cisowskie-Demptowo
+12083;2025/OGM/0004;38;M;internet;Wielki Kack
+12084;2025/OGM/0012;23;M;internet;Chylonia
+12085;2025/OGM/0004;18;M;internet;Pustki Cisowskie-Demptowo
+12086;2025/OGM/0004,2025/OGM/0012;15;M;internet;Chwarzno-Wiczlino
+12087;2025/OGM/0004;32;F;internet;Dąbrowa
+12089;2025/OGM/0004;63;F;internet;Dąbrowa
+12090;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+12092;2025/OGM/0004;44;F;internet;Leszczynki
+12093;2025/OGM/0004;68;M;internet;Dąbrowa
+12094;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+12095;2025/OGM/0004,2025/OGM/0012;68;F;internet;Pogórze
+12098;2025/OGM/0004;47;M;internet;Leszczynki
+12100;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+12102;2025/OGM/0004,2025/OGM/0012;76;M;internet;Pogórze
+12103;2025/OGM/0004,2025/OGM/0012;11;M;internet;Redłowo
+12104;2025/OGM/0004,2025/OGM/0012;30;M;internet;Pogórze
+12105;2025/OGM/0004,2025/OGM/0012;33;F;internet;Pustki Cisowskie-Demptowo
+12106;2025/OGM/0004;44;F;internet;Pustki Cisowskie-Demptowo
+12107;2025/OGM/0004,2025/OGM/0012;15;M;internet;Redłowo
+12108;2025/OGM/0004,2025/OGM/0012;66;F;internet;Pogórze
+12109;2025/OGM/0004;12;F;internet;Pustki Cisowskie-Demptowo
+12110;2025/OGM/0004;26;F;internet;Oksywie
+12111;2025/OGM/0004;41;F;internet;Obłuże
+12112;2025/OGM/0004;9;M;internet;Pustki Cisowskie-Demptowo
+12113;2025/OGM/0004;24;F;internet;Oksywie
+12114;2025/OGM/0004;40;M;internet;Pustki Cisowskie-Demptowo
+12119;2025/OGM/0004;23;F;internet;Chylonia
+12120;2025/OGM/0004;48;M;internet;Pustki Cisowskie-Demptowo
+12122;2025/OGM/0004,2025/OGM/0012;54;M;internet;Wielki Kack
+12123;2025/OGM/0004,2025/OGM/0012;8;M;internet;Pustki Cisowskie-Demptowo
+12124;2025/OGM/0004;36;F;internet;Wielki Kack
+12125;2025/OGM/0004;45;F;internet;Wielki Kack
+12127;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chylonia
+12128;2025/OGM/0004;13;M;internet;Wielki Kack
+12129;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+12130;2025/OGM/0004;5;M;internet;Wielki Kack
+12131;2025/OGM/0004;46;M;internet;Wielki Kack
+12132;2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+12133;2025/OGM/0004;42;M;internet;Witomino
+12134;2025/OGM/0004;44;F;internet;Grabówek
+12135;2025/OGM/0004;31;M;internet;Wielki Kack
+12136;2025/OGM/0004;22;M;internet;Obłuże
+12137;2025/OGM/0004;14;F;internet;Chwarzno-Wiczlino
+12138;2025/OGM/0004;35;F;internet;Chylonia
+12139;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+12140;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+12141;2025/OGM/0004,2025/OGM/0012;27;M;internet;Śródmieście
+12142;2025/OGM/0004,2025/OGM/0012;17;F;internet;Chwarzno-Wiczlino
+12143;2025/OGM/0004;74;F;internet;Śródmieście
+12144;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chylonia
+12145;2025/OGM/0012;11;F;internet;Chylonia
+12146;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+12147;2025/OGM/0004,2025/OGM/0012;34;F;internet;Redłowo
+12148;2025/OGM/0012;3;M;internet;Chylonia
+12149;2025/OGM/0012;6;M;internet;Chylonia
+12150;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+12152;2025/OGM/0004;32;M;internet;Pogórze
+12153;2025/OGM/0004;47;M;internet;Obłuże
+12154;2025/OGM/0004;37;M;internet;Wielki Kack
+12155;2025/OGM/0012;43;F;internet;Chylonia
+12156;2025/OGM/0004,2025/OGM/0012;31;F;internet;Cisowa
+12157;2025/OGM/0004;66;M;internet;Mały Kack
+12158;2025/OGM/0004;38;M;internet;Mały Kack
+12159;2025/OGM/0004;65;F;internet;Mały Kack
+12160;2025/OGM/0004;38;F;internet;Mały Kack
+12161;2025/OGM/0004;35;F;internet;Działki Leśne
+12163;2025/OGM/0004,2025/OGM/0012;50;M;internet;Dąbrowa
+12164;2025/OGM/0004;36;F;internet;Mały Kack
+12165;2025/OGM/0004;36;M;internet;Mały Kack
+12166;2025/OGM/0004,2025/OGM/0012;42;F;internet;Witomino
+12167;2025/OGM/0004,2025/OGM/0012;34;M;internet;Witomino
+12168;2025/OGM/0004,2025/OGM/0012;50;M;internet;Mały Kack
+12169;2025/OGM/0004;11;F;internet;Mały Kack
+12170;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+12171;2025/OGM/0004,2025/OGM/0012;18;M;internet;Wielki Kack
+12172;2025/OGM/0004;42;M;internet;Wielki Kack
+12173;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+12174;2025/OGM/0004;40;M;internet;Redłowo
+12175;2025/OGM/0004,2025/OGM/0012;3;M;internet;Mały Kack
+12177;2025/OGM/0012;9;M;internet;Mały Kack
+12178;2025/OGM/0004;50;M;internet;Mały Kack
+12179;2025/OGM/0004;46;F;internet;Oksywie
+12180;2025/OGM/0004,2025/OGM/0012;34;M;internet;Mały Kack
+12181;2025/OGM/0004,2025/OGM/0012;37;F;internet;Redłowo
+12182;2025/OGM/0004,2025/OGM/0012;13;M;internet;Redłowo
+12183;2025/OGM/0004;78;M;internet;Oksywie
+12184;2025/OGM/0012;81;M;internet;Wielki Kack
+12185;2025/OGM/0004;51;M;internet;Oksywie
+12186;2025/OGM/0004;37;F;internet;Grabówek
+12187;2025/OGM/0004;75;F;internet;Chylonia
+12188;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+12189;2025/OGM/0012;32;F;internet;Obłuże
+12192;2025/OGM/0004;52;F;internet;Dąbrowa
+12194;2025/OGM/0012;46;F;internet;Redłowo
+12195;2025/OGM/0004,2025/OGM/0012;48;F;internet;Grabówek
+12196;2025/OGM/0004;49;F;internet;Orłowo
+12197;2025/OGM/0004;18;F;internet;Redłowo
+12198;2025/OGM/0004;50;F;internet;Witomino
+12199;2025/OGM/0004,2025/OGM/0012;17;F;internet;Redłowo
+12200;2025/OGM/0004,2025/OGM/0012;16;M;internet;Leszczynki
+12201;2025/OGM/0004;41;M;internet;Wielki Kack
+12203;2025/OGM/0004;66;M;internet;Wielki Kack
+12204;2025/OGM/0004;45;F;internet;Wielki Kack
+12205;2025/OGM/0004;63;F;internet;Wielki Kack
+12206;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+12207;2025/OGM/0004;21;F;internet;Wielki Kack
+12208;2025/OGM/0004;37;M;internet;Wielki Kack
+12209;2025/OGM/0004;49;M;internet;Wielki Kack
+12210;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+12212;2025/OGM/0004;62;F;internet;Cisowa
+12213;2025/OGM/0004;46;M;internet;Cisowa
+12215;2025/OGM/0004,2025/OGM/0012;68;M;internet;Cisowa
+12217;2025/OGM/0004;35;F;internet;Grabówek
+12218;2025/OGM/0004,2025/OGM/0012;16;M;internet;Cisowa
+12219;2025/OGM/0004;50;F;internet;Mały Kack
+12221;2025/OGM/0004;59;F;internet;Pogórze
+12222;2025/OGM/0004,2025/OGM/0012;59;F;internet;Kamienna Góra
+12223;2025/OGM/0004;16;M;internet;Mały Kack
+12224;2025/OGM/0004,2025/OGM/0012;45;F;internet;Karwiny
+12225;2025/OGM/0004;77;F;internet;Mały Kack
+12226;2025/OGM/0012;49;M;internet;Mały Kack
+12227;2025/OGM/0004;44;F;internet;Karwiny
+12228;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+12229;2025/OGM/0012;49;F;internet;Mały Kack
+12230;2025/OGM/0012;56;M;internet;Kamienna Góra
+12231;2025/OGM/0012;12;F;internet;Mały Kack
+12232;2025/OGM/0004;34;F;internet;Wielki Kack
+12233;2025/OGM/0012;16;M;internet;Mały Kack
+12234;2025/OGM/0012;35;M;internet;Witomino
+12235;2025/OGM/0012;60;F;internet;Witomino
+12236;2025/OGM/0004,2025/OGM/0012;26;F;internet;Obłuże
+12237;2025/OGM/0012;84;M;internet;Witomino
+12238;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+12239;2025/OGM/0004;57;F;internet;Cisowa
+12240;2025/OGM/0004;39;F;internet;Cisowa
+12241;2025/OGM/0004,2025/OGM/0012;5;F;internet;Mały Kack
+12242;2025/OGM/0004;42;M;internet;Chylonia
+12243;2025/OGM/0012;89;F;internet;Witomino
+12244;2025/OGM/0004;18;M;internet;Redłowo
+12245;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wzgórze Św. Maksymiliana
+12246;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+12247;2025/OGM/0004,2025/OGM/0012;54;M;internet;Wzgórze Św. Maksymiliana
+12248;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chwarzno-Wiczlino
+12249;2025/OGM/0004;65;F;internet;Wielki Kack
+12250;2025/OGM/0004;60;F;internet;Wielki Kack
+12251;2025/OGM/0004;41;M;internet;Obłuże
+12252;2025/OGM/0004;76;M;internet;Pogórze
+12253;2025/OGM/0004;49;F;internet;Cisowa
+12255;2025/OGM/0004;67;F;internet;Chylonia
+12256;2025/OGM/0004,2025/OGM/0012;42;F;internet;Dąbrowa
+12257;2025/OGM/0004,2025/OGM/0012;67;M;internet;Cisowa
+12259;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+12260;2025/OGM/0004,2025/OGM/0012;75;M;internet;Chylonia
+12261;2025/OGM/0004,2025/OGM/0012;71;F;internet;Chwarzno-Wiczlino
+12262;2025/OGM/0012;42;M;internet;Działki Leśne
+12264;2025/OGM/0004;80;M;internet;Dąbrowa
+12266;2025/OGM/0004;66;F;internet;Mały Kack
+12268;2025/OGM/0004;36;F;internet;Mały Kack
+12269;2025/OGM/0004;38;F;internet;Pustki Cisowskie-Demptowo
+12270;2025/OGM/0004;35;M;internet;Mały Kack
+12271;2025/OGM/0004;7;F;internet;Mały Kack
+12272;2025/OGM/0004;47;M;internet;Pustki Cisowskie-Demptowo
+12273;2025/OGM/0004;45;M;internet;Mały Kack
+12274;2025/OGM/0004;51;M;internet;Wielki Kack
+12275;2025/OGM/0004;5;F;internet;Mały Kack
+12276;2025/OGM/0004,2025/OGM/0012;13;M;internet;Orłowo
+12277;2025/OGM/0004;51;F;internet;Wielki Kack
+12278;2025/OGM/0004;44;F;internet;Dąbrowa
+12279;2025/OGM/0004;73;F;internet;Dąbrowa
+12280;2025/OGM/0004;65;F;internet;Obłuże
+12281;2025/OGM/0004;21;F;internet;Wielki Kack
+12282;2025/OGM/0004,2025/OGM/0012;52;F;internet;Dąbrowa
+12283;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+12286;2025/OGM/0004;16;F;internet;Wielki Kack
+12287;2025/OGM/0004,2025/OGM/0012;76;F;internet;Chwarzno-Wiczlino
+12289;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+12290;2025/OGM/0004,2025/OGM/0012;82;M;internet;Chwarzno-Wiczlino
+12291;2025/OGM/0004;53;M;internet;Kamienna Góra
+12292;2025/OGM/0004,2025/OGM/0012;62;M;internet;Pustki Cisowskie-Demptowo
+12293;2025/OGM/0004,2025/OGM/0012;11;F;internet;Pustki Cisowskie-Demptowo
+12294;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chwarzno-Wiczlino
+12295;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+12296;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+12297;2025/OGM/0004,2025/OGM/0012;3;F;internet;Mały Kack
+12298;2025/OGM/0004,2025/OGM/0012;18;M;internet;Chwarzno-Wiczlino
+12299;2025/OGM/0004,2025/OGM/0012;60;F;internet;Pustki Cisowskie-Demptowo
+12300;2025/OGM/0004;52;F;internet;Pogórze
+12301;2025/OGM/0004,2025/OGM/0012;25;M;internet;Pustki Cisowskie-Demptowo
+12302;2025/OGM/0004,2025/OGM/0012;76;F;internet;Mały Kack
+12303;2025/OGM/0004;46;F;internet;Witomino
+12304;2025/OGM/0012;62;F;internet;Redłowo
+12305;2025/OGM/0012;63;M;internet;Redłowo
+12309;2025/OGM/0012;47;M;internet;Wielki Kack
+12310;2025/OGM/0004,2025/OGM/0012;34;M;internet;Witomino
+12311;2025/OGM/0004;39;M;internet;Kamienna Góra
+12313;2025/OGM/0012;51;F;internet;Witomino
+12315;2025/OGM/0004;77;M;internet;Mały Kack
+12316;2025/OGM/0004,2025/OGM/0012;55;F;internet;Chylonia
+12317;2025/OGM/0012;13;M;internet;Wielki Kack
+12319;2025/OGM/0012;19;F;internet;Wielki Kack
+12320;2025/OGM/0004;35;M;internet;Cisowa
+12321;2025/OGM/0004;63;M;internet;Cisowa
+12322;2025/OGM/0012;67;F;internet;Witomino
+12323;2025/OGM/0004;31;M;internet;Mały Kack
+12324;2025/OGM/0004;4;F;internet;Mały Kack
+12325;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+12326;2025/OGM/0004,2025/OGM/0012;7;F;internet;Pustki Cisowskie-Demptowo
+12327;2025/OGM/0004;74;F;internet;Cisowa
+12328;2025/OGM/0004;70;M;internet;Leszczynki
+12329;2025/OGM/0004;64;F;internet;Cisowa
+12330;2025/OGM/0004,2025/OGM/0012;5;F;internet;Pustki Cisowskie-Demptowo
+12331;2025/OGM/0004;75;M;internet;Cisowa
+12332;2025/OGM/0004;28;F;internet;Karwiny
+12333;2025/OGM/0004;51;F;internet;Cisowa
+12334;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+12335;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+12336;2025/OGM/0004;52;F;internet;Mały Kack
+12337;2025/OGM/0012;39;F;internet;Obłuże
+12338;2025/OGM/0004;40;F;internet;Obłuże
+12339;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+12340;2025/OGM/0004;14;M;internet;Śródmieście
+12341;2025/OGM/0004;13;F;internet;Wielki Kack
+12342;2025/OGM/0004;8;F;internet;Obłuże
+12343;2025/OGM/0012;7;F;internet;Obłuże
+12344;2025/OGM/0004;6;F;internet;Obłuże
+12345;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+12347;2025/OGM/0004;;F;internet;Obłuże
+12348;2025/OGM/0004,2025/OGM/0012;14;M;internet;Pustki Cisowskie-Demptowo
+12349;2025/OGM/0012;18;F;internet;Obłuże
+12350;2025/OGM/0004,2025/OGM/0012;48;M;internet;Pustki Cisowskie-Demptowo
+12351;2025/OGM/0004;41;M;internet;Obłuże
+12352;2025/OGM/0004;44;F;internet;Pogórze
+12353;2025/OGM/0004;13;M;internet;Witomino
+12354;2025/OGM/0004;48;F;internet;Wielki Kack
+12355;2025/OGM/0004,2025/OGM/0012;50;M;internet;Karwiny
+12356;2025/OGM/0012;79;M;internet;Chylonia
+12357;2025/OGM/0004;17;F;internet;Karwiny
+12358;2025/OGM/0004,2025/OGM/0012;55;M;internet;Pustki Cisowskie-Demptowo
+12360;2025/OGM/0004,2025/OGM/0012;54;F;internet;Mały Kack
+12361;2025/OGM/0012;38;M;internet;Pogórze
+12362;2025/OGM/0004;44;F;internet;Działki Leśne
+12363;2025/OGM/0004,2025/OGM/0012;32;F;internet;Pustki Cisowskie-Demptowo
+12364;2025/OGM/0004,2025/OGM/0012;20;M;internet;Kamienna Góra
+12365;2025/OGM/0004;49;F;internet;Mały Kack
+12366;2025/OGM/0004;28;F;internet;Wielki Kack
+12367;2025/OGM/0004;35;F;internet;Redłowo
+12368;2025/OGM/0004;28;M;internet;Wielki Kack
+12369;2025/OGM/0004;2;M;internet;Wielki Kack
+12370;2025/OGM/0004,2025/OGM/0012;89;F;internet;Pustki Cisowskie-Demptowo
+12371;2025/OGM/0004;52;F;internet;Orłowo
+12372;2025/OGM/0012;70;F;internet;Pustki Cisowskie-Demptowo
+12373;2025/OGM/0004;;M;internet;Wielki Kack
+12374;2025/OGM/0004,2025/OGM/0012;28;F;internet;Redłowo
+12375;2025/OGM/0004,2025/OGM/0012;31;F;internet;Redłowo
+12376;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+12377;2025/OGM/0012;49;M;internet;Witomino
+12378;2025/OGM/0012;34;F;internet;Pogórze
+12379;2025/OGM/0004,2025/OGM/0012;51;M;internet;Chwarzno-Wiczlino
+12380;2025/OGM/0004;40;F;internet;Mały Kack
+12381;2025/OGM/0012;2;F;internet;Pogórze
+12383;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+12384;2025/OGM/0004,2025/OGM/0012;69;M;internet;Witomino
+12385;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+12386;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+12387;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+12388;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+12389;2025/OGM/0004;36;F;internet;Chwarzno-Wiczlino
+12390;2025/OGM/0004;8;F;internet;Pustki Cisowskie-Demptowo
+12391;2025/OGM/0004;48;M;internet;Pustki Cisowskie-Demptowo
+12393;2025/OGM/0004;49;F;internet;Mały Kack
+12394;2025/OGM/0004;89;F;internet;Mały Kack
+12395;2025/OGM/0004,2025/OGM/0012;46;F;internet;Pustki Cisowskie-Demptowo
+12396;2025/OGM/0004;22;F;internet;Chwarzno-Wiczlino
+12398;2025/OGM/0004;43;F;internet;Wielki Kack
+12399;2025/OGM/0004;48;F;internet;Witomino
+12400;2025/OGM/0004;77;M;internet;Wielki Kack
+12401;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+12402;2025/OGM/0004;81;M;internet;Wielki Kack
+12404;2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+12405;2025/OGM/0004;77;F;internet;Wielki Kack
+12406;2025/OGM/0004;56;F;internet;Oksywie
+12407;2025/OGM/0004;33;M;internet;Oksywie
+12408;2025/OGM/0012;43;F;internet;Działki Leśne
+12409;2025/OGM/0004;64;F;internet;Wielki Kack
+12410;2025/OGM/0004;20;M;internet;Wielki Kack
+12411;2025/OGM/0004,2025/OGM/0012;27;M;internet;Działki Leśne
+12412;2025/OGM/0004,2025/OGM/0012;24;F;internet;Śródmieście
+12414;2025/OGM/0004;11;M;internet;Mały Kack
+12416;2025/OGM/0004;43;M;internet;Mały Kack
+12417;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+12418;2025/OGM/0004;72;F;internet;Mały Kack
+12419;2025/OGM/0004,2025/OGM/0012;74;M;internet;Redłowo
+12420;2025/OGM/0004;49;M;internet;Karwiny
+12423;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+12424;2025/OGM/0012;41;F;internet;Oksywie
+12426;2025/OGM/0004;36;F;internet;Mały Kack
+12427;2025/OGM/0004,2025/OGM/0012;20;M;internet;Leszczynki
+12429;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+12430;2025/OGM/0004,2025/OGM/0012;77;F;internet;
+12431;2025/OGM/0004,2025/OGM/0012;58;F;internet;Śródmieście
+12432;2025/OGM/0004;64;F;internet;Chwarzno-Wiczlino
+12433;2025/OGM/0004,2025/OGM/0012;41;F;internet;Karwiny
+12434;2025/OGM/0004;66;M;internet;Chwarzno-Wiczlino
+12435;2025/OGM/0004,2025/OGM/0012;67;F;internet;Oksywie
+12436;2025/OGM/0004;63;F;internet;Wielki Kack
+12437;2025/OGM/0004;61;F;internet;Chwarzno-Wiczlino
+12438;2025/OGM/0004;20;M;internet;Chwarzno-Wiczlino
+12439;2025/OGM/0004;69;M;internet;Chwarzno-Wiczlino
+12440;2025/OGM/0004,2025/OGM/0012;80;F;internet;Mały Kack
+12441;2025/OGM/0004,2025/OGM/0012;36;F;internet;Dąbrowa
+12442;2025/OGM/0004,2025/OGM/0012;11;F;internet;Dąbrowa
+12444;2025/OGM/0004;38;F;internet;Cisowa
+12445;2025/OGM/0004;44;M;internet;Redłowo
+12449;2025/OGM/0004,2025/OGM/0012;40;M;internet;Dąbrowa
+12450;2025/OGM/0012;88;F;internet;Dąbrowa
+12451;2025/OGM/0012;70;F;internet;Witomino
+12452;2025/OGM/0004;27;F;internet;Chylonia
+12453;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+12454;2025/OGM/0004;13;M;internet;Witomino
+12455;2025/OGM/0004;11;M;internet;Witomino
+12456;2025/OGM/0004;71;M;internet;Obłuże
+12457;2025/OGM/0004,2025/OGM/0012;18;F;internet;Oksywie
+12458;2025/OGM/0004;74;F;internet;Dąbrowa
+12459;2025/OGM/0012;53;M;internet;Babie Doły
+12460;2025/OGM/0004;59;F;internet;Wielki Kack
+12461;2025/OGM/0004;56;F;internet;Mały Kack
+12462;2025/OGM/0012;48;F;internet;Działki Leśne
+12464;2025/OGM/0004;23;F;internet;Mały Kack
+12465;2025/OGM/0004;11;F;internet;Witomino
+12466;2025/OGM/0004;40;M;internet;Wzgórze Św. Maksymiliana
+12467;2025/OGM/0004,2025/OGM/0012;53;M;internet;Witomino
+12469;2025/OGM/0004,2025/OGM/0012;46;M;internet;Mały Kack
+12470;2025/OGM/0004;75;M;internet;Wielki Kack
+12471;2025/OGM/0004;60;F;internet;Wielki Kack
+12472;2025/OGM/0004;68;F;internet;Kamienna Góra
+12473;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+12474;2025/OGM/0004;76;M;internet;Wielki Kack
+12475;2025/OGM/0004,2025/OGM/0012;34;F;internet;Cisowa
+12476;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chylonia
+12477;2025/OGM/0004,2025/OGM/0012;58;F;internet;Wielki Kack
+12479;2025/OGM/0012;60;F;internet;Chylonia
+12482;2025/OGM/0012;35;F;internet;Witomino
+12483;2025/OGM/0012;67;F;internet;Witomino
+12485;2025/OGM/0012;75;M;internet;Witomino
+12488;2025/OGM/0012;38;F;internet;Kamienna Góra
+12489;2025/OGM/0004,2025/OGM/0012;55;M;internet;Chylonia
+12490;2025/OGM/0004;47;F;internet;Działki Leśne
+12491;2025/OGM/0004;33;F;internet;Dąbrowa
+12492;2025/OGM/0004;35;M;internet;Dąbrowa
+12493;2025/OGM/0004;39;M;internet;Wielki Kack
+12494;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+12495;2025/OGM/0004;21;M;internet;Działki Leśne
+12496;2025/OGM/0004;10;M;internet;Wielki Kack
+12498;2025/OGM/0004;13;M;internet;Pustki Cisowskie-Demptowo
+12500;2025/OGM/0012;38;F;internet;Mały Kack
+12501;2025/OGM/0004;8;M;internet;Wielki Kack
+12502;2025/OGM/0012;52;F;internet;Chwarzno-Wiczlino
+12503;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+12505;2025/OGM/0004;6;F;internet;Wielki Kack
+12506;2025/OGM/0012;52;M;internet;Chwarzno-Wiczlino
+12507;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+12508;2025/OGM/0004;59;F;internet;Mały Kack
+12509;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+12510;2025/OGM/0004;37;F;internet;Wielki Kack
+12511;2025/OGM/0004;49;M;internet;Wielki Kack
+12512;2025/OGM/0004;8;M;internet;Wielki Kack
+12513;2025/OGM/0004;45;F;internet;Chylonia
+12514;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+12515;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+12517;2025/OGM/0004;49;M;internet;Chylonia
+12518;2025/OGM/0004;21;F;internet;Chylonia
+12519;2025/OGM/0004;25;M;internet;Babie Doły
+12520;2025/OGM/0004;49;M;internet;Mały Kack
+12521;2025/OGM/0004;17;M;internet;Chylonia
+12522;2025/OGM/0004;43;M;internet;Mały Kack
+12523;2025/OGM/0004;36;M;internet;Wielki Kack
+12524;2025/OGM/0004;15;F;internet;Karwiny
+12526;2025/OGM/0004,2025/OGM/0012;17;F;internet;Grabówek
+12527;2025/OGM/0012;31;F;internet;Chylonia
+12529;2025/OGM/0004;43;F;internet;Wielki Kack
+12530;2025/OGM/0012;25;F;internet;Chylonia
+12531;2025/OGM/0004,2025/OGM/0012;20;M;internet;Oksywie
+12532;2025/OGM/0004,2025/OGM/0012;54;M;internet;Dąbrowa
+12533;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+12534;2025/OGM/0004;35;F;internet;Wielki Kack
+12535;2025/OGM/0004,2025/OGM/0012;11;F;internet;Dąbrowa
+12536;2025/OGM/0004;46;M;internet;Wielki Kack
+12537;2025/OGM/0004;46;M;internet;Dąbrowa
+12539;2025/OGM/0004,2025/OGM/0012;81;F;internet;Oksywie
+12540;2025/OGM/0004,2025/OGM/0012;85;M;internet;Oksywie
+12541;2025/OGM/0004;55;F;internet;Chylonia
+12542;2025/OGM/0004,2025/OGM/0012;62;M;internet;Oksywie
+12543;2025/OGM/0004;84;M;internet;Pustki Cisowskie-Demptowo
+12544;2025/OGM/0004;28;F;internet;Wielki Kack
+12545;2025/OGM/0004;57;M;internet;Grabówek
+12546;2025/OGM/0004;42;M;internet;Działki Leśne
+12547;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+12548;2025/OGM/0004;6;M;internet;Wielki Kack
+12550;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+12551;2025/OGM/0004,2025/OGM/0012;79;F;internet;Pustki Cisowskie-Demptowo
+12552;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chylonia
+12553;2025/OGM/0004,2025/OGM/0012;49;F;internet;Witomino
+12554;2025/OGM/0004;42;M;internet;Wielki Kack
+12555;2025/OGM/0004,2025/OGM/0012;20;F;internet;Witomino
+12556;2025/OGM/0004;89;F;internet;Wielki Kack
+12557;2025/OGM/0004,2025/OGM/0012;18;M;internet;Witomino
+12558;2025/OGM/0004;68;F;internet;Wielki Kack
+12559;2025/OGM/0004;67;M;internet;Wielki Kack
+12561;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+12562;2025/OGM/0004;11;F;internet;Wielki Kack
+12563;2025/OGM/0004;14;F;internet;Wielki Kack
+12564;2025/OGM/0004;15;M;internet;Chwarzno-Wiczlino
+12565;2025/OGM/0004;9;F;internet;Wielki Kack
+12566;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+12567;2025/OGM/0012;33;F;internet;Mały Kack
+12568;2025/OGM/0004;32;M;internet;Mały Kack
+12569;2025/OGM/0004;29;F;internet;Mały Kack
+12570;2025/OGM/0004;47;F;internet;Wielki Kack
+12571;2025/OGM/0004;86;M;internet;Wielki Kack
+12574;2025/OGM/0012;73;M;internet;Śródmieście
+12575;2025/OGM/0004;40;F;internet;Obłuże
+12577;2025/OGM/0004,2025/OGM/0012;25;F;internet;Pustki Cisowskie-Demptowo
+12578;2025/OGM/0004;35;M;internet;Dąbrowa
+12579;2025/OGM/0004;32;F;internet;Pustki Cisowskie-Demptowo
+12580;2025/OGM/0004;54;F;internet;Wielki Kack
+12582;2025/OGM/0004;73;F;internet;Pogórze
+12583;2025/OGM/0012;20;F;internet;Mały Kack
+12584;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+12585;2025/OGM/0004;38;F;internet;Wzgórze Św. Maksymiliana
+12586;2025/OGM/0004,2025/OGM/0012;11;F;internet;Redłowo
+12587;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+12588;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+12589;2025/OGM/0004,2025/OGM/0012;8;M;internet;Redłowo
+12590;2025/OGM/0004,2025/OGM/0012;44;M;internet;Redłowo
+12591;2025/OGM/0004,2025/OGM/0012;40;F;internet;Dąbrowa
+12592;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+12593;2025/OGM/0004;12;M;internet;Dąbrowa
+12594;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+12595;2025/OGM/0004;36;F;internet;Pogórze
+12596;2025/OGM/0004;7;M;internet;Pogórze
+12597;2025/OGM/0004;5;M;internet;Pogórze
+12598;2025/OGM/0004,2025/OGM/0012;3;M;internet;Mały Kack
+12599;2025/OGM/0004;1;M;internet;Pogórze
+12600;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+12601;2025/OGM/0004;41;F;internet;Mały Kack
+12604;2025/OGM/0004;35;F;internet;Chylonia
+12606;2025/OGM/0004;57;F;internet;Wielki Kack
+12607;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+12609;2025/OGM/0004;43;F;internet;Wielki Kack
+12610;2025/OGM/0004;51;M;internet;Wielki Kack
+12611;2025/OGM/0004,2025/OGM/0012;10;F;internet;Wielki Kack
+12613;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wielki Kack
+12615;2025/OGM/0004;57;M;internet;Działki Leśne
+12617;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+12618;2025/OGM/0012;25;M;internet;Mały Kack
+12619;2025/OGM/0004;70;F;internet;Karwiny
+12620;2025/OGM/0004;41;M;internet;Wielki Kack
+12621;2025/OGM/0004;45;F;internet;Oksywie
+12622;2025/OGM/0004;48;M;internet;Karwiny
+12623;2025/OGM/0004,2025/OGM/0012;55;F;internet;Cisowa
+12624;2025/OGM/0012;37;M;internet;Witomino
+12625;2025/OGM/0004,2025/OGM/0012;70;F;internet;Cisowa
+12626;2025/OGM/0004;53;F;internet;Dąbrowa
+12627;2025/OGM/0004;40;M;internet;Witomino
+12628;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+12629;2025/OGM/0004;13;M;internet;Chwarzno-Wiczlino
+12630;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+12631;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+12632;2025/OGM/0004;40;F;internet;Wielki Kack
+12633;2025/OGM/0004;37;M;internet;Wielki Kack
+12634;2025/OGM/0004;17;F;internet;Chwarzno-Wiczlino
+12635;2025/OGM/0004;27;F;internet;Wielki Kack
+12636;2025/OGM/0004,2025/OGM/0012;16;M;internet;Śródmieście
+12637;2025/OGM/0004;36;F;internet;Cisowa
+12638;2025/OGM/0004;55;F;internet;Wielki Kack
+12639;2025/OGM/0012;38;F;internet;Oksywie
+12641;2025/OGM/0004;52;F;internet;Leszczynki
+12642;2025/OGM/0004;42;F;internet;Wielki Kack
+12643;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+12644;2025/OGM/0004;54;F;internet;Mały Kack
+12645;2025/OGM/0004;38;M;internet;Redłowo
+12646;2025/OGM/0004;49;F;internet;Witomino
+12647;2025/OGM/0004;55;M;internet;Mały Kack
+12648;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+12649;2025/OGM/0004;48;M;internet;Mały Kack
+12650;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+12651;2025/OGM/0004;47;F;internet;Wielki Kack
+12652;2025/OGM/0004;15;F;internet;Wielki Kack
+12653;2025/OGM/0004;43;M;internet;Mały Kack
+12654;2025/OGM/0004;6;F;internet;Redłowo
+12655;2025/OGM/0004;13;F;internet;Mały Kack
+12656;2025/OGM/0004;48;F;internet;Obłuże
+12657;2025/OGM/0004;11;F;internet;Wielki Kack
+12658;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+12659;2025/OGM/0004;81;M;internet;Karwiny
+12660;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+12662;2025/OGM/0004;49;M;internet;Grabówek
+12663;2025/OGM/0004;15;M;internet;Mały Kack
+12664;2025/OGM/0004,2025/OGM/0012;2;F;internet;Wielki Kack
+12665;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chylonia
+12666;2025/OGM/0004;75;F;internet;Mały Kack
+12667;2025/OGM/0004;52;M;internet;Pustki Cisowskie-Demptowo
+12668;2025/OGM/0004,2025/OGM/0012;46;F;internet;Grabówek
+12669;2025/OGM/0004;47;F;internet;Pustki Cisowskie-Demptowo
+12670;2025/OGM/0004;44;M;internet;Chylonia
+12671;2025/OGM/0004;16;F;internet;Pustki Cisowskie-Demptowo
+12672;2025/OGM/0004;18;F;internet;Pustki Cisowskie-Demptowo
+12673;2025/OGM/0004;41;M;internet;Wielki Kack
+12674;2025/OGM/0004;5;F;internet;Pustki Cisowskie-Demptowo
+12675;2025/OGM/0004;20;M;internet;Obłuże
+12676;2025/OGM/0004;51;F;internet;Pustki Cisowskie-Demptowo
+12677;2025/OGM/0012;42;F;internet;Wielki Kack
+12678;2025/OGM/0004;49;F;internet;Dąbrowa
+12679;2025/OGM/0004;44;M;internet;Wielki Kack
+12680;2025/OGM/0004;52;M;internet;Pustki Cisowskie-Demptowo
+12681;2025/OGM/0004;78;F;internet;Pustki Cisowskie-Demptowo
+12682;2025/OGM/0012;13;F;internet;Wielki Kack
+12683;2025/OGM/0004,2025/OGM/0012;77;F;internet;Pustki Cisowskie-Demptowo
+12684;2025/OGM/0004,2025/OGM/0012;31;M;internet;Leszczynki
+12685;2025/OGM/0012;53;M;internet;Wielki Kack
+12687;2025/OGM/0004;70;F;internet;Działki Leśne
+12688;2025/OGM/0012;40;F;internet;Śródmieście
+12689;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+12690;2025/OGM/0004;24;M;internet;Wzgórze Św. Maksymiliana
+12691;2025/OGM/0004;20;M;internet;Redłowo
+12692;2025/OGM/0004;73;M;internet;Mały Kack
+12694;2025/OGM/0004,2025/OGM/0012;8;M;internet;Pustki Cisowskie-Demptowo
+12695;2025/OGM/0004;38;M;internet;Wielki Kack
+12696;2025/OGM/0012;47;F;internet;Wielki Kack
+12697;2025/OGM/0004;6;F;internet;Karwiny
+12698;2025/OGM/0004;52;F;internet;Chwarzno-Wiczlino
+12699;2025/OGM/0004;52;M;internet;Pustki Cisowskie-Demptowo
+12700;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wielki Kack
+12701;2025/OGM/0004;48;F;internet;Dąbrowa
+12702;2025/OGM/0004;42;M;internet;Działki Leśne
+12703;2025/OGM/0004,2025/OGM/0012;10;M;internet;Dąbrowa
+12704;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+12705;2025/OGM/0012;47;F;internet;Oksywie
+12706;2025/OGM/0004,2025/OGM/0012;52;M;internet;Dąbrowa
+12707;2025/OGM/0004;57;F;internet;Chwarzno-Wiczlino
+12708;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+12709;2025/OGM/0004;33;M;internet;Pogórze
+12710;2025/OGM/0004;54;F;internet;Wielki Kack
+12711;2025/OGM/0004;41;F;internet;Działki Leśne
+12712;2025/OGM/0012;89;F;internet;Chwarzno-Wiczlino
+12713;2025/OGM/0004;57;M;internet;Wielki Kack
+12714;2025/OGM/0004;60;M;internet;Witomino
+12715;2025/OGM/0004;33;F;internet;Wielki Kack
+12716;2025/OGM/0004,2025/OGM/0012;34;M;internet;Wielki Kack
+12717;2025/OGM/0004,2025/OGM/0012;60;F;internet;Chwarzno-Wiczlino
+12718;2025/OGM/0004;13;F;internet;Wielki Kack
+12719;2025/OGM/0004;37;F;internet;Karwiny
+12720;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+12721;2025/OGM/0004;1;F;internet;Mały Kack
+12722;2025/OGM/0004;10;F;internet;Wielki Kack
+12723;2025/OGM/0004;5;F;internet;Mały Kack
+12724;2025/OGM/0004,2025/OGM/0012;55;F;internet;Witomino
+12725;2025/OGM/0004;34;M;internet;Kamienna Góra
+12726;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+12727;2025/OGM/0004;38;M;internet;Mały Kack
+12728;2025/OGM/0004,2025/OGM/0012;42;M;internet;Karwiny
+12730;2025/OGM/0012;46;F;internet;Karwiny
+12731;2025/OGM/0004,2025/OGM/0012;79;F;internet;Witomino
+12732;2025/OGM/0004,2025/OGM/0012;56;M;internet;Witomino
+12733;2025/OGM/0004,2025/OGM/0012;43;F;internet;Wielki Kack
+12735;2025/OGM/0004;21;F;internet;Witomino
+12737;2025/OGM/0004;48;F;internet;Dąbrowa
+12738;2025/OGM/0004;49;M;internet;Obłuże
+12739;2025/OGM/0004;71;M;internet;Pogórze
+12740;2025/OGM/0004;25;M;internet;Mały Kack
+12741;2025/OGM/0004;25;F;internet;Mały Kack
+12742;2025/OGM/0012;56;F;internet;Mały Kack
+12743;2025/OGM/0004;15;F;internet;Witomino
+12745;2025/OGM/0004;21;F;internet;Dąbrowa
+12748;2025/OGM/0004;26;F;internet;Oksywie
+12751;2025/OGM/0012;33;F;internet;Redłowo
+12752;2025/OGM/0004,2025/OGM/0012;36;M;internet;Witomino
+12753;2025/OGM/0012;3;F;internet;Redłowo
+12755;2025/OGM/0004;35;F;internet;Wielki Kack
+12756;2025/OGM/0004,2025/OGM/0012;25;F;internet;Dąbrowa
+12757;2025/OGM/0004;42;F;internet;Wielki Kack
+12759;2025/OGM/0004,2025/OGM/0012;41;F;internet;Redłowo
+12760;2025/OGM/0004;49;F;internet;Leszczynki
+12761;2025/OGM/0004;6;M;internet;Leszczynki
+12762;2025/OGM/0004,2025/OGM/0012;47;M;internet;Redłowo
+12763;2025/OGM/0004,2025/OGM/0012;38;F;internet;Działki Leśne
+12765;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+12766;2025/OGM/0004;47;M;internet;Mały Kack
+12767;2025/OGM/0004;62;M;internet;Działki Leśne
+12768;2025/OGM/0004;11;M;internet;Redłowo
+12770;2025/OGM/0004,2025/OGM/0012;57;M;internet;Oksywie
+12771;2025/OGM/0004,2025/OGM/0012;77;M;internet;Kamienna Góra
+12773;2025/OGM/0004,2025/OGM/0012;12;M;internet;Leszczynki
+12774;2025/OGM/0004,2025/OGM/0012;40;M;internet;Działki Leśne
+12775;2025/OGM/0012;15;F;internet;Redłowo
+12776;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+12778;2025/OGM/0004,2025/OGM/0012;56;F;internet;Oksywie
+12779;2025/OGM/0004;37;M;internet;Chylonia
+12780;2025/OGM/0004;53;F;internet;Karwiny
+12781;2025/OGM/0012;11;F;internet;Mały Kack
+12783;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+12784;2025/OGM/0004;45;F;internet;Leszczynki
+12785;2025/OGM/0004,2025/OGM/0012;48;F;internet;Dąbrowa
+12786;2025/OGM/0004;44;F;internet;Leszczynki
+12787;2025/OGM/0004;58;M;internet;Działki Leśne
+12788;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+12789;2025/OGM/0004;58;F;internet;Wzgórze Św. Maksymiliana
+12790;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+12791;2025/OGM/0004;;M;internet;Chwarzno-Wiczlino
+12792;2025/OGM/0004,2025/OGM/0012;48;M;internet;Dąbrowa
+12793;2025/OGM/0004;26;F;internet;Działki Leśne
+12795;2025/OGM/0004;40;M;internet;Mały Kack
+12796;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+12797;2025/OGM/0004;27;F;internet;Wielki Kack
+12798;2025/OGM/0004;56;F;internet;Redłowo
+12799;2025/OGM/0004;44;F;internet;Śródmieście
+12800;2025/OGM/0004,2025/OGM/0012;33;F;internet;Cisowa
+12801;2025/OGM/0004;42;F;internet;Cisowa
+12802;2025/OGM/0004,2025/OGM/0012;48;F;internet;Mały Kack
+12803;2025/OGM/0004;47;F;internet;Mały Kack
+12804;2025/OGM/0012;40;M;internet;Śródmieście
+12805;2025/OGM/0012;46;F;internet;Dąbrowa
+12806;2025/OGM/0004;68;F;internet;Wielki Kack
+12807;2025/OGM/0004;1;F;internet;Mały Kack
+12808;2025/OGM/0004;36;F;internet;Dąbrowa
+12809;2025/OGM/0004;88;F;internet;Pustki Cisowskie-Demptowo
+12810;2025/OGM/0012;47;F;internet;Cisowa
+12811;2025/OGM/0004;46;F;internet;Dąbrowa
+12812;2025/OGM/0012;60;F;internet;Dąbrowa
+12813;2025/OGM/0004;49;M;internet;Mały Kack
+12814;2025/OGM/0004;62;F;internet;Wzgórze Św. Maksymiliana
+12815;2025/OGM/0004;24;F;internet;Wielki Kack
+12816;2025/OGM/0004;30;F;internet;Pustki Cisowskie-Demptowo
+12817;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+12818;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wielki Kack
+12819;2025/OGM/0004,2025/OGM/0012;28;M;internet;Dąbrowa
+12820;2025/OGM/0004,2025/OGM/0012;49;F;internet;Dąbrowa
+12821;2025/OGM/0004,2025/OGM/0012;36;F;internet;Leszczynki
+12822;2025/OGM/0004;64;M;internet;Redłowo
+12823;2025/OGM/0004;39;M;internet;Dąbrowa
+12824;2025/OGM/0004,2025/OGM/0012;44;M;internet;Mały Kack
+12825;2025/OGM/0012;53;F;internet;Witomino
+12826;2025/OGM/0004;40;M;internet;Śródmieście
+12827;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+12828;2025/OGM/0012;63;M;internet;Witomino
+12829;2025/OGM/0004;49;F;internet;Dąbrowa
+12830;2025/OGM/0004;44;M;internet;Pustki Cisowskie-Demptowo
+12831;2025/OGM/0004;25;M;internet;Grabówek
+12832;2025/OGM/0004;22;M;internet;Dąbrowa
+12833;2025/OGM/0004;57;F;internet;Cisowa
+12834;2025/OGM/0012;22;M;internet;Witomino
+12836;2025/OGM/0012;65;M;internet;Wielki Kack
+12837;2025/OGM/0012;49;F;internet;Dąbrowa
+12838;2025/OGM/0012;87;F;internet;Witomino
+12839;2025/OGM/0004;74;F;internet;Śródmieście
+12840;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+12842;2025/OGM/0004,2025/OGM/0012;43;M;internet;Wielki Kack
+12843;2025/OGM/0004,2025/OGM/0012;48;F;internet;Dąbrowa
+12844;2025/OGM/0012;63;F;internet;Dąbrowa
+12845;2025/OGM/0004;40;M;internet;Dąbrowa
+12846;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+12847;2025/OGM/0004;43;F;internet;Wielki Kack
+12848;2025/OGM/0004,2025/OGM/0012;63;F;internet;Dąbrowa
+12849;2025/OGM/0004;37;M;internet;Działki Leśne
+12850;2025/OGM/0004,2025/OGM/0012;9;F;internet;Pustki Cisowskie-Demptowo
+12851;2025/OGM/0004;28;F;internet;Dąbrowa
+12852;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+12853;2025/OGM/0004;15;M;internet;Wielki Kack
+12854;2025/OGM/0004;12;F;internet;Wielki Kack
+12855;2025/OGM/0004;73;M;internet;Dąbrowa
+12856;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+12857;2025/OGM/0012;11;M;internet;Chwarzno-Wiczlino
+12858;2025/OGM/0004;46;M;internet;Mały Kack
+12859;2025/OGM/0004;45;F;internet;Mały Kack
+12861;2025/OGM/0004;37;M;internet;Mały Kack
+12862;2025/OGM/0012;47;F;internet;Redłowo
+12864;2025/OGM/0004;18;F;internet;Mały Kack
+12865;2025/OGM/0004;52;M;internet;Dąbrowa
+12866;2025/OGM/0004;53;M;internet;Pustki Cisowskie-Demptowo
+12867;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+12869;2025/OGM/0004;5;F;internet;Mały Kack
+12870;2025/OGM/0004;11;F;internet;Mały Kack
+12871;2025/OGM/0012;6;M;internet;Redłowo
+12872;2025/OGM/0004;52;F;internet;Pustki Cisowskie-Demptowo
+12873;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+12875;2025/OGM/0004;38;F;internet;Pogórze
+12876;2025/OGM/0004;56;F;internet;Mały Kack
+12877;2025/OGM/0004;50;M;internet;Pogórze
+12878;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+12879;2025/OGM/0004;19;F;internet;Pustki Cisowskie-Demptowo
+12881;2025/OGM/0004;35;F;internet;Wielki Kack
+12882;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+12883;2025/OGM/0004;34;M;internet;Dąbrowa
+12885;2025/OGM/0004;33;F;internet;Wielki Kack
+12886;2025/OGM/0004;51;M;internet;Dąbrowa
+12887;2025/OGM/0004;7;F;internet;Wielki Kack
+12888;2025/OGM/0004;15;M;internet;Redłowo
+12889;2025/OGM/0004;27;M;internet;Obłuże
+12890;2025/OGM/0004;60;M;internet;Wielki Kack
+12893;2025/OGM/0004,2025/OGM/0012;17;F;internet;Wielki Kack
+12894;2025/OGM/0004;4;M;internet;Wielki Kack
+12895;2025/OGM/0012;45;F;internet;Działki Leśne
+12896;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+12897;2025/OGM/0004;48;M;internet;Śródmieście
+12898;2025/OGM/0004;49;F;internet;Dąbrowa
+12899;2025/OGM/0004,2025/OGM/0012;30;F;internet;Dąbrowa
+12900;2025/OGM/0004;40;F;internet;Wielki Kack
+12901;2025/OGM/0004;2;M;internet;Wielki Kack
+12902;2025/OGM/0004,2025/OGM/0012;58;M;internet;Śródmieście
+12903;2025/OGM/0004,2025/OGM/0012;14;F;internet;Pustki Cisowskie-Demptowo
+12905;2025/OGM/0012;37;M;internet;Dąbrowa
+12906;2025/OGM/0004;49;F;internet;Śródmieście
+12908;2025/OGM/0004,2025/OGM/0012;69;F;internet;Karwiny
+12911;2025/OGM/0004,2025/OGM/0012;31;F;internet;Karwiny
+12912;2025/OGM/0004,2025/OGM/0012;14;M;internet;Śródmieście
+12913;2025/OGM/0004;53;M;internet;Wielki Kack
+12914;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+12915;2025/OGM/0004;33;M;internet;Wielki Kack
+12916;2025/OGM/0004,2025/OGM/0012;1;F;internet;Mały Kack
+12917;2025/OGM/0004;55;F;internet;Dąbrowa
+12918;2025/OGM/0004,2025/OGM/0012;49;F;internet;Dąbrowa
+12919;2025/OGM/0012;50;M;internet;Śródmieście
+12920;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+12921;2025/OGM/0004,2025/OGM/0012;74;M;internet;Cisowa
+12922;2025/OGM/0004;40;M;internet;Śródmieście
+12923;2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+12924;2025/OGM/0004,2025/OGM/0012;73;F;internet;Cisowa
+12926;2025/OGM/0004;35;M;internet;Działki Leśne
+12927;2025/OGM/0012;32;F;internet;Cisowa
+12928;2025/OGM/0004;33;M;internet;Dąbrowa
+12929;2025/OGM/0004;34;F;internet;Wielki Kack
+12931;2025/OGM/0004;6;F;internet;Obłuże
+12932;2025/OGM/0004;3;M;internet;Obłuże
+12933;2025/OGM/0004;1;F;internet;Wielki Kack
+12934;2025/OGM/0004;33;F;internet;Dąbrowa
+12935;2025/OGM/0004;14;F;internet;Wielki Kack
+12936;2025/OGM/0004;44;M;internet;Wielki Kack
+12937;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chylonia
+12938;2025/OGM/0004;6;F;internet;Pustki Cisowskie-Demptowo
+12939;2025/OGM/0004;42;F;internet;Wielki Kack
+12940;2025/OGM/0004;28;M;internet;Mały Kack
+12941;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+12942;2025/OGM/0004,2025/OGM/0012;35;F;internet;Dąbrowa
+12943;2025/OGM/0004,2025/OGM/0012;34;F;internet;Dąbrowa
+12944;2025/OGM/0004;45;F;internet;Dąbrowa
+12945;2025/OGM/0004;33;F;internet;Wielki Kack
+12946;2025/OGM/0004;45;M;internet;Dąbrowa
+12947;2025/OGM/0004;12;F;internet;Wielki Kack
+12948;2025/OGM/0004;65;F;internet;Oksywie
+12949;2025/OGM/0012;38;M;internet;Witomino
+12950;2025/OGM/0012;39;F;internet;Witomino
+12951;2025/OGM/0004,2025/OGM/0012;49;F;internet;Witomino
+12952;2025/OGM/0004;31;M;internet;Dąbrowa
+12953;2025/OGM/0004,2025/OGM/0012;49;M;internet;Dąbrowa
+12954;2025/OGM/0004;26;M;internet;Dąbrowa
+12955;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+12956;2025/OGM/0004;13;M;internet;Działki Leśne
+12957;2025/OGM/0004;68;M;internet;Obłuże
+12958;2025/OGM/0004;65;F;internet;Dąbrowa
+12960;2025/OGM/0004;65;M;internet;Dąbrowa
+12961;2025/OGM/0004;35;M;internet;Obłuże
+12962;2025/OGM/0004;91;F;internet;Oksywie
+12963;2025/OGM/0004;17;F;internet;Działki Leśne
+12964;2025/OGM/0004,2025/OGM/0012;28;F;internet;Śródmieście
+12965;2025/OGM/0004;91;F;internet;Grabówek
+12966;2025/OGM/0004,2025/OGM/0012;10;F;internet;Witomino
+12967;2025/OGM/0004;41;F;internet;Chylonia
+12968;2025/OGM/0012;73;M;internet;Chwarzno-Wiczlino
+12969;2025/OGM/0004;68;F;internet;Wielki Kack
+12970;2025/OGM/0004,2025/OGM/0012;87;M;internet;Witomino
+12971;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+12972;2025/OGM/0004;27;F;internet;Dąbrowa
+12974;2025/OGM/0004;46;F;internet;Witomino
+12975;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+12976;2025/OGM/0012;57;F;internet;Chylonia
+12977;2025/OGM/0004;42;M;internet;Chylonia
+12978;2025/OGM/0004;40;F;internet;Grabówek
+12979;2025/OGM/0004,2025/OGM/0012;11;M;internet;Redłowo
+12980;2025/OGM/0004;54;M;internet;Witomino
+12981;2025/OGM/0012;55;M;internet;Leszczynki
+12982;2025/OGM/0012;46;F;internet;Mały Kack
+12983;2025/OGM/0004,2025/OGM/0012;27;F;internet;Chwarzno-Wiczlino
+12984;2025/OGM/0004;35;M;internet;Mały Kack
+12985;2025/OGM/0004,2025/OGM/0012;10;M;internet;Mały Kack
+12986;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+12987;2025/OGM/0004;80;F;internet;Wzgórze Św. Maksymiliana
+12988;2025/OGM/0004;36;F;internet;Mały Kack
+12989;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wielki Kack
+12990;2025/OGM/0004;40;M;internet;Witomino
+12991;2025/OGM/0012;34;M;internet;Mały Kack
+12992;2025/OGM/0012;61;F;internet;Pustki Cisowskie-Demptowo
+12993;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+12994;2025/OGM/0004;37;F;internet;Dąbrowa
+12995;2025/OGM/0004;54;F;internet;Oksywie
+12996;2025/OGM/0004;15;M;internet;Mały Kack
+12997;2025/OGM/0012;50;F;internet;Orłowo
+12998;2025/OGM/0004,2025/OGM/0012;73;F;internet;Wielki Kack
+12999;2025/OGM/0004;51;F;internet;Chylonia
+13000;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wielki Kack
+13001;2025/OGM/0004;37;F;internet;Śródmieście
+13002;2025/OGM/0004;52;F;internet;Obłuże
+13003;2025/OGM/0004;48;F;internet;Śródmieście
+13004;2025/OGM/0004;42;M;internet;Mały Kack
+13005;2025/OGM/0004,2025/OGM/0012;18;M;internet;Chwarzno-Wiczlino
+13006;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+13007;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chylonia
+13008;2025/OGM/0004;62;M;internet;Obłuże
+13009;2025/OGM/0004;77;F;internet;Chylonia
+13010;2025/OGM/0004;39;F;internet;Śródmieście
+13011;2025/OGM/0004;70;F;internet;Wielki Kack
+13012;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chylonia
+13013;2025/OGM/0004;48;M;internet;Redłowo
+13014;2025/OGM/0004;56;F;internet;Obłuże
+13015;2025/OGM/0004;41;M;internet;Kamienna Góra
+13016;2025/OGM/0004;74;M;internet;Wielki Kack
+13017;2025/OGM/0004;66;F;internet;Leszczynki
+13019;2025/OGM/0004;40;F;internet;Kamienna Góra
+13021;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+13023;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+13024;2025/OGM/0004,2025/OGM/0012;35;F;internet;Witomino
+13025;2025/OGM/0004,2025/OGM/0012;5;M;internet;Śródmieście
+13027;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+13028;2025/OGM/0004;77;F;internet;Kamienna Góra
+13029;2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+13030;2025/OGM/0004,2025/OGM/0012;9;M;internet;Mały Kack
+13031;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+13032;2025/OGM/0004,2025/OGM/0012;2;M;internet;Śródmieście
+13033;2025/OGM/0004;29;M;internet;Śródmieście
+13034;2025/OGM/0004;10;M;internet;Redłowo
+13035;2025/OGM/0004;49;M;internet;Wielki Kack
+13036;2025/OGM/0004;58;M;internet;Dąbrowa
+13037;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+13039;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+13040;2025/OGM/0004;54;M;internet;Wielki Kack
+13041;2025/OGM/0004,2025/OGM/0012;54;F;internet;Chwarzno-Wiczlino
+13042;2025/OGM/0004;43;M;internet;Wielki Kack
+13043;2025/OGM/0004;35;F;internet;Witomino
+13044;2025/OGM/0004;54;F;internet;Kamienna Góra
+13045;2025/OGM/0004;43;F;internet;Wielki Kack
+13046;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+13047;2025/OGM/0004;44;M;internet;Dąbrowa
+13048;2025/OGM/0004;10;M;internet;Chylonia
+13049;2025/OGM/0004,2025/OGM/0012;9;M;internet;Mały Kack
+13050;2025/OGM/0012;23;M;internet;Pustki Cisowskie-Demptowo
+13051;2025/OGM/0004;7;F;internet;Chylonia
+13052;2025/OGM/0004;17;M;internet;Dąbrowa
+13053;2025/OGM/0004;7;M;internet;Chylonia
+13054;2025/OGM/0004;83;F;internet;Chylonia
+13055;2025/OGM/0004;40;F;internet;Wielki Kack
+13057;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chylonia
+13058;2025/OGM/0004;14;M;internet;Karwiny
+13059;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+13060;2025/OGM/0004;12;F;internet;Chylonia
+13061;2025/OGM/0004;4;M;internet;Chylonia
+13062;2025/OGM/0004;41;M;internet;Mały Kack
+13063;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+13064;2025/OGM/0004;34;M;internet;Dąbrowa
+13066;2025/OGM/0004;7;M;internet;Chylonia
+13067;2025/OGM/0004;8;F;internet;Karwiny
+13068;2025/OGM/0004;20;F;internet;Chylonia
+13070;2025/OGM/0012;71;F;internet;Pogórze
+13071;2025/OGM/0004;5;F;internet;Chylonia
+13072;2025/OGM/0004;41;F;internet;Karwiny
+13074;2025/OGM/0004;73;F;internet;Karwiny
+13075;2025/OGM/0004;39;M;internet;Dąbrowa
+13076;2025/OGM/0012;31;M;internet;Obłuże
+13077;2025/OGM/0004;46;M;internet;Mały Kack
+13078;2025/OGM/0004;72;M;internet;Karwiny
+13079;2025/OGM/0004;73;F;internet;Wzgórze Św. Maksymiliana
+13080;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+13081;2025/OGM/0012;36;F;internet;Orłowo
+13082;2025/OGM/0004;41;F;internet;Dąbrowa
+13083;2025/OGM/0004;31;M;internet;Dąbrowa
+13084;2025/OGM/0012;71;F;internet;Witomino
+13085;2025/OGM/0004;53;M;internet;Mały Kack
+13086;2025/OGM/0004;36;F;internet;Oksywie
+13087;2025/OGM/0004;44;F;internet;Chylonia
+13088;2025/OGM/0012;47;F;internet;Oksywie
+13089;2025/OGM/0004;62;F;internet;Chwarzno-Wiczlino
+13091;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+13092;2025/OGM/0004,2025/OGM/0012;32;M;internet;Chylonia
+13093;2025/OGM/0004;52;F;internet;Mały Kack
+13096;2025/OGM/0004;64;F;internet;Karwiny
+13097;2025/OGM/0004,2025/OGM/0012;29;F;internet;Wielki Kack
+13099;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+13100;2025/OGM/0004;66;M;internet;Karwiny
+13101;2025/OGM/0012;74;F;internet;Chwarzno-Wiczlino
+13103;2025/OGM/0004;53;M;internet;Witomino
+13104;2025/OGM/0004;77;F;internet;Mały Kack
+13105;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+13106;2025/OGM/0004;40;M;internet;Wielki Kack
+13107;2025/OGM/0004;61;M;internet;Chwarzno-Wiczlino
+13108;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wzgórze Św. Maksymiliana
+13109;2025/OGM/0012;14;F;internet;Śródmieście
+13110;2025/OGM/0004;7;F;internet;Wielki Kack
+13111;2025/OGM/0012;17;M;internet;Witomino
+13112;2025/OGM/0004,2025/OGM/0012;16;M;internet;Śródmieście
+13113;2025/OGM/0004;1;M;internet;Wielki Kack
+13115;2025/OGM/0004;47;F;internet;Wielki Kack
+13116;2025/OGM/0004;38;F;internet;Leszczynki
+13117;2025/OGM/0004;41;F;internet;Wielki Kack
+13118;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+13119;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+13120;2025/OGM/0004,2025/OGM/0012;40;F;internet;Grabówek
+13121;2025/OGM/0004;78;M;internet;Cisowa
+13123;2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+13124;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+13125;2025/OGM/0004;32;F;internet;Chylonia
+13126;2025/OGM/0004,2025/OGM/0012;25;F;internet;Witomino
+13128;2025/OGM/0004,2025/OGM/0012;31;F;internet;Grabówek
+13129;2025/OGM/0012;73;F;internet;Pogórze
+13130;2025/OGM/0004,2025/OGM/0012;42;M;internet;Witomino
+13132;2025/OGM/0004;44;F;internet;Oksywie
+13133;2025/OGM/0004,2025/OGM/0012;44;F;internet;Chylonia
+13135;2025/OGM/0004;8;M;internet;Oksywie
+13136;2025/OGM/0004;29;M;internet;Wielki Kack
+13138;2025/OGM/0012;38;M;internet;Śródmieście
+13139;2025/OGM/0004;7;M;internet;Oksywie
+13140;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+13141;2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+13143;2025/OGM/0012;41;F;internet;Wielki Kack
+13144;2025/OGM/0004,2025/OGM/0012;37;F;internet;Witomino
+13145;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+13146;2025/OGM/0004,2025/OGM/0012;27;M;internet;Witomino
+13148;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+13149;2025/OGM/0012;42;F;internet;Mały Kack
+13150;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+13152;2025/OGM/0012;6;M;internet;Mały Kack
+13153;2025/OGM/0004;66;F;internet;Babie Doły
+13154;2025/OGM/0004;65;F;internet;Dąbrowa
+13155;2025/OGM/0004;42;F;internet;Mały Kack
+13156;2025/OGM/0012;38;M;internet;Mały Kack
+13157;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+13158;2025/OGM/0004,2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+13159;2025/OGM/0004;8;M;internet;Mały Kack
+13160;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+13161;2025/OGM/0004,2025/OGM/0012;36;M;internet;Działki Leśne
+13162;2025/OGM/0004;44;F;internet;Mały Kack
+13163;2025/OGM/0004;7;M;internet;Mały Kack
+13164;2025/OGM/0004,2025/OGM/0012;62;F;internet;Wielki Kack
+13165;2025/OGM/0004,2025/OGM/0012;11;M;internet;Pustki Cisowskie-Demptowo
+13166;2025/OGM/0004;35;F;internet;Wzgórze Św. Maksymiliana
+13167;2025/OGM/0004;7;M;internet;Mały Kack
+13168;2025/OGM/0004,2025/OGM/0012;70;M;internet;Wielki Kack
+13169;2025/OGM/0004;11;M;internet;Wzgórze Św. Maksymiliana
+13170;2025/OGM/0012;46;F;internet;Witomino
+13171;2025/OGM/0004;27;M;internet;Wielki Kack
+13173;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+13174;2025/OGM/0004;41;F;internet;Dąbrowa
+13175;2025/OGM/0004,2025/OGM/0012;5;M;internet;Działki Leśne
+13176;2025/OGM/0004;9;M;internet;Babie Doły
+13178;2025/OGM/0004;37;F;internet;Wielki Kack
+13180;2025/OGM/0004;55;M;internet;Witomino
+13181;2025/OGM/0004,2025/OGM/0012;15;M;internet;Witomino
+13182;2025/OGM/0012;71;M;internet;Pustki Cisowskie-Demptowo
+13183;2025/OGM/0004,2025/OGM/0012;52;F;internet;Dąbrowa
+13184;2025/OGM/0012;70;F;internet;Pustki Cisowskie-Demptowo
+13185;2025/OGM/0004,2025/OGM/0012;11;M;internet;Chwarzno-Wiczlino
+13186;2025/OGM/0012;95;F;internet;Pustki Cisowskie-Demptowo
+13188;2025/OGM/0012;37;M;internet;Babie Doły
+13190;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+13191;2025/OGM/0004;53;F;internet;Wielki Kack
+13192;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+13194;2025/OGM/0004;4;F;internet;Wielki Kack
+13195;2025/OGM/0012;75;F;internet;Pustki Cisowskie-Demptowo
+13196;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chylonia
+13197;2025/OGM/0004;27;M;internet;Obłuże
+13198;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+13199;2025/OGM/0004,2025/OGM/0012;27;F;internet;Śródmieście
+13200;2025/OGM/0004,2025/OGM/0012;8;M;internet;Dąbrowa
+13201;2025/OGM/0004,2025/OGM/0012;41;M;internet;Dąbrowa
+13202;2025/OGM/0004,2025/OGM/0012;37;F;internet;Dąbrowa
+13203;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+13204;2025/OGM/0004;46;F;internet;Dąbrowa
+13206;2025/OGM/0004;43;F;internet;Redłowo
+13207;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wzgórze Św. Maksymiliana
+13209;2025/OGM/0004,2025/OGM/0012;45;M;internet;Wielki Kack
+13210;2025/OGM/0004,2025/OGM/0012;20;M;internet;Chwarzno-Wiczlino
+13211;2025/OGM/0004;51;M;internet;Wielki Kack
+13212;2025/OGM/0004,2025/OGM/0012;48;F;internet;Orłowo
+13213;2025/OGM/0004;38;F;internet;Dąbrowa
+13215;2025/OGM/0004;19;F;internet;Chylonia
+13216;2025/OGM/0004;47;M;internet;Dąbrowa
+13217;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+13218;2025/OGM/0004;73;F;internet;Mały Kack
+13219;2025/OGM/0004;69;M;internet;Redłowo
+13220;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+13221;2025/OGM/0004;9;F;internet;Dąbrowa
+13222;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chylonia
+13223;2025/OGM/0004;6;M;internet;Dąbrowa
+13224;2025/OGM/0004;67;F;internet;Obłuże
+13225;2025/OGM/0004;38;M;internet;Dąbrowa
+13226;2025/OGM/0012;44;F;internet;Wielki Kack
+13228;2025/OGM/0004;60;M;internet;Wielki Kack
+13229;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+13230;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+13231;2025/OGM/0004,2025/OGM/0012;51;M;internet;Mały Kack
+13232;2025/OGM/0004,2025/OGM/0012;8;F;internet;Wielki Kack
+13233;2025/OGM/0012;33;F;internet;Pogórze
+13234;2025/OGM/0004;19;M;internet;Wielki Kack
+13235;2025/OGM/0004,2025/OGM/0012;5;F;internet;Mały Kack
+13236;2025/OGM/0004,2025/OGM/0012;38;F;internet;Śródmieście
+13237;2025/OGM/0004;16;F;internet;Wielki Kack
+13238;2025/OGM/0004;34;F;internet;Cisowa
+13239;2025/OGM/0004,2025/OGM/0012;47;M;internet;Dąbrowa
+13240;2025/OGM/0004;65;F;internet;Mały Kack
+13241;2025/OGM/0012;43;M;internet;Wielki Kack
+13242;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+13244;2025/OGM/0004;56;F;internet;Chylonia
+13245;2025/OGM/0004;58;F;internet;Wielki Kack
+13246;2025/OGM/0012;18;F;internet;Pustki Cisowskie-Demptowo
+13247;2025/OGM/0004,2025/OGM/0012;14;F;internet;Orłowo
+13248;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+13249;2025/OGM/0004;42;M;internet;Dąbrowa
+13250;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+13251;2025/OGM/0012;42;F;internet;Działki Leśne
+13252;2025/OGM/0004,2025/OGM/0012;7;M;internet;Wielki Kack
+13253;2025/OGM/0004,2025/OGM/0012;14;F;internet;Mały Kack
+13254;2025/OGM/0004;37;F;internet;Wielki Kack
+13255;2025/OGM/0004;38;F;internet;Cisowa
+13256;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+13257;2025/OGM/0004;39;F;internet;Dąbrowa
+13258;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+13259;2025/OGM/0004;12;M;internet;Cisowa
+13260;2025/OGM/0004;9;M;internet;Wielki Kack
+13261;2025/OGM/0004;9;M;internet;Cisowa
+13262;2025/OGM/0004;49;F;internet;Wielki Kack
+13263;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+13264;2025/OGM/0004;52;F;internet;Dąbrowa
+13265;2025/OGM/0004;44;M;internet;Wielki Kack
+13266;2025/OGM/0004,2025/OGM/0012;48;F;internet;Witomino
+13268;2025/OGM/0004,2025/OGM/0012;52;F;internet;Chylonia
+13270;2025/OGM/0004;60;M;internet;Wielki Kack
+13271;2025/OGM/0012;71;F;internet;Chylonia
+13272;2025/OGM/0004;61;M;internet;Cisowa
+13273;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wielki Kack
+13275;2025/OGM/0012;42;F;internet;Mały Kack
+13277;2025/OGM/0004;36;M;internet;Wielki Kack
+13280;2025/OGM/0004;22;F;internet;Wielki Kack
+13281;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+13283;2025/OGM/0004;80;F;internet;Wielki Kack
+13284;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wielki Kack
+13285;2025/OGM/0004;43;M;internet;Wielki Kack
+13287;2025/OGM/0004;44;M;internet;Orłowo
+13288;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+13289;2025/OGM/0004;44;F;internet;Wielki Kack
+13290;2025/OGM/0004;11;M;internet;Wielki Kack
+13291;2025/OGM/0004;6;F;internet;Wielki Kack
+13292;2025/OGM/0004;14;M;internet;Wielki Kack
+13293;2025/OGM/0012;43;F;internet;Śródmieście
+13294;2025/OGM/0004;44;F;internet;Kamienna Góra
+13295;2025/OGM/0004;50;M;internet;Cisowa
+13296;2025/OGM/0004;7;F;internet;Wielki Kack
+13297;2025/OGM/0004;45;F;internet;Orłowo
+13298;2025/OGM/0012;10;F;internet;Redłowo
+13300;2025/OGM/0004;78;F;internet;Cisowa
+13301;2025/OGM/0004;8;M;internet;Orłowo
+13302;2025/OGM/0004;6;M;internet;Wielki Kack
+13303;2025/OGM/0004;81;M;internet;Wielki Kack
+13304;2025/OGM/0004,2025/OGM/0012;45;M;internet;Kamienna Góra
+13305;2025/OGM/0004;10;F;internet;Wielki Kack
+13306;2025/OGM/0004;6;M;internet;Orłowo
+13309;2025/OGM/0004;74;F;internet;Wielki Kack
+13310;2025/OGM/0004;4;F;internet;Wielki Kack
+13312;2025/OGM/0004;51;M;internet;Redłowo
+13313;2025/OGM/0004;31;M;internet;Wielki Kack
+13314;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wielki Kack
+13315;2025/OGM/0004;57;F;internet;Oksywie
+13316;2025/OGM/0004,2025/OGM/0012;13;M;internet;Kamienna Góra
+13317;2025/OGM/0004;34;F;internet;Wielki Kack
+13318;2025/OGM/0004,2025/OGM/0012;38;M;internet;Dąbrowa
+13319;2025/OGM/0004;8;M;internet;Wielki Kack
+13321;2025/OGM/0004,2025/OGM/0012;9;M;internet;Kamienna Góra
+13323;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+13325;2025/OGM/0004;3;F;internet;Wielki Kack
+13326;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+13327;2025/OGM/0004;37;F;internet;Wielki Kack
+13328;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+13330;2025/OGM/0004;27;F;internet;Chylonia
+13331;2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+13332;2025/OGM/0004,2025/OGM/0012;16;F;internet;Chwarzno-Wiczlino
+13333;2025/OGM/0004,2025/OGM/0012;75;F;internet;Chwarzno-Wiczlino
+13335;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+13336;2025/OGM/0004;51;F;internet;Śródmieście
+13338;2025/OGM/0004;40;F;internet;Dąbrowa
+13339;2025/OGM/0004;37;F;internet;Cisowa
+13340;2025/OGM/0004;53;F;internet;Wielki Kack
+13341;2025/OGM/0004;49;F;internet;Wielki Kack
+13343;2025/OGM/0012;55;M;internet;Obłuże
+13344;2025/OGM/0004;42;F;internet;Wielki Kack
+13346;2025/OGM/0012;41;F;internet;Śródmieście
+13347;2025/OGM/0004,2025/OGM/0012;56;F;internet;Witomino
+13348;2025/OGM/0004,2025/OGM/0012;51;M;internet;Wielki Kack
+13350;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chylonia
+13351;2025/OGM/0004;8;F;internet;Witomino
+13352;2025/OGM/0004;41;M;internet;Mały Kack
+13353;2025/OGM/0004,2025/OGM/0012;57;F;internet;Mały Kack
+13354;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+13355;2025/OGM/0004;39;M;internet;Wielki Kack
+13356;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+13357;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+13358;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chylonia
+13359;2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+13360;2025/OGM/0004;5;F;internet;Wielki Kack
+13361;2025/OGM/0004,2025/OGM/0012;85;F;internet;Witomino
+13362;2025/OGM/0004,2025/OGM/0012;77;F;internet;Wielki Kack
+13363;2025/OGM/0012;65;F;internet;Wielki Kack
+13364;2025/OGM/0004,2025/OGM/0012;65;M;internet;Mały Kack
+13365;2025/OGM/0012;50;M;internet;Redłowo
+13366;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+13367;2025/OGM/0004;39;F;internet;Karwiny
+13368;2025/OGM/0004;46;M;internet;Witomino
+13369;2025/OGM/0004,2025/OGM/0012;35;F;internet;Karwiny
+13371;2025/OGM/0004;9;M;internet;Karwiny
+13372;2025/OGM/0004;10;F;internet;Witomino
+13373;2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+13374;2025/OGM/0004;7;F;internet;Karwiny
+13375;2025/OGM/0004;42;F;internet;Babie Doły
+13376;2025/OGM/0004,2025/OGM/0012;26;M;internet;Cisowa
+13377;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+13378;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+13379;2025/OGM/0004;25;F;internet;Dąbrowa
+13380;2025/OGM/0004;67;M;internet;Dąbrowa
+13381;2025/OGM/0004;3;M;internet;Wielki Kack
+13382;2025/OGM/0012;72;F;internet;Kamienna Góra
+13383;2025/OGM/0004;39;M;internet;Wielki Kack
+13384;2025/OGM/0004,2025/OGM/0012;67;M;internet;Cisowa
+13385;2025/OGM/0004,2025/OGM/0012;36;F;internet;Pustki Cisowskie-Demptowo
+13386;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wielki Kack
+13387;2025/OGM/0004;3;M;internet;Cisowa
+13388;2025/OGM/0004;47;M;internet;Mały Kack
+13389;2025/OGM/0004;46;M;internet;Kamienna Góra
+13390;2025/OGM/0012;75;M;internet;Śródmieście
+13391;2025/OGM/0004,2025/OGM/0012;58;F;internet;Obłuże
+13392;2025/OGM/0004;7;F;internet;Cisowa
+13393;2025/OGM/0004;48;F;internet;Mały Kack
+13394;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+13396;2025/OGM/0012;72;F;internet;Śródmieście
+13397;2025/OGM/0004;19;F;internet;Mały Kack
+13398;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+13399;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+13400;2025/OGM/0004,2025/OGM/0012;2;M;internet;Pustki Cisowskie-Demptowo
+13401;2025/OGM/0004;15;F;internet;Mały Kack
+13402;2025/OGM/0012;77;F;internet;Obłuże
+13403;2025/OGM/0004;64;M;internet;Karwiny
+13404;2025/OGM/0004;40;M;internet;Mały Kack
+13405;2025/OGM/0004;55;F;internet;Wielki Kack
+13406;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+13407;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+13408;2025/OGM/0004;17;F;internet;Wielki Kack
+13409;2025/OGM/0004;25;M;internet;Dąbrowa
+13410;2025/OGM/0004,2025/OGM/0012;42;M;internet;Chwarzno-Wiczlino
+13411;2025/OGM/0004;66;F;internet;Chylonia
+13412;2025/OGM/0004;48;M;internet;Orłowo
+13413;2025/OGM/0004;29;F;internet;Chylonia
+13414;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+13415;2025/OGM/0004,2025/OGM/0012;73;M;internet;Chwarzno-Wiczlino
+13416;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+13417;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+13418;2025/OGM/0004;60;M;internet;Chwarzno-Wiczlino
+13420;2025/OGM/0012;9;M;internet;Mały Kack
+13421;2025/OGM/0004,2025/OGM/0012;45;M;internet;Wielki Kack
+13422;2025/OGM/0004,2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+13423;2025/OGM/0004;59;F;internet;Chwarzno-Wiczlino
+13424;2025/OGM/0004;71;F;internet;Wielki Kack
+13425;2025/OGM/0004;63;F;internet;Chwarzno-Wiczlino
+13426;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+13427;2025/OGM/0004;29;M;internet;Oksywie
+13428;2025/OGM/0004;39;M;internet;Cisowa
+13430;2025/OGM/0004;37;F;internet;Oksywie
+13431;2025/OGM/0004;37;F;internet;Witomino
+13432;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wielki Kack
+13434;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+13436;2025/OGM/0004,2025/OGM/0012;15;M;internet;Działki Leśne
+13439;2025/OGM/0004;24;M;internet;Wielki Kack
+13440;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+13441;2025/OGM/0004,2025/OGM/0012;40;F;internet;Karwiny
+13443;2025/OGM/0004,2025/OGM/0012;7;F;internet;Wielki Kack
+13444;2025/OGM/0004,2025/OGM/0012;41;M;internet;Karwiny
+13445;2025/OGM/0004,2025/OGM/0012;72;M;internet;Wielki Kack
+13446;2025/OGM/0004;5;F;internet;Mały Kack
+13447;2025/OGM/0004;12;M;internet;Pustki Cisowskie-Demptowo
+13448;2025/OGM/0012;46;F;internet;Wielki Kack
+13449;2025/OGM/0004;50;M;internet;Wielki Kack
+13450;2025/OGM/0004;52;F;internet;Obłuże
+13452;2025/OGM/0004;3;M;internet;Mały Kack
+13453;2025/OGM/0004;63;F;internet;Chwarzno-Wiczlino
+13454;2025/OGM/0004;9;M;internet;Pustki Cisowskie-Demptowo
+13455;2025/OGM/0004;52;M;internet;Obłuże
+13456;2025/OGM/0004;26;F;internet;Pustki Cisowskie-Demptowo
+13457;2025/OGM/0004,2025/OGM/0012;8;F;internet;Wielki Kack
+13459;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+13460;2025/OGM/0004;76;F;internet;Obłuże
+13462;2025/OGM/0004,2025/OGM/0012;32;F;internet;Śródmieście
+13463;2025/OGM/0004;65;F;internet;Pustki Cisowskie-Demptowo
+13464;2025/OGM/0004,2025/OGM/0012;48;F;internet;Pustki Cisowskie-Demptowo
+13465;2025/OGM/0004;65;M;internet;Witomino
+13466;2025/OGM/0004;53;F;internet;Pustki Cisowskie-Demptowo
+13467;2025/OGM/0004;46;F;internet;Mały Kack
+13469;2025/OGM/0004;81;M;internet;Obłuże
+13470;2025/OGM/0004,2025/OGM/0012;55;F;internet;Śródmieście
+13471;2025/OGM/0004,2025/OGM/0012;5;M;internet;Wielki Kack
+13472;2025/OGM/0004,2025/OGM/0012;14;F;internet;Pustki Cisowskie-Demptowo
+13473;2025/OGM/0004,2025/OGM/0012;48;F;internet;Oksywie
+13474;2025/OGM/0004,2025/OGM/0012;51;M;internet;Mały Kack
+13475;2025/OGM/0004,2025/OGM/0012;57;M;internet;Śródmieście
+13476;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+13477;2025/OGM/0004;63;M;internet;Pustki Cisowskie-Demptowo
+13479;2025/OGM/0012;34;F;internet;Pogórze
+13480;2025/OGM/0004;24;M;internet;Wielki Kack
+13481;2025/OGM/0004,2025/OGM/0012;21;F;internet;Obłuże
+13482;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+13484;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+13485;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+13486;2025/OGM/0004;61;F;internet;Witomino
+13487;2025/OGM/0004;39;M;internet;Śródmieście
+13488;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+13489;2025/OGM/0004;9;F;internet;Dąbrowa
+13490;2025/OGM/0012;6;M;internet;Mały Kack
+13491;2025/OGM/0004,2025/OGM/0012;39;M;internet;Redłowo
+13492;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+13493;2025/OGM/0004,2025/OGM/0012;51;M;internet;Wzgórze Św. Maksymiliana
+13494;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wzgórze Św. Maksymiliana
+13495;2025/OGM/0004;93;F;internet;Witomino
+13496;2025/OGM/0004,2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+13497;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+13498;2025/OGM/0004,2025/OGM/0012;57;M;internet;Pustki Cisowskie-Demptowo
+13499;2025/OGM/0004,2025/OGM/0012;59;F;internet;Karwiny
+13500;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+13501;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+13502;2025/OGM/0004;23;F;internet;Grabówek
+13503;2025/OGM/0004;23;F;internet;Chylonia
+13504;2025/OGM/0004,2025/OGM/0012;61;F;internet;Chylonia
+13505;2025/OGM/0004;75;F;internet;Witomino
+13506;2025/OGM/0004,2025/OGM/0012;33;F;internet;Redłowo
+13507;2025/OGM/0004,2025/OGM/0012;5;F;internet;Pustki Cisowskie-Demptowo
+13508;2025/OGM/0004,2025/OGM/0012;43;F;internet;Dąbrowa
+13509;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+13510;2025/OGM/0004;35;M;internet;Wzgórze Św. Maksymiliana
+13511;2025/OGM/0004;38;F;internet;Witomino
+13512;2025/OGM/0012;78;F;internet;Mały Kack
+13513;2025/OGM/0004,2025/OGM/0012;18;M;internet;Wzgórze Św. Maksymiliana
+13514;2025/OGM/0004;66;F;internet;Chylonia
+13515;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+13516;2025/OGM/0004;40;M;internet;Witomino
+13517;2025/OGM/0004,2025/OGM/0012;13;F;internet;Mały Kack
+13518;2025/OGM/0004;3;F;internet;Chwarzno-Wiczlino
+13519;2025/OGM/0004;63;F;internet;Chwarzno-Wiczlino
+13520;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+13521;2025/OGM/0004;40;F;internet;Wielki Kack
+13522;2025/OGM/0004;38;F;internet;Wielki Kack
+13523;2025/OGM/0004;67;M;internet;Chwarzno-Wiczlino
+13524;2025/OGM/0004;54;M;internet;Witomino
+13525;2025/OGM/0004;7;F;internet;Wielki Kack
+13526;2025/OGM/0004;39;F;internet;Kamienna Góra
+13528;2025/OGM/0004;54;F;internet;Wielki Kack
+13529;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+13530;2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+13531;2025/OGM/0012;37;F;internet;Mały Kack
+13532;2025/OGM/0004,2025/OGM/0012;31;M;internet;Cisowa
+13533;2025/OGM/0004,2025/OGM/0012;49;M;internet;Kamienna Góra
+13534;2025/OGM/0004;91;F;internet;Witomino
+13535;2025/OGM/0004;22;M;internet;Kamienna Góra
+13537;2025/OGM/0004;11;F;internet;Wielki Kack
+13538;2025/OGM/0012;37;F;internet;Mały Kack
+13539;2025/OGM/0004;10;F;internet;Kamienna Góra
+13540;2025/OGM/0004;59;M;internet;Oksywie
+13541;2025/OGM/0004;41;F;internet;Oksywie
+13542;2025/OGM/0004;8;F;internet;Kamienna Góra
+13543;2025/OGM/0004;24;M;internet;Pogórze
+13544;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chylonia
+13545;2025/OGM/0004;42;M;internet;Dąbrowa
+13546;2025/OGM/0004,2025/OGM/0012;63;F;internet;Karwiny
+13547;2025/OGM/0004;59;F;internet;Oksywie
+13548;2025/OGM/0004,2025/OGM/0012;45;M;internet;Pustki Cisowskie-Demptowo
+13549;2025/OGM/0004;2;M;internet;Mały Kack
+13550;2025/OGM/0004;84;F;internet;Oksywie
+13551;2025/OGM/0004,2025/OGM/0012;26;M;internet;Karwiny
+13552;2025/OGM/0004;38;F;internet;Mały Kack
+13553;2025/OGM/0004;63;M;internet;Oksywie
+13554;2025/OGM/0004,2025/OGM/0012;66;M;internet;Karwiny
+13556;2025/OGM/0004;36;M;internet;Wielki Kack
+13557;2025/OGM/0004;54;F;internet;Chylonia
+13559;2025/OGM/0004;62;M;internet;Oksywie
+13560;2025/OGM/0012;65;F;internet;Chwarzno-Wiczlino
+13561;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+13562;2025/OGM/0004;10;F;internet;Wielki Kack
+13563;2025/OGM/0012;34;F;internet;Chylonia
+13564;2025/OGM/0012;54;M;internet;Śródmieście
+13565;2025/OGM/0004;59;F;internet;Wielki Kack
+13566;2025/OGM/0012;42;F;internet;Śródmieście
+13567;2025/OGM/0004,2025/OGM/0012;11;M;internet;Chylonia
+13568;2025/OGM/0012;54;F;internet;Kamienna Góra
+13569;2025/OGM/0004;53;F;internet;Dąbrowa
+13570;2025/OGM/0004,2025/OGM/0012;37;F;internet;Działki Leśne
+13571;2025/OGM/0004,2025/OGM/0012;33;M;internet;Oksywie
+13572;2025/OGM/0004;13;M;internet;Mały Kack
+13573;2025/OGM/0012;26;M;internet;Dąbrowa
+13574;2025/OGM/0004;39;M;internet;Obłuże
+13575;2025/OGM/0004;17;F;internet;Mały Kack
+13577;2025/OGM/0004;32;F;internet;Oksywie
+13578;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+13579;2025/OGM/0004;45;M;internet;Karwiny
+13580;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+13581;2025/OGM/0012;67;M;internet;Chwarzno-Wiczlino
+13582;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+13584;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+13585;2025/OGM/0004;44;F;internet;Mały Kack
+13586;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+13587;2025/OGM/0004;31;F;internet;Obłuże
+13589;2025/OGM/0004;3;M;internet;Chwarzno-Wiczlino
+13590;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chylonia
+13591;2025/OGM/0004;44;M;internet;Mały Kack
+13592;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+13593;2025/OGM/0004;62;F;internet;Redłowo
+13594;2025/OGM/0004,2025/OGM/0012;12;M;internet;Mały Kack
+13595;2025/OGM/0004;69;M;internet;Dąbrowa
+13596;2025/OGM/0004;30;M;internet;Pustki Cisowskie-Demptowo
+13597;2025/OGM/0004;36;F;internet;Mały Kack
+13598;2025/OGM/0004,2025/OGM/0012;25;F;internet;Chylonia
+13599;2025/OGM/0004;30;F;internet;Śródmieście
+13601;2025/OGM/0012;70;F;internet;Obłuże
+13602;2025/OGM/0004;;F;internet;Chwarzno-Wiczlino
+13603;2025/OGM/0004,2025/OGM/0012;35;M;internet;Dąbrowa
+13604;2025/OGM/0004;6;M;internet;Mały Kack
+13605;2025/OGM/0004;57;F;internet;Wielki Kack
+13606;2025/OGM/0012;71;M;internet;Chwarzno-Wiczlino
+13607;2025/OGM/0004;4;M;internet;Mały Kack
+13609;2025/OGM/0004,2025/OGM/0012;69;F;internet;Wielki Kack
+13610;2025/OGM/0004,2025/OGM/0012;69;F;internet;Dąbrowa
+13611;2025/OGM/0004,2025/OGM/0012;38;F;internet;Działki Leśne
+13613;2025/OGM/0012;23;F;internet;Chwarzno-Wiczlino
+13614;2025/OGM/0004;52;M;internet;Cisowa
+13615;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+13616;2025/OGM/0004;36;M;internet;Chylonia
+13617;2025/OGM/0004;67;F;internet;Obłuże
+13618;2025/OGM/0004,2025/OGM/0012;72;M;internet;Wielki Kack
+13619;2025/OGM/0004;64;M;internet;Wielki Kack
+13621;2025/OGM/0004;33;F;internet;Mały Kack
+13622;2025/OGM/0004;34;M;internet;Mały Kack
+13624;2025/OGM/0004;34;F;internet;Wielki Kack
+13625;2025/OGM/0004,2025/OGM/0012;58;F;internet;Chylonia
+13626;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+13627;2025/OGM/0004,2025/OGM/0012;28;M;internet;Wielki Kack
+13628;2025/OGM/0004;10;F;internet;Kamienna Góra
+13629;2025/OGM/0004,2025/OGM/0012;44;F;internet;Cisowa
+13631;2025/OGM/0004;43;M;internet;Wielki Kack
+13633;2025/OGM/0004,2025/OGM/0012;47;F;internet;Cisowa
+13634;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wzgórze Św. Maksymiliana
+13635;2025/OGM/0004;77;F;internet;Cisowa
+13636;2025/OGM/0012;36;M;internet;Mały Kack
+13637;2025/OGM/0004;13;F;internet;Wielki Kack
+13639;2025/OGM/0004,2025/OGM/0012;43;M;internet;Cisowa
+13640;2025/OGM/0004,2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+13641;2025/OGM/0004,2025/OGM/0012;12;M;internet;Kamienna Góra
+13642;2025/OGM/0012;51;F;internet;Wielki Kack
+13643;2025/OGM/0004;48;F;internet;Dąbrowa
+13645;2025/OGM/0004,2025/OGM/0012;66;F;internet;Leszczynki
+13646;2025/OGM/0004;48;F;internet;Mały Kack
+13647;2025/OGM/0004,2025/OGM/0012;8;F;internet;Cisowa
+13648;2025/OGM/0004;35;F;internet;Dąbrowa
+13650;2025/OGM/0004,2025/OGM/0012;40;M;internet;Redłowo
+13651;2025/OGM/0004;22;M;internet;Chylonia
+13652;2025/OGM/0012;48;F;internet;Pustki Cisowskie-Demptowo
+13653;2025/OGM/0004,2025/OGM/0012;59;M;internet;Redłowo
+13654;2025/OGM/0004;41;M;internet;Wielki Kack
+13655;2025/OGM/0004;35;M;internet;Mały Kack
+13656;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+13657;2025/OGM/0004,2025/OGM/0012;19;M;internet;Mały Kack
+13658;2025/OGM/0004,2025/OGM/0012;34;F;internet;Mały Kack
+13659;2025/OGM/0004,2025/OGM/0012;12;M;internet;Redłowo
+13660;2025/OGM/0004;48;F;internet;Redłowo
+13662;2025/OGM/0012;13;F;internet;Pustki Cisowskie-Demptowo
+13663;2025/OGM/0004;39;F;internet;Pogórze
+13664;2025/OGM/0004;22;F;internet;Redłowo
+13666;2025/OGM/0004,2025/OGM/0012;62;F;internet;Grabówek
+13667;2025/OGM/0004;9;M;internet;Wielki Kack
+13668;2025/OGM/0004,2025/OGM/0012;44;M;internet;Śródmieście
+13669;2025/OGM/0004;31;F;internet;Dąbrowa
+13670;2025/OGM/0004;10;M;internet;Redłowo
+13671;2025/OGM/0004,2025/OGM/0012;76;F;internet;Dąbrowa
+13672;2025/OGM/0004;38;M;internet;Pogórze
+13673;2025/OGM/0004;14;F;internet;Mały Kack
+13674;2025/OGM/0012;78;F;internet;Witomino
+13675;2025/OGM/0004;49;M;internet;Cisowa
+13676;2025/OGM/0004;31;F;internet;Chylonia
+13679;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+13680;2025/OGM/0012;66;M;internet;Redłowo
+13681;2025/OGM/0004,2025/OGM/0012;16;F;internet;Wielki Kack
+13682;2025/OGM/0004;9;M;internet;Mały Kack
+13683;2025/OGM/0012;62;F;internet;Witomino
+13684;2025/OGM/0004,2025/OGM/0012;34;F;internet;Kamienna Góra
+13685;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+13686;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+13687;2025/OGM/0004;45;M;internet;Chwarzno-Wiczlino
+13690;2025/OGM/0004;38;F;internet;Śródmieście
+13691;2025/OGM/0004;30;M;internet;Chylonia
+13692;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+13693;2025/OGM/0004,2025/OGM/0012;52;F;internet;Obłuże
+13694;2025/OGM/0004;64;M;internet;Śródmieście
+13696;2025/OGM/0004;29;M;internet;Karwiny
+13697;2025/OGM/0004;59;F;internet;Redłowo
+13698;2025/OGM/0004;12;M;internet;Redłowo
+13699;2025/OGM/0004,2025/OGM/0012;51;F;internet;Redłowo
+13700;2025/OGM/0004;60;F;internet;Działki Leśne
+13701;2025/OGM/0004,2025/OGM/0012;34;M;internet;Mały Kack
+13702;2025/OGM/0004;51;M;internet;Mały Kack
+13703;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+13704;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+13705;2025/OGM/0012;91;F;internet;Chylonia
+13706;2025/OGM/0004,2025/OGM/0012;53;F;internet;Dąbrowa
+13707;2025/OGM/0004;33;M;internet;Dąbrowa
+13708;2025/OGM/0004;34;F;internet;Działki Leśne
+13709;2025/OGM/0004,2025/OGM/0012;18;M;internet;Wielki Kack
+13711;2025/OGM/0004;46;F;internet;Cisowa
+13712;2025/OGM/0012;79;M;internet;Chylonia
+13713;2025/OGM/0004,2025/OGM/0012;64;F;internet;Śródmieście
+13715;2025/OGM/0004;7;F;internet;Witomino
+13716;2025/OGM/0004,2025/OGM/0012;45;M;internet;Orłowo
+13717;2025/OGM/0004;12;M;internet;Chwarzno-Wiczlino
+13718;2025/OGM/0004,2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+13719;2025/OGM/0004;7;M;internet;Witomino
+13720;2025/OGM/0004,2025/OGM/0012;45;F;internet;Orłowo
+13721;2025/OGM/0004;79;M;internet;Leszczynki
+13722;2025/OGM/0004;77;F;internet;Redłowo
+13723;2025/OGM/0004;47;M;internet;Dąbrowa
+13724;2025/OGM/0004;42;M;internet;Pogórze
+13725;2025/OGM/0004;4;F;internet;Witomino
+13726;2025/OGM/0004;15;F;internet;Chwarzno-Wiczlino
+13727;2025/OGM/0004,2025/OGM/0012;38;F;internet;Cisowa
+13728;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+13729;2025/OGM/0004;15;M;internet;Pogórze
+13730;2025/OGM/0004;47;M;internet;Dąbrowa
+13731;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+13732;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+13733;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+13734;2025/OGM/0004;82;M;internet;Redłowo
+13735;2025/OGM/0012;74;F;internet;Mały Kack
+13736;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+13737;2025/OGM/0004;27;M;internet;Pogórze
+13738;2025/OGM/0004,2025/OGM/0012;41;F;internet;Śródmieście
+13739;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+13740;2025/OGM/0004;78;M;internet;Pogórze
+13741;2025/OGM/0004,2025/OGM/0012;36;M;internet;Obłuże
+13742;2025/OGM/0004;74;F;internet;Pogórze
+13743;2025/OGM/0004,2025/OGM/0012;69;F;internet;Śródmieście
+13744;2025/OGM/0004;45;M;internet;Cisowa
+13745;2025/OGM/0004,2025/OGM/0012;29;M;internet;Chylonia
+13746;2025/OGM/0004,2025/OGM/0012;17;F;internet;Chylonia
+13747;2025/OGM/0004;70;F;internet;Wielki Kack
+13748;2025/OGM/0004;69;M;internet;Cisowa
+13750;2025/OGM/0004;11;F;internet;Wielki Kack
+13751;2025/OGM/0004;;M;internet;Wielki Kack
+13752;2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+13753;2025/OGM/0004;55;M;internet;Wielki Kack
+13754;2025/OGM/0004,2025/OGM/0012;34;F;internet;Karwiny
+13756;2025/OGM/0004,2025/OGM/0012;19;F;internet;Karwiny
+13757;2025/OGM/0004,2025/OGM/0012;49;F;internet;Karwiny
+13758;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wzgórze Św. Maksymiliana
+13759;2025/OGM/0004;16;M;internet;Wielki Kack
+13760;2025/OGM/0004;53;M;internet;Chwarzno-Wiczlino
+13761;2025/OGM/0012;52;M;internet;Dąbrowa
+13762;2025/OGM/0004;38;F;internet;Mały Kack
+13763;2025/OGM/0004;74;M;internet;Pustki Cisowskie-Demptowo
+13764;2025/OGM/0004;15;F;internet;Pustki Cisowskie-Demptowo
+13765;2025/OGM/0004;78;M;internet;Wielki Kack
+13766;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+13767;2025/OGM/0004;19;M;internet;Pustki Cisowskie-Demptowo
+13768;2025/OGM/0004,2025/OGM/0012;18;M;internet;Chwarzno-Wiczlino
+13769;2025/OGM/0004;52;M;internet;Wielki Kack
+13771;2025/OGM/0004;50;M;internet;Mały Kack
+13772;2025/OGM/0004;44;M;internet;Obłuże
+13773;2025/OGM/0004;49;M;internet;Mały Kack
+13774;2025/OGM/0012;45;M;internet;Śródmieście
+13775;2025/OGM/0004;49;F;internet;Mały Kack
+13776;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+13777;2025/OGM/0004;17;M;internet;Mały Kack
+13778;2025/OGM/0004;48;F;internet;Mały Kack
+13779;2025/OGM/0004;15;M;internet;Mały Kack
+13780;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chylonia
+13781;2025/OGM/0004,2025/OGM/0012;71;F;internet;Działki Leśne
+13782;2025/OGM/0004,2025/OGM/0012;42;M;internet;Pustki Cisowskie-Demptowo
+13783;2025/OGM/0004;45;M;internet;Śródmieście
+13784;2025/OGM/0004;49;F;internet;Wielki Kack
+13785;2025/OGM/0004;45;M;internet;Wielki Kack
+13786;2025/OGM/0004,2025/OGM/0012;13;F;internet;Wzgórze Św. Maksymiliana
+13787;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+13788;2025/OGM/0004,2025/OGM/0012;80;M;internet;Działki Leśne
+13789;2025/OGM/0004;41;F;internet;Mały Kack
+13790;2025/OGM/0004;55;M;internet;Wielki Kack
+13792;2025/OGM/0004,2025/OGM/0012;37;M;internet;Dąbrowa
+13793;2025/OGM/0004,2025/OGM/0012;27;F;internet;Witomino
+13794;2025/OGM/0012;45;F;internet;Wzgórze Św. Maksymiliana
+13795;2025/OGM/0004;35;M;internet;Mały Kack
+13796;2025/OGM/0004,2025/OGM/0012;29;M;internet;Obłuże
+13798;2025/OGM/0012;42;F;internet;Wielki Kack
+13799;2025/OGM/0004;9;F;internet;Mały Kack
+13800;2025/OGM/0004,2025/OGM/0012;17;M;internet;Chwarzno-Wiczlino
+13801;2025/OGM/0012;38;F;internet;Wzgórze Św. Maksymiliana
+13802;2025/OGM/0004;54;F;internet;Wielki Kack
+13803;2025/OGM/0004,2025/OGM/0012;31;F;internet;Obłuże
+13804;2025/OGM/0004;7;F;internet;Mały Kack
+13805;2025/OGM/0004;16;M;internet;Mały Kack
+13806;2025/OGM/0004,2025/OGM/0012;76;F;internet;Chwarzno-Wiczlino
+13807;2025/OGM/0012;44;F;internet;Witomino
+13808;2025/OGM/0012;42;F;internet;Karwiny
+13809;2025/OGM/0004,2025/OGM/0012;48;F;internet;Cisowa
+13810;2025/OGM/0004;12;F;internet;Mały Kack
+13811;2025/OGM/0004;34;F;internet;Wielki Kack
+13812;2025/OGM/0004;66;M;internet;Działki Leśne
+13813;2025/OGM/0004,2025/OGM/0012;49;F;internet;Mały Kack
+13814;2025/OGM/0012;42;M;internet;Wielki Kack
+13815;2025/OGM/0004,2025/OGM/0012;52;M;internet;Chwarzno-Wiczlino
+13816;2025/OGM/0004;48;F;internet;Wielki Kack
+13817;2025/OGM/0012;19;F;internet;Dąbrowa
+13818;2025/OGM/0004,2025/OGM/0012;25;F;internet;Śródmieście
+13819;2025/OGM/0012;14;M;internet;Wielki Kack
+13820;2025/OGM/0004;42;M;internet;Cisowa
+13821;2025/OGM/0004;5;M;internet;Śródmieście
+13822;2025/OGM/0004;41;M;internet;Mały Kack
+13823;2025/OGM/0012;11;M;internet;Wielki Kack
+13824;2025/OGM/0004,2025/OGM/0012;32;F;internet;Śródmieście
+13825;2025/OGM/0012;46;M;internet;Dąbrowa
+13826;2025/OGM/0004,2025/OGM/0012;80;M;internet;Chwarzno-Wiczlino
+13827;2025/OGM/0012;16;M;internet;Dąbrowa
+13828;2025/OGM/0004;15;F;internet;Wielki Kack
+13829;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+13830;2025/OGM/0004;73;F;internet;Mały Kack
+13833;2025/OGM/0004;71;M;internet;Mały Kack
+13834;2025/OGM/0012;44;F;internet;Wielki Kack
+13836;2025/OGM/0004;56;F;internet;Cisowa
+13837;2025/OGM/0004;60;M;internet;Cisowa
+13838;2025/OGM/0004;50;M;internet;Cisowa
+13839;2025/OGM/0004;52;F;internet;Pustki Cisowskie-Demptowo
+13840;2025/OGM/0004;46;M;internet;Wielki Kack
+13841;2025/OGM/0004,2025/OGM/0012;29;F;internet;Pustki Cisowskie-Demptowo
+13842;2025/OGM/0004;42;F;internet;Witomino
+13843;2025/OGM/0012;61;F;internet;Redłowo
+13844;2025/OGM/0004;44;M;internet;Wielki Kack
+13845;2025/OGM/0012;58;M;internet;Wielki Kack
+13846;2025/OGM/0004;18;F;internet;Obłuże
+13847;2025/OGM/0004;15;M;internet;Wielki Kack
+13848;2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+13849;2025/OGM/0012;43;F;internet;Kamienna Góra
+13850;2025/OGM/0004;50;F;internet;Wielki Kack
+13851;2025/OGM/0004;61;M;internet;Redłowo
+13852;2025/OGM/0012;10;F;internet;Wielki Kack
+13853;2025/OGM/0004;62;M;internet;Chylonia
+13854;2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+13855;2025/OGM/0012;36;F;internet;Witomino
+13856;2025/OGM/0004;7;F;internet;Mały Kack
+13857;2025/OGM/0004,2025/OGM/0012;46;F;internet;Leszczynki
+13858;2025/OGM/0012;69;F;internet;Obłuże
+13859;2025/OGM/0004;3;M;internet;Karwiny
+13860;2025/OGM/0004,2025/OGM/0012;;M;internet;Chwarzno-Wiczlino
+13861;2025/OGM/0004;34;F;internet;Wielki Kack
+13862;2025/OGM/0004,2025/OGM/0012;65;F;internet;Pustki Cisowskie-Demptowo
+13863;2025/OGM/0004;32;M;internet;Kamienna Góra
+13864;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+13865;2025/OGM/0012;14;F;internet;Kamienna Góra
+13866;2025/OGM/0004;40;F;internet;Kamienna Góra
+13868;2025/OGM/0004,2025/OGM/0012;1;M;internet;Pustki Cisowskie-Demptowo
+13869;2025/OGM/0004;1;F;internet;Karwiny
+13870;2025/OGM/0004,2025/OGM/0012;52;F;internet;Dąbrowa
+13871;2025/OGM/0004;33;F;internet;Mały Kack
+13872;2025/OGM/0004;3;F;internet;Mały Kack
+13873;2025/OGM/0004,2025/OGM/0012;29;M;internet;Pustki Cisowskie-Demptowo
+13874;2025/OGM/0004;10;F;internet;Kamienna Góra
+13875;2025/OGM/0004;33;M;internet;Wielki Kack
+13876;2025/OGM/0004;55;F;internet;Pustki Cisowskie-Demptowo
+13878;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wielki Kack
+13879;2025/OGM/0004,2025/OGM/0012;19;F;internet;Pogórze
+13880;2025/OGM/0004;6;M;internet;Kamienna Góra
+13881;2025/OGM/0004;2;F;internet;Mały Kack
+13882;2025/OGM/0004;30;F;internet;Obłuże
+13883;2025/OGM/0012;36;M;internet;Wielki Kack
+13884;2025/OGM/0004;71;F;internet;Wzgórze Św. Maksymiliana
+13886;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+13887;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pogórze
+13889;2025/OGM/0004;38;F;internet;Wielki Kack
+13890;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+13891;2025/OGM/0004;32;M;internet;Mały Kack
+13892;2025/OGM/0004,2025/OGM/0012;63;F;internet;Wielki Kack
+13893;2025/OGM/0004;15;F;internet;Wielki Kack
+13894;2025/OGM/0004;15;M;internet;Dąbrowa
+13896;2025/OGM/0012;48;M;internet;Śródmieście
+13897;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+13898;2025/OGM/0004;11;F;internet;Wielki Kack
+13899;2025/OGM/0012;23;F;internet;Wielki Kack
+13900;2025/OGM/0004;16;M;internet;Leszczynki
+13901;2025/OGM/0004,2025/OGM/0012;60;M;internet;Wielki Kack
+13903;2025/OGM/0004;8;F;internet;Wielki Kack
+13904;2025/OGM/0004,2025/OGM/0012;79;M;internet;Wielki Kack
+13905;2025/OGM/0004,2025/OGM/0012;70;M;internet;Pustki Cisowskie-Demptowo
+13906;2025/OGM/0004,2025/OGM/0012;73;F;internet;Wielki Kack
+13907;2025/OGM/0004,2025/OGM/0012;30;F;internet;Grabówek
+13908;2025/OGM/0004,2025/OGM/0012;55;F;internet;Pogórze
+13909;2025/OGM/0004;41;F;internet;Mały Kack
+13910;2025/OGM/0004,2025/OGM/0012;93;F;internet;Wielki Kack
+13911;2025/OGM/0004;38;F;internet;Babie Doły
+13912;2025/OGM/0004,2025/OGM/0012;12;F;internet;Dąbrowa
+13913;2025/OGM/0004,2025/OGM/0012;71;M;internet;Pustki Cisowskie-Demptowo
+13914;2025/OGM/0004,2025/OGM/0012;35;F;internet;Dąbrowa
+13915;2025/OGM/0004,2025/OGM/0012;36;F;internet;Pustki Cisowskie-Demptowo
+13917;2025/OGM/0004;14;F;internet;Chwarzno-Wiczlino
+13918;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+13919;2025/OGM/0004,2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+13920;2025/OGM/0004;66;F;internet;Dąbrowa
+13921;2025/OGM/0004,2025/OGM/0012;4;M;internet;Pustki Cisowskie-Demptowo
+13922;2025/OGM/0004;68;M;internet;Dąbrowa
+13924;2025/OGM/0004,2025/OGM/0012;48;M;internet;Leszczynki
+13926;2025/OGM/0004,2025/OGM/0012;76;F;internet;Karwiny
+13927;2025/OGM/0004,2025/OGM/0012;77;M;internet;Leszczynki
+13928;2025/OGM/0012;9;F;internet;Dąbrowa
+13929;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wzgórze Św. Maksymiliana
+13930;2025/OGM/0012;54;F;internet;Witomino
+13931;2025/OGM/0004,2025/OGM/0012;31;F;internet;Karwiny
+13932;2025/OGM/0012;8;M;internet;Dąbrowa
+13933;2025/OGM/0004,2025/OGM/0012;40;M;internet;Mały Kack
+13934;2025/OGM/0004,2025/OGM/0012;20;F;internet;Mały Kack
+13936;2025/OGM/0004,2025/OGM/0012;4;F;internet;Karwiny
+13937;2025/OGM/0004,2025/OGM/0012;2;M;internet;Karwiny
+13938;2025/OGM/0004;18;F;internet;Grabówek
+13939;2025/OGM/0004,2025/OGM/0012;54;F;internet;Dąbrowa
+13940;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+13941;2025/OGM/0004,2025/OGM/0012;52;M;internet;Cisowa
+13942;2025/OGM/0004,2025/OGM/0012;61;M;internet;Dąbrowa
+13943;2025/OGM/0004;56;F;internet;Wzgórze Św. Maksymiliana
+13944;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+13945;2025/OGM/0004,2025/OGM/0012;75;F;internet;Cisowa
+13946;2025/OGM/0004;80;M;internet;Wielki Kack
+13947;2025/OGM/0012;52;F;internet;Witomino
+13948;2025/OGM/0004,2025/OGM/0012;51;F;internet;Cisowa
+13949;2025/OGM/0012;41;F;internet;Mały Kack
+13950;2025/OGM/0004,2025/OGM/0012;44;M;internet;Redłowo
+13951;2025/OGM/0004;15;F;internet;Wielki Kack
+13952;2025/OGM/0004,2025/OGM/0012;12;M;internet;Redłowo
+13953;2025/OGM/0004;46;M;internet;Dąbrowa
+13954;2025/OGM/0004;38;M;internet;Pustki Cisowskie-Demptowo
+13955;2025/OGM/0004;13;M;internet;Wielki Kack
+13956;2025/OGM/0004;5;F;internet;Mały Kack
+13957;2025/OGM/0004;7;M;internet;Pustki Cisowskie-Demptowo
+13958;2025/OGM/0004;23;F;internet;Wielki Kack
+13959;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+13960;2025/OGM/0012;44;M;internet;
+13961;2025/OGM/0004;33;F;internet;Pustki Cisowskie-Demptowo
+13962;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+13963;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+13964;2025/OGM/0004,2025/OGM/0012;42;F;internet;Orłowo
+13965;2025/OGM/0004;3;F;internet;Pustki Cisowskie-Demptowo
+13966;2025/OGM/0004,2025/OGM/0012;21;F;internet;Cisowa
+13967;2025/OGM/0004,2025/OGM/0012;3;M;internet;Chwarzno-Wiczlino
+13968;2025/OGM/0004;59;M;internet;Wielki Kack
+13969;2025/OGM/0004,2025/OGM/0012;;F;internet;Chwarzno-Wiczlino
+13970;2025/OGM/0004;55;M;internet;Wielki Kack
+13971;2025/OGM/0004;49;M;internet;Karwiny
+13972;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chylonia
+13973;2025/OGM/0004;46;F;internet;Dąbrowa
+13974;2025/OGM/0004;38;F;internet;Działki Leśne
+13975;2025/OGM/0004,2025/OGM/0012;66;M;internet;Chwarzno-Wiczlino
+13976;2025/OGM/0004;39;M;internet;Obłuże
+13978;2025/OGM/0004,2025/OGM/0012;47;F;internet;Witomino
+13979;2025/OGM/0004;36;M;internet;Wzgórze Św. Maksymiliana
+13980;2025/OGM/0004,2025/OGM/0012;56;F;internet;Mały Kack
+13981;2025/OGM/0004,2025/OGM/0012;56;M;internet;Wielki Kack
+13982;2025/OGM/0004;49;F;internet;Cisowa
+13983;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+13984;2025/OGM/0004;7;F;internet;Wzgórze Św. Maksymiliana
+13985;2025/OGM/0004;72;M;internet;Wielki Kack
+13986;2025/OGM/0004;31;M;internet;Wielki Kack
+13987;2025/OGM/0004;4;M;internet;Wzgórze Św. Maksymiliana
+13988;2025/OGM/0004;64;F;internet;Oksywie
+13989;2025/OGM/0004,2025/OGM/0012;1;F;internet;Mały Kack
+13990;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+13991;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+13992;2025/OGM/0004;48;M;internet;Cisowa
+13993;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+13994;2025/OGM/0004;70;F;internet;Wielki Kack
+13995;2025/OGM/0004;43;M;internet;Wielki Kack
+13996;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+13997;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+13998;2025/OGM/0004;36;M;internet;Dąbrowa
+13999;2025/OGM/0004,2025/OGM/0012;56;F;internet;Pogórze
+14000;2025/OGM/0004,2025/OGM/0012;46;F;internet;Witomino
+14001;2025/OGM/0012;42;F;internet;Wielki Kack
+14002;2025/OGM/0004;9;F;internet;Wielki Kack
+14003;2025/OGM/0004,2025/OGM/0012;12;F;internet;Wielki Kack
+14004;2025/OGM/0004,2025/OGM/0012;10;M;internet;Wielki Kack
+14005;2025/OGM/0004,2025/OGM/0012;12;F;internet;Oksywie
+14007;2025/OGM/0004,2025/OGM/0012;40;M;internet;Witomino
+14008;2025/OGM/0004,2025/OGM/0012;57;F;internet;Chylonia
+14009;2025/OGM/0004,2025/OGM/0012;37;M;internet;Oksywie
+14010;2025/OGM/0004;41;F;internet;Obłuże
+14011;2025/OGM/0004;42;M;internet;Wielki Kack
+14012;2025/OGM/0004;65;F;internet;Kamienna Góra
+14013;2025/OGM/0012;47;M;internet;Kamienna Góra
+14014;2025/OGM/0004;15;M;internet;Wielki Kack
+14016;2025/OGM/0004,2025/OGM/0012;52;F;internet;Leszczynki
+14017;2025/OGM/0004;59;F;internet;Oksywie
+14018;2025/OGM/0004;42;F;internet;Wielki Kack
+14019;2025/OGM/0004,2025/OGM/0012;27;F;internet;Wielki Kack
+14020;2025/OGM/0004;41;F;internet;Wielki Kack
+14021;2025/OGM/0004,2025/OGM/0012;55;M;internet;Leszczynki
+14022;2025/OGM/0004,2025/OGM/0012;80;M;internet;Śródmieście
+14023;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wielki Kack
+14024;2025/OGM/0004;42;M;internet;Wielki Kack
+14025;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+14026;2025/OGM/0004;11;F;internet;Wielki Kack
+14027;2025/OGM/0004;13;M;internet;Wielki Kack
+14028;2025/OGM/0004,2025/OGM/0012;51;F;internet;Śródmieście
+14029;2025/OGM/0004,2025/OGM/0012;15;F;internet;Leszczynki
+14030;2025/OGM/0004;9;F;internet;Wielki Kack
+14032;2025/OGM/0004;10;M;internet;Wielki Kack
+14034;2025/OGM/0004;4;F;internet;Wielki Kack
+14036;2025/OGM/0004,2025/OGM/0012;23;M;internet;Leszczynki
+14037;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+14038;2025/OGM/0004;6;F;internet;Wielki Kack
+14039;2025/OGM/0004,2025/OGM/0012;21;M;internet;Wielki Kack
+14040;2025/OGM/0012;59;M;internet;Wielki Kack
+14041;2025/OGM/0004,2025/OGM/0012;81;F;internet;Leszczynki
+14042;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wielki Kack
+14043;2025/OGM/0004,2025/OGM/0012;84;M;internet;Leszczynki
+14044;2025/OGM/0012;55;M;internet;Dąbrowa
+14045;2025/OGM/0004;41;F;internet;Mały Kack
+14046;2025/OGM/0004,2025/OGM/0012;80;F;internet;Leszczynki
+14047;2025/OGM/0004,2025/OGM/0012;41;M;internet;Kamienna Góra
+14048;2025/OGM/0004,2025/OGM/0012;12;M;internet;Wielki Kack
+14049;2025/OGM/0012;37;M;internet;Mały Kack
+14050;2025/OGM/0012;51;F;internet;Dąbrowa
+14051;2025/OGM/0004,2025/OGM/0012;43;F;internet;Oksywie
+14052;2025/OGM/0004,2025/OGM/0012;46;F;internet;Karwiny
+14053;2025/OGM/0004,2025/OGM/0012;52;M;internet;Witomino
+14054;2025/OGM/0004;54;M;internet;Dąbrowa
+14055;2025/OGM/0004,2025/OGM/0012;40;M;internet;Wielki Kack
+14056;2025/OGM/0004;28;M;internet;Cisowa
+14057;2025/OGM/0004;42;M;internet;Mały Kack
+14058;2025/OGM/0004;70;F;internet;Leszczynki
+14059;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pustki Cisowskie-Demptowo
+14060;2025/OGM/0004;55;F;internet;Wielki Kack
+14061;2025/OGM/0004;47;F;internet;Wielki Kack
+14062;2025/OGM/0004;43;F;internet;Redłowo
+14063;2025/OGM/0004;58;M;internet;Wielki Kack
+14064;2025/OGM/0004;47;F;internet;Redłowo
+14065;2025/OGM/0004;7;M;internet;Wielki Kack
+14066;2025/OGM/0004;19;F;internet;Wielki Kack
+14067;2025/OGM/0004;53;F;internet;Wielki Kack
+14068;2025/OGM/0004;82;F;internet;Wielki Kack
+14069;2025/OGM/0004,2025/OGM/0012;27;F;internet;Cisowa
+14070;2025/OGM/0004;31;F;internet;Śródmieście
+14071;2025/OGM/0004;53;M;internet;Wielki Kack
+14072;2025/OGM/0004,2025/OGM/0012;30;M;internet;Witomino
+14073;2025/OGM/0004;37;M;internet;Chylonia
+14075;2025/OGM/0004;23;M;internet;Dąbrowa
+14076;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+14077;2025/OGM/0004;38;M;internet;Działki Leśne
+14078;2025/OGM/0004,2025/OGM/0012;35;F;internet;Dąbrowa
+14079;2025/OGM/0004,2025/OGM/0012;88;F;internet;Pogórze
+14080;2025/OGM/0004;42;F;internet;Wielki Kack
+14081;2025/OGM/0004;12;M;internet;Mały Kack
+14082;2025/OGM/0004;54;F;internet;Redłowo
+14083;2025/OGM/0004;32;F;internet;Dąbrowa
+14084;2025/OGM/0004,2025/OGM/0012;17;M;internet;Karwiny
+14085;2025/OGM/0004,2025/OGM/0012;34;M;internet;Wzgórze Św. Maksymiliana
+14086;2025/OGM/0004;41;F;internet;Mały Kack
+14087;2025/OGM/0004;46;M;internet;Wielki Kack
+14088;2025/OGM/0004;26;M;internet;Wielki Kack
+14089;2025/OGM/0004;9;M;internet;Mały Kack
+14090;2025/OGM/0004;12;M;internet;Wielki Kack
+14091;2025/OGM/0004;10;M;internet;Wielki Kack
+14092;2025/OGM/0004,2025/OGM/0012;45;F;internet;Mały Kack
+14093;2025/OGM/0004,2025/OGM/0012;21;M;internet;Pustki Cisowskie-Demptowo
+14094;2025/OGM/0004;52;F;internet;Chylonia
+14095;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+14096;2025/OGM/0004;11;M;internet;Mały Kack
+14097;2025/OGM/0012;65;F;internet;Wzgórze Św. Maksymiliana
+14098;2025/OGM/0004;44;F;internet;Dąbrowa
+14099;2025/OGM/0004,2025/OGM/0012;56;F;internet;Chwarzno-Wiczlino
+14100;2025/OGM/0012;35;F;internet;Oksywie
+14101;2025/OGM/0004;66;M;internet;Śródmieście
+14102;2025/OGM/0004;33;F;internet;Chylonia
+14103;2025/OGM/0004,2025/OGM/0012;34;M;internet;Oksywie
+14104;2025/OGM/0004,2025/OGM/0012;60;F;internet;Dąbrowa
+14105;2025/OGM/0004;47;M;internet;Chylonia
+14106;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chylonia
+14108;2025/OGM/0004,2025/OGM/0012;22;M;internet;Śródmieście
+14109;2025/OGM/0004;50;F;internet;Pustki Cisowskie-Demptowo
+14110;2025/OGM/0004;71;M;internet;Wielki Kack
+14111;2025/OGM/0004,2025/OGM/0012;72;M;internet;Chwarzno-Wiczlino
+14116;2025/OGM/0004;55;F;internet;Redłowo
+14117;2025/OGM/0012;38;M;internet;Działki Leśne
+14118;2025/OGM/0004;52;F;internet;Babie Doły
+14119;2025/OGM/0004;41;F;internet;Karwiny
+14120;2025/OGM/0012;48;F;internet;Witomino
+14122;2025/OGM/0004;42;M;internet;Wielki Kack
+14123;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wielki Kack
+14124;2025/OGM/0004,2025/OGM/0012;51;F;internet;Wielki Kack
+14127;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wzgórze Św. Maksymiliana
+14128;2025/OGM/0004;10;M;internet;Wielki Kack
+14129;2025/OGM/0004;67;F;internet;Wielki Kack
+14130;2025/OGM/0004;4;M;internet;Wielki Kack
+14131;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+14132;2025/OGM/0004,2025/OGM/0012;76;M;internet;Witomino
+14133;2025/OGM/0004;50;F;internet;Chylonia
+14134;2025/OGM/0004;2;M;internet;Wielki Kack
+14135;2025/OGM/0004,2025/OGM/0012;76;F;internet;Witomino
+14136;2025/OGM/0004,2025/OGM/0012;54;F;internet;Witomino
+14137;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+14138;2025/OGM/0004,2025/OGM/0012;18;F;internet;Wielki Kack
+14139;2025/OGM/0004;42;F;internet;Wielki Kack
+14140;2025/OGM/0004,2025/OGM/0012;20;F;internet;Wielki Kack
+14141;2025/OGM/0012;56;F;internet;Witomino
+14142;2025/OGM/0004,2025/OGM/0012;55;M;internet;Wielki Kack
+14143;2025/OGM/0004;56;M;internet;Pustki Cisowskie-Demptowo
+14144;2025/OGM/0012;65;F;internet;Orłowo
+14146;2025/OGM/0004;34;F;internet;Działki Leśne
+14147;2025/OGM/0004;28;F;internet;Dąbrowa
+14148;2025/OGM/0004;26;F;internet;Dąbrowa
+14149;2025/OGM/0012;74;F;internet;Pustki Cisowskie-Demptowo
+14150;2025/OGM/0004;28;F;internet;Śródmieście
+14151;2025/OGM/0004,2025/OGM/0012;32;M;internet;Orłowo
+14152;2025/OGM/0004;40;F;internet;Witomino
+14153;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+14154;2025/OGM/0012;43;F;internet;Wielki Kack
+14155;2025/OGM/0004,2025/OGM/0012;24;F;internet;Witomino
+14156;2025/OGM/0004;51;F;internet;Cisowa
+14157;2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+14158;2025/OGM/0004;26;M;internet;Witomino
+14159;2025/OGM/0012;47;F;internet;Witomino
+14160;2025/OGM/0012;38;M;internet;Redłowo
+14161;2025/OGM/0012;15;M;internet;Chwarzno-Wiczlino
+14162;2025/OGM/0004,2025/OGM/0012;52;F;internet;Chylonia
+14163;2025/OGM/0004;42;F;internet;Wielki Kack
+14164;2025/OGM/0004,2025/OGM/0012;40;F;internet;Karwiny
+14165;2025/OGM/0004;49;F;internet;Cisowa
+14166;2025/OGM/0004;5;F;internet;Wielki Kack
+14168;2025/OGM/0004,2025/OGM/0012;56;M;internet;Mały Kack
+14169;2025/OGM/0004;30;F;internet;Chwarzno-Wiczlino
+14170;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+14171;2025/OGM/0004;42;M;internet;Wielki Kack
+14172;2025/OGM/0004;39;M;internet;Dąbrowa
+14173;2025/OGM/0012;46;F;internet;Wielki Kack
+14174;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+14175;2025/OGM/0012;24;F;internet;Wielki Kack
+14177;2025/OGM/0012;69;M;internet;Mały Kack
+14178;2025/OGM/0012;59;M;internet;Wielki Kack
+14179;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+14180;2025/OGM/0012;23;M;internet;Wielki Kack
+14181;2025/OGM/0004;43;F;internet;Wielki Kack
+14182;2025/OGM/0004,2025/OGM/0012;7;M;internet;Chwarzno-Wiczlino
+14183;2025/OGM/0004,2025/OGM/0012;35;M;internet;Dąbrowa
+14184;2025/OGM/0004;35;F;internet;Dąbrowa
+14185;2025/OGM/0004;54;M;internet;Wielki Kack
+14186;2025/OGM/0004,2025/OGM/0012;42;M;internet;Dąbrowa
+14187;2025/OGM/0004,2025/OGM/0012;62;F;internet;Wielki Kack
+14189;2025/OGM/0004;35;F;internet;Cisowa
+14190;2025/OGM/0004;27;F;internet;Dąbrowa
+14191;2025/OGM/0012;74;F;internet;Pustki Cisowskie-Demptowo
+14192;2025/OGM/0012;40;M;internet;Działki Leśne
+14193;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+14194;2025/OGM/0004,2025/OGM/0012;39;M;internet;Leszczynki
+14195;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+14196;2025/OGM/0004;29;F;internet;Karwiny
+14197;2025/OGM/0004;54;M;internet;Wielki Kack
+14198;2025/OGM/0012;37;F;internet;Mały Kack
+14199;2025/OGM/0004;58;F;internet;Dąbrowa
+14200;2025/OGM/0004;41;F;internet;Cisowa
+14201;2025/OGM/0004;43;M;internet;Chylonia
+14202;2025/OGM/0012;38;F;internet;Witomino
+14203;2025/OGM/0004;41;F;internet;Cisowa
+14204;2025/OGM/0004,2025/OGM/0012;22;F;internet;Wzgórze Św. Maksymiliana
+14206;2025/OGM/0004,2025/OGM/0012;29;M;internet;Śródmieście
+14207;2025/OGM/0004;79;F;internet;Dąbrowa
+14208;2025/OGM/0004,2025/OGM/0012;7;F;internet;Mały Kack
+14209;2025/OGM/0004,2025/OGM/0012;48;F;internet;Witomino
+14210;2025/OGM/0004;35;F;internet;Mały Kack
+14211;2025/OGM/0004;44;F;internet;Wielki Kack
+14212;2025/OGM/0004;18;F;internet;Oksywie
+14213;2025/OGM/0004;60;F;internet;Orłowo
+14214;2025/OGM/0004,2025/OGM/0012;65;F;internet;Witomino
+14215;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+14216;2025/OGM/0004;45;M;internet;Śródmieście
+14217;2025/OGM/0004;34;F;internet;Mały Kack
+14218;2025/OGM/0004;46;M;internet;Wielki Kack
+14219;2025/OGM/0004;13;M;internet;Obłuże
+14220;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+14221;2025/OGM/0004;81;M;internet;Dąbrowa
+14222;2025/OGM/0004;7;M;internet;Śródmieście
+14223;2025/OGM/0004;46;F;internet;Leszczynki
+14224;2025/OGM/0004,2025/OGM/0012;69;F;internet;Witomino
+14225;2025/OGM/0004;32;F;internet;Dąbrowa
+14226;2025/OGM/0012;34;M;internet;Grabówek
+14227;2025/OGM/0004;53;M;internet;Dąbrowa
+14228;2025/OGM/0004;15;F;internet;Pustki Cisowskie-Demptowo
+14229;2025/OGM/0004;14;F;internet;Wielki Kack
+14230;2025/OGM/0004,2025/OGM/0012;38;F;internet;Witomino
+14231;2025/OGM/0004;43;F;internet;Dąbrowa
+14232;2025/OGM/0004,2025/OGM/0012;36;M;internet;Pogórze
+14233;2025/OGM/0004,2025/OGM/0012;44;F;internet;Orłowo
+14234;2025/OGM/0004;24;F;internet;Dąbrowa
+14235;2025/OGM/0004;37;F;internet;Cisowa
+14236;2025/OGM/0012;;M;internet;Chylonia
+14237;2025/OGM/0004;32;M;internet;Dąbrowa
+14238;2025/OGM/0012;3;F;internet;Chylonia
+14239;2025/OGM/0004;35;M;internet;Grabówek
+14240;2025/OGM/0004;10;M;internet;Cisowa
+14241;2025/OGM/0004,2025/OGM/0012;74;F;internet;Śródmieście
+14243;2025/OGM/0004,2025/OGM/0012;56;M;internet;Cisowa
+14244;2025/OGM/0012;47;M;internet;Witomino
+14245;2025/OGM/0004,2025/OGM/0012;65;F;internet;Pustki Cisowskie-Demptowo
+14246;2025/OGM/0004,2025/OGM/0012;47;F;internet;Witomino
+14247;2025/OGM/0004,2025/OGM/0012;67;M;internet;Pustki Cisowskie-Demptowo
+14248;2025/OGM/0012;38;F;internet;Mały Kack
+14249;2025/OGM/0004;37;F;internet;Pustki Cisowskie-Demptowo
+14250;2025/OGM/0004;50;F;internet;Wielki Kack
+14252;2025/OGM/0004;47;M;internet;Karwiny
+14253;2025/OGM/0004,2025/OGM/0012;43;F;internet;Śródmieście
+14254;2025/OGM/0012;55;F;internet;Mały Kack
+14255;2025/OGM/0004;16;M;internet;Karwiny
+14256;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+14257;2025/OGM/0004;27;M;internet;Obłuże
+14258;2025/OGM/0004;50;F;internet;Mały Kack
+14259;2025/OGM/0004;33;F;internet;Mały Kack
+14261;2025/OGM/0004,2025/OGM/0012;43;M;internet;Redłowo
+14262;2025/OGM/0004;16;F;internet;Wielki Kack
+14265;2025/OGM/0004;51;M;internet;Wielki Kack
+14266;2025/OGM/0004;5;F;internet;Mały Kack
+14267;2025/OGM/0004;20;F;internet;Wielki Kack
+14268;2025/OGM/0004,2025/OGM/0012;41;F;internet;Leszczynki
+14269;2025/OGM/0004;39;F;internet;Wielki Kack
+14270;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+14271;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pogórze
+14273;2025/OGM/0004;21;F;internet;Wielki Kack
+14274;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+14275;2025/OGM/0004;13;F;internet;Działki Leśne
+14276;2025/OGM/0004,2025/OGM/0012;49;M;internet;Oksywie
+14278;2025/OGM/0004;38;F;internet;Redłowo
+14279;2025/OGM/0004;40;M;internet;Wielki Kack
+14280;2025/OGM/0004;43;M;internet;Wielki Kack
+14281;2025/OGM/0004;17;F;internet;Działki Leśne
+14282;2025/OGM/0004;33;M;internet;Karwiny
+14283;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+14284;2025/OGM/0004,2025/OGM/0012;28;F;internet;Dąbrowa
+14285;2025/OGM/0004;31;M;internet;Wielki Kack
+14286;2025/OGM/0012;51;M;internet;Leszczynki
+14287;2025/OGM/0012;48;M;internet;Śródmieście
+14288;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+14289;2025/OGM/0004;40;F;internet;Wielki Kack
+14290;2025/OGM/0004;1;M;internet;Chwarzno-Wiczlino
+14291;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pogórze
+14292;2025/OGM/0004;5;F;internet;Wielki Kack
+14293;2025/OGM/0012;42;F;internet;Działki Leśne
+14294;2025/OGM/0004;37;F;internet;Grabówek
+14295;2025/OGM/0004;8;M;internet;Wielki Kack
+14296;2025/OGM/0004;62;F;internet;Oksywie
+14297;2025/OGM/0012;42;M;internet;Oksywie
+14298;2025/OGM/0004;7;M;internet;Karwiny
+14299;2025/OGM/0004;2;M;internet;Mały Kack
+14300;2025/OGM/0004;29;M;internet;Obłuże
+14301;2025/OGM/0012;80;M;internet;Cisowa
+14302;2025/OGM/0004,2025/OGM/0012;30;F;internet;Śródmieście
+14303;2025/OGM/0012;39;F;internet;Śródmieście
+14304;2025/OGM/0004;46;M;internet;Leszczynki
+14305;2025/OGM/0012;48;F;internet;Wielki Kack
+14306;2025/OGM/0004;35;F;internet;Pustki Cisowskie-Demptowo
+14307;2025/OGM/0004;41;F;internet;Leszczynki
+14308;2025/OGM/0004,2025/OGM/0012;41;M;internet;Mały Kack
+14309;2025/OGM/0004;46;M;internet;Wielki Kack
+14310;2025/OGM/0004;79;M;internet;Leszczynki
+14311;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+14312;2025/OGM/0012;33;M;internet;Działki Leśne
+14313;2025/OGM/0004,2025/OGM/0012;11;M;internet;Mały Kack
+14314;2025/OGM/0004,2025/OGM/0012;65;F;internet;Śródmieście
+14315;2025/OGM/0004;55;M;internet;Cisowa
+14316;2025/OGM/0004;6;M;internet;Mały Kack
+14317;2025/OGM/0004;46;F;internet;Mały Kack
+14318;2025/OGM/0004;47;F;internet;Cisowa
+14321;2025/OGM/0004;48;F;internet;Oksywie
+14322;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+14323;2025/OGM/0004;41;F;internet;Wzgórze Św. Maksymiliana
+14324;2025/OGM/0012;52;M;internet;Orłowo
+14325;2025/OGM/0004,2025/OGM/0012;67;F;internet;Orłowo
+14326;2025/OGM/0004,2025/OGM/0012;44;M;internet;Obłuże
+14327;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+14328;2025/OGM/0004,2025/OGM/0012;33;M;internet;Mały Kack
+14329;2025/OGM/0012;50;F;internet;Orłowo
+14330;2025/OGM/0004,2025/OGM/0012;9;M;internet;Wielki Kack
+14331;2025/OGM/0004,2025/OGM/0012;7;M;internet;Wielki Kack
+14332;2025/OGM/0012;56;F;internet;Chylonia
+14333;2025/OGM/0004;36;F;internet;Śródmieście
+14334;2025/OGM/0012;90;F;internet;Wielki Kack
+14335;2025/OGM/0004,2025/OGM/0012;7;M;internet;Wielki Kack
+14336;2025/OGM/0004,2025/OGM/0012;11;M;internet;Witomino
+14337;2025/OGM/0012;65;M;internet;Wielki Kack
+14338;2025/OGM/0012;71;M;internet;Śródmieście
+14339;2025/OGM/0004;60;F;internet;Chwarzno-Wiczlino
+14340;2025/OGM/0004,2025/OGM/0012;32;F;internet;Karwiny
+14341;2025/OGM/0004,2025/OGM/0012;80;F;internet;Chylonia
+14342;2025/OGM/0004;62;M;internet;Chwarzno-Wiczlino
+14343;2025/OGM/0004;46;F;internet;Leszczynki
+14344;2025/OGM/0004;38;F;internet;Chylonia
+14345;2025/OGM/0012;65;F;internet;Pogórze
+14346;2025/OGM/0004;30;F;internet;Śródmieście
+14347;2025/OGM/0004,2025/OGM/0012;37;M;internet;Mały Kack
+14348;2025/OGM/0012;42;M;internet;Pogórze
+14349;2025/OGM/0004;27;M;internet;Obłuże
+14350;2025/OGM/0012;66;M;internet;Pogórze
+14351;2025/OGM/0004;37;F;internet;Dąbrowa
+14352;2025/OGM/0012;35;F;internet;Redłowo
+14353;2025/OGM/0004,2025/OGM/0012;72;F;internet;Pogórze
+14354;2025/OGM/0004,2025/OGM/0012;68;M;internet;Pogórze
+14355;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+14356;2025/OGM/0004;52;M;internet;Obłuże
+14358;2025/OGM/0004,2025/OGM/0012;68;F;internet;Wielki Kack
+14359;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+14360;2025/OGM/0004,2025/OGM/0012;50;M;internet;Pustki Cisowskie-Demptowo
+14362;2025/OGM/0012;44;F;internet;Mały Kack
+14363;2025/OGM/0004,2025/OGM/0012;18;F;internet;Babie Doły
+14364;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+14365;2025/OGM/0004,2025/OGM/0012;47;M;internet;Cisowa
+14366;2025/OGM/0012;9;M;internet;Orłowo
+14367;2025/OGM/0012;7;M;internet;Orłowo
+14369;2025/OGM/0012;44;M;internet;Orłowo
+14370;2025/OGM/0004;2;M;internet;Pustki Cisowskie-Demptowo
+14371;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+14373;2025/OGM/0004,2025/OGM/0012;50;F;internet;Oksywie
+14374;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+14375;2025/OGM/0012;58;M;internet;Mały Kack
+14377;2025/OGM/0004;31;F;internet;Pustki Cisowskie-Demptowo
+14378;2025/OGM/0004;68;F;internet;Dąbrowa
+14381;2025/OGM/0012;40;F;internet;Oksywie
+14382;2025/OGM/0004;49;F;internet;Dąbrowa
+14383;2025/OGM/0004,2025/OGM/0012;46;F;internet;Pustki Cisowskie-Demptowo
+14384;2025/OGM/0004;4;M;internet;Pustki Cisowskie-Demptowo
+14385;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wielki Kack
+14386;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+14387;2025/OGM/0004,2025/OGM/0012;35;M;internet;Obłuże
+14388;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+14389;2025/OGM/0004;21;M;internet;Oksywie
+14390;2025/OGM/0004,2025/OGM/0012;47;M;internet;Wielki Kack
+14391;2025/OGM/0004;42;M;internet;Wielki Kack
+14392;2025/OGM/0004,2025/OGM/0012;46;F;internet;Karwiny
+14393;2025/OGM/0004,2025/OGM/0012;57;F;internet;Dąbrowa
+14394;2025/OGM/0004,2025/OGM/0012;52;M;internet;Karwiny
+14395;2025/OGM/0004,2025/OGM/0012;38;F;internet;Orłowo
+14396;2025/OGM/0004;55;F;internet;Śródmieście
+14397;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+14398;2025/OGM/0004,2025/OGM/0012;23;F;internet;Wielki Kack
+14399;2025/OGM/0004,2025/OGM/0012;45;M;internet;Wzgórze Św. Maksymiliana
+14400;2025/OGM/0004,2025/OGM/0012;36;F;internet;Śródmieście
+14401;2025/OGM/0004;8;F;internet;Wzgórze Św. Maksymiliana
+14402;2025/OGM/0004,2025/OGM/0012;74;M;internet;Dąbrowa
+14403;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+14405;2025/OGM/0004;37;F;internet;Chylonia
+14406;2025/OGM/0004;56;F;internet;Dąbrowa
+14407;2025/OGM/0004;30;M;internet;Redłowo
+14408;2025/OGM/0004;41;F;internet;Śródmieście
+14409;2025/OGM/0012;70;F;internet;Śródmieście
+14410;2025/OGM/0004,2025/OGM/0012;47;F;internet;Oksywie
+14411;2025/OGM/0004;89;F;internet;Kamienna Góra
+14412;2025/OGM/0004,2025/OGM/0012;39;M;internet;Obłuże
+14414;2025/OGM/0004;45;F;internet;Redłowo
+14415;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+14416;2025/OGM/0012;30;M;internet;Witomino
+14417;2025/OGM/0004;20;F;internet;Dąbrowa
+14418;2025/OGM/0012;46;F;internet;Chylonia
+14419;2025/OGM/0004;6;F;internet;Kamienna Góra
+14420;2025/OGM/0004;40;F;internet;Mały Kack
+14422;2025/OGM/0012;31;M;internet;Chylonia
+14423;2025/OGM/0012;51;F;internet;Śródmieście
+14424;2025/OGM/0004;52;F;internet;Chwarzno-Wiczlino
+14425;2025/OGM/0004;40;M;internet;Mały Kack
+14426;2025/OGM/0004;48;F;internet;Wielki Kack
+14427;2025/OGM/0004;38;F;internet;Karwiny
+14428;2025/OGM/0004;19;M;internet;Mały Kack
+14429;2025/OGM/0004;34;F;internet;Działki Leśne
+14430;2025/OGM/0004;11;F;internet;Mały Kack
+14431;2025/OGM/0004;74;F;internet;Karwiny
+14432;2025/OGM/0004,2025/OGM/0012;70;F;internet;Pogórze
+14433;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+14434;2025/OGM/0004;67;M;internet;Wielki Kack
+14435;2025/OGM/0004,2025/OGM/0012;70;F;internet;Pogórze
+14436;2025/OGM/0004;30;M;internet;Obłuże
+14437;2025/OGM/0004,2025/OGM/0012;58;M;internet;Pogórze
+14438;2025/OGM/0012;6;M;internet;Mały Kack
+14440;2025/OGM/0004;41;F;internet;Babie Doły
+14441;2025/OGM/0004,2025/OGM/0012;30;M;internet;Chylonia
+14442;2025/OGM/0012;56;F;internet;Obłuże
+14443;2025/OGM/0012;66;F;internet;Wielki Kack
+14444;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+14445;2025/OGM/0012;49;M;internet;Śródmieście
+14446;2025/OGM/0004;5;F;internet;Witomino
+14447;2025/OGM/0004,2025/OGM/0012;65;F;internet;Pogórze
+14448;2025/OGM/0004;43;F;internet;Witomino
+14449;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pogórze
+14450;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+14451;2025/OGM/0012;67;M;internet;Witomino
+14452;2025/OGM/0004,2025/OGM/0012;43;M;internet;Cisowa
+14453;2025/OGM/0004,2025/OGM/0012;64;F;internet;Wzgórze Św. Maksymiliana
+14454;2025/OGM/0004;47;F;internet;Pustki Cisowskie-Demptowo
+14455;2025/OGM/0004;53;M;internet;Redłowo
+14456;2025/OGM/0004,2025/OGM/0012;76;F;internet;Pogórze
+14457;2025/OGM/0004,2025/OGM/0012;61;F;internet;Cisowa
+14458;2025/OGM/0004;55;F;internet;Wielki Kack
+14459;2025/OGM/0004,2025/OGM/0012;12;M;internet;Cisowa
+14461;2025/OGM/0004;48;M;internet;Pustki Cisowskie-Demptowo
+14462;2025/OGM/0004;43;F;internet;Wielki Kack
+14463;2025/OGM/0004;14;M;internet;Pustki Cisowskie-Demptowo
+14464;2025/OGM/0004,2025/OGM/0012;77;F;internet;Działki Leśne
+14465;2025/OGM/0012;84;F;internet;Wielki Kack
+14466;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+14467;2025/OGM/0004,2025/OGM/0012;7;F;internet;Cisowa
+14468;2025/OGM/0004;51;F;internet;Wielki Kack
+14469;2025/OGM/0004;19;M;internet;Pustki Cisowskie-Demptowo
+14470;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+14471;2025/OGM/0012;67;F;internet;Witomino
+14472;2025/OGM/0004,2025/OGM/0012;76;F;internet;Pogórze
+14473;2025/OGM/0004;50;F;internet;Wielki Kack
+14475;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wielki Kack
+14476;2025/OGM/0004,2025/OGM/0012;22;M;internet;Pustki Cisowskie-Demptowo
+14477;2025/OGM/0004,2025/OGM/0012;76;M;internet;Pogórze
+14478;2025/OGM/0004;70;F;internet;Wielki Kack
+14479;2025/OGM/0004,2025/OGM/0012;18;M;internet;Wielki Kack
+14480;2025/OGM/0004;13;F;internet;Pustki Cisowskie-Demptowo
+14481;2025/OGM/0004,2025/OGM/0012;78;M;internet;Pogórze
+14482;2025/OGM/0004;73;M;internet;Wielki Kack
+14483;2025/OGM/0004;40;F;internet;Wielki Kack
+14484;2025/OGM/0004,2025/OGM/0012;33;F;internet;Kamienna Góra
+14485;2025/OGM/0004;18;M;internet;Dąbrowa
+14486;2025/OGM/0004,2025/OGM/0012;78;F;internet;Pogórze
+14487;2025/OGM/0004;27;M;internet;Obłuże
+14490;2025/OGM/0004,2025/OGM/0012;81;M;internet;Leszczynki
+14491;2025/OGM/0004;58;F;internet;Wielki Kack
+14492;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+14494;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+14495;2025/OGM/0004;31;M;internet;Leszczynki
+14496;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+14497;2025/OGM/0004,2025/OGM/0012;30;F;internet;Wielki Kack
+14498;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+14499;2025/OGM/0012;47;M;internet;Mały Kack
+14500;2025/OGM/0004,2025/OGM/0012;77;F;internet;Leszczynki
+14501;2025/OGM/0004;52;M;internet;Wielki Kack
+14502;2025/OGM/0004,2025/OGM/0012;74;F;internet;Pustki Cisowskie-Demptowo
+14504;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+14505;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+14507;2025/OGM/0004;52;M;internet;Wielki Kack
+14508;2025/OGM/0004,2025/OGM/0012;69;F;internet;Wielki Kack
+14509;2025/OGM/0004,2025/OGM/0012;44;F;internet;Mały Kack
+14510;2025/OGM/0012;38;M;internet;Wzgórze Św. Maksymiliana
+14511;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+14512;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+14514;2025/OGM/0004,2025/OGM/0012;71;M;internet;Wielki Kack
+14515;2025/OGM/0004;55;F;internet;Wielki Kack
+14516;2025/OGM/0012;41;F;internet;Witomino
+14517;2025/OGM/0004,2025/OGM/0012;14;M;internet;Dąbrowa
+14518;2025/OGM/0012;41;M;internet;Wielki Kack
+14519;2025/OGM/0004,2025/OGM/0012;44;M;internet;Cisowa
+14520;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+14521;2025/OGM/0012;34;F;internet;Wielki Kack
+14523;2025/OGM/0004;31;F;internet;Wielki Kack
+14524;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+14525;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+14526;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+14527;2025/OGM/0004,2025/OGM/0012;16;M;internet;Wielki Kack
+14528;2025/OGM/0004;64;F;internet;Pustki Cisowskie-Demptowo
+14529;2025/OGM/0004;47;M;internet;Wielki Kack
+14530;2025/OGM/0004,2025/OGM/0012;21;M;internet;Mały Kack
+14531;2025/OGM/0004;60;M;internet;Wielki Kack
+14532;2025/OGM/0004;72;M;internet;Chwarzno-Wiczlino
+14533;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+14535;2025/OGM/0012;6;M;internet;Pustki Cisowskie-Demptowo
+14536;2025/OGM/0004;63;F;internet;Chwarzno-Wiczlino
+14537;2025/OGM/0004;38;F;internet;Wielki Kack
+14538;2025/OGM/0004;52;F;internet;Kamienna Góra
+14539;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wielki Kack
+14540;2025/OGM/0004;36;F;internet;Wielki Kack
+14541;2025/OGM/0012;67;M;internet;Pustki Cisowskie-Demptowo
+14542;2025/OGM/0004,2025/OGM/0012;49;M;internet;Mały Kack
+14544;2025/OGM/0004,2025/OGM/0012;29;F;internet;Śródmieście
+14545;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+14547;2025/OGM/0004;68;M;internet;Chwarzno-Wiczlino
+14548;2025/OGM/0004;48;F;internet;Wielki Kack
+14549;2025/OGM/0004;20;M;internet;Wielki Kack
+14550;2025/OGM/0004;32;M;internet;Pogórze
+14551;2025/OGM/0012;94;F;internet;Chwarzno-Wiczlino
+14553;2025/OGM/0004;46;F;internet;Mały Kack
+14554;2025/OGM/0004,2025/OGM/0012;9;F;internet;Witomino
+14555;2025/OGM/0004,2025/OGM/0012;58;F;internet;Pustki Cisowskie-Demptowo
+14556;2025/OGM/0004,2025/OGM/0012;43;F;internet;Mały Kack
+14557;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+14558;2025/OGM/0012;62;F;internet;Działki Leśne
+14559;2025/OGM/0004,2025/OGM/0012;59;M;internet;Pustki Cisowskie-Demptowo
+14560;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+14561;2025/OGM/0004,2025/OGM/0012;69;F;internet;Witomino
+14562;2025/OGM/0004,2025/OGM/0012;39;M;internet;Mały Kack
+14563;2025/OGM/0004;35;M;internet;Karwiny
+14564;2025/OGM/0004;23;M;internet;Wielki Kack
+14566;2025/OGM/0004,2025/OGM/0012;10;M;internet;Mały Kack
+14567;2025/OGM/0004;15;F;internet;Wielki Kack
+14568;2025/OGM/0004;71;F;internet;Pustki Cisowskie-Demptowo
+14569;2025/OGM/0012;53;F;internet;Działki Leśne
+14570;2025/OGM/0004,2025/OGM/0012;11;M;internet;Mały Kack
+14571;2025/OGM/0004;51;F;internet;Działki Leśne
+14572;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+14573;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+14574;2025/OGM/0004,2025/OGM/0012;41;M;internet;Cisowa
+14575;2025/OGM/0004;37;F;internet;Chylonia
+14576;2025/OGM/0004,2025/OGM/0012;6;F;internet;Mały Kack
+14578;2025/OGM/0012;71;F;internet;Karwiny
+14579;2025/OGM/0004,2025/OGM/0012;47;M;internet;Mały Kack
+14580;2025/OGM/0004,2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+14581;2025/OGM/0004,2025/OGM/0012;89;F;internet;Karwiny
+14582;2025/OGM/0012;79;M;internet;Pogórze
+14583;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+14584;2025/OGM/0004;54;F;internet;Wielki Kack
+14585;2025/OGM/0004,2025/OGM/0012;49;M;internet;Mały Kack
+14587;2025/OGM/0004;77;F;internet;Witomino
+14588;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+14589;2025/OGM/0004,2025/OGM/0012;61;F;internet;Pustki Cisowskie-Demptowo
+14590;2025/OGM/0004;36;M;internet;Wielki Kack
+14591;2025/OGM/0012;47;F;internet;Mały Kack
+14592;2025/OGM/0004;32;F;internet;Mały Kack
+14595;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+14596;2025/OGM/0004;11;F;internet;Wielki Kack
+14597;2025/OGM/0004,2025/OGM/0012;17;M;internet;Obłuże
+14600;2025/OGM/0004;8;F;internet;Wielki Kack
+14601;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chylonia
+14602;2025/OGM/0004,2025/OGM/0012;31;F;internet;Witomino
+14604;2025/OGM/0012;40;M;internet;Leszczynki
+14605;2025/OGM/0004;39;M;internet;Mały Kack
+14606;2025/OGM/0012;44;F;internet;Mały Kack
+14607;2025/OGM/0004;5;M;internet;Wielki Kack
+14608;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+14610;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+14611;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+14612;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chylonia
+14613;2025/OGM/0004;40;F;internet;Obłuże
+14614;2025/OGM/0004;37;F;internet;Wielki Kack
+14615;2025/OGM/0004;23;M;internet;Wielki Kack
+14616;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+14617;2025/OGM/0004,2025/OGM/0012;30;F;internet;Redłowo
+14618;2025/OGM/0004;90;F;internet;Działki Leśne
+14619;2025/OGM/0004,2025/OGM/0012;33;F;internet;Pustki Cisowskie-Demptowo
+14620;2025/OGM/0004,2025/OGM/0012;3;F;internet;Wielki Kack
+14621;2025/OGM/0004;53;M;internet;Karwiny
+14622;2025/OGM/0004;26;M;internet;Karwiny
+14623;2025/OGM/0004;36;M;internet;Działki Leśne
+14624;2025/OGM/0004;50;M;internet;Wielki Kack
+14625;2025/OGM/0012;37;F;internet;Wielki Kack
+14628;2025/OGM/0004;43;F;internet;Mały Kack
+14629;2025/OGM/0012;79;F;internet;Chwarzno-Wiczlino
+14630;2025/OGM/0004;38;F;internet;Mały Kack
+14631;2025/OGM/0012;10;F;internet;Wielki Kack
+14632;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+14633;2025/OGM/0004;32;M;internet;Mały Kack
+14634;2025/OGM/0004;79;M;internet;Chwarzno-Wiczlino
+14635;2025/OGM/0004,2025/OGM/0012;37;M;internet;Cisowa
+14636;2025/OGM/0004,2025/OGM/0012;70;F;internet;Śródmieście
+14637;2025/OGM/0012;47;M;internet;Wielki Kack
+14638;2025/OGM/0004;42;F;internet;Obłuże
+14639;2025/OGM/0004;19;M;internet;Karwiny
+14640;2025/OGM/0004;78;F;internet;Mały Kack
+14641;2025/OGM/0004;46;M;internet;Działki Leśne
+14643;2025/OGM/0004;77;F;internet;Witomino
+14644;2025/OGM/0004;20;M;internet;Wielki Kack
+14645;2025/OGM/0004;50;F;internet;Dąbrowa
+14646;2025/OGM/0012;42;F;internet;Mały Kack
+14647;2025/OGM/0004;83;F;internet;Chylonia
+14648;2025/OGM/0004,2025/OGM/0012;44;M;internet;Dąbrowa
+14649;2025/OGM/0004;90;M;internet;Mały Kack
+14650;2025/OGM/0012;17;F;internet;Cisowa
+14651;2025/OGM/0012;42;M;internet;Mały Kack
+14653;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wzgórze Św. Maksymiliana
+14654;2025/OGM/0012;10;M;internet;Mały Kack
+14655;2025/OGM/0004;68;F;internet;Pogórze
+14656;2025/OGM/0012;52;F;internet;Działki Leśne
+14657;2025/OGM/0004;36;M;internet;Wielki Kack
+14658;2025/OGM/0004;29;M;internet;Chwarzno-Wiczlino
+14659;2025/OGM/0004;80;M;internet;Chylonia
+14660;2025/OGM/0004;48;F;internet;Działki Leśne
+14661;2025/OGM/0004;13;F;internet;Chwarzno-Wiczlino
+14662;2025/OGM/0004;40;F;internet;Mały Kack
+14663;2025/OGM/0012;64;M;internet;Działki Leśne
+14664;2025/OGM/0012;7;M;internet;Mały Kack
+14667;2025/OGM/0004;38;F;internet;Pustki Cisowskie-Demptowo
+14668;2025/OGM/0012;17;M;internet;Witomino
+14669;2025/OGM/0004,2025/OGM/0012;46;M;internet;Wzgórze Św. Maksymiliana
+14670;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+14671;2025/OGM/0004,2025/OGM/0012;6;F;internet;Wielki Kack
+14673;2025/OGM/0004;23;M;internet;Pustki Cisowskie-Demptowo
+14674;2025/OGM/0012;66;F;internet;Mały Kack
+14676;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+14677;2025/OGM/0012;15;F;internet;Witomino
+14678;2025/OGM/0012;36;M;internet;Oksywie
+14679;2025/OGM/0004;46;F;internet;Mały Kack
+14681;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+14683;2025/OGM/0004;48;M;internet;Cisowa
+14685;2025/OGM/0004;27;M;internet;Śródmieście
+14686;2025/OGM/0004,2025/OGM/0012;41;M;internet;Karwiny
+14687;2025/OGM/0004,2025/OGM/0012;44;F;internet;Grabówek
+14688;2025/OGM/0012;71;F;internet;Wzgórze Św. Maksymiliana
+14689;2025/OGM/0004,2025/OGM/0012;24;F;internet;Chwarzno-Wiczlino
+14690;2025/OGM/0004;9;F;internet;Mały Kack
+14691;2025/OGM/0004;72;F;internet;Wielki Kack
+14693;2025/OGM/0012;45;F;internet;Witomino
+14694;2025/OGM/0004,2025/OGM/0012;15;M;internet;Grabówek
+14695;2025/OGM/0004;53;F;internet;Wielki Kack
+14696;2025/OGM/0004;70;F;internet;Pogórze
+14698;2025/OGM/0004,2025/OGM/0012;10;F;internet;Grabówek
+14700;2025/OGM/0004,2025/OGM/0012;30;M;internet;Chylonia
+14702;2025/OGM/0012;11;F;internet;Witomino
+14705;2025/OGM/0004;47;F;internet;Działki Leśne
+14706;2025/OGM/0012;72;F;internet;Witomino
+14707;2025/OGM/0004;10;F;internet;Chwarzno-Wiczlino
+14711;2025/OGM/0004;26;M;internet;Kamienna Góra
+14712;2025/OGM/0004,2025/OGM/0012;71;F;internet;Karwiny
+14713;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+14714;2025/OGM/0012;77;M;internet;Witomino
+14715;2025/OGM/0004,2025/OGM/0012;54;M;internet;Wielki Kack
+14716;2025/OGM/0004;68;F;internet;Pogórze
+14717;2025/OGM/0004,2025/OGM/0012;48;M;internet;Wielki Kack
+14718;2025/OGM/0004,2025/OGM/0012;37;F;internet;Mały Kack
+14719;2025/OGM/0004;18;M;internet;Wielki Kack
+14720;2025/OGM/0004;69;M;internet;Pogórze
+14721;2025/OGM/0004;47;M;internet;Pogórze
+14722;2025/OGM/0004,2025/OGM/0012;66;F;internet;Dąbrowa
+14723;2025/OGM/0004,2025/OGM/0012;4;F;internet;Chwarzno-Wiczlino
+14724;2025/OGM/0004;9;F;internet;Wielki Kack
+14726;2025/OGM/0004,2025/OGM/0012;10;F;internet;Mały Kack
+14727;2025/OGM/0004;57;F;internet;Wielki Kack
+14728;2025/OGM/0004;41;M;internet;Pogórze
+14729;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+14730;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+14732;2025/OGM/0012;81;F;internet;Wzgórze Św. Maksymiliana
+14733;2025/OGM/0004;48;F;internet;Chylonia
+14734;2025/OGM/0004;18;M;internet;Wielki Kack
+14735;2025/OGM/0004;31;F;internet;Wielki Kack
+14736;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wzgórze Św. Maksymiliana
+14738;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+14739;2025/OGM/0004;62;M;internet;Wielki Kack
+14740;2025/OGM/0012;45;F;internet;Pustki Cisowskie-Demptowo
+14741;2025/OGM/0012;51;M;internet;Mały Kack
+14742;2025/OGM/0004,2025/OGM/0012;17;M;internet;Chylonia
+14743;2025/OGM/0004;44;M;internet;Dąbrowa
+14744;2025/OGM/0004,2025/OGM/0012;29;F;internet;Oksywie
+14745;2025/OGM/0012;82;F;internet;Mały Kack
+14746;2025/OGM/0004;34;F;internet;Wielki Kack
+14747;2025/OGM/0004;50;F;internet;Kamienna Góra
+14748;2025/OGM/0004;63;F;internet;Pustki Cisowskie-Demptowo
+14749;2025/OGM/0012;8;M;internet;Pustki Cisowskie-Demptowo
+14750;2025/OGM/0004;42;M;internet;Wielki Kack
+14751;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+14752;2025/OGM/0004;9;F;internet;Wielki Kack
+14753;2025/OGM/0012;23;M;internet;Mały Kack
+14754;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+14755;2025/OGM/0004;48;M;internet;Cisowa
+14756;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+14758;2025/OGM/0004;50;F;internet;Śródmieście
+14759;2025/OGM/0004;61;F;internet;Działki Leśne
+14760;2025/OGM/0004,2025/OGM/0012;27;M;internet;Śródmieście
+14761;2025/OGM/0004;7;F;internet;Wielki Kack
+14762;2025/OGM/0004;6;F;internet;Pustki Cisowskie-Demptowo
+14763;2025/OGM/0004;3;M;internet;Pustki Cisowskie-Demptowo
+14764;2025/OGM/0004;5;M;internet;Witomino
+14765;2025/OGM/0004;37;F;internet;Obłuże
+14766;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+14767;2025/OGM/0004,2025/OGM/0012;40;M;internet;Cisowa
+14768;2025/OGM/0004;39;M;internet;Karwiny
+14769;2025/OGM/0004,2025/OGM/0012;52;F;internet;Witomino
+14771;2025/OGM/0012;72;F;internet;Witomino
+14772;2025/OGM/0004;66;M;internet;Dąbrowa
+14773;2025/OGM/0004;3;M;internet;Pustki Cisowskie-Demptowo
+14774;2025/OGM/0004;35;F;internet;Wielki Kack
+14775;2025/OGM/0004;3;M;internet;Witomino
+14776;2025/OGM/0004,2025/OGM/0012;21;M;internet;Kamienna Góra
+14777;2025/OGM/0004,2025/OGM/0012;33;F;internet;Orłowo
+14778;2025/OGM/0004;42;F;internet;Mały Kack
+14779;2025/OGM/0004;69;M;internet;Wzgórze Św. Maksymiliana
+14780;2025/OGM/0012;42;M;internet;Działki Leśne
+14781;2025/OGM/0004,2025/OGM/0012;16;F;internet;Kamienna Góra
+14782;2025/OGM/0004;41;F;internet;Grabówek
+14783;2025/OGM/0004,2025/OGM/0012;40;F;internet;Pustki Cisowskie-Demptowo
+14785;2025/OGM/0004;12;F;internet;Witomino
+14786;2025/OGM/0004,2025/OGM/0012;53;M;internet;Kamienna Góra
+14788;2025/OGM/0004;42;F;internet;Mały Kack
+14789;2025/OGM/0004,2025/OGM/0012;80;M;internet;Kamienna Góra
+14790;2025/OGM/0004;40;M;internet;Mały Kack
+14791;2025/OGM/0012;39;M;internet;Witomino
+14792;2025/OGM/0004;43;F;internet;Chylonia
+14793;2025/OGM/0004;35;M;internet;Kamienna Góra
+14794;2025/OGM/0012;42;F;internet;Witomino
+14795;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+14796;2025/OGM/0004,2025/OGM/0012;45;F;internet;Obłuże
+14797;2025/OGM/0012;10;F;internet;Witomino
+14798;2025/OGM/0004;49;F;internet;Wielki Kack
+14799;2025/OGM/0004,2025/OGM/0012;48;M;internet;Obłuże
+14800;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+14801;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+14802;2025/OGM/0004;41;F;internet;Karwiny
+14803;2025/OGM/0004,2025/OGM/0012;14;M;internet;Obłuże
+14804;2025/OGM/0004;33;F;internet;Wielki Kack
+14805;2025/OGM/0012;3;M;internet;Witomino
+14806;2025/OGM/0012;23;M;internet;Mały Kack
+14807;2025/OGM/0012;47;F;internet;Witomino
+14808;2025/OGM/0004,2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+14810;2025/OGM/0004,2025/OGM/0012;12;F;internet;Obłuże
+14811;2025/OGM/0004;10;F;internet;Wielki Kack
+14812;2025/OGM/0012;75;F;internet;Witomino
+14813;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+14814;2025/OGM/0004;8;M;internet;Chwarzno-Wiczlino
+14815;2025/OGM/0012;73;M;internet;Witomino
+14816;2025/OGM/0004;79;M;internet;Witomino
+14817;2025/OGM/0004;8;M;internet;Karwiny
+14818;2025/OGM/0012;36;F;internet;Redłowo
+14819;2025/OGM/0004;34;M;internet;Wzgórze Św. Maksymiliana
+14820;2025/OGM/0004;68;F;internet;Dąbrowa
+14821;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+14822;2025/OGM/0012;50;F;internet;Wzgórze Św. Maksymiliana
+14823;2025/OGM/0004,2025/OGM/0012;42;M;internet;Witomino
+14824;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+14825;2025/OGM/0012;47;F;internet;Wielki Kack
+14826;2025/OGM/0004;7;F;internet;Mały Kack
+14827;2025/OGM/0004,2025/OGM/0012;5;F;internet;Chylonia
+14828;2025/OGM/0012;59;F;internet;Redłowo
+14829;2025/OGM/0004;34;F;internet;Wielki Kack
+14830;2025/OGM/0004;38;M;internet;Karwiny
+14831;2025/OGM/0012;63;M;internet;Wielki Kack
+14833;2025/OGM/0004;40;M;internet;Dąbrowa
+14834;2025/OGM/0004;5;F;internet;Mały Kack
+14835;2025/OGM/0012;28;M;internet;Wielki Kack
+14836;2025/OGM/0012;34;F;internet;Witomino
+14837;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+14838;2025/OGM/0004,2025/OGM/0012;33;F;internet;Leszczynki
+14839;2025/OGM/0004;76;M;internet;Wzgórze Św. Maksymiliana
+14840;2025/OGM/0004;42;F;internet;Cisowa
+14842;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+14843;2025/OGM/0012;56;M;internet;Redłowo
+14844;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+14845;2025/OGM/0004;73;F;internet;Wzgórze Św. Maksymiliana
+14846;2025/OGM/0004;52;M;internet;Wielki Kack
+14847;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+14848;2025/OGM/0004;;F;internet;Chylonia
+14849;2025/OGM/0004;9;M;internet;Cisowa
+14850;2025/OGM/0004,2025/OGM/0012;46;M;internet;Pustki Cisowskie-Demptowo
+14851;2025/OGM/0004;64;F;internet;Cisowa
+14852;2025/OGM/0004;73;F;internet;Wzgórze Św. Maksymiliana
+14853;2025/OGM/0004,2025/OGM/0012;1;M;internet;Witomino
+14854;2025/OGM/0004;6;F;internet;Cisowa
+14855;2025/OGM/0004;66;F;internet;Mały Kack
+14856;2025/OGM/0004;47;M;internet;Wielki Kack
+14857;2025/OGM/0004;39;F;internet;Oksywie
+14858;2025/OGM/0004;70;F;internet;Wzgórze Św. Maksymiliana
+14860;2025/OGM/0004;40;M;internet;Cisowa
+14861;2025/OGM/0004;36;M;internet;Mały Kack
+14862;2025/OGM/0004;5;F;internet;Wielki Kack
+14863;2025/OGM/0012;38;F;internet;Pustki Cisowskie-Demptowo
+14864;2025/OGM/0004;50;M;internet;Wzgórze Św. Maksymiliana
+14865;2025/OGM/0004;47;F;internet;Pustki Cisowskie-Demptowo
+14866;2025/OGM/0004;56;F;internet;Mały Kack
+14867;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+14868;2025/OGM/0004;43;M;internet;Dąbrowa
+14869;2025/OGM/0004;2;M;internet;Wielki Kack
+14870;2025/OGM/0004;47;M;internet;Dąbrowa
+14871;2025/OGM/0004;61;F;internet;Wielki Kack
+14872;2025/OGM/0004,2025/OGM/0012;26;F;internet;Mały Kack
+14873;2025/OGM/0012;2;M;internet;Mały Kack
+14874;2025/OGM/0004;59;F;internet;Wzgórze Św. Maksymiliana
+14875;2025/OGM/0004;40;F;internet;Mały Kack
+14876;2025/OGM/0012;37;F;internet;Mały Kack
+14877;2025/OGM/0004,2025/OGM/0012;43;M;internet;Witomino
+14878;2025/OGM/0004;66;F;internet;Redłowo
+14879;2025/OGM/0004;33;M;internet;Mały Kack
+14880;2025/OGM/0004;63;M;internet;Wzgórze Św. Maksymiliana
+14881;2025/OGM/0004;64;F;internet;Śródmieście
+14882;2025/OGM/0004,2025/OGM/0012;50;F;internet;Dąbrowa
+14883;2025/OGM/0004;79;F;internet;Grabówek
+14885;2025/OGM/0004;;M;internet;Wielki Kack
+14886;2025/OGM/0012;52;M;internet;Chylonia
+14887;2025/OGM/0012;32;M;internet;Mały Kack
+14888;2025/OGM/0004;29;F;internet;Wzgórze Św. Maksymiliana
+14889;2025/OGM/0012;44;F;internet;Śródmieście
+14890;2025/OGM/0004,2025/OGM/0012;16;F;internet;Dąbrowa
+14891;2025/OGM/0004;27;M;internet;Wzgórze Św. Maksymiliana
+14892;2025/OGM/0004;28;M;internet;Cisowa
+14893;2025/OGM/0004;54;M;internet;Wielki Kack
+14895;2025/OGM/0004;59;M;internet;Wielki Kack
+14896;2025/OGM/0012;34;F;internet;Chylonia
+14897;2025/OGM/0004,2025/OGM/0012;24;F;internet;Obłuże
+14898;2025/OGM/0004,2025/OGM/0012;38;M;internet;Witomino
+14899;2025/OGM/0004;45;F;internet;Działki Leśne
+14900;2025/OGM/0004,2025/OGM/0012;25;F;internet;Witomino
+14901;2025/OGM/0004,2025/OGM/0012;66;F;internet;Chwarzno-Wiczlino
+14902;2025/OGM/0012;30;F;internet;Redłowo
+14903;2025/OGM/0004;53;F;internet;Mały Kack
+14904;2025/OGM/0004;43;F;internet;Babie Doły
+14905;2025/OGM/0004;34;M;internet;Cisowa
+14907;2025/OGM/0004;47;M;internet;Babie Doły
+14908;2025/OGM/0004;71;M;internet;Dąbrowa
+14909;2025/OGM/0004;83;M;internet;Wzgórze Św. Maksymiliana
+14911;2025/OGM/0004;25;F;internet;Babie Doły
+14912;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+14913;2025/OGM/0004;54;F;internet;Wielki Kack
+14914;2025/OGM/0004;25;M;internet;Wielki Kack
+14915;2025/OGM/0004,2025/OGM/0012;64;F;internet;Leszczynki
+14916;2025/OGM/0004;30;F;internet;Redłowo
+14918;2025/OGM/0004,2025/OGM/0012;35;M;internet;Cisowa
+14920;2025/OGM/0004;56;M;internet;Wielki Kack
+14921;2025/OGM/0004;37;M;internet;Mały Kack
+14922;2025/OGM/0004;71;F;internet;Wzgórze Św. Maksymiliana
+14923;2025/OGM/0004;22;F;internet;Wielki Kack
+14924;2025/OGM/0004;21;F;internet;Witomino
+14925;2025/OGM/0012;46;F;internet;Cisowa
+14927;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+14928;2025/OGM/0004;52;M;internet;Dąbrowa
+14929;2025/OGM/0004;90;F;internet;Wzgórze Św. Maksymiliana
+14931;2025/OGM/0004;13;F;internet;Wielki Kack
+14932;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+14934;2025/OGM/0004,2025/OGM/0012;39;F;internet;Śródmieście
+14935;2025/OGM/0004,2025/OGM/0012;21;F;internet;Chwarzno-Wiczlino
+14936;2025/OGM/0004;57;F;internet;Wzgórze Św. Maksymiliana
+14937;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+14938;2025/OGM/0004;23;M;internet;Kamienna Góra
+14939;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+14940;2025/OGM/0004;57;F;internet;Działki Leśne
+14941;2025/OGM/0004;26;M;internet;Wzgórze Św. Maksymiliana
+14943;2025/OGM/0004;42;F;internet;Karwiny
+14944;2025/OGM/0004;77;F;internet;Leszczynki
+14946;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+14947;2025/OGM/0004;49;F;internet;Babie Doły
+14948;2025/OGM/0004;49;F;internet;Pogórze
+14949;2025/OGM/0012;66;F;internet;Chwarzno-Wiczlino
+14950;2025/OGM/0004;30;F;internet;Wielki Kack
+14951;2025/OGM/0004,2025/OGM/0012;58;M;internet;Pogórze
+14952;2025/OGM/0004;39;M;internet;Wielki Kack
+14953;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+14954;2025/OGM/0004;51;M;internet;Wzgórze Św. Maksymiliana
+14955;2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+14956;2025/OGM/0004,2025/OGM/0012;64;F;internet;Pogórze
+14957;2025/OGM/0004;17;F;internet;Chwarzno-Wiczlino
+14959;2025/OGM/0004;33;M;internet;Obłuże
+14960;2025/OGM/0004,2025/OGM/0012;38;F;internet;Cisowa
+14961;2025/OGM/0004,2025/OGM/0012;38;F;internet;Pogórze
+14962;2025/OGM/0004;27;F;internet;Witomino
+14963;2025/OGM/0004;53;F;internet;Wielki Kack
+14965;2025/OGM/0004;33;F;internet;Mały Kack
+14966;2025/OGM/0004,2025/OGM/0012;76;M;internet;Pogórze
+14967;2025/OGM/0004,2025/OGM/0012;56;F;internet;Pogórze
+14969;2025/OGM/0004;51;M;internet;Pogórze
+14970;2025/OGM/0004;68;F;internet;Dąbrowa
+14971;2025/OGM/0004;50;F;internet;Witomino
+14973;2025/OGM/0004;35;F;internet;Wielki Kack
+14974;2025/OGM/0012;25;M;internet;Chwarzno-Wiczlino
+14975;2025/OGM/0004;75;F;internet;Pogórze
+14976;2025/OGM/0004;42;M;internet;Wielki Kack
+14977;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+14978;2025/OGM/0004;59;M;internet;Wielki Kack
+14979;2025/OGM/0004;21;M;internet;Orłowo
+14980;2025/OGM/0004;42;F;internet;Działki Leśne
+14981;2025/OGM/0004;88;F;internet;Wzgórze Św. Maksymiliana
+14983;2025/OGM/0004;76;F;internet;Wzgórze Św. Maksymiliana
+14984;2025/OGM/0004;8;M;internet;Pustki Cisowskie-Demptowo
+14985;2025/OGM/0004,2025/OGM/0012;22;F;internet;Pogórze
+14986;2025/OGM/0004;12;F;internet;Wielki Kack
+14988;2025/OGM/0004;9;M;internet;Wielki Kack
+14989;2025/OGM/0004;47;F;internet;Cisowa
+14990;2025/OGM/0012;77;F;internet;Pogórze
+14991;2025/OGM/0004;5;M;internet;Pustki Cisowskie-Demptowo
+14992;2025/OGM/0004,2025/OGM/0012;57;F;internet;Pogórze
+14993;2025/OGM/0004;14;M;internet;Dąbrowa
+14994;2025/OGM/0012;52;F;internet;Kamienna Góra
+14995;2025/OGM/0004;28;F;internet;Obłuże
+14996;2025/OGM/0004;37;F;internet;Cisowa
+14997;2025/OGM/0004;4;F;internet;Pustki Cisowskie-Demptowo
+14998;2025/OGM/0004;15;M;internet;Dąbrowa
+14999;2025/OGM/0004;45;M;internet;Pogórze
+15000;2025/OGM/0004;67;F;internet;Kamienna Góra
+15001;2025/OGM/0004;70;M;internet;Pogórze
+15002;2025/OGM/0012;45;M;internet;Mały Kack
+15003;2025/OGM/0004;61;F;internet;Pustki Cisowskie-Demptowo
+15005;2025/OGM/0004;68;M;internet;Kamienna Góra
+15006;2025/OGM/0004;53;M;internet;Wielki Kack
+15008;2025/OGM/0004;73;F;internet;Wielki Kack
+15010;2025/OGM/0004;46;M;internet;Mały Kack
+15011;2025/OGM/0004;80;F;internet;Dąbrowa
+15012;2025/OGM/0004;24;M;internet;Wielki Kack
+15013;2025/OGM/0004;79;M;internet;Wielki Kack
+15014;2025/OGM/0004;33;F;internet;Oksywie
+15015;2025/OGM/0004;73;F;internet;Obłuże
+15016;2025/OGM/0004;35;F;internet;Śródmieście
+15017;2025/OGM/0012;35;F;internet;Witomino
+15018;2025/OGM/0004;79;M;internet;Obłuże
+15019;2025/OGM/0004;51;F;internet;Karwiny
+15020;2025/OGM/0004,2025/OGM/0012;35;F;internet;Śródmieście
+15021;2025/OGM/0012;77;M;internet;Mały Kack
+15022;2025/OGM/0004;47;F;internet;Wielki Kack
+15023;2025/OGM/0004;51;F;internet;Witomino
+15024;2025/OGM/0004;78;M;internet;Wielki Kack
+15025;2025/OGM/0004;18;M;internet;Wielki Kack
+15026;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+15028;2025/OGM/0012;27;F;internet;Wielki Kack
+15029;2025/OGM/0012;50;M;internet;Wielki Kack
+15030;2025/OGM/0004;46;M;internet;Wielki Kack
+15031;2025/OGM/0004,2025/OGM/0012;43;F;internet;Oksywie
+15032;2025/OGM/0004,2025/OGM/0012;7;M;internet;Chwarzno-Wiczlino
+15033;2025/OGM/0012;47;F;internet;Mały Kack
+15034;2025/OGM/0004;49;F;internet;Dąbrowa
+15035;2025/OGM/0004,2025/OGM/0012;18;F;internet;Witomino
+15036;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+15037;2025/OGM/0012;12;F;internet;Pustki Cisowskie-Demptowo
+15038;2025/OGM/0004;3;M;internet;Chwarzno-Wiczlino
+15039;2025/OGM/0012;35;F;internet;Pustki Cisowskie-Demptowo
+15040;2025/OGM/0012;17;F;internet;Śródmieście
+15041;2025/OGM/0004,2025/OGM/0012;70;M;internet;Mały Kack
+15042;2025/OGM/0012;9;M;internet;Pustki Cisowskie-Demptowo
+15043;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+15044;2025/OGM/0004,2025/OGM/0012;48;F;internet;Wielki Kack
+15045;2025/OGM/0004;8;M;internet;Wielki Kack
+15046;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+15047;2025/OGM/0004,2025/OGM/0012;44;M;internet;Babie Doły
+15048;2025/OGM/0012;9;F;internet;Śródmieście
+15049;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+15051;2025/OGM/0004,2025/OGM/0012;32;M;internet;Wielki Kack
+15052;2025/OGM/0004,2025/OGM/0012;36;F;internet;Dąbrowa
+15053;2025/OGM/0004,2025/OGM/0012;17;M;internet;Babie Doły
+15055;2025/OGM/0012;67;F;internet;Mały Kack
+15056;2025/OGM/0004,2025/OGM/0012;51;M;internet;Pustki Cisowskie-Demptowo
+15057;2025/OGM/0004;22;M;internet;Mały Kack
+15058;2025/OGM/0004,2025/OGM/0012;14;F;internet;Babie Doły
+15059;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+15060;2025/OGM/0004;20;M;internet;Babie Doły
+15061;2025/OGM/0004;58;F;internet;Mały Kack
+15062;2025/OGM/0004,2025/OGM/0012;5;F;internet;Pustki Cisowskie-Demptowo
+15063;2025/OGM/0004,2025/OGM/0012;11;F;internet;Babie Doły
+15064;2025/OGM/0004;42;F;internet;Witomino
+15065;2025/OGM/0004,2025/OGM/0012;29;M;internet;Redłowo
+15066;2025/OGM/0004;31;F;internet;Wielki Kack
+15067;2025/OGM/0004;61;M;internet;Mały Kack
+15068;2025/OGM/0004;34;M;internet;Oksywie
+15069;2025/OGM/0004,2025/OGM/0012;8;F;internet;Pustki Cisowskie-Demptowo
+15070;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+15071;2025/OGM/0004;21;F;internet;Mały Kack
+15072;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+15073;2025/OGM/0004;4;M;internet;Wielki Kack
+15074;2025/OGM/0004;37;F;internet;Wielki Kack
+15075;2025/OGM/0004,2025/OGM/0012;11;M;internet;Pustki Cisowskie-Demptowo
+15076;2025/OGM/0012;33;M;internet;Witomino
+15077;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+15078;2025/OGM/0012;32;M;internet;Wielki Kack
+15079;2025/OGM/0004;49;F;internet;Chylonia
+15081;2025/OGM/0012;5;F;internet;Witomino
+15082;2025/OGM/0012;32;F;internet;Śródmieście
+15083;2025/OGM/0004;76;F;internet;Dąbrowa
+15085;2025/OGM/0012;60;M;internet;Oksywie
+15086;2025/OGM/0004;50;M;internet;Witomino
+15087;2025/OGM/0012;49;F;internet;Mały Kack
+15088;2025/OGM/0004;34;M;internet;Pustki Cisowskie-Demptowo
+15089;2025/OGM/0004;13;M;internet;Wielki Kack
+15090;2025/OGM/0004;72;F;internet;Wzgórze Św. Maksymiliana
+15091;2025/OGM/0004;60;F;internet;Pogórze
+15092;2025/OGM/0004;50;F;internet;Dąbrowa
+15093;2025/OGM/0012;49;M;internet;Mały Kack
+15094;2025/OGM/0004;18;M;internet;Wielki Kack
+15095;2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+15097;2025/OGM/0004;53;M;internet;Karwiny
+15098;2025/OGM/0004;22;M;internet;Wielki Kack
+15099;2025/OGM/0012;22;M;internet;Mały Kack
+15101;2025/OGM/0004,2025/OGM/0012;53;M;internet;Karwiny
+15102;2025/OGM/0012;18;F;internet;Mały Kack
+15103;2025/OGM/0012;78;M;internet;Wielki Kack
+15104;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+15105;2025/OGM/0012;62;F;internet;Pustki Cisowskie-Demptowo
+15106;2025/OGM/0004;26;M;internet;Śródmieście
+15107;2025/OGM/0004,2025/OGM/0012;53;M;internet;Obłuże
+15108;2025/OGM/0012;62;M;internet;Działki Leśne
+15109;2025/OGM/0004;78;F;internet;Wzgórze Św. Maksymiliana
+15110;2025/OGM/0012;58;F;internet;Wielki Kack
+15111;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+15112;2025/OGM/0012;70;F;internet;Witomino
+15113;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+15115;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+15116;2025/OGM/0004;76;F;internet;Wzgórze Św. Maksymiliana
+15117;2025/OGM/0004;4;M;internet;Chwarzno-Wiczlino
+15118;2025/OGM/0004;34;M;internet;Chylonia
+15119;2025/OGM/0004;53;F;internet;Wzgórze Św. Maksymiliana
+15120;2025/OGM/0004;40;F;internet;Wielki Kack
+15121;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+15122;2025/OGM/0004,2025/OGM/0012;47;F;internet;Dąbrowa
+15123;2025/OGM/0004;46;M;internet;Kamienna Góra
+15124;2025/OGM/0004,2025/OGM/0012;21;F;internet;Śródmieście
+15125;2025/OGM/0004;67;M;internet;Witomino
+15126;2025/OGM/0004,2025/OGM/0012;30;M;internet;Cisowa
+15128;2025/OGM/0004;85;F;internet;Wzgórze Św. Maksymiliana
+15129;2025/OGM/0012;42;F;internet;Mały Kack
+15130;2025/OGM/0004;56;M;internet;Wzgórze Św. Maksymiliana
+15131;2025/OGM/0004;16;M;internet;Obłuże
+15132;2025/OGM/0004,2025/OGM/0012;69;F;internet;Dąbrowa
+15133;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+15134;2025/OGM/0004;79;M;internet;Wzgórze Św. Maksymiliana
+15135;2025/OGM/0004;30;F;internet;Cisowa
+15136;2025/OGM/0004;37;F;internet;Redłowo
+15137;2025/OGM/0004,2025/OGM/0012;50;M;internet;Babie Doły
+15138;2025/OGM/0004,2025/OGM/0012;72;M;internet;Dąbrowa
+15139;2025/OGM/0004;46;M;internet;Wielki Kack
+15140;2025/OGM/0004,2025/OGM/0012;76;F;internet;Babie Doły
+15141;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+15142;2025/OGM/0012;10;F;internet;Pustki Cisowskie-Demptowo
+15143;2025/OGM/0004;51;M;internet;Pustki Cisowskie-Demptowo
+15144;2025/OGM/0004,2025/OGM/0012;37;M;internet;Śródmieście
+15145;2025/OGM/0004,2025/OGM/0012;31;M;internet;Śródmieście
+15146;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+15147;2025/OGM/0004;36;M;internet;Witomino
+15148;2025/OGM/0004;76;F;internet;Wzgórze Św. Maksymiliana
+15149;2025/OGM/0004;16;F;internet;Pustki Cisowskie-Demptowo
+15150;2025/OGM/0004,2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+15151;2025/OGM/0012;75;F;internet;Wzgórze Św. Maksymiliana
+15152;2025/OGM/0004;35;F;internet;Oksywie
+15153;2025/OGM/0012;58;M;internet;Chwarzno-Wiczlino
+15154;2025/OGM/0004;78;F;internet;Wzgórze Św. Maksymiliana
+15155;2025/OGM/0004;40;M;internet;Redłowo
+15156;2025/OGM/0004;56;F;internet;Obłuże
+15157;2025/OGM/0004,2025/OGM/0012;50;F;internet;Dąbrowa
+15158;2025/OGM/0004;41;M;internet;Wzgórze Św. Maksymiliana
+15160;2025/OGM/0004,2025/OGM/0012;3;M;internet;Pogórze
+15161;2025/OGM/0004;28;M;internet;Witomino
+15162;2025/OGM/0004;40;F;internet;Obłuże
+15163;2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+15164;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+15165;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+15166;2025/OGM/0012;23;M;internet;Chwarzno-Wiczlino
+15167;2025/OGM/0004;52;F;internet;Pustki Cisowskie-Demptowo
+15168;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+15169;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chylonia
+15170;2025/OGM/0004;52;M;internet;Chwarzno-Wiczlino
+15171;2025/OGM/0004;45;F;internet;Leszczynki
+15172;2025/OGM/0012;3;M;internet;Witomino
+15173;2025/OGM/0004;24;M;internet;Chylonia
+15174;2025/OGM/0012;77;M;internet;Mały Kack
+15175;2025/OGM/0012;60;F;internet;Chwarzno-Wiczlino
+15176;2025/OGM/0004,2025/OGM/0012;30;F;internet;Dąbrowa
+15177;2025/OGM/0004,2025/OGM/0012;7;F;internet;Oksywie
+15178;2025/OGM/0004,2025/OGM/0012;47;M;internet;Chwarzno-Wiczlino
+15179;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+15180;2025/OGM/0012;41;M;internet;Wzgórze Św. Maksymiliana
+15181;2025/OGM/0004;38;F;internet;Oksywie
+15182;2025/OGM/0004;70;F;internet;Cisowa
+15183;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+15184;2025/OGM/0004;13;M;internet;Mały Kack
+15185;2025/OGM/0012;44;M;internet;Pustki Cisowskie-Demptowo
+15186;2025/OGM/0004,2025/OGM/0012;43;M;internet;Pustki Cisowskie-Demptowo
+15187;2025/OGM/0004;17;F;internet;Chylonia
+15188;2025/OGM/0012;70;M;internet;Redłowo
+15189;2025/OGM/0012;54;F;internet;Śródmieście
+15190;2025/OGM/0004,2025/OGM/0012;54;F;internet;Cisowa
+15191;2025/OGM/0004;54;F;internet;Chylonia
+15192;2025/OGM/0004;15;F;internet;Wielki Kack
+15193;2025/OGM/0004,2025/OGM/0012;15;M;internet;Chwarzno-Wiczlino
+15194;2025/OGM/0004,2025/OGM/0012;5;M;internet;Oksywie
+15195;2025/OGM/0004;45;M;internet;Mały Kack
+15196;2025/OGM/0004;31;F;internet;Oksywie
+15197;2025/OGM/0012;33;F;internet;Mały Kack
+15198;2025/OGM/0004,2025/OGM/0012;72;M;internet;Pustki Cisowskie-Demptowo
+15199;2025/OGM/0004;57;M;internet;Chylonia
+15200;2025/OGM/0004,2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+15201;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+15202;2025/OGM/0004,2025/OGM/0012;37;F;internet;Leszczynki
+15203;2025/OGM/0004,2025/OGM/0012;56;F;internet;Dąbrowa
+15204;2025/OGM/0012;19;M;internet;Pustki Cisowskie-Demptowo
+15205;2025/OGM/0004;32;M;internet;Redłowo
+15206;2025/OGM/0004;30;F;internet;Cisowa
+15207;2025/OGM/0004;73;M;internet;Dąbrowa
+15208;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+15209;2025/OGM/0004,2025/OGM/0012;66;F;internet;Mały Kack
+15210;2025/OGM/0004;75;F;internet;Pustki Cisowskie-Demptowo
+15211;2025/OGM/0004,2025/OGM/0012;3;M;internet;Śródmieście
+15212;2025/OGM/0004;74;F;internet;Wielki Kack
+15213;2025/OGM/0004;40;F;internet;Orłowo
+15214;2025/OGM/0012;11;F;internet;Pustki Cisowskie-Demptowo
+15215;2025/OGM/0012;77;M;internet;Wzgórze Św. Maksymiliana
+15216;2025/OGM/0004;35;F;internet;Oksywie
+15217;2025/OGM/0012;38;F;internet;Obłuże
+15218;2025/OGM/0012;55;M;internet;Kamienna Góra
+15219;2025/OGM/0004;75;F;internet;Wzgórze Św. Maksymiliana
+15220;2025/OGM/0004,2025/OGM/0012;75;M;internet;Witomino
+15222;2025/OGM/0012;37;F;internet;Kamienna Góra
+15223;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+15224;2025/OGM/0004;27;M;internet;Oksywie
+15225;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+15226;2025/OGM/0004,2025/OGM/0012;38;M;internet;Redłowo
+15227;2025/OGM/0004;40;F;internet;Obłuże
+15228;2025/OGM/0004,2025/OGM/0012;75;F;internet;Leszczynki
+15229;2025/OGM/0004,2025/OGM/0012;26;F;internet;Oksywie
+15230;2025/OGM/0004,2025/OGM/0012;27;M;internet;Oksywie
+15231;2025/OGM/0012;45;M;internet;Kamienna Góra
+15232;2025/OGM/0004,2025/OGM/0012;40;F;internet;Redłowo
+15235;2025/OGM/0004,2025/OGM/0012;82;M;internet;Leszczynki
+15236;2025/OGM/0004,2025/OGM/0012;8;M;internet;Cisowa
+15237;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+15238;2025/OGM/0004,2025/OGM/0012;60;M;internet;Wielki Kack
+15239;2025/OGM/0004;38;M;internet;Mały Kack
+15240;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+15241;2025/OGM/0004;52;F;internet;Mały Kack
+15242;2025/OGM/0004;71;M;internet;Pustki Cisowskie-Demptowo
+15243;2025/OGM/0012;45;F;internet;Śródmieście
+15244;2025/OGM/0012;11;F;internet;Kamienna Góra
+15245;2025/OGM/0004,2025/OGM/0012;22;F;internet;Redłowo
+15246;2025/OGM/0004,2025/OGM/0012;4;F;internet;Cisowa
+15248;2025/OGM/0004;43;M;internet;Mały Kack
+15250;2025/OGM/0012;9;F;internet;Kamienna Góra
+15251;2025/OGM/0004;38;M;internet;Cisowa
+15252;2025/OGM/0004;30;F;internet;Babie Doły
+15253;2025/OGM/0004;44;F;internet;Redłowo
+15254;2025/OGM/0004;69;F;internet;Pustki Cisowskie-Demptowo
+15256;2025/OGM/0004;54;F;internet;Wielki Kack
+15257;2025/OGM/0012;26;M;internet;Pustki Cisowskie-Demptowo
+15258;2025/OGM/0012;34;F;internet;Działki Leśne
+15259;2025/OGM/0012;32;F;internet;Chylonia
+15261;2025/OGM/0004,2025/OGM/0012;69;M;internet;Dąbrowa
+15262;2025/OGM/0004;60;F;internet;Pogórze
+15263;2025/OGM/0004,2025/OGM/0012;46;M;internet;Redłowo
+15264;2025/OGM/0004,2025/OGM/0012;42;M;internet;Cisowa
+15266;2025/OGM/0004;50;F;internet;Pustki Cisowskie-Demptowo
+15267;2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+15268;2025/OGM/0004;7;M;internet;Mały Kack
+15269;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chylonia
+15270;2025/OGM/0004;68;F;internet;Chwarzno-Wiczlino
+15271;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+15272;2025/OGM/0004;48;F;internet;Obłuże
+15273;2025/OGM/0004;62;M;internet;Pogórze
+15274;2025/OGM/0004;43;M;internet;Wzgórze Św. Maksymiliana
+15275;2025/OGM/0004;38;F;internet;Mały Kack
+15276;2025/OGM/0004;41;F;internet;Wielki Kack
+15277;2025/OGM/0004;44;F;internet;Wielki Kack
+15278;2025/OGM/0004;39;F;internet;Oksywie
+15279;2025/OGM/0004;57;F;internet;Wielki Kack
+15280;2025/OGM/0004,2025/OGM/0012;52;M;internet;Obłuże
+15281;2025/OGM/0004;9;F;internet;Oksywie
+15282;2025/OGM/0012;64;M;internet;Chylonia
+15283;2025/OGM/0004;16;F;internet;Dąbrowa
+15284;2025/OGM/0004,2025/OGM/0012;61;F;internet;Pustki Cisowskie-Demptowo
+15286;2025/OGM/0012;58;M;internet;Wielki Kack
+15287;2025/OGM/0004,2025/OGM/0012;44;F;internet;Karwiny
+15288;2025/OGM/0004;7;F;internet;Obłuże
+15289;2025/OGM/0004;49;M;internet;Wzgórze Św. Maksymiliana
+15290;2025/OGM/0004,2025/OGM/0012;34;M;internet;Pogórze
+15291;2025/OGM/0012;71;F;internet;Pogórze
+15292;2025/OGM/0004,2025/OGM/0012;34;F;internet;Karwiny
+15293;2025/OGM/0004;58;F;internet;Wielki Kack
+15294;2025/OGM/0004;43;M;internet;Śródmieście
+15295;2025/OGM/0004;51;M;internet;Obłuże
+15296;2025/OGM/0004;37;F;internet;Wielki Kack
+15297;2025/OGM/0004;46;M;internet;Dąbrowa
+15298;2025/OGM/0004,2025/OGM/0012;71;F;internet;Dąbrowa
+15299;2025/OGM/0004,2025/OGM/0012;39;F;internet;Pogórze
+15300;2025/OGM/0004;47;F;internet;Obłuże
+15301;2025/OGM/0012;60;F;internet;Dąbrowa
+15302;2025/OGM/0012;47;M;internet;Chwarzno-Wiczlino
+15303;2025/OGM/0004;68;M;internet;Pogórze
+15304;2025/OGM/0004,2025/OGM/0012;44;M;internet;Cisowa
+15306;2025/OGM/0004;42;M;internet;Mały Kack
+15308;2025/OGM/0012;15;F;internet;Witomino
+15309;2025/OGM/0012;56;F;internet;Mały Kack
+15310;2025/OGM/0004;26;F;internet;Obłuże
+15311;2025/OGM/0004,2025/OGM/0012;10;M;internet;Obłuże
+15312;2025/OGM/0004;7;M;internet;Mały Kack
+15313;2025/OGM/0004,2025/OGM/0012;43;M;internet;Oksywie
+15314;2025/OGM/0004,2025/OGM/0012;52;F;internet;Grabówek
+15316;2025/OGM/0004;44;F;internet;Mały Kack
+15317;2025/OGM/0004,2025/OGM/0012;36;F;internet;Śródmieście
+15318;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chylonia
+15319;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+15321;2025/OGM/0004;35;F;internet;Cisowa
+15322;2025/OGM/0004,2025/OGM/0012;48;F;internet;Redłowo
+15323;2025/OGM/0004,2025/OGM/0012;12;F;internet;Mały Kack
+15324;2025/OGM/0004;30;M;internet;Dąbrowa
+15325;2025/OGM/0004,2025/OGM/0012;64;F;internet;Chylonia
+15326;2025/OGM/0004;41;M;internet;Cisowa
+15327;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+15328;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+15329;2025/OGM/0004;39;F;internet;Śródmieście
+15330;2025/OGM/0004;42;M;internet;Wzgórze Św. Maksymiliana
+15331;2025/OGM/0004,2025/OGM/0012;15;F;internet;Redłowo
+15332;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+15333;2025/OGM/0004;41;M;internet;Wielki Kack
+15335;2025/OGM/0004,2025/OGM/0012;17;M;internet;Redłowo
+15336;2025/OGM/0004;12;F;internet;Dąbrowa
+15337;2025/OGM/0004;41;F;internet;Wielki Kack
+15338;2025/OGM/0012;39;M;internet;Wielki Kack
+15339;2025/OGM/0004,2025/OGM/0012;17;F;internet;Wielki Kack
+15340;2025/OGM/0004,2025/OGM/0012;31;M;internet;Chylonia
+15341;2025/OGM/0004;49;F;internet;Grabówek
+15343;2025/OGM/0004,2025/OGM/0012;19;F;internet;Działki Leśne
+15344;2025/OGM/0004;14;F;internet;Wielki Kack
+15345;2025/OGM/0004;18;M;internet;Pustki Cisowskie-Demptowo
+15346;2025/OGM/0012;49;M;internet;Chylonia
+15347;2025/OGM/0004,2025/OGM/0012;56;M;internet;Wielki Kack
+15348;2025/OGM/0004,2025/OGM/0012;15;F;internet;Wielki Kack
+15349;2025/OGM/0004;43;M;internet;Karwiny
+15350;2025/OGM/0004;67;F;internet;Wielki Kack
+15351;2025/OGM/0004,2025/OGM/0012;74;F;internet;Mały Kack
+15352;2025/OGM/0012;32;M;internet;Babie Doły
+15353;2025/OGM/0004;11;M;internet;Wielki Kack
+15354;2025/OGM/0012;74;F;internet;Wzgórze Św. Maksymiliana
+15355;2025/OGM/0004,2025/OGM/0012;24;M;internet;Wielki Kack
+15356;2025/OGM/0004;49;M;internet;Grabówek
+15357;2025/OGM/0004;6;F;internet;Wielki Kack
+15358;2025/OGM/0012;66;F;internet;Chylonia
+15359;2025/OGM/0004,2025/OGM/0012;47;M;internet;Wielki Kack
+15360;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+15361;2025/OGM/0004;4;M;internet;Wielki Kack
+15362;2025/OGM/0004;40;F;internet;Mały Kack
+15363;2025/OGM/0004,2025/OGM/0012;9;M;internet;Dąbrowa
+15364;2025/OGM/0004;27;F;internet;Grabówek
+15365;2025/OGM/0004;36;F;internet;Redłowo
+15366;2025/OGM/0012;40;M;internet;Pustki Cisowskie-Demptowo
+15368;2025/OGM/0004;36;M;internet;Cisowa
+15369;2025/OGM/0004,2025/OGM/0012;95;F;internet;Redłowo
+15370;2025/OGM/0012;77;M;internet;Działki Leśne
+15371;2025/OGM/0004;26;M;internet;Grabówek
+15372;2025/OGM/0012;56;F;internet;Śródmieście
+15374;2025/OGM/0004,2025/OGM/0012;10;F;internet;Dąbrowa
+15375;2025/OGM/0004,2025/OGM/0012;74;M;internet;Mały Kack
+15376;2025/OGM/0004,2025/OGM/0012;48;F;internet;Leszczynki
+15377;2025/OGM/0012;62;F;internet;Działki Leśne
+15378;2025/OGM/0004;22;M;internet;Grabówek
+15381;2025/OGM/0004;68;F;internet;Obłuże
+15382;2025/OGM/0004;37;F;internet;Pustki Cisowskie-Demptowo
+15383;2025/OGM/0004;71;F;internet;Grabówek
+15384;2025/OGM/0004;43;F;internet;Karwiny
+15385;2025/OGM/0004,2025/OGM/0012;39;M;internet;Witomino
+15386;2025/OGM/0012;48;F;internet;Cisowa
+15387;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+15388;2025/OGM/0004;24;M;internet;Redłowo
+15389;2025/OGM/0004;63;F;internet;Karwiny
+15390;2025/OGM/0004;75;F;internet;Śródmieście
+15391;2025/OGM/0004,2025/OGM/0012;10;F;internet;Grabówek
+15392;2025/OGM/0004;18;M;internet;Pustki Cisowskie-Demptowo
+15393;2025/OGM/0004,2025/OGM/0012;8;M;internet;Karwiny
+15394;2025/OGM/0004;45;M;internet;Wielki Kack
+15395;2025/OGM/0004,2025/OGM/0012;78;F;internet;Pogórze
+15396;2025/OGM/0004,2025/OGM/0012;39;M;internet;Cisowa
+15397;2025/OGM/0004;4;M;internet;Mały Kack
+15398;2025/OGM/0012;18;M;internet;Redłowo
+15399;2025/OGM/0004,2025/OGM/0012;37;M;internet;Cisowa
+15400;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+15401;2025/OGM/0004,2025/OGM/0012;13;F;internet;Grabówek
+15402;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+15403;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+15404;2025/OGM/0004;6;M;internet;Mały Kack
+15405;2025/OGM/0012;63;F;internet;Dąbrowa
+15406;2025/OGM/0004;42;M;internet;Obłuże
+15408;2025/OGM/0012;45;M;internet;Mały Kack
+15409;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+15410;2025/OGM/0004;12;F;internet;Karwiny
+15411;2025/OGM/0012;67;M;internet;Oksywie
+15412;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+15413;2025/OGM/0004,2025/OGM/0012;78;F;internet;Cisowa
+15414;2025/OGM/0012;50;F;internet;Oksywie
+15415;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+15416;2025/OGM/0012;27;M;internet;Cisowa
+15417;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+15418;2025/OGM/0004,2025/OGM/0012;36;M;internet;Chwarzno-Wiczlino
+15419;2025/OGM/0004,2025/OGM/0012;40;M;internet;Kamienna Góra
+15420;2025/OGM/0004;52;F;internet;Chwarzno-Wiczlino
+15421;2025/OGM/0004;53;M;internet;Mały Kack
+15422;2025/OGM/0004;33;F;internet;Wzgórze Św. Maksymiliana
+15423;2025/OGM/0004;18;M;internet;
+15424;2025/OGM/0012;35;F;internet;Śródmieście
+15427;2025/OGM/0004;43;F;internet;Grabówek
+15428;2025/OGM/0004;14;F;internet;Chwarzno-Wiczlino
+15429;2025/OGM/0004;29;F;internet;Oksywie
+15430;2025/OGM/0004;64;F;internet;Redłowo
+15431;2025/OGM/0004,2025/OGM/0012;56;M;internet;Wielki Kack
+15432;2025/OGM/0004;51;F;internet;Obłuże
+15433;2025/OGM/0004;35;M;internet;Cisowa
+15434;2025/OGM/0004;47;F;internet;Pogórze
+15435;2025/OGM/0012;85;F;internet;Śródmieście
+15436;2025/OGM/0004,2025/OGM/0012;77;F;internet;Wielki Kack
+15437;2025/OGM/0004;47;M;internet;Obłuże
+15438;2025/OGM/0004;11;M;internet;Chwarzno-Wiczlino
+15439;2025/OGM/0004;70;M;internet;Leszczynki
+15440;2025/OGM/0004,2025/OGM/0012;44;M;internet;Grabówek
+15441;2025/OGM/0004,2025/OGM/0012;60;M;internet;Karwiny
+15442;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+15445;2025/OGM/0004;53;F;internet;Chwarzno-Wiczlino
+15446;2025/OGM/0004;82;F;internet;Redłowo
+15447;2025/OGM/0004,2025/OGM/0012;86;F;internet;Redłowo
+15448;2025/OGM/0004,2025/OGM/0012;15;F;internet;Redłowo
+15449;2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+15450;2025/OGM/0004;39;F;internet;Wielki Kack
+15451;2025/OGM/0004,2025/OGM/0012;12;M;internet;Redłowo
+15452;2025/OGM/0004,2025/OGM/0012;35;M;internet;Redłowo
+15453;2025/OGM/0004,2025/OGM/0012;48;F;internet;Babie Doły
+15454;2025/OGM/0004;46;F;internet;Dąbrowa
+15455;2025/OGM/0012;74;M;internet;Śródmieście
+15456;2025/OGM/0004,2025/OGM/0012;9;F;internet;Redłowo
+15457;2025/OGM/0004,2025/OGM/0012;90;M;internet;Redłowo
+15458;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+15459;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+15460;2025/OGM/0004,2025/OGM/0012;19;F;internet;Babie Doły
+15461;2025/OGM/0012;67;F;internet;Chwarzno-Wiczlino
+15462;2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+15463;2025/OGM/0004;44;F;internet;Karwiny
+15464;2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+15465;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+15466;2025/OGM/0004;56;M;internet;Cisowa
+15467;2025/OGM/0004;40;M;internet;Wielki Kack
+15468;2025/OGM/0012;65;F;internet;Śródmieście
+15470;2025/OGM/0004;49;F;internet;Karwiny
+15471;2025/OGM/0004;61;F;internet;Witomino
+15472;2025/OGM/0004,2025/OGM/0012;49;M;internet;Wielki Kack
+15473;2025/OGM/0004,2025/OGM/0012;52;M;internet;Babie Doły
+15475;2025/OGM/0004;42;F;internet;Wielki Kack
+15476;2025/OGM/0004;5;M;internet;Chwarzno-Wiczlino
+15478;2025/OGM/0004,2025/OGM/0012;34;F;internet;Cisowa
+15479;2025/OGM/0004;30;M;internet;Orłowo
+15480;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+15483;2025/OGM/0004,2025/OGM/0012;46;M;internet;Mały Kack
+15484;2025/OGM/0004,2025/OGM/0012;66;F;internet;Działki Leśne
+15486;2025/OGM/0004,2025/OGM/0012;37;M;internet;Wielki Kack
+15488;2025/OGM/0004;47;F;internet;Mały Kack
+15489;2025/OGM/0004;34;M;internet;Oksywie
+15490;2025/OGM/0012;51;M;internet;Chwarzno-Wiczlino
+15491;2025/OGM/0004,2025/OGM/0012;10;F;internet;Cisowa
+15492;2025/OGM/0004;14;M;internet;Pustki Cisowskie-Demptowo
+15493;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+15494;2025/OGM/0004,2025/OGM/0012;51;F;internet;Oksywie
+15495;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chylonia
+15496;2025/OGM/0004;32;F;internet;Pustki Cisowskie-Demptowo
+15497;2025/OGM/0004;29;F;internet;Chylonia
+15498;2025/OGM/0004;5;M;internet;Wielki Kack
+15500;2025/OGM/0004;38;F;internet;Redłowo
+15501;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+15502;2025/OGM/0004;34;M;internet;Cisowa
+15503;2025/OGM/0004;10;F;internet;Pustki Cisowskie-Demptowo
+15504;2025/OGM/0004;3;F;internet;Wielki Kack
+15505;2025/OGM/0004,2025/OGM/0012;65;M;internet;Witomino
+15506;2025/OGM/0004,2025/OGM/0012;38;M;internet;Pustki Cisowskie-Demptowo
+15508;2025/OGM/0004;11;F;internet;Wielki Kack
+15509;2025/OGM/0004,2025/OGM/0012;1;M;internet;Chwarzno-Wiczlino
+15511;2025/OGM/0004;14;F;internet;Wielki Kack
+15512;2025/OGM/0012;10;M;internet;Chylonia
+15513;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+15514;2025/OGM/0004;8;F;internet;Wielki Kack
+15515;2025/OGM/0004;55;M;internet;Wielki Kack
+15516;2025/OGM/0004;85;F;internet;Redłowo
+15517;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+15518;2025/OGM/0004;39;F;internet;Wielki Kack
+15519;2025/OGM/0012;72;F;internet;Chylonia
+15520;2025/OGM/0004;55;M;internet;Witomino
+15521;2025/OGM/0012;54;M;internet;Mały Kack
+15522;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+15524;2025/OGM/0004,2025/OGM/0012;18;F;internet;Chylonia
+15526;2025/OGM/0004;43;M;internet;Kamienna Góra
+15527;2025/OGM/0004,2025/OGM/0012;34;M;internet;Pustki Cisowskie-Demptowo
+15528;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+15529;2025/OGM/0004,2025/OGM/0012;54;F;internet;Śródmieście
+15530;2025/OGM/0012;34;F;internet;Babie Doły
+15531;2025/OGM/0012;84;M;internet;Chylonia
+15532;2025/OGM/0004;50;F;internet;Pogórze
+15533;2025/OGM/0004;15;M;internet;Witomino
+15534;2025/OGM/0004;39;M;internet;Orłowo
+15535;2025/OGM/0004,2025/OGM/0012;31;F;internet;Orłowo
+15536;2025/OGM/0004;32;F;internet;Wielki Kack
+15537;2025/OGM/0004;58;F;internet;Karwiny
+15538;2025/OGM/0004,2025/OGM/0012;54;F;internet;Witomino
+15539;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+15540;2025/OGM/0004;49;M;internet;Pogórze
+15541;2025/OGM/0012;67;F;internet;Witomino
+15542;2025/OGM/0004;50;F;internet;Wielki Kack
+15543;2025/OGM/0012;66;F;internet;Chylonia
+15544;2025/OGM/0004;60;M;internet;Karwiny
+15545;2025/OGM/0004;23;F;internet;Pogórze
+15546;2025/OGM/0004;43;F;internet;Babie Doły
+15547;2025/OGM/0012;66;F;internet;Śródmieście
+15548;2025/OGM/0012;44;M;internet;Redłowo
+15549;2025/OGM/0004;43;F;internet;Śródmieście
+15550;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+15551;2025/OGM/0004,2025/OGM/0012;37;M;internet;Chwarzno-Wiczlino
+15553;2025/OGM/0012;17;M;internet;Mały Kack
+15554;2025/OGM/0004;46;F;internet;Obłuże
+15555;2025/OGM/0004;19;M;internet;Pogórze
+15556;2025/OGM/0004;53;M;internet;Babie Doły
+15557;2025/OGM/0004,2025/OGM/0012;42;F;internet;Cisowa
+15558;2025/OGM/0004,2025/OGM/0012;20;M;internet;Wielki Kack
+15559;2025/OGM/0004;30;M;internet;Chylonia
+15560;2025/OGM/0004,2025/OGM/0012;9;F;internet;Cisowa
+15561;2025/OGM/0004,2025/OGM/0012;49;F;internet;Karwiny
+15562;2025/OGM/0004,2025/OGM/0012;23;F;internet;Wielki Kack
+15564;2025/OGM/0012;45;M;internet;Pustki Cisowskie-Demptowo
+15565;2025/OGM/0004,2025/OGM/0012;68;F;internet;Cisowa
+15566;2025/OGM/0004;16;F;internet;Pustki Cisowskie-Demptowo
+15567;2025/OGM/0004;70;F;internet;Wielki Kack
+15569;2025/OGM/0004;16;M;internet;Pogórze
+15570;2025/OGM/0004;61;M;internet;Działki Leśne
+15571;2025/OGM/0004;8;M;internet;Obłuże
+15573;2025/OGM/0004;77;F;internet;Pogórze
+15574;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+15575;2025/OGM/0004;25;F;internet;Wielki Kack
+15577;2025/OGM/0004;40;M;internet;Cisowa
+15578;2025/OGM/0004;49;F;internet;Kamienna Góra
+15579;2025/OGM/0004;80;M;internet;Pogórze
+15581;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+15582;2025/OGM/0004;63;F;internet;Witomino
+15583;2025/OGM/0004;31;M;internet;Witomino
+15584;2025/OGM/0004,2025/OGM/0012;53;M;internet;Chwarzno-Wiczlino
+15585;2025/OGM/0004;71;M;internet;Pustki Cisowskie-Demptowo
+15586;2025/OGM/0004,2025/OGM/0012;26;M;internet;Wielki Kack
+15588;2025/OGM/0004;57;M;internet;Chwarzno-Wiczlino
+15589;2025/OGM/0004,2025/OGM/0012;86;F;internet;Chwarzno-Wiczlino
+15590;2025/OGM/0004;8;F;internet;Wzgórze Św. Maksymiliana
+15591;2025/OGM/0004;33;M;internet;Redłowo
+15592;2025/OGM/0004;47;F;internet;Mały Kack
+15593;2025/OGM/0004;55;F;internet;Karwiny
+15594;2025/OGM/0004,2025/OGM/0012;54;F;internet;Chwarzno-Wiczlino
+15595;2025/OGM/0004,2025/OGM/0012;9;F;internet;Redłowo
+15596;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chylonia
+15597;2025/OGM/0004;71;M;internet;Wielki Kack
+15598;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+15599;2025/OGM/0004;21;F;internet;Wzgórze Św. Maksymiliana
+15601;2025/OGM/0004;6;M;internet;Witomino
+15602;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pogórze
+15603;2025/OGM/0012;31;F;internet;Witomino
+15604;2025/OGM/0004;40;M;internet;Wzgórze Św. Maksymiliana
+15605;2025/OGM/0004;33;M;internet;Cisowa
+15606;2025/OGM/0012;69;M;internet;Śródmieście
+15607;2025/OGM/0004;28;F;internet;Cisowa
+15608;2025/OGM/0004;18;F;internet;Wzgórze Św. Maksymiliana
+15609;2025/OGM/0004;19;F;internet;Wzgórze Św. Maksymiliana
+15610;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+15611;2025/OGM/0004;44;F;internet;Wielki Kack
+15612;2025/OGM/0012;60;F;internet;Chwarzno-Wiczlino
+15613;2025/OGM/0004;75;F;internet;Chwarzno-Wiczlino
+15614;2025/OGM/0004,2025/OGM/0012;4;M;internet;Witomino
+15615;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+15616;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+15617;2025/OGM/0004,2025/OGM/0012;56;F;internet;Karwiny
+15619;2025/OGM/0004;68;M;internet;Wzgórze Św. Maksymiliana
+15620;2025/OGM/0004;65;M;internet;Dąbrowa
+15621;2025/OGM/0004;38;F;internet;Śródmieście
+15622;2025/OGM/0004;40;F;internet;Mały Kack
+15624;2025/OGM/0004;60;F;internet;Babie Doły
+15625;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+15626;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+15627;2025/OGM/0004;39;M;internet;Karwiny
+15628;2025/OGM/0004,2025/OGM/0012;41;M;internet;Pustki Cisowskie-Demptowo
+15629;2025/OGM/0004,2025/OGM/0012;44;M;internet;Cisowa
+15630;2025/OGM/0004;35;M;internet;Cisowa
+15631;2025/OGM/0004,2025/OGM/0012;7;M;internet;Cisowa
+15632;2025/OGM/0004,2025/OGM/0012;75;F;internet;Grabówek
+15633;2025/OGM/0012;50;F;internet;Pogórze
+15634;2025/OGM/0004,2025/OGM/0012;45;M;internet;Karwiny
+15635;2025/OGM/0004;48;F;internet;Wielki Kack
+15636;2025/OGM/0004;54;F;internet;Babie Doły
+15637;2025/OGM/0004,2025/OGM/0012;9;F;internet;Cisowa
+15638;2025/OGM/0012;8;M;internet;Mały Kack
+15639;2025/OGM/0004;56;M;internet;Cisowa
+15640;2025/OGM/0004,2025/OGM/0012;78;M;internet;Grabówek
+15641;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+15642;2025/OGM/0004,2025/OGM/0012;73;M;internet;Pustki Cisowskie-Demptowo
+15643;2025/OGM/0004,2025/OGM/0012;45;M;internet;Wielki Kack
+15644;2025/OGM/0004,2025/OGM/0012;18;F;internet;Cisowa
+15645;2025/OGM/0004;54;F;internet;Pogórze
+15647;2025/OGM/0004;10;M;internet;Wielki Kack
+15648;2025/OGM/0004;46;F;internet;Witomino
+15649;2025/OGM/0004,2025/OGM/0012;49;F;internet;Wielki Kack
+15650;2025/OGM/0004;23;M;internet;Wzgórze Św. Maksymiliana
+15651;2025/OGM/0004,2025/OGM/0012;73;F;internet;Pustki Cisowskie-Demptowo
+15652;2025/OGM/0004;46;F;internet;Wielki Kack
+15653;2025/OGM/0004;39;F;internet;Wielki Kack
+15654;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+15655;2025/OGM/0004,2025/OGM/0012;50;F;internet;Chwarzno-Wiczlino
+15656;2025/OGM/0004;18;M;internet;Witomino
+15657;2025/OGM/0004,2025/OGM/0012;27;F;internet;Obłuże
+15658;2025/OGM/0012;66;F;internet;Obłuże
+15659;2025/OGM/0004,2025/OGM/0012;4;F;internet;Chwarzno-Wiczlino
+15660;2025/OGM/0004;76;F;internet;Cisowa
+15661;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+15662;2025/OGM/0004;40;F;internet;Mały Kack
+15663;2025/OGM/0004;25;M;internet;Witomino
+15664;2025/OGM/0004;50;F;internet;Cisowa
+15665;2025/OGM/0004;31;M;internet;Wielki Kack
+15666;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+15667;2025/OGM/0004;6;F;internet;Wielki Kack
+15668;2025/OGM/0004,2025/OGM/0012;59;F;internet;Obłuże
+15669;2025/OGM/0004;7;F;internet;Redłowo
+15670;2025/OGM/0012;47;M;internet;Mały Kack
+15671;2025/OGM/0012;45;F;internet;Mały Kack
+15672;2025/OGM/0004,2025/OGM/0012;42;M;internet;Pustki Cisowskie-Demptowo
+15673;2025/OGM/0004,2025/OGM/0012;67;F;internet;Kamienna Góra
+15674;2025/OGM/0004;50;F;internet;Wielki Kack
+15675;2025/OGM/0004;60;F;internet;Grabówek
+15676;2025/OGM/0004;49;F;internet;Pogórze
+15678;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chylonia
+15679;2025/OGM/0004;29;F;internet;Pogórze
+15680;2025/OGM/0004;22;M;internet;Pustki Cisowskie-Demptowo
+15681;2025/OGM/0004,2025/OGM/0012;52;M;internet;Chwarzno-Wiczlino
+15682;2025/OGM/0012;51;F;internet;Oksywie
+15683;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chwarzno-Wiczlino
+15684;2025/OGM/0004;42;M;internet;Pustki Cisowskie-Demptowo
+15685;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+15686;2025/OGM/0004;66;M;internet;Wielki Kack
+15688;2025/OGM/0004;54;M;internet;Witomino
+15689;2025/OGM/0004;49;F;internet;Wielki Kack
+15690;2025/OGM/0004,2025/OGM/0012;42;F;internet;Oksywie
+15691;2025/OGM/0012;23;F;internet;Mały Kack
+15692;2025/OGM/0012;21;F;internet;Mały Kack
+15693;2025/OGM/0004;37;F;internet;Dąbrowa
+15694;2025/OGM/0004;61;F;internet;Wielki Kack
+15695;2025/OGM/0004;16;F;internet;Mały Kack
+15697;2025/OGM/0004;41;F;internet;Cisowa
+15698;2025/OGM/0004,2025/OGM/0012;50;F;internet;Orłowo
+15699;2025/OGM/0004,2025/OGM/0012;32;M;internet;Cisowa
+15700;2025/OGM/0004;30;F;internet;Witomino
+15702;2025/OGM/0004;12;M;internet;Pustki Cisowskie-Demptowo
+15705;2025/OGM/0012;44;M;internet;Witomino
+15706;2025/OGM/0012;55;F;internet;Oksywie
+15707;2025/OGM/0004;44;F;internet;Cisowa
+15708;2025/OGM/0004;35;M;internet;Obłuże
+15709;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+15710;2025/OGM/0004,2025/OGM/0012;8;F;internet;Cisowa
+15711;2025/OGM/0004;39;F;internet;Mały Kack
+15712;2025/OGM/0004;54;M;internet;Dąbrowa
+15713;2025/OGM/0004;36;F;internet;Cisowa
+15714;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+15715;2025/OGM/0004;12;F;internet;Mały Kack
+15716;2025/OGM/0004,2025/OGM/0012;33;F;internet;Pustki Cisowskie-Demptowo
+15717;2025/OGM/0004;20;M;internet;Chylonia
+15718;2025/OGM/0012;20;M;internet;Chylonia
+15720;2025/OGM/0004;43;F;internet;Wielki Kack
+15721;2025/OGM/0004,2025/OGM/0012;14;F;internet;Cisowa
+15722;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+15723;2025/OGM/0012;75;F;internet;Witomino
+15724;2025/OGM/0004;16;F;internet;Mały Kack
+15725;2025/OGM/0004,2025/OGM/0012;26;F;internet;Witomino
+15726;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+15727;2025/OGM/0004,2025/OGM/0012;21;M;internet;Orłowo
+15728;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+15729;2025/OGM/0004;43;M;internet;Wielki Kack
+15731;2025/OGM/0004,2025/OGM/0012;40;M;internet;Karwiny
+15732;2025/OGM/0012;76;M;internet;Witomino
+15733;2025/OGM/0004;36;F;internet;Karwiny
+15734;2025/OGM/0004;45;F;internet;Cisowa
+15735;2025/OGM/0004;6;F;internet;Wielki Kack
+15736;2025/OGM/0004,2025/OGM/0012;49;M;internet;Kamienna Góra
+15737;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+15738;2025/OGM/0004,2025/OGM/0012;3;F;internet;Chylonia
+15739;2025/OGM/0004;32;M;internet;Wielki Kack
+15740;2025/OGM/0004,2025/OGM/0012;2;F;internet;Wielki Kack
+15741;2025/OGM/0004,2025/OGM/0012;6;F;internet;Obłuże
+15742;2025/OGM/0004;82;M;internet;Działki Leśne
+15743;2025/OGM/0012;57;M;internet;Oksywie
+15744;2025/OGM/0004;73;F;internet;Cisowa
+15745;2025/OGM/0004;10;M;internet;Redłowo
+15746;2025/OGM/0004;38;M;internet;Redłowo
+15747;2025/OGM/0004,2025/OGM/0012;47;M;internet;Chylonia
+15748;2025/OGM/0004;57;M;internet;Pustki Cisowskie-Demptowo
+15749;2025/OGM/0004;54;F;internet;Wielki Kack
+15750;2025/OGM/0004,2025/OGM/0012;35;M;internet;Dąbrowa
+15751;2025/OGM/0012;37;M;internet;Pustki Cisowskie-Demptowo
+15752;2025/OGM/0004,2025/OGM/0012;1;F;internet;Obłuże
+15753;2025/OGM/0004;75;M;internet;Cisowa
+15754;2025/OGM/0004;78;F;internet;Grabówek
+15755;2025/OGM/0004;54;F;internet;Wielki Kack
+15756;2025/OGM/0004,2025/OGM/0012;9;M;internet;Cisowa
+15757;2025/OGM/0012;53;M;internet;Mały Kack
+15758;2025/OGM/0004;58;M;internet;Wielki Kack
+15759;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+15760;2025/OGM/0012;5;F;internet;Pustki Cisowskie-Demptowo
+15762;2025/OGM/0004,2025/OGM/0012;49;M;internet;Wielki Kack
+15763;2025/OGM/0004;39;F;internet;Wielki Kack
+15764;2025/OGM/0004;34;M;internet;Obłuże
+15765;2025/OGM/0004,2025/OGM/0012;45;M;internet;Obłuże
+15766;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+15767;2025/OGM/0004;56;F;internet;Redłowo
+15768;2025/OGM/0004;11;M;internet;Leszczynki
+15769;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+15770;2025/OGM/0004,2025/OGM/0012;41;M;internet;Karwiny
+15771;2025/OGM/0004;56;M;internet;Wielki Kack
+15772;2025/OGM/0004,2025/OGM/0012;35;M;internet;Witomino
+15773;2025/OGM/0012;20;M;internet;Mały Kack
+15774;2025/OGM/0004;49;M;internet;Grabówek
+15775;2025/OGM/0004,2025/OGM/0012;45;M;internet;Witomino
+15776;2025/OGM/0004,2025/OGM/0012;46;M;internet;Witomino
+15777;2025/OGM/0004;8;F;internet;Wielki Kack
+15778;2025/OGM/0004,2025/OGM/0012;16;M;internet;Wielki Kack
+15779;2025/OGM/0004,2025/OGM/0012;60;F;internet;Babie Doły
+15780;2025/OGM/0004;35;F;internet;Pustki Cisowskie-Demptowo
+15781;2025/OGM/0004;30;M;internet;Redłowo
+15782;2025/OGM/0012;25;F;internet;Mały Kack
+15783;2025/OGM/0004;10;M;internet;Wielki Kack
+15785;2025/OGM/0004,2025/OGM/0012;50;F;internet;Wielki Kack
+15786;2025/OGM/0004,2025/OGM/0012;58;F;internet;Dąbrowa
+15787;2025/OGM/0004,2025/OGM/0012;76;F;internet;Witomino
+15788;2025/OGM/0012;42;F;internet;Wzgórze Św. Maksymiliana
+15789;2025/OGM/0004;6;M;internet;Pustki Cisowskie-Demptowo
+15790;2025/OGM/0004,2025/OGM/0012;51;M;internet;Witomino
+15791;2025/OGM/0004,2025/OGM/0012;62;M;internet;Babie Doły
+15792;2025/OGM/0012;14;M;internet;Działki Leśne
+15793;2025/OGM/0004,2025/OGM/0012;77;M;internet;Cisowa
+15794;2025/OGM/0004;62;F;internet;Oksywie
+15795;2025/OGM/0004;54;M;internet;Chwarzno-Wiczlino
+15796;2025/OGM/0004;39;M;internet;Śródmieście
+15797;2025/OGM/0004;28;M;internet;Dąbrowa
+15798;2025/OGM/0012;42;M;internet;Wzgórze Św. Maksymiliana
+15801;2025/OGM/0004;63;F;internet;Wielki Kack
+15802;2025/OGM/0004,2025/OGM/0012;81;F;internet;Cisowa
+15803;2025/OGM/0004,2025/OGM/0012;45;F;internet;Wielki Kack
+15804;2025/OGM/0004;35;F;internet;Chylonia
+15805;2025/OGM/0012;42;F;internet;Wzgórze Św. Maksymiliana
+15806;2025/OGM/0004;43;F;internet;Wielki Kack
+15807;2025/OGM/0004;4;M;internet;Pustki Cisowskie-Demptowo
+15808;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+15809;2025/OGM/0004;41;F;internet;Karwiny
+15810;2025/OGM/0004;33;F;internet;Wielki Kack
+15811;2025/OGM/0004,2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+15812;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+15813;2025/OGM/0004;49;M;internet;Witomino
+15814;2025/OGM/0004;72;M;internet;Wielki Kack
+15815;2025/OGM/0004;22;M;internet;Śródmieście
+15816;2025/OGM/0004;37;M;internet;Wielki Kack
+15819;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wielki Kack
+15820;2025/OGM/0004;19;M;internet;Witomino
+15821;2025/OGM/0004;62;F;internet;Pustki Cisowskie-Demptowo
+15822;2025/OGM/0004;10;M;internet;Śródmieście
+15823;2025/OGM/0004,2025/OGM/0012;40;F;internet;Witomino
+15824;2025/OGM/0004,2025/OGM/0012;33;F;internet;Pustki Cisowskie-Demptowo
+15825;2025/OGM/0004,2025/OGM/0012;44;F;internet;Redłowo
+15826;2025/OGM/0004;28;M;internet;Wielki Kack
+15827;2025/OGM/0004,2025/OGM/0012;33;F;internet;Grabówek
+15828;2025/OGM/0004;70;F;internet;Wielki Kack
+15829;2025/OGM/0012;10;F;internet;Witomino
+15830;2025/OGM/0012;39;F;internet;Oksywie
+15832;2025/OGM/0004;66;M;internet;Oksywie
+15833;2025/OGM/0012;37;M;internet;Witomino
+15834;2025/OGM/0004;5;F;internet;Wielki Kack
+15835;2025/OGM/0004,2025/OGM/0012;5;F;internet;Chwarzno-Wiczlino
+15836;2025/OGM/0012;51;F;internet;Mały Kack
+15837;2025/OGM/0004,2025/OGM/0012;38;M;internet;Dąbrowa
+15838;2025/OGM/0004;53;M;internet;Wielki Kack
+15839;2025/OGM/0004;7;M;internet;Śródmieście
+15840;2025/OGM/0004,2025/OGM/0012;16;M;internet;Redłowo
+15841;2025/OGM/0004;8;F;internet;Wielki Kack
+15842;2025/OGM/0012;33;F;internet;Wielki Kack
+15843;2025/OGM/0004,2025/OGM/0012;15;M;internet;Wielki Kack
+15844;2025/OGM/0004,2025/OGM/0012;53;M;internet;Redłowo
+15845;2025/OGM/0004;25;F;internet;Wielki Kack
+15846;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+15847;2025/OGM/0004;75;F;internet;Mały Kack
+15848;2025/OGM/0004,2025/OGM/0012;9;F;internet;Dąbrowa
+15849;2025/OGM/0004;71;F;internet;Grabówek
+15850;2025/OGM/0004;43;F;internet;Wielki Kack
+15851;2025/OGM/0004;84;F;internet;Pogórze
+15852;2025/OGM/0004,2025/OGM/0012;13;F;internet;Redłowo
+15854;2025/OGM/0012;6;M;internet;Karwiny
+15855;2025/OGM/0004;70;F;internet;Mały Kack
+15856;2025/OGM/0004;27;F;internet;Dąbrowa
+15857;2025/OGM/0004;37;M;internet;Dąbrowa
+15858;2025/OGM/0004,2025/OGM/0012;10;M;internet;Mały Kack
+15859;2025/OGM/0004,2025/OGM/0012;23;M;internet;Chylonia
+15860;2025/OGM/0004,2025/OGM/0012;44;F;internet;Mały Kack
+15862;2025/OGM/0004;55;M;internet;Chwarzno-Wiczlino
+15863;2025/OGM/0004,2025/OGM/0012;27;M;internet;Pustki Cisowskie-Demptowo
+15864;2025/OGM/0012;11;F;internet;Pustki Cisowskie-Demptowo
+15865;2025/OGM/0012;3;M;internet;Wielki Kack
+15867;2025/OGM/0012;45;M;internet;Śródmieście
+15868;2025/OGM/0004;35;F;internet;Kamienna Góra
+15869;2025/OGM/0004;57;F;internet;Śródmieście
+15870;2025/OGM/0004,2025/OGM/0012;78;M;internet;Mały Kack
+15873;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+15874;2025/OGM/0004;5;F;internet;Cisowa
+15875;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+15876;2025/OGM/0004,2025/OGM/0012;72;F;internet;Mały Kack
+15877;2025/OGM/0004;;M;internet;Wielki Kack
+15879;2025/OGM/0012;42;F;internet;Pustki Cisowskie-Demptowo
+15880;2025/OGM/0004,2025/OGM/0012;28;M;internet;Cisowa
+15881;2025/OGM/0004;39;M;internet;Wielki Kack
+15882;2025/OGM/0004;16;F;internet;Cisowa
+15883;2025/OGM/0004,2025/OGM/0012;16;M;internet;Mały Kack
+15884;2025/OGM/0012;38;F;internet;Grabówek
+15885;2025/OGM/0012;41;F;internet;Witomino
+15886;2025/OGM/0012;46;F;internet;Witomino
+15888;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+15889;2025/OGM/0004,2025/OGM/0012;38;F;internet;Działki Leśne
+15890;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+15891;2025/OGM/0012;62;F;internet;Chylonia
+15893;2025/OGM/0004;27;F;internet;Redłowo
+15894;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+15895;2025/OGM/0004;42;M;internet;Wielki Kack
+15897;2025/OGM/0004;47;M;internet;Pustki Cisowskie-Demptowo
+15898;2025/OGM/0004,2025/OGM/0012;8;F;internet;Dąbrowa
+15899;2025/OGM/0004;38;F;internet;Wielki Kack
+15900;2025/OGM/0012;9;M;internet;Witomino
+15901;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+15902;2025/OGM/0004;42;F;internet;Wielki Kack
+15903;2025/OGM/0004;50;F;internet;Wielki Kack
+15904;2025/OGM/0004;82;F;internet;Wzgórze Św. Maksymiliana
+15905;2025/OGM/0004,2025/OGM/0012;44;F;internet;Śródmieście
+15906;2025/OGM/0004;66;F;internet;Chylonia
+15907;2025/OGM/0012;13;F;internet;Witomino
+15909;2025/OGM/0004,2025/OGM/0012;34;F;internet;Działki Leśne
+15910;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wielki Kack
+15911;2025/OGM/0004,2025/OGM/0012;9;F;internet;Redłowo
+15912;2025/OGM/0004,2025/OGM/0012;21;F;internet;Redłowo
+15914;2025/OGM/0004,2025/OGM/0012;37;F;internet;Śródmieście
+15915;2025/OGM/0004;17;M;internet;Wielki Kack
+15916;2025/OGM/0012;9;M;internet;Kamienna Góra
+15917;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chylonia
+15918;2025/OGM/0004,2025/OGM/0012;50;F;internet;Mały Kack
+15919;2025/OGM/0004;30;F;internet;Pustki Cisowskie-Demptowo
+15920;2025/OGM/0004,2025/OGM/0012;30;F;internet;Działki Leśne
+15921;2025/OGM/0012;16;M;internet;Witomino
+15922;2025/OGM/0012;39;F;internet;Cisowa
+15924;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+15925;2025/OGM/0004;34;F;internet;Śródmieście
+15926;2025/OGM/0004;12;F;internet;Wielki Kack
+15927;2025/OGM/0004;51;F;internet;Wzgórze Św. Maksymiliana
+15928;2025/OGM/0004;52;F;internet;Obłuże
+15930;2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+15932;2025/OGM/0004;67;M;internet;Wielki Kack
+15934;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+15935;2025/OGM/0004;62;M;internet;Pustki Cisowskie-Demptowo
+15936;2025/OGM/0004,2025/OGM/0012;71;M;internet;Witomino
+15937;2025/OGM/0012;19;M;internet;Chylonia
+15939;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+15940;2025/OGM/0004,2025/OGM/0012;53;F;internet;Obłuże
+15941;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chwarzno-Wiczlino
+15942;2025/OGM/0004;61;F;internet;Wielki Kack
+15944;2025/OGM/0004,2025/OGM/0012;38;M;internet;Redłowo
+15945;2025/OGM/0004;39;M;internet;Pogórze
+15946;2025/OGM/0004,2025/OGM/0012;31;F;internet;Mały Kack
+15947;2025/OGM/0004;15;F;internet;Wzgórze Św. Maksymiliana
+15948;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+15949;2025/OGM/0012;52;M;internet;Babie Doły
+15950;2025/OGM/0004,2025/OGM/0012;69;F;internet;Witomino
+15951;2025/OGM/0004;53;F;internet;Wielki Kack
+15952;2025/OGM/0004;49;F;internet;Chylonia
+15955;2025/OGM/0004,2025/OGM/0012;6;F;internet;Redłowo
+15956;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+15957;2025/OGM/0004;8;F;internet;Pogórze
+15959;2025/OGM/0004,2025/OGM/0012;13;F;internet;Redłowo
+15961;2025/OGM/0004;41;M;internet;Wielki Kack
+15962;2025/OGM/0004;13;F;internet;Wzgórze Św. Maksymiliana
+15963;2025/OGM/0004;55;F;internet;Dąbrowa
+15964;2025/OGM/0012;46;F;internet;Mały Kack
+15966;2025/OGM/0004;40;F;internet;Dąbrowa
+15967;2025/OGM/0004;4;M;internet;Pogórze
+15968;2025/OGM/0004;34;M;internet;Redłowo
+15970;2025/OGM/0004,2025/OGM/0012;5;M;internet;Witomino
+15972;2025/OGM/0004,2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+15973;2025/OGM/0004;5;F;internet;Pogórze
+15975;2025/OGM/0004,2025/OGM/0012;48;F;internet;Mały Kack
+15976;2025/OGM/0004;47;M;internet;Wielki Kack
+15977;2025/OGM/0004,2025/OGM/0012;38;M;internet;Mały Kack
+15978;2025/OGM/0004;42;F;internet;Wielki Kack
+15979;2025/OGM/0004;31;M;internet;Obłuże
+15980;2025/OGM/0004;27;F;internet;Wielki Kack
+15981;2025/OGM/0004;88;M;internet;Cisowa
+15982;2025/OGM/0012;17;M;internet;Wielki Kack
+15983;2025/OGM/0004;33;F;internet;Pogórze
+15984;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+15986;2025/OGM/0004;39;F;internet;Wielki Kack
+15987;2025/OGM/0004,2025/OGM/0012;25;M;internet;Wzgórze Św. Maksymiliana
+15988;2025/OGM/0004,2025/OGM/0012;62;F;internet;Wzgórze Św. Maksymiliana
+15989;2025/OGM/0004;42;M;internet;Wielki Kack
+15990;2025/OGM/0004,2025/OGM/0012;39;F;internet;Karwiny
+15991;2025/OGM/0004,2025/OGM/0012;42;M;internet;Śródmieście
+15993;2025/OGM/0004,2025/OGM/0012;45;F;internet;Karwiny
+15995;2025/OGM/0004;14;M;internet;Wielki Kack
+15996;2025/OGM/0004,2025/OGM/0012;20;F;internet;Chwarzno-Wiczlino
+15997;2025/OGM/0004;40;F;internet;Mały Kack
+15998;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chylonia
+15999;2025/OGM/0004;64;F;internet;Chwarzno-Wiczlino
+16000;2025/OGM/0004;75;F;internet;Obłuże
+16001;2025/OGM/0004,2025/OGM/0012;46;F;internet;Redłowo
+16002;2025/OGM/0004,2025/OGM/0012;7;F;internet;Mały Kack
+16004;2025/OGM/0004;70;F;internet;Wzgórze Św. Maksymiliana
+16005;2025/OGM/0004;12;M;internet;Wielki Kack
+16006;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+16008;2025/OGM/0004;38;F;internet;Redłowo
+16009;2025/OGM/0004,2025/OGM/0012;2;F;internet;Wielki Kack
+16010;2025/OGM/0004;51;F;internet;Cisowa
+16012;2025/OGM/0004;4;F;internet;Wielki Kack
+16016;2025/OGM/0004,2025/OGM/0012;7;F;internet;Mały Kack
+16017;2025/OGM/0004;48;M;internet;Redłowo
+16018;2025/OGM/0004;49;M;internet;Śródmieście
+16019;2025/OGM/0004,2025/OGM/0012;11;M;internet;Mały Kack
+16020;2025/OGM/0004;12;M;internet;Chylonia
+16021;2025/OGM/0004;8;M;internet;Redłowo
+16022;2025/OGM/0004;46;M;internet;Karwiny
+16023;2025/OGM/0012;31;F;internet;Śródmieście
+16024;2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+16025;2025/OGM/0012;12;M;internet;Chylonia
+16026;2025/OGM/0004;9;F;internet;Wielki Kack
+16027;2025/OGM/0004;11;F;internet;Redłowo
+16028;2025/OGM/0004;70;F;internet;Pogórze
+16029;2025/OGM/0012;48;F;internet;Chylonia
+16030;2025/OGM/0004,2025/OGM/0012;5;F;internet;Wielki Kack
+16031;2025/OGM/0004,2025/OGM/0012;19;M;internet;Wielki Kack
+16032;2025/OGM/0012;36;M;internet;Witomino
+16033;2025/OGM/0004;40;F;internet;Dąbrowa
+16034;2025/OGM/0004;42;F;internet;Wielki Kack
+16035;2025/OGM/0012;73;M;internet;Pogórze
+16037;2025/OGM/0004;66;F;internet;Wzgórze Św. Maksymiliana
+16038;2025/OGM/0004,2025/OGM/0012;51;F;internet;Leszczynki
+16039;2025/OGM/0004;52;F;internet;Obłuże
+16040;2025/OGM/0012;23;F;internet;Kamienna Góra
+16041;2025/OGM/0012;45;F;internet;Witomino
+16042;2025/OGM/0004;39;F;internet;Pustki Cisowskie-Demptowo
+16043;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chylonia
+16044;2025/OGM/0004;32;F;internet;Chylonia
+16045;2025/OGM/0004;54;F;internet;Dąbrowa
+16046;2025/OGM/0012;11;M;internet;Chwarzno-Wiczlino
+16047;2025/OGM/0004,2025/OGM/0012;9;M;internet;Dąbrowa
+16048;2025/OGM/0004;55;F;internet;Obłuże
+16049;2025/OGM/0004;31;F;internet;Cisowa
+16050;2025/OGM/0004;66;M;internet;Wzgórze Św. Maksymiliana
+16051;2025/OGM/0004;52;F;internet;Wielki Kack
+16052;2025/OGM/0004;43;F;internet;Mały Kack
+16053;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+16054;2025/OGM/0012;53;F;internet;Witomino
+16055;2025/OGM/0012;40;F;internet;Dąbrowa
+16056;2025/OGM/0012;52;F;internet;Mały Kack
+16057;2025/OGM/0012;11;F;internet;Mały Kack
+16058;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chylonia
+16059;2025/OGM/0012;9;M;internet;Witomino
+16060;2025/OGM/0004,2025/OGM/0012;65;F;internet;Cisowa
+16061;2025/OGM/0012;39;F;internet;Pustki Cisowskie-Demptowo
+16062;2025/OGM/0004;26;M;internet;Wielki Kack
+16063;2025/OGM/0004;13;M;internet;Mały Kack
+16064;2025/OGM/0004;51;F;internet;Kamienna Góra
+16065;2025/OGM/0004,2025/OGM/0012;29;M;internet;Chylonia
+16066;2025/OGM/0004;37;F;internet;Witomino
+16067;2025/OGM/0004;82;M;internet;Wielki Kack
+16068;2025/OGM/0004,2025/OGM/0012;33;F;internet;Dąbrowa
+16069;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+16070;2025/OGM/0012;37;M;internet;Pustki Cisowskie-Demptowo
+16071;2025/OGM/0012;7;F;internet;Mały Kack
+16072;2025/OGM/0004;46;F;internet;Karwiny
+16073;2025/OGM/0004,2025/OGM/0012;16;F;internet;Chylonia
+16074;2025/OGM/0004;37;F;internet;Wielki Kack
+16075;2025/OGM/0004,2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+16076;2025/OGM/0004,2025/OGM/0012;42;F;internet;Obłuże
+16077;2025/OGM/0004;42;F;internet;Mały Kack
+16078;2025/OGM/0004;86;F;internet;Wielki Kack
+16079;2025/OGM/0004,2025/OGM/0012;34;F;internet;Karwiny
+16080;2025/OGM/0004;32;F;internet;Śródmieście
+16081;2025/OGM/0012;49;F;internet;Oksywie
+16082;2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+16083;2025/OGM/0004,2025/OGM/0012;90;F;internet;Cisowa
+16085;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chylonia
+16086;2025/OGM/0012;16;F;internet;Pustki Cisowskie-Demptowo
+16087;2025/OGM/0012;7;F;internet;Mały Kack
+16088;2025/OGM/0004;34;F;internet;Oksywie
+16089;2025/OGM/0004,2025/OGM/0012;14;F;internet;Chylonia
+16090;2025/OGM/0004;12;M;internet;Mały Kack
+16091;2025/OGM/0004;45;M;internet;Chylonia
+16092;2025/OGM/0004,2025/OGM/0012;5;M;internet;Karwiny
+16093;2025/OGM/0012;50;M;internet;Mały Kack
+16094;2025/OGM/0004;70;F;internet;Wzgórze Św. Maksymiliana
+16095;2025/OGM/0004;83;F;internet;Chwarzno-Wiczlino
+16096;2025/OGM/0004;49;F;internet;Dąbrowa
+16097;2025/OGM/0004;51;F;internet;Wielki Kack
+16098;2025/OGM/0004;40;F;internet;Śródmieście
+16099;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chylonia
+16100;2025/OGM/0004,2025/OGM/0012;36;M;internet;Karwiny
+16101;2025/OGM/0004;14;M;internet;Mały Kack
+16102;2025/OGM/0012;7;F;internet;Dąbrowa
+16103;2025/OGM/0012;21;M;internet;Chwarzno-Wiczlino
+16104;2025/OGM/0012;88;F;internet;Redłowo
+16105;2025/OGM/0004;35;M;internet;Dąbrowa
+16106;2025/OGM/0004;70;F;internet;Wielki Kack
+16107;2025/OGM/0004;2;F;internet;Śródmieście
+16108;2025/OGM/0004,2025/OGM/0012;2;M;internet;Karwiny
+16109;2025/OGM/0004;43;M;internet;Mały Kack
+16110;2025/OGM/0004;72;M;internet;Wzgórze Św. Maksymiliana
+16111;2025/OGM/0004,2025/OGM/0012;15;M;internet;Pustki Cisowskie-Demptowo
+16113;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+16114;2025/OGM/0004;34;F;internet;Obłuże
+16115;2025/OGM/0004,2025/OGM/0012;75;F;internet;Obłuże
+16116;2025/OGM/0004,2025/OGM/0012;51;F;internet;Pustki Cisowskie-Demptowo
+16117;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chylonia
+16118;2025/OGM/0004,2025/OGM/0012;84;M;internet;Chwarzno-Wiczlino
+16120;2025/OGM/0004;13;M;internet;Chwarzno-Wiczlino
+16121;2025/OGM/0004;31;F;internet;Wielki Kack
+16122;2025/OGM/0004;47;M;internet;Dąbrowa
+16123;2025/OGM/0004,2025/OGM/0012;5;F;internet;Dąbrowa
+16124;2025/OGM/0004;25;F;internet;Dąbrowa
+16125;2025/OGM/0004,2025/OGM/0012;41;F;internet;Pustki Cisowskie-Demptowo
+16126;2025/OGM/0004;25;M;internet;Chylonia
+16127;2025/OGM/0004;56;M;internet;Pustki Cisowskie-Demptowo
+16128;2025/OGM/0004;46;F;internet;Redłowo
+16129;2025/OGM/0004;46;M;internet;Redłowo
+16130;2025/OGM/0004,2025/OGM/0012;18;F;internet;Pustki Cisowskie-Demptowo
+16131;2025/OGM/0004,2025/OGM/0012;76;M;internet;Obłuże
+16133;2025/OGM/0004;86;F;internet;Działki Leśne
+16134;2025/OGM/0004;60;M;internet;Dąbrowa
+16135;2025/OGM/0012;40;F;internet;Chylonia
+16136;2025/OGM/0004;9;F;internet;Kamienna Góra
+16137;2025/OGM/0004,2025/OGM/0012;11;F;internet;Cisowa
+16138;2025/OGM/0012;70;F;internet;Śródmieście
+16139;2025/OGM/0004;18;F;internet;Redłowo
+16140;2025/OGM/0012;38;M;internet;Dąbrowa
+16141;2025/OGM/0004;10;M;internet;Redłowo
+16142;2025/OGM/0004;35;F;internet;Redłowo
+16143;2025/OGM/0004;56;F;internet;Dąbrowa
+16144;2025/OGM/0004;52;F;internet;Redłowo
+16145;2025/OGM/0004;77;F;internet;Obłuże
+16146;2025/OGM/0004;77;F;internet;Wzgórze Św. Maksymiliana
+16147;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+16148;2025/OGM/0004,2025/OGM/0012;9;F;internet;Pustki Cisowskie-Demptowo
+16149;2025/OGM/0004;20;M;internet;Pustki Cisowskie-Demptowo
+16150;2025/OGM/0004;12;F;internet;Śródmieście
+16151;2025/OGM/0012;34;M;internet;Witomino
+16152;2025/OGM/0012;47;F;internet;Mały Kack
+16153;2025/OGM/0004;31;F;internet;Mały Kack
+16154;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chylonia
+16155;2025/OGM/0004;41;F;internet;Mały Kack
+16156;2025/OGM/0004;40;M;internet;Chwarzno-Wiczlino
+16157;2025/OGM/0012;46;F;internet;Mały Kack
+16158;2025/OGM/0004;71;M;internet;Grabówek
+16159;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+16160;2025/OGM/0012;45;F;internet;Śródmieście
+16162;2025/OGM/0004;58;M;internet;Chwarzno-Wiczlino
+16163;2025/OGM/0004;33;F;internet;Karwiny
+16164;2025/OGM/0004;5;M;internet;Redłowo
+16165;2025/OGM/0004;43;F;internet;Wielki Kack
+16166;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+16167;2025/OGM/0004,2025/OGM/0012;57;M;internet;Wielki Kack
+16168;2025/OGM/0004;37;M;internet;Pustki Cisowskie-Demptowo
+16170;2025/OGM/0004;46;M;internet;Chwarzno-Wiczlino
+16171;2025/OGM/0012;40;F;internet;Śródmieście
+16172;2025/OGM/0004;78;F;internet;Wzgórze Św. Maksymiliana
+16173;2025/OGM/0004;82;F;internet;Śródmieście
+16174;2025/OGM/0004,2025/OGM/0012;14;F;internet;Cisowa
+16175;2025/OGM/0004;36;M;internet;Redłowo
+16177;2025/OGM/0004;1;F;internet;Redłowo
+16178;2025/OGM/0004;17;M;internet;Pustki Cisowskie-Demptowo
+16179;2025/OGM/0012;70;F;internet;Mały Kack
+16180;2025/OGM/0004;11;M;internet;Pustki Cisowskie-Demptowo
+16181;2025/OGM/0004,2025/OGM/0012;53;F;internet;Mały Kack
+16182;2025/OGM/0012;41;M;internet;Mały Kack
+16183;2025/OGM/0004;13;M;internet;Wielki Kack
+16184;2025/OGM/0004;40;F;internet;Chwarzno-Wiczlino
+16185;2025/OGM/0012;49;M;internet;Śródmieście
+16186;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+16187;2025/OGM/0004,2025/OGM/0012;25;F;internet;Wzgórze Św. Maksymiliana
+16188;2025/OGM/0004,2025/OGM/0012;33;F;internet;Wielki Kack
+16189;2025/OGM/0004,2025/OGM/0012;36;F;internet;Mały Kack
+16190;2025/OGM/0004;70;F;internet;Wzgórze Św. Maksymiliana
+16191;2025/OGM/0012;36;F;internet;Mały Kack
+16192;2025/OGM/0012;71;M;internet;Mały Kack
+16194;2025/OGM/0004;17;M;internet;Mały Kack
+16195;2025/OGM/0012;14;F;internet;Chylonia
+16196;2025/OGM/0004;6;M;internet;Chwarzno-Wiczlino
+16197;2025/OGM/0004;18;F;internet;Śródmieście
+16198;2025/OGM/0004;20;F;internet;Wielki Kack
+16199;2025/OGM/0004,2025/OGM/0012;7;M;internet;Mały Kack
+16200;2025/OGM/0004;7;F;internet;Mały Kack
+16201;2025/OGM/0012;46;M;internet;Śródmieście
+16202;2025/OGM/0012;21;F;internet;Chwarzno-Wiczlino
+16203;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+16204;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+16205;2025/OGM/0004;22;M;internet;Śródmieście
+16206;2025/OGM/0012;60;F;internet;Orłowo
+16207;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+16208;2025/OGM/0004;37;M;internet;Wielki Kack
+16209;2025/OGM/0004,2025/OGM/0012;13;F;internet;Cisowa
+16210;2025/OGM/0004,2025/OGM/0012;3;M;internet;Mały Kack
+16211;2025/OGM/0004;71;F;internet;Chylonia
+16212;2025/OGM/0004;34;F;internet;Chwarzno-Wiczlino
+16213;2025/OGM/0004;31;M;internet;Redłowo
+16214;2025/OGM/0004;53;F;internet;Dąbrowa
+16215;2025/OGM/0004,2025/OGM/0012;1;M;internet;Mały Kack
+16216;2025/OGM/0004,2025/OGM/0012;18;F;internet;Obłuże
+16217;2025/OGM/0004,2025/OGM/0012;42;F;internet;Leszczynki
+16218;2025/OGM/0012;46;M;internet;Mały Kack
+16219;2025/OGM/0012;45;M;internet;Śródmieście
+16220;2025/OGM/0004;44;M;internet;Babie Doły
+16221;2025/OGM/0004,2025/OGM/0012;46;M;internet;Grabówek
+16222;2025/OGM/0004;5;M;internet;Chwarzno-Wiczlino
+16223;2025/OGM/0004;11;F;internet;Pustki Cisowskie-Demptowo
+16224;2025/OGM/0012;58;M;internet;Wielki Kack
+16225;2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+16227;2025/OGM/0012;23;M;internet;Redłowo
+16228;2025/OGM/0004;38;F;internet;Mały Kack
+16229;2025/OGM/0004;74;M;internet;Chylonia
+16230;2025/OGM/0004,2025/OGM/0012;10;F;internet;Kamienna Góra
+16231;2025/OGM/0004,2025/OGM/0012;45;F;internet;Chylonia
+16232;2025/OGM/0004;34;F;internet;Mały Kack
+16233;2025/OGM/0004;79;F;internet;Wielki Kack
+16234;2025/OGM/0004;42;F;internet;Cisowa
+16235;2025/OGM/0004;8;M;internet;Chwarzno-Wiczlino
+16236;2025/OGM/0012;59;M;internet;Chylonia
+16237;2025/OGM/0004;53;M;internet;Pustki Cisowskie-Demptowo
+16238;2025/OGM/0004;42;F;internet;Cisowa
+16239;2025/OGM/0004;91;M;internet;Wielki Kack
+16241;2025/OGM/0004;34;M;internet;Mały Kack
+16242;2025/OGM/0004;27;M;internet;Mały Kack
+16243;2025/OGM/0012;53;F;internet;Oksywie
+16244;2025/OGM/0004;79;F;internet;Redłowo
+16245;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+16246;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+16247;2025/OGM/0004;37;F;internet;Wielki Kack
+16248;2025/OGM/0004;34;F;internet;Pogórze
+16249;2025/OGM/0004;35;F;internet;Wzgórze Św. Maksymiliana
+16250;2025/OGM/0004;43;M;internet;Chylonia
+16251;2025/OGM/0004;39;M;internet;Mały Kack
+16252;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+16253;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+16254;2025/OGM/0004;11;M;internet;Chwarzno-Wiczlino
+16255;2025/OGM/0004,2025/OGM/0012;42;M;internet;Wielki Kack
+16256;2025/OGM/0004;10;M;internet;Cisowa
+16257;2025/OGM/0004;70;F;internet;Wzgórze Św. Maksymiliana
+16258;2025/OGM/0004;35;F;internet;Mały Kack
+16259;2025/OGM/0004;54;F;internet;Dąbrowa
+16260;2025/OGM/0012;63;F;internet;Redłowo
+16261;2025/OGM/0004,2025/OGM/0012;25;F;internet;Dąbrowa
+16264;2025/OGM/0004;50;M;internet;Chwarzno-Wiczlino
+16265;2025/OGM/0004;53;M;internet;Oksywie
+16266;2025/OGM/0004;35;F;internet;Wzgórze Św. Maksymiliana
+16267;2025/OGM/0004;46;M;internet;Mały Kack
+16268;2025/OGM/0004;41;F;internet;Redłowo
+16269;2025/OGM/0004,2025/OGM/0012;35;M;internet;Pogórze
+16271;2025/OGM/0004;4;F;internet;Mały Kack
+16272;2025/OGM/0004;36;F;internet;Pustki Cisowskie-Demptowo
+16273;2025/OGM/0004;3;M;internet;Mały Kack
+16275;2025/OGM/0004,2025/OGM/0012;43;M;internet;Witomino
+16277;2025/OGM/0004,2025/OGM/0012;41;F;internet;Leszczynki
+16278;2025/OGM/0004;40;M;internet;Dąbrowa
+16279;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+16280;2025/OGM/0012;69;M;internet;Orłowo
+16281;2025/OGM/0004,2025/OGM/0012;11;F;internet;Wielki Kack
+16282;2025/OGM/0004;35;M;internet;Mały Kack
+16283;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chwarzno-Wiczlino
+16284;2025/OGM/0004,2025/OGM/0012;51;F;internet;Obłuże
+16285;2025/OGM/0012;20;F;internet;Orłowo
+16286;2025/OGM/0004;43;M;internet;Redłowo
+16287;2025/OGM/0004;31;F;internet;Obłuże
+16288;2025/OGM/0004;15;F;internet;Dąbrowa
+16289;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chylonia
+16290;2025/OGM/0004,2025/OGM/0012;73;F;internet;Chwarzno-Wiczlino
+16292;2025/OGM/0004,2025/OGM/0012;79;F;internet;Pustki Cisowskie-Demptowo
+16293;2025/OGM/0012;10;F;internet;Mały Kack
+16294;2025/OGM/0004;16;F;internet;Kamienna Góra
+16295;2025/OGM/0004;43;F;internet;Mały Kack
+16297;2025/OGM/0004,2025/OGM/0012;14;F;internet;Śródmieście
+16298;2025/OGM/0004,2025/OGM/0012;13;M;internet;Śródmieście
+16299;2025/OGM/0004,2025/OGM/0012;39;M;internet;Redłowo
+16300;2025/OGM/0004;1;M;internet;Mały Kack
+16301;2025/OGM/0012;40;M;internet;Pustki Cisowskie-Demptowo
+16302;2025/OGM/0012;41;F;internet;Mały Kack
+16303;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+16305;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+16306;2025/OGM/0012;48;F;internet;Pogórze
+16307;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+16308;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chylonia
+16309;2025/OGM/0004;30;F;internet;Pogórze
+16310;2025/OGM/0004,2025/OGM/0012;67;M;internet;Chylonia
+16311;2025/OGM/0004,2025/OGM/0012;47;M;internet;Pustki Cisowskie-Demptowo
+16313;2025/OGM/0004;43;M;internet;Cisowa
+16314;2025/OGM/0004,2025/OGM/0012;25;F;internet;Leszczynki
+16315;2025/OGM/0004;42;F;internet;Cisowa
+16316;2025/OGM/0004;56;F;internet;Wzgórze Św. Maksymiliana
+16317;2025/OGM/0004;36;F;internet;Wielki Kack
+16318;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+16319;2025/OGM/0012;9;M;internet;Wzgórze Św. Maksymiliana
+16320;2025/OGM/0004,2025/OGM/0012;16;M;internet;Chylonia
+16322;2025/OGM/0004;38;F;internet;Wielki Kack
+16324;2025/OGM/0004,2025/OGM/0012;57;F;internet;Chylonia
+16325;2025/OGM/0004;21;F;internet;Chylonia
+16326;2025/OGM/0004;82;M;internet;Pustki Cisowskie-Demptowo
+16327;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chylonia
+16328;2025/OGM/0004;54;F;internet;Pustki Cisowskie-Demptowo
+16329;2025/OGM/0004;17;M;internet;Pustki Cisowskie-Demptowo
+16330;2025/OGM/0004,2025/OGM/0012;31;F;internet;Wzgórze Św. Maksymiliana
+16331;2025/OGM/0012;85;M;internet;Pogórze
+16332;2025/OGM/0004,2025/OGM/0012;6;M;internet;Śródmieście
+16333;2025/OGM/0004;9;F;internet;Cisowa
+16334;2025/OGM/0004;33;M;internet;Wielki Kack
+16335;2025/OGM/0004;10;M;internet;Wielki Kack
+16337;2025/OGM/0004;32;F;internet;Śródmieście
+16338;2025/OGM/0004;12;F;internet;Cisowa
+16339;2025/OGM/0004;37;M;internet;Witomino
+16340;2025/OGM/0004;47;F;internet;Wielki Kack
+16341;2025/OGM/0012;41;F;internet;Dąbrowa
+16342;2025/OGM/0004;80;M;internet;Wzgórze Św. Maksymiliana
+16343;2025/OGM/0012;14;F;internet;Chwarzno-Wiczlino
+16344;2025/OGM/0004,2025/OGM/0012;47;F;internet;Obłuże
+16345;2025/OGM/0004,2025/OGM/0012;39;F;internet;Babie Doły
+16346;2025/OGM/0004;19;F;internet;Leszczynki
+16347;2025/OGM/0004,2025/OGM/0012;3;F;internet;Śródmieście
+16349;2025/OGM/0004,2025/OGM/0012;46;F;internet;Działki Leśne
+16350;2025/OGM/0004;12;M;internet;Mały Kack
+16351;2025/OGM/0004;72;M;internet;Cisowa
+16352;2025/OGM/0004,2025/OGM/0012;51;M;internet;Obłuże
+16353;2025/OGM/0012;9;M;internet;Mały Kack
+16354;2025/OGM/0004;70;F;internet;Cisowa
+16356;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+16357;2025/OGM/0004;10;F;internet;Dąbrowa
+16358;2025/OGM/0004,2025/OGM/0012;43;M;internet;Śródmieście
+16359;2025/OGM/0004;17;M;internet;Wielki Kack
+16360;2025/OGM/0004;42;F;internet;Redłowo
+16361;2025/OGM/0004,2025/OGM/0012;31;F;internet;Orłowo
+16362;2025/OGM/0004;46;F;internet;Leszczynki
+16363;2025/OGM/0004;16;M;internet;Dąbrowa
+16364;2025/OGM/0012;6;M;internet;Pogórze
+16365;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+16367;2025/OGM/0004;38;M;internet;Redłowo
+16368;2025/OGM/0004;49;F;internet;Pustki Cisowskie-Demptowo
+16369;2025/OGM/0004;77;F;internet;Cisowa
+16370;2025/OGM/0004;42;F;internet;Wzgórze Św. Maksymiliana
+16371;2025/OGM/0004;39;M;internet;Kamienna Góra
+16372;2025/OGM/0004;18;F;internet;Wielki Kack
+16373;2025/OGM/0004;40;F;internet;Dąbrowa
+16374;2025/OGM/0004;35;F;internet;Dąbrowa
+16375;2025/OGM/0012;47;F;internet;Mały Kack
+16376;2025/OGM/0004;47;F;internet;Leszczynki
+16378;2025/OGM/0004;82;M;internet;Cisowa
+16379;2025/OGM/0012;14;M;internet;Redłowo
+16380;2025/OGM/0004,2025/OGM/0012;9;F;internet;Pustki Cisowskie-Demptowo
+16381;2025/OGM/0012;11;F;internet;Mały Kack
+16382;2025/OGM/0012;36;M;internet;Śródmieście
+16383;2025/OGM/0004,2025/OGM/0012;42;M;internet;Śródmieście
+16384;2025/OGM/0004,2025/OGM/0012;5;F;internet;Dąbrowa
+16385;2025/OGM/0004;10;F;internet;Wzgórze Św. Maksymiliana
+16386;2025/OGM/0004,2025/OGM/0012;43;F;internet;Śródmieście
+16387;2025/OGM/0004;46;M;internet;Mały Kack
+16388;2025/OGM/0004;39;F;internet;Cisowa
+16389;2025/OGM/0004;11;F;internet;Dąbrowa
+16390;2025/OGM/0012;83;F;internet;Pogórze
+16391;2025/OGM/0004;39;M;internet;Karwiny
+16392;2025/OGM/0004;43;F;internet;Wielki Kack
+16393;2025/OGM/0004;23;M;internet;Mały Kack
+16394;2025/OGM/0004;33;M;internet;Babie Doły
+16395;2025/OGM/0004,2025/OGM/0012;45;F;internet;Leszczynki
+16396;2025/OGM/0004,2025/OGM/0012;31;F;internet;Działki Leśne
+16397;2025/OGM/0004;7;M;internet;Wzgórze Św. Maksymiliana
+16398;2025/OGM/0004,2025/OGM/0012;48;M;internet;Śródmieście
+16399;2025/OGM/0012;18;M;internet;Pustki Cisowskie-Demptowo
+16400;2025/OGM/0004;26;F;internet;Obłuże
+16401;2025/OGM/0004;58;F;internet;Oksywie
+16402;2025/OGM/0004;40;M;internet;Dąbrowa
+16403;2025/OGM/0004;65;F;internet;Wzgórze Św. Maksymiliana
+16404;2025/OGM/0012;47;F;internet;Wzgórze Św. Maksymiliana
+16405;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+16406;2025/OGM/0004,2025/OGM/0012;36;F;internet;Obłuże
+16407;2025/OGM/0004,2025/OGM/0012;2;M;internet;Dąbrowa
+16408;2025/OGM/0004;53;M;internet;Obłuże
+16409;2025/OGM/0004;35;F;internet;Karwiny
+16410;2025/OGM/0004,2025/OGM/0012;52;F;internet;Orłowo
+16412;2025/OGM/0004;34;M;internet;Karwiny
+16413;2025/OGM/0004;33;F;internet;Oksywie
+16414;2025/OGM/0012;28;F;internet;Chwarzno-Wiczlino
+16415;2025/OGM/0004,2025/OGM/0012;64;F;internet;Mały Kack
+16417;2025/OGM/0004;39;F;internet;Witomino
+16418;2025/OGM/0004;49;F;internet;Dąbrowa
+16419;2025/OGM/0004,2025/OGM/0012;76;F;internet;Obłuże
+16420;2025/OGM/0004;36;F;internet;Redłowo
+16421;2025/OGM/0004;84;M;internet;Wzgórze Św. Maksymiliana
+16422;2025/OGM/0012;47;F;internet;Śródmieście
+16423;2025/OGM/0004;16;M;internet;Obłuże
+16424;2025/OGM/0004;11;F;internet;Wielki Kack
+16425;2025/OGM/0004;16;M;internet;Pustki Cisowskie-Demptowo
+16426;2025/OGM/0012;32;M;internet;Redłowo
+16427;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chylonia
+16428;2025/OGM/0012;42;F;internet;Śródmieście
+16429;2025/OGM/0004,2025/OGM/0012;14;M;internet;Wielki Kack
+16430;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+16431;2025/OGM/0004;39;F;internet;Cisowa
+16432;2025/OGM/0004,2025/OGM/0012;14;F;internet;Dąbrowa
+16433;2025/OGM/0004,2025/OGM/0012;39;M;internet;Kamienna Góra
+16434;2025/OGM/0004;49;M;internet;Pustki Cisowskie-Demptowo
+16436;2025/OGM/0004,2025/OGM/0012;44;F;internet;Mały Kack
+16437;2025/OGM/0004;40;F;internet;Leszczynki
+16438;2025/OGM/0004;15;M;internet;Redłowo
+16439;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+16440;2025/OGM/0004;7;F;internet;Wielki Kack
+16441;2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+16442;2025/OGM/0004;34;F;internet;Mały Kack
+16443;2025/OGM/0004;48;F;internet;Chylonia
+16445;2025/OGM/0004;44;F;internet;Babie Doły
+16446;2025/OGM/0004,2025/OGM/0012;15;F;internet;Orłowo
+16447;2025/OGM/0004;32;F;internet;Wzgórze Św. Maksymiliana
+16448;2025/OGM/0004,2025/OGM/0012;5;F;internet;Śródmieście
+16449;2025/OGM/0004;14;M;internet;Cisowa
+16450;2025/OGM/0004,2025/OGM/0012;10;M;internet;Dąbrowa
+16451;2025/OGM/0004;54;M;internet;Dąbrowa
+16452;2025/OGM/0004;45;M;internet;Obłuże
+16453;2025/OGM/0004;18;M;internet;Chylonia
+16454;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+16455;2025/OGM/0012;46;M;internet;Śródmieście
+16456;2025/OGM/0004;34;F;internet;Wielki Kack
+16457;2025/OGM/0004;1;M;internet;Chylonia
+16458;2025/OGM/0004,2025/OGM/0012;45;F;internet;Dąbrowa
+16460;2025/OGM/0004;3;M;internet;Wielki Kack
+16461;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+16462;2025/OGM/0004,2025/OGM/0012;49;M;internet;Kamienna Góra
+16463;2025/OGM/0004;33;F;internet;Chylonia
+16464;2025/OGM/0012;89;M;internet;Wzgórze Św. Maksymiliana
+16465;2025/OGM/0004;67;F;internet;Chwarzno-Wiczlino
+16466;2025/OGM/0004,2025/OGM/0012;8;M;internet;Dąbrowa
+16467;2025/OGM/0004;15;M;internet;Chwarzno-Wiczlino
+16468;2025/OGM/0004;50;M;internet;Pustki Cisowskie-Demptowo
+16469;2025/OGM/0004;34;M;internet;Chwarzno-Wiczlino
+16471;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+16472;2025/OGM/0004;34;M;internet;Wielki Kack
+16473;2025/OGM/0004;11;F;internet;Mały Kack
+16474;2025/OGM/0004,2025/OGM/0012;50;F;internet;Działki Leśne
+16475;2025/OGM/0004;39;M;internet;Obłuże
+16476;2025/OGM/0004;42;F;internet;Wielki Kack
+16477;2025/OGM/0004;10;M;internet;Redłowo
+16478;2025/OGM/0004,2025/OGM/0012;3;F;internet;Śródmieście
+16479;2025/OGM/0004;61;M;internet;Obłuże
+16480;2025/OGM/0004,2025/OGM/0012;31;F;internet;Chwarzno-Wiczlino
+16481;2025/OGM/0004;17;F;internet;Pustki Cisowskie-Demptowo
+16482;2025/OGM/0004;49;M;internet;Pustki Cisowskie-Demptowo
+16483;2025/OGM/0004,2025/OGM/0012;81;M;internet;Obłuże
+16484;2025/OGM/0004,2025/OGM/0012;12;M;internet;Mały Kack
+16485;2025/OGM/0004,2025/OGM/0012;20;F;internet;Pustki Cisowskie-Demptowo
+16486;2025/OGM/0004;4;F;internet;Chylonia
+16487;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chylonia
+16488;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+16489;2025/OGM/0012;43;F;internet;Cisowa
+16490;2025/OGM/0004,2025/OGM/0012;18;F;internet;Wielki Kack
+16491;2025/OGM/0012;39;F;internet;Mały Kack
+16492;2025/OGM/0012;64;M;internet;Wzgórze Św. Maksymiliana
+16493;2025/OGM/0004;45;F;internet;Wzgórze Św. Maksymiliana
+16494;2025/OGM/0004,2025/OGM/0012;36;M;internet;Orłowo
+16495;2025/OGM/0004;12;F;internet;Chwarzno-Wiczlino
+16496;2025/OGM/0004,2025/OGM/0012;21;F;internet;Orłowo
+16498;2025/OGM/0004;38;F;internet;Mały Kack
+16499;2025/OGM/0004;46;F;internet;Chwarzno-Wiczlino
+16500;2025/OGM/0004,2025/OGM/0012;65;F;internet;Obłuże
+16501;2025/OGM/0004,2025/OGM/0012;42;M;internet;Dąbrowa
+16502;2025/OGM/0004,2025/OGM/0012;31;M;internet;Oksywie
+16504;2025/OGM/0004;29;M;internet;Pustki Cisowskie-Demptowo
+16505;2025/OGM/0004,2025/OGM/0012;45;F;internet;Obłuże
+16506;2025/OGM/0004;13;F;internet;Oksywie
+16507;2025/OGM/0004,2025/OGM/0012;44;M;internet;Witomino
+16511;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+16512;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+16513;2025/OGM/0004,2025/OGM/0012;58;F;internet;Dąbrowa
+16514;2025/OGM/0004,2025/OGM/0012;34;M;internet;Mały Kack
+16515;2025/OGM/0004,2025/OGM/0012;65;M;internet;Chwarzno-Wiczlino
+16516;2025/OGM/0004,2025/OGM/0012;2;M;internet;Mały Kack
+16517;2025/OGM/0012;37;F;internet;Witomino
+16518;2025/OGM/0004,2025/OGM/0012;36;M;internet;Obłuże
+16519;2025/OGM/0004;13;F;internet;Chwarzno-Wiczlino
+16520;2025/OGM/0004;13;M;internet;Oksywie
+16521;2025/OGM/0004,2025/OGM/0012;47;M;internet;Witomino
+16522;2025/OGM/0012;63;F;internet;Wzgórze Św. Maksymiliana
+16523;2025/OGM/0004;55;F;internet;Wielki Kack
+16524;2025/OGM/0004;47;F;internet;Wielki Kack
+16525;2025/OGM/0004,2025/OGM/0012;6;M;internet;Grabówek
+16526;2025/OGM/0004,2025/OGM/0012;47;M;internet;Witomino
+16527;2025/OGM/0004;39;M;internet;Śródmieście
+16528;2025/OGM/0004,2025/OGM/0012;90;F;internet;Karwiny
+16529;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+16530;2025/OGM/0004,2025/OGM/0012;48;M;internet;Dąbrowa
+16531;2025/OGM/0004;62;F;internet;Karwiny
+16532;2025/OGM/0012;8;M;internet;Redłowo
+16533;2025/OGM/0004;49;F;internet;Chwarzno-Wiczlino
+16535;2025/OGM/0004;57;F;internet;Śródmieście
+16536;2025/OGM/0004;48;F;internet;Pustki Cisowskie-Demptowo
+16537;2025/OGM/0004;40;F;internet;Obłuże
+16538;2025/OGM/0012;55;F;internet;Orłowo
+16539;2025/OGM/0004;19;M;internet;Cisowa
+16540;2025/OGM/0004;9;M;internet;Kamienna Góra
+16541;2025/OGM/0004;52;F;internet;Dąbrowa
+16542;2025/OGM/0004,2025/OGM/0012;30;M;internet;Działki Leśne
+16543;2025/OGM/0004;11;M;internet;Wielki Kack
+16544;2025/OGM/0004;53;F;internet;Cisowa
+16545;2025/OGM/0004,2025/OGM/0012;16;M;internet;Działki Leśne
+16546;2025/OGM/0004;13;F;internet;Obłuże
+16547;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chylonia
+16548;2025/OGM/0004,2025/OGM/0012;30;M;internet;Działki Leśne
+16549;2025/OGM/0004;53;F;internet;Chylonia
+16551;2025/OGM/0004;38;F;internet;Chylonia
+16552;2025/OGM/0004,2025/OGM/0012;54;M;internet;Wielki Kack
+16553;2025/OGM/0012;44;M;internet;Witomino
+16554;2025/OGM/0004;48;F;internet;Wielki Kack
+16556;2025/OGM/0004;7;M;internet;Wielki Kack
+16557;2025/OGM/0004;54;F;internet;Wielki Kack
+16559;2025/OGM/0004;63;F;internet;Witomino
+16560;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+16561;2025/OGM/0004;61;M;internet;Chylonia
+16562;2025/OGM/0004;68;F;internet;Wzgórze Św. Maksymiliana
+16563;2025/OGM/0004;27;M;internet;Wielki Kack
+16565;2025/OGM/0004,2025/OGM/0012;54;F;internet;Wielki Kack
+16566;2025/OGM/0004,2025/OGM/0012;24;F;internet;Śródmieście
+16567;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chylonia
+16569;2025/OGM/0012;36;F;internet;Mały Kack
+16570;2025/OGM/0004;72;M;internet;Grabówek
+16572;2025/OGM/0004;16;M;internet;Obłuże
+16573;2025/OGM/0012;10;F;internet;Chylonia
+16574;2025/OGM/0004;14;M;internet;Wielki Kack
+16575;2025/OGM/0004,2025/OGM/0012;11;M;internet;Wielki Kack
+16576;2025/OGM/0012;36;F;internet;Karwiny
+16577;2025/OGM/0012;76;F;internet;Dąbrowa
+16578;2025/OGM/0004,2025/OGM/0012;48;M;internet;Redłowo
+16579;2025/OGM/0004;56;F;internet;Chylonia
+16580;2025/OGM/0004,2025/OGM/0012;24;M;internet;Wielki Kack
+16581;2025/OGM/0004,2025/OGM/0012;49;F;internet;Leszczynki
+16582;2025/OGM/0012;43;M;internet;Mały Kack
+16584;2025/OGM/0012;9;F;internet;Mały Kack
+16585;2025/OGM/0004;39;M;internet;Mały Kack
+16586;2025/OGM/0004;43;F;internet;Wielki Kack
+16587;2025/OGM/0004,2025/OGM/0012;39;F;internet;Witomino
+16588;2025/OGM/0004;18;M;internet;Mały Kack
+16589;2025/OGM/0004;84;M;internet;Grabówek
+16590;2025/OGM/0004,2025/OGM/0012;48;F;internet;Chwarzno-Wiczlino
+16591;2025/OGM/0004,2025/OGM/0012;53;F;internet;Chwarzno-Wiczlino
+16592;2025/OGM/0004;39;M;internet;Witomino
+16593;2025/OGM/0004,2025/OGM/0012;18;F;internet;Babie Doły
+16594;2025/OGM/0004;;M;internet;Mały Kack
+16595;2025/OGM/0004,2025/OGM/0012;48;F;internet;Mały Kack
+16596;2025/OGM/0012;43;F;internet;Redłowo
+16597;2025/OGM/0004;52;M;internet;Śródmieście
+16598;2025/OGM/0004,2025/OGM/0012;69;M;internet;Chylonia
+16599;2025/OGM/0004;71;F;internet;Chylonia
+16600;2025/OGM/0004;46;M;internet;Wielki Kack
+16601;2025/OGM/0004;74;F;internet;Wielki Kack
+16602;2025/OGM/0004;37;F;internet;Mały Kack
+16603;2025/OGM/0012;6;F;internet;Mały Kack
+16604;2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+16605;2025/OGM/0004,2025/OGM/0012;28;F;internet;Wielki Kack
+16606;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+16607;2025/OGM/0004;52;M;internet;Działki Leśne
+16608;2025/OGM/0004;67;F;internet;Wielki Kack
+16609;2025/OGM/0004;74;M;internet;Wielki Kack
+16610;2025/OGM/0004;42;F;internet;Pogórze
+16611;2025/OGM/0004,2025/OGM/0012;24;M;internet;Dąbrowa
+16612;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+16613;2025/OGM/0004;41;M;internet;Wielki Kack
+16614;2025/OGM/0004,2025/OGM/0012;87;F;internet;Chylonia
+16615;2025/OGM/0004,2025/OGM/0012;79;F;internet;Chylonia
+16616;2025/OGM/0004;10;M;internet;Chylonia
+16617;2025/OGM/0004;76;M;internet;Wielki Kack
+16618;2025/OGM/0012;3;M;internet;Witomino
+16619;2025/OGM/0004;32;M;internet;Pogórze
+16620;2025/OGM/0004;69;F;internet;Wielki Kack
+16621;2025/OGM/0004;67;F;internet;Chwarzno-Wiczlino
+16622;2025/OGM/0004;48;F;internet;Cisowa
+16623;2025/OGM/0004;49;F;internet;Mały Kack
+16624;2025/OGM/0012;40;M;internet;Mały Kack
+16626;2025/OGM/0004,2025/OGM/0012;12;F;internet;Witomino
+16627;2025/OGM/0004;82;M;internet;Witomino
+16628;2025/OGM/0012;;F;internet;Witomino
+16629;2025/OGM/0004,2025/OGM/0012;39;M;internet;Wielki Kack
+16630;2025/OGM/0004;48;M;internet;Pustki Cisowskie-Demptowo
+16631;2025/OGM/0004;75;M;internet;Wielki Kack
+16632;2025/OGM/0012;32;M;internet;Witomino
+16633;2025/OGM/0012;15;M;internet;Redłowo
+16634;2025/OGM/0004;57;F;internet;Wielki Kack
+16635;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+16637;2025/OGM/0004;32;F;internet;Pogórze
+16638;2025/OGM/0004;39;M;internet;Pustki Cisowskie-Demptowo
+16639;2025/OGM/0012;6;F;internet;Pogórze
+16640;2025/OGM/0004,2025/OGM/0012;48;M;internet;Cisowa
+16641;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chylonia
+16643;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chwarzno-Wiczlino
+16644;2025/OGM/0004;81;F;internet;Witomino
+16645;2025/OGM/0004;6;M;internet;Pogórze
+16646;2025/OGM/0012;79;F;internet;Orłowo
+16647;2025/OGM/0004,2025/OGM/0012;39;M;internet;Witomino
+16648;2025/OGM/0012;35;M;internet;Pogórze
+16649;2025/OGM/0004;45;M;internet;Śródmieście
+16651;2025/OGM/0012;68;M;internet;Witomino
+16652;2025/OGM/0004;31;M;internet;Chwarzno-Wiczlino
+16653;2025/OGM/0004;42;F;internet;Wielki Kack
+16654;2025/OGM/0004;61;M;internet;Wielki Kack
+16655;2025/OGM/0004;54;F;internet;Pogórze
+16656;2025/OGM/0004;2;M;internet;Pogórze
+16657;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+16658;2025/OGM/0004;31;F;internet;Chwarzno-Wiczlino
+16659;2025/OGM/0004,2025/OGM/0012;46;F;internet;Obłuże
+16660;2025/OGM/0004;36;M;internet;Pustki Cisowskie-Demptowo
+16663;2025/OGM/0004;55;F;internet;Grabówek
+16664;2025/OGM/0004,2025/OGM/0012;31;F;internet;Pustki Cisowskie-Demptowo
+16665;2025/OGM/0012;80;M;internet;Orłowo
+16666;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+16667;2025/OGM/0004;61;F;internet;Dąbrowa
+16668;2025/OGM/0004;39;F;internet;Redłowo
+16670;2025/OGM/0004;6;F;internet;Wielki Kack
+16671;2025/OGM/0004,2025/OGM/0012;56;F;internet;Pustki Cisowskie-Demptowo
+16672;2025/OGM/0004,2025/OGM/0012;19;F;internet;Wielki Kack
+16673;2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+16674;2025/OGM/0004,2025/OGM/0012;48;M;internet;Oksywie
+16675;2025/OGM/0004;55;M;internet;Grabówek
+16676;2025/OGM/0004,2025/OGM/0012;35;M;internet;Dąbrowa
+16677;2025/OGM/0004;3;M;internet;Wielki Kack
+16678;2025/OGM/0004;66;F;internet;Chwarzno-Wiczlino
+16679;2025/OGM/0004;37;M;internet;Wielki Kack
+16680;2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+16681;2025/OGM/0004;42;F;internet;Babie Doły
+16682;2025/OGM/0004,2025/OGM/0012;28;F;internet;Leszczynki
+16683;2025/OGM/0004;46;M;internet;Obłuże
+16684;2025/OGM/0004;48;F;internet;Śródmieście
+16685;2025/OGM/0004;16;F;internet;Wielki Kack
+16686;2025/OGM/0012;10;M;internet;Chwarzno-Wiczlino
+16687;2025/OGM/0004;61;M;internet;Pustki Cisowskie-Demptowo
+16688;2025/OGM/0012;27;F;internet;Mały Kack
+16689;2025/OGM/0004;40;M;internet;Pogórze
+16690;2025/OGM/0004;42;F;internet;Pogórze
+16691;2025/OGM/0012;34;F;internet;Obłuże
+16692;2025/OGM/0004,2025/OGM/0012;64;F;internet;Chylonia
+16693;2025/OGM/0004;42;M;internet;Leszczynki
+16694;2025/OGM/0004;67;M;internet;Chwarzno-Wiczlino
+16695;2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+16696;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chylonia
+16697;2025/OGM/0012;45;M;internet;Mały Kack
+16698;2025/OGM/0004;62;F;internet;Chylonia
+16699;2025/OGM/0004,2025/OGM/0012;11;M;internet;Wielki Kack
+16700;2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+16701;2025/OGM/0004;33;M;internet;Śródmieście
+16702;2025/OGM/0012;40;F;internet;Leszczynki
+16703;2025/OGM/0004,2025/OGM/0012;8;F;internet;Wielki Kack
+16704;2025/OGM/0012;64;M;internet;Mały Kack
+16705;2025/OGM/0012;77;F;internet;Pustki Cisowskie-Demptowo
+16706;2025/OGM/0012;78;M;internet;Oksywie
+16707;2025/OGM/0004,2025/OGM/0012;44;F;internet;Redłowo
+16711;2025/OGM/0004;46;F;internet;Śródmieście
+16712;2025/OGM/0012;58;F;internet;Mały Kack
+16713;2025/OGM/0004;13;F;internet;Babie Doły
+16714;2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+16715;2025/OGM/0004,2025/OGM/0012;40;F;internet;Mały Kack
+16716;2025/OGM/0004;34;F;internet;Mały Kack
+16717;2025/OGM/0004,2025/OGM/0012;13;F;internet;Mały Kack
+16718;2025/OGM/0004;17;F;internet;Śródmieście
+16719;2025/OGM/0004,2025/OGM/0012;16;F;internet;Redłowo
+16723;2025/OGM/0004;38;F;internet;Chylonia
+16724;2025/OGM/0004,2025/OGM/0012;13;F;internet;Redłowo
+16725;2025/OGM/0004;40;M;internet;Mały Kack
+16726;2025/OGM/0004;23;F;internet;Leszczynki
+16727;2025/OGM/0004;19;M;internet;Witomino
+16729;2025/OGM/0004;1;M;internet;Mały Kack
+16730;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chylonia
+16731;2025/OGM/0004;12;F;internet;Śródmieście
+16732;2025/OGM/0004;4;F;internet;Mały Kack
+16733;2025/OGM/0004,2025/OGM/0012;18;M;internet;Oksywie
+16734;2025/OGM/0004;23;F;internet;Cisowa
+16735;2025/OGM/0004,2025/OGM/0012;10;F;internet;Redłowo
+16737;2025/OGM/0004;37;F;internet;Mały Kack
+16738;2025/OGM/0004,2025/OGM/0012;9;F;internet;Mały Kack
+16739;2025/OGM/0004;40;F;internet;Pogórze
+16740;2025/OGM/0004,2025/OGM/0012;17;F;internet;Działki Leśne
+16741;2025/OGM/0012;45;F;internet;Mały Kack
+16742;2025/OGM/0004;42;F;internet;Wielki Kack
+16743;2025/OGM/0012;46;F;internet;Oksywie
+16744;2025/OGM/0004;10;M;internet;Babie Doły
+16746;2025/OGM/0004;32;F;internet;Śródmieście
+16748;2025/OGM/0004;31;F;internet;Obłuże
+16749;2025/OGM/0004;37;M;internet;Obłuże
+16750;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+16751;2025/OGM/0004;14;F;internet;Mały Kack
+16752;2025/OGM/0004;46;M;internet;Mały Kack
+16753;2025/OGM/0004,2025/OGM/0012;8;F;internet;Karwiny
+16754;2025/OGM/0012;65;M;internet;Mały Kack
+16755;2025/OGM/0004;95;F;internet;Witomino
+16756;2025/OGM/0004;35;F;internet;Witomino
+16757;2025/OGM/0004;46;M;internet;Wielki Kack
+16758;2025/OGM/0004;11;M;internet;Wielki Kack
+16759;2025/OGM/0004;41;F;internet;Dąbrowa
+16760;2025/OGM/0004;61;F;internet;Chwarzno-Wiczlino
+16761;2025/OGM/0004,2025/OGM/0012;46;M;internet;Karwiny
+16762;2025/OGM/0004,2025/OGM/0012;41;F;internet;Karwiny
+16763;2025/OGM/0004;2;F;internet;Witomino
+16764;2025/OGM/0004;14;F;internet;Wielki Kack
+16765;2025/OGM/0004,2025/OGM/0012;35;F;internet;Pustki Cisowskie-Demptowo
+16766;2025/OGM/0004;41;F;internet;Działki Leśne
+16767;2025/OGM/0004;74;F;internet;Witomino
+16768;2025/OGM/0004;16;M;internet;Wielki Kack
+16769;2025/OGM/0004;49;M;internet;Babie Doły
+16770;2025/OGM/0004;52;F;internet;Obłuże
+16771;2025/OGM/0004;38;F;internet;Dąbrowa
+16772;2025/OGM/0012;37;F;internet;Mały Kack
+16773;2025/OGM/0004;44;M;internet;Wielki Kack
+16774;2025/OGM/0004,2025/OGM/0012;7;M;internet;Pustki Cisowskie-Demptowo
+16775;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chylonia
+16776;2025/OGM/0004;92;F;internet;Wielki Kack
+16777;2025/OGM/0004,2025/OGM/0012;38;F;internet;Dąbrowa
+16778;2025/OGM/0004,2025/OGM/0012;31;M;internet;Wielki Kack
+16779;2025/OGM/0004,2025/OGM/0012;33;M;internet;Pustki Cisowskie-Demptowo
+16780;2025/OGM/0004;46;M;internet;Wielki Kack
+16781;2025/OGM/0004,2025/OGM/0012;44;F;internet;Babie Doły
+16782;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+16783;2025/OGM/0012;35;F;internet;Mały Kack
+16784;2025/OGM/0004;38;M;internet;Mały Kack
+16785;2025/OGM/0012;57;F;internet;Pustki Cisowskie-Demptowo
+16787;2025/OGM/0004,2025/OGM/0012;33;F;internet;Działki Leśne
+16788;2025/OGM/0004;43;F;internet;Wielki Kack
+16789;2025/OGM/0004,2025/OGM/0012;35;F;internet;Wielki Kack
+16790;2025/OGM/0004;14;M;internet;Oksywie
+16791;2025/OGM/0012;84;F;internet;Pustki Cisowskie-Demptowo
+16792;2025/OGM/0004,2025/OGM/0012;39;F;internet;Dąbrowa
+16793;2025/OGM/0004,2025/OGM/0012;27;M;internet;Grabówek
+16794;2025/OGM/0004;45;M;internet;Mały Kack
+16795;2025/OGM/0004;12;M;internet;Babie Doły
+16796;2025/OGM/0004;11;M;internet;Wielki Kack
+16797;2025/OGM/0004,2025/OGM/0012;27;F;internet;Dąbrowa
+16798;2025/OGM/0012;40;F;internet;Dąbrowa
+16799;2025/OGM/0012;40;M;internet;Śródmieście
+16800;2025/OGM/0012;66;F;internet;Redłowo
+16801;2025/OGM/0004,2025/OGM/0012;29;F;internet;Dąbrowa
+16802;2025/OGM/0012;27;F;internet;Leszczynki
+16803;2025/OGM/0004;40;F;internet;Grabówek
+16804;2025/OGM/0012;35;M;internet;Działki Leśne
+16805;2025/OGM/0004,2025/OGM/0012;35;F;internet;Pogórze
+16806;2025/OGM/0004;45;M;internet;Dąbrowa
+16807;2025/OGM/0004;69;F;internet;Wielki Kack
+16808;2025/OGM/0012;23;M;internet;Śródmieście
+16809;2025/OGM/0004,2025/OGM/0012;44;F;internet;Redłowo
+16810;2025/OGM/0004;39;F;internet;Babie Doły
+16811;2025/OGM/0004;54;F;internet;Wielki Kack
+16812;2025/OGM/0004,2025/OGM/0012;44;F;internet;Redłowo
+16813;2025/OGM/0004;42;F;internet;Mały Kack
+16815;2025/OGM/0004;55;F;internet;Karwiny
+16816;2025/OGM/0004,2025/OGM/0012;74;M;internet;Wielki Kack
+16817;2025/OGM/0004;75;M;internet;Witomino
+16818;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+16820;2025/OGM/0004;37;M;internet;Grabówek
+16821;2025/OGM/0012;83;M;internet;Pustki Cisowskie-Demptowo
+16822;2025/OGM/0004;41;F;internet;Cisowa
+16823;2025/OGM/0004;11;M;internet;Kamienna Góra
+16824;2025/OGM/0004;31;F;internet;Witomino
+16825;2025/OGM/0004,2025/OGM/0012;58;F;internet;Działki Leśne
+16826;2025/OGM/0004,2025/OGM/0012;47;M;internet;Redłowo
+16827;2025/OGM/0004,2025/OGM/0012;29;M;internet;Mały Kack
+16828;2025/OGM/0004;34;F;internet;Mały Kack
+16829;2025/OGM/0004,2025/OGM/0012;44;M;internet;Wielki Kack
+16830;2025/OGM/0004;46;M;internet;Mały Kack
+16831;2025/OGM/0004;39;F;internet;Kamienna Góra
+16832;2025/OGM/0004;69;M;internet;Wielki Kack
+16833;2025/OGM/0004;44;M;internet;Witomino
+16834;2025/OGM/0004,2025/OGM/0012;23;F;internet;Wzgórze Św. Maksymiliana
+16835;2025/OGM/0004;48;M;internet;Wielki Kack
+16837;2025/OGM/0012;32;M;internet;Mały Kack
+16838;2025/OGM/0004,2025/OGM/0012;16;M;internet;Redłowo
+16839;2025/OGM/0004,2025/OGM/0012;49;F;internet;Działki Leśne
+16840;2025/OGM/0004;39;M;internet;Kamienna Góra
+16841;2025/OGM/0004,2025/OGM/0012;45;M;internet;Obłuże
+16842;2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+16843;2025/OGM/0004;49;M;internet;Śródmieście
+16844;2025/OGM/0004;40;F;internet;Śródmieście
+16845;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+16846;2025/OGM/0012;14;F;internet;Redłowo
+16847;2025/OGM/0012;45;F;internet;Karwiny
+16848;2025/OGM/0004,2025/OGM/0012;41;F;internet;Leszczynki
+16849;2025/OGM/0004;70;F;internet;Wielki Kack
+16850;2025/OGM/0004;72;M;internet;Wielki Kack
+16851;2025/OGM/0012;47;M;internet;Śródmieście
+16852;2025/OGM/0012;79;M;internet;Karwiny
+16853;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+16854;2025/OGM/0012;3;F;internet;Redłowo
+16855;2025/OGM/0012;8;F;internet;Redłowo
+16857;2025/OGM/0004,2025/OGM/0012;41;F;internet;Śródmieście
+16858;2025/OGM/0004;44;F;internet;Pustki Cisowskie-Demptowo
+16859;2025/OGM/0004;41;M;internet;Dąbrowa
+16860;2025/OGM/0012;47;F;internet;Śródmieście
+16861;2025/OGM/0004;23;F;internet;Wielki Kack
+16862;2025/OGM/0004,2025/OGM/0012;13;F;internet;Mały Kack
+16863;2025/OGM/0012;34;M;internet;Redłowo
+16864;2025/OGM/0004;41;M;internet;Kamienna Góra
+16865;2025/OGM/0004;78;F;internet;Wielki Kack
+16866;2025/OGM/0004;35;F;internet;Mały Kack
+16867;2025/OGM/0004,2025/OGM/0012;68;M;internet;Redłowo
+16868;2025/OGM/0012;15;M;internet;Śródmieście
+16869;2025/OGM/0004,2025/OGM/0012;27;F;internet;Leszczynki
+16870;2025/OGM/0004;39;M;internet;Działki Leśne
+16871;2025/OGM/0004,2025/OGM/0012;57;F;internet;Dąbrowa
+16872;2025/OGM/0004,2025/OGM/0012;43;M;internet;Mały Kack
+16873;2025/OGM/0012;6;F;internet;Redłowo
+16874;2025/OGM/0012;16;M;internet;Witomino
+16875;2025/OGM/0012;11;F;internet;Śródmieście
+16876;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+16877;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+16878;2025/OGM/0004;64;M;internet;Witomino
+16879;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chylonia
+16880;2025/OGM/0004,2025/OGM/0012;22;F;internet;Dąbrowa
+16881;2025/OGM/0004,2025/OGM/0012;9;F;internet;Chwarzno-Wiczlino
+16882;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+16883;2025/OGM/0004,2025/OGM/0012;41;M;internet;Pustki Cisowskie-Demptowo
+16885;2025/OGM/0004;16;F;internet;Pustki Cisowskie-Demptowo
+16886;2025/OGM/0004;40;M;internet;Wielki Kack
+16887;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+16888;2025/OGM/0004,2025/OGM/0012;35;M;internet;Mały Kack
+16889;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+16890;2025/OGM/0004,2025/OGM/0012;19;M;internet;Dąbrowa
+16891;2025/OGM/0004;50;F;internet;Cisowa
+16892;2025/OGM/0004;7;M;internet;Mały Kack
+16893;2025/OGM/0004,2025/OGM/0012;35;F;internet;Mały Kack
+16894;2025/OGM/0004,2025/OGM/0012;42;F;internet;Oksywie
+16895;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+16897;2025/OGM/0004;47;M;internet;Wielki Kack
+16898;2025/OGM/0004,2025/OGM/0012;49;F;internet;Grabówek
+16899;2025/OGM/0004,2025/OGM/0012;5;F;internet;Mały Kack
+16900;2025/OGM/0004;5;M;internet;Mały Kack
+16901;2025/OGM/0004;60;M;internet;Witomino
+16902;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wielki Kack
+16903;2025/OGM/0012;41;M;internet;Chylonia
+16905;2025/OGM/0004;18;M;internet;Pustki Cisowskie-Demptowo
+16906;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+16907;2025/OGM/0004,2025/OGM/0012;90;M;internet;Pustki Cisowskie-Demptowo
+16908;2025/OGM/0004,2025/OGM/0012;73;F;internet;Chylonia
+16909;2025/OGM/0004,2025/OGM/0012;16;M;internet;Pustki Cisowskie-Demptowo
+16910;2025/OGM/0004;28;M;internet;Wielki Kack
+16911;2025/OGM/0004;42;M;internet;Mały Kack
+16912;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+16913;2025/OGM/0004;6;M;internet;Mały Kack
+16914;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+16915;2025/OGM/0004;58;M;internet;Wielki Kack
+16916;2025/OGM/0004,2025/OGM/0012;19;F;internet;Chylonia
+16917;2025/OGM/0004,2025/OGM/0012;51;F;internet;Śródmieście
+16918;2025/OGM/0012;13;M;internet;Pustki Cisowskie-Demptowo
+16919;2025/OGM/0004;6;M;internet;Mały Kack
+16920;2025/OGM/0004,2025/OGM/0012;4;M;internet;Pustki Cisowskie-Demptowo
+16921;2025/OGM/0004;8;F;internet;Mały Kack
+16922;2025/OGM/0004,2025/OGM/0012;14;M;internet;Wielki Kack
+16923;2025/OGM/0004;14;F;internet;Mały Kack
+16924;2025/OGM/0004;53;M;internet;Obłuże
+16925;2025/OGM/0004;20;M;internet;Grabówek
+16926;2025/OGM/0004,2025/OGM/0012;17;F;internet;Wielki Kack
+16927;2025/OGM/0004;7;F;internet;Mały Kack
+16928;2025/OGM/0004,2025/OGM/0012;;F;internet;Pustki Cisowskie-Demptowo
+16929;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+16930;2025/OGM/0004,2025/OGM/0012;75;M;internet;Pogórze
+16932;2025/OGM/0012;37;F;internet;Działki Leśne
+16933;2025/OGM/0004,2025/OGM/0012;43;F;internet;Leszczynki
+16934;2025/OGM/0004;21;F;internet;Oksywie
+16935;2025/OGM/0004;56;M;internet;Orłowo
+16936;2025/OGM/0012;68;F;internet;Śródmieście
+16937;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+16938;2025/OGM/0004,2025/OGM/0012;46;M;internet;Witomino
+16939;2025/OGM/0004;41;M;internet;Pustki Cisowskie-Demptowo
+16940;2025/OGM/0012;39;M;internet;Działki Leśne
+16941;2025/OGM/0012;40;F;internet;Wielki Kack
+16942;2025/OGM/0004,2025/OGM/0012;39;F;internet;Karwiny
+16943;2025/OGM/0004,2025/OGM/0012;74;F;internet;Pogórze
+16944;2025/OGM/0012;54;F;internet;Witomino
+16945;2025/OGM/0012;68;F;internet;Działki Leśne
+16946;2025/OGM/0004,2025/OGM/0012;27;F;internet;Witomino
+16947;2025/OGM/0004;38;F;internet;Chylonia
+16948;2025/OGM/0004;38;M;internet;Dąbrowa
+16949;2025/OGM/0004;75;M;internet;Pustki Cisowskie-Demptowo
+16950;2025/OGM/0012;71;M;internet;Działki Leśne
+16951;2025/OGM/0004;35;F;internet;Wielki Kack
+16952;2025/OGM/0004,2025/OGM/0012;45;M;internet;Oksywie
+16953;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chylonia
+16954;2025/OGM/0012;46;F;internet;Mały Kack
+16955;2025/OGM/0004;44;F;internet;Pogórze
+16956;2025/OGM/0012;33;M;internet;Babie Doły
+16957;2025/OGM/0004,2025/OGM/0012;39;F;internet;Śródmieście
+16958;2025/OGM/0004,2025/OGM/0012;14;F;internet;Chylonia
+16960;2025/OGM/0004;40;M;internet;Pogórze
+16961;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+16962;2025/OGM/0004;60;F;internet;Dąbrowa
+16963;2025/OGM/0004,2025/OGM/0012;73;F;internet;Cisowa
+16964;2025/OGM/0012;66;F;internet;Śródmieście
+16965;2025/OGM/0004,2025/OGM/0012;5;F;internet;Mały Kack
+16966;2025/OGM/0004;59;F;internet;Dąbrowa
+16967;2025/OGM/0004;67;F;internet;Redłowo
+16968;2025/OGM/0004,2025/OGM/0012;27;M;internet;Mały Kack
+16969;2025/OGM/0004,2025/OGM/0012;19;M;internet;Chylonia
+16970;2025/OGM/0004,2025/OGM/0012;41;F;internet;Redłowo
+16971;2025/OGM/0004;75;F;internet;Leszczynki
+16972;2025/OGM/0004;59;F;internet;Babie Doły
+16974;2025/OGM/0004,2025/OGM/0012;58;F;internet;Dąbrowa
+16975;2025/OGM/0012;86;F;internet;Śródmieście
+16976;2025/OGM/0004,2025/OGM/0012;88;M;internet;Dąbrowa
+16977;2025/OGM/0004;65;F;internet;Mały Kack
+16978;2025/OGM/0012;66;F;internet;Orłowo
+16979;2025/OGM/0004;34;F;internet;Śródmieście
+16980;2025/OGM/0004,2025/OGM/0012;55;F;internet;Wielki Kack
+16981;2025/OGM/0012;37;F;internet;Śródmieście
+16982;2025/OGM/0004;40;F;internet;Dąbrowa
+16983;2025/OGM/0004;9;F;internet;Dąbrowa
+16985;2025/OGM/0004;4;M;internet;Dąbrowa
+16986;2025/OGM/0004;43;M;internet;Dąbrowa
+16987;2025/OGM/0012;31;M;internet;Śródmieście
+16988;2025/OGM/0012;31;F;internet;Śródmieście
+16989;2025/OGM/0012;66;F;internet;Śródmieście
+16990;2025/OGM/0012;65;F;internet;Pustki Cisowskie-Demptowo
+16991;2025/OGM/0004;77;F;internet;
+16992;2025/OGM/0004;43;M;internet;Mały Kack
+16993;2025/OGM/0004;31;M;internet;Mały Kack
+16995;2025/OGM/0012;29;F;internet;Babie Doły
+16996;2025/OGM/0012;37;F;internet;Mały Kack
+16998;2025/OGM/0004,2025/OGM/0012;28;F;internet;Działki Leśne
+16999;2025/OGM/0004,2025/OGM/0012;27;M;internet;Dąbrowa
+17000;2025/OGM/0012;38;M;internet;Śródmieście
+17001;2025/OGM/0012;62;F;internet;Śródmieście
+17002;2025/OGM/0012;68;F;internet;Śródmieście
+17003;2025/OGM/0004;50;F;internet;Wzgórze Św. Maksymiliana
+17004;2025/OGM/0004,2025/OGM/0012;20;M;internet;Wielki Kack
+17005;2025/OGM/0012;69;F;internet;Chylonia
+17006;2025/OGM/0004;47;F;internet;Obłuże
+17008;2025/OGM/0004;44;F;internet;Obłuże
+17009;2025/OGM/0004;63;M;internet;Mały Kack
+17010;2025/OGM/0004,2025/OGM/0012;29;F;internet;Wielki Kack
+17011;2025/OGM/0004;35;F;internet;Cisowa
+17012;2025/OGM/0004,2025/OGM/0012;47;F;internet;Karwiny
+17014;2025/OGM/0004,2025/OGM/0012;6;M;internet;Obłuże
+17015;2025/OGM/0004,2025/OGM/0012;1;F;internet;Obłuże
+17016;2025/OGM/0004,2025/OGM/0012;32;F;internet;Obłuże
+17017;2025/OGM/0004;49;M;internet;Mały Kack
+17018;2025/OGM/0004;49;M;internet;Dąbrowa
+17019;2025/OGM/0004;51;F;internet;Mały Kack
+17020;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chwarzno-Wiczlino
+17021;2025/OGM/0004;62;F;internet;Chylonia
+17022;2025/OGM/0012;36;F;internet;Wielki Kack
+17023;2025/OGM/0004;53;M;internet;Mały Kack
+17024;2025/OGM/0004;39;F;internet;Wielki Kack
+17025;2025/OGM/0004;9;M;internet;Wielki Kack
+17026;2025/OGM/0012;49;M;internet;Witomino
+17027;2025/OGM/0004;8;M;internet;Wielki Kack
+17028;2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+17030;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+17031;2025/OGM/0004;50;F;internet;Śródmieście
+17032;2025/OGM/0012;47;F;internet;Orłowo
+17033;2025/OGM/0004;39;F;internet;Witomino
+17034;2025/OGM/0004;14;M;internet;Dąbrowa
+17035;2025/OGM/0004;63;F;internet;Wielki Kack
+17036;2025/OGM/0004;44;F;internet;Dąbrowa
+17037;2025/OGM/0004,2025/OGM/0012;73;M;internet;Witomino
+17038;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+17039;2025/OGM/0004,2025/OGM/0012;12;M;internet;Dąbrowa
+17040;2025/OGM/0012;3;M;internet;Pustki Cisowskie-Demptowo
+17041;2025/OGM/0004;64;M;internet;Wielki Kack
+17042;2025/OGM/0004;18;M;internet;Dąbrowa
+17043;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+17044;2025/OGM/0004,2025/OGM/0012;38;F;internet;Mały Kack
+17045;2025/OGM/0004;40;M;internet;Witomino
+17046;2025/OGM/0004,2025/OGM/0012;60;F;internet;Witomino
+17048;2025/OGM/0004,2025/OGM/0012;28;F;internet;Witomino
+17050;2025/OGM/0004;40;F;internet;Wielki Kack
+17051;2025/OGM/0004;62;F;internet;Wielki Kack
+17052;2025/OGM/0004;48;F;internet;Mały Kack
+17053;2025/OGM/0004;42;F;internet;Dąbrowa
+17054;2025/OGM/0004;44;M;internet;Mały Kack
+17055;2025/OGM/0004;42;F;internet;Grabówek
+17056;2025/OGM/0004,2025/OGM/0012;49;F;internet;Mały Kack
+17057;2025/OGM/0004;24;F;internet;Wielki Kack
+17058;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wielki Kack
+17059;2025/OGM/0004,2025/OGM/0012;28;F;internet;Mały Kack
+17060;2025/OGM/0004,2025/OGM/0012;58;M;internet;Mały Kack
+17061;2025/OGM/0004;47;F;internet;Redłowo
+17062;2025/OGM/0004,2025/OGM/0012;8;M;internet;Wielki Kack
+17063;2025/OGM/0004,2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+17064;2025/OGM/0004;40;M;internet;Wielki Kack
+17065;2025/OGM/0004,2025/OGM/0012;15;M;internet;Mały Kack
+17066;2025/OGM/0004;56;F;internet;Wielki Kack
+17067;2025/OGM/0004;73;F;internet;Wielki Kack
+17068;2025/OGM/0004,2025/OGM/0012;51;M;internet;Leszczynki
+17069;2025/OGM/0004;55;F;internet;Cisowa
+17070;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+17072;2025/OGM/0004;41;M;internet;Wielki Kack
+17073;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+17074;2025/OGM/0012;42;M;internet;Witomino
+17075;2025/OGM/0004,2025/OGM/0012;27;F;internet;Wielki Kack
+17076;2025/OGM/0004,2025/OGM/0012;46;F;internet;Mały Kack
+17077;2025/OGM/0004;52;F;internet;Cisowa
+17078;2025/OGM/0004;57;F;internet;Pustki Cisowskie-Demptowo
+17080;2025/OGM/0012;43;F;internet;Witomino
+17081;2025/OGM/0004;35;M;internet;Obłuże
+17082;2025/OGM/0012;61;M;internet;Pustki Cisowskie-Demptowo
+17083;2025/OGM/0004;37;M;internet;Chwarzno-Wiczlino
+17084;2025/OGM/0004;28;F;internet;Pustki Cisowskie-Demptowo
+17085;2025/OGM/0012;36;M;internet;Pogórze
+17087;2025/OGM/0004;19;F;internet;Pustki Cisowskie-Demptowo
+17088;2025/OGM/0004;32;F;internet;Redłowo
+17089;2025/OGM/0012;55;F;internet;Redłowo
+17090;2025/OGM/0004;64;M;internet;Wielki Kack
+17091;2025/OGM/0004;60;F;internet;Chwarzno-Wiczlino
+17092;2025/OGM/0004,2025/OGM/0012;40;M;internet;Leszczynki
+17093;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+17094;2025/OGM/0004;50;F;internet;Kamienna Góra
+17095;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+17096;2025/OGM/0004,2025/OGM/0012;60;F;internet;Wzgórze Św. Maksymiliana
+17097;2025/OGM/0004;22;F;internet;Orłowo
+17098;2025/OGM/0004;42;M;internet;Wielki Kack
+17099;2025/OGM/0004,2025/OGM/0012;32;F;internet;Wielki Kack
+17100;2025/OGM/0004;11;M;internet;Chwarzno-Wiczlino
+17102;2025/OGM/0012;5;M;internet;Mały Kack
+17103;2025/OGM/0012;42;M;internet;Wielki Kack
+17104;2025/OGM/0004;14;M;internet;Chwarzno-Wiczlino
+17105;2025/OGM/0012;35;M;internet;Mały Kack
+17107;2025/OGM/0012;11;M;internet;Wielki Kack
+17108;2025/OGM/0012;26;M;internet;Chylonia
+17110;2025/OGM/0012;13;M;internet;Wielki Kack
+17112;2025/OGM/0004,2025/OGM/0012;43;M;internet;Grabówek
+17113;2025/OGM/0004,2025/OGM/0012;47;F;internet;Babie Doły
+17114;2025/OGM/0004;29;F;internet;Chwarzno-Wiczlino
+17115;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+17116;2025/OGM/0004,2025/OGM/0012;53;F;internet;Działki Leśne
+17117;2025/OGM/0004,2025/OGM/0012;53;M;internet;Wielki Kack
+17118;2025/OGM/0004;52;F;internet;Mały Kack
+17119;2025/OGM/0004,2025/OGM/0012;41;F;internet;Redłowo
+17120;2025/OGM/0004,2025/OGM/0012;14;F;internet;Babie Doły
+17121;2025/OGM/0004;38;M;internet;Witomino
+17122;2025/OGM/0004;50;F;internet;Wielki Kack
+17123;2025/OGM/0004;42;F;internet;Pogórze
+17124;2025/OGM/0004;33;F;internet;Śródmieście
+17125;2025/OGM/0004;40;F;internet;Wielki Kack
+17126;2025/OGM/0004,2025/OGM/0012;11;M;internet;Śródmieście
+17127;2025/OGM/0004,2025/OGM/0012;46;M;internet;Cisowa
+17128;2025/OGM/0004;49;F;internet;Redłowo
+17130;2025/OGM/0004,2025/OGM/0012;33;F;internet;Chwarzno-Wiczlino
+17131;2025/OGM/0012;16;M;internet;Pogórze
+17133;2025/OGM/0012;33;M;internet;Pustki Cisowskie-Demptowo
+17134;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+17135;2025/OGM/0004,2025/OGM/0012;46;F;internet;Dąbrowa
+17136;2025/OGM/0004;21;F;internet;Cisowa
+17137;2025/OGM/0004;38;F;internet;Orłowo
+17138;2025/OGM/0004;18;M;internet;Wielki Kack
+17139;2025/OGM/0004;40;F;internet;Mały Kack
+17140;2025/OGM/0004;47;M;internet;Obłuże
+17141;2025/OGM/0004;26;F;internet;Chylonia
+17142;2025/OGM/0004;39;M;internet;Mały Kack
+17143;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+17144;2025/OGM/0004;44;F;internet;Mały Kack
+17145;2025/OGM/0004,2025/OGM/0012;39;F;internet;Cisowa
+17146;2025/OGM/0004,2025/OGM/0012;83;M;internet;Pustki Cisowskie-Demptowo
+17148;2025/OGM/0004;9;M;internet;Witomino
+17150;2025/OGM/0004,2025/OGM/0012;40;F;internet;Kamienna Góra
+17151;2025/OGM/0004;12;M;internet;Witomino
+17152;2025/OGM/0012;50;F;internet;Wzgórze Św. Maksymiliana
+17153;2025/OGM/0004,2025/OGM/0012;83;F;internet;Pustki Cisowskie-Demptowo
+17154;2025/OGM/0004;37;M;internet;Dąbrowa
+17155;2025/OGM/0012;38;M;internet;Działki Leśne
+17156;2025/OGM/0004,2025/OGM/0012;8;F;internet;Działki Leśne
+17157;2025/OGM/0012;37;F;internet;Działki Leśne
+17158;2025/OGM/0004,2025/OGM/0012;27;M;internet;Grabówek
+17159;2025/OGM/0004;6;M;internet;Wielki Kack
+17160;2025/OGM/0004;58;F;internet;Redłowo
+17161;2025/OGM/0004,2025/OGM/0012;30;M;internet;Wielki Kack
+17162;2025/OGM/0004;1;F;internet;Mały Kack
+17163;2025/OGM/0012;28;M;internet;Pustki Cisowskie-Demptowo
+17164;2025/OGM/0004,2025/OGM/0012;48;M;internet;Dąbrowa
+17165;2025/OGM/0004,2025/OGM/0012;11;F;internet;Wielki Kack
+17166;2025/OGM/0004,2025/OGM/0012;6;M;internet;Działki Leśne
+17167;2025/OGM/0004,2025/OGM/0012;72;M;internet;Dąbrowa
+17168;2025/OGM/0012;49;F;internet;Śródmieście
+17169;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+17170;2025/OGM/0004;10;M;internet;Mały Kack
+17171;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+17172;2025/OGM/0004;43;F;internet;Cisowa
+17173;2025/OGM/0004;82;M;internet;Redłowo
+17174;2025/OGM/0012;8;M;internet;Działki Leśne
+17175;2025/OGM/0004,2025/OGM/0012;47;F;internet;Redłowo
+17176;2025/OGM/0004;41;M;internet;Obłuże
+17177;2025/OGM/0004;40;F;internet;Dąbrowa
+17178;2025/OGM/0012;4;F;internet;Działki Leśne
+17179;2025/OGM/0004,2025/OGM/0012;65;F;internet;Wielki Kack
+17180;2025/OGM/0012;73;F;internet;Działki Leśne
+17181;2025/OGM/0004,2025/OGM/0012;39;F;internet;Obłuże
+17182;2025/OGM/0004;51;M;internet;Śródmieście
+17184;2025/OGM/0004,2025/OGM/0012;27;M;internet;Cisowa
+17185;2025/OGM/0004,2025/OGM/0012;48;M;internet;Śródmieście
+17186;2025/OGM/0012;49;M;internet;Orłowo
+17187;2025/OGM/0004,2025/OGM/0012;9;F;internet;Cisowa
+17188;2025/OGM/0004,2025/OGM/0012;49;F;internet;Oksywie
+17189;2025/OGM/0004;62;M;internet;Dąbrowa
+17190;2025/OGM/0004,2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+17191;2025/OGM/0004;12;M;internet;Pustki Cisowskie-Demptowo
+17192;2025/OGM/0004;58;M;internet;Redłowo
+17193;2025/OGM/0004,2025/OGM/0012;34;M;internet;Cisowa
+17195;2025/OGM/0004,2025/OGM/0012;36;M;internet;Wielki Kack
+17196;2025/OGM/0004;69;F;internet;Wielki Kack
+17197;2025/OGM/0004;43;M;internet;Karwiny
+17198;2025/OGM/0012;51;M;internet;Babie Doły
+17199;2025/OGM/0004,2025/OGM/0012;39;F;internet;Wielki Kack
+17201;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+17202;2025/OGM/0004,2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+17204;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+17205;2025/OGM/0004;38;F;internet;Wielki Kack
+17206;2025/OGM/0004;27;F;internet;Chylonia
+17207;2025/OGM/0004;41;M;internet;Mały Kack
+17209;2025/OGM/0012;32;M;internet;Redłowo
+17210;2025/OGM/0004;49;F;internet;Wielki Kack
+17212;2025/OGM/0004;31;F;internet;Wielki Kack
+17215;2025/OGM/0004;62;F;internet;Wielki Kack
+17216;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+17217;2025/OGM/0004;56;M;internet;Wielki Kack
+17218;2025/OGM/0012;7;M;internet;Śródmieście
+17219;2025/OGM/0004;3;F;internet;Wielki Kack
+17220;2025/OGM/0004,2025/OGM/0012;5;M;internet;Działki Leśne
+17223;2025/OGM/0012;47;F;internet;Orłowo
+17224;2025/OGM/0004;38;F;internet;Mały Kack
+17225;2025/OGM/0004;50;M;internet;Chwarzno-Wiczlino
+17226;2025/OGM/0004,2025/OGM/0012;37;F;internet;Leszczynki
+17227;2025/OGM/0004;24;F;internet;Cisowa
+17229;2025/OGM/0004,2025/OGM/0012;21;F;internet;Działki Leśne
+17230;2025/OGM/0004,2025/OGM/0012;5;M;internet;Chwarzno-Wiczlino
+17231;2025/OGM/0004;41;M;internet;Mały Kack
+17232;2025/OGM/0004;18;M;internet;Wielki Kack
+17233;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+17234;2025/OGM/0012;48;F;internet;Cisowa
+17235;2025/OGM/0004,2025/OGM/0012;7;F;internet;Chwarzno-Wiczlino
+17236;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+17237;2025/OGM/0004;16;M;internet;Wielki Kack
+17238;2025/OGM/0004;45;M;internet;Karwiny
+17239;2025/OGM/0004,2025/OGM/0012;30;F;internet;Redłowo
+17240;2025/OGM/0004,2025/OGM/0012;3;M;internet;Leszczynki
+17241;2025/OGM/0012;23;F;internet;Orłowo
+17243;2025/OGM/0004,2025/OGM/0012;38;M;internet;Wielki Kack
+17244;2025/OGM/0004,2025/OGM/0012;;M;internet;Leszczynki
+17245;2025/OGM/0012;36;F;internet;Mały Kack
+17246;2025/OGM/0012;48;F;internet;Śródmieście
+17247;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+17248;2025/OGM/0004,2025/OGM/0012;65;M;internet;Wielki Kack
+17249;2025/OGM/0004;42;F;internet;Pustki Cisowskie-Demptowo
+17250;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+17252;2025/OGM/0004;26;F;internet;Działki Leśne
+17253;2025/OGM/0012;2;F;internet;Mały Kack
+17254;2025/OGM/0012;36;M;internet;Śródmieście
+17255;2025/OGM/0004;46;F;internet;Oksywie
+17256;2025/OGM/0004;34;F;internet;Chylonia
+17257;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+17258;2025/OGM/0004;48;F;internet;Śródmieście
+17259;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+17260;2025/OGM/0004;53;F;internet;Wielki Kack
+17262;2025/OGM/0004;3;M;internet;Chwarzno-Wiczlino
+17263;2025/OGM/0004;45;M;internet;Pustki Cisowskie-Demptowo
+17264;2025/OGM/0004;57;F;internet;Wielki Kack
+17265;2025/OGM/0004,2025/OGM/0012;3;M;internet;Chwarzno-Wiczlino
+17266;2025/OGM/0004;45;M;internet;Chylonia
+17267;2025/OGM/0004;16;F;internet;Kamienna Góra
+17268;2025/OGM/0004;39;M;internet;Działki Leśne
+17269;2025/OGM/0004,2025/OGM/0012;40;M;internet;Dąbrowa
+17270;2025/OGM/0004;52;M;internet;Witomino
+17271;2025/OGM/0004;63;F;internet;Wielki Kack
+17272;2025/OGM/0004;21;F;internet;Wielki Kack
+17273;2025/OGM/0004;47;F;internet;Wielki Kack
+17274;2025/OGM/0004,2025/OGM/0012;54;M;internet;Chwarzno-Wiczlino
+17275;2025/OGM/0004;28;M;internet;Wielki Kack
+17276;2025/OGM/0004;31;M;internet;Dąbrowa
+17277;2025/OGM/0004;21;F;internet;Witomino
+17278;2025/OGM/0004,2025/OGM/0012;32;M;internet;Chwarzno-Wiczlino
+17279;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+17281;2025/OGM/0004;14;M;internet;Mały Kack
+17282;2025/OGM/0004,2025/OGM/0012;33;M;internet;Wielki Kack
+17283;2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+17284;2025/OGM/0012;32;F;internet;Śródmieście
+17285;2025/OGM/0004;37;M;internet;Oksywie
+17286;2025/OGM/0004;24;M;internet;Wielki Kack
+17287;2025/OGM/0012;50;F;internet;Wielki Kack
+17288;2025/OGM/0004;24;M;internet;Witomino
+17289;2025/OGM/0004;54;F;internet;Leszczynki
+17291;2025/OGM/0004,2025/OGM/0012;18;F;internet;Dąbrowa
+17292;2025/OGM/0004,2025/OGM/0012;41;F;internet;Mały Kack
+17293;2025/OGM/0004;58;M;internet;Wielki Kack
+17294;2025/OGM/0004,2025/OGM/0012;27;F;internet;Pustki Cisowskie-Demptowo
+17295;2025/OGM/0004;34;F;internet;Cisowa
+17296;2025/OGM/0004;52;F;internet;Dąbrowa
+17297;2025/OGM/0004;48;F;internet;Chwarzno-Wiczlino
+17298;2025/OGM/0004;73;F;internet;Chwarzno-Wiczlino
+17299;2025/OGM/0004;43;F;internet;Dąbrowa
+17300;2025/OGM/0004,2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+17301;2025/OGM/0004;4;F;internet;Redłowo
+17303;2025/OGM/0012;42;M;internet;Pogórze
+17304;2025/OGM/0012;35;F;internet;Oksywie
+17305;2025/OGM/0004;50;M;internet;Oksywie
+17306;2025/OGM/0004;41;M;internet;Obłuże
+17307;2025/OGM/0004;45;F;internet;Redłowo
+17308;2025/OGM/0012;69;M;internet;Chylonia
+17309;2025/OGM/0004;6;F;internet;Dąbrowa
+17311;2025/OGM/0004,2025/OGM/0012;34;M;internet;Mały Kack
+17312;2025/OGM/0004,2025/OGM/0012;9;M;internet;Mały Kack
+17313;2025/OGM/0004;15;F;internet;Redłowo
+17314;2025/OGM/0004;35;F;internet;Chylonia
+17315;2025/OGM/0004,2025/OGM/0012;39;F;internet;Mały Kack
+17316;2025/OGM/0012;47;M;internet;Mały Kack
+17317;2025/OGM/0004;55;F;internet;Orłowo
+17318;2025/OGM/0004;43;M;internet;Dąbrowa
+17319;2025/OGM/0004;69;M;internet;Grabówek
+17320;2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+17321;2025/OGM/0004;47;F;internet;Cisowa
+17322;2025/OGM/0004;22;F;internet;Orłowo
+17323;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+17325;2025/OGM/0004,2025/OGM/0012;8;M;internet;Mały Kack
+17326;2025/OGM/0012;12;M;internet;Redłowo
+17327;2025/OGM/0004;28;M;internet;Śródmieście
+17328;2025/OGM/0004,2025/OGM/0012;32;F;internet;Dąbrowa
+17329;2025/OGM/0012;44;F;internet;Grabówek
+17330;2025/OGM/0004;9;F;internet;Obłuże
+17331;2025/OGM/0012;51;F;internet;Witomino
+17332;2025/OGM/0004;60;M;internet;Wielki Kack
+17333;2025/OGM/0004,2025/OGM/0012;44;F;internet;Wielki Kack
+17334;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chylonia
+17336;2025/OGM/0004,2025/OGM/0012;47;F;internet;Chylonia
+17337;2025/OGM/0004,2025/OGM/0012;37;F;internet;Wielki Kack
+17338;2025/OGM/0012;4;F;internet;Mały Kack
+17339;2025/OGM/0004,2025/OGM/0012;19;F;internet;Cisowa
+17340;2025/OGM/0004,2025/OGM/0012;42;F;internet;Karwiny
+17341;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+17342;2025/OGM/0004,2025/OGM/0012;55;M;internet;Chylonia
+17343;2025/OGM/0004,2025/OGM/0012;39;M;internet;Chwarzno-Wiczlino
+17344;2025/OGM/0004,2025/OGM/0012;10;M;internet;Chylonia
+17345;2025/OGM/0012;9;F;internet;Redłowo
+17346;2025/OGM/0004;52;F;internet;Wielki Kack
+17347;2025/OGM/0004,2025/OGM/0012;53;F;internet;Dąbrowa
+17348;2025/OGM/0004;4;F;internet;Cisowa
+17349;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+17350;2025/OGM/0012;73;F;internet;Mały Kack
+17351;2025/OGM/0004;38;F;internet;Oksywie
+17352;2025/OGM/0004,2025/OGM/0012;34;F;internet;Dąbrowa
+17353;2025/OGM/0004,2025/OGM/0012;17;M;internet;Chylonia
+17354;2025/OGM/0004,2025/OGM/0012;22;M;internet;Cisowa
+17355;2025/OGM/0004,2025/OGM/0012;32;M;internet;Dąbrowa
+17356;2025/OGM/0004;24;F;internet;Oksywie
+17358;2025/OGM/0004;42;F;internet;Chylonia
+17359;2025/OGM/0004;47;F;internet;Wielki Kack
+17360;2025/OGM/0004,2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+17361;2025/OGM/0012;75;M;internet;Mały Kack
+17363;2025/OGM/0004;34;F;internet;Cisowa
+17364;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chylonia
+17365;2025/OGM/0004,2025/OGM/0012;12;F;internet;Chwarzno-Wiczlino
+17366;2025/OGM/0004;69;F;internet;Wielki Kack
+17367;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+17368;2025/OGM/0004;48;M;internet;Wielki Kack
+17369;2025/OGM/0004;35;F;internet;Oksywie
+17370;2025/OGM/0012;70;F;internet;Witomino
+17371;2025/OGM/0004;40;F;internet;Pogórze
+17372;2025/OGM/0012;49;M;internet;Redłowo
+17373;2025/OGM/0004,2025/OGM/0012;67;F;internet;Dąbrowa
+17375;2025/OGM/0004,2025/OGM/0012;5;F;internet;Chwarzno-Wiczlino
+17376;2025/OGM/0004;62;F;internet;Oksywie
+17377;2025/OGM/0004,2025/OGM/0012;8;F;internet;Wielki Kack
+17379;2025/OGM/0004;74;F;internet;Orłowo
+17380;2025/OGM/0012;49;F;internet;Chylonia
+17381;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+17383;2025/OGM/0004;40;M;internet;Cisowa
+17384;2025/OGM/0004,2025/OGM/0012;43;F;internet;Dąbrowa
+17385;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chwarzno-Wiczlino
+17386;2025/OGM/0004,2025/OGM/0012;73;F;internet;Chylonia
+17387;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+17389;2025/OGM/0004;76;M;internet;Orłowo
+17390;2025/OGM/0004;47;F;internet;Grabówek
+17391;2025/OGM/0004;57;F;internet;Chwarzno-Wiczlino
+17392;2025/OGM/0004;28;M;internet;Cisowa
+17393;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+17394;2025/OGM/0004,2025/OGM/0012;53;F;internet;Redłowo
+17395;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+17396;2025/OGM/0004;35;F;internet;Mały Kack
+17397;2025/OGM/0004,2025/OGM/0012;42;M;internet;Cisowa
+17398;2025/OGM/0012;24;F;internet;Redłowo
+17399;2025/OGM/0004,2025/OGM/0012;37;M;internet;Działki Leśne
+17400;2025/OGM/0004;7;F;internet;Witomino
+17401;2025/OGM/0012;14;F;internet;Wielki Kack
+17402;2025/OGM/0004,2025/OGM/0012;53;F;internet;Witomino
+17403;2025/OGM/0004;40;M;internet;Śródmieście
+17405;2025/OGM/0012;11;F;internet;Chylonia
+17406;2025/OGM/0004;28;F;internet;Cisowa
+17408;2025/OGM/0004;36;M;internet;Oksywie
+17409;2025/OGM/0004;66;M;internet;Karwiny
+17410;2025/OGM/0004,2025/OGM/0012;49;M;internet;Pustki Cisowskie-Demptowo
+17411;2025/OGM/0004;33;M;internet;Wielki Kack
+17412;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wzgórze Św. Maksymiliana
+17413;2025/OGM/0012;25;F;internet;Chylonia
+17414;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chylonia
+17416;2025/OGM/0004,2025/OGM/0012;14;M;internet;Orłowo
+17417;2025/OGM/0004,2025/OGM/0012;52;F;internet;Obłuże
+17418;2025/OGM/0004,2025/OGM/0012;14;M;internet;Oksywie
+17420;2025/OGM/0004;16;M;internet;Chwarzno-Wiczlino
+17421;2025/OGM/0004;68;F;internet;Wielki Kack
+17422;2025/OGM/0012;41;M;internet;Chwarzno-Wiczlino
+17423;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+17424;2025/OGM/0004,2025/OGM/0012;14;M;internet;Redłowo
+17425;2025/OGM/0012;14;F;internet;Chylonia
+17426;2025/OGM/0004;60;F;internet;Mały Kack
+17427;2025/OGM/0004;47;F;internet;Wzgórze Św. Maksymiliana
+17429;2025/OGM/0004,2025/OGM/0012;23;F;internet;Kamienna Góra
+17430;2025/OGM/0004;25;M;internet;Chylonia
+17431;2025/OGM/0004,2025/OGM/0012;14;M;internet;Wzgórze Św. Maksymiliana
+17432;2025/OGM/0012;43;M;internet;Obłuże
+17433;2025/OGM/0004;42;M;internet;Pogórze
+17434;2025/OGM/0012;50;F;internet;Redłowo
+17435;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+17436;2025/OGM/0004;38;F;internet;Babie Doły
+17437;2025/OGM/0004;52;F;internet;Obłuże
+17438;2025/OGM/0004;60;F;internet;Dąbrowa
+17439;2025/OGM/0004,2025/OGM/0012;18;M;internet;Kamienna Góra
+17440;2025/OGM/0004;59;F;internet;Redłowo
+17441;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wielki Kack
+17442;2025/OGM/0004,2025/OGM/0012;38;F;internet;Wzgórze Św. Maksymiliana
+17443;2025/OGM/0004,2025/OGM/0012;14;M;internet;Działki Leśne
+17444;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+17445;2025/OGM/0004,2025/OGM/0012;17;M;internet;Kamienna Góra
+17446;2025/OGM/0004;14;F;internet;Działki Leśne
+17447;2025/OGM/0012;27;F;internet;Witomino
+17448;2025/OGM/0004;35;F;internet;Oksywie
+17449;2025/OGM/0004;40;F;internet;Karwiny
+17451;2025/OGM/0004;13;M;internet;Wzgórze Św. Maksymiliana
+17453;2025/OGM/0004;28;M;internet;Śródmieście
+17454;2025/OGM/0004;37;F;internet;Działki Leśne
+17455;2025/OGM/0004,2025/OGM/0012;50;F;internet;Pustki Cisowskie-Demptowo
+17456;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wzgórze Św. Maksymiliana
+17457;2025/OGM/0004,2025/OGM/0012;47;F;internet;Mały Kack
+17458;2025/OGM/0012;14;F;internet;Cisowa
+17459;2025/OGM/0004,2025/OGM/0012;36;M;internet;Pustki Cisowskie-Demptowo
+17461;2025/OGM/0012;12;M;internet;Chwarzno-Wiczlino
+17462;2025/OGM/0004;24;F;internet;Wielki Kack
+17463;2025/OGM/0004,2025/OGM/0012;14;F;internet;Mały Kack
+17465;2025/OGM/0004,2025/OGM/0012;52;F;internet;Śródmieście
+17466;2025/OGM/0004;42;M;internet;Działki Leśne
+17467;2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+17469;2025/OGM/0004;24;F;internet;Witomino
+17470;2025/OGM/0004,2025/OGM/0012;20;M;internet;Orłowo
+17471;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+17472;2025/OGM/0004,2025/OGM/0012;4;F;internet;Pustki Cisowskie-Demptowo
+17473;2025/OGM/0004,2025/OGM/0012;27;M;internet;Mały Kack
+17474;2025/OGM/0004,2025/OGM/0012;55;M;internet;Śródmieście
+17475;2025/OGM/0004;67;F;internet;Wielki Kack
+17476;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+17477;2025/OGM/0004,2025/OGM/0012;57;M;internet;Redłowo
+17478;2025/OGM/0004,2025/OGM/0012;27;F;internet;Śródmieście
+17479;2025/OGM/0004,2025/OGM/0012;19;F;internet;Orłowo
+17481;2025/OGM/0004,2025/OGM/0012;51;F;internet;Grabówek
+17482;2025/OGM/0004;11;F;internet;Wzgórze Św. Maksymiliana
+17484;2025/OGM/0004,2025/OGM/0012;24;F;internet;Śródmieście
+17485;2025/OGM/0012;64;F;internet;Grabówek
+17486;2025/OGM/0004;45;M;internet;Dąbrowa
+17487;2025/OGM/0012;44;F;internet;Obłuże
+17488;2025/OGM/0012;8;M;internet;Orłowo
+17489;2025/OGM/0012;46;F;internet;Chwarzno-Wiczlino
+17490;2025/OGM/0012;50;M;internet;Chwarzno-Wiczlino
+17491;2025/OGM/0004,2025/OGM/0012;21;F;internet;Śródmieście
+17492;2025/OGM/0004;49;F;internet;Witomino
+17493;2025/OGM/0004;33;F;internet;Chwarzno-Wiczlino
+17495;2025/OGM/0004,2025/OGM/0012;47;M;internet;Mały Kack
+17496;2025/OGM/0004;48;M;internet;Wielki Kack
+17497;2025/OGM/0012;6;M;internet;Orłowo
+17498;2025/OGM/0004,2025/OGM/0012;18;M;internet;Śródmieście
+17499;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chylonia
+17501;2025/OGM/0004;35;F;internet;Dąbrowa
+17502;2025/OGM/0004,2025/OGM/0012;41;F;internet;Dąbrowa
+17503;2025/OGM/0012;15;F;internet;Chwarzno-Wiczlino
+17504;2025/OGM/0004;44;M;internet;Wielki Kack
+17506;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+17507;2025/OGM/0004;60;M;internet;Pustki Cisowskie-Demptowo
+17508;2025/OGM/0004;40;F;internet;Wielki Kack
+17509;2025/OGM/0012;10;F;internet;Wzgórze Św. Maksymiliana
+17510;2025/OGM/0004;64;F;internet;Chwarzno-Wiczlino
+17511;2025/OGM/0004,2025/OGM/0012;52;F;internet;Wielki Kack
+17513;2025/OGM/0012;39;M;internet;Orłowo
+17515;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+17516;2025/OGM/0004,2025/OGM/0012;66;M;internet;Śródmieście
+17518;2025/OGM/0004;30;F;internet;Wielki Kack
+17521;2025/OGM/0004;1;M;internet;Chwarzno-Wiczlino
+17522;2025/OGM/0004,2025/OGM/0012;8;M;internet;Śródmieście
+17523;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+17524;2025/OGM/0004;41;F;internet;Mały Kack
+17525;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+17526;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+17527;2025/OGM/0004;35;M;internet;Mały Kack
+17528;2025/OGM/0004,2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+17529;2025/OGM/0004;2;M;internet;Mały Kack
+17530;2025/OGM/0004,2025/OGM/0012;14;F;internet;Mały Kack
+17531;2025/OGM/0004;7;M;internet;Mały Kack
+17532;2025/OGM/0004,2025/OGM/0012;2;F;internet;Śródmieście
+17533;2025/OGM/0012;40;M;internet;Karwiny
+17534;2025/OGM/0004;4;M;internet;Mały Kack
+17535;2025/OGM/0004;4;M;internet;Mały Kack
+17536;2025/OGM/0012;41;M;internet;Witomino
+17537;2025/OGM/0004;32;F;internet;Dąbrowa
+17538;2025/OGM/0004;44;M;internet;Mały Kack
+17539;2025/OGM/0004,2025/OGM/0012;16;F;internet;Mały Kack
+17540;2025/OGM/0004,2025/OGM/0012;11;F;internet;Chwarzno-Wiczlino
+17542;2025/OGM/0004;40;M;internet;Dąbrowa
+17543;2025/OGM/0004;28;M;internet;Pustki Cisowskie-Demptowo
+17544;2025/OGM/0004;35;F;internet;Redłowo
+17546;2025/OGM/0004,2025/OGM/0012;7;F;internet;Mały Kack
+17547;2025/OGM/0004,2025/OGM/0012;44;F;internet;Oksywie
+17548;2025/OGM/0012;44;F;internet;Pustki Cisowskie-Demptowo
+17549;2025/OGM/0004;38;F;internet;Chwarzno-Wiczlino
+17550;2025/OGM/0004,2025/OGM/0012;47;F;internet;Śródmieście
+17551;2025/OGM/0004;43;M;internet;Pustki Cisowskie-Demptowo
+17552;2025/OGM/0004;53;M;internet;Cisowa
+17553;2025/OGM/0004,2025/OGM/0012;37;F;internet;Witomino
+17554;2025/OGM/0004,2025/OGM/0012;27;M;internet;Pustki Cisowskie-Demptowo
+17555;2025/OGM/0004;8;F;internet;Redłowo
+17556;2025/OGM/0004;42;M;internet;Wielki Kack
+17557;2025/OGM/0004;75;F;internet;Pustki Cisowskie-Demptowo
+17558;2025/OGM/0004,2025/OGM/0012;49;M;internet;Babie Doły
+17559;2025/OGM/0004,2025/OGM/0012;42;M;internet;Mały Kack
+17560;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+17561;2025/OGM/0004,2025/OGM/0012;45;F;internet;Śródmieście
+17562;2025/OGM/0004;36;M;internet;Dąbrowa
+17563;2025/OGM/0004;2;M;internet;Wielki Kack
+17564;2025/OGM/0004,2025/OGM/0012;61;M;internet;Wielki Kack
+17565;2025/OGM/0004;41;M;internet;Redłowo
+17566;2025/OGM/0004,2025/OGM/0012;16;M;internet;Babie Doły
+17567;2025/OGM/0004;67;F;internet;Wielki Kack
+17568;2025/OGM/0012;44;F;internet;Witomino
+17570;2025/OGM/0004,2025/OGM/0012;13;F;internet;Chwarzno-Wiczlino
+17571;2025/OGM/0004;5;F;internet;Redłowo
+17572;2025/OGM/0004;69;M;internet;Wielki Kack
+17573;2025/OGM/0004;81;M;internet;Karwiny
+17574;2025/OGM/0004;43;F;internet;Cisowa
+17575;2025/OGM/0004;33;M;internet;Mały Kack
+17576;2025/OGM/0004;40;M;internet;Redłowo
+17577;2025/OGM/0004,2025/OGM/0012;14;M;internet;Oksywie
+17578;2025/OGM/0004;50;M;internet;Redłowo
+17579;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+17580;2025/OGM/0004,2025/OGM/0012;13;M;internet;Witomino
+17581;2025/OGM/0004;39;F;internet;Wielki Kack
+17582;2025/OGM/0004;70;F;internet;Oksywie
+17584;2025/OGM/0004,2025/OGM/0012;8;M;internet;Babie Doły
+17585;2025/OGM/0012;16;F;internet;Wielki Kack
+17587;2025/OGM/0004;44;M;internet;Chylonia
+17588;2025/OGM/0004;4;F;internet;Mały Kack
+17589;2025/OGM/0012;7;M;internet;Witomino
+17590;2025/OGM/0004;53;F;internet;Śródmieście
+17591;2025/OGM/0004;41;F;internet;Chwarzno-Wiczlino
+17592;2025/OGM/0004,2025/OGM/0012;43;F;internet;Witomino
+17593;2025/OGM/0004;59;M;internet;Wielki Kack
+17594;2025/OGM/0012;17;F;internet;Wielki Kack
+17595;2025/OGM/0004,2025/OGM/0012;25;F;internet;Mały Kack
+17596;2025/OGM/0004;8;M;internet;Mały Kack
+17597;2025/OGM/0004;9;M;internet;Dąbrowa
+17598;2025/OGM/0004;29;M;internet;Wielki Kack
+17599;2025/OGM/0004,2025/OGM/0012;30;M;internet;Redłowo
+17601;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+17602;2025/OGM/0004,2025/OGM/0012;56;F;internet;Orłowo
+17603;2025/OGM/0004;4;M;internet;Dąbrowa
+17604;2025/OGM/0004,2025/OGM/0012;73;M;internet;Oksywie
+17605;2025/OGM/0004;49;F;internet;Dąbrowa
+17606;2025/OGM/0004;63;F;internet;Dąbrowa
+17608;2025/OGM/0004;28;M;internet;Śródmieście
+17609;2025/OGM/0004;46;F;internet;Pustki Cisowskie-Demptowo
+17611;2025/OGM/0004,2025/OGM/0012;42;F;internet;Wielki Kack
+17612;2025/OGM/0004;41;F;internet;Oksywie
+17614;2025/OGM/0004;37;F;internet;Karwiny
+17615;2025/OGM/0004,2025/OGM/0012;27;F;internet;Śródmieście
+17617;2025/OGM/0004;38;M;internet;Witomino
+17618;2025/OGM/0012;47;F;internet;Pustki Cisowskie-Demptowo
+17619;2025/OGM/0004;40;M;internet;Wielki Kack
+17620;2025/OGM/0004,2025/OGM/0012;50;M;internet;Chwarzno-Wiczlino
+17621;2025/OGM/0004,2025/OGM/0012;33;F;internet;Mały Kack
+17622;2025/OGM/0004;39;M;internet;Oksywie
+17623;2025/OGM/0004;59;F;internet;Oksywie
+17624;2025/OGM/0004,2025/OGM/0012;38;F;internet;Obłuże
+17625;2025/OGM/0004,2025/OGM/0012;41;F;internet;Redłowo
+17626;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+17627;2025/OGM/0004;48;M;internet;Mały Kack
+17628;2025/OGM/0004,2025/OGM/0012;46;M;internet;Chylonia
+17629;2025/OGM/0004,2025/OGM/0012;33;M;internet;Mały Kack
+17630;2025/OGM/0004;11;M;internet;Śródmieście
+17631;2025/OGM/0004;;M;internet;Wielki Kack
+17632;2025/OGM/0004;17;F;internet;Pustki Cisowskie-Demptowo
+17633;2025/OGM/0004;70;M;internet;Chylonia
+17634;2025/OGM/0004,2025/OGM/0012;41;M;internet;Wielki Kack
+17635;2025/OGM/0012;19;F;internet;Pustki Cisowskie-Demptowo
+17637;2025/OGM/0004,2025/OGM/0012;69;F;internet;Śródmieście
+17638;2025/OGM/0004;85;F;internet;Mały Kack
+17639;2025/OGM/0004;35;M;internet;Dąbrowa
+17640;2025/OGM/0004;8;M;internet;Wielki Kack
+17641;2025/OGM/0004;13;F;internet;Śródmieście
+17642;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+17643;2025/OGM/0004,2025/OGM/0012;33;F;internet;Oksywie
+17644;2025/OGM/0004;73;F;internet;Chylonia
+17645;2025/OGM/0004,2025/OGM/0012;4;F;internet;Mały Kack
+17646;2025/OGM/0004;7;M;internet;Wielki Kack
+17647;2025/OGM/0004;14;F;internet;Pustki Cisowskie-Demptowo
+17648;2025/OGM/0004,2025/OGM/0012;5;F;internet;Oksywie
+17649;2025/OGM/0004;28;M;internet;Cisowa
+17650;2025/OGM/0004;34;F;internet;Dąbrowa
+17652;2025/OGM/0004,2025/OGM/0012;2;M;internet;Mały Kack
+17653;2025/OGM/0004;20;F;internet;Dąbrowa
+17654;2025/OGM/0004;85;M;internet;Chwarzno-Wiczlino
+17655;2025/OGM/0004;57;F;internet;Wielki Kack
+17656;2025/OGM/0004,2025/OGM/0012;46;F;internet;Wzgórze Św. Maksymiliana
+17657;2025/OGM/0004;52;M;internet;Wielki Kack
+17659;2025/OGM/0004;34;M;internet;Witomino
+17660;2025/OGM/0004,2025/OGM/0012;73;M;internet;Śródmieście
+17662;2025/OGM/0004,2025/OGM/0012;90;F;internet;Wielki Kack
+17663;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+17664;2025/OGM/0004,2025/OGM/0012;28;F;internet;Orłowo
+17665;2025/OGM/0004;33;F;internet;Witomino
+17666;2025/OGM/0004,2025/OGM/0012;39;M;internet;Leszczynki
+17667;2025/OGM/0004;85;F;internet;Wzgórze Św. Maksymiliana
+17668;2025/OGM/0012;44;F;internet;Śródmieście
+17669;2025/OGM/0012;14;F;internet;Wielki Kack
+17670;2025/OGM/0004;8;M;internet;Pustki Cisowskie-Demptowo
+17671;2025/OGM/0012;10;M;internet;Wielki Kack
+17672;2025/OGM/0004;33;F;internet;Witomino
+17674;2025/OGM/0004;33;F;internet;Dąbrowa
+17675;2025/OGM/0004;45;F;internet;Pustki Cisowskie-Demptowo
+17676;2025/OGM/0004;15;F;internet;Wielki Kack
+17677;2025/OGM/0004;35;M;internet;Chwarzno-Wiczlino
+17678;2025/OGM/0004;36;M;internet;Dąbrowa
+17679;2025/OGM/0004,2025/OGM/0012;72;F;internet;Mały Kack
+17680;2025/OGM/0012;72;M;internet;Śródmieście
+17681;2025/OGM/0004;39;M;internet;Wielki Kack
+17683;2025/OGM/0004;43;F;internet;Wzgórze Św. Maksymiliana
+17684;2025/OGM/0012;11;M;internet;Mały Kack
+17685;2025/OGM/0004,2025/OGM/0012;39;F;internet;Chylonia
+17686;2025/OGM/0012;12;F;internet;Wielki Kack
+17688;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+17689;2025/OGM/0004,2025/OGM/0012;71;F;internet;Wielki Kack
+17690;2025/OGM/0004;25;F;internet;Mały Kack
+17692;2025/OGM/0004;31;M;internet;Dąbrowa
+17694;2025/OGM/0004;47;M;internet;Orłowo
+17695;2025/OGM/0004,2025/OGM/0012;42;F;internet;Mały Kack
+17696;2025/OGM/0004;33;F;internet;Cisowa
+17697;2025/OGM/0004;37;F;internet;Wielki Kack
+17698;2025/OGM/0004;5;F;internet;Wielki Kack
+17699;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+17700;2025/OGM/0004;28;F;internet;Wielki Kack
+17701;2025/OGM/0004;60;F;internet;Pogórze
+17702;2025/OGM/0004,2025/OGM/0012;13;F;internet;Mały Kack
+17703;2025/OGM/0004,2025/OGM/0012;41;F;internet;Wielki Kack
+17704;2025/OGM/0012;15;M;internet;Śródmieście
+17705;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wzgórze Św. Maksymiliana
+17706;2025/OGM/0012;35;F;internet;Pogórze
+17707;2025/OGM/0004;44;F;internet;Witomino
+17708;2025/OGM/0004;41;M;internet;Chwarzno-Wiczlino
+17709;2025/OGM/0004;45;M;internet;Wielki Kack
+17710;2025/OGM/0004,2025/OGM/0012;43;M;internet;Wzgórze Św. Maksymiliana
+17711;2025/OGM/0004,2025/OGM/0012;71;F;internet;Karwiny
+17712;2025/OGM/0004;54;F;internet;Karwiny
+17713;2025/OGM/0012;14;F;internet;Mały Kack
+17714;2025/OGM/0004;32;M;internet;Wzgórze Św. Maksymiliana
+17715;2025/OGM/0004;45;M;internet;Wielki Kack
+17716;2025/OGM/0004,2025/OGM/0012;7;F;internet;Wielki Kack
+17717;2025/OGM/0004;13;M;internet;
+17718;2025/OGM/0012;61;F;internet;Redłowo
+17719;2025/OGM/0004,2025/OGM/0012;28;M;internet;Witomino
+17720;2025/OGM/0012;37;M;internet;Wzgórze Św. Maksymiliana
+17721;2025/OGM/0004;48;F;internet;Wielki Kack
+17722;2025/OGM/0004;13;F;internet;Wielki Kack
+17723;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+17724;2025/OGM/0004;80;F;internet;Pogórze
+17725;2025/OGM/0004;39;F;internet;Witomino
+17726;2025/OGM/0012;45;M;internet;Witomino
+17727;2025/OGM/0004,2025/OGM/0012;61;F;internet;Chwarzno-Wiczlino
+17728;2025/OGM/0004,2025/OGM/0012;70;F;internet;Wzgórze Św. Maksymiliana
+17730;2025/OGM/0004;49;F;internet;Wielki Kack
+17731;2025/OGM/0004;7;M;internet;Witomino
+17732;2025/OGM/0004,2025/OGM/0012;63;M;internet;Chwarzno-Wiczlino
+17733;2025/OGM/0004;11;M;internet;Wielki Kack
+17735;2025/OGM/0012;37;M;internet;Śródmieście
+17736;2025/OGM/0004,2025/OGM/0012;6;M;internet;Witomino
+17737;2025/OGM/0004,2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+17738;2025/OGM/0012;37;M;internet;Oksywie
+17739;2025/OGM/0004;58;F;internet;Wzgórze Św. Maksymiliana
+17742;2025/OGM/0012;75;M;internet;Śródmieście
+17743;2025/OGM/0004;38;M;internet;Dąbrowa
+17744;2025/OGM/0004,2025/OGM/0012;36;F;internet;Chwarzno-Wiczlino
+17745;2025/OGM/0004,2025/OGM/0012;4;M;internet;Witomino
+17746;2025/OGM/0004,2025/OGM/0012;44;F;internet;Orłowo
+17748;2025/OGM/0004;7;M;internet;Dąbrowa
+17751;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+17752;2025/OGM/0004,2025/OGM/0012;49;M;internet;Wielki Kack
+17753;2025/OGM/0004;33;M;internet;Chwarzno-Wiczlino
+17754;2025/OGM/0004,2025/OGM/0012;47;M;internet;Dąbrowa
+17755;2025/OGM/0004;44;F;internet;Chwarzno-Wiczlino
+17756;2025/OGM/0004,2025/OGM/0012;47;M;internet;Działki Leśne
+17757;2025/OGM/0004,2025/OGM/0012;3;F;internet;Mały Kack
+17759;2025/OGM/0004;73;F;internet;Wielki Kack
+17760;2025/OGM/0012;28;F;internet;Działki Leśne
+17761;2025/OGM/0004;33;F;internet;Wielki Kack
+17763;2025/OGM/0004,2025/OGM/0012;58;M;internet;Leszczynki
+17764;2025/OGM/0012;78;F;internet;Witomino
+17765;2025/OGM/0004;63;F;internet;Karwiny
+17766;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+17767;2025/OGM/0004;41;M;internet;Wielki Kack
+17769;2025/OGM/0012;9;F;internet;Mały Kack
+17770;2025/OGM/0004;77;M;internet;Wzgórze Św. Maksymiliana
+17771;2025/OGM/0012;8;F;internet;Działki Leśne
+17772;2025/OGM/0004;77;M;internet;Pustki Cisowskie-Demptowo
+17773;2025/OGM/0004,2025/OGM/0012;40;M;internet;Mały Kack
+17774;2025/OGM/0004;42;M;internet;Chwarzno-Wiczlino
+17775;2025/OGM/0012;18;F;internet;Witomino
+17776;2025/OGM/0004,2025/OGM/0012;36;F;internet;Cisowa
+17777;2025/OGM/0004,2025/OGM/0012;5;M;internet;Mały Kack
+17778;2025/OGM/0004;27;M;internet;Dąbrowa
+17779;2025/OGM/0004,2025/OGM/0012;34;M;internet;Chwarzno-Wiczlino
+17780;2025/OGM/0004;42;F;internet;Mały Kack
+17781;2025/OGM/0012;38;F;internet;Cisowa
+17782;2025/OGM/0004;35;M;internet;Mały Kack
+17784;2025/OGM/0004,2025/OGM/0012;17;M;internet;Działki Leśne
+17785;2025/OGM/0004;76;F;internet;Wzgórze Św. Maksymiliana
+17786;2025/OGM/0004;70;F;internet;Pustki Cisowskie-Demptowo
+17787;2025/OGM/0012;3;F;internet;Witomino
+17788;2025/OGM/0004;18;F;internet;Oksywie
+17789;2025/OGM/0004;41;F;internet;Mały Kack
+17790;2025/OGM/0004,2025/OGM/0012;9;M;internet;Witomino
+17791;2025/OGM/0004;9;M;internet;Chwarzno-Wiczlino
+17793;2025/OGM/0012;26;M;internet;Leszczynki
+17794;2025/OGM/0004;24;M;internet;Chylonia
+17795;2025/OGM/0004,2025/OGM/0012;15;F;internet;Działki Leśne
+17796;2025/OGM/0004;71;F;internet;Wzgórze Św. Maksymiliana
+17798;2025/OGM/0004;31;M;internet;Wielki Kack
+17799;2025/OGM/0012;31;M;internet;Witomino
+17800;2025/OGM/0004,2025/OGM/0012;74;F;internet;Witomino
+17801;2025/OGM/0004;78;F;internet;Mały Kack
+17802;2025/OGM/0004,2025/OGM/0012;49;M;internet;Chwarzno-Wiczlino
+17803;2025/OGM/0004,2025/OGM/0012;41;M;internet;Dąbrowa
+17804;2025/OGM/0004;70;F;internet;Chwarzno-Wiczlino
+17805;2025/OGM/0004,2025/OGM/0012;53;F;internet;Redłowo
+17806;2025/OGM/0004;14;M;internet;Oksywie
+17807;2025/OGM/0012;45;M;internet;Mały Kack
+17808;2025/OGM/0004,2025/OGM/0012;30;F;internet;Wzgórze Św. Maksymiliana
+17809;2025/OGM/0004,2025/OGM/0012;42;M;internet;Pogórze
+17810;2025/OGM/0004;51;F;internet;Wzgórze Św. Maksymiliana
+17812;2025/OGM/0004;7;M;internet;Chwarzno-Wiczlino
+17813;2025/OGM/0012;47;F;internet;Chwarzno-Wiczlino
+17814;2025/OGM/0004,2025/OGM/0012;7;M;internet;Witomino
+17816;2025/OGM/0004;44;F;internet;Wzgórze Św. Maksymiliana
+17817;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+17818;2025/OGM/0004;8;M;internet;Mały Kack
+17819;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wzgórze Św. Maksymiliana
+17820;2025/OGM/0012;56;M;internet;Mały Kack
+17821;2025/OGM/0004,2025/OGM/0012;39;F;internet;Grabówek
+17822;2025/OGM/0004;21;M;internet;Wielki Kack
+17823;2025/OGM/0004;39;F;internet;Wzgórze Św. Maksymiliana
+17824;2025/OGM/0012;40;M;internet;Leszczynki
+17825;2025/OGM/0004,2025/OGM/0012;36;F;internet;Śródmieście
+17826;2025/OGM/0004;54;M;internet;Śródmieście
+17827;2025/OGM/0004;46;M;internet;Pustki Cisowskie-Demptowo
+17829;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+17830;2025/OGM/0004,2025/OGM/0012;40;F;internet;Działki Leśne
+17831;2025/OGM/0004,2025/OGM/0012;14;M;internet;Śródmieście
+17832;2025/OGM/0012;14;M;internet;Śródmieście
+17833;2025/OGM/0004,2025/OGM/0012;7;M;internet;Śródmieście
+17834;2025/OGM/0004;96;F;internet;Wzgórze Św. Maksymiliana
+17835;2025/OGM/0004,2025/OGM/0012;14;F;internet;Karwiny
+17836;2025/OGM/0004;15;M;internet;Śródmieście
+17837;2025/OGM/0012;14;F;internet;Pustki Cisowskie-Demptowo
+17838;2025/OGM/0012;41;F;internet;Chylonia
+17839;2025/OGM/0004,2025/OGM/0012;14;F;internet;Chwarzno-Wiczlino
+17840;2025/OGM/0012;72;F;internet;Dąbrowa
+17841;2025/OGM/0004;8;F;internet;Wielki Kack
+17842;2025/OGM/0004,2025/OGM/0012;4;M;internet;Śródmieście
+17843;2025/OGM/0004;13;F;internet;Wielki Kack
+17844;2025/OGM/0004;11;M;internet;Mały Kack
+17845;2025/OGM/0004;39;M;internet;Dąbrowa
+17846;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wielki Kack
+17847;2025/OGM/0004;37;M;internet;Dąbrowa
+17848;2025/OGM/0004;39;F;internet;Chwarzno-Wiczlino
+17849;2025/OGM/0004,2025/OGM/0012;14;F;internet;Wzgórze Św. Maksymiliana
+17850;2025/OGM/0004,2025/OGM/0012;14;M;internet;Mały Kack
+17851;2025/OGM/0004,2025/OGM/0012;14;M;internet;Śródmieście
+17852;2025/OGM/0004;40;F;internet;Chylonia
+17853;2025/OGM/0004,2025/OGM/0012;45;F;internet;Witomino
+17854;2025/OGM/0012;43;F;internet;Mały Kack
+17855;2025/OGM/0004;36;F;internet;Mały Kack
+17856;2025/OGM/0012;8;F;internet;Mały Kack
+17857;2025/OGM/0004;68;F;internet;Dąbrowa
+17858;2025/OGM/0004;23;F;internet;Chwarzno-Wiczlino
+17859;2025/OGM/0004;35;M;internet;Wielki Kack
+17860;2025/OGM/0004;43;M;internet;Chwarzno-Wiczlino
+17861;2025/OGM/0004;34;F;internet;Pogórze
+17862;2025/OGM/0004,2025/OGM/0012;39;M;internet;Działki Leśne
+17863;2025/OGM/0004;38;M;internet;Chwarzno-Wiczlino
+17864;2025/OGM/0012;55;F;internet;Mały Kack
+17865;2025/OGM/0004,2025/OGM/0012;49;F;internet;Witomino
+17866;2025/OGM/0004;36;M;internet;Chwarzno-Wiczlino
+17867;2025/OGM/0004;47;F;internet;Śródmieście
+17868;2025/OGM/0012;43;M;internet;Mały Kack
+17869;2025/OGM/0004;47;M;internet;Wzgórze Św. Maksymiliana
+17871;2025/OGM/0012;55;F;internet;Witomino
+17872;2025/OGM/0004,2025/OGM/0012;40;F;internet;Dąbrowa
+17873;2025/OGM/0012;29;F;internet;Pustki Cisowskie-Demptowo
+17874;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+17875;2025/OGM/0004,2025/OGM/0012;64;F;internet;Oksywie
+17876;2025/OGM/0004,2025/OGM/0012;51;M;internet;Oksywie
+17877;2025/OGM/0004;45;F;internet;Wielki Kack
+17878;2025/OGM/0004,2025/OGM/0012;43;M;internet;Chwarzno-Wiczlino
+17879;2025/OGM/0012;16;F;internet;Wzgórze Św. Maksymiliana
+17880;2025/OGM/0004;46;M;internet;Kamienna Góra
+17881;2025/OGM/0004,2025/OGM/0012;11;M;internet;Dąbrowa
+17882;2025/OGM/0004;5;F;internet;Chwarzno-Wiczlino
+17883;2025/OGM/0004;41;M;internet;Redłowo
+17884;2025/OGM/0004;38;M;internet;Dąbrowa
+17885;2025/OGM/0004;79;F;internet;Witomino
+17886;2025/OGM/0004;39;M;internet;Mały Kack
+17887;2025/OGM/0004;6;M;internet;Witomino
+17888;2025/OGM/0004,2025/OGM/0012;44;F;internet;Mały Kack
+17889;2025/OGM/0004;49;F;internet;Karwiny
+17890;2025/OGM/0004,2025/OGM/0012;7;F;internet;Dąbrowa
+17892;2025/OGM/0004;66;F;internet;Wzgórze Św. Maksymiliana
+17893;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+17894;2025/OGM/0012;17;M;internet;Mały Kack
+17895;2025/OGM/0004;2;M;internet;Chwarzno-Wiczlino
+17896;2025/OGM/0004;19;F;internet;Wielki Kack
+17897;2025/OGM/0004,2025/OGM/0012;44;F;internet;Mały Kack
+17898;2025/OGM/0004,2025/OGM/0012;61;M;internet;Dąbrowa
+17899;2025/OGM/0004;10;F;internet;Wielki Kack
+17900;2025/OGM/0004,2025/OGM/0012;34;F;internet;Chwarzno-Wiczlino
+17901;2025/OGM/0004;62;F;internet;Mały Kack
+17902;2025/OGM/0012;77;F;internet;Mały Kack
+17903;2025/OGM/0004;14;F;internet;Karwiny
+17904;2025/OGM/0004;42;M;internet;Mały Kack
+17905;2025/OGM/0012;51;F;internet;Witomino
+17906;2025/OGM/0004,2025/OGM/0012;60;F;internet;Dąbrowa
+17907;2025/OGM/0012;57;M;internet;Witomino
+17908;2025/OGM/0004,2025/OGM/0012;52;F;internet;Śródmieście
+17909;2025/OGM/0004;34;F;internet;Dąbrowa
+17910;2025/OGM/0004,2025/OGM/0012;33;M;internet;Witomino
+17911;2025/OGM/0004,2025/OGM/0012;6;F;internet;Oksywie
+17912;2025/OGM/0004,2025/OGM/0012;22;M;internet;Dąbrowa
+17913;2025/OGM/0004;14;F;internet;Karwiny
+17914;2025/OGM/0012;36;F;internet;Śródmieście
+17915;2025/OGM/0004;28;F;internet;Śródmieście
+17916;2025/OGM/0004,2025/OGM/0012;14;M;internet;Wzgórze Św. Maksymiliana
+17917;2025/OGM/0004;13;F;internet;Wielki Kack
+17918;2025/OGM/0004,2025/OGM/0012;4;M;internet;Oksywie
+17919;2025/OGM/0004;51;F;internet;Grabówek
+17920;2025/OGM/0004,2025/OGM/0012;4;M;internet;Chwarzno-Wiczlino
+17921;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+17922;2025/OGM/0004;46;F;internet;Wielki Kack
+17923;2025/OGM/0004,2025/OGM/0012;88;F;internet;Mały Kack
+17924;2025/OGM/0004,2025/OGM/0012;52;F;internet;Witomino
+17925;2025/OGM/0004,2025/OGM/0012;75;F;internet;Redłowo
+17926;2025/OGM/0004,2025/OGM/0012;36;M;internet;Oksywie
+17927;2025/OGM/0004,2025/OGM/0012;33;M;internet;Działki Leśne
+17928;2025/OGM/0004;11;F;internet;Grabówek
+17929;2025/OGM/0004;73;M;internet;Wzgórze Św. Maksymiliana
+17930;2025/OGM/0004,2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+17931;2025/OGM/0004;15;F;internet;Wielki Kack
+17932;2025/OGM/0004;38;F;internet;Redłowo
+17933;2025/OGM/0004,2025/OGM/0012;49;F;internet;Obłuże
+17934;2025/OGM/0004;48;M;internet;Wzgórze Św. Maksymiliana
+17935;2025/OGM/0004,2025/OGM/0012;14;F;internet;Działki Leśne
+17936;2025/OGM/0004;65;M;internet;Oksywie
+17937;2025/OGM/0004,2025/OGM/0012;26;M;internet;Chwarzno-Wiczlino
+17938;2025/OGM/0004;93;F;internet;Wzgórze Św. Maksymiliana
+17939;2025/OGM/0012;79;F;internet;Wielki Kack
+17940;2025/OGM/0012;38;M;internet;Chwarzno-Wiczlino
+17941;2025/OGM/0004,2025/OGM/0012;44;M;internet;Mały Kack
+17942;2025/OGM/0004,2025/OGM/0012;47;F;internet;Wielki Kack
+17943;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+17944;2025/OGM/0004;54;F;internet;Grabówek
+17946;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+17947;2025/OGM/0012;38;F;internet;Chwarzno-Wiczlino
+17948;2025/OGM/0004;40;F;internet;Mały Kack
+17949;2025/OGM/0004,2025/OGM/0012;40;M;internet;Dąbrowa
+17950;2025/OGM/0004;64;F;internet;Oksywie
+17951;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+17952;2025/OGM/0004;24;F;internet;Chwarzno-Wiczlino
+17953;2025/OGM/0004,2025/OGM/0012;33;M;internet;Chwarzno-Wiczlino
+17954;2025/OGM/0012;27;M;internet;Mały Kack
+17955;2025/OGM/0004;32;F;internet;Działki Leśne
+17956;2025/OGM/0004,2025/OGM/0012;72;M;internet;Grabówek
+17957;2025/OGM/0004,2025/OGM/0012;14;F;internet;Mały Kack
+17958;2025/OGM/0004;43;F;internet;Wielki Kack
+17959;2025/OGM/0004,2025/OGM/0012;21;F;internet;Redłowo
+17960;2025/OGM/0004;5;F;internet;Mały Kack
+17961;2025/OGM/0004;29;F;internet;Witomino
+17962;2025/OGM/0004;42;M;internet;Leszczynki
+17963;2025/OGM/0004;30;F;internet;Grabówek
+17964;2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+17966;2025/OGM/0012;30;F;internet;Chwarzno-Wiczlino
+17967;2025/OGM/0004;45;F;internet;Działki Leśne
+17968;2025/OGM/0004;58;F;internet;Witomino
+17969;2025/OGM/0012;24;M;internet;Witomino
+17970;2025/OGM/0004;15;F;internet;Wielki Kack
+17971;2025/OGM/0004;79;F;internet;Wzgórze Św. Maksymiliana
+17972;2025/OGM/0004;36;F;internet;Chylonia
+17973;2025/OGM/0004,2025/OGM/0012;57;M;internet;Śródmieście
+17974;2025/OGM/0004;27;F;internet;Wielki Kack
+17975;2025/OGM/0004;44;F;internet;Redłowo
+17976;2025/OGM/0004;41;F;internet;Redłowo
+17977;2025/OGM/0004,2025/OGM/0012;70;F;internet;Redłowo
+17978;2025/OGM/0012;34;F;internet;Redłowo
+17979;2025/OGM/0004;30;M;internet;Redłowo
+17980;2025/OGM/0004;19;M;internet;Dąbrowa
+17981;2025/OGM/0004;9;M;internet;Wielki Kack
+17982;2025/OGM/0004,2025/OGM/0012;36;F;internet;Wzgórze Św. Maksymiliana
+17983;2025/OGM/0012;4;F;internet;Chwarzno-Wiczlino
+17984;2025/OGM/0004;36;M;internet;Śródmieście
+17985;2025/OGM/0004;42;F;internet;Chwarzno-Wiczlino
+17987;2025/OGM/0004,2025/OGM/0012;37;F;internet;Pogórze
+17988;2025/OGM/0004,2025/OGM/0012;40;F;internet;Dąbrowa
+17989;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chwarzno-Wiczlino
+17990;2025/OGM/0004,2025/OGM/0012;69;F;internet;Grabówek
+17991;2025/OGM/0004;44;M;internet;Wielki Kack
+17992;2025/OGM/0004;53;M;internet;Chwarzno-Wiczlino
+17993;2025/OGM/0004,2025/OGM/0012;46;F;internet;Dąbrowa
+17994;2025/OGM/0004;22;M;internet;
+17995;2025/OGM/0004;79;F;internet;Chylonia
+17996;2025/OGM/0004,2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+17997;2025/OGM/0004;26;M;internet;Śródmieście
+17998;2025/OGM/0012;32;F;internet;Chwarzno-Wiczlino
+17999;2025/OGM/0004;58;F;internet;Pustki Cisowskie-Demptowo
+18000;2025/OGM/0004;15;F;internet;Dąbrowa
+18001;2025/OGM/0004;55;F;internet;Wzgórze Św. Maksymiliana
+18002;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+18003;2025/OGM/0004,2025/OGM/0012;40;M;internet;Chwarzno-Wiczlino
+18004;2025/OGM/0004;52;F;internet;Orłowo
+18005;2025/OGM/0004,2025/OGM/0012;68;F;internet;Redłowo
+18006;2025/OGM/0004,2025/OGM/0012;66;M;internet;Dąbrowa
+18007;2025/OGM/0004;41;F;internet;Pogórze
+18008;2025/OGM/0012;41;F;internet;Chwarzno-Wiczlino
+18009;2025/OGM/0004;33;F;internet;Leszczynki
+18010;2025/OGM/0004;13;M;internet;Działki Leśne
+18011;2025/OGM/0004;46;F;internet;Witomino
+18012;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+18013;2025/OGM/0004,2025/OGM/0012;42;F;internet;Karwiny
+18014;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+18015;2025/OGM/0004;7;F;internet;Redłowo
+18016;2025/OGM/0004;41;F;internet;Karwiny
+18017;2025/OGM/0004;37;F;internet;Chwarzno-Wiczlino
+18018;2025/OGM/0004;62;M;internet;Chylonia
+18019;2025/OGM/0012;13;M;internet;Chwarzno-Wiczlino
+18020;2025/OGM/0004,2025/OGM/0012;17;M;internet;Wielki Kack
+18021;2025/OGM/0004;42;M;internet;Witomino
+18022;2025/OGM/0004;91;M;internet;Pustki Cisowskie-Demptowo
+18023;2025/OGM/0004,2025/OGM/0012;11;F;internet;Mały Kack
+18024;2025/OGM/0012;48;M;internet;Chwarzno-Wiczlino
+18025;2025/OGM/0004;25;M;internet;Babie Doły
+18026;2025/OGM/0004;45;F;internet;Mały Kack
+18027;2025/OGM/0004,2025/OGM/0012;59;F;internet;Śródmieście
+18028;2025/OGM/0004,2025/OGM/0012;21;M;internet;Chwarzno-Wiczlino
+18029;2025/OGM/0004;9;M;internet;Mały Kack
+18030;2025/OGM/0004;45;F;internet;Witomino
+18031;2025/OGM/0012;69;M;internet;Chwarzno-Wiczlino
+18032;2025/OGM/0004,2025/OGM/0012;43;M;internet;Dąbrowa
+18033;2025/OGM/0004,2025/OGM/0012;26;F;internet;Chylonia
+18034;2025/OGM/0004;60;M;internet;Pustki Cisowskie-Demptowo
+18035;2025/OGM/0004;34;M;internet;Śródmieście
+18037;2025/OGM/0004;34;F;internet;Witomino
+18038;2025/OGM/0004;39;M;internet;Oksywie
+18039;2025/OGM/0004;12;M;internet;Działki Leśne
+18040;2025/OGM/0004;79;F;internet;Chylonia
+18041;2025/OGM/0012;36;F;internet;Chylonia
+18042;2025/OGM/0004,2025/OGM/0012;69;M;internet;Śródmieście
+18043;2025/OGM/0004;30;M;internet;Grabówek
+18044;2025/OGM/0004,2025/OGM/0012;13;F;internet;Dąbrowa
+18045;2025/OGM/0004;43;M;internet;Dąbrowa
+18046;2025/OGM/0004;27;M;internet;Cisowa
+18047;2025/OGM/0004,2025/OGM/0012;9;M;internet;Chwarzno-Wiczlino
+18048;2025/OGM/0004;33;F;internet;Wielki Kack
+18049;2025/OGM/0004;52;M;internet;Orłowo
+18050;2025/OGM/0012;71;F;internet;Chwarzno-Wiczlino
+18051;2025/OGM/0004,2025/OGM/0012;1;M;internet;Chwarzno-Wiczlino
+18052;2025/OGM/0004;45;F;internet;Chwarzno-Wiczlino
+18053;2025/OGM/0004,2025/OGM/0012;13;M;internet;Dąbrowa
+18054;2025/OGM/0004,2025/OGM/0012;32;F;internet;Śródmieście
+18056;2025/OGM/0004,2025/OGM/0012;8;F;internet;Chwarzno-Wiczlino
+18057;2025/OGM/0012;62;F;internet;Chylonia
+18059;2025/OGM/0004,2025/OGM/0012;36;M;internet;Oksywie
+18060;2025/OGM/0004;5;F;internet;Redłowo
+18061;2025/OGM/0004,2025/OGM/0012;27;M;internet;Śródmieście
+18062;2025/OGM/0004;40;F;internet;Obłuże
+18063;2025/OGM/0004,2025/OGM/0012;14;M;internet;Wielki Kack
+18064;2025/OGM/0004;27;M;internet;Dąbrowa
+18065;2025/OGM/0004;26;M;internet;Grabówek
+18066;2025/OGM/0004;17;M;internet;Mały Kack
+18067;2025/OGM/0004,2025/OGM/0012;26;F;internet;Oksywie
+18068;2025/OGM/0004,2025/OGM/0012;22;F;internet;Wielki Kack
+18069;2025/OGM/0004;32;M;internet;Witomino
+18070;2025/OGM/0004;30;F;internet;Oksywie
+18071;2025/OGM/0012;65;F;internet;Mały Kack
+18072;2025/OGM/0004;26;F;internet;Chylonia
+18073;2025/OGM/0004;12;F;internet;Mały Kack
+18074;2025/OGM/0004;38;F;internet;Mały Kack
+18075;2025/OGM/0012;6;F;internet;Chwarzno-Wiczlino
+18076;2025/OGM/0004;40;F;internet;Pustki Cisowskie-Demptowo
+18077;2025/OGM/0004,2025/OGM/0012;47;F;internet;Cisowa
+18078;2025/OGM/0004;47;M;internet;Mały Kack
+18079;2025/OGM/0004;32;F;internet;Oksywie
+18080;2025/OGM/0004;23;F;internet;Orłowo
+18081;2025/OGM/0012;32;M;internet;Chwarzno-Wiczlino
+18082;2025/OGM/0004,2025/OGM/0012;37;F;internet;Obłuże
+18083;2025/OGM/0004;10;M;internet;Działki Leśne
+18084;2025/OGM/0004;15;F;internet;Mały Kack
+18085;2025/OGM/0004,2025/OGM/0012;16;M;internet;Chwarzno-Wiczlino
+18086;2025/OGM/0012;62;M;internet;Chwarzno-Wiczlino
+18087;2025/OGM/0004;34;F;internet;Obłuże
+18088;2025/OGM/0004;44;M;internet;Chwarzno-Wiczlino
+18089;2025/OGM/0004;77;F;internet;Chylonia
+18090;2025/OGM/0004;29;F;internet;Oksywie
+18091;2025/OGM/0004;9;M;internet;Mały Kack
+18092;2025/OGM/0004;23;M;internet;Wielki Kack
+18093;2025/OGM/0012;65;F;internet;Dąbrowa
+18094;2025/OGM/0004,2025/OGM/0012;42;F;internet;Chwarzno-Wiczlino
+18095;2025/OGM/0004,2025/OGM/0012;46;M;internet;Redłowo
+18096;2025/OGM/0004,2025/OGM/0012;29;M;internet;Grabówek
+18097;2025/OGM/0004;87;F;internet;Dąbrowa
+18098;2025/OGM/0012;25;F;internet;Obłuże
+18099;2025/OGM/0004,2025/OGM/0012;;F;internet;Chylonia
+18100;2025/OGM/0004;42;F;internet;Wielki Kack
+18101;2025/OGM/0004,2025/OGM/0012;35;F;internet;Chwarzno-Wiczlino
+18102;2025/OGM/0004;32;F;internet;Chwarzno-Wiczlino
+18103;2025/OGM/0004;55;M;internet;Witomino
+18104;2025/OGM/0004;26;F;internet;Grabówek
+18105;2025/OGM/0012;57;M;internet;Śródmieście
+18106;2025/OGM/0012;43;F;internet;Działki Leśne
+18107;2025/OGM/0004,2025/OGM/0012;41;F;internet;Śródmieście
+18108;2025/OGM/0004;12;F;internet;Karwiny
+18109;2025/OGM/0012;37;M;internet;Chylonia
+18110;2025/OGM/0004;85;M;internet;Orłowo
+18111;2025/OGM/0004;55;F;internet;Chylonia
+18112;2025/OGM/0004;33;F;internet;Oksywie
+18113;2025/OGM/0004,2025/OGM/0012;22;F;internet;Pustki Cisowskie-Demptowo
+18114;2025/OGM/0004;32;F;internet;Redłowo
+18115;2025/OGM/0004;75;M;internet;Wzgórze Św. Maksymiliana
+18116;2025/OGM/0004,2025/OGM/0012;35;F;internet;Leszczynki
+18117;2025/OGM/0004,2025/OGM/0012;42;M;internet;Kamienna Góra
+18118;2025/OGM/0004;45;F;internet;Wielki Kack
+18119;2025/OGM/0012;23;M;internet;Chylonia
+18120;2025/OGM/0004,2025/OGM/0012;50;F;internet;Śródmieście
+18121;2025/OGM/0004;41;F;internet;Dąbrowa
+18122;2025/OGM/0004;17;F;internet;Witomino
+18123;2025/OGM/0004;45;M;internet;Działki Leśne
+18124;2025/OGM/0004;58;F;internet;Mały Kack
+18125;2025/OGM/0004;41;F;internet;Mały Kack
+18126;2025/OGM/0004;38;F;internet;Wzgórze Św. Maksymiliana
+18127;2025/OGM/0004;44;F;internet;Kamienna Góra
+18128;2025/OGM/0004;2;M;internet;Chylonia
+18129;2025/OGM/0004;36;M;internet;Dąbrowa
+18130;2025/OGM/0004;36;F;internet;Mały Kack
+18131;2025/OGM/0004;76;F;internet;Wzgórze Św. Maksymiliana
+18132;2025/OGM/0004;;M;internet;Chylonia
+18133;2025/OGM/0004,2025/OGM/0012;2;M;internet;Chwarzno-Wiczlino
+18134;2025/OGM/0004,2025/OGM/0012;80;M;internet;Kamienna Góra
+18136;2025/OGM/0004,2025/OGM/0012;45;M;internet;Mały Kack
+18137;2025/OGM/0004;36;M;internet;Wzgórze Św. Maksymiliana
+18139;2025/OGM/0004,2025/OGM/0012;46;F;internet;Działki Leśne
+18140;2025/OGM/0004,2025/OGM/0012;46;F;internet;Pogórze
+18141;2025/OGM/0012;54;M;internet;Orłowo
+18142;2025/OGM/0012;44;F;internet;Pogórze
+18143;2025/OGM/0004,2025/OGM/0012;68;F;internet;Chwarzno-Wiczlino
+18144;2025/OGM/0004,2025/OGM/0012;22;M;internet;Pustki Cisowskie-Demptowo
+18145;2025/OGM/0012;40;F;internet;Chylonia
+18146;2025/OGM/0004;49;M;internet;Wzgórze Św. Maksymiliana
+18147;2025/OGM/0004;37;M;internet;Pogórze
+18148;2025/OGM/0004;35;F;internet;Chwarzno-Wiczlino
+18149;2025/OGM/0012;48;F;internet;Śródmieście
+18150;2025/OGM/0004;32;F;internet;Pogórze
+18152;2025/OGM/0012;46;M;internet;Redłowo
+18153;2025/OGM/0004;30;M;internet;Chwarzno-Wiczlino
+18154;2025/OGM/0004;27;M;internet;Obłuże
+18156;2025/OGM/0004,2025/OGM/0012;66;F;internet;Dąbrowa
+18157;2025/OGM/0004;71;F;internet;Chwarzno-Wiczlino
+18158;2025/OGM/0004;73;M;internet;Kamienna Góra
+18159;2025/OGM/0004;26;F;internet;Leszczynki
+18160;2025/OGM/0004,2025/OGM/0012;41;F;internet;Witomino
+18161;2025/OGM/0004,2025/OGM/0012;37;F;internet;Chylonia
+18162;2025/OGM/0004;41;M;internet;Witomino
+18164;2025/OGM/0012;62;F;internet;Chwarzno-Wiczlino
+18165;2025/OGM/0004,2025/OGM/0012;34;F;internet;Wielki Kack
+18166;2025/OGM/0012;32;F;internet;Obłuże
+18168;2025/OGM/0004,2025/OGM/0012;19;M;internet;Karwiny
+18169;2025/OGM/0004,2025/OGM/0012;38;F;internet;Chylonia
+18170;2025/OGM/0004,2025/OGM/0012;60;F;internet;Redłowo
+18172;2025/OGM/0012;56;F;internet;Chwarzno-Wiczlino
+18173;2025/OGM/0004;47;M;internet;Mały Kack
+18174;2025/OGM/0004,2025/OGM/0012;16;F;internet;Wielki Kack
+18175;2025/OGM/0004;27;F;internet;Grabówek
+18176;2025/OGM/0004,2025/OGM/0012;47;F;internet;Witomino
+18177;2025/OGM/0004,2025/OGM/0012;4;F;internet;Chwarzno-Wiczlino
+18178;2025/OGM/0004,2025/OGM/0012;6;M;internet;Mały Kack
+18179;2025/OGM/0004;38;F;internet;Witomino
+18180;2025/OGM/0004,2025/OGM/0012;80;M;internet;Chwarzno-Wiczlino
+18181;2025/OGM/0004,2025/OGM/0012;39;F;internet;Obłuże
+18182;2025/OGM/0004,2025/OGM/0012;42;F;internet;Oksywie
+18183;2025/OGM/0004,2025/OGM/0012;71;F;internet;Chwarzno-Wiczlino
+18184;2025/OGM/0004;66;F;internet;Redłowo
+18185;2025/OGM/0004,2025/OGM/0012;29;F;internet;Grabówek
+18186;2025/OGM/0004;10;F;internet;Chylonia
+18187;2025/OGM/0012;29;F;internet;Dąbrowa
+18188;2025/OGM/0004;38;M;internet;Mały Kack
+18189;2025/OGM/0004,2025/OGM/0012;21;F;internet;Dąbrowa
+18190;2025/OGM/0004,2025/OGM/0012;7;M;internet;Chwarzno-Wiczlino
+18191;2025/OGM/0004;12;M;internet;Chwarzno-Wiczlino
+18193;2025/OGM/0004,2025/OGM/0012;24;M;internet;Chylonia
+18194;2025/OGM/0004,2025/OGM/0012;11;F;internet;Dąbrowa
+18195;2025/OGM/0004;41;F;internet;Mały Kack
+18196;2025/OGM/0004,2025/OGM/0012;34;F;internet;Orłowo
+18197;2025/OGM/0004;;F;internet;Oksywie
+18198;2025/OGM/0004;34;M;internet;Wielki Kack
+18199;2025/OGM/0004;39;M;internet;Leszczynki
+18200;2025/OGM/0004;44;M;internet;Grabówek
+18201;2025/OGM/0004;37;F;internet;Chylonia
+18202;2025/OGM/0004,2025/OGM/0012;11;F;internet;Wielki Kack
+18203;2025/OGM/0004;78;F;internet;Śródmieście
+18204;2025/OGM/0004;6;M;internet;Mały Kack
+18207;2025/OGM/0004,2025/OGM/0012;6;M;internet;Chylonia
+18208;2025/OGM/0004;84;F;internet;Redłowo
+18209;2025/OGM/0012;23;M;internet;Chylonia
+18211;2025/OGM/0004;73;M;internet;Wzgórze Św. Maksymiliana
+18212;2025/OGM/0012;36;M;internet;Witomino
+18214;2025/OGM/0004;72;F;internet;Działki Leśne
+18216;2025/OGM/0012;44;F;internet;Dąbrowa
+18217;2025/OGM/0012;56;M;internet;Chwarzno-Wiczlino
+18218;2025/OGM/0004,2025/OGM/0012;36;M;internet;Cisowa
+18219;2025/OGM/0012;37;F;internet;Chylonia
+18220;2025/OGM/0004,2025/OGM/0012;35;M;internet;Chwarzno-Wiczlino
+18221;2025/OGM/0004,2025/OGM/0012;38;F;internet;Śródmieście
+18222;2025/OGM/0004,2025/OGM/0012;36;F;internet;Witomino
+18223;2025/OGM/0004,2025/OGM/0012;36;F;internet;Oksywie
+18224;2025/OGM/0004,2025/OGM/0012;73;M;internet;Chwarzno-Wiczlino
+18225;2025/OGM/0012;40;F;internet;Witomino
+18226;2025/OGM/0004,2025/OGM/0012;7;M;internet;Wielki Kack
+18227;2025/OGM/0012;23;F;internet;Dąbrowa
+18228;2025/OGM/0004;29;M;internet;Chylonia
+18229;2025/OGM/0004;6;F;internet;Chwarzno-Wiczlino
+18230;2025/OGM/0004;18;F;internet;Mały Kack
+18231;2025/OGM/0004;43;F;internet;Wielki Kack
+18232;2025/OGM/0004;46;F;internet;Redłowo
+18233;2025/OGM/0004;34;F;internet;Mały Kack
+18234;2025/OGM/0004;28;F;internet;Chwarzno-Wiczlino
+18235;2025/OGM/0004;42;F;internet;Mały Kack
+18236;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+18237;2025/OGM/0004,2025/OGM/0012;29;M;internet;Chylonia
+18238;2025/OGM/0004,2025/OGM/0012;8;F;internet;Wielki Kack
+18239;2025/OGM/0004;81;F;internet;Witomino
+18240;2025/OGM/0004;2;M;internet;Wzgórze Św. Maksymiliana
+18241;2025/OGM/0012;55;F;internet;Śródmieście
+18242;2025/OGM/0004;37;F;internet;Karwiny
+18243;2025/OGM/0004,2025/OGM/0012;26;M;internet;Działki Leśne
+18244;2025/OGM/0004,2025/OGM/0012;8;M;internet;Orłowo
+18245;2025/OGM/0004;16;M;internet;Dąbrowa
+18246;2025/OGM/0012;57;F;internet;Chwarzno-Wiczlino
+18247;2025/OGM/0004;23;M;internet;Dąbrowa
+18248;2025/OGM/0004;4;F;internet;Chwarzno-Wiczlino
+18249;2025/OGM/0004,2025/OGM/0012;29;F;internet;Śródmieście
+18250;2025/OGM/0004,2025/OGM/0012;59;M;internet;Śródmieście
+18251;2025/OGM/0004;24;F;internet;Działki Leśne
+18252;2025/OGM/0004;40;F;internet;Witomino
+18253;2025/OGM/0004;53;F;internet;Śródmieście
+18254;2025/OGM/0004;43;F;internet;Chwarzno-Wiczlino
+18255;2025/OGM/0004;3;F;internet;Wielki Kack
+18256;2025/OGM/0004,2025/OGM/0012;45;M;internet;Chwarzno-Wiczlino
+18257;2025/OGM/0004;34;F;internet;Mały Kack
+18258;2025/OGM/0004,2025/OGM/0012;38;M;internet;Śródmieście
+18259;2025/OGM/0004;9;M;internet;Karwiny
+18260;2025/OGM/0004;40;M;internet;Mały Kack
+18261;2025/OGM/0004;42;F;internet;Grabówek
+18262;2025/OGM/0004,2025/OGM/0012;30;M;internet;Wzgórze Św. Maksymiliana
+18263;2025/OGM/0004;27;F;internet;Witomino
+18264;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+18265;2025/OGM/0012;19;F;internet;Wielki Kack
+18266;2025/OGM/0004;43;M;internet;Chylonia
+18267;2025/OGM/0004;50;F;internet;Chwarzno-Wiczlino
+18268;2025/OGM/0004;31;F;internet;Oksywie
+18269;2025/OGM/0004;48;M;internet;Witomino
+18270;2025/OGM/0004;6;F;internet;Wielki Kack
+18271;2025/OGM/0004;1;F;internet;Chwarzno-Wiczlino
+18272;2025/OGM/0004;6;M;internet;Karwiny
+18273;2025/OGM/0004,2025/OGM/0012;13;M;internet;Wielki Kack
+18274;2025/OGM/0004;34;M;internet;Oksywie
+18275;2025/OGM/0004;15;F;internet;Chwarzno-Wiczlino
+18276;2025/OGM/0004,2025/OGM/0012;65;F;internet;Wielki Kack
+18277;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+18278;2025/OGM/0004,2025/OGM/0012;14;M;internet;Chwarzno-Wiczlino
+18279;2025/OGM/0012;64;F;internet;Chylonia
+18280;2025/OGM/0012;44;F;internet;Chwarzno-Wiczlino
+18281;2025/OGM/0004,2025/OGM/0012;35;F;internet;Działki Leśne
+18282;2025/OGM/0004;8;F;internet;Grabówek
+18283;2025/OGM/0004,2025/OGM/0012;44;M;internet;Leszczynki
+18284;2025/OGM/0004;46;F;internet;Grabówek
+18285;2025/OGM/0004;37;M;internet;Karwiny
+18286;2025/OGM/0012;56;M;internet;Pogórze
+18287;2025/OGM/0004,2025/OGM/0012;50;M;internet;Wzgórze Św. Maksymiliana
+18288;2025/OGM/0012;55;F;internet;Witomino
+18289;2025/OGM/0004;28;M;internet;Wielki Kack
+18290;2025/OGM/0004,2025/OGM/0012;51;M;internet;Chwarzno-Wiczlino
+18291;2025/OGM/0004,2025/OGM/0012;27;F;internet;Wzgórze Św. Maksymiliana
+18292;2025/OGM/0004;9;F;internet;Chwarzno-Wiczlino
+18293;2025/OGM/0004,2025/OGM/0012;14;F;internet;Kamienna Góra
+18294;2025/OGM/0004,2025/OGM/0012;14;F;internet;Oksywie
+18295;2025/OGM/0004;55;M;internet;Wielki Kack
+18296;2025/OGM/0004;64;F;internet;Leszczynki
+18297;2025/OGM/0004;64;M;internet;Chwarzno-Wiczlino
+18298;2025/OGM/0004;10;F;internet;Grabówek
+18300;2025/OGM/0004,2025/OGM/0012;;M;internet;Wielki Kack
+18302;2025/OGM/0004,2025/OGM/0012;10;F;internet;Chwarzno-Wiczlino
+18303;2025/OGM/0004;19;M;internet;Wielki Kack
+18304;2025/OGM/0004;5;F;internet;Chwarzno-Wiczlino
+18305;2025/OGM/0004;69;F;internet;Witomino
+18306;2025/OGM/0004;39;M;internet;Chwarzno-Wiczlino
+18307;2025/OGM/0004;10;F;internet;Oksywie
+18309;2025/OGM/0012;78;M;internet;Chylonia
+18310;2025/OGM/0004;37;M;internet;Grabówek
+18311;2025/OGM/0004,2025/OGM/0012;44;M;internet;Chwarzno-Wiczlino
+18312;2025/OGM/0004,2025/OGM/0012;37;M;internet;Witomino
+18313;2025/OGM/0004,2025/OGM/0012;43;F;internet;Pogórze
+18314;2025/OGM/0004;27;M;internet;Dąbrowa
+18315;2025/OGM/0004;19;F;internet;Dąbrowa
+18317;2025/OGM/0004,2025/OGM/0012;53;F;internet;Wzgórze Św. Maksymiliana
+18318;2025/OGM/0004;90;F;internet;Wzgórze Św. Maksymiliana
+18319;2025/OGM/0004;8;M;internet;Chwarzno-Wiczlino
+18320;2025/OGM/0004,2025/OGM/0012;8;M;internet;Chwarzno-Wiczlino
+18321;2025/OGM/0004;34;F;internet;Pustki Cisowskie-Demptowo
+18322;2025/OGM/0004;56;F;internet;Wielki Kack
+18324;2025/OGM/0004;56;M;internet;Chylonia
+18326;2025/OGM/0004,2025/OGM/0012;49;F;internet;Chylonia
+18327;2025/OGM/0012;51;F;internet;Chwarzno-Wiczlino
+18328;2025/OGM/0004,2025/OGM/0012;40;F;internet;Chwarzno-Wiczlino
+18329;2025/OGM/0012;68;F;internet;Chwarzno-Wiczlino
+18330;2025/OGM/0004;28;M;internet;Dąbrowa
+18331;2025/OGM/0004,2025/OGM/0012;43;F;internet;Chwarzno-Wiczlino
+18332;2025/OGM/0004;23;F;internet;Chylonia
+18333;2025/OGM/0012;71;F;internet;Wielki Kack
+18334;2025/OGM/0004;31;F;internet;Chwarzno-Wiczlino
+18335;2025/OGM/0004,2025/OGM/0012;22;M;internet;Oksywie
+18336;2025/OGM/0004;41;M;internet;Pogórze
+18337;2025/OGM/0004,2025/OGM/0012;29;F;internet;Chwarzno-Wiczlino
+18338;2025/OGM/0004;33;M;internet;Oksywie
+18340;2025/OGM/0004;33;F;internet;Pogórze
+18341;2025/OGM/0004;56;F;internet;Chwarzno-Wiczlino
+18342;2025/OGM/0004,2025/OGM/0012;38;F;internet;Redłowo
+18343;2025/OGM/0004;92;M;internet;Wzgórze Św. Maksymiliana
+18344;2025/OGM/0004;41;F;internet;Pustki Cisowskie-Demptowo
+18346;2025/OGM/0004,2025/OGM/0012;35;M;internet;Wzgórze Św. Maksymiliana
+18347;2025/OGM/0004,2025/OGM/0012;25;F;internet;Obłuże
+18348;2025/OGM/0004;32;M;internet;Chwarzno-Wiczlino
+18349;2025/OGM/0004;52;M;internet;Witomino
+18350;2025/OGM/0004,2025/OGM/0012;42;F;internet;Działki Leśne
+18351;2025/OGM/0004,2025/OGM/0012;43;F;internet;Oksywie
+18352;2025/OGM/0012;27;M;internet;Mały Kack
+99999190;2025/OGM/0004;23;F;internet;Śródmieście
+999991579;2025/OGM/0004;69;F;internet;Karwiny
+99999115548;2025/OGM/0004,2025/OGM/0012;56;F;internet;Wielki Kack
+99999115897;2025/OGM/0004,2025/OGM/0012;40;F;internet;Redłowo
+99999116163;2025/OGM/0004;44;F;internet;Pustki Cisowskie-Demptowo
+99999118119;2025/OGM/0004,2025/OGM/0012;40;F;internet;Wielki Kack
+99999118308;2025/OGM/0004;31;M;internet;Dąbrowa

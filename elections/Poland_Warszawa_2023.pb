@@ -18,7 +18,7 @@ language;pl
 currency;PLN
 comment;#1: If a given project has multiple coordinates, then the average over these coordinates is taken.
 PROJECTS
-project_id;cost;votes;name;category;target;selected;latitude;longitude
+project_id;cost;votes;name;category;beneficiaries;selected;latitude;longitude
 51;5787150;27805;2050 drzew dla Warszawy;urban greenery;people with disabilities,seniors,adults,youth,children;1;;
 953;5875000;27681;Asfaltowe drogi dla rowerów;sport,public space,public transit and roads;seniors,adults,youth;1;52.217747194744994;21.0209857990388
 825;4000000;23508;Wymiana sprzętu na Warszawskich SOR-ach i Izbach Przyjęć;welfare;people with disabilities,seniors,adults,youth,children;1;;

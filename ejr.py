@@ -1,8 +1,4 @@
 from pabutools.election import (
-    Project,
-    Instance,
-    ApprovalBallot,
-    ApprovalProfile,
     Cost_Sat,
     Cardinality_Sat,
     parse_pabulib,
@@ -30,10 +26,10 @@ def convert_pabutools_election(instance, profile, outcome):
     proj_to_idx = {p: idx for idx, p in enumerate(projects)}
 
     project_names = []
-    costs = []
+    project_costs = []
     for p in projects:
         project_names.append(str(p))
-        costs.append(p.cost)
+        project_costs.append(p.cost)
 
     approvals = []
     for ballot in profile:
@@ -42,15 +38,10 @@ def convert_pabutools_election(instance, profile, outcome):
             approved.add(proj_to_idx[p])
         approvals.append(approved)
 
-    winners = {proj_to_idx[p] for p in outcome}
+    winning_outcome = {proj_to_idx[p] for p in outcome}
     budget = instance.budget_limit
 
-    return project_names, costs, approvals, winners, budget
-
-
-# Compute the number of winners approved by each ballot
-def compute_winner_counts(approvals, winners):
-    return [len(ballot & winners) for ballot in approvals]
+    return project_names, project_costs, approvals, winning_outcome, budget
 
 
 # Compute the supporters of each project
@@ -61,9 +52,18 @@ def compute_supporters_by_project(num_projects, approvals):
             supporters[b].add(voter_idx)
     return supporters
 
-
 def find_ejr_violation(
-    project_costs, approvals, winners, budget, project_names=None, verbose=True
+    instance, profile, outcome, util, verbose=False
+) -> EJRViolationResult:
+    if util == Cardinality_Sat:
+        return find_ejr_violation_card(instance, profile, outcome, verbose)
+    elif util == Cost_Sat:
+        return find_ejr_violation_cost(instance, profile, outcome, verbose)
+    else:
+        raise ValueError(f"Unknown utility type: {util}")
+
+def find_ejr_violation_card(
+    instance, profile, outcome, verbose=True
 ) -> EJRViolationResult:
     """
     Exact EJR checker for the PB-style definition.
@@ -81,10 +81,13 @@ def find_ejr_violation(
             }
     """
 
+    project_names, project_costs, approvals, winning_outcome, budget = convert_pabutools_election(instance, profile, outcome)
+
     if len(approvals) == 0:
         return EJRViolationResult(witness=None, p_sets_checked=0)
 
-    winner_counts = compute_winner_counts(approvals, winners)
+    # Precompute some data structures for efficiency
+    winner_counts = [len(ballot & winning_outcome) for ballot in approvals]
     supporters_by_project = compute_supporters_by_project(len(project_costs), approvals)
 
     # Maximum ell worth checking:
@@ -138,7 +141,7 @@ def find_ejr_violation(
         candidate_ids = [x[0] for x in candidate_data]
         support_map = {x[0]: x[1] for x in candidate_data}
 
-        witness = _dfs_find_violation(
+        witness = _dfs_find_violation_card(
             ell=ell,
             start_idx=0,
             chosen=[],
@@ -162,7 +165,7 @@ def find_ejr_violation(
     return EJRViolationResult(witness=None, p_sets_checked=0)
 
 
-def _dfs_find_violation(
+def _dfs_find_violation_card(
     ell,
     start_idx,
     chosen,
@@ -224,7 +227,7 @@ def _dfs_find_violation(
             continue
 
         chosen.append(c)
-        result = _dfs_find_violation(
+        result = _dfs_find_violation_card(
             ell=ell,
             start_idx=j + 1,
             chosen=chosen,
@@ -245,6 +248,105 @@ def _dfs_find_violation(
 
     return None
 
+def find_ejr_violation_cost(
+    instance, profile, outcome, verbose=True
+) -> EJRViolationResult:
+    """
+    Cost-based analogue of EJR checking.
+
+    A set T is a witness if there is a group of voters who:
+    - all approve every project in T,
+    - each receive funded approved utility < cost(T),
+    - and are large enough to proportionally deserve T:
+          budget * |S| >= n * cost(T)
+
+    Returns:
+        EJRViolationResult
+    """
+    project_names, project_costs, approvals, winning_outcome, budget = convert_pabutools_election(
+        instance, profile, outcome
+    )
+
+    n = len(approvals)
+    if n == 0:
+        return EJRViolationResult(witness=None, p_sets_checked=0)
+
+    m = len(project_costs)
+
+    # For each voter, utility = total cost of approved funded projects
+    winner_utils = [
+        sum(project_costs[c] for c in ballot & winning_outcome)
+        for ballot in approvals
+    ]
+
+    supporters_by_project = compute_supporters_by_project(m, approvals)
+
+    # Candidate ordering heuristic: more support first, then cheaper cost
+    candidate_ids = list(range(m))
+    candidate_ids.sort(key=lambda c: (-len(supporters_by_project[c]), project_costs[c]))
+
+    def dfs_cost(start_idx, chosen, current_approvers, current_cost):
+        # Ignore empty T
+        if current_cost > 0:
+            # Voters who approve all of chosen and are underrepresented relative to cost(T)
+            unsat_supporters = {
+                i for i in current_approvers
+                if winner_utils[i] < current_cost
+            }
+            unsat_count = len(unsat_supporters)
+
+            # Success: found a cost-based witness
+            if budget * unsat_count >= n * current_cost:
+                return {
+                    "T": list(chosen),
+                    "T_names": [project_names[c] for c in chosen],
+                    "cost": current_cost,
+                    "supporters": sorted(unsat_supporters),
+                    "support_size": unsat_count,
+                }
+
+            # Safe prune:
+            # even if all current approvers were underrepresented,
+            # there still would not be enough support
+            if budget * len(current_approvers) < n * current_cost:
+                return None
+
+        for j in range(start_idx, len(candidate_ids)):
+            c = candidate_ids[j]
+            new_approvers = current_approvers & supporters_by_project[c]
+            if not new_approvers:
+                continue
+
+            new_cost = current_cost + project_costs[c]
+
+            chosen.append(c)
+            result = dfs_cost(
+                start_idx=j + 1,
+                chosen=chosen,
+                current_approvers=new_approvers,
+                current_cost=new_cost,
+            )
+            chosen.pop()
+
+            if result is not None:
+                return result
+
+        return None
+
+    witness = dfs_cost(
+        start_idx=0,
+        chosen=[],
+        current_approvers=set(range(n)),
+        current_cost=0,
+    )
+
+    if witness is not None:
+        return EJRViolationResult(
+            witness=EJRViolationWitness(set(witness["T"]), witness["supporters"]),
+            p_sets_checked=0,
+        )
+
+    return EJRViolationResult(witness=None, p_sets_checked=0)
 
 def print_stats(costs, approvals):
     average_project_cost = sum(costs) / len(costs)
@@ -252,26 +354,23 @@ def print_stats(costs, approvals):
     projects_to_voters_ratio = len(costs) / len(approvals)
     print(f"Projects to voters ratio: {projects_to_voters_ratio}")
     vote_length = sum(len(ballot) for ballot in approvals) / len(approvals)
-    print(f"Average votes per voter: {vote_length}")
-    vote_length_to_projects_ratio = vote_length / projects_to_voters_ratio
-    print(f"Average votes per voter to projects ratio: {vote_length_to_projects_ratio}")
+    print(f"Vote length: {vote_length}")
+    vote_length_to_projects_ratio = vote_length / len(costs)
+    print(f"Vote length to projects ratio: {vote_length_to_projects_ratio}")
+
+def run_election(filename, rule="greedy", util=Cardinality_Sat):
+    path = os.path.join("./elections/", filename)
+    instance, profile = parse_pabulib(path)
+    if rule == "greedy":
+        outcome = greedy_utilitarian_welfare(instance=instance, profile=profile, sat_class=util)
+    elif rule == "mes":
+        outcome = method_of_equal_shares(instance=instance, profile=profile, sat_class=util)
+    else:
+        raise ValueError(f"Unknown rule: {rule}")
+    return instance, profile, outcome
 
 
 if __name__ == "__main__":
-    # path = os.path.join("./elections/", "Poland_Warszawa_2019_Ursynow.pb")
-    path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
-    instance, profile = parse_pabulib(path)
-    outcome_greedy = greedy_utilitarian_welfare(
-        instance, profile, sat_class=Cardinality_Sat, analytics=False
-    )
-
-    project_names, costs, approvals, winners, budget = convert_pabutools_election(
-        instance, profile, outcome_greedy
-    )
-
-    violation = find_ejr_violation(
-        costs, approvals, winners, budget, project_names, verbose=True
-    )
+    instance, profile, outcome = run_election(filename="Poland_Warszawa_2023.pb", rule="greedy", util=Cost_Sat)
+    violation = find_ejr_violation(instance, profile, outcome, util=Cost_Sat, verbose=True)
     print(violation.witness)
-    print_stats(costs, approvals)
-    # print (outcome_greedy)

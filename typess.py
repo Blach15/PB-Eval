@@ -3,6 +3,9 @@ class EJRViolationWitness:
         self.p_set = p_set
         self.voters = voters
 
+    def __str__(self):
+        return f"p_set_size: {len(self.p_set)}, p_set: {self.p_set}, support_count: {len(self.voters)}"
+
 
 class EJRViolationResult:
     def __init__(
