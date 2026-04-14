@@ -91,10 +91,7 @@ def timer(filename: str, ejr_func):
     return violation, timing
 
 
-if __name__ == "__main__":
-    # filename = "Hungary_Budapest_2024.pb"
-    filename = "Netherlands_Amsterdam_622.pb"
-
+def test_ejr_algorithms(filename: str):
     violation1, time1 = timer(filename, ejr1)
     violation2, time2 = timer(filename, ejr2)
 
@@ -114,3 +111,15 @@ if __name__ == "__main__":
             print("No violation found in either.")
     else:
         print("Violation in both.")
+
+
+if __name__ == "__main__":
+    elections_dir = "./elections/"
+    files = [f for f in os.listdir(elections_dir) if f.endswith(".pb")]
+
+    for filename in sorted(files):
+        print(f"\n--- {filename} ---")
+        try:
+            test_ejr_algorithms(filename)
+        except Exception as e:
+            print(f"Error: {e}")
