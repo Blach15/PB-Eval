@@ -99,13 +99,16 @@ if __name__ == "__main__":
     violation2, time2 = timer(filename, ejr2)
 
     print(f"ejr1 time: {time1:.4f}s, ejr2 time: {time2:.4f}s")
+    print(
+        f"ejr1 p-sets checked: {violation1.p_sets_checked}, ejr2 p-sets checked: {violation2.p_sets_checked}"
+    )
 
-    if (violation1 is None) or (violation2 is None):
-        if not ((violation1 is None) and (violation2 is None)):
+    if (violation1.witness is None) or (violation2.witness is None):
+        if not ((violation1.witness is None) and (violation2.witness is None)):
             print(
                 "Discrepancy found!",
-                f"violation1: {violation1}",
-                f"violation2: {violation2}",
+                f"violation1: {violation1.witness}",
+                f"violation2: {violation2.witness}",
             )
         else:
             print("No violation found in either.")

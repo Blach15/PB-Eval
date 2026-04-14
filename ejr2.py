@@ -22,7 +22,7 @@ from pabutools.rules import (
 from pabutools.utils import Numeric
 from typing import Callable
 import os
-from typess import EJRViolationWitness
+from typess import EJRViolationWitness, EJRViolationResult
 
 
 def find_ejr_violation_witness(
@@ -33,7 +33,7 @@ def find_ejr_violation_witness(
     budget: Numeric,
     utility_func: Callable[[set[int] | frozenset[int], set[int]], Numeric],
     verbose: bool = True,
-) -> EJRViolationWitness | None:
+) -> EJRViolationResult:
     project_supporters = get_project_supporters(approvals, projects)
     winning_util = [
         utility_func(winning_set, approvals[i]) for i in range(len(approvals))
@@ -47,6 +47,8 @@ def find_ejr_violation_witness(
     for pIdx in range(len(projects)):
         next_lattice_layer_worklist.add(frozenset({pIdx}))
 
+    p_sets_checked = 0
+
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist = []
@@ -56,6 +58,8 @@ def find_ejr_violation_witness(
         # )
 
         for p_set in current_lattice_layer_worklist:
+            p_sets_checked += 1
+
             voter_intersection = set()
             for p in p_set:
                 voter_intersection = (
@@ -81,7 +85,10 @@ def find_ejr_violation_witness(
             if len(unsat_voters) / n * budget >= sum(costs[p] for p in p_set):
                 if verbose:
                     print(f"T: {p_set}, voters: {unsat_voters}")
-                return EJRViolationWitness(p_set, unsat_voters)
+                return EJRViolationResult(
+                    witness=EJRViolationWitness(p_set, unsat_voters),
+                    p_sets_checked=p_sets_checked,
+                )
 
             surviving_lattice_layer_worklist.append(p_set)
 
@@ -103,7 +110,7 @@ def find_ejr_violation_witness(
                 ):
                     next_lattice_layer_worklist.add(frozenset(new_set))
 
-    return None
+    return EJRViolationResult(witness=None, p_sets_checked=p_sets_checked)
 
 
 def get_project_supporters(approvals, projects) -> list[set[int]]:

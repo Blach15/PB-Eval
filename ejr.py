@@ -13,6 +13,7 @@ from pabutools.rules import (
     method_of_equal_shares,
 )
 import os
+from typess import EJRViolationWitness, EJRViolationResult
 
 
 def convert_pabutools_election(instance, profile, outcome):
@@ -63,7 +64,7 @@ def compute_supporters_by_project(num_projects, approvals):
 
 def find_ejr_violation(
     project_costs, approvals, winners, budget, project_names=None, verbose=True
-):
+) -> EJRViolationResult:
     """
     Exact EJR checker for the PB-style definition.
 
@@ -81,7 +82,7 @@ def find_ejr_violation(
     """
 
     if len(approvals) == 0:
-        return None
+        return EJRViolationResult(witness=None, p_sets_checked=0)
 
     winner_counts = compute_winner_counts(approvals, winners)
     supporters_by_project = compute_supporters_by_project(len(project_costs), approvals)
@@ -153,9 +154,12 @@ def find_ejr_violation(
         )
 
         if witness is not None:
-            return witness
+            return EJRViolationResult(
+                witness=EJRViolationWitness(set(witness["T"]), witness["supporters"]),
+                p_sets_checked=0,
+            )
 
-    return None
+    return EJRViolationResult(witness=None, p_sets_checked=0)
 
 
 def _dfs_find_violation(
@@ -268,6 +272,6 @@ if __name__ == "__main__":
     violation = find_ejr_violation(
         costs, approvals, winners, budget, project_names, verbose=True
     )
-    print(violation)
+    print(violation.witness)
     print_stats(costs, approvals)
     # print (outcome_greedy)
