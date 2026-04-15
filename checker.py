@@ -8,6 +8,8 @@ from pabutools.election import (
 )
 from pabutools.rules import (
     greedy_utilitarian_welfare,
+    sequential_phragmen,
+    method_of_equal_shares,
     BudgetAllocation,
 )
 from pabutools.utils import Numeric
@@ -16,28 +18,25 @@ import os
 import time
 import json
 from ejr import find_ejr_violation_witness, convert_inputs_to_ejr_types
+from typess import EJRViolationWitness, EJRViolationResult
 
 
 def parsefile(filename: str):
     path = os.path.join("./elections/", filename)
     instance, profile = parse_pabulib(path)
-    outcome = greedy_utilitarian_welfare(
-        instance, profile, sat_class=Cost_Sat, analytics=False
+
+    # Compute metadata
+    projects = list(instance)
+    average_project_cost = (
+        sum(p.cost for p in projects) / len(projects) if projects else 0
     )
-    return instance, profile, outcome
+    metadata = {"average_project_cost": float(average_project_cost)}
+
+    return instance, profile, metadata
 
 
-def ejr(instance, profile, outcome):
-    def card_utility_func(
-        project_set: set[int] | frozenset[int], ballot: set[int]
-    ) -> Numeric:
-        return len(project_set & ballot)
-
-    def cost_utility_func(
-        project_set: set[int] | frozenset[int], ballot: set[int]
-    ) -> Numeric:
-        return sum(costs[p] for p in (project_set & ballot))
-
+def check_ejr(instance, profile, outcome, utility_func):
+    """Check EJR violation for a given outcome and utility function."""
     (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
         instance, profile, outcome
     )
@@ -48,40 +47,98 @@ def ejr(instance, profile, outcome):
         costs,
         projects,
         budget,
-        cost_utility_func,
+        utility_func,
         verbose=False,
     )
     return violation
 
 
-def timer(filename: str, ejr_func):
-    start = time.time()
-    violation = ejr_func(filename)
-    timing = time.time() - start
-
-    return violation, timing
+def format_ejr_result(violation: EJRViolationResult, elapsed_time):
+    """Format EJR violation result and timing into JSON structure."""
+    return {
+        "time": elapsed_time,
+        "p_sets_checked": violation.p_sets_checked,
+        "violation_found": len(violation.witness) == 0,
+        "witness": (
+            -1
+            if len(violation.witness) == 0
+            else max(violation.witness, key=lambda w: w.max_util)
+        ),
+    }
 
 
 def test_ejr_algorithms(filename: str):
-    # Parse file without timing
-    instance, profile, outcome = parsefile(filename)
+    # Parse file to get instance, profile, and metadata
+    instance, profile, metadata = parsefile(filename)
 
-    # Time only the EJR checking
-    start = time.time()
-    violation1 = ejr(instance, profile, outcome)
-    time1 = time.time() - start
+    # Get costs for utility functions
+    projects = list(instance)
+    costs = [p.cost for p in projects]
+
+    # Define utility functions
+    def card_utility_func(
+        project_set: set[int] | frozenset[int], ballot: set[int]
+    ) -> Numeric:
+        return len(project_set & ballot)
+
+    def cost_utility_func(
+        project_set: set[int] | frozenset[int], ballot: set[int]
+    ) -> Numeric:
+        return sum(costs[p] for p in (project_set & ballot))
+
+    # Define algorithms as list of {json_name: str, function: callable}
+    algorithms = [
+        {
+            "json_name": "greedy[cost]",
+            "function": lambda: greedy_utilitarian_welfare(
+                instance, profile, sat_class=Cost_Sat, analytics=False
+            ),
+        },
+        {
+            "json_name": "greedy[card]",
+            "function": lambda: greedy_utilitarian_welfare(
+                instance, profile, sat_class=Cardinality_Sat, analytics=False
+            ),
+        },
+        {
+            "json_name": "MES[card]",
+            "function": lambda: method_of_equal_shares(
+                instance, profile, sat_class=Cardinality_Sat, analytics=False
+            ),
+        },
+    ]
 
     # Create outcomes directory if it doesn't exist
     os.makedirs("outcomes", exist_ok=True)
 
-    # Prepare result data
-    result = {
-        "filename": filename,
-        "time_seconds": time1,
-        "p_sets_checked": violation1.p_sets_checked,
-        "violation_found": violation1.witness is not None,
-        "witness": str(violation1.witness) if violation1.witness is not None else None,
-    }
+    # Compute results for each algorithm
+    result = {"metadata": metadata, "results": {}}
+
+    for algo in algorithms:
+        algo_name = algo["json_name"]
+        outcome = algo["function"]()
+
+        # Test with cost utility function
+        start = time.time()
+        violation_cost = check_ejr(instance, profile, outcome, cost_utility_func)
+        time_cost = time.time() - start
+
+        # Test with card utility function
+        start = time.time()
+        violation_card = check_ejr(instance, profile, outcome, card_utility_func)
+        time_card = time.time() - start
+
+        result["results"][algo_name] = {
+            "cost": format_ejr_result(violation_cost, time_cost),
+            "card": format_ejr_result(violation_card, time_card),
+        }
+
+        print(
+            f"{algo_name}[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
+        )
+        print(
+            f"{algo_name}[card] time: {time_card:.4f}s, p-sets checked: {violation_card.p_sets_checked}"
+        )
 
     # Save to JSON file
     output_filename = os.path.splitext(filename)[0] + ".json"
@@ -91,12 +148,6 @@ def test_ejr_algorithms(filename: str):
         json.dump(result, f, indent=2)
 
     print(f"Results saved to {output_path}")
-    print(f"ejr time: {time1:.4f}s")
-    print(f"ejr p-sets checked: {violation1.p_sets_checked}")
-    if violation1.witness is None:
-        print("No violation found.")
-    else:
-        print("Violation found.")
 
 
 def run_all():
