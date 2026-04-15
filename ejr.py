@@ -34,9 +34,12 @@ def find_ejr_violation_witness(
 
     current_lattice_layer_worklist: set[frozenset[int]] = set()
     next_lattice_layer_worklist: set[frozenset[int]] = set()
+    voter_intersection_cache: dict[frozenset[int], set[int]] = {}
 
     for pIdx in range(len(projects)):
-        next_lattice_layer_worklist.add(frozenset({pIdx}))
+        p_set = frozenset({pIdx})
+        next_lattice_layer_worklist.add(p_set)
+        voter_intersection_cache[p_set] = project_supporters[pIdx]
 
     p_sets_checked = 0
 
@@ -51,13 +54,10 @@ def find_ejr_violation_witness(
         for p_set in current_lattice_layer_worklist:
             p_sets_checked += 1
 
-            voter_intersection = set()
-            for p in p_set:
-                voter_intersection = (
-                    project_supporters[p]
-                    if len(voter_intersection) == 0
-                    else voter_intersection & project_supporters[p]  # bug here ?
-                )
+            # Get cached voter_intersection or calculate if not in cache
+            voter_intersection = voter_intersection_cache[p_set]
+            if voter_intersection is None:
+                raise ValueError(f"Voter intersection for {p_set} not found in cache.")
             # check that is cohesive set
             if len(voter_intersection) / n * budget < sum(costs[p] for p in p_set):
                 continue  # can't afford
@@ -89,17 +89,31 @@ def find_ejr_violation_witness(
                 f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
             )
         next_lattice_layer_worklist = set()
-        for i in range(len(surviving_lattice_layer_worklist)):
-            for j in range(i + 1, len(surviving_lattice_layer_worklist)):
-                new_set = (
-                    surviving_lattice_layer_worklist[i]
-                    | surviving_lattice_layer_worklist[j]
-                )
-                if (
-                    len(new_set) == len(surviving_lattice_layer_worklist[i]) + 1
-                    and new_set not in next_lattice_layer_worklist
-                ):
-                    next_lattice_layer_worklist.add(frozenset(new_set))
+
+        # Convert to sorted tuples for apriori join
+        sorted_itemsets = sorted(
+            [tuple(sorted(p_set)) for p_set in surviving_lattice_layer_worklist]
+        )
+
+        # Apriori join: only join itemsets that share the first k-1 elements
+        for i in range(len(sorted_itemsets)):
+            for j in range(i + 1, len(sorted_itemsets)):
+                itemset_i = sorted_itemsets[i]
+                itemset_j = sorted_itemsets[j]
+
+                # Check if they share the first k-1 elements (apriori property)
+                if itemset_i[:-1] == itemset_j[:-1]:
+                    new_set = frozenset(itemset_i) | frozenset(itemset_j)
+                    if new_set not in next_lattice_layer_worklist:
+                        # Cache the voter_intersection as intersection of the two parent sets' intersections
+                        voter_intersection_cache[new_set] = (
+                            voter_intersection_cache[frozenset(itemset_i)]
+                            & voter_intersection_cache[frozenset(itemset_j)]
+                        )
+                        next_lattice_layer_worklist.add(new_set)
+                else:
+                    # Since itemsets are sorted, if prefixes don't match, skip to next i
+                    break
 
     return EJRViolationResult(witness=None, p_sets_checked=p_sets_checked)
 

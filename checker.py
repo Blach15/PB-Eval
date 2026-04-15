@@ -23,7 +23,7 @@ def parsefile(filename: str):
     path = os.path.join("./elections/", filename)
     instance, profile = parse_pabulib(path)
     outcome = greedy_utilitarian_welfare(
-        instance, profile, sat_class=Cardinality_Sat, analytics=False
+        instance, profile, sat_class=Cost_Sat, analytics=False
     )
     return instance, profile, outcome
 
@@ -51,7 +51,7 @@ def ejr2(filename: str):
         costs,
         projects,
         budget,
-        card_utility_func,
+        cost_utility_func,
         verbose=False,
     )
     return violation
@@ -126,7 +126,7 @@ def run_all():
 
 
 def run_one():
-    filename = "Netherlands_Amsterdam_166.pb"
+    filename = "Poland_Warszawa_2018_Bialoleka_obszar_3.pb"
     print(f"\n--- {filename} ---")
     try:
         test_ejr_algorithms(filename)
@@ -135,4 +135,4 @@ def run_one():
 
 
 if __name__ == "__main__":
-    run_one()
+    run_all()
