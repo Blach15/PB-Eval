@@ -15,7 +15,6 @@ from typing import Callable
 import os
 import time
 import json
-from ejr_old import find_ejr_violation, run_election
 from ejr import find_ejr_violation_witness, convert_inputs_to_ejr_types
 
 
@@ -28,7 +27,7 @@ def parsefile(filename: str):
     return instance, profile, outcome
 
 
-def ejr2(instance, profile, outcome):
+def ejr(instance, profile, outcome):
     def card_utility_func(
         project_set: set[int] | frozenset[int], ballot: set[int]
     ) -> Numeric:
@@ -55,23 +54,6 @@ def ejr2(instance, profile, outcome):
     return violation
 
 
-def ejr1(filename: str):
-    instance, profile, outcome = run_election(
-        filename, rule="greedy", util=Cardinality_Sat
-    )
-    violation = find_ejr_violation(
-        instance, profile, outcome, util=Cardinality_Sat, verbose=False
-    )
-    return violation
-
-
-#def run_both(filename: str):
-    #violation1 = ejr1(filename)
-    #violation2 = ejr2(filename)
-
-#    return violation1, violation2
-
-
 def timer(filename: str, ejr_func):
     start = time.time()
     violation = ejr_func(filename)
@@ -83,10 +65,10 @@ def timer(filename: str, ejr_func):
 def test_ejr_algorithms(filename: str):
     # Parse file without timing
     instance, profile, outcome = parsefile(filename)
-    
+
     # Time only the EJR checking
     start = time.time()
-    violation1 = ejr2(instance, profile, outcome)
+    violation1 = ejr(instance, profile, outcome)
     time1 = time.time() - start
 
     # Create outcomes directory if it doesn't exist
@@ -109,8 +91,8 @@ def test_ejr_algorithms(filename: str):
         json.dump(result, f, indent=2)
 
     print(f"Results saved to {output_path}")
-    print(f"ejr1 time: {time1:.4f}s")
-    print(f"ejr1 p-sets checked: {violation1.p_sets_checked}")
+    print(f"ejr time: {time1:.4f}s")
+    print(f"ejr p-sets checked: {violation1.p_sets_checked}")
     if violation1.witness is None:
         print("No violation found.")
     else:
