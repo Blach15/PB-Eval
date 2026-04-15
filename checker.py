@@ -58,11 +58,12 @@ def format_ejr_result(violation: EJRViolationResult, elapsed_time):
     return {
         "time": elapsed_time,
         "p_sets_checked": violation.p_sets_checked,
-        "violation_found": len(violation.witness) == 0,
+        "violation_found": len(violation.witness) != 0,
+        "amount_of_violation": len(violation.witness),
         "witness": (
             -1
             if len(violation.witness) == 0
-            else max(violation.witness, key=lambda w: w.max_util)
+            else float(max(map(lambda w: w.max_util, violation.witness)))
         ),
     }
 
@@ -116,7 +117,11 @@ def test_ejr_algorithms(filename: str):
 
     for algo in algorithms:
         algo_name = algo["json_name"]
+
+        # Time the algorithm execution
+        start = time.time()
         outcome = algo["function"]()
+        algo_time = time.time() - start
 
         # Test with cost utility function
         start = time.time()
@@ -129,10 +134,12 @@ def test_ejr_algorithms(filename: str):
         time_card = time.time() - start
 
         result["results"][algo_name] = {
+            "algorithm_time": algo_time,
             "cost": format_ejr_result(violation_cost, time_cost),
             "card": format_ejr_result(violation_card, time_card),
         }
 
+        print(f"{algo_name} algorithm time: {algo_time:.4f}s")
         print(
             f"{algo_name}[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
         )

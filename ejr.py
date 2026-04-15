@@ -78,8 +78,18 @@ def find_ejr_violation_witness(
             if len(unsat_voters) / n * budget >= sum(costs[p] for p in p_set):
                 if verbose:
                     print(f"T: {p_set}, voters: {unsat_voters}")
-                max_util = max(utility_func(p_set, approvals[i]) for i in unsat_voters)
-                witnesses_in_layer.append(EJRViolationWitness(p_set, unsat_voters, max_util))
+                # find the a in: a * util = util_win
+                max_util = max(
+                    (
+                        -1  # no one had any utility for the winning set.
+                        if winning_util[i] == 0
+                        else utility_func(p_set, approvals[i]) / winning_util[i]
+                    )
+                    for i in unsat_voters
+                )
+                witnesses_in_layer.append(
+                    EJRViolationWitness(p_set, unsat_voters, max_util)
+                )
 
             surviving_lattice_layer_worklist.append(p_set)
 
