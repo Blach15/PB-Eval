@@ -28,9 +28,7 @@ def parsefile(filename: str):
     return instance, profile, outcome
 
 
-def ejr2(filename: str):
-    instance, profile, outcome = parsefile(filename)
-
+def ejr2(instance, profile, outcome):
     def card_utility_func(
         project_set: set[int] | frozenset[int], ballot: set[int]
     ) -> Numeric:
@@ -67,11 +65,11 @@ def ejr1(filename: str):
     return violation
 
 
-def run_both(filename: str):
-    violation1 = ejr1(filename)
-    violation2 = ejr2(filename)
+#def run_both(filename: str):
+    #violation1 = ejr1(filename)
+    #violation2 = ejr2(filename)
 
-    return violation1, violation2
+#    return violation1, violation2
 
 
 def timer(filename: str, ejr_func):
@@ -83,7 +81,13 @@ def timer(filename: str, ejr_func):
 
 
 def test_ejr_algorithms(filename: str):
-    violation1, time1 = timer(filename, ejr2)
+    # Parse file without timing
+    instance, profile, outcome = parsefile(filename)
+    
+    # Time only the EJR checking
+    start = time.time()
+    violation1 = ejr2(instance, profile, outcome)
+    time1 = time.time() - start
 
     # Create outcomes directory if it doesn't exist
     os.makedirs("outcomes", exist_ok=True)
@@ -126,7 +130,7 @@ def run_all():
 
 
 def run_one():
-    filename = "Poland_Warszawa_2018_Bialoleka_obszar_3.pb"
+    filename = "Poland_Warszawa_2022.pb"
     print(f"\n--- {filename} ---")
     try:
         test_ejr_algorithms(filename)
@@ -135,4 +139,4 @@ def run_one():
 
 
 if __name__ == "__main__":
-    run_all()
+    run_one()
