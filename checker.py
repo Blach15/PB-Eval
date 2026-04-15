@@ -14,6 +14,7 @@ from pabutools.utils import Numeric
 from typing import Callable
 import os
 import time
+import json
 from ejr_old import find_ejr_violation, run_election
 from ejr import find_ejr_violation_witness, convert_inputs_to_ejr_types
 
@@ -57,8 +58,12 @@ def ejr2(filename: str):
 
 
 def ejr1(filename: str):
-    instance, profile, outcome = run_election(filename, rule="greedy", util=Cardinality_Sat)
-    violation = find_ejr_violation(instance, profile, outcome, util=Cardinality_Sat, verbose=False)
+    instance, profile, outcome = run_election(
+        filename, rule="greedy", util=Cardinality_Sat
+    )
+    violation = find_ejr_violation(
+        instance, profile, outcome, util=Cardinality_Sat, verbose=False
+    )
     return violation
 
 
@@ -78,25 +83,35 @@ def timer(filename: str, ejr_func):
 
 
 def test_ejr_algorithms(filename: str):
-    violation1, time1 = timer(filename, ejr1)
-    violation2, time2 = timer(filename, ejr2)
+    violation1, time1 = timer(filename, ejr2)
 
-    print(f"ejr1 time: {time1:.4f}s, ejr2 time: {time2:.4f}s")
-    print(
-        f"ejr1 p-sets checked: {violation1.p_sets_checked}, ejr2 p-sets checked: {violation2.p_sets_checked}"
-    )
+    # Create outcomes directory if it doesn't exist
+    os.makedirs("outcomes", exist_ok=True)
 
-    if (violation1.witness is None) or (violation2.witness is None):
-        if not ((violation1.witness is None) and (violation2.witness is None)):
-            print(
-                "Discrepancy found!",
-                f"violation1: {violation1.witness}",
-                f"violation2: {violation2.witness}",
-            )
-        else:
-            print("No violation found in either.")
+    # Prepare result data
+    result = {
+        "filename": filename,
+        "time_seconds": time1,
+        "p_sets_checked": violation1.p_sets_checked,
+        "violation_found": violation1.witness is not None,
+        "witness": str(violation1.witness) if violation1.witness is not None else None,
+    }
+
+    # Save to JSON file
+    output_filename = os.path.splitext(filename)[0] + ".json"
+    output_path = os.path.join("outcomes", output_filename)
+
+    with open(output_path, "w") as f:
+        json.dump(result, f, indent=2)
+
+    print(f"Results saved to {output_path}")
+    print(f"ejr1 time: {time1:.4f}s")
+    print(f"ejr1 p-sets checked: {violation1.p_sets_checked}")
+    if violation1.witness is None:
+        print("No violation found.")
     else:
-        print("Violation in both.")
+        print("Violation found.")
+
 
 def run_all():
     elections_dir = "./elections/"
@@ -109,13 +124,15 @@ def run_all():
         except Exception as e:
             print(f"Error: {e}")
 
+
 def run_one():
-    filename = "Netherlands_Amsterdam_288.pb"
+    filename = "Netherlands_Amsterdam_166.pb"
     print(f"\n--- {filename} ---")
     try:
         test_ejr_algorithms(filename)
     except Exception as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     run_one()
