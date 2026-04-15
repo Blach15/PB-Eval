@@ -14,8 +14,8 @@ from pabutools.utils import Numeric
 from typing import Callable
 import os
 import time
-from ejr import find_ejr_violation, run_election
-from ejr2 import find_ejr_violation_witness, convert_inputs_to_ejr_types
+from ejr_old import find_ejr_violation, run_election
+from ejr import find_ejr_violation_witness, convert_inputs_to_ejr_types
 
 
 def parsefile(filename: str):
@@ -98,8 +98,7 @@ def test_ejr_algorithms(filename: str):
     else:
         print("Violation in both.")
 
-
-if __name__ == "__main__":
+def run_all():
     elections_dir = "./elections/"
     files = [f for f in os.listdir(elections_dir) if f.endswith(".pb")]
 
@@ -109,3 +108,14 @@ if __name__ == "__main__":
             test_ejr_algorithms(filename)
         except Exception as e:
             print(f"Error: {e}")
+
+def run_one():
+    filename = "Netherlands_Amsterdam_288.pb"
+    print(f"\n--- {filename} ---")
+    try:
+        test_ejr_algorithms(filename)
+    except Exception as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    run_one()
