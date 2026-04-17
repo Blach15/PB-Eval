@@ -61,9 +61,9 @@ def format_ejr_result(violation: EJRViolationResult, elapsed_time):
         "violation_found": len(violation.witness) != 0,
         "amount_of_violation": len(violation.witness),
         "witness": (
-            -1
+            None
             if len(violation.witness) == 0
-            else float(max(map(lambda w: w.max_util, violation.witness)))
+            else float(min(map(lambda w: w.max_util, violation.witness)))
         ),
     }
 
@@ -179,4 +179,4 @@ def run_one():
 
 
 if __name__ == "__main__":
-    run_all()
+    run_one()

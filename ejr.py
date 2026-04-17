@@ -1,3 +1,4 @@
+from numpy import sort
 from pabutools.election import (
     Cardinality_Sat,
     Project,
@@ -75,20 +76,22 @@ def find_ejr_violation_witness(
             # check if coheisive set violates EJR
             # bug: missnig coheisive check.
             # instead check unsat_voters for cohesive, then withness
-            if len(unsat_voters) / n * budget >= sum(costs[p] for p in p_set):
+            needed_voters_larger_or_equal_to = (
+                sum(costs[p] for p in p_set) * n
+            ) / budget
+            if len(unsat_voters) >= needed_voters_larger_or_equal_to:
                 if verbose:
                     print(f"T: {p_set}, voters: {unsat_voters}")
-                # find the a in: a * util = util_win
-                max_util = max(
-                    (
-                        -1  # no one had any utility for the winning set.
-                        if winning_util[i] == 0
-                        else utility_func(p_set, approvals[i]) / winning_util[i]
-                    )
+                # find the a in: a * util_p = util_win
+                unsat_voters_util = [
+                    (winning_util[i] / utility_func(p_set, approvals[i]))
                     for i in unsat_voters
-                )
+                ]
+                max_a_in_min_set_of_voters = sort(unsat_voters_util)[
+                    int(needed_voters_larger_or_equal_to) - 1
+                ]
                 witnesses_in_layer.append(
-                    EJRViolationWitness(p_set, unsat_voters, max_util)
+                    EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
                 )
 
             surviving_lattice_layer_worklist.append(p_set)
