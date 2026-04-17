@@ -60,7 +60,7 @@ def format_ejr_result(violation: EJRViolationResult, elapsed_time):
         "p_sets_checked": violation.p_sets_checked,
         "violation_found": len(violation.witness) != 0,
         "amount_of_violation": len(violation.witness),
-        "witness": (
+        "violation_degree": (  # % of p_set util gotten
             None
             if len(violation.witness) == 0
             else float(min(map(lambda w: w.max_util, violation.witness)))
