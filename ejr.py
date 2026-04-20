@@ -44,6 +44,8 @@ def find_ejr_violation_witness(
 
     p_sets_checked = 0
 
+    witnesses_in_layer = []
+
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist = []
@@ -51,8 +53,6 @@ def find_ejr_violation_witness(
         # print(
         #    f"Current layer size: {len(current_lattice_layer_worklist[0])}, {len(current_lattice_layer_worklist)}"
         # )
-
-        witnesses_in_layer = []
 
         for p_set in current_lattice_layer_worklist:
             p_sets_checked += 1
@@ -97,11 +97,11 @@ def find_ejr_violation_witness(
             surviving_lattice_layer_worklist.append(p_set)
 
         # create all combinations, apriori style
-        if len(witnesses_in_layer) > 0:
-            return EJRViolationResult(
-                witness=witnesses_in_layer,
-                p_sets_checked=p_sets_checked,
-            )
+        # if len(witnesses_in_layer) > 0:
+        #    return EJRViolationResult(
+        #        witness=witnesses_in_layer,
+        #        p_sets_checked=p_sets_checked,
+        #    )
         if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(
                 f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
@@ -133,7 +133,7 @@ def find_ejr_violation_witness(
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
 
-    return EJRViolationResult(witness=[], p_sets_checked=p_sets_checked)
+    return EJRViolationResult(witness=witnesses_in_layer, p_sets_checked=p_sets_checked)
 
 
 def get_project_supporters(approvals, projects) -> list[set[int]]:
