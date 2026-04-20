@@ -17,19 +17,17 @@ import os
 from typess import EJRViolationWitness, EJRViolationResult
 
 
-def find_ejr_violation_witness(
+def interate_all_affordable_p_sets(
     approvals: list[set[int]],
     winning_set: set[int],
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    utility_func: Callable[[set[int] | frozenset[int], set[int]], Numeric],
-    verbose: bool = True,
-) -> EJRViolationResult:
+    callback: Callable[[frozenset[int], set[int]], bool],
+    pre_callback: Callable[[], None] = lambda: None,
+    verbose: bool = False,
+):
     project_supporters = get_project_supporters(approvals, projects)
-    winning_util = [
-        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
-    ]
 
     n = len(approvals)
 
@@ -42,20 +40,12 @@ def find_ejr_violation_witness(
         next_lattice_layer_worklist.add(p_set)
         voter_intersection_cache[p_set] = project_supporters[pIdx]
 
-    p_sets_checked = 0
-
-    witnesses_in_layer = []
-
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist = []
 
-        # print(
-        #    f"Current layer size: {len(current_lattice_layer_worklist[0])}, {len(current_lattice_layer_worklist)}"
-        # )
-
         for p_set in current_lattice_layer_worklist:
-            p_sets_checked += 1
+            pre_callback()
 
             # Get cached voter_intersection or calculate if not in cache
             voter_intersection = voter_intersection_cache[p_set]
@@ -65,43 +55,12 @@ def find_ejr_violation_witness(
             if len(voter_intersection) / n * budget < sum(costs[p] for p in p_set):
                 continue  # can't afford
 
-            unsat_voters = {
-                i
-                for i in voter_intersection
-                if winning_util[i] < utility_func(p_set, approvals[i])
-            }
-            # if len(unsat_voters) == 0: #bug?
-            #     continue
-
-            # check if coheisive set violates EJR
-            # bug: missnig coheisive check.
-            # instead check unsat_voters for cohesive, then withness
-            needed_voters_larger_or_equal_to = (
-                sum(costs[p] for p in p_set) * n
-            ) / budget
-            if len(unsat_voters) >= needed_voters_larger_or_equal_to:
-                if verbose:
-                    print(f"T: {p_set}, voters: {unsat_voters}")
-                # find the a in: a * util_p = util_win
-                unsat_voters_util = [
-                    (winning_util[i] / utility_func(p_set, approvals[i]))
-                    for i in unsat_voters
-                ]
-                max_a_in_min_set_of_voters = sort(unsat_voters_util)[
-                    int(needed_voters_larger_or_equal_to) - 1
-                ]
-                witnesses_in_layer.append(
-                    EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
-                )
+            # allow exit early, to find 1 witness
+            if callback(p_set, voter_intersection):
+                return None
 
             surviving_lattice_layer_worklist.append(p_set)
 
-        # create all combinations, apriori style
-        # if len(witnesses_in_layer) > 0:
-        #    return EJRViolationResult(
-        #        witness=witnesses_in_layer,
-        #        p_sets_checked=p_sets_checked,
-        #    )
         if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(
                 f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
@@ -133,7 +92,71 @@ def find_ejr_violation_witness(
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
 
-    return EJRViolationResult(witness=witnesses_in_layer, p_sets_checked=p_sets_checked)
+    return None
+
+
+def find_ejr_violation_witness(
+    approvals: list[set[int]],
+    winning_set: set[int],
+    costs: list[Numeric],
+    projects: list[Project],
+    budget: Numeric,
+    utility_func: Callable[[set[int] | frozenset[int], set[int]], Numeric],
+    verbose: bool = True,
+) -> EJRViolationResult:
+    winning_util = [
+        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
+    ]
+
+    p_sets_checked = 0
+    witnesses = []
+    n = len(approvals)
+
+    def count_p_sets():
+        nonlocal p_sets_checked
+        p_sets_checked += 1
+
+    def check_ejr(p_set: frozenset[int], voter_intersection: set[int]) -> bool:
+        unsat_voters = {
+            i
+            for i in voter_intersection
+            if winning_util[i] < utility_func(p_set, approvals[i])
+        }
+
+        # check if unsat_voters is T-cohesive, then EJR violation
+        # done by computing the required size, for p_set to be affordable.
+        needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
+        if len(unsat_voters) >= needed_voters_larger_or_equal_to:
+            if verbose:
+                print(f"T: {p_set}, voters: {unsat_voters}")
+
+            # for the voter i in the minimum set of voters, who is the closest to being satisfied
+            # find the a in: a * util_p = util_win
+            unsat_voters_util = [
+                (winning_util[i] / utility_func(p_set, approvals[i]))
+                for i in unsat_voters
+            ]
+            max_a_in_min_set_of_voters = sort(unsat_voters_util)[
+                int(needed_voters_larger_or_equal_to) - 1
+            ]
+            witnesses.append(
+                EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
+            )
+
+        return False  # continue searching for more witnesses, don't exit early
+
+    interate_all_affordable_p_sets(
+        approvals,
+        winning_set,
+        costs,
+        projects,
+        budget,
+        callback=check_ejr,
+        pre_callback=count_p_sets,
+        verbose=verbose,
+    )
+
+    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
 
 
 def get_project_supporters(approvals, projects) -> list[set[int]]:
