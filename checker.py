@@ -27,10 +27,29 @@ def parsefile(filename: str):
 
     # Compute metadata
     projects = list(instance)
-    average_project_cost = (
-        sum(p.cost for p in projects) / len(projects) if projects else 0
-    )
-    metadata = {"average_project_cost": float(average_project_cost)}
+    costs = [p.cost for p in projects]
+    approvals = [set(ballot) for ballot in profile]
+
+
+    average_project_cost = sum(costs) / len(projects)
+    projects_to_voters_ratio = len(costs) / len(approvals)
+    vote_length = sum(len(ballot) for ballot in approvals) / len(approvals)
+    vote_length_to_projects_ratio = vote_length / len(projects)
+
+    metadata = {
+        "number_of_voters": float(len(approvals)),
+        "number_of_projects": float(len(projects)),
+        "vote_length": float(vote_length),
+        "average_project_cost": float(average_project_cost),
+        "projects_to_voters_ratio": float(projects_to_voters_ratio),
+        "vote_length_to_projects_ratio": float(vote_length_to_projects_ratio),
+        "min_length": instance.meta.get("min_length", None),
+        "max_length": instance.meta.get("max_length", None),
+        "max_sum_cost": instance.meta.get("max_sum_cost", None),
+    }
+    print(f"Metadata for {filename}: {metadata}")
+
+
 
     return instance, profile, metadata
 
