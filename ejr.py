@@ -19,7 +19,6 @@ from typess import EJRViolationWitness, EJRViolationResult
 
 def interate_all_affordable_p_sets(
     approvals: list[set[int]],
-    winning_set: set[int],
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
@@ -69,11 +68,6 @@ def interate_all_affordable_p_sets(
             )
         next_lattice_layer_worklist = list()
 
-        # Convert to sorted tuples for apriori join
-        # sorted_itemsets = sorted(
-        #     [tuple(sorted(p_set)) for p_set in surviving_lattice_layer_worklist]
-        # )
-
         # Apriori join: only join itemsets that share the first k-1 elements
         for i in range(len(surviving_lattice_layer_worklist)):
             for j in range(i + 1, len(surviving_lattice_layer_worklist)):
@@ -82,6 +76,7 @@ def interate_all_affordable_p_sets(
 
                 # Check if they share the first k-1 elements (apriori property)
                 if itemset_i[:-1] == itemset_j[:-1]:
+                    # keep the new set sorted.
                     new_set = tuple(itemset_i + (itemset_j[-1],))
                     if new_set not in next_lattice_layer_worklist:
                         # Cache the voter_intersection as intersection of the two parent sets' intersections
@@ -152,7 +147,6 @@ def find_ejr_violation_witness(
 
     interate_all_affordable_p_sets(
         approvals,
-        winning_set,
         costs,
         projects,
         budget,
