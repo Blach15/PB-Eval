@@ -26,10 +26,9 @@ def parsefile(filename: str):
     instance, profile = parse_pabulib(path)
 
     # Compute metadata
-    projects = list(instance)
+    projects = sorted(instance, key=lambda p: str(p))
     costs = [p.cost for p in projects]
     approvals = [set(ballot) for ballot in profile]
-
 
     average_project_cost = sum(costs) / len(projects)
     projects_to_voters_ratio = len(costs) / len(approvals)
@@ -48,8 +47,6 @@ def parsefile(filename: str):
         "max_sum_cost": instance.meta.get("max_sum_cost", None),
     }
     print(f"Metadata for {filename}: {metadata}")
-
-
 
     return instance, profile, metadata
 
@@ -92,19 +89,19 @@ def test_ejr_algorithms(filename: str):
     instance, profile, metadata = parsefile(filename)
 
     # Get costs for utility functions
-    projects = list(instance)
+    projects = sorted(instance, key=lambda p: str(p))
     costs = [p.cost for p in projects]
 
     # Define utility functions
     def card_utility_func(
         project_set: set[int] | frozenset[int], ballot: set[int]
     ) -> Numeric:
-        return len(project_set & ballot)
+        return len([a for a in project_set if a in ballot])
 
     def cost_utility_func(
         project_set: set[int] | frozenset[int], ballot: set[int]
     ) -> Numeric:
-        return sum(costs[p] for p in (project_set & ballot))
+        return sum(costs[p] for p in ([a for a in project_set if a in ballot]))
 
     # Define algorithms as list of {json_name: str, function: callable}
     algorithms = [

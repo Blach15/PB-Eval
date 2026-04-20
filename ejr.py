@@ -12,7 +12,7 @@ from pabutools.rules import (
     BudgetAllocation,
 )
 from pabutools.utils import Numeric
-from typing import Callable
+from typing import Callable, Iterable
 import os
 from typess import EJRViolationWitness, EJRViolationResult
 
@@ -23,7 +23,7 @@ def interate_all_affordable_p_sets(
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    callback: Callable[[frozenset[int], set[int]], bool],
+    callback: Callable[[tuple[int], set[int]], bool],
     pre_callback: Callable[[], None] = lambda: None,
     verbose: bool = False,
 ):
@@ -31,14 +31,16 @@ def interate_all_affordable_p_sets(
 
     n = len(approvals)
 
-    current_lattice_layer_worklist: set[frozenset[int]] = set()
-    next_lattice_layer_worklist: set[frozenset[int]] = set()
-    voter_intersection_cache: dict[frozenset[int], set[int]] = {}
+    current_lattice_layer_worklist: list[tuple[int]] = list()
+    next_lattice_layer_worklist: list[tuple[int]] = list()
+    voter_intersection_cache: dict[tuple[int], set[int]] = {}
 
     for pIdx in range(len(projects)):
-        p_set = frozenset({pIdx})
-        next_lattice_layer_worklist.add(p_set)
+        p_set: tuple[int] = (pIdx,)
+        next_lattice_layer_worklist.append(p_set)
         voter_intersection_cache[p_set] = project_supporters[pIdx]
+
+    count = 0
 
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
@@ -65,32 +67,35 @@ def interate_all_affordable_p_sets(
             print(
                 f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
             )
-        next_lattice_layer_worklist = set()
+        next_lattice_layer_worklist = list()
 
         # Convert to sorted tuples for apriori join
-        sorted_itemsets = sorted(
-            [tuple(sorted(p_set)) for p_set in surviving_lattice_layer_worklist]
-        )
+        # sorted_itemsets = sorted(
+        #     [tuple(sorted(p_set)) for p_set in surviving_lattice_layer_worklist]
+        # )
 
         # Apriori join: only join itemsets that share the first k-1 elements
-        for i in range(len(sorted_itemsets)):
-            for j in range(i + 1, len(sorted_itemsets)):
-                itemset_i = sorted_itemsets[i]
-                itemset_j = sorted_itemsets[j]
+        for i in range(len(surviving_lattice_layer_worklist)):
+            for j in range(i + 1, len(surviving_lattice_layer_worklist)):
+                itemset_i = surviving_lattice_layer_worklist[i]
+                itemset_j = surviving_lattice_layer_worklist[j]
 
                 # Check if they share the first k-1 elements (apriori property)
                 if itemset_i[:-1] == itemset_j[:-1]:
-                    new_set = frozenset(itemset_i) | frozenset(itemset_j)
+                    new_set = tuple(itemset_i + (itemset_j[-1],))
                     if new_set not in next_lattice_layer_worklist:
                         # Cache the voter_intersection as intersection of the two parent sets' intersections
                         voter_intersection_cache[new_set] = (
-                            voter_intersection_cache[frozenset(itemset_i)]
-                            & voter_intersection_cache[frozenset(itemset_j)]
+                            voter_intersection_cache[itemset_i]
+                            & voter_intersection_cache[itemset_j]
                         )
-                        next_lattice_layer_worklist.add(new_set)
+                        next_lattice_layer_worklist.append(new_set)
                 else:
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
+        if count == 1:
+            print(next_lattice_layer_worklist)
+        count += 1
 
     return None
 
@@ -101,7 +106,7 @@ def find_ejr_violation_witness(
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    utility_func: Callable[[set[int] | frozenset[int], set[int]], Numeric],
+    utility_func: Callable[[Iterable[int], set[int]], Numeric],
     verbose: bool = True,
 ) -> EJRViolationResult:
     winning_util = [
@@ -116,7 +121,7 @@ def find_ejr_violation_witness(
         nonlocal p_sets_checked
         p_sets_checked += 1
 
-    def check_ejr(p_set: frozenset[int], voter_intersection: set[int]) -> bool:
+    def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
         unsat_voters = {
             i
             for i in voter_intersection
@@ -182,7 +187,7 @@ def convert_inputs_to_ejr_types(
         projects: list[Project]
         budget: Numeric
     """
-    projects = list(instance)
+    projects = sorted(instance, key=lambda p: str(p))
     proj_to_idx = {p: idx for idx, p in enumerate(projects)}
 
     approvals = [set(proj_to_idx[p] for p in ballot) for ballot in profile]
@@ -216,15 +221,11 @@ def convert_inputs_to_ejr_types(
 
 if __name__ == "__main__":
 
-    def card_utility_func(
-        project_set: set[int] | frozenset[int], ballot: set[int]
-    ) -> Numeric:
-        return len(project_set & ballot)
+    def card_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
+        return len([a for a in project_set if a in ballot])
 
-    def cost_utility_func(
-        project_set: set[int] | frozenset[int], ballot: set[int]
-    ) -> Numeric:
-        return sum(costs[p] for p in (project_set & ballot))
+    def cost_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
+        return sum(costs[p] for p in ([a for a in project_set if a in ballot]))
 
     path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
     # path = os.path.join("./elections/", "Netherlands_Amsterdam_332.pb")
@@ -238,10 +239,15 @@ if __name__ == "__main__":
     )
 
     violation = find_ejr_violation_witness(
-        approvals, winning_set, costs, projects, budget, cost_utility_func
+        approvals,
+        winning_set,
+        costs,
+        projects,
+        budget,
+        cost_utility_func,
+        verbose=False,
     )
-    print(violation)
-    print(outcome_greedy)
+    print(violation.p_sets_checked)
 
 
 # 1,2 - 3,4 - 3,5 - 4.5 -> {1,2,3,4,5} -> 3^{1,2,3,4,5}
