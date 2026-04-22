@@ -11,7 +11,8 @@ from pabutools.rules import (
     greedy_utilitarian_welfare,
     BudgetAllocation,
 )
-from pabutools.utils import Numeric
+from itertools import combinations, chain
+from pabutools.utils import Numeric, combinations
 from typing import Callable, Iterable
 import os
 from typess import EJRViolationWitness, EJRViolationResult
@@ -158,6 +159,12 @@ def find_ejr_violation_witness(
     return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
 
 
+def powerset(iterable: Iterable):
+
+    s = list(iterable)
+    return chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
+
+
 def find_pjr_violation_witness(
     approvals: list[set[int]],
     winning_set: set[int],
@@ -175,6 +182,10 @@ def find_pjr_violation_witness(
     witnesses = []
     n = len(approvals)
 
+    approvals_union: set[int] = set()
+    for ballot in approvals:
+        approvals_union |= ballot
+
     def count_p_sets():
         nonlocal p_sets_checked
         p_sets_checked += 1
@@ -186,18 +197,34 @@ def find_pjr_violation_witness(
             if winning_util[i] < utility_func(p_set, approvals[i])
         }
 
+        util_p = utility_func(p_set, approvals_union)
+        # create powerset of winning set, while for each subset X: util(X) < util_p
+
         needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
-        # build a set of the voters that is that large enough. And where the union of the voters approved projects has more satisfaction than the winning set. If such a set exists, then PJR violation.
 
-        #winning_outcome_intersection_map= ...
+        approval_winning_intersection = [
+            frozenset(winning_set & approvals[i]) for i in unsat_voters
+        ]
+        map_from_project_set_to_count = {}
+        for i in approval_winning_intersection:
+            map_from_project_set_to_count[i] = (
+                map_from_project_set_to_count.get(i, 0) + 1
+            )
 
-        p_union = [approvals[i] for i in unsat_voters]
-
-        is_violation = True
-        if is_violation:
-            witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
-            # only find 1 witness
-            return True
+        for x in powerset(winning_set):
+            util_x = utility_func(x, approvals_union)
+            if util_x >= util_p:
+                # Check if there are enough voters whose approval sets form a subset of x, such that they are a T-cohesive group. If so, then PJR violation.
+                count_voters_with_subset_x = 0
+                for their_proj, count in map_from_project_set_to_count.items():
+                    if their_proj.issubset(x):
+                        count_voters_with_subset_x += count
+                if count_voters_with_subset_x >= needed_voters_larger_or_equal_to:
+                    if verbose:
+                        print(f"T: {p_set}, voters: {unsat_voters}, X: {x}")
+                    witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
+                    # only find 1 witness
+                    return True
 
         return False  # continue searching for more witnesses, don't exit early
 
