@@ -17,7 +17,7 @@ import os
 from typess import EJRViolationWitness, EJRViolationResult
 
 
-def interate_all_affordable_p_sets(
+def iterate_all_affordable_p_sets(
     approvals: list[set[int]],
     costs: list[Numeric],
     projects: list[Project],
@@ -145,12 +145,68 @@ def find_ejr_violation_witness(
 
         return False  # continue searching for more witnesses, don't exit early
 
-    interate_all_affordable_p_sets(
+    iterate_all_affordable_p_sets(
         approvals,
         costs,
         projects,
         budget,
         callback=check_ejr,
+        pre_callback=count_p_sets,
+        verbose=verbose,
+    )
+
+    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+
+
+def find_pjr_violation_witness(
+    approvals: list[set[int]],
+    winning_set: set[int],
+    costs: list[Numeric],
+    projects: list[Project],
+    budget: Numeric,
+    utility_func: Callable[[Iterable[int], set[int]], Numeric],
+    verbose: bool = True,
+) -> EJRViolationResult:
+    winning_util = [
+        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
+    ]
+
+    p_sets_checked = 0
+    witnesses = []
+    n = len(approvals)
+
+    def count_p_sets():
+        nonlocal p_sets_checked
+        p_sets_checked += 1
+
+    def check_pjr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+        unsat_voters = {
+            i
+            for i in voter_intersection
+            if winning_util[i] < utility_func(p_set, approvals[i])
+        }
+
+        needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
+        # build a set of the voters that is that large enough. And where the union of the voters approved projects has more satisfaction than the winning set. If such a set exists, then PJR violation.
+
+        #winning_outcome_intersection_map= ...
+
+        p_union = [approvals[i] for i in unsat_voters]
+
+        is_violation = True
+        if is_violation:
+            witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
+            # only find 1 witness
+            return True
+
+        return False  # continue searching for more witnesses, don't exit early
+
+    iterate_all_affordable_p_sets(
+        approvals,
+        costs,
+        projects,
+        budget,
+        callback=check_pjr,
         pre_callback=count_p_sets,
         verbose=verbose,
     )
