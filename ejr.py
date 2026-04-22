@@ -40,8 +40,6 @@ def iterate_all_affordable_p_sets(
         next_lattice_layer_worklist.append(p_set)
         voter_intersection_cache[p_set] = project_supporters[pIdx]
 
-    count = 0
-
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist = []
@@ -89,9 +87,6 @@ def iterate_all_affordable_p_sets(
                 else:
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
-        if count == 1:
-            print(next_lattice_layer_worklist)
-        count += 1
 
     return None
 
@@ -213,7 +208,7 @@ def find_pjr_violation_witness(
 
         for x in powerset(winning_set):
             util_x = utility_func(x, approvals_union)
-            if util_x >= util_p:
+            if util_x < util_p:
                 # Check if there are enough voters whose approval sets form a subset of x, such that they are a T-cohesive group. If so, then PJR violation.
                 count_voters_with_subset_x = 0
                 for their_proj, count in map_from_project_set_to_count.items():
@@ -222,7 +217,7 @@ def find_pjr_violation_witness(
                 if count_voters_with_subset_x >= needed_voters_larger_or_equal_to:
                     if verbose:
                         print(f"T: {p_set}, voters: {unsat_voters}, X: {x}")
-                    witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
+                    witnesses.append(EJRViolationWitness(p_set, unsat_voters, -1))
                     # only find 1 witness
                     return True
 

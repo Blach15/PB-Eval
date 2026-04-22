@@ -17,7 +17,11 @@ from typing import Callable
 import os
 import time
 import json
-from ejr import find_ejr_violation_witness, convert_inputs_to_ejr_types
+from ejr import (
+    find_ejr_violation_witness,
+    find_pjr_violation_witness,
+    convert_inputs_to_ejr_types,
+)
 from typess import EJRViolationWitness, EJRViolationResult
 
 
@@ -58,6 +62,24 @@ def check_ejr(instance, profile, outcome, utility_func):
     )
 
     violation = find_ejr_violation_witness(
+        approvals,
+        winning_set,
+        costs,
+        projects,
+        budget,
+        utility_func,
+        verbose=False,
+    )
+    return violation
+
+
+def check_pjr(instance, profile, outcome, utility_func):
+    """Check PJR violation for a given outcome and utility function."""
+    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
+        instance, profile, outcome
+    )
+
+    violation = find_pjr_violation_witness(
         approvals,
         winning_set,
         costs,
@@ -139,29 +161,55 @@ def test_ejr_algorithms(filename: str):
         outcome = algo["function"]()
         algo_time = time.time() - start
 
-        # Test with cost utility function
+        print(f"{algo_name} algorithm time: {algo_time:.4f}s")
+
+        # Test EJR with cost utility function
         start = time.time()
         violation_cost = check_ejr(instance, profile, outcome, cost_utility_func)
         time_cost = time.time() - start
 
-        # Test with card utility function
+        print(
+            f"{algo_name} EJR[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
+        )
+
+        # Test EJR with card utility function
         start = time.time()
         violation_card = check_ejr(instance, profile, outcome, card_utility_func)
         time_card = time.time() - start
 
+        print(
+            f"{algo_name} EJR[card] time: {time_card:.4f}s, p-sets checked: {violation_card.p_sets_checked}"
+        )
+
+        # Test PJR with cost utility function
+        start = time.time()
+        pjr_violation_cost = check_pjr(instance, profile, outcome, cost_utility_func)
+        pjr_time_cost = time.time() - start
+
+        print(
+            f"{algo_name} PJR[cost] time: {pjr_time_cost:.4f}s, p-sets checked: {pjr_violation_cost.p_sets_checked}"
+        )
+
+        # Test PJR with card utility function
+        start = time.time()
+        pjr_violation_card = check_pjr(instance, profile, outcome, card_utility_func)
+        pjr_time_card = time.time() - start
+
+        print(
+            f"{algo_name} PJR[card] time: {pjr_time_card:.4f}s, p-sets checked: {pjr_violation_card.p_sets_checked}"
+        )
+
         result["results"][algo_name] = {
             "algorithm_time": algo_time,
-            "cost": format_ejr_result(violation_cost, time_cost),
-            "card": format_ejr_result(violation_card, time_card),
+            "ejr": {
+                "cost": format_ejr_result(violation_cost, time_cost),
+                "card": format_ejr_result(violation_card, time_card),
+            },
+            "pjr": {
+                "cost": format_ejr_result(pjr_violation_cost, pjr_time_cost),
+                "card": format_ejr_result(pjr_violation_card, pjr_time_card),
+            },
         }
-
-        print(f"{algo_name} algorithm time: {algo_time:.4f}s")
-        print(
-            f"{algo_name}[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
-        )
-        print(
-            f"{algo_name}[card] time: {time_card:.4f}s, p-sets checked: {violation_card.p_sets_checked}"
-        )
 
     # Save to JSON file
     output_filename = os.path.splitext(filename)[0] + ".json"
