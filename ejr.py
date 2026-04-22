@@ -181,9 +181,16 @@ def find_pjr_violation_witness(
     for ballot in approvals:
         approvals_union |= ballot
 
+    # Precompute per-project utility w.r.t. approvals_union (additive, non-negative).
+    # Sort descending so high-contribution projects are tried first, enabling earlier pruning.
+    proj_util = {p: utility_func((p,), approvals_union) for p in winning_set}
+    sorted_winning = sorted(winning_set, key=lambda p: proj_util[p], reverse=True)
+
     def count_p_sets():
         nonlocal p_sets_checked
         p_sets_checked += 1
+
+    util_p_sets = []
 
     def check_pjr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
         unsat_voters = {
@@ -206,20 +213,31 @@ def find_pjr_violation_witness(
                 map_from_project_set_to_count.get(i, 0) + 1
             )
 
-        for x in powerset(winning_set):
-            util_x = utility_func(x, approvals_union)
-            if util_x < util_p:
-                # Check if there are enough voters whose approval sets form a subset of x, such that they are a T-cohesive group. If so, then PJR violation.
-                count_voters_with_subset_x = 0
-                for their_proj, count in map_from_project_set_to_count.items():
-                    if their_proj.issubset(x):
-                        count_voters_with_subset_x += count
-                if count_voters_with_subset_x >= needed_voters_larger_or_equal_to:
-                    if verbose:
-                        print(f"T: {p_set}, voters: {unsat_voters}, X: {x}")
-                    witnesses.append(EJRViolationWitness(p_set, unsat_voters, -1))
-                    # only find 1 witness
-                    return True
+        # Generator: yields only subsets of winning_set whose utility < util_p.
+        # Since utility is additive and non-negative, any superset of a set with
+        # util >= util_p also has util >= util_p, so those branches are pruned.
+        def subsets_below_util(idx: int, current: list, current_util):
+            yield tuple(current)
+            for i in range(idx, len(sorted_winning)):
+                p = sorted_winning[i]
+                new_util = current_util + proj_util[p]
+                if new_util < util_p:
+                    current.append(p)
+                    yield from subsets_below_util(i + 1, current, new_util)
+                    current.pop()
+
+        for x in subsets_below_util(0, [], 0):
+            # Check if there are enough voters whose approval sets form a subset of x, such that they are a T-cohesive group. If so, then PJR violation.
+            count_voters_with_subset_x = 0
+            for their_proj, count in map_from_project_set_to_count.items():
+                if their_proj.issubset(x):
+                    count_voters_with_subset_x += count
+            if count_voters_with_subset_x >= needed_voters_larger_or_equal_to:
+                if verbose:
+                    print(f"T: {p_set}, voters: {unsat_voters}, X: {x}")
+                witnesses.append(EJRViolationWitness(p_set, unsat_voters, -1))
+                # only find 1 witness
+                return True
 
         return False  # continue searching for more witnesses, don't exit early
 
