@@ -181,11 +181,11 @@ def find_ejr_1_violation_witness(
         nonlocal p_sets_checked
         p_sets_checked += 1
 
-    def one_more_project(voter_index: int, p_set: tuple[int]) -> Numeric:
-        # marginal utility of adding one more project to p_set for voter i
+    def max_util_from_unpicked(voter_index: int, p_set: tuple[int]) -> Numeric:
+        # marginal utility of adding best project to p_set for voter i
         max_util = 0
-        for p in range(len(projects)):
-            if p not in p_set and p in approvals[voter_index]:
+        for p in p_set:
+            if p not in winning_set:
                 util_p = utility_func((p,), approvals[voter_index])
                 max_util = max(max_util, util_p)
         return max_util
@@ -194,7 +194,7 @@ def find_ejr_1_violation_witness(
         unsat_voters = {
             i
             for i in voter_intersection
-            if winning_util[i] + one_more_project(i, p_set)
+            if winning_util[i] + max_util_from_unpicked(i, p_set)
             < utility_func(p_set, approvals[i])
         }
 
@@ -204,8 +204,70 @@ def find_ejr_1_violation_witness(
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
 
             witnesses.append(EJRViolationWitness(p_set, unsat_voters, -2))
+            return True  # exit early, to find 1 witness
 
-        return True  # exit early, to find 1 witness
+        return False
+
+    iterate_all_affordable_p_sets(
+        approvals,
+        costs,
+        projects,
+        budget,
+        callback=check_ejr,
+        pre_callback=count_p_sets,
+        verbose=verbose,
+    )
+
+    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+
+
+def find_ejr_x_violation_witness(
+    approvals: list[set[int]],
+    winning_set: set[int],
+    costs: list[Numeric],
+    projects: list[Project],
+    budget: Numeric,
+    utility_func: Callable[[Iterable[int], set[int]], Numeric],
+    verbose: bool = True,
+) -> EJRViolationResult:
+    winning_util = [
+        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
+    ]
+
+    p_sets_checked = 0
+    witnesses = []
+    n = len(approvals)
+
+    def count_p_sets():
+        nonlocal p_sets_checked
+        p_sets_checked += 1
+
+    def min_util_from_unpicked(voter_index: int, p_set: tuple[int]) -> Numeric:
+        # marginal utility of adding worst project to p_set for voter i
+        min_util = 0
+        for p in p_set:
+            if p not in winning_set:
+                util_p = utility_func((p,), approvals[voter_index])
+                min_util = min(min_util, util_p)
+        return min_util
+
+    def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+        unsat_voters = {
+            i
+            for i in voter_intersection
+            if winning_util[i] + min_util_from_unpicked(i, p_set)
+            < utility_func(p_set, approvals[i])
+        }
+
+        # check if unsat_voters is T-cohesive, then EJR violation
+        # done by computing the required size, for p_set to be affordable.
+        needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
+        if len(unsat_voters) >= needed_voters_larger_or_equal_to:
+
+            witnesses.append(EJRViolationWitness(p_set, unsat_voters, -2))
+            return True  # exit early, to find 1 witness
+
+        return False
 
     iterate_all_affordable_p_sets(
         approvals,
