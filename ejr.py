@@ -203,7 +203,7 @@ def find_ejr_1_violation_witness(
         needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
 
-            witnesses.append(EJRViolationWitness(p_set, unsat_voters, -2))
+            witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
             return True  # exit early, to find 1 witness
 
         return False
@@ -264,7 +264,7 @@ def find_ejr_x_violation_witness(
         needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
 
-            witnesses.append(EJRViolationWitness(p_set, unsat_voters, -2))
+            witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
             return True  # exit early, to find 1 witness
 
         return False
@@ -357,7 +357,7 @@ def find_pjr_violation_witness(
             if count_voters_with_subset_x >= needed_voters_larger_or_equal_to:
                 if verbose:
                     print(f"T: {p_set}, voters: {unsat_voters}, X: {x}")
-                witnesses.append(EJRViolationWitness(p_set, unsat_voters, -1))
+                witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
                 # only find 1 witness
                 return True
 

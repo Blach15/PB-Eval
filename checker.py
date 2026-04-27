@@ -20,6 +20,7 @@ import json
 from ejr import (
     find_ejr_violation_witness,
     find_ejr_1_violation_witness,
+    find_ejr_x_violation_witness,
     convert_inputs_to_ejr_types,
 )
 from typess import EJRViolationWitness, EJRViolationResult
@@ -91,6 +92,24 @@ def check_ejr_1(instance, profile, outcome, utility_func):
     return violation
 
 
+def check_ejr_x(instance, profile, outcome, utility_func):
+    """Check EJR-x violation for a given outcome and utility function."""
+    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
+        instance, profile, outcome
+    )
+
+    violation = find_ejr_x_violation_witness(
+        approvals,
+        winning_set,
+        costs,
+        projects,
+        budget,
+        utility_func,
+        verbose=False,
+    )
+    return violation
+
+
 def format_ejr_result(violation: EJRViolationResult, elapsed_time):
     """Format EJR violation result and timing into JSON structure."""
     return {
@@ -101,7 +120,13 @@ def format_ejr_result(violation: EJRViolationResult, elapsed_time):
         "violation_degree": (  # % of p_set util gotten
             None
             if len(violation.witness) == 0
-            else float(min(map(lambda w: w.max_util, violation.witness)))
+            else (
+                float(
+                    min(w.max_util for w in violation.witness if w.max_util is not None)
+                )
+                if any(w.max_util is not None for w in violation.witness)
+                else None
+            )
         ),
     }
 
@@ -199,6 +224,24 @@ def test_ejr_algorithms(filename: str):
             f"{algo_name} EJR-1[card] time: {time_ejr1_card:.4f}s, p-sets checked: {violation_ejr1_card.p_sets_checked}"
         )
 
+        # Test EJR-x with cost utility function
+        start = time.time()
+        violation_ejrx_cost = check_ejr_x(instance, profile, outcome, cost_utility_func)
+        time_ejrx_cost = time.time() - start
+
+        print(
+            f"{algo_name} EJR-x[cost] time: {time_ejrx_cost:.4f}s, p-sets checked: {violation_ejrx_cost.p_sets_checked}"
+        )
+
+        # Test EJR-x with card utility function
+        start = time.time()
+        violation_ejrx_card = check_ejr_x(instance, profile, outcome, card_utility_func)
+        time_ejrx_card = time.time() - start
+
+        print(
+            f"{algo_name} EJR-x[card] time: {time_ejrx_card:.4f}s, p-sets checked: {violation_ejrx_card.p_sets_checked}"
+        )
+
         result["results"][algo_name] = {
             "algorithm_time": algo_time,
             "ejr": {
@@ -208,6 +251,10 @@ def test_ejr_algorithms(filename: str):
             "ejr_1": {
                 "cost": format_ejr_result(violation_ejr1_cost, time_ejr1_cost),
                 "card": format_ejr_result(violation_ejr1_card, time_ejr1_card),
+            },
+            "ejr_x": {
+                "cost": format_ejr_result(violation_ejrx_cost, time_ejrx_cost),
+                "card": format_ejr_result(violation_ejrx_card, time_ejrx_card),
             },
         }
 

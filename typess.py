@@ -2,7 +2,7 @@ from pabutools.utils import Numeric
 
 
 class EJRViolationWitness:
-    def __init__(self, p_set: tuple[int], voters: set[int], max_util: Numeric):
+    def __init__(self, p_set: tuple[int], voters: set[int], max_util: Numeric | None):
         self.p_set = p_set
         self.voters = voters
         self.max_util = max_util
