@@ -46,9 +46,9 @@ def parsefile(filename: str):
         "average_project_cost": float(average_project_cost),
         "projects_to_voters_ratio": float(projects_to_voters_ratio),
         "vote_length_to_projects_ratio": float(vote_length_to_projects_ratio),
-        "min_length": instance.meta.get("min_length", None),
-        "max_length": instance.meta.get("max_length", None),
-        "max_sum_cost": instance.meta.get("max_sum_cost", None),
+        "min_length": (instance.meta or {}).get("min_length", None),
+        "max_length": (instance.meta or {}).get("max_length", None),
+        "max_sum_cost": (instance.meta or {}).get("max_sum_cost", None),
     }
     print(f"Metadata for {filename}: {metadata}")
 

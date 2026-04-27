@@ -159,6 +159,67 @@ def powerset(iterable: Iterable):
     s = list(iterable)
     return chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
 
+def find_ejr_1_violation_witness(
+    approvals: list[set[int]],
+    winning_set: set[int],
+    costs: list[Numeric],
+    projects: list[Project],
+    budget: Numeric,
+    utility_func: Callable[[Iterable[int], set[int]], Numeric],
+    verbose: bool = True,
+) -> EJRViolationResult:
+    winning_util = [
+        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
+    ]
+
+    p_sets_checked = 0
+    witnesses = []
+    n = len(approvals)
+
+    def count_p_sets():
+        nonlocal p_sets_checked
+        p_sets_checked += 1
+
+    def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+        unsat_voters = {
+            i
+            for i in voter_intersection
+            if winning_util[i] < utility_func(p_set, approvals[i])
+        }
+
+        # check if unsat_voters is T-cohesive, then EJR violation
+        # done by computing the required size, for p_set to be affordable.
+        needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
+        if len(unsat_voters) >= needed_voters_larger_or_equal_to:
+            if verbose:
+                print(f"T: {p_set}, voters: {unsat_voters}")
+
+            # for the voter i in the minimum set of voters, who is the closest to being satisfied
+            # find the a in: a * util_p = util_win
+            unsat_voters_util = [
+                (winning_util[i] / utility_func(p_set, approvals[i]))
+                for i in unsat_voters
+            ]
+            max_a_in_min_set_of_voters = sort(unsat_voters_util)[
+                int(needed_voters_larger_or_equal_to) - 1
+            ]
+            witnesses.append(
+                EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
+            )
+
+        return False  # continue searching for more witnesses, don't exit early
+
+    iterate_all_affordable_p_sets(
+        approvals,
+        costs,
+        projects,
+        budget,
+        callback=check_ejr,
+        pre_callback=count_p_sets,
+        verbose=verbose,
+    )
+
+    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
 
 def find_pjr_violation_witness(
     approvals: list[set[int]],
