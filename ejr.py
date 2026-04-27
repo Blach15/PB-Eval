@@ -159,6 +159,7 @@ def powerset(iterable: Iterable):
     s = list(iterable)
     return chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
 
+
 def find_ejr_1_violation_witness(
     approvals: list[set[int]],
     winning_set: set[int],
@@ -180,34 +181,31 @@ def find_ejr_1_violation_witness(
         nonlocal p_sets_checked
         p_sets_checked += 1
 
+    def one_more_project(voter_index: int, p_set: tuple[int]) -> Numeric:
+        # marginal utility of adding one more project to p_set for voter i
+        max_util = 0
+        for p in range(len(projects)):
+            if p not in p_set and p in approvals[voter_index]:
+                util_p = utility_func((p,), approvals[voter_index])
+                max_util = max(max_util, util_p)
+        return max_util
+
     def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
         unsat_voters = {
             i
             for i in voter_intersection
-            if winning_util[i] < utility_func(p_set, approvals[i])
+            if winning_util[i] + one_more_project(i, p_set)
+            < utility_func(p_set, approvals[i])
         }
 
         # check if unsat_voters is T-cohesive, then EJR violation
         # done by computing the required size, for p_set to be affordable.
         needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
-            if verbose:
-                print(f"T: {p_set}, voters: {unsat_voters}")
 
-            # for the voter i in the minimum set of voters, who is the closest to being satisfied
-            # find the a in: a * util_p = util_win
-            unsat_voters_util = [
-                (winning_util[i] / utility_func(p_set, approvals[i]))
-                for i in unsat_voters
-            ]
-            max_a_in_min_set_of_voters = sort(unsat_voters_util)[
-                int(needed_voters_larger_or_equal_to) - 1
-            ]
-            witnesses.append(
-                EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
-            )
+            witnesses.append(EJRViolationWitness(p_set, unsat_voters, -2))
 
-        return False  # continue searching for more witnesses, don't exit early
+        return True  # exit early, to find 1 witness
 
     iterate_all_affordable_p_sets(
         approvals,
@@ -220,6 +218,7 @@ def find_ejr_1_violation_witness(
     )
 
     return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+
 
 def find_pjr_violation_witness(
     approvals: list[set[int]],
