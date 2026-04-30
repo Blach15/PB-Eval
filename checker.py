@@ -26,7 +26,7 @@ from ejr import (
 from typess import EJRViolationWitness, EJRViolationResult
 
 
-def parsefile(filename: str):
+def parsefile(filename: str, verbose: bool = True):
     path = os.path.join("./elections/", filename)
     instance, profile = parse_pabulib(path)
 
@@ -51,7 +51,8 @@ def parsefile(filename: str):
         "max_length": (instance.meta or {}).get("max_length", None),
         "max_sum_cost": (instance.meta or {}).get("max_sum_cost", None),
     }
-    print(f"Metadata for {filename}: {metadata}")
+    if verbose:
+        print(f"Metadata for {filename}: {metadata}")
 
     return instance, profile, metadata
 
@@ -131,9 +132,9 @@ def format_ejr_result(violation: EJRViolationResult, elapsed_time):
     }
 
 
-def test_ejr_algorithms(filename: str):
+def test_ejr_algorithms(filename: str, verbose: bool = True):
     # Parse file to get instance, profile, and metadata
-    instance, profile, metadata = parsefile(filename)
+    instance, profile, metadata = parsefile(filename, verbose=verbose)
 
     # Get costs for utility functions
     projects = sorted(instance, key=lambda p: str(p))
@@ -186,61 +187,68 @@ def test_ejr_algorithms(filename: str):
         outcome = algo["function"]()
         algo_time = time.time() - start
 
-        print(f"{algo_name} algorithm time: {algo_time:.4f}s")
+        if verbose:
+            print(f"{algo_name} algorithm time: {algo_time:.4f}s")
 
         # Test EJR with cost utility function
         start = time.time()
         violation_cost = check_ejr(instance, profile, outcome, cost_utility_func)
         time_cost = time.time() - start
 
-        print(
-            f"{algo_name} EJR[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
-        )
+        if verbose:
+            print(
+                f"{algo_name} EJR[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
+            )
 
         # Test EJR with card utility function
         start = time.time()
         violation_card = check_ejr(instance, profile, outcome, card_utility_func)
         time_card = time.time() - start
 
-        print(
-            f"{algo_name} EJR[card] time: {time_card:.4f}s, p-sets checked: {violation_card.p_sets_checked}"
-        )
+        if verbose:
+            print(
+                f"{algo_name} EJR[card] time: {time_card:.4f}s, p-sets checked: {violation_card.p_sets_checked}"
+            )
 
         # Test EJR-1 with cost utility function
         start = time.time()
         violation_ejr1_cost = check_ejr_1(instance, profile, outcome, cost_utility_func)
         time_ejr1_cost = time.time() - start
 
-        print(
-            f"{algo_name} EJR-1[cost] time: {time_ejr1_cost:.4f}s, p-sets checked: {violation_ejr1_cost.p_sets_checked}"
-        )
+        if verbose:
+            print(
+                f"{algo_name} EJR-1[cost] time: {time_ejr1_cost:.4f}s, p-sets checked: {violation_ejr1_cost.p_sets_checked}"
+            )
 
         # Test EJR-1 with card utility function
         start = time.time()
         violation_ejr1_card = check_ejr_1(instance, profile, outcome, card_utility_func)
         time_ejr1_card = time.time() - start
 
-        print(
-            f"{algo_name} EJR-1[card] time: {time_ejr1_card:.4f}s, p-sets checked: {violation_ejr1_card.p_sets_checked}"
-        )
+        if verbose:
+            print(
+                f"{algo_name} EJR-1[card] time: {time_ejr1_card:.4f}s, p-sets checked: {violation_ejr1_card.p_sets_checked}"
+            )
 
         # Test EJR-x with cost utility function
         start = time.time()
         violation_ejrx_cost = check_ejr_x(instance, profile, outcome, cost_utility_func)
         time_ejrx_cost = time.time() - start
 
-        print(
-            f"{algo_name} EJR-x[cost] time: {time_ejrx_cost:.4f}s, p-sets checked: {violation_ejrx_cost.p_sets_checked}"
-        )
+        if verbose:
+            print(
+                f"{algo_name} EJR-x[cost] time: {time_ejrx_cost:.4f}s, p-sets checked: {violation_ejrx_cost.p_sets_checked}"
+            )
 
         # Test EJR-x with card utility function
         start = time.time()
         violation_ejrx_card = check_ejr_x(instance, profile, outcome, card_utility_func)
         time_ejrx_card = time.time() - start
 
-        print(
-            f"{algo_name} EJR-x[card] time: {time_ejrx_card:.4f}s, p-sets checked: {violation_ejrx_card.p_sets_checked}"
-        )
+        if verbose:
+            print(
+                f"{algo_name} EJR-x[card] time: {time_ejrx_card:.4f}s, p-sets checked: {violation_ejrx_card.p_sets_checked}"
+            )
 
         result["results"][algo_name] = {
             "algorithm_time": algo_time,
@@ -265,29 +273,32 @@ def test_ejr_algorithms(filename: str):
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
 
-    print(f"Results saved to {output_path}")
+    if verbose:
+        print(f"Results saved to {output_path}")
 
 
-def run_all():
+def run_all(verbose: bool = False):
     elections_dir = "./elections/"
     files = [f for f in os.listdir(elections_dir) if f.endswith(".pb")]
 
     for filename in sorted(files):
+
         print(f"\n--- {filename} ---")
         try:
-            test_ejr_algorithms(filename)
+            test_ejr_algorithms(filename, verbose=verbose)
         except Exception as e:
             print(f"Error: {e}")
 
 
-def run_one():
+def run_one(verbose: bool = True):
     filename = "Poland_Warszawa_2022.pb"
-    print(f"\n--- {filename} ---")
+    if verbose:
+        print(f"\n--- {filename} ---")
     try:
-        test_ejr_algorithms(filename)
+        test_ejr_algorithms(filename, verbose=verbose)
     except Exception as e:
         print(f"Error: {e}")
 
 
 if __name__ == "__main__":
-    run_one()
+    run_all()

@@ -46,21 +46,22 @@ def iterate_all_affordable_p_sets_beta(
 
         for p_set in current_lattice_layer_worklist:
             
-            
-            pre_callback()
-            # Get cached voter_intersection or calculate if not in cache
-            voter_intersection = voter_intersection_cache[p_set]
-            if voter_intersection is None:
-                raise ValueError(f"Voter intersection for {p_set} not found in cache.")
-            # check that is cohesive set
-            if len(voter_intersection) / n * budget < sum(costs[p] for p in p_set):
-                continue  # can't afford
+            for beta in range(1, len(p_set) + 1):
+                
+                pre_callback()
+                # Get cached voter_intersection or calculate if not in cache
+                voter_intersection = voter_intersection_cache[p_set]
+                if voter_intersection is None:
+                    raise ValueError(f"Voter intersection for {p_set} not found in cache.")
+                # check that is cohesive set
+                if len(voter_intersection) / n * budget < sum(costs[p] for p in p_set):
+                    continue  # can't afford
 
-            # allow exit early, to find 1 witness
-            if callback(p_set, voter_intersection):
-                return None
+                # allow exit early, to find 1 witness
+                if callback(p_set, voter_intersection):
+                    return None
 
-            surviving_lattice_layer_worklist.append(p_set)
+                surviving_lattice_layer_worklist.append(p_set)
 
         if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(
