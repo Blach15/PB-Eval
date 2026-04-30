@@ -107,9 +107,105 @@ def parse_outcomes_and_count_satisfying_properties():
     print("\n" + "=" * 80)
 
 
+def print_results_by_sat_function():
+    """
+    Print results organized by EJR type and satisfaction function,
+    showing how each algorithm performed.
+    """
+    outcomes_dir = "./outcomes"
+
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return
+
+    # Structure: {ejr_type: {utility: {algo_name: {satisfied: count, violated: count}}}}
+    results_by_sat_func = {}
+
+    # Get all JSON files in outcomes directory
+    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
+
+    for filename in sorted(json_files):
+        filepath = os.path.join(outcomes_dir, filename)
+
+        try:
+            with open(filepath, "r") as f:
+                data = json.load(f)
+
+            if "results" in data:
+                for algo_name, algo_results in data["results"].items():
+                    for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+                        if ejr_type not in results_by_sat_func:
+                            results_by_sat_func[ejr_type] = {}
+
+                        for utility in ["cost", "card"]:
+                            if utility in algo_results.get(ejr_type, {}):
+                                if utility not in results_by_sat_func[ejr_type]:
+                                    results_by_sat_func[ejr_type][utility] = {}
+
+                                if (
+                                    algo_name
+                                    not in results_by_sat_func[ejr_type][utility]
+                                ):
+                                    results_by_sat_func[ejr_type][utility][
+                                        algo_name
+                                    ] = {"satisfied": 0, "violated": 0}
+
+                                result = algo_results[ejr_type][utility]
+                                if result.get("violation_found", False):
+                                    results_by_sat_func[ejr_type][utility][algo_name][
+                                        "violated"
+                                    ] += 1
+                                else:
+                                    results_by_sat_func[ejr_type][utility][algo_name][
+                                        "satisfied"
+                                    ] += 1
+
+        except json.JSONDecodeError as e:
+            print(f"Error parsing {filename}: {e}")
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    # Print results organized by EJR type and satisfaction function
+    print("\n" + "=" * 100)
+    print("RESULTS BY SATISFACTION FUNCTION")
+    print("=" * 100)
+
+    for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+        print(f"\n{ejr_type.upper()}:")
+        print("-" * 100)
+
+        if ejr_type in results_by_sat_func:
+            for utility in ["cost", "card"]:
+                if utility in results_by_sat_func[ejr_type]:
+                    print(f"\n  {ejr_type.upper()}[{utility}]:")
+                    algo_results = results_by_sat_func[ejr_type][utility]
+
+                    # Calculate totals
+                    total_satisfied = sum(r["satisfied"] for r in algo_results.values())
+                    total_violated = sum(r["violated"] for r in algo_results.values())
+                    grand_total = total_satisfied + total_violated
+
+                    for algo_name in sorted(algo_results.keys()):
+                        satisfied = algo_results[algo_name]["satisfied"]
+                        violated = algo_results[algo_name]["violated"]
+                        total = satisfied + violated
+                        pct = (satisfied / total * 100) if total > 0 else 0
+                        print(
+                            f"    {algo_name:20s}: {satisfied:4d}/{total:4d} satisfied ({pct:5.1f}%)"
+                        )
+
+                    pct_total = (
+                        (total_satisfied / grand_total * 100) if grand_total > 0 else 0
+                    )
+                    print(
+                        f"    {'TOTAL':20s}: {total_satisfied:4d}/{grand_total:4d} satisfied ({pct_total:5.1f}%)"
+                    )
+
+
 def print_stats():
     """Main entry point for statistics generation."""
     parse_outcomes_and_count_satisfying_properties()
+    print_results_by_sat_function()
 
 
 if __name__ == "__main__":
