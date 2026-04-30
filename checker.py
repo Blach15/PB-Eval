@@ -166,6 +166,12 @@ def test_ejr_algorithms(filename: str, verbose: bool = True):
             ),
         },
         {
+            "json_name": "MES[cost]",
+            "function": lambda: method_of_equal_shares(
+                instance, profile, sat_class=Cost_Sat, analytics=False
+            ),
+        },
+        {
             "json_name": "MES[card]",
             "function": lambda: method_of_equal_shares(
                 instance, profile, sat_class=Cardinality_Sat, analytics=False
