@@ -1,57 +1,167 @@
 {
   "metadata": {
-    "average_project_cost": 316777.70149253734
+    "number_of_voters": 6760.0,
+    "number_of_projects": 67.0,
+    "vote_length": 10.346745562130177,
+    "average_project_cost": 316777.70149253734,
+    "projects_to_voters_ratio": 0.009911242603550295,
+    "vote_length_to_projects_ratio": 0.1544290382407489,
+    "min_length": "1",
+    "max_length": "15",
+    "max_sum_cost": null
   },
   "results": {
     "greedy[cost]": {
-      "algorithm_time": 0.3295021057128906,
-      "cost": {
-        "time": 0.05223393440246582,
-        "p_sets_checked": 67,
-        "violation_found": true,
-        "amount_of_violation": 8,
-        "witness": -1.0
+      "algorithm_time": 0.33737707138061523,
+      "ejr": {
+        "cost": {
+          "time": 0.23473381996154785,
+          "p_sets_checked": 4320,
+          "violation_found": true,
+          "amount_of_violation": 9,
+          "violation_degree": 0.0
+        },
+        "card": {
+          "time": 0.1692509651184082,
+          "p_sets_checked": 4320,
+          "violation_found": true,
+          "amount_of_violation": 11,
+          "violation_degree": 0.0
+        }
       },
-      "card": {
-        "time": 0.029114246368408203,
-        "p_sets_checked": 67,
-        "violation_found": true,
-        "amount_of_violation": 8,
-        "witness": -1.0
+      "ejr_1": {
+        "cost": {
+          "time": 0.16295599937438965,
+          "p_sets_checked": 366,
+          "violation_found": true,
+          "amount_of_violation": 1,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.1183619499206543,
+          "p_sets_checked": 366,
+          "violation_found": true,
+          "amount_of_violation": 1,
+          "violation_degree": null
+        }
+      },
+      "ejr_x": {
+        "cost": {
+          "time": 0.03337597846984863,
+          "p_sets_checked": 7,
+          "violation_found": true,
+          "amount_of_violation": 1,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.02586507797241211,
+          "p_sets_checked": 7,
+          "violation_found": true,
+          "amount_of_violation": 1,
+          "violation_degree": null
+        }
       }
     },
     "greedy[card]": {
-      "algorithm_time": 0.19531989097595215,
-      "cost": {
-        "time": 0.17577195167541504,
-        "p_sets_checked": 4262,
-        "violation_found": false,
-        "amount_of_violation": 0,
-        "witness": -1
+      "algorithm_time": 0.1978602409362793,
+      "ejr": {
+        "cost": {
+          "time": 0.2409968376159668,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.18175601959228516,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        }
       },
-      "card": {
-        "time": 0.10994100570678711,
-        "p_sets_checked": 4262,
-        "violation_found": false,
-        "amount_of_violation": 0,
-        "witness": -1
+      "ejr_1": {
+        "cost": {
+          "time": 0.2738339900970459,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.2007157802581787,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        }
+      },
+      "ejr_x": {
+        "cost": {
+          "time": 0.2723042964935303,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.19852113723754883,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        }
       }
     },
     "MES[card]": {
-      "algorithm_time": 0.4060080051422119,
-      "cost": {
-        "time": 0.0560300350189209,
-        "p_sets_checked": 67,
-        "violation_found": true,
-        "amount_of_violation": 2,
-        "witness": 45.54373913043478
+      "algorithm_time": 0.41161417961120605,
+      "ejr": {
+        "cost": {
+          "time": 0.23649287223815918,
+          "p_sets_checked": 4320,
+          "violation_found": true,
+          "amount_of_violation": 2,
+          "violation_degree": 0.9425714285714286
+        },
+        "card": {
+          "time": 0.1779928207397461,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        }
       },
-      "card": {
-        "time": 0.1197669506072998,
-        "p_sets_checked": 4262,
-        "violation_found": false,
-        "amount_of_violation": 0,
-        "witness": -1
+      "ejr_1": {
+        "cost": {
+          "time": 0.2741360664367676,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.20249295234680176,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        }
+      },
+      "ejr_x": {
+        "cost": {
+          "time": 0.04719996452331543,
+          "p_sets_checked": 13,
+          "violation_found": true,
+          "amount_of_violation": 1,
+          "violation_degree": null
+        },
+        "card": {
+          "time": 0.20032382011413574,
+          "p_sets_checked": 4320,
+          "violation_found": false,
+          "amount_of_violation": 0,
+          "violation_degree": null
+        }
       }
     }
   }
