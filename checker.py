@@ -9,7 +9,6 @@ from pabutools.election import (
 from pabutools.rules import (
     greedy_utilitarian_welfare,
     sequential_phragmen,
-    maximin_support,
     method_of_equal_shares,
     BudgetAllocation,
 )
@@ -178,6 +177,10 @@ def test_ejr_algorithms(filename: str, verbose: bool = True):
                 instance, profile, sat_class=Cardinality_Sat, analytics=False
             ),
         },
+        {
+            "json_name": "seq_phragmen",
+            "function": lambda: sequential_phragmen(instance, profile),
+        },
     ]
 
     # Create outcomes directory if it doesn't exist
@@ -308,4 +311,4 @@ def run_one(verbose: bool = True):
 
 
 if __name__ == "__main__":
-    run_all()
+    run_one()
