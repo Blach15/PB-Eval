@@ -202,10 +202,105 @@ def print_results_by_sat_function():
                     )
 
 
+def print_results_by_algorithm():
+    """
+    Print results organized by algorithm, showing satisfaction percentages
+    for each EJR type and utility combination as columns.
+    e.g. MES: EJR[card] 85.0%, EJR[cost] 78.0%, EJR-1[card] 92.0%, ...
+    """
+    outcomes_dir = "./outcomes"
+
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return
+
+    # Structure: {algo_name: {ejr_type: {utility: {satisfied, violated}}}}
+    by_algo = {}
+
+    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
+
+    for filename in sorted(json_files):
+        filepath = os.path.join(outcomes_dir, filename)
+        try:
+            with open(filepath, "r") as f:
+                data = json.load(f)
+
+            if "results" not in data:
+                continue
+
+            for algo_name, algo_results in data["results"].items():
+                if algo_name not in by_algo:
+                    by_algo[algo_name] = {}
+
+                for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+                    if ejr_type not in by_algo[algo_name]:
+                        by_algo[algo_name][ejr_type] = {}
+
+                    for utility in ["cost", "card"]:
+                        if utility in algo_results.get(ejr_type, {}):
+                            if utility not in by_algo[algo_name][ejr_type]:
+                                by_algo[algo_name][ejr_type][utility] = {
+                                    "satisfied": 0,
+                                    "violated": 0,
+                                }
+                            result = algo_results[ejr_type][utility]
+                            if result.get("violation_found", False):
+                                by_algo[algo_name][ejr_type][utility]["violated"] += 1
+                            else:
+                                by_algo[algo_name][ejr_type][utility]["satisfied"] += 1
+
+        except json.JSONDecodeError as e:
+            print(f"Error parsing {filename}: {e}")
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    columns = [
+        ("ejr", "card"),
+        ("ejr", "cost"),
+        ("ejr_1", "card"),
+        ("ejr_1", "cost"),
+        ("ejr_x", "card"),
+        ("ejr_x", "cost"),
+    ]
+    col_labels = {
+        ("ejr", "card"): "EJR[card]",
+        ("ejr", "cost"): "EJR[cost]",
+        ("ejr_1", "card"): "EJR-1[card]",
+        ("ejr_1", "cost"): "EJR-1[cost]",
+        ("ejr_x", "card"): "EJR-X[card]",
+        ("ejr_x", "cost"): "EJR-X[cost]",
+    }
+
+    print("\n" + "=" * 100)
+    print("RESULTS BY ALGORITHM")
+    print("=" * 100)
+
+    header = f"  {'Algorithm':20s}"
+    for col in columns:
+        header += f"  {col_labels[col]:>14s}"
+    print(header)
+    print("-" * 100)
+
+    for algo_name in sorted(by_algo.keys()):
+        row = f"  {algo_name:20s}"
+        for ejr_type, utility in columns:
+            counts = by_algo[algo_name].get(ejr_type, {}).get(utility)
+            if counts:
+                total = counts["satisfied"] + counts["violated"]
+                pct = (counts["satisfied"] / total * 100) if total > 0 else 0
+                row += f"  {pct:13.1f}%"
+            else:
+                row += f"  {'N/A':>14s}"
+        print(row)
+
+    print("=" * 100)
+
+
 def print_stats():
     """Main entry point for statistics generation."""
     parse_outcomes_and_count_satisfying_properties()
     print_results_by_sat_function()
+    print_results_by_algorithm()
 
 
 if __name__ == "__main__":

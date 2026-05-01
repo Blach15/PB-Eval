@@ -9,6 +9,7 @@ from pabutools.election import (
 from pabutools.rules import (
     greedy_utilitarian_welfare,
     sequential_phragmen,
+    maximin_support,
     method_of_equal_shares,
     BudgetAllocation,
 )
