@@ -241,7 +241,7 @@ def run_all(verbose: bool = False):
 
 
 def run_one(verbose: bool = True):
-    filename = "Poland_Warszawa_2022.pb"
+    filename = "Poland_Warszawa_2019_Saska_Kepa.pb"
     print(f"\n--- {filename} ---")
     try:
         test_ejr_algorithms(filename, verbose=verbose)
