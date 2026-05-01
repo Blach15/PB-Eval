@@ -244,12 +244,13 @@ def find_ejr_x_violation_witness(
 
     def min_util_from_unpicked(voter_index: int, p_set: tuple[int]) -> Numeric:
         # marginal utility of adding worst project to p_set for voter i
-        min_util = 0
+        min_util = None
         for p in p_set:
             if p not in winning_set:
                 util_p = utility_func((p,), approvals[voter_index])
-                min_util = min(min_util, util_p)
-        return min_util
+                if min_util is None or util_p < min_util:
+                    min_util = util_p
+        return min_util if min_util is not None else 0
 
     def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
         unsat_voters = {
