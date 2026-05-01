@@ -233,6 +233,13 @@ def run_all(verbose: bool = False):
     )
 
     for filename in files:
+        output_filename = os.path.splitext(filename)[0] + ".json"
+        result_path = os.path.join("outcomes", output_filename)
+
+        if os.path.exists(result_path):
+            print(f"\n--- {filename} --- (skipped, result exists)")
+            continue
+
         print(f"\n--- {filename} ---")
         try:
             test_ejr_algorithms(filename, verbose=verbose)
@@ -242,6 +249,13 @@ def run_all(verbose: bool = False):
 
 def run_one(verbose: bool = True):
     filename = "Poland_Warszawa_2019_Saska_Kepa.pb"
+    # output_filename = os.path.splitext(filename)[0] + ".json"
+    # result_path = os.path.join("outcomes", output_filename)
+
+    # if os.path.exists(result_path):
+    #     print(f"\n--- {filename} --- (result already exists)")
+    #     return
+
     print(f"\n--- {filename} ---")
     try:
         test_ejr_algorithms(filename, verbose=verbose)
