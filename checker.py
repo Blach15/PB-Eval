@@ -1,19 +1,6 @@
-from pabutools.election import (
-    Cardinality_Sat,
-    Project,
-    Instance,
-    Profile,
-    Cost_Sat,
-    parse_pabulib,
-)
-from pabutools.rules import (
-    greedy_utilitarian_welfare,
-    sequential_phragmen,
-    method_of_equal_shares,
-    BudgetAllocation,
-)
+from pabutools.election import parse_pabulib
 from pabutools.utils import Numeric
-from typing import Callable
+from typing import Iterable
 import os
 import time
 import json
@@ -21,104 +8,45 @@ from ejr import (
     find_ejr_violation_witness,
     find_ejr_1_violation_witness,
     find_ejr_x_violation_witness,
-    convert_inputs_to_ejr_types,
 )
-from typess import EJRViolationWitness, EJRViolationResult
+from typess import EJRViolationResult
 
 
-def parsefile(filename: str, verbose: bool = True):
+def _parse_election(filename: str):
     path = os.path.join("./elections/", filename)
     instance, profile = parse_pabulib(path)
+    return instance, profile
 
-    # Compute metadata
+
+def _load_cache(filename: str) -> dict:
+    cache_path = os.path.join(
+        "election_outcomes", os.path.splitext(filename)[0] + ".json"
+    )
+    if not os.path.exists(cache_path):
+        raise FileNotFoundError(
+            f"No cached winning sets found at {cache_path}. "
+            "Run compute_winning_sets.py first."
+        )
+    with open(cache_path) as f:
+        return json.load(f)
+
+
+def _build_ejr_inputs(instance, profile):
     projects = sorted(instance, key=lambda p: str(p))
+    proj_name_to_idx: dict[str, int] = {str(p): idx for idx, p in enumerate(projects)}
+    approvals = [set(proj_name_to_idx[str(p)] for p in ballot) for ballot in profile]
     costs = [p.cost for p in projects]
-    approvals = [set(ballot) for ballot in profile]
-
-    average_project_cost = sum(costs) / len(projects)
-    projects_to_voters_ratio = len(costs) / len(approvals)
-    vote_length = sum(len(ballot) for ballot in approvals) / len(approvals)
-    vote_length_to_projects_ratio = vote_length / len(projects)
-
-    metadata = {
-        "number_of_voters": float(len(approvals)),
-        "number_of_projects": float(len(projects)),
-        "vote_length": float(vote_length),
-        "average_project_cost": float(average_project_cost),
-        "projects_to_voters_ratio": float(projects_to_voters_ratio),
-        "vote_length_to_projects_ratio": float(vote_length_to_projects_ratio),
-        "min_length": (instance.meta or {}).get("min_length", None),
-        "max_length": (instance.meta or {}).get("max_length", None),
-        "max_sum_cost": (instance.meta or {}).get("max_sum_cost", None),
-    }
-    if verbose:
-        print(f"Metadata for {filename}: {metadata}")
-
-    return instance, profile, metadata
+    budget = instance.budget_limit
+    return approvals, costs, projects, budget, proj_name_to_idx
 
 
-def check_ejr(instance, profile, outcome, utility_func):
-    """Check EJR violation for a given outcome and utility function."""
-    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
-        instance, profile, outcome
-    )
-
-    violation = find_ejr_violation_witness(
-        approvals,
-        winning_set,
-        costs,
-        projects,
-        budget,
-        utility_func,
-        verbose=False,
-    )
-    return violation
-
-
-def check_ejr_1(instance, profile, outcome, utility_func):
-    """Check EJR-1 violation for a given outcome and utility function."""
-    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
-        instance, profile, outcome
-    )
-
-    violation = find_ejr_1_violation_witness(
-        approvals,
-        winning_set,
-        costs,
-        projects,
-        budget,
-        utility_func,
-        verbose=False,
-    )
-    return violation
-
-
-def check_ejr_x(instance, profile, outcome, utility_func):
-    """Check EJR-x violation for a given outcome and utility function."""
-    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
-        instance, profile, outcome
-    )
-
-    violation = find_ejr_x_violation_witness(
-        approvals,
-        winning_set,
-        costs,
-        projects,
-        budget,
-        utility_func,
-        verbose=False,
-    )
-    return violation
-
-
-def format_ejr_result(violation: EJRViolationResult, elapsed_time):
-    """Format EJR violation result and timing into JSON structure."""
+def _format_ejr_result(violation: EJRViolationResult, elapsed_time: float) -> dict:
     return {
         "time": elapsed_time,
         "p_sets_checked": violation.p_sets_checked,
         "violation_found": len(violation.witness) != 0,
         "amount_of_violation": len(violation.witness),
-        "violation_degree": (  # % of p_set util gotten
+        "violation_degree": (
             None
             if len(violation.witness) == 0
             else (
@@ -132,151 +60,156 @@ def format_ejr_result(violation: EJRViolationResult, elapsed_time):
     }
 
 
-def test_ejr_algorithms(filename: str, verbose: bool = True):
-    # Parse file to get instance, profile, and metadata
-    instance, profile, metadata = parsefile(filename, verbose=verbose)
+def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
+    """Load precomputed winning sets and run all EJR checks, saving to outcomes/."""
+    cache = _load_cache(filename)
+    metadata = cache.get("metadata", {})
+    winning_sets_cache: dict = cache["winning_sets"]
 
-    # Get costs for utility functions
-    projects = sorted(instance, key=lambda p: str(p))
-    costs = [p.cost for p in projects]
+    instance, profile = _parse_election(filename)
+    approvals, costs, projects, budget, proj_name_to_idx = _build_ejr_inputs(
+        instance, profile
+    )
 
-    # Define utility functions
-    def card_utility_func(
-        project_set: set[int] | frozenset[int], ballot: set[int]
-    ) -> Numeric:
+    def card_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
         return len([a for a in project_set if a in ballot])
 
-    def cost_utility_func(
-        project_set: set[int] | frozenset[int], ballot: set[int]
-    ) -> Numeric:
-        return sum(costs[p] for p in ([a for a in project_set if a in ballot]))
+    def cost_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
+        return sum(costs[p] for p in project_set if p in ballot)
 
-    # Define algorithms as list of {json_name: str, function: callable}
-    algorithms = [
-        {
-            "json_name": "greedy[cost]",
-            "function": lambda: greedy_utilitarian_welfare(
-                instance, profile, sat_class=Cost_Sat, analytics=False
-            ),
-        },
-        {
-            "json_name": "greedy[card]",
-            "function": lambda: greedy_utilitarian_welfare(
-                instance, profile, sat_class=Cardinality_Sat, analytics=False
-            ),
-        },
-        {
-            "json_name": "MES[cost]",
-            "function": lambda: method_of_equal_shares(
-                instance, profile, sat_class=Cost_Sat, analytics=False
-            ),
-        },
-        {
-            "json_name": "MES[card]",
-            "function": lambda: method_of_equal_shares(
-                instance, profile, sat_class=Cardinality_Sat, analytics=False
-            ),
-        },
-        {
-            "json_name": "seq_phragmen",
-            "function": lambda: sequential_phragmen(instance, profile),
-        },
-    ]
+    result: dict = {"metadata": metadata, "results": {}}
 
-    # Create outcomes directory if it doesn't exist
-    os.makedirs("outcomes", exist_ok=True)
-
-    # Compute results for each algorithm
-    result = {"metadata": metadata, "results": {}}
-
-    for algo in algorithms:
-        algo_name = algo["json_name"]
-
-        # Time the algorithm execution
-        start = time.time()
-        outcome = algo["function"]()
-        algo_time = time.time() - start
-
-        if verbose:
-            print(f"{algo_name} algorithm time: {algo_time:.4f}s")
-
-        # Test EJR with cost utility function
-        start = time.time()
-        violation_cost = check_ejr(instance, profile, outcome, cost_utility_func)
-        time_cost = time.time() - start
+    for algo_name, ws_data in winning_sets_cache.items():
+        algo_time = ws_data.get("time", None)
+        winning_set: set[int] = set(
+            proj_name_to_idx[pname] for pname in ws_data["projects"]
+        )
 
         if verbose:
             print(
-                f"{algo_name} EJR[cost] time: {time_cost:.4f}s, p-sets checked: {violation_cost.p_sets_checked}"
+                f"  [{algo_name}] winning set size: {len(winning_set)}, "
+                f"algo time (cached): {algo_time:.4f}s"
             )
 
-        # Test EJR with card utility function
+        # EJR[cost]
         start = time.time()
-        violation_card = check_ejr(instance, profile, outcome, card_utility_func)
-        time_card = time.time() - start
-
+        v_ejr_cost = find_ejr_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            cost_utility_func,
+            verbose=False,
+        )
+        t_ejr_cost = time.time() - start
         if verbose:
             print(
-                f"{algo_name} EJR[card] time: {time_card:.4f}s, p-sets checked: {violation_card.p_sets_checked}"
+                f"    EJR[cost]   {t_ejr_cost:.4f}s  p-sets: {v_ejr_cost.p_sets_checked}  violation: {len(v_ejr_cost.witness) != 0}"
             )
 
-        # Test EJR-1 with cost utility function
+        # EJR[card]
         start = time.time()
-        violation_ejr1_cost = check_ejr_1(instance, profile, outcome, cost_utility_func)
-        time_ejr1_cost = time.time() - start
-
+        v_ejr_card = find_ejr_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            card_utility_func,
+            verbose=False,
+        )
+        t_ejr_card = time.time() - start
         if verbose:
             print(
-                f"{algo_name} EJR-1[cost] time: {time_ejr1_cost:.4f}s, p-sets checked: {violation_ejr1_cost.p_sets_checked}"
+                f"    EJR[card]   {t_ejr_card:.4f}s  p-sets: {v_ejr_card.p_sets_checked}  violation: {len(v_ejr_card.witness) != 0}"
             )
 
-        # Test EJR-1 with card utility function
+        # EJR-1[cost]
         start = time.time()
-        violation_ejr1_card = check_ejr_1(instance, profile, outcome, card_utility_func)
-        time_ejr1_card = time.time() - start
-
+        v_ejr1_cost = find_ejr_1_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            cost_utility_func,
+            verbose=False,
+        )
+        t_ejr1_cost = time.time() - start
         if verbose:
             print(
-                f"{algo_name} EJR-1[card] time: {time_ejr1_card:.4f}s, p-sets checked: {violation_ejr1_card.p_sets_checked}"
+                f"    EJR-1[cost] {t_ejr1_cost:.4f}s  p-sets: {v_ejr1_cost.p_sets_checked}  violation: {len(v_ejr1_cost.witness) != 0}"
             )
 
-        # Test EJR-x with cost utility function
+        # EJR-1[card]
         start = time.time()
-        violation_ejrx_cost = check_ejr_x(instance, profile, outcome, cost_utility_func)
-        time_ejrx_cost = time.time() - start
-
+        v_ejr1_card = find_ejr_1_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            card_utility_func,
+            verbose=False,
+        )
+        t_ejr1_card = time.time() - start
         if verbose:
             print(
-                f"{algo_name} EJR-x[cost] time: {time_ejrx_cost:.4f}s, p-sets checked: {violation_ejrx_cost.p_sets_checked}"
+                f"    EJR-1[card] {t_ejr1_card:.4f}s  p-sets: {v_ejr1_card.p_sets_checked}  violation: {len(v_ejr1_card.witness) != 0}"
             )
 
-        # Test EJR-x with card utility function
+        # EJR-x[cost]
         start = time.time()
-        violation_ejrx_card = check_ejr_x(instance, profile, outcome, card_utility_func)
-        time_ejrx_card = time.time() - start
-
+        v_ejrx_cost = find_ejr_x_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            cost_utility_func,
+            verbose=False,
+        )
+        t_ejrx_cost = time.time() - start
         if verbose:
             print(
-                f"{algo_name} EJR-x[card] time: {time_ejrx_card:.4f}s, p-sets checked: {violation_ejrx_card.p_sets_checked}"
+                f"    EJR-x[cost] {t_ejrx_cost:.4f}s  p-sets: {v_ejrx_cost.p_sets_checked}  violation: {len(v_ejrx_cost.witness) != 0}"
+            )
+
+        # EJR-x[card]
+        start = time.time()
+        v_ejrx_card = find_ejr_x_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            card_utility_func,
+            verbose=False,
+        )
+        t_ejrx_card = time.time() - start
+        if verbose:
+            print(
+                f"    EJR-x[card] {t_ejrx_card:.4f}s  p-sets: {v_ejrx_card.p_sets_checked}  violation: {len(v_ejrx_card.witness) != 0}"
             )
 
         result["results"][algo_name] = {
             "algorithm_time": algo_time,
             "ejr": {
-                "cost": format_ejr_result(violation_cost, time_cost),
-                "card": format_ejr_result(violation_card, time_card),
+                "cost": _format_ejr_result(v_ejr_cost, t_ejr_cost),
+                "card": _format_ejr_result(v_ejr_card, t_ejr_card),
             },
             "ejr_1": {
-                "cost": format_ejr_result(violation_ejr1_cost, time_ejr1_cost),
-                "card": format_ejr_result(violation_ejr1_card, time_ejr1_card),
+                "cost": _format_ejr_result(v_ejr1_cost, t_ejr1_cost),
+                "card": _format_ejr_result(v_ejr1_card, t_ejr1_card),
             },
             "ejr_x": {
-                "cost": format_ejr_result(violation_ejrx_cost, time_ejrx_cost),
-                "card": format_ejr_result(violation_ejrx_card, time_ejrx_card),
+                "cost": _format_ejr_result(v_ejrx_cost, t_ejrx_cost),
+                "card": _format_ejr_result(v_ejrx_card, t_ejrx_card),
             },
         }
 
-    # Save to JSON file
+    os.makedirs("outcomes", exist_ok=True)
     output_filename = os.path.splitext(filename)[0] + ".json"
     output_path = os.path.join("outcomes", output_filename)
 
@@ -288,11 +221,18 @@ def test_ejr_algorithms(filename: str, verbose: bool = True):
 
 
 def run_all(verbose: bool = False):
-    elections_dir = "./elections/"
-    files = [f for f in os.listdir(elections_dir) if f.endswith(".pb")]
+    cache_dir = "./election_outcomes/"
+    if not os.path.isdir(cache_dir):
+        print(
+            "No election_outcomes/ directory found. Run compute_winning_sets.py first."
+        )
+        return
 
-    for filename in sorted(files):
+    files = sorted(
+        f.replace(".json", ".pb") for f in os.listdir(cache_dir) if f.endswith(".json")
+    )
 
+    for filename in files:
         print(f"\n--- {filename} ---")
         try:
             test_ejr_algorithms(filename, verbose=verbose)
@@ -302,8 +242,7 @@ def run_all(verbose: bool = False):
 
 def run_one(verbose: bool = True):
     filename = "Poland_Warszawa_2022.pb"
-    if verbose:
-        print(f"\n--- {filename} ---")
+    print(f"\n--- {filename} ---")
     try:
         test_ejr_algorithms(filename, verbose=verbose)
     except Exception as e:
