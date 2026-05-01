@@ -250,4 +250,4 @@ def run_one(verbose: bool = True):
 
 
 if __name__ == "__main__":
-    run_one()
+    run_all()

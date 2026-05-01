@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "number_of_voters": 487.0,
+    "number_of_projects": 14.0,
+    "vote_length": 3.4804928131416837,
+    "average_project_cost": 187102.14285714287,
+    "projects_to_voters_ratio": 0.028747433264887063,
+    "vote_length_to_projects_ratio": 0.24860662951012027,
+    "min_length": null,
+    "max_length": "5",
+    "max_sum_cost": null
+  },
+  "winning_sets": {
+    "greedy[cost]": {
+      "projects": [
+        "456",
+        "2113",
+        "1498",
+        "12",
+        "645"
+      ],
+      "time": 0.004826784133911133
+    },
+    "greedy[card]": {
+      "projects": [
+        "2113",
+        "12",
+        "456",
+        "1498",
+        "1778"
+      ],
+      "time": 0.0029859542846679688
+    },
+    "MES[cost]": {
+      "projects": [
+        "456",
+        "2113",
+        "12"
+      ],
+      "time": 0.006057024002075195
+    },
+    "MES[card]": {
+      "projects": [
+        "2113",
+        "12",
+        "456"
+      ],
+      "time": 0.004524946212768555
+    },
+    "seq_phragmen": {
+      "projects": [
+        "12",
+        "1498",
+        "1778",
+        "2113",
+        "456"
+      ],
+      "time": 0.0033299922943115234
+    }
+  }
+}
