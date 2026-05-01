@@ -125,40 +125,6 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                 f"    EJR[card]   {t_ejr_card:.4f}s  p-sets: {v_ejr_card.p_sets_checked}  violation: {len(v_ejr_card.witness) != 0}"
             )
 
-        # EJR-1[cost]
-        start = time.time()
-        v_ejr1_cost = find_ejr_1_violation_witness(
-            approvals,
-            winning_set,
-            costs,
-            projects,
-            budget,
-            cost_utility_func,
-            verbose=False,
-        )
-        t_ejr1_cost = time.time() - start
-        if verbose:
-            print(
-                f"    EJR-1[cost] {t_ejr1_cost:.4f}s  p-sets: {v_ejr1_cost.p_sets_checked}  violation: {len(v_ejr1_cost.witness) != 0}"
-            )
-
-        # EJR-1[card]
-        start = time.time()
-        v_ejr1_card = find_ejr_1_violation_witness(
-            approvals,
-            winning_set,
-            costs,
-            projects,
-            budget,
-            card_utility_func,
-            verbose=False,
-        )
-        t_ejr1_card = time.time() - start
-        if verbose:
-            print(
-                f"    EJR-1[card] {t_ejr1_card:.4f}s  p-sets: {v_ejr1_card.p_sets_checked}  violation: {len(v_ejr1_card.witness) != 0}"
-            )
-
         # EJR-x[cost]
         start = time.time()
         v_ejrx_cost = find_ejr_x_violation_witness(
@@ -193,19 +159,53 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                 f"    EJR-x[card] {t_ejrx_card:.4f}s  p-sets: {v_ejrx_card.p_sets_checked}  violation: {len(v_ejrx_card.witness) != 0}"
             )
 
+        # EJR-1[cost]
+        start = time.time()
+        v_ejr1_cost = find_ejr_1_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            cost_utility_func,
+            verbose=False,
+        )
+        t_ejr1_cost = time.time() - start
+        if verbose:
+            print(
+                f"    EJR-1[cost] {t_ejr1_cost:.4f}s  p-sets: {v_ejr1_cost.p_sets_checked}  violation: {len(v_ejr1_cost.witness) != 0}"
+            )
+
+        # EJR-1[card]
+        start = time.time()
+        v_ejr1_card = find_ejr_1_violation_witness(
+            approvals,
+            winning_set,
+            costs,
+            projects,
+            budget,
+            card_utility_func,
+            verbose=False,
+        )
+        t_ejr1_card = time.time() - start
+        if verbose:
+            print(
+                f"    EJR-1[card] {t_ejr1_card:.4f}s  p-sets: {v_ejr1_card.p_sets_checked}  violation: {len(v_ejr1_card.witness) != 0}"
+            )
+
         result["results"][algo_name] = {
             "algorithm_time": algo_time,
             "ejr": {
                 "cost": _format_ejr_result(v_ejr_cost, t_ejr_cost),
                 "card": _format_ejr_result(v_ejr_card, t_ejr_card),
             },
-            "ejr_1": {
-                "cost": _format_ejr_result(v_ejr1_cost, t_ejr1_cost),
-                "card": _format_ejr_result(v_ejr1_card, t_ejr1_card),
-            },
             "ejr_x": {
                 "cost": _format_ejr_result(v_ejrx_cost, t_ejrx_cost),
                 "card": _format_ejr_result(v_ejrx_card, t_ejrx_card),
+            },
+            "ejr_1": {
+                "cost": _format_ejr_result(v_ejr1_cost, t_ejr1_cost),
+                "card": _format_ejr_result(v_ejr1_card, t_ejr1_card),
             },
         }
 

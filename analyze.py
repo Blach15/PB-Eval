@@ -101,8 +101,8 @@ def parse_outcomes_and_count_satisfying_properties():
         return total_satisfied, total_violated
 
     print_property_stats("EJR", counters["ejr"])
-    print_property_stats("EJR-1", counters["ejr_1"])
     print_property_stats("EJR-X", counters["ejr_x"])
+    print_property_stats("EJR-1", counters["ejr_1"])
 
     print("\n" + "=" * 80)
 
@@ -133,7 +133,7 @@ def print_results_by_sat_function():
 
             if "results" in data:
                 for algo_name, algo_results in data["results"].items():
-                    for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+                    for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
                         if ejr_type not in results_by_sat_func:
                             results_by_sat_func[ejr_type] = {}
 
@@ -170,7 +170,7 @@ def print_results_by_sat_function():
     print("RESULTS BY SATISFACTION FUNCTION")
     print("=" * 100)
 
-    for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+    for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
         print(f"\n{ejr_type.upper()}:")
         print("-" * 100)
 
@@ -232,7 +232,7 @@ def print_results_by_algorithm():
                 if algo_name not in by_algo:
                     by_algo[algo_name] = {}
 
-                for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+                for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
                     if ejr_type not in by_algo[algo_name]:
                         by_algo[algo_name][ejr_type] = {}
 
@@ -257,10 +257,10 @@ def print_results_by_algorithm():
     columns = [
         ("ejr", "card"),
         ("ejr", "cost"),
-        ("ejr_1", "card"),
-        ("ejr_1", "cost"),
         ("ejr_x", "card"),
         ("ejr_x", "cost"),
+        ("ejr_1", "card"),
+        ("ejr_1", "cost"),
     ]
     col_labels = {
         ("ejr", "card"): "EJR[card]",
