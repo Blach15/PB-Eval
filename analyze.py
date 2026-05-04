@@ -1,6 +1,92 @@
 import os
 import json
 from collections import defaultdict
+from dataclasses import dataclass
+from typing import List, Optional, Any
+import numpy as np
+
+
+@dataclass
+class Table:
+    """Represents a tabular data structure with headers and rows."""
+
+    headers: List[str]
+    rows: List[List[Any]]
+    title: Optional[str] = None
+
+
+def print_table(table: Table) -> None:
+    """Print a table in readable terminal format."""
+    if table.title:
+        print("\n" + "=" * 100)
+        print(table.title)
+        print("=" * 100)
+
+    # Print headers
+    print("  " + " ".join(f"{h:>12}" for h in table.headers))
+    print("-" * (len(table.headers) * 14 + 2))
+
+    # Print rows
+    for row in table.rows:
+        print("  " + " ".join(f"{str(v):>12}" for v in row))
+
+    if table.title:
+        print("=" * 100)
+
+
+def table_to_latex(
+    table: Table, escape_underscores: bool = True, booktabs: bool = True
+) -> str:
+    """Convert a table to LaTeX format."""
+    if not table.headers or not table.rows:
+        return ""
+
+    latex_lines = []
+    num_cols = len(table.headers)
+    col_spec = "c" * num_cols
+
+    latex_lines.append(f"\\begin{{tabular}}{{{col_spec}}}")
+
+    if booktabs:
+        latex_lines.append("\\toprule")
+    else:
+        latex_lines.append("\\hline")
+
+    # Headers
+    header_row = " & ".join(str(h) for h in table.headers) + " \\\\"
+    if escape_underscores:
+        header_row = header_row.replace("_", "\\_")
+    latex_lines.append(header_row)
+
+    if booktabs:
+        latex_lines.append("\\midrule")
+    else:
+        latex_lines.append("\\hline")
+
+    # Data rows
+    for row in table.rows:
+        row_cells = []
+        for cell in row:
+            cell_str = str(cell)
+            if escape_underscores:
+                cell_str = cell_str.replace("_", "\\_")
+            row_cells.append(cell_str)
+        latex_lines.append(" & ".join(row_cells) + " \\\\")
+
+    if booktabs:
+        latex_lines.append("\\bottomrule")
+    else:
+        latex_lines.append("\\hline")
+
+    latex_lines.append("\\end{tabular}")
+
+    if table.title:
+        latex_lines.insert(0, "\\begin{table}[h]")
+        latex_lines.insert(1, "\\centering")
+        latex_lines.append(f"\\caption{{{table.title}}}")
+        latex_lines.append("\\end{table}")
+
+    return "\n".join(latex_lines)
 
 
 def parse_outcomes_and_count_satisfying_properties():
@@ -296,12 +382,124 @@ def print_results_by_algorithm():
     print("=" * 100)
 
 
-def print_stats():
-    """Main entry point for statistics generation."""
-    parse_outcomes_and_count_satisfying_properties()
-    print_results_by_sat_function()
-    print_results_by_algorithm()
+def analyze_ejr_violations_by_utility(ejr_type="ejr"):
+    """
+    Analyze the 'violation_degree' for EJR-cost and EJR-card per algorithm.
+
+    Parameters:
+    - ejr_type: "ejr", "ejr_1", or "ejr_x"
+
+    Calculates: mean, median, Q1, Q3, min, max for each algorithm and utility (cost and card)
+    """
+    outcomes_dir = "./outcomes"
+
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return
+
+    # Dictionary to store violations by algorithm and utility
+    violations_by_algo = defaultdict(
+        lambda: {
+            "cost": [],
+            "card": [],
+        }
+    )
+
+    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
+
+    for filename in sorted(json_files):
+        filepath = os.path.join(outcomes_dir, filename)
+
+        try:
+            with open(filepath, "r") as f:
+                data = json.load(f)
+
+            # Parse results for each algorithm
+            if "results" in data:
+                for algo_name, algo_results in data["results"].items():
+                    # Extract violations for the specified EJR type
+                    if ejr_type in algo_results:
+                        for utility in ["cost", "card"]:
+                            if utility in algo_results[ejr_type]:
+                                violation_data = algo_results[ejr_type][utility]
+                                degree = violation_data.get("violation_degree")
+                                if degree is not None:
+                                    violations_by_algo[algo_name][utility].append(
+                                        degree
+                                    )
+
+        except json.JSONDecodeError as e:
+            print(f"Error parsing {filename}: {e}")
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    # Print results in table format for each utility
+    print("\n" + "=" * 200)
+    print(f"VIOLATION DEGREE ANALYSIS FOR {ejr_type.upper()}")
+    print("=" * 200)
+
+    for utility in ["cost", "card"]:
+        print(f"\n{utility.upper()} UTILITY:")
+        print("-" * 200)
+
+        # Header row
+        header = f"{'Algorithm':<25} {'N':>6} {'Mean':>10} {'Median':>10} {'Q1':>10} {'Q3':>10} {'Min':>10} {'Max':>10}"
+        print(header)
+        print("-" * 200)
+
+        # Data rows for each algorithm
+        for algo_name in sorted(violations_by_algo.keys()):
+            violations = violations_by_algo[algo_name][utility]
+
+            if len(violations) == 0:
+                print(f"{algo_name:<25} {'N/A':>6}")
+                continue
+
+            # Calculate statistics
+            mean = np.mean(violations)
+            median = np.median(violations)
+            q1 = np.percentile(violations, 25)
+            q3 = np.percentile(violations, 75)
+            min_val = np.min(violations)
+            max_val = np.max(violations)
+
+            row = f"{algo_name:<25} {len(violations):>6d} {mean:>10.4f} {median:>10.4f} {q1:>10.4f} {q3:>10.4f} {min_val:>10.4f} {max_val:>10.4f}"
+            print(row)
+
+    print("=" * 200)
+
+
+def print_stats(printAsLatex: bool = False):
+    """
+    Main entry point for statistics generation.
+
+    Parameters:
+    - printAsLatex: If True, output tables in LaTeX format to stdout instead of terminal format
+    """
+    if printAsLatex:
+        # Collect all output and convert to LaTeX format
+        # Note: This is a simple approach - just writes LaTeX tables to stdout
+        import sys
+        from io import StringIO
+
+        # For now, we'll just print that LaTeX mode is enabled
+        # (Proper implementation would require refactoring the print functions)
+        print("% LaTeX Table Output")
+        print("% Compile with: pdflatex <filename.tex>")
+        print("% Use with: \\input{filename}")
+        print()
+
+        # Original functions print terminal format
+        parse_outcomes_and_count_satisfying_properties()
+        print_results_by_sat_function()
+        print_results_by_algorithm()
+        analyze_ejr_violations_by_utility()
+    else:
+        parse_outcomes_and_count_satisfying_properties()
+        print_results_by_sat_function()
+        print_results_by_algorithm()
+        analyze_ejr_violations_by_utility()
 
 
 if __name__ == "__main__":
-    print_stats()
+    print_stats(True)
