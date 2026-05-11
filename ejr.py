@@ -11,8 +11,7 @@ from pabutools.rules import (
     greedy_utilitarian_welfare,
     BudgetAllocation,
 )
-from itertools import combinations, chain
-from pabutools.utils import Numeric, combinations
+from pabutools.utils import Numeric
 from typing import Callable, Iterable
 import os
 from typess import EJRViolationWitness, EJRViolationResult
@@ -154,12 +153,6 @@ def find_ejr_violation_witness(
     return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
 
 
-def powerset(iterable: Iterable):
-
-    s = list(iterable)
-    return chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
-
-
 def find_ejr_1_violation_witness(
     approvals: list[set[int]],
     winning_set: set[int],
@@ -191,16 +184,15 @@ def find_ejr_1_violation_witness(
         return max_util
 
     def check_ejr_1(p_set: tuple[int], voter_intersection: set[int]) -> bool:
-        unsat_voters = (
-            {
-                i
-                for i in voter_intersection
-                if winning_util[i] + max_util_from_unpicked(i, p_set)
-                <= utility_func(p_set, approvals[i])
-            }
-            if all(p in winning_set for p in p_set)
-            else set()
-        )
+        if all(p in winning_set for p in p_set):
+            return False
+
+        unsat_voters = {
+            i
+            for i in voter_intersection
+            if winning_util[i] + max_util_from_unpicked(i, p_set)
+            <= utility_func(p_set, approvals[i])
+        }
 
         # check if unsat_voters is T-cohesive, then EJR violation
         # done by computing the required size, for p_set to be affordable.
@@ -257,16 +249,14 @@ def find_ejr_x_violation_witness(
         return min_util if min_util is not None else 0
 
     def check_ejr_x(p_set: tuple[int], voter_intersection: set[int]) -> bool:
-        unsat_voters = (
-            {
-                i
-                for i in voter_intersection
-                if winning_util[i] + min_util_from_unpicked(i, p_set)
-                <= utility_func(p_set, approvals[i])
-            }
-            if all(p in winning_set for p in p_set)
-            else set()
-        )
+        if all(p in winning_set for p in p_set):
+            return False
+        unsat_voters = {
+            i
+            for i in voter_intersection
+            if winning_util[i] + min_util_from_unpicked(i, p_set)
+            <= utility_func(p_set, approvals[i])
+        }
 
         # check if unsat_voters is T-cohesive, then EJR violation
         # done by computing the required size, for p_set to be affordable.

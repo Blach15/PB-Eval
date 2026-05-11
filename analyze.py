@@ -466,4 +466,4 @@ def print_stats(printAsLatex: bool = False):
 
 
 if __name__ == "__main__":
-    print_stats(False)
+    print_stats(True)
