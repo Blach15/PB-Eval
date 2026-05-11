@@ -37,26 +37,30 @@ class Table:
         num_cols = len(self.headers)
         col_spec = "c" * num_cols
 
+        print(f"\n\n% {self.title}" if self.title else "% Table")
         print("\\begin{table}[h]")
         print("\\centering")
         print(f"\\begin{{tabular}}{{{col_spec}}}")
         print("\\toprule")
 
-        # Headers
-        header_row = " & ".join(str(h) for h in self.headers) + " \\\\"
+        # Headers - escape % as \% and _ as \_
+        def escape_latex(s: str) -> str:
+            return s.replace("%", "\\%").replace("_", "\\_")
+
+        header_row = " & ".join(escape_latex(str(h)) for h in self.headers) + " \\\\"
         print(header_row)
 
         print("\\midrule")
 
-        # Data rows
+        # Data rows - escape % as \% and _ as \_
         for row in self.rows:
-            row_cells = [str(cell) for cell in row]
+            row_cells = [escape_latex(str(cell)) for cell in row]
             print(" & ".join(row_cells) + " \\\\")
 
         print("\\bottomrule")
         print("\\end{tabular}")
         if self.title:
-            print(f"\\caption{{{self.title}}}")
+            print(f"\\caption{{{escape_latex(self.title)}}}")
         print("\\end{table}")
 
 
@@ -462,4 +466,4 @@ def print_stats(printAsLatex: bool = False):
 
 
 if __name__ == "__main__":
-    print_stats(True)
+    print_stats(False)

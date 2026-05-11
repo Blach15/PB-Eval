@@ -190,12 +190,12 @@ def find_ejr_1_violation_witness(
                 max_util = max(max_util, util_p)
         return max_util
 
-    def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+    def check_ejr_1(p_set: tuple[int], voter_intersection: set[int]) -> bool:
         unsat_voters = {
             i
             for i in voter_intersection
             if winning_util[i] + max_util_from_unpicked(i, p_set)
-            < utility_func(p_set, approvals[i])
+            <= utility_func(p_set, approvals[i])
         }
 
         # check if unsat_voters is T-cohesive, then EJR violation
@@ -213,7 +213,7 @@ def find_ejr_1_violation_witness(
         costs,
         projects,
         budget,
-        callback=check_ejr,
+        callback=check_ejr_1,
         pre_callback=count_p_sets,
         verbose=verbose,
     )
@@ -252,12 +252,12 @@ def find_ejr_x_violation_witness(
                     min_util = util_p
         return min_util if min_util is not None else 0
 
-    def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+    def check_ejr_x(p_set: tuple[int], voter_intersection: set[int]) -> bool:
         unsat_voters = {
             i
             for i in voter_intersection
             if winning_util[i] + min_util_from_unpicked(i, p_set)
-            < utility_func(p_set, approvals[i])
+            <= utility_func(p_set, approvals[i])
         }
 
         # check if unsat_voters is T-cohesive, then EJR violation
@@ -275,7 +275,7 @@ def find_ejr_x_violation_witness(
         costs,
         projects,
         budget,
-        callback=check_ejr,
+        callback=check_ejr_x,
         pre_callback=count_p_sets,
         verbose=verbose,
     )
@@ -447,7 +447,7 @@ if __name__ == "__main__":
         instance, profile, sat_class=Cost_Sat, analytics=False
     )
 
-    (approvals, winning_set, costs, projects, budget) = convert_inputs_to_ejr_types(
+    approvals, winning_set, costs, projects, budget = convert_inputs_to_ejr_types(
         instance, profile, outcome_greedy
     )
 
