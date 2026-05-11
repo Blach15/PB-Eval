@@ -248,7 +248,7 @@ def run_all(verbose: bool = False):
 
 
 def run_one(verbose: bool = True):
-    filename = "Poland_Warszawa_2019_Saska_Kepa.pb"
+    filename = "France_Toulouse_2022_6_-_Saint-Cyprien.pb"
     # output_filename = os.path.splitext(filename)[0] + ".json"
     # result_path = os.path.join("outcomes", output_filename)
 
