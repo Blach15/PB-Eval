@@ -194,9 +194,6 @@ def find_ejr_1_violation_witness(
         voters_projects = {
             i: max_util_from_unpicked(i, p_set) for i in voter_intersection
         }
-        print("t: ", p_set)
-        print("winner_set:", winning_set)
-        print("voters_projects:", voters_projects)
 
         # Check if any voter has no project available
         if any(p is None for i, (p, util) in voters_projects.items()):
@@ -281,8 +278,18 @@ def find_ejr_x_violation_witness(
         voters_projects = {
             i: min_util_from_unpicked(i, p_set) for i in voter_intersection
         }
-        if any(i_p is None for i_p in {i_p for i_p, _ in voters_projects.values()}):
-            return False
+
+        # Check if any voter has no project available
+        if any(p is None for i, (p, util) in voters_projects.items()):
+            return False  # T subsetset W
+
+        distinct_projects = {
+            p for i, (p, util) in voters_projects.items() if p is not None
+        }
+        for p in distinct_projects:
+            new_winner_set = winning_set | {p}
+            if all((proj in new_winner_set) for proj in p_set):
+                return False  # T subsetset W U {p}
         unsat_voters = {
             i
             for i in voter_intersection

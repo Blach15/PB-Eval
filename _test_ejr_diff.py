@@ -42,13 +42,27 @@ r1 = find_ejr_1_violation_witness(
 )
 print("EJR_1 violation:", len(r1.witness) > 0)
 for w in r1.witness:
-    print("  ", w)
+    print(
+        "  Projects:",
+        w.p_set,
+        "Costs:",
+        [costs[p] for p in w.p_set],
+        "Voters:",
+        w.voters,
+    )
 rx = find_ejr_x_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
 print("EJR_X violation:", len(rx.witness) > 0)
 for w in rx.witness:
-    print("  ", w)
+    print(
+        "  Projects:",
+        w.p_set,
+        "Costs:",
+        [costs[p] for p in w.p_set],
+        "Voters:",
+        w.voters,
+    )
 
 print()
 print("Expected: EJR=True, EJR_1=False, EJR_X=True")
