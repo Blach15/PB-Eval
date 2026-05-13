@@ -18,11 +18,11 @@ from pabutools.election import Project
 # EJR_1 unsat: 5 + max(cost(A),cost(B)) = 5 + 10 = 15 >= 11 -> SATISFIED (no violation)
 # EJR_X unsat: 5 + min(cost(A),cost(B)) = 5 + 1  = 6  < 11  -> UNSATISFIED (violation!)
 
-costs = [10, 1, 5]  # A=10, B=1, C=5
-budget = 11
-n_voters = 11
-approvals = [set({0, 1, 2}) for _ in range(n_voters)]
-winning_set = {2}  # only C funded
+costs = [1, 3, 8, 9, 10]  # A=10, B=1, C=5
+budget = 12
+# n_voters = 3
+approvals = [set({0, 2, 4}), set({0, 1, 3, 4}), set({0, 3})]
+winning_set = {1}  # only C funded
 
 projects = [Project(str(i), costs[i]) for i in range(len(costs))]
 
@@ -31,23 +31,20 @@ def cost_util(project_set, ballot):
     return sum(costs[p] for p in project_set if p in ballot)
 
 
-print("=== EJR check (cost) ===")
 r = find_ejr_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
-print("violation_found:", len(r.witness) > 0)
+print("EJR:", len(r.witness) > 0)
 
-print("=== EJR_1 check (cost) ===")
+
 r1 = find_ejr_1_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
-print("violation_found:", len(r1.witness) > 0)
-
-print("=== EJR_X check (cost) ===")
+print("EJR_1:", len(r1.witness) > 0)
 rx = find_ejr_x_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
-print("violation_found:", len(rx.witness) > 0)
+print("EJR_X:", len(rx.witness) > 0)
 
 print()
 print("Expected: EJR=True, EJR_1=False, EJR_X=True")
