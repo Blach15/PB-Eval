@@ -64,6 +64,69 @@ class Table:
         print("\\end{table}")
 
 
+@dataclass
+class PlotLine:
+    """Represents a single plot line in a graph."""
+
+    color: str
+    mark: str
+    coordinates: List[tuple]  # List of (x, y) tuples
+    legend_entry: str
+
+    def to_latex(self) -> str:
+        """Convert plot line to LaTeX format."""
+        coords_str = "".join(f"({x},{y})" for x, y in self.coordinates)
+        return f"\\addplot[color={self.color}, mark={self.mark}]coordinates {{ {coords_str}}};\\addlegendentry{{{self.legend_entry}}}"
+
+
+@dataclass
+class Graph:
+    """Represents a graph/plot with multiple lines."""
+
+    title: str
+    xlabel: str
+    ylabel: str
+    plot_lines: List[PlotLine]
+    ymajorgrids: bool = True
+    grid_style: str = "dashed"
+    xmode: str = "log"
+    log_basis_x: int = 2
+    ymode: str = "log"
+    log_basis_y: int = 2
+    legend_pos: str = "outer north east"
+
+    def print_raw(self) -> None:
+        """Print raw format (does nothing for graphs)."""
+        pass
+
+    def print_latex(self) -> None:
+        """Print graph in LaTeX TikZ format."""
+        print("\\begin{tikzpicture}")
+
+        # Build axis options
+        axis_options = [
+            f"title={{{self.title}}}",
+            f"xlabel={{{self.xlabel}}}",
+            f"ylabel={{{self.ylabel}}}",
+            f"ymajorgrids={str(self.ymajorgrids).lower()}",
+            f"grid style={self.grid_style}",
+            # f"xmode={self.xmode}",
+            # f"log basis x={self.log_basis_x}",
+            # f"ymode={self.ymode}",
+            # f"log basis y={self.log_basis_y}",
+            f"legend pos = {self.legend_pos}",
+        ]
+
+        print("\\begin{axis}[" + ", ".join(axis_options) + "]")
+
+        # Add all plot lines
+        for plot_line in self.plot_lines:
+            print(plot_line.to_latex())
+
+        print("\\end{axis}")
+        print("\\end{tikzpicture}")
+
+
 def print_table(table: Table, as_latex: bool = False) -> None:
     """Print a table using either raw or LaTeX format."""
     if as_latex:
