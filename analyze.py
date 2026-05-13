@@ -2,8 +2,9 @@ import os
 import json
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import List, Optional, Any
+from typing import List, Optional, Any, TextIO
 import numpy as np
+import sys
 
 
 @dataclass
@@ -14,54 +15,56 @@ class Table:
     rows: List[List[Any]]
     title: Optional[str] = None
 
-    def print_raw(self) -> None:
+    def print_raw(self, file: Optional[TextIO] = None) -> None:
         """Print table in readable terminal format."""
+        file = file or sys.stdout
         if self.title:
-            print("\n" + "=" * 100)
-            print(self.title)
-            print("=" * 100)
+            print("\n" + "=" * 100, file=file)
+            print(self.title, file=file)
+            print("=" * 100, file=file)
 
         # Print headers
-        print("  " + " ".join(f"{h:>12}" for h in self.headers))
-        print("-" * (len(self.headers) * 14 + 2))
+        print("  " + " ".join(f"{h:>12}" for h in self.headers), file=file)
+        print("-" * (len(self.headers) * 14 + 2), file=file)
 
         # Print rows
         for row in self.rows:
-            print("  " + " ".join(f"{str(v):>12}" for v in row))
+            print("  " + " ".join(f"{str(v):>12}" for v in row), file=file)
 
         if self.title:
-            print("=" * 100)
+            print("=" * 100, file=file)
 
-    def print_latex(self) -> None:
+    def print_latex(self, file: Optional[TextIO] = None) -> None:
         """Print table in LaTeX format."""
+        file = file or sys.stdout
         num_cols = len(self.headers)
         col_spec = "c" * num_cols
 
-        print(f"\n\n% {self.title}" if self.title else "% Table")
-        print("\\begin{table}[h]")
-        print("\\centering")
-        print(f"\\begin{{tabular}}{{{col_spec}}}")
-        print("\\toprule")
+        print(f"\n\n% {self.title}" if self.title else "% Table", file=file)
+        print("\\begin{table}[h]", file=file)
+        print("\\centering", file=file)
+        print(f"\\begin{{tabular}}{{{col_spec}}}", file=file)
+        print("\\toprule", file=file)
 
         # Headers - escape % as \% and _ as \_
         def escape_latex(s: str) -> str:
             return s.replace("%", "\\%").replace("_", "\\_")
 
         header_row = " & ".join(escape_latex(str(h)) for h in self.headers) + " \\\\"
-        print(header_row)
+        print(header_row, file=file)
 
-        print("\\midrule")
+        print("\\midrule", file=file)
 
         # Data rows - escape % as \% and _ as \_
         for row in self.rows:
             row_cells = [escape_latex(str(cell)) for cell in row]
-            print(" & ".join(row_cells) + " \\\\")
+            print(" & ".join(row_cells) + " \\\\", file=file)
 
-        print("\\bottomrule")
-        print("\\end{tabular}")
+        print("\\bottomrule", file=file)
+        print("\\end{tabular}", file=file)
         if self.title:
-            print(f"\\caption{{{escape_latex(self.title)}}}")
-        print("\\end{table}")
+            print(f"\\caption{{{escape_latex(self.title)}}}", file=file)
+        print("\\end{table}", file=file)
 
 
 @dataclass
@@ -95,13 +98,14 @@ class Graph:
     log_basis_y: int = 2
     legend_pos: str = "outer north east"
 
-    def print_raw(self) -> None:
+    def print_raw(self, file: Optional[TextIO] = None) -> None:
         """Print raw format (does nothing for graphs)."""
         pass
 
-    def print_latex(self) -> None:
+    def print_latex(self, file: Optional[TextIO] = None) -> None:
         """Print graph in LaTeX TikZ format."""
-        print("\\begin{tikzpicture}")
+        file = file or sys.stdout
+        print("\\begin{tikzpicture}", file=file)
 
         # Build axis options
         axis_options = [
@@ -117,22 +121,24 @@ class Graph:
             f"legend pos = {self.legend_pos}",
         ]
 
-        print("\\begin{axis}[" + ", ".join(axis_options) + "]")
+        print("\\begin{axis}[" + ", ".join(axis_options) + "]", file=file)
 
         # Add all plot lines
         for plot_line in self.plot_lines:
-            print(plot_line.to_latex())
+            print(plot_line.to_latex(), file=file)
 
-        print("\\end{axis}")
-        print("\\end{tikzpicture}")
+        print("\\end{axis}", file=file)
+        print("\\end{tikzpicture}", file=file)
 
 
-def print_table(table: Table, as_latex: bool = False) -> None:
+def print_table(
+    table: Table | Graph, as_latex: bool = False, file: Optional[TextIO] = None
+) -> None:
     """Print a table using either raw or LaTeX format."""
     if as_latex:
-        table.print_latex()
+        table.print_latex(file=file)
     else:
-        table.print_raw()
+        table.print_raw(file=file)
 
 
 def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
@@ -508,12 +514,120 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
     return tables
 
 
-def print_stats(printAsLatex: bool = False):
+def graph_vote_length_vs_p_sets_ejr_card() -> Graph:
+    """
+    Create a graph showing the relationship between vote_length (x-axis) and
+    p_sets visited for EJR[card] (y-axis), with one plot line per algorithm.
+
+    Returns:
+    - A Graph object that can be printed in LaTeX or raw format
+    """
+    outcomes_dir = "./outcomes"
+
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return None
+
+    # Structure: {algorithm_name: [(vote_length, p_sets_checked), ...]}
+    algorithm_data = defaultdict(list)
+
+    # Get all JSON files in outcomes directory
+    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
+
+    for filename in sorted(json_files):
+        filepath = os.path.join(outcomes_dir, filename)
+
+        try:
+            with open(filepath, "r") as f:
+                data = json.load(f)
+
+            # Extract vote_length from metadata
+            vote_length = data.get("metadata", {}).get("vote_length")
+            if vote_length is None:
+                continue
+
+            # Extract p_sets_checked for each algorithm's EJR[card]
+            if "results" in data:
+                for algo_name, algo_results in data["results"].items():
+                    # Get EJR card utility results
+                    if "ejr" in algo_results and "card" in algo_results["ejr"]:
+                        p_sets_checked = algo_results["ejr"]["card"].get(
+                            "p_sets_checked"
+                        )
+                        if p_sets_checked is not None:
+                            algorithm_data[algo_name].append(
+                                (vote_length, p_sets_checked)
+                            )
+
+        except json.JSONDecodeError as e:
+            print(f"Error parsing {filename}: {e}")
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    # Sort data by vote_length for each algorithm
+    for algo_name in algorithm_data:
+        algorithm_data[algo_name].sort(key=lambda x: x[0])
+
+    # Define colors and marks for different algorithms
+    colors = {
+        "greedy[cost]": "red",
+        "greedy[card]": "blue",
+        "fjr[cost]": "green",
+        "fjr[card]": "purple",
+        "sequential_phragmen[cost]": "orange",
+        "sequential_phragmen[card]": "brown",
+        "method_of_equal_shares[cost]": "pink",
+        "method_of_equal_shares[card]": "gray",
+    }
+    marks = {
+        "greedy[cost]": "*",
+        "greedy[card]": "o",
+        "fjr[cost]": "square",
+        "fjr[card]": "triangle",
+        "sequential_phragmen[cost]": "diamond",
+        "sequential_phragmen[card]": "pentagon",
+        "method_of_equal_shares[cost]": "star",
+        "method_of_equal_shares[card]": "asterisk",
+    }
+
+    # Create plot lines - only for MES[card]
+    plot_lines = []
+    if "MES[card]" in algorithm_data:
+        coordinates = algorithm_data["MES[card]"]
+        if coordinates:  # Only add if there's data
+            color = colors.get("MES[card]", "black")
+            mark = marks.get("MES[card]", "o")
+            plot_line = PlotLine(
+                color=color,
+                mark=mark,
+                coordinates=coordinates,
+                legend_entry="MES[card]",
+            )
+            plot_lines.append(plot_line)
+
+    # Create and return the graph
+    graph = Graph(
+        title="Vote Length vs P-Sets Visited (EJR[card])",
+        xlabel="Vote Length",
+        ylabel="P-Sets Checked",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
+    )
+
+    return graph
+
+
+def print_stats(printAsLatex: bool = False, output_file: Optional[str] = None):
     """
     Main entry point for statistics generation.
 
     Parameters:
     - printAsLatex: If True, output LaTeX tables
+    - output_file: If provided, write output to this file instead of stdout
     """
     all_tables = []
 
@@ -522,11 +636,21 @@ def print_stats(printAsLatex: bool = False):
     all_tables.extend(print_results_by_sat_function())
     all_tables.extend(print_results_by_algorithm())
     all_tables.extend(analyze_ejr_violations_by_utility())
+    all_tables.append(graph_vote_length_vs_p_sets_ejr_card())
 
-    # Print all tables
-    for table in all_tables:
-        print_table(table, as_latex=printAsLatex)
+    # Open output file if specified
+    output_fp = None
+    if output_file:
+        output_fp = open(output_file, "w")
+
+    try:
+        # Print all tables
+        for table in all_tables:
+            print_table(table, as_latex=printAsLatex, file=output_fp)
+    finally:
+        if output_fp:
+            output_fp.close()
 
 
 if __name__ == "__main__":
-    print_stats(True)
+    print_stats(True, output_file="test_results.tex")
