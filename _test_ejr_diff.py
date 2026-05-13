@@ -21,7 +21,7 @@ from pabutools.election import Project
 costs = [1, 3, 8, 9, 10]  # A=10, B=1, C=5
 budget = 12
 # n_voters = 3
-approvals = [set({0, 2, 4}), set({0, 1, 3, 4}), set({0, 3})]
+approvals = [set({0, 2, 3}), set({0, 1, 3, 4}), set({0, 3})]
 winning_set = {1}  # only C funded
 
 projects = [Project(str(i), costs[i]) for i in range(len(costs))]
@@ -34,17 +34,21 @@ def cost_util(project_set, ballot):
 r = find_ejr_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
-print("EJR:", len(r.witness) > 0)
+print("EJR violation:", len(r.witness) > 0)
 
 
 r1 = find_ejr_1_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
-print("EJR_1:", len(r1.witness) > 0)
+print("EJR_1 violation:", len(r1.witness) > 0)
+for w in r1.witness:
+    print("  ", w)
 rx = find_ejr_x_violation_witness(
     approvals, winning_set, costs, projects, budget, cost_util, verbose=False
 )
-print("EJR_X:", len(rx.witness) > 0)
+print("EJR_X violation:", len(rx.witness) > 0)
+for w in rx.witness:
+    print("  ", w)
 
 print()
 print("Expected: EJR=True, EJR_1=False, EJR_X=True")
