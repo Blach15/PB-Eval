@@ -238,23 +238,35 @@ def find_ejr_x_violation_witness(
         nonlocal p_sets_checked
         p_sets_checked += 1
 
-    def min_util_from_unpicked(voter_index: int, p_set: tuple[int]) -> Numeric:
+    def min_util_from_unpicked(
+        voter_index: int, p_set: tuple[int]
+    ) -> tuple[int, Numeric]:
         # marginal utility of adding worst project to p_set for voter i
         min_util = None
+        min_proj = None
         for p in p_set:
             if p not in winning_set:
                 util_p = utility_func((p,), approvals[voter_index])
                 if min_util is None or util_p < min_util:
                     min_util = util_p
-        return min_util if min_util is not None else 0
+                    min_proj = p
+        if min_proj is None or min_util is None:
+            raise ValueError(
+                "All projects in p_set are in winning_set, min_util_from_unpicked should not be called."
+            )
+        return min_proj, min_util
 
     def check_ejr_x(p_set: tuple[int], voter_intersection: set[int]) -> bool:
-        if all(p in winning_set for p in p_set):
-            return False
+        voters_projects = {
+            i: min_util_from_unpicked(i, p_set) for i in voter_intersection
+        }
+        for i_p in {i_p for i_p, _ in voters_projects.values()}:
+            if all(p in (winning_set | {i_p}) for p in p_set):
+                return False
         unsat_voters = {
             i
             for i in voter_intersection
-            if winning_util[i] + min_util_from_unpicked(i, p_set)
+            if winning_util[i] + voters_projects[i][1]
             <= utility_func(p_set, approvals[i])
         }
 
