@@ -135,6 +135,68 @@ class Graph:
         print("\\end{tikzpicture}", file=file)
 
 
+@dataclass
+class SubfigureGrid:
+    """A LaTeX figure composed of subfigures arranged in a 2-column grid."""
+
+    title: str
+    caption: str
+    graphs: List["Graph"]
+
+    def print_raw(self, file: Optional[TextIO] = None) -> None:
+        pass
+
+    def print_latex(self, file: Optional[TextIO] = None) -> None:
+        file = file or sys.stdout
+        n = len(self.graphs)
+        print(f"\n\n% {self.title}", file=file)
+        print("\\begin{figure}[b]", file=file)
+        print("\\centering", file=file)
+
+        for i, graph in enumerate(self.graphs):
+            lone_last = (i == n - 1) and (n % 2 == 1)
+            if lone_last:
+                print("\\begin{subfigure}{\\textwidth}", file=file)
+                print("    \\raggedleft", file=file)
+            else:
+                print("\\begin{subfigure}{.5\\textwidth}", file=file)
+                print("    \\centering", file=file)
+
+            self._print_graph(graph, file)  # type: ignore[arg-type]
+
+            if lone_last or i % 2 == 1:
+                print("\\end{subfigure}", file=file)
+            else:
+                print("\\end{subfigure}%", file=file)
+
+        short = escape_latex(self.title)
+        print(f"\\caption[{short}]{{{escape_latex(self.caption)}}}", file=file)
+        print("\\end{figure}", file=file)
+
+    @staticmethod
+    def _print_graph(graph: "Graph", file: TextIO) -> None:
+        """Render a Graph as a tikzpicture without legend entries."""
+        print("    \\begin{tikzpicture}", file=file)
+        axis_options = [
+            f"title={{{escape_latex(graph.title)}}}",
+            f"xlabel={{{escape_latex(graph.xlabel)}}}",
+            f"ylabel={{{escape_latex(graph.ylabel)}}}",
+            f"ymajorgrids={str(graph.ymajorgrids).lower()}",
+            f"grid style={graph.grid_style}",
+            *([f"x dir={graph.xdir}"] if graph.xdir is not None else []),
+        ]
+        print("    \\begin{axis}[" + ", ".join(axis_options) + "]", file=file)
+        for pl in graph.plot_lines:
+            coords_str = "".join(f"({x},{y})" for x, y in pl.coordinates)
+            mark_opt = f", mark={pl.mark}" if pl.mark is not None else ""
+            print(
+                f"    \\addplot[color={pl.color}{mark_opt}]coordinates {{ {coords_str}}};",
+                file=file,
+            )
+        print("    \\end{axis}", file=file)
+        print("    \\end{tikzpicture}", file=file)
+
+
 def print_table(
     table: Table | Graph, as_latex: bool = False, file: Optional[TextIO] = None
 ) -> None:
@@ -518,7 +580,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
     return tables
 
 
-def graph_vote_length_vs_p_sets_ejr_card() -> Graph:
+def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
     """
     Create a graph showing the relationship between vote_length (x-axis) and
     p_sets visited for EJR[card] (y-axis), with one plot line per algorithm.
@@ -716,37 +778,133 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
     return graphs
 
 
-def print_stats(printAsLatex: bool = False, output_file: Optional[str] = None):
+def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
+    """
+    For each utility (cost, card), create a SubfigureGrid figure containing
+    one subfigure per algorithm. Each subfigure plots vote_length (x-axis)
+    vs violation_degree (y-axis), using 1 when violation_degree is None.
+    The legend is omitted; the algorithm name appears in the graph title.
+
+    Returns a list of two SubfigureGrid objects: one for EJR[cost], one for EJR[card].
+    """
+    outcomes_dir = "./outcomes"
+
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return []
+
+    # {algo_name: {utility: [(vote_length, violation_degree), ...]}}
+    data_by_algo: dict[str, dict[str, list[tuple]]] = defaultdict(
+        lambda: {"cost": [], "card": []}
+    )
+
+    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
+
+    for filename in sorted(json_files):
+        filepath = os.path.join(outcomes_dir, filename)
+        try:
+            with open(filepath, "r") as f:
+                data = json.load(f)
+
+            vote_length = data.get("metadata", {}).get("vote_length")
+            if vote_length is None or "results" not in data:
+                continue
+
+            for algo_name, algo_results in data["results"].items():
+                for utility in ["cost", "card"]:
+                    ejr_util = algo_results.get("ejr", {}).get(utility)
+                    if ejr_util is not None:
+                        deg = ejr_util.get("violation_degree")
+                        data_by_algo[algo_name][utility].append(
+                            (vote_length, deg if deg is not None else 1)
+                        )
+
+        except json.JSONDecodeError as e:
+            print(f"Error parsing {filename}: {e}")
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    figures = []
+    for utility in ["cost", "card"]:
+        graphs = []
+        for algo_name in sorted(data_by_algo.keys()):
+            coords = sorted(data_by_algo[algo_name][utility], key=lambda p: p[0])
+            if not coords:
+                continue
+            graphs.append(
+                Graph(
+                    title=algo_name,
+                    xlabel="Vote Length",
+                    ylabel="Violation Degree ($a$)",
+                    plot_lines=[
+                        PlotLine(
+                            color="blue",
+                            coordinates=coords,
+                            legend_entry=algo_name,
+                        )
+                    ],
+                    ymajorgrids=True,
+                    grid_style="dashed",
+                    xmode="linear",
+                    ymode="linear",
+                    legend_pos="outer north east",
+                )
+            )
+
+        if graphs:
+            figures.append(
+                SubfigureGrid(
+                    title=f"EJR[{utility}] Violation Degree vs Vote Length",
+                    caption=(
+                        f"EJR[{utility}] violation degree as a function of vote length, "
+                        f"shown per algorithm. A value of 1 indicates a full violation."
+                    ),
+                    graphs=graphs,
+                )
+            )
+
+    return figures
+
+
+def print_stats(printAsLatex: bool = False):
     """
     Main entry point for statistics generation.
+    Creates a 'tex' directory and writes each function's output to a separate file.
 
     Parameters:
     - printAsLatex: If True, output LaTeX tables
-    - output_file: If provided, write output to this file instead of stdout
     """
-    all_tables = []
+    os.makedirs("tex", exist_ok=True)
 
-    # Collect all tables from analysis functions
-    all_tables.extend(parse_outcomes_and_count_satisfying_properties())
-    all_tables.extend(print_results_by_sat_function())
-    all_tables.extend(print_results_by_algorithm())
-    all_tables.extend(analyze_ejr_violations_by_utility())
-    all_tables.append(graph_vote_length_vs_p_sets_ejr_card())
-    all_tables.extend(graph_min_violation_degree_distribution_pr())
+    functions = [
+        (
+            "parse_outcomes_and_count_satisfying_properties",
+            parse_outcomes_and_count_satisfying_properties(),
+        ),
+        ("print_results_by_sat_function", print_results_by_sat_function()),
+        ("print_results_by_algorithm", print_results_by_algorithm()),
+        ("analyze_ejr_violations_by_utility", analyze_ejr_violations_by_utility()),
+        (
+            "graph_vote_length_vs_p_sets_ejr_card",
+            [graph_vote_length_vs_p_sets_ejr_card()],
+        ),
+        (
+            "graph_min_violation_degree_distribution_pr",
+            graph_min_violation_degree_distribution_pr(),
+        ),
+        (
+            "graph_vote_length_vs_violation_degree_ejr",
+            graph_vote_length_vs_violation_degree_ejr(),
+        ),
+    ]
 
-    # Open output file if specified
-    output_fp = None
-    if output_file:
-        output_fp = open(output_file, "w")
-
-    try:
-        # Print all tables
-        for table in all_tables:
-            print_table(table, as_latex=printAsLatex, file=output_fp)
-    finally:
-        if output_fp:
-            output_fp.close()
+    for func_name, tables in functions:
+        filepath = os.path.join("tex", f"{func_name}.tex")
+        with open(filepath, "w") as fp:
+            for table in tables:
+                if table is not None:
+                    print_table(table, as_latex=printAsLatex, file=fp)
 
 
 if __name__ == "__main__":
-    print_stats(True, output_file="test_results.tex")
+    print_stats(True)
