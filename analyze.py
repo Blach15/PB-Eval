@@ -7,6 +7,11 @@ import numpy as np
 import sys
 
 
+def escape_latex(s: str) -> str:
+    """Escape special LaTeX characters in a string."""
+    return s.replace("%", "\\%").replace("_", "\\_")
+
+
 @dataclass
 class Table:
     """Represents a tabular data structure with headers and rows."""
@@ -46,10 +51,6 @@ class Table:
         print(f"\\begin{{tabular}}{{{col_spec}}}", file=file)
         print("\\toprule", file=file)
 
-        # Headers - escape % as \% and _ as \_
-        def escape_latex(s: str) -> str:
-            return s.replace("%", "\\%").replace("_", "\\_")
-
         header_row = " & ".join(escape_latex(str(h)) for h in self.headers) + " \\\\"
         print(header_row, file=file)
 
@@ -72,14 +73,14 @@ class PlotLine:
     """Represents a single plot line in a graph."""
 
     color: str
-    mark: str
     coordinates: List[tuple]  # List of (x, y) tuples
     legend_entry: str
+    mark: Optional[str] = None
 
     def to_latex(self) -> str:
         """Convert plot line to LaTeX format."""
         coords_str = "".join(f"({x},{y})" for x, y in self.coordinates)
-        return f"\\addplot[color={self.color}, mark={self.mark}]coordinates {{ {coords_str}}};\\addlegendentry{{{self.legend_entry}}}"
+        return f"\\addplot[color={self.color}{', mark=' + self.mark if self.mark is not None else ''}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
 
 
 @dataclass
@@ -105,13 +106,14 @@ class Graph:
     def print_latex(self, file: Optional[TextIO] = None) -> None:
         """Print graph in LaTeX TikZ format."""
         file = file or sys.stdout
+        print(f"\n\n% {self.title}" if self.title else "% Graph", file=file)
         print("\\begin{tikzpicture}", file=file)
 
         # Build axis options
         axis_options = [
-            f"title={{{self.title}}}",
-            f"xlabel={{{self.xlabel}}}",
-            f"ylabel={{{self.ylabel}}}",
+            f"title={{{escape_latex(self.title)}}}",
+            f"xlabel={{{escape_latex(self.xlabel)}}}",
+            f"ylabel={{{escape_latex(self.ylabel)}}}",
             f"ymajorgrids={str(self.ymajorgrids).lower()}",
             f"grid style={self.grid_style}",
             # f"xmode={self.xmode}",
@@ -621,6 +623,94 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Graph:
     return graph
 
 
+def graph_min_violation_degree_distribution_pr() -> Graph:
+    """
+    For each algorithm, find the minimum violation_degree per election across all
+    ejr types and utilities.  Then, for x in [0.00, 0.01, ..., 1.00], compute the
+    percentage of elections where the min violation degree is strictly greater than x
+    (i.e. a complementary CDF).
+
+    Returns a Graph with one plot line per algorithm.
+    """
+    outcomes_dir = "./outcomes"
+
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return None
+
+    # {algo_name: [min_violation_degree_for_election, ...]}
+    algo_min_violations: dict[str, list[float]] = defaultdict(list)
+
+    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
+
+    for filename in sorted(json_files):
+        filepath = os.path.join(outcomes_dir, filename)
+        try:
+            with open(filepath, "r") as f:
+                data = json.load(f)
+
+            if "results" not in data:
+                continue
+
+            for algo_name, algo_results in data["results"].items():
+                degrees = []
+                for ejr_type in ["ejr" ]:
+                    for utility in ["cost", "card"]:
+                        deg = (
+                            algo_results.get(ejr_type, {})
+                            .get(utility, {})
+                            .get("violation_degree")
+                        )
+                        if deg is not None:
+                            degrees.append(deg)
+                if degrees:
+                    algo_min_violations[algo_name].append(min(degrees))
+
+        except json.JSONDecodeError as e:
+            print(f"Error parsing {filename}: {e}")
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    if not algo_min_violations:
+        return None
+
+    x_points = [round(i * 0.01, 2) for i in range(101)]  # 0.00 to 1.00
+
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
+    marks = ["*", "o", "square", "triangle", "diamond", "pentagon", "star", "asterisk"]
+
+    plot_lines = []
+    for i, algo_name in enumerate(sorted(algo_min_violations.keys())):
+        violations = algo_min_violations[algo_name]
+        n = len(violations)
+        if n == 0:
+            continue
+        coordinates = [
+            (x, round(sum(1 for v in violations if v > x) / n * 100, 2))
+            for x in x_points
+        ]
+        plot_lines.append(
+            PlotLine(
+                color=colors[i % len(colors)],
+                # mark=marks[i % len(marks)],
+                coordinates=coordinates,
+                legend_entry=algo_name,
+            )
+        )
+
+    return Graph(
+        title="Min Violation Degree Distribution per Election",
+        xlabel="Min Violation Degree ($a$)",
+        ylabel="Elections with Min Violation $> a$",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
+    )
+
+
 def print_stats(printAsLatex: bool = False, output_file: Optional[str] = None):
     """
     Main entry point for statistics generation.
@@ -637,6 +727,7 @@ def print_stats(printAsLatex: bool = False, output_file: Optional[str] = None):
     all_tables.extend(print_results_by_algorithm())
     all_tables.extend(analyze_ejr_violations_by_utility())
     all_tables.append(graph_vote_length_vs_p_sets_ejr_card())
+    all_tables.append(graph_min_violation_degree_distribution_pr())
 
     # Open output file if specified
     output_fp = None
