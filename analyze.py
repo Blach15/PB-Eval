@@ -98,6 +98,7 @@ class Graph:
     ymode: str = "log"
     log_basis_y: int = 2
     legend_pos: str = "outer north east"
+    xdir: Optional[str] = None
 
     def print_raw(self, file: Optional[TextIO] = None) -> None:
         """Print raw format (does nothing for graphs)."""
@@ -121,6 +122,7 @@ class Graph:
             # f"ymode={self.ymode}",
             # f"log basis y={self.log_basis_y}",
             f"legend pos = {self.legend_pos}",
+            *([f"x dir={self.xdir}"] if self.xdir is not None else []),
         ]
 
         print("\\begin{axis}[" + ", ".join(axis_options) + "]", file=file)
@@ -623,23 +625,26 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Graph:
     return graph
 
 
-def graph_min_violation_degree_distribution_pr() -> Graph:
+def graph_min_violation_degree_distribution_pr() -> List[Graph]:
     """
-    For each algorithm, find the minimum violation_degree per election across all
-    ejr types and utilities.  Then, for x in [0.00, 0.01, ..., 1.00], compute the
-    percentage of elections where the min violation degree is strictly greater than x
-    (i.e. a complementary CDF).
+    For each utility (cost, card), and for each algorithm, collect the
+    violation_degree for EJR per election (using 1 when None).  Then, for
+    x in [0.00, 0.01, ..., 1.00], compute the percentage of elections where
+    the violation degree is strictly greater than x (complementary CDF).
 
-    Returns a Graph with one plot line per algorithm.
+    Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
     """
     outcomes_dir = "./outcomes"
 
     if not os.path.exists(outcomes_dir):
         print(f"Outcomes directory {outcomes_dir} not found")
-        return None
+        return []
 
-    # {algo_name: [min_violation_degree_for_election, ...]}
-    algo_min_violations: dict[str, list[float]] = defaultdict(list)
+    # {utility: {algo_name: [violation_degree_per_election, ...]}}
+    data_by_utility: dict[str, dict[str, list[float]]] = {
+        "cost": defaultdict(list),
+        "card": defaultdict(list),
+    }
 
     json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
 
@@ -653,62 +658,62 @@ def graph_min_violation_degree_distribution_pr() -> Graph:
                 continue
 
             for algo_name, algo_results in data["results"].items():
-                degrees = []
-                for ejr_type in ["ejr" ]:
-                    for utility in ["cost", "card"]:
-                        deg = (
-                            algo_results.get(ejr_type, {})
-                            .get(utility, {})
-                            .get("violation_degree")
+                for utility in ["cost", "card"]:
+                    ejr_util = algo_results.get("ejr", {}).get(utility)
+                    if ejr_util is not None:
+                        deg = ejr_util.get("violation_degree")
+                        data_by_utility[utility][algo_name].append(
+                            deg if deg is not None else 1
                         )
-                        if deg is not None:
-                            degrees.append(deg)
-                if degrees:
-                    algo_min_violations[algo_name].append(min(degrees))
 
         except json.JSONDecodeError as e:
             print(f"Error parsing {filename}: {e}")
         except Exception as e:
             print(f"Error processing {filename}: {e}")
 
-    if not algo_min_violations:
-        return None
-
     x_points = [round(i * 0.01, 2) for i in range(101)]  # 0.00 to 1.00
-
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
-    marks = ["*", "o", "square", "triangle", "diamond", "pentagon", "star", "asterisk"]
 
-    plot_lines = []
-    for i, algo_name in enumerate(sorted(algo_min_violations.keys())):
-        violations = algo_min_violations[algo_name]
-        n = len(violations)
-        if n == 0:
+    graphs = []
+    for utility in ["cost", "card"]:
+        algo_violations = data_by_utility[utility]
+        if not algo_violations:
             continue
-        coordinates = [
-            (x, round(sum(1 for v in violations if v > x) / n * 100, 2))
-            for x in x_points
-        ]
-        plot_lines.append(
-            PlotLine(
-                color=colors[i % len(colors)],
-                # mark=marks[i % len(marks)],
-                coordinates=coordinates,
-                legend_entry=algo_name,
+
+        plot_lines = []
+        for i, algo_name in enumerate(sorted(algo_violations.keys())):
+            violations = algo_violations[algo_name]
+            n = len(violations)
+            if n == 0:
+                continue
+            coordinates = [
+                (x, round(sum(1 for v in violations if v >= x) / n * 100, 2))
+                for x in x_points
+            ]
+            plot_lines.append(
+                PlotLine(
+                    color=colors[i % len(colors)],
+                    coordinates=coordinates,
+                    legend_entry=algo_name,
+                )
+            )
+
+        graphs.append(
+            Graph(
+                title=f"EJR[{utility}] Violation Degree Distribution",
+                xlabel="Violation Degree ($a$)",
+                ylabel="Elections with Violation $\\ge a$",
+                plot_lines=plot_lines,
+                ymajorgrids=True,
+                grid_style="dashed",
+                xmode="linear",
+                ymode="linear",
+                legend_pos="outer north east",
+                xdir="reverse",
             )
         )
 
-    return Graph(
-        title="Min Violation Degree Distribution per Election",
-        xlabel="Min Violation Degree ($a$)",
-        ylabel="Elections with Min Violation $> a$",
-        plot_lines=plot_lines,
-        ymajorgrids=True,
-        grid_style="dashed",
-        xmode="linear",
-        ymode="linear",
-        legend_pos="outer north east",
-    )
+    return graphs
 
 
 def print_stats(printAsLatex: bool = False, output_file: Optional[str] = None):
@@ -727,7 +732,7 @@ def print_stats(printAsLatex: bool = False, output_file: Optional[str] = None):
     all_tables.extend(print_results_by_algorithm())
     all_tables.extend(analyze_ejr_violations_by_utility())
     all_tables.append(graph_vote_length_vs_p_sets_ejr_card())
-    all_tables.append(graph_min_violation_degree_distribution_pr())
+    all_tables.extend(graph_min_violation_degree_distribution_pr())
 
     # Open output file if specified
     output_fp = None
