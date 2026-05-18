@@ -76,11 +76,16 @@ class PlotLine:
     coordinates: List[tuple]  # List of (x, y) tuples
     legend_entry: str
     mark: Optional[str] = None
+    mark_size: Optional[float] = None
 
     def to_latex(self) -> str:
         """Convert plot line to LaTeX format."""
         coords_str = "".join(f"({x},{y})" for x, y in self.coordinates)
-        return f"\\addplot[color={self.color}{', mark=' + self.mark if self.mark is not None else ''}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
+        mark_str = f", mark={self.mark}" if self.mark is not None else ""
+        mark_size_str = (
+            f", mark size={self.mark_size}pt" if self.mark_size is not None else ""
+        )
+        return f"\\addplot[color={self.color}{mark_str}{mark_size_str}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
 
 
 @dataclass
@@ -99,6 +104,9 @@ class Graph:
     log_basis_y: int = 2
     legend_pos: str = "outer north east"
     xdir: Optional[str] = None
+    ymin: Optional[float] = None
+    ymax: Optional[float] = None
+    only_marks: bool = False
 
     def print_raw(self, file: Optional[TextIO] = None) -> None:
         """Print raw format (does nothing for graphs)."""
@@ -183,14 +191,20 @@ class SubfigureGrid:
             f"ylabel={{{escape_latex(graph.ylabel)}}}",
             f"ymajorgrids={str(graph.ymajorgrids).lower()}",
             f"grid style={graph.grid_style}",
+            *([f"ymin={graph.ymin}"] if graph.ymin is not None else []),
+            *([f"ymax={graph.ymax}"] if graph.ymax is not None else []),
             *([f"x dir={graph.xdir}"] if graph.xdir is not None else []),
         ]
         print("    \\begin{axis}[" + ", ".join(axis_options) + "]", file=file)
         for pl in graph.plot_lines:
             coords_str = "".join(f"({x},{y})" for x, y in pl.coordinates)
             mark_opt = f", mark={pl.mark}" if pl.mark is not None else ""
+            mark_size_opt = (
+                f", mark size={pl.mark_size}pt" if pl.mark_size is not None else ""
+            )
+            only_marks_opt = "only marks, " if graph.only_marks else ""
             print(
-                f"    \\addplot[color={pl.color}{mark_opt}]coordinates {{ {coords_str}}};",
+                f"    \\addplot[{only_marks_opt}color={pl.color}{mark_opt}{mark_size_opt}]coordinates {{ {coords_str}}};",
                 file=file,
             )
         print("    \\end{axis}", file=file)
@@ -838,7 +852,9 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
                     ylabel="Violation Degree ($a$)",
                     plot_lines=[
                         PlotLine(
-                            color="blue",
+                            color="black",
+                            mark="*",
+                            mark_size=1,
                             coordinates=coords,
                             legend_entry=algo_name,
                         )
@@ -848,6 +864,9 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
                     xmode="linear",
                     ymode="linear",
                     legend_pos="outer north east",
+                    ymin=0,
+                    ymax=1,
+                    only_marks=True,
                 )
             )
 
