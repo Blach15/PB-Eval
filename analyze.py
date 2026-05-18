@@ -188,7 +188,7 @@ class SubfigureGrid:
         """Render a Graph as a tikzpicture without legend entries."""
         print("    \\begin{tikzpicture}", file=file)
         axis_options = [
-            f"title={{{escape_latex(graph.title)}}}",
+            # f"title={{{escape_latex(graph.title)}}}", # no title, as is the caption
             f"xlabel={{{escape_latex(graph.xlabel)}}}",
             f"ylabel={{{escape_latex(graph.ylabel)}}}",
             f"ymajorgrids={str(graph.ymajorgrids).lower()}",
@@ -967,9 +967,11 @@ def _compile_subfigure_grid(
                 f"    \\includegraphics[width=\\linewidth]{{06_tex/pdf/{graph_name}.pdf}}\n"
             )
             f.write(f"    \\caption{{{escape_latex(graph.title)}}}\n")
+            f.write(f"    \\label{{fig:{graph_name}}}\n")
             f.write("\\end{subfigure}\n")
         short = escape_latex(grid.title)
-        f.write(f"\\caption[{short}]{{{escape_latex(grid.caption)}}}\n")
+        f.write(f"\\caption{{{short}}}\n")
+        f.write(f"\\label{{fig:{name}}}\n")
         f.write("\\end{figure}\n\n")
 
 
