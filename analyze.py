@@ -887,8 +887,8 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
     return figures
 
 
-_LATEX_PREAMBLE = """\\documentclass{article}
-\\usepackage[margin=1cm,a4paper]{geometry}
+_LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
+\\usepackage{tikz}
 \\usepackage{booktabs}
 \\usepackage{pgfplots}
 \\pgfplotsset{compat=1.18}
@@ -927,14 +927,14 @@ def _compile_snippet_to_pdf(snippet: str, name: str, pdf_dir: str) -> bool:
             p = os.path.join(pdf_dir, f"{name}{ext}")
             if os.path.exists(p):
                 os.remove(p)
-        print(f"  -> tex/pdf/{name}.pdf")
+        print(f"  -> 06_tex/pdf/{name}.pdf")
         return True
     else:
         for ext in (".aux", ".tex"):
             p = os.path.join(pdf_dir, f"{name}{ext}")
             if os.path.exists(p):
                 os.remove(p)
-        print(f"  WARNING: {name} failed — see tex/pdf/{name}.log")
+        print(f"  WARNING: {name} failed — see 06_tex/pdf/{name}.log")
         return False
 
 
@@ -958,27 +958,19 @@ def _compile_subfigure_grid(
 
     with open(tex_out_path, "w") as f:
         f.write(f"\n\n% {grid.title}\n")
-        f.write("\\begin{figure}[b]\n")
+        f.write("\\begin{figure}[H]\n")
         f.write("\\centering\n")
         for i, (graph, graph_name) in enumerate(zip(grid.graphs, graph_names)):
-            lone_last = (i == n - 1) and (n % 2 == 1)
-            if lone_last:
-                f.write("\\begin{subfigure}{\\textwidth}\n")
-                f.write("    \\raggedleft\n")
-            else:
-                f.write("\\begin{subfigure}{.5\\textwidth}\n")
-                f.write("    \\centering\n")
+            f.write("\\begin{subfigure}{.49\\textwidth}\n")
+            f.write("    \\centering\n")
             f.write(
-                f"    \\includegraphics[width=\\linewidth]{{tex/pdf/{graph_name}.pdf}}\n"
+                f"    \\includegraphics[width=\\linewidth]{{06_tex/pdf/{graph_name}.pdf}}\n"
             )
             f.write(f"    \\caption{{{escape_latex(graph.title)}}}\n")
-            if lone_last or i % 2 == 1:
-                f.write("\\end{subfigure}\n")
-            else:
-                f.write("\\end{subfigure}%\n")
+            f.write("\\end{subfigure}\n")
         short = escape_latex(grid.title)
         f.write(f"\\caption[{short}]{{{escape_latex(grid.caption)}}}\n")
-        f.write("\\end{figure}\n")
+        f.write("\\end{figure}\n\n")
 
 
 def print_stats() -> None:
@@ -991,8 +983,8 @@ def print_stats() -> None:
       tex/pdf/, and a .tex snippet assembling them into a figure with subfigures
       is written to tex/.
     """
-    os.makedirs("tex", exist_ok=True)
-    pdf_dir = os.path.join("tex", "pdf")
+    os.makedirs("06_tex", exist_ok=True)
+    pdf_dir = os.path.join("06_tex", "pdf")
     os.makedirs(pdf_dir, exist_ok=True)
 
     functions = [
@@ -1024,17 +1016,20 @@ def print_stats() -> None:
         items = [x for x in items if x is not None]
         for i, item in enumerate(items):
             name = func_name if len(items) == 1 else f"{func_name}_{i}"
-            tex_out_path = os.path.join("tex", f"{name}.tex")
+            tex_out_path = os.path.join("06_tex", f"{name}.tex")
 
             if isinstance(item, SubfigureGrid):
                 _compile_subfigure_grid(item, name, tex_out_path, pdf_dir)
+            elif isinstance(item, Table):
+                with open(tex_out_path, "w") as f:
+                    item.print_latex(file=f)
             else:
                 buf = io.StringIO()
                 item.print_latex(file=buf)
                 print(f"Compiling {name}...")
                 _compile_snippet_to_pdf(buf.getvalue(), name, pdf_dir)
                 with open(tex_out_path, "w") as f:
-                    f.write(f"\\includegraphics{{tex/pdf/{name}.pdf}}\n")
+                    f.write(f"\\includegraphics{{06_tex/pdf/{name}.pdf}}\n")
 
 
 if __name__ == "__main__":
