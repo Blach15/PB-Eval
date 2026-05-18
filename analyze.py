@@ -1,5 +1,7 @@
+import io
 import os
 import json
+import subprocess
 from collections import defaultdict
 from dataclasses import dataclass
 from typing import List, Optional, Any, TextIO
@@ -679,7 +681,7 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
             mark = marks.get("MES[card]", "o")
             plot_line = PlotLine(
                 color=color,
-                mark=mark,
+                # mark=mark,
                 coordinates=coordinates,
                 legend_entry="MES[card]",
             )
@@ -885,24 +887,125 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
     return figures
 
 
-def print_stats(printAsLatex: bool = False):
-    """
-    Main entry point for statistics generation.
-    Creates a 'tex' directory and writes each function's output to a separate file.
+_LATEX_PREAMBLE = """\\documentclass{article}
+\\usepackage[margin=1cm,a4paper]{geometry}
+\\usepackage{booktabs}
+\\usepackage{pgfplots}
+\\pgfplotsset{compat=1.18}
+\\usepackage{subcaption}
+\\usepackage{caption}
+\\pagestyle{empty}
+\\begin{document}
+"""
 
-    Parameters:
-    - printAsLatex: If True, output LaTeX tables
+_LATEX_POSTAMBLE = "\n\\end{document}\n"
+
+
+def _compile_snippet_to_pdf(snippet: str, name: str, pdf_dir: str) -> bool:
+    """Wrap snippet in a full LaTeX document and compile to PDF.
+
+    Returns True if the PDF was produced, False otherwise.
+    On failure the .log file is kept for debugging.
+    """
+    tex_path = os.path.join(pdf_dir, f"{name}.tex")
+    pdf_path = os.path.join(pdf_dir, f"{name}.pdf")
+
+    with open(tex_path, "w") as f:
+        f.write(_LATEX_PREAMBLE)
+        f.write(snippet)
+        f.write(_LATEX_POSTAMBLE)
+
+    subprocess.run(
+        ["pdflatex", "-interaction=nonstopmode", f"{name}.tex"],
+        cwd=pdf_dir,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+
+    if os.path.exists(pdf_path):
+        for ext in (".aux", ".tex", ".log"):
+            p = os.path.join(pdf_dir, f"{name}{ext}")
+            if os.path.exists(p):
+                os.remove(p)
+        print(f"  -> tex/pdf/{name}.pdf")
+        return True
+    else:
+        for ext in (".aux", ".tex"):
+            p = os.path.join(pdf_dir, f"{name}{ext}")
+            if os.path.exists(p):
+                os.remove(p)
+        print(f"  WARNING: {name} failed — see tex/pdf/{name}.log")
+        return False
+
+
+def _compile_subfigure_grid(
+    grid: "SubfigureGrid", name: str, tex_out_path: str, pdf_dir: str
+) -> None:
+    """Compile each graph in a SubfigureGrid to its own PDF, then write a
+    .tex file that assembles them into a figure using subfigures with
+    \\includegraphics.
+    """
+    n = len(grid.graphs)
+    graph_names = []
+
+    for j, graph in enumerate(grid.graphs):
+        graph_name = f"{name}_graph_{j}"
+        buf = io.StringIO()
+        SubfigureGrid._print_graph(graph, buf)
+        print(f"Compiling {graph_name}...")
+        _compile_snippet_to_pdf(buf.getvalue(), graph_name, pdf_dir)
+        graph_names.append(graph_name)
+
+    with open(tex_out_path, "w") as f:
+        f.write(f"\n\n% {grid.title}\n")
+        f.write("\\begin{figure}[b]\n")
+        f.write("\\centering\n")
+        for i, (graph, graph_name) in enumerate(zip(grid.graphs, graph_names)):
+            lone_last = (i == n - 1) and (n % 2 == 1)
+            if lone_last:
+                f.write("\\begin{subfigure}{\\textwidth}\n")
+                f.write("    \\raggedleft\n")
+            else:
+                f.write("\\begin{subfigure}{.5\\textwidth}\n")
+                f.write("    \\centering\n")
+            f.write(
+                f"    \\includegraphics[width=\\linewidth]{{tex/pdf/{graph_name}.pdf}}\n"
+            )
+            f.write(f"    \\caption{{{escape_latex(graph.title)}}}\n")
+            if lone_last or i % 2 == 1:
+                f.write("\\end{subfigure}\n")
+            else:
+                f.write("\\end{subfigure}%\n")
+        short = escape_latex(grid.title)
+        f.write(f"\\caption[{short}]{{{escape_latex(grid.caption)}}}\n")
+        f.write("\\end{figure}\n")
+
+
+def print_stats() -> None:
+    """Main entry point for statistics generation.
+
+    For each output item:
+    - Tables and Graphs: compiled to a standalone PDF in tex/pdf/, then a .tex
+      snippet with \\includegraphics is written to tex/.
+    - SubfigureGrids: each constituent graph is compiled to its own PDF in
+      tex/pdf/, and a .tex snippet assembling them into a figure with subfigures
+      is written to tex/.
     """
     os.makedirs("tex", exist_ok=True)
+    pdf_dir = os.path.join("tex", "pdf")
+    os.makedirs(pdf_dir, exist_ok=True)
 
     functions = [
+        # (
+        #     "parse_outcomes_and_count_satisfying_properties",
+        #     parse_outcomes_and_count_satisfying_properties(),
+        # ),
+        # ("print_results_by_sat_function", print_results_by_sat_function()),
+        ("print_results_by_algorithm", print_results_by_algorithm()),  # GOAT
         (
-            "parse_outcomes_and_count_satisfying_properties",
-            parse_outcomes_and_count_satisfying_properties(),
-        ),
-        ("print_results_by_sat_function", print_results_by_sat_function()),
-        ("print_results_by_algorithm", print_results_by_algorithm()),
-        ("analyze_ejr_violations_by_utility", analyze_ejr_violations_by_utility()),
+            "analyze_ejr_violations_by_utility",
+            analyze_ejr_violations_by_utility(),
+        ),  # a qq table
         (
             "graph_vote_length_vs_p_sets_ejr_card",
             [graph_vote_length_vs_p_sets_ejr_card()],
@@ -917,13 +1020,22 @@ def print_stats(printAsLatex: bool = False):
         ),
     ]
 
-    for func_name, tables in functions:
-        filepath = os.path.join("tex", f"{func_name}.tex")
-        with open(filepath, "w") as fp:
-            for table in tables:
-                if table is not None:
-                    print_table(table, as_latex=printAsLatex, file=fp)
+    for func_name, items in functions:
+        items = [x for x in items if x is not None]
+        for i, item in enumerate(items):
+            name = func_name if len(items) == 1 else f"{func_name}_{i}"
+            tex_out_path = os.path.join("tex", f"{name}.tex")
+
+            if isinstance(item, SubfigureGrid):
+                _compile_subfigure_grid(item, name, tex_out_path, pdf_dir)
+            else:
+                buf = io.StringIO()
+                item.print_latex(file=buf)
+                print(f"Compiling {name}...")
+                _compile_snippet_to_pdf(buf.getvalue(), name, pdf_dir)
+                with open(tex_out_path, "w") as f:
+                    f.write(f"\\includegraphics{{tex/pdf/{name}.pdf}}\n")
 
 
 if __name__ == "__main__":
-    print_stats(True)
+    print_stats()
