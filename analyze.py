@@ -79,6 +79,7 @@ class PlotLine:
     legend_entry: str
     mark: Optional[str] = None
     mark_size: Optional[float] = None
+    only_marks: bool = False
 
     def to_latex(self) -> str:
         """Convert plot line to LaTeX format."""
@@ -204,7 +205,7 @@ class SubfigureGrid:
             mark_size_opt = (
                 f", mark size={pl.mark_size}pt" if pl.mark_size is not None else ""
             )
-            only_marks_opt = "only marks, " if graph.only_marks else ""
+            only_marks_opt = "only marks, " if pl.only_marks else ""
             print(
                 f"    \\addplot[{only_marks_opt}color={pl.color}{mark_opt}{mark_size_opt}]coordinates {{ {coords_str}}};",
                 file=file,
@@ -847,6 +848,13 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
             coords = sorted(data_by_algo[algo_name][utility], key=lambda p: p[0])
             if not coords:
                 continue
+
+            # Group by rounded vote_length and compute mean violation degree
+            grouped: dict[int, list[float]] = defaultdict(list)
+            for vl, deg in coords:
+                grouped[round(vl)].append(deg)
+            grouped_coords = sorted((k, float(np.mean(v))) for k, v in grouped.items())
+
             graphs.append(
                 Graph(
                     title=algo_name,
@@ -859,7 +867,14 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
                             mark_size=1,
                             coordinates=coords,
                             legend_entry=algo_name,
-                        )
+                            only_marks=True,
+                        ),
+                        PlotLine(
+                            color="red",
+                            mark=None,
+                            coordinates=grouped_coords,
+                            legend_entry=f"{algo_name} (mean)",
+                        ),
                     ],
                     ymajorgrids=True,
                     grid_style="dashed",
@@ -868,7 +883,6 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
                     legend_pos="outer north east",
                     ymin=0,
                     ymax=1,
-                    only_marks=True,
                 )
             )
 
