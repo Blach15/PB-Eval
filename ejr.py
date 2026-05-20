@@ -22,7 +22,7 @@ def iterate_all_affordable_p_sets(
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    callback: Callable[[tuple[int], set[int]], bool],
+    callback: Callable[[tuple[int, ...], set[int]], bool],
     pre_callback: Callable[[], None] = lambda: None,
     verbose: bool = False,
 ):
@@ -30,16 +30,16 @@ def iterate_all_affordable_p_sets(
 
     n = len(approvals)
 
-    current_lattice_layer_worklist: list[tuple[tuple[int], set[int]]] = list()
-    next_lattice_layer_worklist: list[tuple[tuple[int], set[int]]] = list()
+    current_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
+    next_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
 
     for pIdx in range(len(projects)):
-        p_set: tuple[int] = (pIdx,)
+        p_set: tuple[int, ...] = (pIdx,)
         next_lattice_layer_worklist.append((p_set, project_supporters[pIdx]))
 
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
-        surviving_lattice_layer_worklist: list[tuple[tuple[int], set[int]]] = []
+        surviving_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = []
 
         for p_set, voter_intersection in current_lattice_layer_worklist:
             pre_callback()
@@ -73,14 +73,12 @@ def iterate_all_affordable_p_sets(
                 if itemset_i[:-1] == itemset_j[:-1]:
                     # keep the new set sorted.
                     new_set = tuple(itemset_i + (itemset_j[-1],))
-                    if new_set not in next_lattice_layer_worklist:
-                        # Cache the voter_intersection as intersection of the two parent sets' intersections
-                        new_voter_intersection = (
-                            voter_intersection_i & voter_intersection_j
-                        )
-                        next_lattice_layer_worklist.append(
-                            (new_set, new_voter_intersection)
-                        )
+
+                    # Cache the voter_intersection as intersection of the two parent sets' intersections
+                    new_voter_intersection = voter_intersection_i & voter_intersection_j
+                    next_lattice_layer_worklist.append(
+                        (new_set, new_voter_intersection)
+                    )
                 else:
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
@@ -109,7 +107,7 @@ def find_ejr_violation_witness(
         nonlocal p_sets_checked
         p_sets_checked += 1
 
-    def check_ejr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+    def check_ejr(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
         unsat_voters = {
             i
             for i in voter_intersection
@@ -173,8 +171,8 @@ def find_ejr_1_violation_witness(
         p_sets_checked += 1
 
     def max_util_from_unpicked(
-        voter_index: int, p_set: tuple[int]
-    ) -> tuple[int, Numeric]:
+        voter_index: int, p_set: tuple[int, ...]
+    ) -> tuple[int | None, Numeric]:
         # marginal utility of adding best project to p_set for voter i
         max_util = 0
         max_proj = None
@@ -185,10 +183,10 @@ def find_ejr_1_violation_witness(
                     max_util = util_p
                     max_proj = p
         if max_proj is None:
-            return None, None
+            return None, -1
         return max_proj, max_util
 
-    def check_ejr_1(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+    def check_ejr_1(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
         voters_projects = {
             i: max_util_from_unpicked(i, p_set) for i in voter_intersection
         }
@@ -257,8 +255,8 @@ def find_ejr_x_violation_witness(
         p_sets_checked += 1
 
     def min_util_from_unpicked(
-        voter_index: int, p_set: tuple[int]
-    ) -> tuple[int, Numeric]:
+        voter_index: int, p_set: tuple[int, ...]
+    ) -> tuple[int | None, Numeric]:
         # marginal utility of adding worst project to p_set for voter i
         min_util = None
         min_proj = None
@@ -269,10 +267,10 @@ def find_ejr_x_violation_witness(
                     min_util = util_p
                     min_proj = p
         if min_proj is None or min_util is None:
-            return None, None
+            return None, -1
         return min_proj, min_util
 
-    def check_ejr_x(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+    def check_ejr_x(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
         voters_projects = {
             i: min_util_from_unpicked(i, p_set) for i in voter_intersection
         }
@@ -350,7 +348,7 @@ def find_pjr_violation_witness(
 
     util_p_sets = []
 
-    def check_pjr(p_set: tuple[int], voter_intersection: set[int]) -> bool:
+    def check_pjr(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
         unsat_voters = {
             i
             for i in voter_intersection
