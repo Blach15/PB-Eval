@@ -87,6 +87,32 @@ class OutcomeParser:
             if (result := fn(algo, recs)) is not None
         ]
 
+    @staticmethod
+    def bin_mean(coords: List[tuple], bin_size: float) -> List[tuple]:
+        """Average y-values of (x, y) pairs into x-bins of width *bin_size*.
+
+        Each x is mapped to ``round(x / bin_size) * bin_size`` and the mean
+        y within each bin is returned as a sorted list of (x, mean_y) tuples.
+        """
+        bins: dict[float, list[float]] = defaultdict(list)
+        for x, y in coords:
+            key = round(x / bin_size) * bin_size
+            bins[key].append(y)
+        return sorted((k, float(np.mean(v))) for k, v in bins.items())
+
+    @staticmethod
+    def bin_median(coords: List[tuple], bin_size: float) -> List[tuple]:
+        """Median y-values of (x, y) pairs into x-bins of width *bin_size*.
+
+        Each x is mapped to ``round(x / bin_size) * bin_size`` and the median
+        y within each bin is returned as a sorted list of (x, median_y) tuples.
+        """
+        bins: dict[float, list[float]] = defaultdict(list)
+        for x, y in coords:
+            key = round(x / bin_size) * bin_size
+            bins[key].append(y)
+        return sorted((k, float(np.median(v))) for k, v in bins.items())
+
 
 @dataclass
 class Table:
@@ -783,6 +809,69 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
     return figures
 
 
+def graph_algorithm_time_vs_projects() -> List[Graph]:
+    """
+    For each EJR-type × utility combination, plot the mean EJR check time
+    (y-axis) against number_of_projects (x-axis, binned in increments of 2).
+    One plot line per algorithm.
+
+    Returns a list of Graph objects (one per EJR-type × utility pair).
+    """
+    parser = OutcomeParser()
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
+    ejr_labels = {"ejr": "EJR", "ejr_x": "EJR-X", "ejr_1": "EJR-1"}
+
+    # {ejr_type: {utility: {algo_name: [(n_projects, time), ...]}}}
+    data: dict[str, dict[str, dict[str, list[tuple]]]] = {
+        ejr_type: {"cost": defaultdict(list), "card": defaultdict(list)}
+        for ejr_type in ["ejr", "ejr_x", "ejr_1"]
+    }
+
+    for rec in parser.records:
+        n_projects = rec.metadata.get("number_of_projects")
+        if n_projects is None:
+            continue
+        for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+            for utility in ["cost", "card"]:
+                t = rec.results.get(ejr_type, {}).get(utility, {}).get("time")
+                if t is not None:
+                    data[ejr_type][utility][rec.algo_name].append((n_projects, t))
+
+    graphs = []
+    for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+        for utility in ["cost", "card"]:
+            algo_data = data[ejr_type][utility]
+            if not algo_data:
+                continue
+            plot_lines = []
+            for i, algo_name in enumerate(sorted(algo_data.keys())):
+                coords = OutcomeParser.bin_mean(algo_data[algo_name], bin_size=5)
+                if coords:
+                    plot_lines.append(
+                        PlotLine(
+                            color=colors[i % len(colors)],
+                            coordinates=coords,
+                            legend_entry=algo_name,
+                        )
+                    )
+            if plot_lines:
+                graphs.append(
+                    Graph(
+                        title=f"{ejr_labels[ejr_type]}[{utility}] Check Time vs Number of Projects",
+                        xlabel="Number of Projects",
+                        ylabel="Check Time (s)",
+                        plot_lines=plot_lines,
+                        ymajorgrids=True,
+                        grid_style="dashed",
+                        xmode="linear",
+                        ymode="linear",
+                        legend_pos="outer north east",
+                    )
+                )
+
+    return graphs
+
+
 _LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
 \\usepackage{tikz}
 \\usepackage{booktabs}
@@ -891,22 +980,26 @@ def print_stats() -> None:
         #     parse_outcomes_and_count_satisfying_properties(),
         # ),
         # ("print_results_by_sat_function", print_results_by_sat_function()),
-        ("print_results_by_algorithm", print_results_by_algorithm()),  # GOAT
+        # ("print_results_by_algorithm", print_results_by_algorithm()),  # GOAT
+        # (
+        #     "analyze_ejr_violations_by_utility",
+        #     analyze_ejr_violations_by_utility(),
+        # ),  # a qq table
+        # (
+        #     "graph_vote_length_vs_p_sets_ejr_card",
+        #     [graph_vote_length_vs_p_sets_ejr_card()],
+        # ),
+        # (
+        #     "graph_min_violation_degree_distribution_pr",
+        #     graph_min_violation_degree_distribution_pr(),
+        # ),
+        # (
+        #     "graph_vote_length_vs_violation_degree_ejr",
+        #     graph_vote_length_vs_violation_degree_ejr(),
+        # ),
         (
-            "analyze_ejr_violations_by_utility",
-            analyze_ejr_violations_by_utility(),
-        ),  # a qq table
-        (
-            "graph_vote_length_vs_p_sets_ejr_card",
-            [graph_vote_length_vs_p_sets_ejr_card()],
-        ),
-        (
-            "graph_min_violation_degree_distribution_pr",
-            graph_min_violation_degree_distribution_pr(),
-        ),
-        (
-            "graph_vote_length_vs_violation_degree_ejr",
-            graph_vote_length_vs_violation_degree_ejr(),
+            "graph_algorithm_time_vs_projects",
+            graph_algorithm_time_vs_projects(),
         ),
     ]
 
