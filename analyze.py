@@ -809,33 +809,34 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
     return figures
 
 
-def graph_algorithm_time_vs_projects() -> List[Graph]:
-    """
-    For each EJR-type × utility combination, plot the mean EJR check time
-    (y-axis) against number_of_projects (x-axis, binned in increments of 2).
-    One plot line per algorithm.
+def _graph_ejr_check_time(
+    x_fn: Callable[["ElectionRecord", str, str], Optional[float]],
+    x_label: str,
+    bin_size: float,
+    title_suffix: str,
+) -> Optional[SubfigureGrid]:
+    """Shared implementation for EJR check-time graphs.
 
-    Returns a list of Graph objects (one per EJR-type × utility pair).
+    For each EJR-type × utility pair, builds one Graph (mean check time vs a
+    caller-supplied x metric binned into *bin_size* steps, one line per
+    algorithm) and returns all graphs as a single SubfigureGrid figure.
     """
     parser = OutcomeParser()
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
     ejr_labels = {"ejr": "EJR", "ejr_x": "EJR-X", "ejr_1": "EJR-1"}
 
-    # {ejr_type: {utility: {algo_name: [(n_projects, time), ...]}}}
     data: dict[str, dict[str, dict[str, list[tuple]]]] = {
         ejr_type: {"cost": defaultdict(list), "card": defaultdict(list)}
         for ejr_type in ["ejr", "ejr_x", "ejr_1"]
     }
 
     for rec in parser.records:
-        n_projects = rec.metadata.get("number_of_projects")
-        if n_projects is None:
-            continue
         for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
             for utility in ["cost", "card"]:
+                x = x_fn(rec, ejr_type, utility)
                 t = rec.results.get(ejr_type, {}).get(utility, {}).get("time")
-                if t is not None:
-                    data[ejr_type][utility][rec.algo_name].append((n_projects, t))
+                if x is not None and t is not None:
+                    data[ejr_type][utility][rec.algo_name].append((x, t))
 
     graphs = []
     for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
@@ -845,7 +846,7 @@ def graph_algorithm_time_vs_projects() -> List[Graph]:
                 continue
             plot_lines = []
             for i, algo_name in enumerate(sorted(algo_data.keys())):
-                coords = OutcomeParser.bin_mean(algo_data[algo_name], bin_size=5)
+                coords = OutcomeParser.bin_mean(algo_data[algo_name], bin_size=bin_size)
                 if coords:
                     plot_lines.append(
                         PlotLine(
@@ -857,8 +858,8 @@ def graph_algorithm_time_vs_projects() -> List[Graph]:
             if plot_lines:
                 graphs.append(
                     Graph(
-                        title=f"{ejr_labels[ejr_type]}[{utility}] Check Time vs Number of Projects",
-                        xlabel="Number of Projects",
+                        title=f"{ejr_labels[ejr_type]}[{utility}]",
+                        xlabel=x_label,
                         ylabel="Check Time (s)",
                         plot_lines=plot_lines,
                         ymajorgrids=True,
@@ -869,7 +870,76 @@ def graph_algorithm_time_vs_projects() -> List[Graph]:
                     )
                 )
 
-    return graphs
+    if not graphs:
+        return None
+    return SubfigureGrid(
+        title=f"EJR Check Time vs {title_suffix}",
+        caption=(
+            f"Mean EJR check time (seconds) as a function of {x_label.lower()}, "
+            f"shown per algorithm and EJR variant."
+        ),
+        graphs=graphs,
+    )
+
+
+def graph_algorithm_time_vs_projects() -> Optional[SubfigureGrid]:
+    """EJR check time vs number_of_projects (binned in steps of 2)."""
+    return _graph_ejr_check_time(
+        x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_projects"),
+        x_label="Number of Projects",
+        bin_size=2,
+        title_suffix="Number of Projects",
+    )
+
+
+def graph_algorithm_time_vs_p_sets_checked() -> Optional[SubfigureGrid]:
+    """EJR check time vs p_sets_checked (binned in steps of 5)."""
+    return _graph_ejr_check_time(
+        x_fn=lambda rec, et, u: rec.results.get(et, {})
+        .get(u, {})
+        .get("p_sets_checked"),
+        x_label="P-Sets Checked",
+        bin_size=5,
+        title_suffix="P-Sets Checked",
+    )
+
+
+def graph_algorithm_time_vs_vote_length() -> Optional[SubfigureGrid]:
+    """EJR check time vs vote_length (binned in steps of 1)."""
+    return _graph_ejr_check_time(
+        x_fn=lambda rec, _et, _u: rec.metadata.get("vote_length"),
+        x_label="Vote Length",
+        bin_size=1,
+        title_suffix="Vote Length",
+    )
+
+
+def graph_algorithm_time_vs_number_of_voters() -> Optional[SubfigureGrid]:
+    """EJR check time vs number_of_voters (binned in steps of 50)."""
+    return _graph_ejr_check_time(
+        x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_voters"),
+        x_label="Number of Voters",
+        bin_size=50,
+        title_suffix="Number of Voters",
+    )
+
+
+def graph_algorithm_time_vs_vote_length_times_avg_cost() -> Optional[SubfigureGrid]:
+    """EJR check time vs vote_length * average_project_cost (binned in steps of 5)."""
+
+    def x_fn(rec: "ElectionRecord", _et: str, _u: str) -> Optional[float]:
+        vl = rec.metadata.get("vote_length")
+        apc = rec.metadata.get("average_project_cost")
+        if vl is None or apc is None:
+            return None
+        return vl * apc
+
+    return _graph_ejr_check_time(
+        x_fn=x_fn,
+        x_label="Vote Length $\\times$ Avg Project Cost",
+        bin_size=5,
+        title_suffix="Vote Length $\\times$ Avg Project Cost",
+    )
 
 
 _LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
@@ -980,26 +1050,42 @@ def print_stats() -> None:
         #     parse_outcomes_and_count_satisfying_properties(),
         # ),
         # ("print_results_by_sat_function", print_results_by_sat_function()),
-        # ("print_results_by_algorithm", print_results_by_algorithm()),  # GOAT
-        # (
-        #     "analyze_ejr_violations_by_utility",
-        #     analyze_ejr_violations_by_utility(),
-        # ),  # a qq table
-        # (
-        #     "graph_vote_length_vs_p_sets_ejr_card",
-        #     [graph_vote_length_vs_p_sets_ejr_card()],
-        # ),
-        # (
-        #     "graph_min_violation_degree_distribution_pr",
-        #     graph_min_violation_degree_distribution_pr(),
-        # ),
-        # (
-        #     "graph_vote_length_vs_violation_degree_ejr",
-        #     graph_vote_length_vs_violation_degree_ejr(),
-        # ),
+        ("print_results_by_algorithm", print_results_by_algorithm()),  # GOAT
+        (
+            "analyze_ejr_violations_by_utility",
+            analyze_ejr_violations_by_utility(),
+        ),  # a qq table
+        (
+            "graph_vote_length_vs_p_sets_ejr_card",
+            [graph_vote_length_vs_p_sets_ejr_card()],
+        ),
+        (
+            "graph_min_violation_degree_distribution_pr",
+            graph_min_violation_degree_distribution_pr(),
+        ),
+        (
+            "graph_vote_length_vs_violation_degree_ejr",
+            graph_vote_length_vs_violation_degree_ejr(),
+        ),
         (
             "graph_algorithm_time_vs_projects",
-            graph_algorithm_time_vs_projects(),
+            [graph_algorithm_time_vs_projects()],
+        ),
+        (
+            "graph_algorithm_time_vs_p_sets_checked",
+            [graph_algorithm_time_vs_p_sets_checked()],
+        ),
+        (
+            "graph_algorithm_time_vs_vote_length",
+            [graph_algorithm_time_vs_vote_length()],
+        ),
+        (
+            "graph_algorithm_time_vs_number_of_voters",
+            [graph_algorithm_time_vs_number_of_voters()],
+        ),
+        (
+            "graph_algorithm_time_vs_vote_length_times_avg_cost",
+            [graph_algorithm_time_vs_vote_length_times_avg_cost()],
         ),
     ]
 
