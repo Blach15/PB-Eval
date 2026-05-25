@@ -650,7 +650,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
                     deg if deg is not None else 1
                 )
 
-    x_points = [round(i * 0.01, 2) for i in range(101)]  # 0.00 to 1.00
+    x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     graphs = []
