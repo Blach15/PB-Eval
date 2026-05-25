@@ -4,14 +4,88 @@ import json
 import subprocess
 from collections import defaultdict
 from dataclasses import dataclass
-from typing import List, Optional, Any, TextIO
+from typing import Callable, List, Optional, Any, TextIO, TypeVar
 import numpy as np
 import sys
+
+_T = TypeVar("_T")
 
 
 def escape_latex(s: str) -> str:
     """Escape special LaTeX characters in a string."""
     return s.replace("%", "\\%").replace("_", "\\_")
+
+
+@dataclass
+class ElectionRecord:
+    """One algorithm's results within one election (one outcome JSON file)."""
+
+    filename: str
+    metadata: dict
+    algo_name: str
+    results: dict  # keys: "algorithm_time", "ejr", "ejr_x", "ejr_1"
+
+
+class OutcomeParser:
+    """Unified parser for the outcome JSON files in the outcomes/ directory.
+
+    Usage::
+
+        parser = OutcomeParser()
+        plot_lines = parser.plot_for_each_algo(
+            lambda algo_name, records: PlotLine(...)
+        )
+    """
+
+    def __init__(self, outcomes_dir: str = "./outcomes") -> None:
+        self.records: List[ElectionRecord] = self._load(outcomes_dir)
+
+    def _load(self, outcomes_dir: str) -> List[ElectionRecord]:
+        records: List[ElectionRecord] = []
+        if not os.path.exists(outcomes_dir):
+            print(f"Outcomes directory {outcomes_dir} not found")
+            return records
+        for filename in sorted(
+            f for f in os.listdir(outcomes_dir) if f.endswith(".json")
+        ):
+            filepath = os.path.join(outcomes_dir, filename)
+            try:
+                with open(filepath) as f:
+                    data = json.load(f)
+                metadata = data.get("metadata", {})
+                for algo_name, algo_results in data.get("results", {}).items():
+                    records.append(
+                        ElectionRecord(
+                            filename=filename,
+                            metadata=metadata,
+                            algo_name=algo_name,
+                            results=algo_results,
+                        )
+                    )
+            except json.JSONDecodeError as e:
+                print(f"Error parsing {filename}: {e}")
+            except Exception as e:
+                print(f"Error processing {filename}: {e}")
+        return records
+
+    def plot_for_each_algo(
+        self, fn: Callable[[str, List[ElectionRecord]], _T]
+    ) -> List[_T]:
+        """Call *fn(algo_name, records)* for every unique algorithm name.
+
+        Records are grouped by ``algo_name`` (e.g. ``"mes[card]"``,
+        ``"greedy[cost]"``, …) and *fn* is invoked once per group in
+        alphabetical order.  The list of *fn*'s return values is returned,
+        with ``None`` entries filtered out.
+        """
+        grouped: dict[str, List[ElectionRecord]] = defaultdict(list)
+        for r in self.records:
+            grouped[r.algo_name].append(r)
+        return [
+            result
+            for algo, recs in sorted(grouped.items())
+            if (result := fn(algo, recs)) is not None
+        ]
 
 
 @dataclass
@@ -231,13 +305,8 @@ def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
 
     Returns a list of Table objects, one for each property (EJR, EJR-X, EJR-1).
     """
-    outcomes_dir = "./outcomes"
+    parser = OutcomeParser()
 
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return []
-
-    # Counters for each property across all outcomes, utilities, and algorithms
     counters = {
         "total_files": 0,
         "ejr": defaultdict(lambda: {"satisfied": 0, "violated": 0}),
@@ -245,55 +314,21 @@ def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
         "ejr_x": defaultdict(lambda: {"satisfied": 0, "violated": 0}),
     }
 
-    # Get all JSON files in outcomes directory
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
+    seen_files: set[str] = set()
+    for rec in parser.records:
+        if rec.filename not in seen_files:
+            seen_files.add(rec.filename)
             counters["total_files"] += 1
 
-            # Parse results for each algorithm
-            if "results" in data:
-                for algo_name, algo_results in data["results"].items():
-                    # Check EJR
-                    for utility in ["cost", "card"]:
-                        if utility in algo_results.get("ejr", {}):
-                            ejr_result = algo_results["ejr"][utility]
-                            key = f"{algo_name}[{utility}]"
-                            if ejr_result.get("violation_found", False):
-                                counters["ejr"][key]["violated"] += 1
-                            else:
-                                counters["ejr"][key]["satisfied"] += 1
-
-                    # Check EJR-1
-                    for utility in ["cost", "card"]:
-                        if utility in algo_results.get("ejr_1", {}):
-                            ejr1_result = algo_results["ejr_1"][utility]
-                            key = f"{algo_name}[{utility}]"
-                            if ejr1_result.get("violation_found", False):
-                                counters["ejr_1"][key]["violated"] += 1
-                            else:
-                                counters["ejr_1"][key]["satisfied"] += 1
-
-                    # Check EJR-X
-                    for utility in ["cost", "card"]:
-                        if utility in algo_results.get("ejr_x", {}):
-                            ejrx_result = algo_results["ejr_x"][utility]
-                            key = f"{algo_name}[{utility}]"
-                            if ejrx_result.get("violation_found", False):
-                                counters["ejr_x"][key]["violated"] += 1
-                            else:
-                                counters["ejr_x"][key]["satisfied"] += 1
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+        for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+            for utility in ["cost", "card"]:
+                if utility in rec.results.get(ejr_type, {}):
+                    result = rec.results[ejr_type][utility]
+                    key = f"{rec.algo_name}[{utility}]"
+                    if result.get("violation_found", False):
+                        counters[ejr_type][key]["violated"] += 1
+                    else:
+                        counters[ejr_type][key]["satisfied"] += 1
 
     tables = []
     for prop_name, prop_key in [("EJR", "ejr"), ("EJR-X", "ejr_x"), ("EJR-1", "ejr_1")]:
@@ -328,58 +363,28 @@ def print_results_by_sat_function() -> List[Table]:
 
     Returns a list of Table objects.
     """
-    outcomes_dir = "./outcomes"
-
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return []
+    parser = OutcomeParser()
 
     # Structure: {ejr_type: {utility: {algo_name: {satisfied: count, violated: count}}}}
-    results_by_sat_func = {}
+    results_by_sat_func: dict = {}
 
-    # Get all JSON files in outcomes directory
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
-            if "results" in data:
-                for algo_name, algo_results in data["results"].items():
-                    for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
-                        if ejr_type not in results_by_sat_func:
-                            results_by_sat_func[ejr_type] = {}
-
-                        for utility in ["cost", "card"]:
-                            if utility in algo_results.get(ejr_type, {}):
-                                if utility not in results_by_sat_func[ejr_type]:
-                                    results_by_sat_func[ejr_type][utility] = {}
-
-                                if (
-                                    algo_name
-                                    not in results_by_sat_func[ejr_type][utility]
-                                ):
-                                    results_by_sat_func[ejr_type][utility][
-                                        algo_name
-                                    ] = {"satisfied": 0, "violated": 0}
-
-                                result = algo_results[ejr_type][utility]
-                                if result.get("violation_found", False):
-                                    results_by_sat_func[ejr_type][utility][algo_name][
-                                        "violated"
-                                    ] += 1
-                                else:
-                                    results_by_sat_func[ejr_type][utility][algo_name][
-                                        "satisfied"
-                                    ] += 1
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+    for rec in parser.records:
+        for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+            results_by_sat_func.setdefault(ejr_type, {})
+            for utility in ["cost", "card"]:
+                if utility in rec.results.get(ejr_type, {}):
+                    results_by_sat_func[ejr_type].setdefault(utility, {})
+                    results_by_sat_func[ejr_type][utility].setdefault(
+                        rec.algo_name, {"satisfied": 0, "violated": 0}
+                    )
+                    if rec.results[ejr_type][utility].get("violation_found", False):
+                        results_by_sat_func[ejr_type][utility][rec.algo_name][
+                            "violated"
+                        ] += 1
+                    else:
+                        results_by_sat_func[ejr_type][utility][rec.algo_name][
+                            "satisfied"
+                        ] += 1
 
     tables = []
     for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
@@ -423,51 +428,24 @@ def print_results_by_algorithm() -> List[Table]:
 
     Returns a list containing a single Table object.
     """
-    outcomes_dir = "./outcomes"
-
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return []
+    parser = OutcomeParser()
 
     # Structure: {algo_name: {ejr_type: {utility: {satisfied, violated}}}}
-    by_algo = {}
+    by_algo: dict = {}
 
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
-            if "results" not in data:
-                continue
-
-            for algo_name, algo_results in data["results"].items():
-                if algo_name not in by_algo:
-                    by_algo[algo_name] = {}
-
-                for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
-                    if ejr_type not in by_algo[algo_name]:
-                        by_algo[algo_name][ejr_type] = {}
-
-                    for utility in ["cost", "card"]:
-                        if utility in algo_results.get(ejr_type, {}):
-                            if utility not in by_algo[algo_name][ejr_type]:
-                                by_algo[algo_name][ejr_type][utility] = {
-                                    "satisfied": 0,
-                                    "violated": 0,
-                                }
-                            result = algo_results[ejr_type][utility]
-                            if result.get("violation_found", False):
-                                by_algo[algo_name][ejr_type][utility]["violated"] += 1
-                            else:
-                                by_algo[algo_name][ejr_type][utility]["satisfied"] += 1
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+    for rec in parser.records:
+        by_algo.setdefault(rec.algo_name, {})
+        for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+            by_algo[rec.algo_name].setdefault(ejr_type, {})
+            for utility in ["cost", "card"]:
+                if utility in rec.results.get(ejr_type, {}):
+                    by_algo[rec.algo_name][ejr_type].setdefault(
+                        utility, {"satisfied": 0, "violated": 0}
+                    )
+                    if rec.results[ejr_type][utility].get("violation_found", False):
+                        by_algo[rec.algo_name][ejr_type][utility]["violated"] += 1
+                    else:
+                        by_algo[rec.algo_name][ejr_type][utility]["satisfied"] += 1
 
     columns = [
         ("ejr", "card"),
@@ -514,47 +492,16 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
 
     Returns a list of Table objects, one for each utility (cost and card).
     """
-    outcomes_dir = "./outcomes"
+    parser = OutcomeParser()
 
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return []
+    violations_by_algo: dict = defaultdict(lambda: {"cost": [], "card": []})
 
-    # Dictionary to store violations by algorithm and utility
-    violations_by_algo = defaultdict(
-        lambda: {
-            "cost": [],
-            "card": [],
-        }
-    )
-
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
-            # Parse results for each algorithm
-            if "results" in data:
-                for algo_name, algo_results in data["results"].items():
-                    # Extract violations for the specified EJR type
-                    if ejr_type in algo_results:
-                        for utility in ["cost", "card"]:
-                            if utility in algo_results[ejr_type]:
-                                violation_data = algo_results[ejr_type][utility]
-                                degree = violation_data.get("violation_degree")
-                                if degree is not None:
-                                    violations_by_algo[algo_name][utility].append(
-                                        degree
-                                    )
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+    for rec in parser.records:
+        for utility in ["cost", "card"]:
+            if utility in rec.results.get(ejr_type, {}):
+                degree = rec.results[ejr_type][utility].get("violation_degree")
+                if degree is not None:
+                    violations_by_algo[rec.algo_name][utility].append(degree)
 
     tables = []
     for utility in ["cost", "card"]:
@@ -605,47 +552,20 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
     Returns:
     - A Graph object that can be printed in LaTeX or raw format
     """
-    outcomes_dir = "./outcomes"
-
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return None
+    parser = OutcomeParser()
 
     # Structure: {algorithm_name: [(vote_length, p_sets_checked), ...]}
-    algorithm_data = defaultdict(list)
+    algorithm_data: dict[str, list] = defaultdict(list)
 
-    # Get all JSON files in outcomes directory
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
-            # Extract vote_length from metadata
-            vote_length = data.get("metadata", {}).get("vote_length")
-            if vote_length is None:
-                continue
-
-            # Extract p_sets_checked for each algorithm's EJR[card]
-            if "results" in data:
-                for algo_name, algo_results in data["results"].items():
-                    # Get EJR card utility results
-                    if "ejr" in algo_results and "card" in algo_results["ejr"]:
-                        p_sets_checked = algo_results["ejr"]["card"].get(
-                            "p_sets_checked"
-                        )
-                        if p_sets_checked is not None:
-                            algorithm_data[algo_name].append(
-                                (vote_length, p_sets_checked)
-                            )
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+    for rec in parser.records:
+        vote_length = rec.metadata.get("vote_length")
+        if vote_length is None:
+            continue
+        ejr_card = rec.results.get("ejr", {}).get("card")
+        if ejr_card is not None:
+            p_sets_checked = ejr_card.get("p_sets_checked")
+            if p_sets_checked is not None:
+                algorithm_data[rec.algo_name].append((vote_length, p_sets_checked))
 
     # Sort data by vote_length for each algorithm
     for algo_name in algorithm_data:
@@ -713,11 +633,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
 
     Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
     """
-    outcomes_dir = "./outcomes"
-
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return []
+    parser = OutcomeParser()
 
     # {utility: {algo_name: [violation_degree_per_election, ...]}}
     data_by_utility: dict[str, dict[str, list[float]]] = {
@@ -725,30 +641,14 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
         "card": defaultdict(list),
     }
 
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
-            if "results" not in data:
-                continue
-
-            for algo_name, algo_results in data["results"].items():
-                for utility in ["cost", "card"]:
-                    ejr_util = algo_results.get("ejr", {}).get(utility)
-                    if ejr_util is not None:
-                        deg = ejr_util.get("violation_degree")
-                        data_by_utility[utility][algo_name].append(
-                            deg if deg is not None else 1
-                        )
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+    for rec in parser.records:
+        for utility in ["cost", "card"]:
+            ejr_util = rec.results.get("ejr", {}).get(utility)
+            if ejr_util is not None:
+                deg = ejr_util.get("violation_degree")
+                data_by_utility[utility][rec.algo_name].append(
+                    deg if deg is not None else 1
+                )
 
     x_points = [round(i * 0.01, 2) for i in range(101)]  # 0.00 to 1.00
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
@@ -804,42 +704,24 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
 
     Returns a list of two SubfigureGrid objects: one for EJR[cost], one for EJR[card].
     """
-    outcomes_dir = "./outcomes"
-
-    if not os.path.exists(outcomes_dir):
-        print(f"Outcomes directory {outcomes_dir} not found")
-        return []
+    parser = OutcomeParser()
 
     # {algo_name: {utility: [(vote_length, violation_degree), ...]}}
     data_by_algo: dict[str, dict[str, list[tuple]]] = defaultdict(
         lambda: {"cost": [], "card": []}
     )
 
-    json_files = [f for f in os.listdir(outcomes_dir) if f.endswith(".json")]
-
-    for filename in sorted(json_files):
-        filepath = os.path.join(outcomes_dir, filename)
-        try:
-            with open(filepath, "r") as f:
-                data = json.load(f)
-
-            vote_length = data.get("metadata", {}).get("vote_length")
-            if vote_length is None or "results" not in data:
-                continue
-
-            for algo_name, algo_results in data["results"].items():
-                for utility in ["cost", "card"]:
-                    ejr_util = algo_results.get("ejr", {}).get(utility)
-                    if ejr_util is not None:
-                        deg = ejr_util.get("violation_degree")
-                        data_by_algo[algo_name][utility].append(
-                            (vote_length, deg if deg is not None else 1)
-                        )
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {filename}: {e}")
-        except Exception as e:
-            print(f"Error processing {filename}: {e}")
+    for rec in parser.records:
+        vote_length = rec.metadata.get("vote_length")
+        if vote_length is None:
+            continue
+        for utility in ["cost", "card"]:
+            ejr_util = rec.results.get("ejr", {}).get(utility)
+            if ejr_util is not None:
+                deg = ejr_util.get("violation_degree")
+                data_by_algo[rec.algo_name][utility].append(
+                    (vote_length, deg if deg is not None else 1)
+                )
 
     figures = []
     for utility in ["cost", "card"]:
