@@ -6,6 +6,7 @@ from pabutools.election import (
     parse_pabulib,
 )
 from pabutools.rules import (
+    completion_by_rule_combination,
     greedy_utilitarian_welfare,
     sequential_phragmen,
     method_of_equal_shares,
@@ -28,16 +29,23 @@ def parsefile(filename: str, verbose: bool = True):
     vote_length = sum(len(ballot) for ballot in approvals) / len(approvals)
     vote_length_to_projects_ratio = vote_length / len(projects)
 
+    meta = instance.meta or {}
     metadata = {
         "number_of_voters": float(len(approvals)),
         "number_of_projects": float(len(projects)),
+        "budget_limit": float(instance.budget_limit),
         "vote_length": float(vote_length),
         "average_project_cost": float(average_project_cost),
         "projects_to_voters_ratio": float(projects_to_voters_ratio),
         "vote_length_to_projects_ratio": float(vote_length_to_projects_ratio),
-        "min_length": (instance.meta or {}).get("min_length", None),
-        "max_length": (instance.meta or {}).get("max_length", None),
-        "max_sum_cost": (instance.meta or {}).get("max_sum_cost", None),
+        "min_length": meta.get("min_length", None),
+        "max_length": meta.get("max_length", None),
+        "max_sum_cost": meta.get("max_sum_cost", None),
+        "vote_type": meta.get("vote_type", None),
+        "rule": meta.get("rule", None),
+        "country": meta.get("country", None),
+        "unit": meta.get("unit", None),
+        "currency": meta.get("currency", None),
     }
     if verbose:
         print(f"Metadata for {filename}: {metadata}")
@@ -56,32 +64,53 @@ def compute_winning_sets(filename: str, verbose: bool = True) -> str:
 
     algorithms = [
         {
-            "json_name": "greedy[cost]",
+            "json_name": "Greedy[cost]",
             "function": lambda: greedy_utilitarian_welfare(
-                instance, profile, sat_class=Cost_Sat, analytics=False
+                instance, profile, sat_class=Cost_Sat
             ),
         },
         {
-            "json_name": "greedy[card]",
+            "json_name": "Greedy[card]",
             "function": lambda: greedy_utilitarian_welfare(
-                instance, profile, sat_class=Cardinality_Sat, analytics=False
+                instance, profile, sat_class=Cardinality_Sat
             ),
         },
         {
             "json_name": "MES[cost]",
             "function": lambda: method_of_equal_shares(
-                instance, profile, sat_class=Cost_Sat, analytics=False
+                instance, profile, sat_class=Cost_Sat
             ),
         },
         {
             "json_name": "MES[card]",
             "function": lambda: method_of_equal_shares(
-                instance, profile, sat_class=Cardinality_Sat, analytics=False
+                instance, profile, sat_class=Cardinality_Sat
             ),
         },
         {
-            "json_name": "seq_phragmen",
+            "json_name": "Phragmen",
             "function": lambda: sequential_phragmen(instance, profile),
+        },
+         {
+            "json_name": "MES[cost]+1",
+            "function": lambda: method_of_equal_shares(
+                instance, profile, sat_class=Cost_Sat, voter_budget_increment=1
+            ),
+        },
+        {
+            "json_name": "MES[card]+1",
+            "function": lambda: method_of_equal_shares(
+                instance, profile, sat_class=Cardinality_Sat, voter_budget_increment=1
+            ),
+        },
+        {
+            "json_name": "Phragmen_Greedy[card]]",
+            "function": lambda: completion_by_rule_combination(
+                instance,
+                profile,
+                [sequential_phragmen, greedy_utilitarian_welfare],
+                [{}, {"sat_class": Cardinality_Sat}],
+            ),
         },
     ]
 
