@@ -94,6 +94,7 @@ def find_ejr_violation_witness(
     budget: Numeric,
     utility_func: Callable[[Iterable[int], set[int]], Numeric],
     verbose: bool = True,
+    exit_early: bool = False,
 ) -> EJRViolationResult:
     winning_util = [
         utility_func(winning_set, approvals[i]) for i in range(len(approvals))
@@ -134,7 +135,7 @@ def find_ejr_violation_witness(
                 EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
             )
 
-        return False  # continue searching for more witnesses, don't exit early
+        return exit_early  # continue searching for more witnesses, don't exit early
 
     iterate_all_affordable_p_sets(
         approvals,
