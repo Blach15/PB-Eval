@@ -91,16 +91,22 @@ def compute_winning_sets(filename: str, verbose: bool = True) -> str:
             "json_name": "Phragmen",
             "function": lambda: sequential_phragmen(instance, profile),
         },
-         {
-            "json_name": "MES[cost]+1",
-            "function": lambda: method_of_equal_shares(
-                instance, profile, sat_class=Cost_Sat, voter_budget_increment=1
+        {
+            "json_name": "MES[cost]_Greedy[cost]]",
+            "function": lambda: completion_by_rule_combination(
+                instance,
+                profile,
+                [method_of_equal_shares, greedy_utilitarian_welfare],
+                [{"sat_class": Cost_Sat}, {"sat_class": Cost_Sat}],
             ),
         },
         {
-            "json_name": "MES[card]+1",
-            "function": lambda: method_of_equal_shares(
-                instance, profile, sat_class=Cardinality_Sat, voter_budget_increment=1
+            "json_name": "MES[card]_Greedy[card]]",
+            "function": lambda: completion_by_rule_combination(
+                instance,
+                profile,
+                [method_of_equal_shares, greedy_utilitarian_welfare],
+                [{"sat_class": Cardinality_Sat}, {"sat_class": Cardinality_Sat}],
             ),
         },
         {
