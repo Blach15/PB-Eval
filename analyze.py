@@ -581,7 +581,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
             table = Table(
                 headers=["Algorithm", "N", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
                 rows=rows,
-                title=f"Violation Degree Analysis for {ejr_type.upper()}[{utility}]",
+                title=f"Satisfaction Degree Analysis for {ejr_type.upper()}[{utility}]",
             )
             tables.append(table)
 
@@ -673,7 +673,7 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
     For each utility (cost, card), and for each algorithm, collect the
     satisfaction_degree for EJR per election (using 1 when None).  Then, for
     x in [0.00, 0.01, ..., 1.00], compute the percentage of elections where
-    the violation degree is strictly greater than x (complementary CDF).
+    the satisfaction degree is strictly greater than x (complementary CDF).
 
     Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
     """
@@ -723,8 +723,8 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
 
         graphs.append(
             Graph(
-                title=f"EJR[{utility}] Violation Degree Distribution",
-                xlabel="Violation Degree ($a$)",
+                title=f"EJR[{utility}] Satisfaction Degree Distribution",
+                xlabel="Satisfaction Degree ($a$)",
                 ylabel="Elections with Violation $\\ge a$",
                 plot_lines=plot_lines,
                 ymajorgrids=True,
@@ -775,7 +775,7 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
             if not coords:
                 continue
 
-            # Group by rounded vote_length and compute mean violation degree
+            # Group by rounded vote_length and compute mean satisfaction degree
             grouped: dict[int, list[float]] = defaultdict(list)
             for vl, deg in coords:
                 grouped[round(vl)].append(deg)
@@ -785,7 +785,7 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
                 Graph(
                     title=algo_name,
                     xlabel="Vote Length",
-                    ylabel="Violation Degree ($a$)",
+                    ylabel="Satisfaction Degree ($a$)",
                     plot_lines=[
                         PlotLine(
                             color="black",
@@ -815,9 +815,9 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
         if graphs:
             figures.append(
                 SubfigureGrid(
-                    title=f"EJR[{utility}] Violation Degree vs Vote Length",
+                    title=f"EJR[{utility}] Satisfaction Degree vs Vote Length",
                     caption=(
-                        f"EJR[{utility}] violation degree as a function of vote length, "
+                        f"EJR[{utility}] satisfaction degree as a function of vote length, "
                         f"shown per algorithm. A value of 1 indicates a full violation."
                     ),
                     graphs=graphs,
@@ -988,6 +988,29 @@ def graph_algorithm_time_vs_vote_length_times_avg_cost(
     )
 
 
+def graph_algorithm_time_vs_budget_per_avg_cost(
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs budget / average_project_cost (bucket size 5)."""
+
+    def x_fn(rec: "ElectionRecord", _et: str, _u: str) -> Optional[float]:
+        budget = rec.metadata.get("budget_limit")
+        apc = rec.metadata.get("average_project_cost")
+        if budget is None or apc is None or apc == 0:
+            return None
+        return budget / apc
+
+    return _graph_ejr_check_time(
+        x_fn=x_fn,
+        x_label="Budget / Avg Project Cost",
+        bucket_size=1,
+        title_suffix="Budget / Avg Project Cost",
+        config=config,
+        aggregation=aggregation,
+    )
+
+
 _LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
 \\usepackage{tikz}
 \\usepackage{booktabs}
@@ -1146,6 +1169,10 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_algorithm_time_vs_projects_ejr_compare_mean",
             [graph_algorithm_time_vs_projects_ejr_compare(aggregation="mean")],
+        ),
+        (
+            "graph_algorithm_time_vs_budget_per_avg_cost",
+            [graph_algorithm_time_vs_budget_per_avg_cost(config)],
         ),
     ]
 
