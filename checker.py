@@ -100,6 +100,7 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
             projects,
             budget,
             cost_utility_func,
+            exit_early=True,
             verbose=False,
         )
         t_ejr_cost = time.time() - start
@@ -117,6 +118,7 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
             projects,
             budget,
             card_utility_func,
+            exit_early=True,
             verbose=False,
         )
         t_ejr_card = time.time() - start
@@ -193,40 +195,38 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                 f"    EJR-1[card] {t_ejr1_card:.4f}s  p-sets: {v_ejr1_card.p_sets_checked}  violation: {len(v_ejr1_card.witness) != 0}"
             )
 
-        # EJR exit_early[cost]
+        # EJR-alpha[cost]
         start = time.time()
-        v_ejr_exit_early_cost = find_ejr_violation_witness(
+        v_ejr_alpha_cost = find_ejr_violation_witness(
             approvals,
             winning_set,
             costs,
             projects,
             budget,
             cost_utility_func,
-            exit_early=True,
             verbose=False,
         )
-        t_ejr_exit_early_cost = time.time() - start
+        t_ejr_alpha_cost = time.time() - start
         if verbose:
             print(
-                f"    EJR-ee[cost] {t_ejr_exit_early_cost:.4f}s  p-sets: {v_ejr_exit_early_cost.p_sets_checked}  violation: {len(v_ejr_exit_early_cost.witness) != 0}"
+                f"    EJR-alpha[cost] {t_ejr_alpha_cost:.4f}s  p-sets: {v_ejr_alpha_cost.p_sets_checked}  violation: {len(v_ejr_alpha_cost.witness) != 0}"
             )
 
-        # EJR exit_early[card]
+        # EJR-alpha[card]
         start = time.time()
-        v_ejr_exit_early_card = find_ejr_violation_witness(
+        v_ejr_alpha_card = find_ejr_violation_witness(
             approvals,
             winning_set,
             costs,
             projects,
             budget,
             card_utility_func,
-            exit_early=True,
             verbose=False,
         )
-        t_ejr_exit_early_card = time.time() - start
+        t_ejr_alpha_card = time.time() - start
         if verbose:
             print(
-                f"    EJR-ee[card] {t_ejr_exit_early_card:.4f}s  p-sets: {v_ejr_exit_early_card.p_sets_checked}  violation: {len(v_ejr_exit_early_card.witness) != 0}"
+                f"    EJR-alpha[card] {t_ejr_alpha_card:.4f}s  p-sets: {v_ejr_alpha_card.p_sets_checked}  violation: {len(v_ejr_alpha_card.witness) != 0}"
             )
 
         result["results"][algo_name] = {
@@ -243,13 +243,9 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                 "cost": _format_ejr_result(v_ejr1_cost, t_ejr1_cost),
                 "card": _format_ejr_result(v_ejr1_card, t_ejr1_card),
             },
-            "ejr_exit_early": {
-                "cost": _format_ejr_result(
-                    v_ejr_exit_early_cost, t_ejr_exit_early_cost
-                ),
-                "card": _format_ejr_result(
-                    v_ejr_exit_early_card, t_ejr_exit_early_card
-                ),
+            "ejr_alpha": {
+                "cost": _format_ejr_result(v_ejr_alpha_cost, t_ejr_alpha_cost),
+                "card": _format_ejr_result(v_ejr_alpha_card, t_ejr_alpha_card),
             },
         }
 

@@ -13,18 +13,18 @@ _T = TypeVar("_T")
 # ---------------------------------------------------------------------------
 # Analysis configs – determines which EJR-check types are included
 # ---------------------------------------------------------------------------
-ALL_EJR_TYPES: list[str] = ["ejr", "ejr_exit_early", "ejr_x", "ejr_1"]
+ALL_EJR_TYPES: list[str] = ["ejr", "ejr_alpha", "ejr_x", "ejr_1"]
 ALL_WITHOUT_EARLY_EJR_TYPES: list[str] = ["ejr", "ejr_x", "ejr_1"]
 
 CONFIGS: dict[str, list[str]] = {
     "All": ALL_EJR_TYPES,
     "All_without_early": ALL_WITHOUT_EARLY_EJR_TYPES,
-    "EJR_compare": ["ejr", "ejr_exit_early"],
+    "EJR_compare": ["ejr", "ejr_alpha"],
 }
 
 _EJR_LABELS: dict[str, str] = {
     "ejr": "EJR",
-    "ejr_exit_early": "EJR-ee",
+    "ejr_alpha": "EJR-$\\alpha$",
     "ejr_x": "EJR-X",
     "ejr_1": "EJR-1",
 }
