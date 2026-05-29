@@ -10,6 +10,25 @@ import sys
 
 _T = TypeVar("_T")
 
+# ---------------------------------------------------------------------------
+# Analysis configs – determines which EJR-check types are included
+# ---------------------------------------------------------------------------
+ALL_EJR_TYPES: list[str] = ["ejr", "ejr_exit_early", "ejr_x", "ejr_1"]
+ALL_WITHOUT_EARLY_EJR_TYPES: list[str] = ["ejr", "ejr_x", "ejr_1"]
+
+CONFIGS: dict[str, list[str]] = {
+    "All": ALL_EJR_TYPES,
+    "All_without_early": ALL_WITHOUT_EARLY_EJR_TYPES,
+    "EJR_compare": ["ejr", "ejr_exit_early"],
+}
+
+_EJR_LABELS: dict[str, str] = {
+    "ejr": "EJR",
+    "ejr_exit_early": "EJR-ee",
+    "ejr_x": "EJR-X",
+    "ejr_1": "EJR-1",
+}
+
 
 def escape_latex(s: str) -> str:
     """Escape special LaTeX characters in a string."""
@@ -88,28 +107,28 @@ class OutcomeParser:
         ]
 
     @staticmethod
-    def bin_mean(coords: List[tuple], bin_size: float) -> List[tuple]:
-        """Average y-values of (x, y) pairs into x-bins of width *bin_size*.
+    def bin_mean(coords: List[tuple], bucket_size: float) -> List[tuple]:
+        """Average y-values of (x, y) pairs into x-buckets of width *bucket_size*.
 
-        Each x is mapped to ``round(x / bin_size) * bin_size`` and the mean
-        y within each bin is returned as a sorted list of (x, mean_y) tuples.
+        Each x is mapped to ``round(x / bucket_size) * bucket_size`` and the mean
+        y within each bucket is returned as a sorted list of (x, mean_y) tuples.
         """
         bins: dict[float, list[float]] = defaultdict(list)
         for x, y in coords:
-            key = round(x / bin_size) * bin_size
+            key = round(x / bucket_size) * bucket_size
             bins[key].append(y)
         return sorted((k, float(np.mean(v))) for k, v in bins.items())
 
     @staticmethod
-    def bin_median(coords: List[tuple], bin_size: float) -> List[tuple]:
-        """Median y-values of (x, y) pairs into x-bins of width *bin_size*.
+    def bin_median(coords: List[tuple], bucket_size: float) -> List[tuple]:
+        """Median y-values of (x, y) pairs into x-buckets of width *bucket_size*.
 
-        Each x is mapped to ``round(x / bin_size) * bin_size`` and the median
-        y within each bin is returned as a sorted list of (x, median_y) tuples.
+        Each x is mapped to ``round(x / bucket_size) * bucket_size`` and the median
+        y within each bucket is returned as a sorted list of (x, median_y) tuples.
         """
         bins: dict[float, list[float]] = defaultdict(list)
         for x, y in coords:
-            key = round(x / bin_size) * bin_size
+            key = round(x / bucket_size) * bucket_size
             bins[key].append(y)
         return sorted((k, float(np.median(v))) for k, v in bins.items())
 
@@ -286,7 +305,7 @@ class SubfigureGrid:
 
     @staticmethod
     def _print_graph(graph: "Graph", file: TextIO) -> None:
-        """Render a Graph as a tikzpicture without legend entries."""
+        """Render a Graph as a tikzpicture with legend entries."""
         print("    \\begin{tikzpicture}", file=file)
         axis_options = [
             # f"title={{{escape_latex(graph.title)}}}", # no title, as is the caption
@@ -294,6 +313,7 @@ class SubfigureGrid:
             f"ylabel={{{escape_latex(graph.ylabel)}}}",
             f"ymajorgrids={str(graph.ymajorgrids).lower()}",
             f"grid style={graph.grid_style}",
+            f"legend pos={graph.legend_pos}",
             *([f"ymin={graph.ymin}"] if graph.ymin is not None else []),
             *([f"ymax={graph.ymax}"] if graph.ymax is not None else []),
             *([f"x dir={graph.xdir}"] if graph.xdir is not None else []),
@@ -310,6 +330,7 @@ class SubfigureGrid:
                 f"    \\addplot[{only_marks_opt}color={pl.color}{mark_opt}{mark_size_opt}]coordinates {{ {coords_str}}};",
                 file=file,
             )
+            print(f"    \\addlegendentry{{{escape_latex(pl.legend_entry)}}}", file=file)
         print("    \\end{axis}", file=file)
         print("    \\end{tikzpicture}", file=file)
 
@@ -324,21 +345,21 @@ def print_table(
         table.print_raw(file=file)
 
 
-def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
+def parse_outcomes_and_count_satisfying_properties(
+    config: str = "All_without_early",
+) -> List[Table]:
     """
     Parse all JSON files in the outcomes directory and count how many outcomes
     satisfy EJR, EJR-X, and EJR-1 (i.e., no violations found).
 
     Returns a list of Table objects, one for each property (EJR, EJR-X, EJR-1).
     """
+    ejr_types = CONFIGS[config]
     parser = OutcomeParser()
 
-    counters = {
-        "total_files": 0,
-        "ejr": defaultdict(lambda: {"satisfied": 0, "violated": 0}),
-        "ejr_1": defaultdict(lambda: {"satisfied": 0, "violated": 0}),
-        "ejr_x": defaultdict(lambda: {"satisfied": 0, "violated": 0}),
-    }
+    counters: dict = {"total_files": 0}
+    for et in ejr_types:
+        counters[et] = defaultdict(lambda: {"satisfied": 0, "violated": 0})
 
     seen_files: set[str] = set()
     for rec in parser.records:
@@ -346,7 +367,7 @@ def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
             seen_files.add(rec.filename)
             counters["total_files"] += 1
 
-        for ejr_type in ["ejr", "ejr_1", "ejr_x"]:
+        for ejr_type in ejr_types:
             for utility in ["cost", "card"]:
                 if utility in rec.results.get(ejr_type, {}):
                     result = rec.results[ejr_type][utility]
@@ -357,7 +378,8 @@ def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
                         counters[ejr_type][key]["satisfied"] += 1
 
     tables = []
-    for prop_name, prop_key in [("EJR", "ejr"), ("EJR-X", "ejr_x"), ("EJR-1", "ejr_1")]:
+    for prop_key in ejr_types:
+        prop_name = _EJR_LABELS.get(prop_key, prop_key.upper())
         rows = []
         for key in sorted(counters[prop_key].keys()):
             satisfied = counters[prop_key][key]["satisfied"]
@@ -382,20 +404,23 @@ def parse_outcomes_and_count_satisfying_properties() -> List[Table]:
     return tables
 
 
-def print_results_by_sat_function() -> List[Table]:
+def print_results_by_sat_function(
+    config: str = "All_without_early",
+) -> List[Table]:
     """
     Return results organized by EJR type and satisfaction function,
     showing how each algorithm performed.
 
     Returns a list of Table objects.
     """
+    ejr_types = CONFIGS[config]
     parser = OutcomeParser()
 
     # Structure: {ejr_type: {utility: {algo_name: {satisfied: count, violated: count}}}}
     results_by_sat_func: dict = {}
 
     for rec in parser.records:
-        for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+        for ejr_type in ejr_types:
             results_by_sat_func.setdefault(ejr_type, {})
             for utility in ["cost", "card"]:
                 if utility in rec.results.get(ejr_type, {}):
@@ -413,7 +438,7 @@ def print_results_by_sat_function() -> List[Table]:
                         ] += 1
 
     tables = []
-    for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+    for ejr_type in ejr_types:
         if ejr_type in results_by_sat_func:
             for utility in ["cost", "card"]:
                 if utility in results_by_sat_func[ejr_type]:
@@ -440,20 +465,23 @@ def print_results_by_sat_function() -> List[Table]:
                     table = Table(
                         headers=["Algorithm", "Satisfied", "Total", "Satisfaction %"],
                         rows=rows,
-                        title=f"{ejr_type.upper()}[{utility}]",
+                        title=f"{_EJR_LABELS.get(ejr_type, ejr_type.upper())}[{utility}]",
                     )
                     tables.append(table)
 
     return tables
 
 
-def print_results_by_algorithm() -> List[Table]:
+def print_results_by_algorithm(
+    config: str = "All_without_early",
+) -> List[Table]:
     """
     Return results organized by algorithm, showing satisfaction percentages
     for each EJR type and utility combination as columns.
 
     Returns a list containing a single Table object.
     """
+    ejr_types = CONFIGS[config]
     parser = OutcomeParser()
 
     # Structure: {algo_name: {ejr_type: {utility: {satisfied, violated}}}}
@@ -461,7 +489,7 @@ def print_results_by_algorithm() -> List[Table]:
 
     for rec in parser.records:
         by_algo.setdefault(rec.algo_name, {})
-        for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+        for ejr_type in ejr_types:
             by_algo[rec.algo_name].setdefault(ejr_type, {})
             for utility in ["cost", "card"]:
                 if utility in rec.results.get(ejr_type, {}):
@@ -473,21 +501,11 @@ def print_results_by_algorithm() -> List[Table]:
                     else:
                         by_algo[rec.algo_name][ejr_type][utility]["satisfied"] += 1
 
-    columns = [
-        ("ejr", "card"),
-        ("ejr", "cost"),
-        ("ejr_x", "card"),
-        ("ejr_x", "cost"),
-        ("ejr_1", "card"),
-        ("ejr_1", "cost"),
-    ]
+    columns = [(et, u) for et in ejr_types for u in ["card", "cost"]]
     col_labels = {
-        ("ejr", "card"): "EJR[card]",
-        ("ejr", "cost"): "EJR[cost]",
-        ("ejr_1", "card"): "EJR-1[card]",
-        ("ejr_1", "cost"): "EJR-1[cost]",
-        ("ejr_x", "card"): "EJR-X[card]",
-        ("ejr_x", "cost"): "EJR-X[cost]",
+        (et, u): f"{_EJR_LABELS.get(et, et.upper())}[{u}]"
+        for et in ejr_types
+        for u in ["card", "cost"]
     }
 
     rows = []
@@ -812,120 +830,146 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
 def _graph_ejr_check_time(
     x_fn: Callable[["ElectionRecord", str, str], Optional[float]],
     x_label: str,
-    bin_size: float,
+    bucket_size: float,
     title_suffix: str,
-) -> Optional[SubfigureGrid]:
-    """Shared implementation for EJR check-time graphs.
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """Shared implementation for EJR running-time graphs.
 
-    For each EJR-type × utility pair, builds one Graph (mean check time vs a
-    caller-supplied x metric binned into *bin_size* steps, one line per
-    algorithm) and returns all graphs as a single SubfigureGrid figure.
+    Returns a single Graph with one line per EJR type.  Each line's y-values
+    are the mean/median running time across all algorithms and both utilities
+    (cost + card), bucketed by *bucket_size*.
+
+    aggregation: "mean" or "median"
     """
+    ejr_types = CONFIGS[config]
     parser = OutcomeParser()
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
-    ejr_labels = {"ejr": "EJR", "ejr_x": "EJR-X", "ejr_1": "EJR-1"}
+    bin_fn = (
+        OutcomeParser.bin_median if aggregation == "median" else OutcomeParser.bin_mean
+    )
+    agg_label = aggregation.capitalize()
 
-    data: dict[str, dict[str, dict[str, list[tuple]]]] = {
-        ejr_type: {"cost": defaultdict(list), "card": defaultdict(list)}
-        for ejr_type in ["ejr", "ejr_x", "ejr_1"]
-    }
+    # Collect all (x, t) pairs per ejr_type, pooled across algorithms & utilities
+    data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
 
     for rec in parser.records:
-        for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
+        for ejr_type in ejr_types:
             for utility in ["cost", "card"]:
                 x = x_fn(rec, ejr_type, utility)
                 t = rec.results.get(ejr_type, {}).get(utility, {}).get("time")
                 if x is not None and t is not None:
-                    data[ejr_type][utility][rec.algo_name].append((x, t))
+                    data[ejr_type].append((x, t))
 
-    graphs = []
-    for ejr_type in ["ejr", "ejr_x", "ejr_1"]:
-        for utility in ["cost", "card"]:
-            algo_data = data[ejr_type][utility]
-            if not algo_data:
-                continue
-            plot_lines = []
-            for i, algo_name in enumerate(sorted(algo_data.keys())):
-                coords = OutcomeParser.bin_mean(algo_data[algo_name], bin_size=bin_size)
-                if coords:
-                    plot_lines.append(
-                        PlotLine(
-                            color=colors[i % len(colors)],
-                            coordinates=coords,
-                            legend_entry=algo_name,
-                        )
-                    )
-            if plot_lines:
-                graphs.append(
-                    Graph(
-                        title=f"{ejr_labels[ejr_type]}[{utility}]",
-                        xlabel=x_label,
-                        ylabel="Check Time (s)",
-                        plot_lines=plot_lines,
-                        ymajorgrids=True,
-                        grid_style="dashed",
-                        xmode="linear",
-                        ymode="linear",
-                        legend_pos="outer north east",
-                    )
+    plot_lines = []
+    for i, ejr_type in enumerate(ejr_types):
+        coords = bin_fn(data[ejr_type], bucket_size=bucket_size)
+        if coords:
+            plot_lines.append(
+                PlotLine(
+                    color=colors[i % len(colors)],
+                    coordinates=coords,
+                    legend_entry=_EJR_LABELS.get(ejr_type, ejr_type.upper()),
                 )
+            )
 
-    if not graphs:
+    if not plot_lines:
         return None
-    return SubfigureGrid(
-        title=f"EJR Check Time vs {title_suffix}",
-        caption=(
-            f"Mean EJR check time (seconds) as a function of {x_label.lower()}, "
-            f"shown per algorithm and EJR variant."
-        ),
-        graphs=graphs,
+    return Graph(
+        title=f"EJR Running Time vs {title_suffix} (bucket size={bucket_size})",
+        xlabel=x_label,
+        ylabel=f"{agg_label} Running Time (s)",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
     )
 
 
-def graph_algorithm_time_vs_projects() -> Optional[SubfigureGrid]:
-    """EJR check time vs number_of_projects (binned in steps of 2)."""
+def graph_algorithm_time_vs_projects(
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs number_of_projects (bucket size 10)."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_projects"),
         x_label="Number of Projects",
-        bin_size=2,
+        bucket_size=10,
         title_suffix="Number of Projects",
+        config=config,
+        aggregation=aggregation,
     )
 
 
-def graph_algorithm_time_vs_p_sets_checked() -> Optional[SubfigureGrid]:
-    """EJR check time vs p_sets_checked (binned in steps of 5)."""
+def graph_algorithm_time_vs_projects_ejr_compare(
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs number_of_projects, comparing EJR and EJR-exit-early only (bucket size 10)."""
+    return _graph_ejr_check_time(
+        x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_projects"),
+        x_label="Number of Projects",
+        bucket_size=10,
+        title_suffix="Number of Projects (EJR vs EJR-exit-early)",
+        config="EJR_compare",
+        aggregation=aggregation,
+    )
+
+
+def graph_algorithm_time_vs_p_sets_checked(
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs p_sets_checked (bucket size 5)."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, et, u: rec.results.get(et, {})
         .get(u, {})
         .get("p_sets_checked"),
         x_label="P-Sets Checked",
-        bin_size=5,
+        bucket_size=5,
         title_suffix="P-Sets Checked",
+        config=config,
+        aggregation=aggregation,
     )
 
 
-def graph_algorithm_time_vs_vote_length() -> Optional[SubfigureGrid]:
-    """EJR check time vs vote_length (binned in steps of 1)."""
+def graph_algorithm_time_vs_vote_length(
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs vote_length (bucket size 1)."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("vote_length"),
         x_label="Vote Length",
-        bin_size=1,
+        bucket_size=1,
         title_suffix="Vote Length",
+        config=config,
+        aggregation=aggregation,
     )
 
 
-def graph_algorithm_time_vs_number_of_voters() -> Optional[SubfigureGrid]:
-    """EJR check time vs number_of_voters (binned in steps of 50)."""
+def graph_algorithm_time_vs_number_of_voters(
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs number_of_voters (bucket size 50)."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_voters"),
         x_label="Number of Voters",
-        bin_size=50,
+        bucket_size=50,
         title_suffix="Number of Voters",
+        config=config,
+        aggregation=aggregation,
     )
 
 
-def graph_algorithm_time_vs_vote_length_times_avg_cost() -> Optional[SubfigureGrid]:
-    """EJR check time vs vote_length * average_project_cost (binned in steps of 5)."""
+def graph_algorithm_time_vs_vote_length_times_avg_cost(
+    config: str = "All_without_early",
+    aggregation: str = "mean",
+) -> Optional[Graph]:
+    """EJR running time vs vote_length * average_project_cost (bucket size 5)."""
 
     def x_fn(rec: "ElectionRecord", _et: str, _u: str) -> Optional[float]:
         vl = rec.metadata.get("vote_length")
@@ -937,8 +981,10 @@ def graph_algorithm_time_vs_vote_length_times_avg_cost() -> Optional[SubfigureGr
     return _graph_ejr_check_time(
         x_fn=x_fn,
         x_label="Vote Length $\\times$ Avg Project Cost",
-        bin_size=5,
+        bucket_size=5,
         title_suffix="Vote Length $\\times$ Avg Project Cost",
+        config=config,
+        aggregation=aggregation,
     )
 
 
@@ -994,7 +1040,11 @@ def _compile_snippet_to_pdf(snippet: str, name: str, pdf_dir: str) -> bool:
 
 
 def _compile_subfigure_grid(
-    grid: "SubfigureGrid", name: str, tex_out_path: str, pdf_dir: str
+    grid: "SubfigureGrid",
+    name: str,
+    tex_out_path: str,
+    pdf_dir: str,
+    pdf_include_prefix: str = "06_tex/pdf",
 ) -> None:
     """Compile each graph in a SubfigureGrid to its own PDF, then write a
     .tex file that assembles them into a figure using subfigures with
@@ -1019,7 +1069,7 @@ def _compile_subfigure_grid(
             f.write("\\begin{subfigure}{.49\\textwidth}\n")
             f.write("    \\centering\n")
             f.write(
-                f"    \\includegraphics[width=\\linewidth]{{06_tex/pdf/{graph_name}.pdf}}\n"
+                f"    \\includegraphics[width=\\linewidth]{{{pdf_include_prefix}/{graph_name}.pdf}}\n"
             )
             f.write(f"    \\caption{{{escape_latex(graph.title)}}}\n")
             f.write(f"    \\label{{fig:{graph_name}}}\n")
@@ -1030,7 +1080,7 @@ def _compile_subfigure_grid(
         f.write("\\end{figure}\n\n")
 
 
-def print_stats() -> None:
+def print_stats(config: str = "All_without_early") -> None:
     """Main entry point for statistics generation.
 
     For each output item:
@@ -1040,17 +1090,19 @@ def print_stats() -> None:
       tex/pdf/, and a .tex snippet assembling them into a figure with subfigures
       is written to tex/.
     """
-    os.makedirs("06_tex", exist_ok=True)
-    pdf_dir = os.path.join("06_tex", "pdf")
+    tex_dir = "06_tex"
+    pdf_dir = os.path.join(tex_dir, "pdf")
+    pdf_include_prefix = "06_tex/pdf"
+    os.makedirs(tex_dir, exist_ok=True)
     os.makedirs(pdf_dir, exist_ok=True)
 
     functions = [
         # (
         #     "parse_outcomes_and_count_satisfying_properties",
-        #     parse_outcomes_and_count_satisfying_properties(),
+        #     parse_outcomes_and_count_satisfying_properties(config),
         # ),
-        # ("print_results_by_sat_function", print_results_by_sat_function()),
-        ("print_results_by_algorithm", print_results_by_algorithm()),  # GOAT
+        # ("print_results_by_sat_function", print_results_by_sat_function(config)),
+        ("print_results_by_algorithm", print_results_by_algorithm(config)),  # GOAT
         (
             "analyze_ejr_violations_by_utility",
             analyze_ejr_violations_by_utility(),
@@ -1069,23 +1121,31 @@ def print_stats() -> None:
         ),
         (
             "graph_algorithm_time_vs_projects",
-            [graph_algorithm_time_vs_projects()],
+            [graph_algorithm_time_vs_projects(config)],
         ),
         (
             "graph_algorithm_time_vs_p_sets_checked",
-            [graph_algorithm_time_vs_p_sets_checked()],
+            [graph_algorithm_time_vs_p_sets_checked(config)],
         ),
         (
             "graph_algorithm_time_vs_vote_length",
-            [graph_algorithm_time_vs_vote_length()],
+            [graph_algorithm_time_vs_vote_length(config)],
         ),
         (
             "graph_algorithm_time_vs_number_of_voters",
-            [graph_algorithm_time_vs_number_of_voters()],
+            [graph_algorithm_time_vs_number_of_voters(config)],
         ),
         (
             "graph_algorithm_time_vs_vote_length_times_avg_cost",
-            [graph_algorithm_time_vs_vote_length_times_avg_cost()],
+            [graph_algorithm_time_vs_vote_length_times_avg_cost(config)],
+        ),
+        (
+            "graph_algorithm_time_vs_projects_ejr_compare_median",
+            [graph_algorithm_time_vs_projects_ejr_compare(aggregation="median")],
+        ),
+        (
+            "graph_algorithm_time_vs_projects_ejr_compare_mean",
+            [graph_algorithm_time_vs_projects_ejr_compare(aggregation="mean")],
         ),
     ]
 
@@ -1093,10 +1153,12 @@ def print_stats() -> None:
         items = [x for x in items if x is not None]
         for i, item in enumerate(items):
             name = func_name if len(items) == 1 else f"{func_name}_{i}"
-            tex_out_path = os.path.join("06_tex", f"{name}.tex")
+            tex_out_path = os.path.join(tex_dir, f"{name}.tex")
 
             if isinstance(item, SubfigureGrid):
-                _compile_subfigure_grid(item, name, tex_out_path, pdf_dir)
+                _compile_subfigure_grid(
+                    item, name, tex_out_path, pdf_dir, pdf_include_prefix
+                )
             elif isinstance(item, Table):
                 with open(tex_out_path, "w") as f:
                     item.print_latex(file=f)
@@ -1106,7 +1168,7 @@ def print_stats() -> None:
                 print(f"Compiling {name}...")
                 _compile_snippet_to_pdf(buf.getvalue(), name, pdf_dir)
                 with open(tex_out_path, "w") as f:
-                    f.write(f"\\includegraphics{{06_tex/pdf/{name}.pdf}}\n")
+                    f.write(f"\\includegraphics{{{pdf_include_prefix}/{name}.pdf}}\n")
 
 
 if __name__ == "__main__":
