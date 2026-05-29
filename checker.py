@@ -46,7 +46,7 @@ def _format_ejr_result(violation: EJRViolationResult, elapsed_time: float) -> di
         "p_sets_checked": violation.p_sets_checked,
         "violation_found": len(violation.witness) != 0,
         "amount_of_violation": len(violation.witness),
-        "violation_degree": (
+        "satisfaction_degree": (
             None
             if len(violation.witness) == 0
             else (

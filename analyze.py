@@ -529,7 +529,7 @@ def print_results_by_algorithm(
 
 def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
     """
-    Analyze the 'violation_degree' for EJR-cost and EJR-card per algorithm.
+    Analyze the 'satisfaction_degree' for EJR-cost and EJR-card per algorithm.
 
     Parameters:
     - ejr_type: "ejr", "ejr_1", or "ejr_x"
@@ -543,7 +543,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
     for rec in parser.records:
         for utility in ["cost", "card"]:
             if utility in rec.results.get(ejr_type, {}):
-                degree = rec.results[ejr_type][utility].get("violation_degree")
+                degree = rec.results[ejr_type][utility].get("satisfaction_degree")
                 if degree is not None:
                     violations_by_algo[rec.algo_name][utility].append(degree)
 
@@ -668,10 +668,10 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
     return graph
 
 
-def graph_min_violation_degree_distribution_pr() -> List[Graph]:
+def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
     """
     For each utility (cost, card), and for each algorithm, collect the
-    violation_degree for EJR per election (using 1 when None).  Then, for
+    satisfaction_degree for EJR per election (using 1 when None).  Then, for
     x in [0.00, 0.01, ..., 1.00], compute the percentage of elections where
     the violation degree is strictly greater than x (complementary CDF).
 
@@ -679,7 +679,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
     """
     parser = OutcomeParser()
 
-    # {utility: {algo_name: [violation_degree_per_election, ...]}}
+    # {utility: {algo_name: [satisfaction_degree_per_election, ...]}}
     data_by_utility: dict[str, dict[str, list[float]]] = {
         "cost": defaultdict(list),
         "card": defaultdict(list),
@@ -689,7 +689,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
         for utility in ["cost", "card"]:
             ejr_util = rec.results.get("ejr", {}).get(utility)
             if ejr_util is not None:
-                deg = ejr_util.get("violation_degree")
+                deg = ejr_util.get("satisfaction_degree")
                 data_by_utility[utility][rec.algo_name].append(
                     deg if deg is not None else 1
                 )
@@ -739,18 +739,18 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
     return graphs
 
 
-def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
+def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
     """
     For each utility (cost, card), create a SubfigureGrid figure containing
     one subfigure per algorithm. Each subfigure plots vote_length (x-axis)
-    vs violation_degree (y-axis), using 1 when violation_degree is None.
+    vs satisfaction_degree (y-axis), using 1 when satisfaction_degree is None.
     The legend is omitted; the algorithm name appears in the graph title.
 
     Returns a list of two SubfigureGrid objects: one for EJR[cost], one for EJR[card].
     """
     parser = OutcomeParser()
 
-    # {algo_name: {utility: [(vote_length, violation_degree), ...]}}
+    # {algo_name: {utility: [(vote_length, satisfaction_degree), ...]}}
     data_by_algo: dict[str, dict[str, list[tuple]]] = defaultdict(
         lambda: {"cost": [], "card": []}
     )
@@ -762,7 +762,7 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
         for utility in ["cost", "card"]:
             ejr_util = rec.results.get("ejr", {}).get(utility)
             if ejr_util is not None:
-                deg = ejr_util.get("violation_degree")
+                deg = ejr_util.get("satisfaction_degree")
                 data_by_algo[rec.algo_name][utility].append(
                     (vote_length, deg if deg is not None else 1)
                 )
@@ -1112,12 +1112,12 @@ def print_stats(config: str = "All_without_early") -> None:
             [graph_vote_length_vs_p_sets_ejr_card()],
         ),
         (
-            "graph_min_violation_degree_distribution_pr",
-            graph_min_violation_degree_distribution_pr(),
+            "graph_min_satisfaction_degree_distribution_pr",
+            graph_min_satisfaction_degree_distribution_pr(),
         ),
         (
-            "graph_vote_length_vs_violation_degree_ejr",
-            graph_vote_length_vs_violation_degree_ejr(),
+            "graph_vote_length_vs_satisfaction_degree_ejr",
+            graph_vote_length_vs_satisfaction_degree_ejr(),
         ),
         (
             "graph_algorithm_time_vs_projects",
