@@ -134,8 +134,9 @@ def find_ejr_violation_witness(
             witnesses.append(
                 EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
             )
+            return exit_early  # exit early, to find 1 witness
 
-        return exit_early  # continue searching for more witnesses, don't exit early
+        return False  # continue searching for more witnesses, don't exit early
 
     iterate_all_affordable_p_sets(
         approvals,
