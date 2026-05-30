@@ -1171,8 +1171,12 @@ def print_stats(config: str = "All_without_early") -> None:
             [graph_algorithm_time_vs_projects_ejr_compare(aggregation="mean")],
         ),
         (
-            "graph_algorithm_time_vs_budget_per_avg_cost",
+            "graph_algorithm_time_vs_budget_per_avg_cost_mean",
             [graph_algorithm_time_vs_budget_per_avg_cost(config)],
+        ),
+        (
+            "graph_algorithm_time_vs_budget_per_avg_cost_median",
+            [graph_algorithm_time_vs_budget_per_avg_cost(config, aggregation="median")],
         ),
     ]
 
