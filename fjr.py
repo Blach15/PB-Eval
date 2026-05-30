@@ -18,16 +18,24 @@ from typess import EJRViolationWitness, EJRViolationResult
 from ejr import iterate_all_affordable_p_sets
 
 
-def iterate_all_affordable_p_sets_fjr(
+def find_fjr_violation_witness(
     approvals: list[set[int]],
+    winning_set: set[int],
     costs: list[Numeric],
     projects: list[Project],
     budget: Numeric,
-    voters: set[int],
-    callback: Callable[[tuple[int, ...], set[int]], bool],
-    pre_callback: Callable[[], None] = lambda: None,
-    verbose: bool = False,
-):
+    utility_func: Callable[[Iterable[int], set[int]], Numeric],
+    verbose: bool = True,
+    exit_early: bool = False,
+) -> EJRViolationResult:
+    winning_util = [
+        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
+    ]
+
+    p_sets_checked = 0
+    n = len(approvals)
+    voters = set(range(n))
+
     current_lattice_layer_worklist: list[tuple[int, ...]] = list()
     next_lattice_layer_worklist: list[tuple[int, ...]] = list()
 
@@ -40,15 +48,29 @@ def iterate_all_affordable_p_sets_fjr(
         surviving_lattice_layer_worklist: list[tuple[int, ...]] = []
 
         for p_set in current_lattice_layer_worklist:
-            pre_callback()
+            p_sets_checked += 1
 
             # check that p_set is affordable within budget
             if sum(costs[p] for p in p_set) > budget:
                 continue
 
-            # allow exit early, to find 1 witness
-            if callback(p_set, voters):
-                return None
+            unsat_voters = {
+                i for i in voters if winning_util[i] < utility_func(p_set, approvals[i])
+            }
+
+            # check if unsat_voters is T-cohesive, then EJR violation
+            # done by computing the required size, for p_set to be affordable.
+            needed_voters_larger_or_equal_to = (
+                sum(costs[p] for p in p_set) * n
+            ) / budget
+            if len(unsat_voters) >= needed_voters_larger_or_equal_to:
+                if verbose:
+                    print(f"T: {p_set}, voters: {unsat_voters}")
+
+                return EJRViolationResult(
+                    witness=[EJRViolationWitness(p_set, unsat_voters, None)],
+                    p_sets_checked=p_sets_checked,
+                )
 
             surviving_lattice_layer_worklist.append(p_set)
 
@@ -72,78 +94,7 @@ def iterate_all_affordable_p_sets_fjr(
                 else:
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
-
-    return None
-
-
-def find_fjr_violation_witness(
-    approvals: list[set[int]],
-    winning_set: set[int],
-    costs: list[Numeric],
-    projects: list[Project],
-    budget: Numeric,
-    utility_func: Callable[[Iterable[int], set[int]], Numeric],
-    verbose: bool = True,
-    exit_early: bool = False,
-) -> EJRViolationResult:
-    winning_util = [
-        utility_func(winning_set, approvals[i]) for i in range(len(approvals))
-    ]
-
-    p_sets_checked = 0
-    witnesses = []
-    n = len(approvals)
-
-    def count_p_sets():
-        nonlocal p_sets_checked
-        p_sets_checked += 1
-
-    # First pass: collect all voters that are ever unsatisfied by any affordable p_set
-    all_unsat_voters: set[int] = set()
-
-    def collect_unsat(p_set: tuple[int, ...], _voter_intersection: set[int]) -> bool:
-        all_unsat_voters.update(
-            i for i in range(n) if winning_util[i] < utility_func(p_set, approvals[i])
-        )
-        return False
-
-    iterate_all_affordable_p_sets(
-        approvals,
-        costs,
-        projects,
-        budget,
-        callback=collect_unsat,
-    )
-
-    def check_fjr(p_set: tuple[int, ...], voters: set[int]) -> bool:
-        unsat_voters = {
-            i for i in voters if winning_util[i] < utility_func(p_set, approvals[i])
-        }
-
-        # check if unsat_voters is T-cohesive, then EJR violation
-        # done by computing the required size, for p_set to be affordable.
-        needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
-        if len(unsat_voters) >= needed_voters_larger_or_equal_to:
-            if verbose:
-                print(f"T: {p_set}, voters: {unsat_voters}")
-
-            witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
-            return exit_early  # exit early, to find 1 witness
-
-        return False  # continue searching for more witnesses, don't exit early
-
-    iterate_all_affordable_p_sets_fjr(
-        approvals,
-        costs,
-        projects,
-        budget,
-        voters=all_unsat_voters,
-        callback=check_fjr,
-        pre_callback=count_p_sets,
-        verbose=verbose,
-    )
-
-    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+    return EJRViolationResult(witness=[], p_sets_checked=p_sets_checked)
 
 
 # Idea 1: only usat voters are interesting:
@@ -151,5 +102,10 @@ def find_fjr_violation_witness(
 
 # Idea 2: Iterate all T, find unsat for each T, then check if unsat is T-cohesive
 
-# Idea 3: for each voter compute each combination of A, where they would be unsat, then be smart to filter out, that no more unsat will come above 
-# like check all their interections when you move up the lattice 
+# Idea 3: for each voter compute each combination of A, where they would be unsat, then be smart to filter out, that no more unsat will come above
+# like check all their interections when you move up the lattice
+
+# Idea 4: for card, if |W| = 3, then a violation cant have size 5 or more. -> done if no violation in layer 4
+# cost? c(W) + i's min/max project cost?
+
+# Idea 4.1: once all unsat, then only check rest of layer
