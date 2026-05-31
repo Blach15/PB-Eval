@@ -46,6 +46,8 @@ def find_fjr_violation_witness(
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist: list[tuple[int, ...]] = []
+        all_voters_unsat_in_layer = True
+        print(f"Checking layer of size {len(current_lattice_layer_worklist)} sets")
 
         for p_set in current_lattice_layer_worklist:
             p_sets_checked += 1
@@ -57,6 +59,9 @@ def find_fjr_violation_witness(
             unsat_voters = {
                 i for i in voters if winning_util[i] < utility_func(p_set, approvals[i])
             }
+
+            if unsat_voters != voters:
+                all_voters_unsat_in_layer = False
 
             # check if unsat_voters is T-cohesive, then EJR violation
             # done by computing the required size, for p_set to be affordable.
@@ -70,9 +75,17 @@ def find_fjr_violation_witness(
                 return EJRViolationResult(
                     witness=[EJRViolationWitness(p_set, unsat_voters, None)],
                     p_sets_checked=p_sets_checked,
+                    unsat_voter_union=None,
                 )
 
             surviving_lattice_layer_worklist.append(p_set)
+
+        if all_voters_unsat_in_layer:
+            break
+
+        print(
+            f"Checked {len(current_lattice_layer_worklist[0])} sets in current layer, {p_sets_checked} total"
+        )
 
         if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(
@@ -94,7 +107,9 @@ def find_fjr_violation_witness(
                 else:
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
-    return EJRViolationResult(witness=[], p_sets_checked=p_sets_checked)
+    return EJRViolationResult(
+        witness=[], p_sets_checked=p_sets_checked, unsat_voter_union=None
+    )
 
 
 # Idea 1: only usat voters are interesting:
