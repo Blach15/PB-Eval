@@ -535,7 +535,7 @@ def print_results_by_algorithm(
     return [table]
 
 
-def analyze_ejr_violations_by_utility(ejr_type="ejr") -> List[Table]:
+def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
     """
     Analyze the 'satisfaction_degree' for EJR-cost and EJR-card per algorithm.
 
@@ -752,7 +752,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
     For each utility (cost, card), and for each algorithm, collect the
     number_of_unsat_voters / number_of_voters ratio for EJR per election
     (using 0 when number_of_unsat_voters is None).  Then, for
-    x in [0.00, 0.01, ..., 1.00], compute the percentage of elections where
+    x in [0.01, 0.02, ..., 1.00], compute the percentage of elections where
     the ratio is >= x (complementary CDF).
 
     Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
@@ -776,7 +776,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
                 fraction = (unsat / n_voters) if unsat is not None else 0.0
                 data_by_utility[utility][rec.algo_name].append(fraction)
 
-    x_points = [round(i * 0.01, 2) for i in range(0, 101)]  # 0.00 to 1.00
+    x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     graphs = []
@@ -807,7 +807,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
             Graph(
                 title=f"EJR[{utility}] Unsatisfied Voter Fraction Distribution",
                 xlabel="Fraction of Unsatisfied Voters ($r$)",
-                ylabel="Elections with Fraction $\\ge r$ (\\%)",
+                ylabel="Elections with Fraction $\\ge r$",
                 plot_lines=plot_lines,
                 ymajorgrids=True,
                 grid_style="dashed",
