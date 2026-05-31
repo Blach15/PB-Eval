@@ -57,6 +57,11 @@ def _format_ejr_result(violation: EJRViolationResult, elapsed_time: float) -> di
                 else None
             )
         ),
+        "number_of_unsat_voters": (
+            len(violation.unsat_voter_union)
+            if violation.unsat_voter_union is not None
+            else None
+        ),
     }
 
 
@@ -304,4 +309,4 @@ def run_one(verbose: bool = True):
 
 
 if __name__ == "__main__":
-    run_all()
+    run_one(True)

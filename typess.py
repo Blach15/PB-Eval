@@ -1,3 +1,5 @@
+from typing import Optional
+
 from pabutools.utils import Numeric
 
 
@@ -18,6 +20,8 @@ class EJRViolationResult:
         self,
         witness: list[EJRViolationWitness],
         p_sets_checked: int,
+        unsat_voter_union: Optional[set[int]],
     ):
         self.witness = witness
         self.p_sets_checked = p_sets_checked
+        self.unsat_voter_union = unsat_voter_union

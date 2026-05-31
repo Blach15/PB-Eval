@@ -103,6 +103,7 @@ def find_ejr_violation_witness(
     p_sets_checked = 0
     witnesses = []
     n = len(approvals)
+    unsat_voter_union = set()
 
     def count_p_sets():
         nonlocal p_sets_checked
@@ -114,6 +115,8 @@ def find_ejr_violation_witness(
             for i in voter_intersection
             if winning_util[i] < utility_func(p_set, approvals[i])
         }
+        if not exit_early:
+            unsat_voter_union.update(unsat_voters)
 
         # check if unsat_voters is T-cohesive, then EJR violation
         # done by computing the required size, for p_set to be affordable.
@@ -148,7 +151,11 @@ def find_ejr_violation_witness(
         verbose=verbose,
     )
 
-    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+    return EJRViolationResult(
+        witness=witnesses,
+        p_sets_checked=p_sets_checked,
+        unsat_voter_union=(None if exit_early else unsat_voter_union),
+    )
 
 
 def find_ejr_1_violation_witness(
@@ -232,7 +239,9 @@ def find_ejr_1_violation_witness(
         verbose=verbose,
     )
 
-    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+    return EJRViolationResult(
+        witness=witnesses, p_sets_checked=p_sets_checked, unsat_voter_union=None
+    )
 
 
 def find_ejr_x_violation_witness(
@@ -315,7 +324,9 @@ def find_ejr_x_violation_witness(
         verbose=verbose,
     )
 
-    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+    return EJRViolationResult(
+        witness=witnesses, p_sets_checked=p_sets_checked, unsat_voter_union=None
+    )
 
 
 def find_pjr_violation_witness(
@@ -409,7 +420,9 @@ def find_pjr_violation_witness(
         verbose=verbose,
     )
 
-    return EJRViolationResult(witness=witnesses, p_sets_checked=p_sets_checked)
+    return EJRViolationResult(
+        witness=witnesses, p_sets_checked=p_sets_checked, unsat_voter_union=None
+    )
 
 
 def get_project_supporters(approvals, projects) -> list[set[int]]:
