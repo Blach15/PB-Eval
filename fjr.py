@@ -76,6 +76,7 @@ def find_fjr_violation_witness(
                     witness=[EJRViolationWitness(p_set, unsat_voters, None)],
                     p_sets_checked=p_sets_checked,
                     unsat_voter_union=None,
+                    unsat_voter_violation_union=None,
                     layers_checked=0,
                 )
 
@@ -112,6 +113,7 @@ def find_fjr_violation_witness(
         witness=[],
         p_sets_checked=p_sets_checked,
         unsat_voter_union=None,
+        unsat_voter_violation_union=None,
         layers_checked=0,
     )
 

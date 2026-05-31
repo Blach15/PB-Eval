@@ -106,6 +106,7 @@ def find_ejr_violation_witness(
     witnesses = []
     n = len(approvals)
     unsat_voter_union = set()
+    unsat_voter_violation_union = set()
 
     def count_p_sets():
         nonlocal p_sets_checked
@@ -126,6 +127,9 @@ def find_ejr_violation_witness(
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
             if verbose:
                 print(f"T: {p_set}, voters: {unsat_voters}")
+
+            if not exit_early:
+                unsat_voter_violation_union.update(unsat_voters)
 
             # for the voter i in the minimum set of voters, who is the closest to being satisfied
             # find the a in: a * util_p = util_win
@@ -157,6 +161,9 @@ def find_ejr_violation_witness(
         witness=witnesses,
         p_sets_checked=p_sets_checked,
         unsat_voter_union=(None if exit_early else unsat_voter_union),
+        unsat_voter_violation_union=(
+            None if exit_early else unsat_voter_violation_union
+        ),
         layers_checked=layers_checked,
     )
 
@@ -246,6 +253,7 @@ def find_ejr_1_violation_witness(
         witness=witnesses,
         p_sets_checked=p_sets_checked,
         unsat_voter_union=None,
+        unsat_voter_violation_union=None,
         layers_checked=layers_checked,
     )
 
@@ -334,6 +342,7 @@ def find_ejr_x_violation_witness(
         witness=witnesses,
         p_sets_checked=p_sets_checked,
         unsat_voter_union=None,
+        unsat_voter_violation_union=None,
         layers_checked=layers_checked,
     )
 
@@ -433,6 +442,7 @@ def find_pjr_violation_witness(
         witness=witnesses,
         p_sets_checked=p_sets_checked,
         unsat_voter_union=None,
+        unsat_voter_violation_union=None,
         layers_checked=layers_checked,
     )
 
