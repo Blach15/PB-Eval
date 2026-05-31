@@ -695,7 +695,7 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
 
     for rec in parser.records:
         for utility in ["cost", "card"]:
-            ejr_util = rec.results.get("ejr", {}).get(utility)
+            ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
             if ejr_util is not None:
                 deg = ejr_util.get("satisfaction_degree")
                 data_by_utility[utility][rec.algo_name].append(
@@ -741,6 +741,79 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
                 ymode="linear",
                 legend_pos="outer north east",
                 xdir="reverse",
+            )
+        )
+
+    return graphs
+
+
+def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
+    """
+    For each utility (cost, card), and for each algorithm, collect the
+    number_of_unsat_voters / number_of_voters ratio for EJR per election
+    (using 0 when number_of_unsat_voters is None).  Then, for
+    x in [0.00, 0.01, ..., 1.00], compute the percentage of elections where
+    the ratio is >= x (complementary CDF).
+
+    Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
+    """
+    parser = OutcomeParser()
+
+    # {utility: {algo_name: [unsat_fraction_per_election, ...]}}
+    data_by_utility: dict[str, dict[str, list[float]]] = {
+        "cost": defaultdict(list),
+        "card": defaultdict(list),
+    }
+
+    for rec in parser.records:
+        n_voters = rec.metadata.get("number_of_voters")
+        if not n_voters:
+            continue
+        for utility in ["cost", "card"]:
+            ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
+            if ejr_util is not None:
+                unsat = ejr_util.get("number_of_unsat_voters")
+                fraction = (unsat / n_voters) if unsat is not None else 0.0
+                data_by_utility[utility][rec.algo_name].append(fraction)
+
+    x_points = [round(i * 0.01, 2) for i in range(0, 101)]  # 0.00 to 1.00
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
+
+    graphs = []
+    for utility in ["cost", "card"]:
+        algo_data = data_by_utility[utility]
+        if not algo_data:
+            continue
+
+        plot_lines = []
+        for i, algo_name in enumerate(sorted(algo_data.keys())):
+            fractions = algo_data[algo_name]
+            n = len(fractions)
+            if n == 0:
+                continue
+            coordinates = [
+                (x, round(sum(1 for v in fractions if v >= x) / n * 100, 2))
+                for x in x_points
+            ]
+            plot_lines.append(
+                PlotLine(
+                    color=colors[i % len(colors)],
+                    coordinates=coordinates,
+                    legend_entry=algo_name,
+                )
+            )
+
+        graphs.append(
+            Graph(
+                title=f"EJR[{utility}] Unsatisfied Voter Fraction Distribution",
+                xlabel="Fraction of Unsatisfied Voters ($r$)",
+                ylabel="Elections with Fraction $\\ge r$ (\\%)",
+                plot_lines=plot_lines,
+                ymajorgrids=True,
+                grid_style="dashed",
+                xmode="linear",
+                ymode="linear",
+                legend_pos="outer north east",
             )
         )
 
@@ -1145,6 +1218,10 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_min_satisfaction_degree_distribution_pr",
             graph_min_satisfaction_degree_distribution_pr(),
+        ),
+        (
+            "graph_unsat_voter_fraction_distribution_pr",
+            graph_unsat_voter_fraction_distribution_pr(),
         ),
         (
             "graph_vote_length_vs_satisfaction_degree_ejr",
