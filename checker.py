@@ -4,6 +4,7 @@ from typing import Iterable
 import os
 import time
 import json
+import statistics
 from ejr import (
     find_ejr_violation_witness,
     find_ejr_1_violation_witness,
@@ -234,8 +235,29 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                 f"    EJR-alpha[card] {t_ejr_alpha_card:.4f}s  p-sets: {v_ejr_alpha_card.p_sets_checked}  violation: {len(v_ejr_alpha_card.witness) != 0}"
             )
 
+        cost_utils = [
+            float(cost_utility_func(winning_set, ballot)) for ballot in approvals
+        ]
+        card_utils = [
+            float(card_utility_func(winning_set, ballot)) for ballot in approvals
+        ]
+        cost_total = float(sum(costs[p] for p in winning_set))
+        card_total = float(len(winning_set))
+
         result["results"][algo_name] = {
-            "algorithm_time": algo_time,
+            "algo_stats": {
+                "algorithm_time": algo_time,
+                "cost": {
+                    "util_median": statistics.median(cost_utils),
+                    "util_mean": statistics.mean(cost_utils),
+                    "util_total": cost_total,
+                },
+                "card": {
+                    "util_median": statistics.median(card_utils),
+                    "util_mean": statistics.mean(card_utils),
+                    "util_total": card_total,
+                },
+            },
             "ejr": {
                 "cost": _format_ejr_result(v_ejr_cost, t_ejr_cost),
                 "card": _format_ejr_result(v_ejr_card, t_ejr_card),
@@ -309,4 +331,4 @@ def run_one(verbose: bool = True):
 
 
 if __name__ == "__main__":
-    run_one(True)
+    run_all()
