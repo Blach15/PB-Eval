@@ -128,3 +128,6 @@ def find_fjr_violation_witness(
 # cost? c(W) + i's min/max project cost?
 
 # Idea 4.1: once all unsat, then only check rest of layer
+
+
+# Idea 5: voter union again. If cant afford prune... Valid??
