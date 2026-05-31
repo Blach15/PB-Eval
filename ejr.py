@@ -25,10 +25,11 @@ def iterate_all_affordable_p_sets(
     callback: Callable[[tuple[int, ...], set[int]], bool],
     pre_callback: Callable[[], None] = lambda: None,
     verbose: bool = False,
-):
+) -> int:
     project_supporters = get_project_supporters(approvals, projects)
 
     n = len(approvals)
+    layers_checked = 0
 
     current_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
     next_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
@@ -38,6 +39,7 @@ def iterate_all_affordable_p_sets(
         next_lattice_layer_worklist.append((p_set, project_supporters[pIdx]))
 
     while len(next_lattice_layer_worklist) > 0:
+        layers_checked += 1
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = []
 
@@ -53,7 +55,7 @@ def iterate_all_affordable_p_sets(
 
             # allow exit early, to find 1 witness
             if callback(p_set, voter_intersection):
-                return None
+                return layers_checked
 
             surviving_lattice_layer_worklist.append((p_set, voter_intersection))
 
@@ -83,7 +85,7 @@ def iterate_all_affordable_p_sets(
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
 
-    return None
+    return layers_checked
 
 
 def find_ejr_violation_witness(
@@ -141,7 +143,7 @@ def find_ejr_violation_witness(
 
         return False  # continue searching for more witnesses, don't exit early
 
-    iterate_all_affordable_p_sets(
+    layers_checked = iterate_all_affordable_p_sets(
         approvals,
         costs,
         projects,
@@ -155,6 +157,7 @@ def find_ejr_violation_witness(
         witness=witnesses,
         p_sets_checked=p_sets_checked,
         unsat_voter_union=(None if exit_early else unsat_voter_union),
+        layers_checked=layers_checked,
     )
 
 
@@ -229,7 +232,7 @@ def find_ejr_1_violation_witness(
 
         return False
 
-    iterate_all_affordable_p_sets(
+    layers_checked = iterate_all_affordable_p_sets(
         approvals,
         costs,
         projects,
@@ -240,7 +243,10 @@ def find_ejr_1_violation_witness(
     )
 
     return EJRViolationResult(
-        witness=witnesses, p_sets_checked=p_sets_checked, unsat_voter_union=None
+        witness=witnesses,
+        p_sets_checked=p_sets_checked,
+        unsat_voter_union=None,
+        layers_checked=layers_checked,
     )
 
 
@@ -314,7 +320,7 @@ def find_ejr_x_violation_witness(
 
         return False
 
-    iterate_all_affordable_p_sets(
+    layers_checked = iterate_all_affordable_p_sets(
         approvals,
         costs,
         projects,
@@ -325,7 +331,10 @@ def find_ejr_x_violation_witness(
     )
 
     return EJRViolationResult(
-        witness=witnesses, p_sets_checked=p_sets_checked, unsat_voter_union=None
+        witness=witnesses,
+        p_sets_checked=p_sets_checked,
+        unsat_voter_union=None,
+        layers_checked=layers_checked,
     )
 
 
@@ -410,7 +419,7 @@ def find_pjr_violation_witness(
 
         return False  # continue searching for more witnesses, don't exit early
 
-    iterate_all_affordable_p_sets(
+    layers_checked = iterate_all_affordable_p_sets(
         approvals,
         costs,
         projects,
@@ -421,7 +430,10 @@ def find_pjr_violation_witness(
     )
 
     return EJRViolationResult(
-        witness=witnesses, p_sets_checked=p_sets_checked, unsat_voter_union=None
+        witness=witnesses,
+        p_sets_checked=p_sets_checked,
+        unsat_voter_union=None,
+        layers_checked=layers_checked,
     )
 
 

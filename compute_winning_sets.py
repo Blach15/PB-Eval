@@ -118,6 +118,15 @@ def compute_winning_sets(filename: str, verbose: bool = True) -> str:
                 [{}, {"sat_class": Cardinality_Sat}],
             ),
         },
+        {
+            "json_name": "Phragmen_Greedy[cost]]",
+            "function": lambda: completion_by_rule_combination(
+                instance,
+                profile,
+                [sequential_phragmen, greedy_utilitarian_welfare],
+                [{}, {"sat_class": Cost_Sat}],
+            ),
+        },
     ]
 
     winning_sets: dict = {}

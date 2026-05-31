@@ -42,7 +42,15 @@ class ElectionRecord:
     filename: str
     metadata: dict
     algo_name: str
-    results: dict  # keys: "algorithm_time", "ejr", "ejr_x", "ejr_1"
+    results: dict  # keys: "algo_stats" (algorithm_time, cost, card stats), "ejr", "ejr_x", "ejr_1", "ejr_alpha"
+
+    @property
+    def algo_stats(self) -> dict:
+        return self.results.get("algo_stats", {})
+
+    @property
+    def algorithm_time(self) -> Optional[float]:
+        return self.algo_stats.get("algorithm_time")
 
 
 class OutcomeParser:

@@ -63,6 +63,7 @@ def _format_ejr_result(violation: EJRViolationResult, elapsed_time: float) -> di
             if violation.unsat_voter_union is not None
             else None
         ),
+        "layers_checked": violation.layers_checked,
     }
 
 
