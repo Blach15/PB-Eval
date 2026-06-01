@@ -214,13 +214,13 @@ def find_ejr_1_violation_witness(
         if any(p is None for i, (p, util) in voters_projects.items()):
             return False  # T subsetset W
 
-        distinct_projects = {
-            p for i, (p, util) in voters_projects.items() if p is not None
-        }
-        for p in distinct_projects:
-            new_winner_set = winning_set | {p}
-            if all((proj in new_winner_set) for proj in p_set):
-                return False  # T subsetset W U {p}
+        # distinct_projects = {
+        #     p for i, (p, util) in voters_projects.items() if p is not None
+        # }
+        # for p in distinct_projects:
+        #     new_winner_set = winning_set | {p}
+        #     if all((proj in new_winner_set) for proj in p_set):
+        #         return False  # T subsetset W U {p}
 
         unsat_voters = {
             i
@@ -304,13 +304,14 @@ def find_ejr_x_violation_witness(
         if any(p is None for i, (p, util) in voters_projects.items()):
             return False  # T subsetset W
 
-        distinct_projects = {
-            p for i, (p, util) in voters_projects.items() if p is not None
-        }
-        for p in distinct_projects:
-            new_winner_set = winning_set | {p}
-            if all((proj in new_winner_set) for proj in p_set):
-                return False  # T subsetset W U {p}
+        # distinct_projects = {
+        #     p for i, (p, util) in voters_projects.items() if p is not None
+        # }
+        # for p in distinct_projects:
+        #     new_winner_set = winning_set | {p}
+        #     # if T subset W U {p}, no violations
+        #     if all((proj in new_winner_set) for proj in p_set):
+        #         return False  # T subsetset W U {p}
         unsat_voters = {
             i
             for i in voter_intersection
