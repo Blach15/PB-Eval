@@ -168,7 +168,9 @@ class Table:
         if self.title:
             print("=" * 100, file=file)
 
-    def print_latex(self, file: Optional[TextIO] = None) -> None:
+    def print_latex(
+        self, file: Optional[TextIO] = None, label: Optional[str] = None
+    ) -> None:
         """Print table in LaTeX format."""
         file = file or sys.stdout
         num_cols = len(self.headers)
@@ -194,6 +196,8 @@ class Table:
         print("\\end{tabular}", file=file)
         if self.title:
             print(f"\\caption{{{escape_latex(self.title)}}}", file=file)
+        if label:
+            print(f"\\label{{tab:{label}}}", file=file)
         print("\\end{table}", file=file)
 
 
@@ -243,7 +247,9 @@ class Graph:
         """Print raw format (does nothing for graphs)."""
         pass
 
-    def print_latex(self, file: Optional[TextIO] = None) -> None:
+    def print_latex(
+        self, file: Optional[TextIO] = None, include_title: bool = True
+    ) -> None:
         """Print graph in LaTeX TikZ format."""
         file = file or sys.stdout
         print(f"\n\n% {self.title}" if self.title else "% Graph", file=file)
@@ -251,7 +257,11 @@ class Graph:
 
         # Build axis options
         axis_options = [
-            f"title={{{escape_latex(self.title)}}}",
+            *(
+                [f"title={{{escape_latex(self.title)}}}"]
+                if include_title and self.title
+                else []
+            ),
             f"xlabel={{{escape_latex(self.xlabel)}}}",
             f"ylabel={{{escape_latex(self.ylabel)}}}",
             f"ymajorgrids={str(self.ymajorgrids).lower()}",
@@ -281,6 +291,7 @@ class SubfigureGrid:
     title: str
     caption: str
     graphs: List["Graph"]
+    name: Optional[str] = None
 
     def print_raw(self, file: Optional[TextIO] = None) -> None:
         pass
@@ -303,6 +314,10 @@ class SubfigureGrid:
 
             self._print_graph(graph, file)  # type: ignore[arg-type]
 
+            print(f"    \\caption{{{escape_latex(graph.title)}}}", file=file)
+            if self.name:
+                print(f"    \\label{{fig:{self.name}_graph_{i}}}", file=file)
+
             if lone_last or i % 2 == 1:
                 print("\\end{subfigure}", file=file)
             else:
@@ -310,6 +325,8 @@ class SubfigureGrid:
 
         short = escape_latex(self.title)
         print(f"\\caption[{short}]{{{escape_latex(self.caption)}}}", file=file)
+        if self.name:
+            print(f"\\label{{fig:{self.name}}}", file=file)
         print("\\end{figure}", file=file)
 
     @staticmethod
@@ -1317,18 +1334,21 @@ def print_stats(config: str = "All_without_early") -> None:
             tex_out_path = os.path.join(tex_dir, f"{name}.tex")
 
             if isinstance(item, SubfigureGrid):
+                item.name = name
                 _compile_subfigure_grid(
                     item, name, tex_out_path, pdf_dir, pdf_include_prefix
                 )
             elif isinstance(item, Table):
                 with open(tex_out_path, "w") as f:
-                    item.print_latex(file=f)
+                    item.print_latex(file=f, label=name)
             else:
                 buf = io.StringIO()
-                item.print_latex(file=buf)
+                item.print_latex(file=buf, include_title=False)
                 print(f"Compiling {name}...")
                 _compile_snippet_to_pdf(buf.getvalue(), name, pdf_dir)
                 with open(tex_out_path, "w") as f:
+                    if isinstance(item, Graph) and item.title:
+                        f.write(f"% {item.title}\n")
                     f.write(f"\\includegraphics{{{pdf_include_prefix}/{name}.pdf}}\n")
 
 
