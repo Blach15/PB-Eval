@@ -211,11 +211,12 @@ class PlotLine:
     def to_latex(self) -> str:
         """Convert plot line to LaTeX format."""
         coords_str = "".join(f"({x},{y})" for x, y in self.coordinates)
+        only_marks_str = "only marks, " if self.only_marks else ""
         mark_str = f", mark={self.mark}" if self.mark is not None else ""
         mark_size_str = (
             f", mark size={self.mark_size}pt" if self.mark_size is not None else ""
         )
-        return f"\\addplot[color={self.color}{mark_str}{mark_size_str}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
+        return f"\\addplot[{only_marks_str}color={self.color}{mark_str}{mark_size_str}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
 
 
 @dataclass
@@ -1058,6 +1059,80 @@ def graph_algorithm_time_vs_budget_per_avg_cost(
     )
 
 
+def graph_vote_length_vs_largest_t_checked(
+    config: str = "All_without_early",
+) -> Optional[Graph]:
+    """EJR largest |T| checked vs vote_length, with moving average, one line per EJR type."""
+    ejr_types = CONFIGS[config]
+    parser = OutcomeParser()
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
+
+    # For scatter: one point per election per ejr_type = max layers_checked across all algorithms & utilities
+    # For moving average: all (vote_length, layers_checked) pairs pooled
+    scatter_max: dict[str, dict[str, tuple]] = {
+        et: {} for et in ejr_types
+    }  # et -> filename -> (vl, max_layers)
+    data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
+
+    for rec in parser.records:
+        vote_length = rec.metadata.get("vote_length")
+        if vote_length is None:
+            continue
+        for ejr_type in ejr_types:
+            for utility in ["cost", "card"]:
+                layers = (
+                    rec.results.get(ejr_type, {}).get(utility, {}).get("layers_checked")
+                )
+                if layers is not None:
+                    data[ejr_type].append((vote_length, layers))
+                    prev = scatter_max[ejr_type].get(rec.filename)
+                    if prev is None or layers > prev[1]:
+                        scatter_max[ejr_type][rec.filename] = (vote_length, layers)
+
+    plot_lines = []
+    for i, ejr_type in enumerate(ejr_types):
+        raw = data[ejr_type]
+        avg_coords = OutcomeParser.moving_average(raw)
+        if not avg_coords:
+            continue
+        label = _EJR_LABELS.get(ejr_type, ejr_type.upper())
+        color = colors[i % len(colors)]
+        # Raw scatter points: one per election (max layers_checked)
+        scatter = list(scatter_max[ejr_type].values())
+        plot_lines.append(
+            PlotLine(
+                color=color,
+                mark="*",
+                mark_size=1,
+                coordinates=scatter,
+                legend_entry=f"{label} (points)",
+                only_marks=True,
+            )
+        )
+        # Moving average line
+        plot_lines.append(
+            PlotLine(
+                color=color,
+                coordinates=avg_coords,
+                legend_entry=f"{label} (mean)",
+            )
+        )
+
+    if not plot_lines:
+        return None
+    return Graph(
+        title="Largest $|T|$ Checked vs Vote Length",
+        xlabel="Vote Length",
+        ylabel="Largest $|T|$ Checked",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
+    )
+
+
 _LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
 \\usepackage{tikz}
 \\usepackage{booktabs}
@@ -1087,7 +1162,13 @@ def _compile_snippet_to_pdf(snippet: str, name: str, pdf_dir: str) -> bool:
         f.write(_LATEX_POSTAMBLE)
 
     subprocess.run(
-        ["pdflatex", "-interaction=nonstopmode", f"{name}.tex"],
+        [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-cnf-line=extra_mem_bot=50000000",
+            "-cnf-line=extra_mem_top=10000000",
+            f"{name}.tex",
+        ],
         cwd=pdf_dir,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
@@ -1206,6 +1287,10 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_algorithm_time_vs_vote_length",
             [graph_algorithm_time_vs_vote_length(config)],
+        ),
+        (
+            "graph_vote_length_vs_largest_t_checked",
+            [graph_vote_length_vs_largest_t_checked(config)],
         ),
         (
             "graph_algorithm_time_vs_number_of_voters",
