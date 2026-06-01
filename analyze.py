@@ -537,7 +537,7 @@ def print_results_by_algorithm(
 
 def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
     """
-    Analyze the 'satisfaction_degree' for EJR-cost and EJR-card per algorithm.
+    Analyze the 'violation_degree' (1 - satisfaction_degree) for EJR-cost and EJR-card per algorithm.
 
     Parameters:
     - ejr_type: "ejr", "ejr_1", or "ejr_x"
@@ -551,9 +551,9 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
     for rec in parser.records:
         for utility in ["cost", "card"]:
             if utility in rec.results.get(ejr_type, {}):
-                degree = rec.results[ejr_type][utility].get("satisfaction_degree")
-                if degree is not None:
-                    violations_by_algo[rec.algo_name][utility].append(degree)
+                raw = rec.results[ejr_type][utility].get("satisfaction_degree")
+                if raw is not None:
+                    violations_by_algo[rec.algo_name][utility].append(1 - raw)
 
     tables = []
     for utility in ["cost", "card"]:
@@ -589,7 +589,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
             table = Table(
                 headers=["Algorithm", "N", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
                 rows=rows,
-                title=f"Satisfaction Degree Analysis for {ejr_type.upper()}[{utility}]",
+                title=f"Violation Degree Analysis for {ejr_type.upper()}[{utility}]",
             )
             tables.append(table)
 
@@ -676,18 +676,18 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
     return graph
 
 
-def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
+def graph_min_violation_degree_distribution_pr() -> List[Graph]:
     """
     For each utility (cost, card), and for each algorithm, collect the
-    satisfaction_degree for EJR per election (using 1 when None).  Then, for
+    violation_degree (1 - satisfaction_degree) for EJR per election (using 0 when None).  Then, for
     x in [0.00, 0.01, ..., 1.00], compute the percentage of elections where
-    the satisfaction degree is strictly greater than x (complementary CDF).
+    the violation degree is >= x (complementary CDF).
 
     Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
     """
     parser = OutcomeParser()
 
-    # {utility: {algo_name: [satisfaction_degree_per_election, ...]}}
+    # {utility: {algo_name: [violation_degree_per_election, ...]}}
     data_by_utility: dict[str, dict[str, list[float]]] = {
         "cost": defaultdict(list),
         "card": defaultdict(list),
@@ -697,12 +697,12 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
         for utility in ["cost", "card"]:
             ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
             if ejr_util is not None:
-                deg = ejr_util.get("satisfaction_degree")
+                raw = ejr_util.get("satisfaction_degree")
                 data_by_utility[utility][rec.algo_name].append(
-                    deg if deg is not None else 1
+                    (1 - raw) if raw is not None else 0
                 )
 
-    x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
+    x_points = [round(i * 0.01, 2) for i in range(0, 100)]  # 0.00 to 0.99
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     graphs = []
@@ -718,7 +718,7 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
             if n == 0:
                 continue
             coordinates = [
-                (x, round(sum(1 for v in violations if v >= x) / n * 100, 2))
+                (x, round(sum(1 for v in violations if v <= x) / n * 100, 2))
                 for x in x_points
             ]
             plot_lines.append(
@@ -731,16 +731,15 @@ def graph_min_satisfaction_degree_distribution_pr() -> List[Graph]:
 
         graphs.append(
             Graph(
-                title=f"EJR[{utility}] Satisfaction Degree Distribution",
-                xlabel="Satisfaction Degree ($a$)",
-                ylabel="Elections with Violation $\\ge a$",
+                title=f"EJR[{utility}] Violation Degree Distribution",
+                xlabel="Violation Degree ($\\phi$)",
+                ylabel="Elections with Violation Degree $\\le \\phi$",
                 plot_lines=plot_lines,
                 ymajorgrids=True,
                 grid_style="dashed",
                 xmode="linear",
                 ymode="linear",
                 legend_pos="outer north east",
-                xdir="reverse",
             )
         )
 
@@ -776,7 +775,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
                 fraction = (unsat / n_voters) if unsat is not None else 0.0
                 data_by_utility[utility][rec.algo_name].append(fraction)
 
-    x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
+    x_points = [round(i * 0.01, 2) for i in range(0, 100)]  # 0.00 to 0.99
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     graphs = []
@@ -792,7 +791,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
             if n == 0:
                 continue
             coordinates = [
-                (x, round(sum(1 for v in fractions if v >= x) / n * 100, 2))
+                (x, round(sum(1 for v in fractions if v <= x) / n * 100, 2))
                 for x in x_points
             ]
             plot_lines.append(
@@ -807,7 +806,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
             Graph(
                 title=f"EJR[{utility}] Unsatisfied Voter Fraction Distribution",
                 xlabel="Fraction of Unsatisfied Voters ($r$)",
-                ylabel="Elections with Fraction $\\ge r$",
+                ylabel="Elections with Fraction $\\le r$",
                 plot_lines=plot_lines,
                 ymajorgrids=True,
                 grid_style="dashed",
@@ -820,18 +819,18 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
     return graphs
 
 
-def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
+def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
     """
     For each utility (cost, card), create a SubfigureGrid figure containing
     one subfigure per algorithm. Each subfigure plots vote_length (x-axis)
-    vs satisfaction_degree (y-axis), using 1 when satisfaction_degree is None.
+    vs violation_degree (1 - satisfaction_degree) (y-axis), using 0 when satisfaction_degree is None.
     The legend is omitted; the algorithm name appears in the graph title.
 
     Returns a list of two SubfigureGrid objects: one for EJR[cost], one for EJR[card].
     """
     parser = OutcomeParser()
 
-    # {algo_name: {utility: [(vote_length, satisfaction_degree), ...]}}
+    # {algo_name: {utility: [(vote_length, violation_degree), ...]}}
     data_by_algo: dict[str, dict[str, list[tuple]]] = defaultdict(
         lambda: {"cost": [], "card": []}
     )
@@ -843,9 +842,9 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
         for utility in ["cost", "card"]:
             ejr_util = rec.results.get("ejr", {}).get(utility)
             if ejr_util is not None:
-                deg = ejr_util.get("satisfaction_degree")
+                raw = ejr_util.get("satisfaction_degree")
                 data_by_algo[rec.algo_name][utility].append(
-                    (vote_length, deg if deg is not None else 1)
+                    (vote_length, (1 - raw) if raw is not None else 0)
                 )
 
     figures = []
@@ -863,7 +862,7 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
                 Graph(
                     title=algo_name,
                     xlabel="Vote Length",
-                    ylabel="Satisfaction Degree ($a$)",
+                    ylabel="Violation Degree ($\\phi$)",
                     plot_lines=[
                         PlotLine(
                             color="black",
@@ -893,9 +892,9 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
         if graphs:
             figures.append(
                 SubfigureGrid(
-                    title=f"EJR[{utility}] Satisfaction Degree vs Vote Length",
+                    title=f"EJR[{utility}] Violation Degree vs Vote Length",
                     caption=(
-                        f"EJR[{utility}] satisfaction degree as a function of vote length, "
+                        f"EJR[{utility}] violation degree ($\\phi = 1 - $ satisfaction degree) as a function of vote length, "
                         f"shown per algorithm. A value of 1 indicates a full violation."
                     ),
                     graphs=graphs,
@@ -1185,16 +1184,16 @@ def print_stats(config: str = "All_without_early") -> None:
             [graph_vote_length_vs_p_sets_ejr_card()],
         ),
         (
-            "graph_min_satisfaction_degree_distribution_pr",
-            graph_min_satisfaction_degree_distribution_pr(),
+            "graph_min_violation_degree_distribution_pr",
+            graph_min_violation_degree_distribution_pr(),
         ),
         (
             "graph_unsat_voter_fraction_distribution_pr",
             graph_unsat_voter_fraction_distribution_pr(),
         ),
         (
-            "graph_vote_length_vs_satisfaction_degree_ejr",
-            graph_vote_length_vs_satisfaction_degree_ejr(),
+            "graph_vote_length_vs_violation_degree_ejr",
+            graph_vote_length_vs_violation_degree_ejr(),
         ),
         (
             "graph_algorithm_time_vs_projects",
