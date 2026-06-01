@@ -1,6 +1,7 @@
 import io
 import os
 import json
+import shutil
 import subprocess
 from collections import defaultdict
 from dataclasses import dataclass
@@ -115,30 +116,29 @@ class OutcomeParser:
         ]
 
     @staticmethod
-    def bin_mean(coords: List[tuple], bucket_size: float) -> List[tuple]:
-        """Average y-values of (x, y) pairs into x-buckets of width *bucket_size*.
+    def moving_average(coords: List[tuple]) -> List[tuple]:
+        """Cumulative moving average over sorted (x, y) pairs.
 
-        Each x is mapped to ``round(x / bucket_size) * bucket_size`` and the mean
-        y within each bucket is returned as a sorted list of (x, mean_y) tuples.
+        Points are sorted by x. For each distinct x value, the y-value is
+        the mean of *all* y values seen so far (up to and including that x).
         """
-        bins: dict[float, list[float]] = defaultdict(list)
-        for x, y in coords:
-            key = round(x / bucket_size) * bucket_size
-            bins[key].append(y)
-        return sorted((k, float(np.mean(v))) for k, v in bins.items())
-
-    @staticmethod
-    def bin_median(coords: List[tuple], bucket_size: float) -> List[tuple]:
-        """Median y-values of (x, y) pairs into x-buckets of width *bucket_size*.
-
-        Each x is mapped to ``round(x / bucket_size) * bucket_size`` and the median
-        y within each bucket is returned as a sorted list of (x, median_y) tuples.
-        """
-        bins: dict[float, list[float]] = defaultdict(list)
-        for x, y in coords:
-            key = round(x / bucket_size) * bucket_size
-            bins[key].append(y)
-        return sorted((k, float(np.median(v))) for k, v in bins.items())
+        if not coords:
+            return []
+        sorted_coords = sorted(coords, key=lambda p: p[0])
+        result = []
+        cumsum = 0.0
+        count = 0
+        i = 0
+        while i < len(sorted_coords):
+            x = sorted_coords[i][0]
+            j = i
+            while j < len(sorted_coords) and sorted_coords[j][0] == x:
+                cumsum += sorted_coords[j][1]
+                count += 1
+                j += 1
+            result.append((x, cumsum / count))
+            i = j
+        return result
 
 
 @dataclass
@@ -857,10 +857,7 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
                 continue
 
             # Group by rounded vote_length and compute mean satisfaction degree
-            grouped: dict[int, list[float]] = defaultdict(list)
-            for vl, deg in coords:
-                grouped[round(vl)].append(deg)
-            grouped_coords = sorted((k, float(np.mean(v))) for k, v in grouped.items())
+            grouped_coords = OutcomeParser.moving_average(coords)
 
             graphs.append(
                 Graph(
@@ -911,26 +908,18 @@ def graph_vote_length_vs_satisfaction_degree_ejr() -> List[SubfigureGrid]:
 def _graph_ejr_check_time(
     x_fn: Callable[["ElectionRecord", str, str], Optional[float]],
     x_label: str,
-    bucket_size: float,
     title_suffix: str,
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
     """Shared implementation for EJR running-time graphs.
 
     Returns a single Graph with one line per EJR type.  Each line's y-values
-    are the mean/median running time across all algorithms and both utilities
-    (cost + card), bucketed by *bucket_size*.
-
-    aggregation: "mean" or "median"
+    are the cumulative moving average of running time across all algorithms
+    and both utilities (cost + card), sorted by x.
     """
     ejr_types = CONFIGS[config]
     parser = OutcomeParser()
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
-    bin_fn = (
-        OutcomeParser.bin_median if aggregation == "median" else OutcomeParser.bin_mean
-    )
-    agg_label = aggregation.capitalize()
 
     # Collect all (x, t) pairs per ejr_type, pooled across algorithms & utilities
     data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
@@ -945,7 +934,7 @@ def _graph_ejr_check_time(
 
     plot_lines = []
     for i, ejr_type in enumerate(ejr_types):
-        coords = bin_fn(data[ejr_type], bucket_size=bucket_size)
+        coords = OutcomeParser.moving_average(data[ejr_type])
         if coords:
             plot_lines.append(
                 PlotLine(
@@ -958,9 +947,9 @@ def _graph_ejr_check_time(
     if not plot_lines:
         return None
     return Graph(
-        title=f"EJR Running Time vs {title_suffix} (bucket size={bucket_size})",
+        title=f"EJR Running Time vs {title_suffix}",
         xlabel=x_label,
-        ylabel=f"{agg_label} Running Time (s)",
+        ylabel="Moving Average Running Time (s)",
         plot_lines=plot_lines,
         ymajorgrids=True,
         grid_style="dashed",
@@ -972,85 +961,68 @@ def _graph_ejr_check_time(
 
 def graph_algorithm_time_vs_projects(
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
-    """EJR running time vs number_of_projects (bucket size 10)."""
+    """EJR running time vs number_of_projects."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_projects"),
         x_label="Number of Projects",
-        bucket_size=10,
         title_suffix="Number of Projects",
         config=config,
-        aggregation=aggregation,
     )
 
 
-def graph_algorithm_time_vs_projects_ejr_compare(
-    aggregation: str = "mean",
-) -> Optional[Graph]:
-    """EJR running time vs number_of_projects, comparing EJR and EJR-exit-early only (bucket size 10)."""
+def graph_algorithm_time_vs_projects_ejr_compare() -> Optional[Graph]:
+    """EJR running time vs number_of_projects, comparing EJR and EJR-exit-early only."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_projects"),
         x_label="Number of Projects",
-        bucket_size=10,
         title_suffix="Number of Projects (EJR vs EJR-exit-early)",
         config="EJR_compare",
-        aggregation=aggregation,
     )
 
 
 def graph_algorithm_time_vs_p_sets_checked(
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
-    """EJR running time vs p_sets_checked (bucket size 5)."""
+    """EJR running time vs p_sets_checked."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, et, u: rec.results.get(et, {})
         .get(u, {})
         .get("p_sets_checked"),
         x_label="P-Sets Checked",
-        bucket_size=5,
         title_suffix="P-Sets Checked",
         config=config,
-        aggregation=aggregation,
     )
 
 
 def graph_algorithm_time_vs_vote_length(
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
-    """EJR running time vs vote_length (bucket size 1)."""
+    """EJR running time vs vote_length."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("vote_length"),
         x_label="Vote Length",
-        bucket_size=1,
         title_suffix="Vote Length",
         config=config,
-        aggregation=aggregation,
     )
 
 
 def graph_algorithm_time_vs_number_of_voters(
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
-    """EJR running time vs number_of_voters (bucket size 50)."""
+    """EJR running time vs number_of_voters."""
     return _graph_ejr_check_time(
         x_fn=lambda rec, _et, _u: rec.metadata.get("number_of_voters"),
         x_label="Number of Voters",
-        bucket_size=50,
         title_suffix="Number of Voters",
         config=config,
-        aggregation=aggregation,
     )
 
 
 def graph_algorithm_time_vs_vote_length_times_avg_cost(
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
-    """EJR running time vs vote_length * average_project_cost (bucket size 5)."""
+    """EJR running time vs vote_length * average_project_cost."""
 
     def x_fn(rec: "ElectionRecord", _et: str, _u: str) -> Optional[float]:
         vl = rec.metadata.get("vote_length")
@@ -1062,18 +1034,15 @@ def graph_algorithm_time_vs_vote_length_times_avg_cost(
     return _graph_ejr_check_time(
         x_fn=x_fn,
         x_label="Vote Length $\\times$ Avg Project Cost",
-        bucket_size=5,
         title_suffix="Vote Length $\\times$ Avg Project Cost",
         config=config,
-        aggregation=aggregation,
     )
 
 
 def graph_algorithm_time_vs_budget_per_avg_cost(
     config: str = "All_without_early",
-    aggregation: str = "mean",
 ) -> Optional[Graph]:
-    """EJR running time vs budget / average_project_cost (bucket size 5)."""
+    """EJR running time vs budget / average_project_cost."""
 
     def x_fn(rec: "ElectionRecord", _et: str, _u: str) -> Optional[float]:
         budget = rec.metadata.get("budget_limit")
@@ -1085,10 +1054,8 @@ def graph_algorithm_time_vs_budget_per_avg_cost(
     return _graph_ejr_check_time(
         x_fn=x_fn,
         x_label="Budget / Avg Project Cost",
-        bucket_size=1,
         title_suffix="Budget / Avg Project Cost",
         config=config,
-        aggregation=aggregation,
     )
 
 
@@ -1197,8 +1164,10 @@ def print_stats(config: str = "All_without_early") -> None:
     tex_dir = "06_tex"
     pdf_dir = os.path.join(tex_dir, "pdf")
     pdf_include_prefix = "06_tex/pdf"
+    if os.path.exists(tex_dir):
+        shutil.rmtree(tex_dir)
     os.makedirs(tex_dir, exist_ok=True)
-    os.makedirs(pdf_dir, exist_ok=True)
+    os.makedirs(pdf_dir)
 
     functions = [
         # (
@@ -1248,20 +1217,12 @@ def print_stats(config: str = "All_without_early") -> None:
             [graph_algorithm_time_vs_vote_length_times_avg_cost(config)],
         ),
         (
-            "graph_algorithm_time_vs_projects_ejr_compare_median",
-            [graph_algorithm_time_vs_projects_ejr_compare(aggregation="median")],
+            "graph_algorithm_time_vs_projects_ejr_compare",
+            [graph_algorithm_time_vs_projects_ejr_compare()],
         ),
         (
-            "graph_algorithm_time_vs_projects_ejr_compare_mean",
-            [graph_algorithm_time_vs_projects_ejr_compare(aggregation="mean")],
-        ),
-        (
-            "graph_algorithm_time_vs_budget_per_avg_cost_mean",
+            "graph_algorithm_time_vs_budget_per_avg_cost",
             [graph_algorithm_time_vs_budget_per_avg_cost(config)],
-        ),
-        (
-            "graph_algorithm_time_vs_budget_per_avg_cost_median",
-            [graph_algorithm_time_vs_budget_per_avg_cost(config, aggregation="median")],
         ),
     ]
 
