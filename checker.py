@@ -263,6 +263,9 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                     "util_mean": statistics.mean(card_utils),
                     "util_total": card_total,
                 },
+                "winning_set": [str(projects[p]) for p in winning_set],
+                "winning_set_cost": cost_total,
+                "winning_set_size": card_total,
             },
             "ejr": {
                 "cost": _format_ejr_result(v_ejr_cost, t_ejr_cost),
