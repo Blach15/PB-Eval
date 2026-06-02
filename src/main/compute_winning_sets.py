@@ -93,7 +93,7 @@ def compute_winning_sets(filename: str, verbose: bool = True) -> str:
         },
         {
             "json_name": "Phragmen",
-            "function": lambda: sequential_phragmen(instance, profile),
+            "function": lambda: sequential_phragmen(instance, profile),  # type: ignore - pabulib wrong type
         },
         {
             "json_name": "MES[cost]_Greedy[cost]]",
