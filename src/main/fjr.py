@@ -41,22 +41,26 @@ def find_fjr_violation_witness(
 
     p_sets_checked = 0
     n = len(approvals)
-    voters = set(range(n))
 
-    current_lattice_layer_worklist: list[tuple[int, ...]] = list()
-    next_lattice_layer_worklist: list[tuple[int, ...]] = list()
+    project_supporters: list[set[int]] = [set() for _ in range(len(projects))]
+    for voter_idx, ballot in enumerate(approvals):
+        for p in ballot:
+            project_supporters[p].add(voter_idx)
+
+    current_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
+    next_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
 
     for pIdx in range(len(projects)):
         p_set: tuple[int, ...] = (pIdx,)
-        next_lattice_layer_worklist.append(p_set)
+        next_lattice_layer_worklist.append((p_set, project_supporters[pIdx]))
 
     while len(next_lattice_layer_worklist) > 0:
         current_lattice_layer_worklist = next_lattice_layer_worklist
-        surviving_lattice_layer_worklist: list[tuple[int, ...]] = []
+        surviving_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = []
         all_voters_unsat_in_layer = True
         print(f"Checking layer of size {len(current_lattice_layer_worklist)} sets")
 
-        for p_set in current_lattice_layer_worklist:
+        for p_set, voter_union in current_lattice_layer_worklist:
             p_sets_checked += 1
 
             # check that p_set is affordable within budget
@@ -64,10 +68,12 @@ def find_fjr_violation_witness(
                 continue
 
             unsat_voters = {
-                i for i in voters if winning_util[i] < utility_func(p_set, approvals[i])
+                i
+                for i in voter_union
+                if winning_util[i] < utility_func(p_set, approvals[i])
             }
 
-            if unsat_voters != voters:
+            if len(unsat_voters) < len(voter_union):
                 all_voters_unsat_in_layer = False
 
             # check if unsat_voters is T-cohesive, then EJR violation
@@ -87,32 +93,33 @@ def find_fjr_violation_witness(
                     layers_checked=0,
                 )
 
-            surviving_lattice_layer_worklist.append(p_set)
+            surviving_lattice_layer_worklist.append((p_set, voter_union))
 
         if all_voters_unsat_in_layer:
             break
 
         print(
-            f"Checked {len(current_lattice_layer_worklist[0])} sets in current layer, {p_sets_checked} total"
+            f"Checked {len(current_lattice_layer_worklist[0][0])} sets in current layer, {p_sets_checked} total"
         )
 
         if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(
-                f"Surviving layer size: {len(surviving_lattice_layer_worklist[0])}, {len(surviving_lattice_layer_worklist)}"
+                f"Surviving layer size: {len(surviving_lattice_layer_worklist[0][0])}, {len(surviving_lattice_layer_worklist)}"
             )
         next_lattice_layer_worklist = list()
 
         # Apriori join: only join itemsets that share the first k-1 elements
         for i in range(len(surviving_lattice_layer_worklist)):
             for j in range(i + 1, len(surviving_lattice_layer_worklist)):
-                itemset_i = surviving_lattice_layer_worklist[i]
-                itemset_j = surviving_lattice_layer_worklist[j]
+                itemset_i, voter_union_i = surviving_lattice_layer_worklist[i]
+                itemset_j, voter_union_j = surviving_lattice_layer_worklist[j]
 
                 # Check if they share the first k-1 elements (apriori property)
                 if itemset_i[:-1] == itemset_j[:-1]:
                     # keep the new set sorted.
                     new_set = tuple(itemset_i + (itemset_j[-1],))
-                    next_lattice_layer_worklist.append(new_set)
+                    new_voter_union = voter_union_i | voter_union_j
+                    next_lattice_layer_worklist.append((new_set, new_voter_union))
                 else:
                     # Since itemsets are sorted, if prefixes don't match, skip to next i
                     break
