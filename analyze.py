@@ -25,7 +25,7 @@ CONFIGS: dict[str, list[str]] = {
 
 _EJR_LABELS: dict[str, str] = {
     "ejr": "EJR",
-    "ejr_alpha": "EJR-$\\alpha$",
+    "ejr_alpha": "EJR-$\\phi$",
     "ejr_x": "EJR-X",
     "ejr_1": "EJR-1",
 }
@@ -211,6 +211,7 @@ class PlotLine:
     mark: Optional[str] = None
     mark_size: Optional[float] = None
     only_marks: bool = False
+    style: Optional[str] = None  # e.g., "dashed", "dotted", etc.
 
     def to_latex(self) -> str:
         """Convert plot line to LaTeX format."""
@@ -220,7 +221,8 @@ class PlotLine:
         mark_size_str = (
             f", mark size={self.mark_size}pt" if self.mark_size is not None else ""
         )
-        return f"\\addplot[{only_marks_str}color={self.color}{mark_str}{mark_size_str}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
+        style_str = f", {self.style}" if self.style is not None else ""
+        return f"\\addplot[{only_marks_str}color={self.color}{mark_str}{mark_size_str}{style_str}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
 
 
 @dataclass
@@ -527,7 +529,13 @@ def print_results_by_algorithm(
                     else:
                         by_algo[rec.algo_name][ejr_type][utility]["satisfied"] += 1
 
-    columns = [(et, u) for et in ejr_types for u in ["card", "cost"]]
+    _excluded = {("ejr_x", "card"), ("ejr_1", "card")}
+    columns = [
+        (et, u)
+        for et in ejr_types
+        for u in ["card", "cost"]
+        if (et, u) not in _excluded
+    ]
     col_labels = {
         (et, u): f"{_EJR_LABELS.get(et, et.upper())}[{u}]"
         for et in ejr_types
@@ -607,7 +615,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
             table = Table(
                 headers=["Algorithm", "N", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
                 rows=rows,
-                title=f"Violation Degree Analysis for {ejr_type.upper()}[{utility}]",
+                title=f"Violation Degree Analysis for {_EJR_LABELS.get(ejr_type, ejr_type.upper())}[{utility}]",
             )
             tables.append(table)
 
@@ -1121,6 +1129,7 @@ def graph_vote_length_vs_largest_t_checked(
                 color=color,
                 mark="*",
                 mark_size=1,
+                style="fill opacity=0.2, draw opacity=0.2",
                 coordinates=scatter,
                 legend_entry=f"{label} (points)",
                 only_marks=True,
