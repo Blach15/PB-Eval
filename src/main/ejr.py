@@ -1,3 +1,6 @@
+import sys, os
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 from numpy import sort
 from pabutools.election import (
     Cardinality_Sat,
@@ -13,7 +16,6 @@ from pabutools.rules import (
 )
 from pabutools.utils import Numeric
 from typing import Callable, Iterable
-import os
 from src.main.typess import EJRViolationWitness, EJRViolationResult
 
 _DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data")

@@ -1,3 +1,6 @@
+import sys, os
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 from pabutools.election import (
     Cardinality_Sat,
     Instance,
@@ -11,7 +14,6 @@ from pabutools.rules import (
     sequential_phragmen,
     method_of_equal_shares,
 )
-import os
 import time
 import json
 

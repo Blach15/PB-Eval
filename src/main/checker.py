@@ -1,7 +1,8 @@
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 from pabutools.election import parse_pabulib
 from pabutools.utils import Numeric
 from typing import Iterable
-import os
 import time
 import json
 import statistics
