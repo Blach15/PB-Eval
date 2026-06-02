@@ -1,4 +1,5 @@
 import sys, os
+
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 from pabutools.election import parse_pabulib
 from pabutools.utils import Numeric
@@ -6,11 +7,9 @@ from typing import Iterable
 import time
 import json
 import statistics
-from src.main.ejr import (
-    find_ejr_violation_witness,
-    find_ejr_1_violation_witness,
-    find_ejr_x_violation_witness,
-)
+from src.main.ejr import find_ejr_violation_witness
+from src.main.ejr_1 import find_ejr_1_violation_witness
+from src.main.ejr_x import find_ejr_x_violation_witness
 from src.main.typess import EJRViolationResult
 
 _DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data")

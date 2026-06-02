@@ -9,7 +9,7 @@ from src.main.typess import EJRViolationWitness, EJRViolationResult
 from src.main.iteration_util import iterate_all_affordable_p_sets
 
 
-def find_ejr_violation_witness(
+def find_ejr_x_violation_witness(
     approvals: list[set[int]],
     winning_set: set[int],
     costs: list[Numeric],
@@ -17,7 +17,6 @@ def find_ejr_violation_witness(
     budget: Numeric,
     utility_func: Callable[[Iterable[int], set[int]], Numeric],
     verbose: bool = True,
-    exit_early: bool = False,
 ) -> EJRViolationResult:
     winning_util = [
         utility_func(winning_set, approvals[i]) for i in range(len(approvals))
@@ -26,54 +25,59 @@ def find_ejr_violation_witness(
     p_sets_checked = 0
     witnesses = []
     n = len(approvals)
-    unsat_voter_union = set()
-    unsat_voter_violation_union = set()
 
     def count_p_sets():
         nonlocal p_sets_checked
         p_sets_checked += 1
 
-    def check_ejr(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
+    def min_util_from_unpicked(
+        voter_index: int, p_set: tuple[int, ...]
+    ) -> tuple[int | None, Numeric]:
+        # marginal utility of adding worst project to p_set for voter i
+        min_util = None
+        min_proj = None
+        for p in p_set:
+            if p not in winning_set:
+                util_p = utility_func((p,), approvals[voter_index])
+                if min_util is None or util_p < min_util:
+                    min_util = util_p
+                    min_proj = p
+        if min_proj is None or min_util is None:
+            return None, -1
+        return min_proj, min_util
+
+    def check_ejr_x(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
+        voters_projects = {
+            i: min_util_from_unpicked(i, p_set) for i in voter_intersection
+        }
+
+        # Check if any voter has no project available
+        if any(p is None for i, (p, util) in voters_projects.items()):
+            return False  # T subsetset W
+
         unsat_voters = {
             i
             for i in voter_intersection
-            if winning_util[i] < utility_func(p_set, approvals[i])
+            if winning_util[i] + voters_projects[i][1]
+            <= utility_func(p_set, approvals[i])
         }
-        if not exit_early:
-            unsat_voter_union.update(unsat_voters)
 
         # check if unsat_voters is T-cohesive, then EJR violation
         # done by computing the required size, for p_set to be affordable.
         needed_voters_larger_or_equal_to = (sum(costs[p] for p in p_set) * n) / budget
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
-            if verbose:
-                print(f"T: {p_set}, voters: {unsat_voters}")
 
-            if not exit_early:
-                unsat_voter_violation_union.update(unsat_voters)
+            witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
+            return True  # exit early, to find 1 witness
 
-            # for the voter i in the minimum set of voters, who is the closest to being satisfied
-            # find the a in: a * util_p = util_win
-            unsat_voters_util = [
-                (winning_util[i] / utility_func(p_set, approvals[i]))
-                for i in unsat_voters
-            ]
-            max_a_in_min_set_of_voters = sort(unsat_voters_util)[
-                int(needed_voters_larger_or_equal_to) - 1
-            ]
-            witnesses.append(
-                EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
-            )
-            return exit_early  # exit early, to find 1 witness
-
-        return False  # continue searching for more witnesses, don't exit early
+        return False
 
     layers_checked = iterate_all_affordable_p_sets(
         approvals,
         costs,
         projects,
         budget,
-        callback=check_ejr,
+        callback=check_ejr_x,
         pre_callback=count_p_sets,
         verbose=verbose,
     )
@@ -81,9 +85,7 @@ def find_ejr_violation_witness(
     return EJRViolationResult(
         witness=witnesses,
         p_sets_checked=p_sets_checked,
-        unsat_voter_union=(None if exit_early else unsat_voter_union),
-        unsat_voter_violation_union=(
-            None if exit_early else unsat_voter_violation_union
-        ),
+        unsat_voter_union=None,
+        unsat_voter_violation_union=None,
         layers_checked=layers_checked,
     )
