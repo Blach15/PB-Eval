@@ -1,3 +1,8 @@
+import sys, os
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+from linecache import cache
+
 from numpy import sort
 from pabutools.election import (
     Cardinality_Sat,
@@ -13,9 +18,9 @@ from pabutools.rules import (
 )
 from pabutools.utils import Numeric
 from typing import Callable, Iterable
-import os
 from src.main.typess import EJRViolationWitness, EJRViolationResult
 from src.main.ejr import iterate_all_affordable_p_sets
+from src.main.checker import _build_ejr_inputs, _load_cache
 
 
 # Functionally correct algorithm, but not viable for large instances.
@@ -134,3 +139,23 @@ def find_fjr_violation_witness(
 
 
 # Idea 5: voter union again. If cant afford prune... Valid??
+
+if __name__ == "__main__":
+    filename = "France_Toulouse_2022_6_-_Saint-Cyprien.pb"
+    w = _load_cache(filename)["winning_sets"]
+    approvals, costs, projects, budget, proj_name_to_idx = _build_ejr_inputs(filename)
+
+    def cost_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
+        return sum(costs[p] for p in project_set if p in ballot)
+
+    res = find_fjr_violation_witness(
+        approvals,
+        w,
+        costs,
+        projects,
+        budget,
+        cost_utility_func,
+        verbose=True,
+        exit_early=True,
+    )
+    print(res)

@@ -34,7 +34,9 @@ def _load_cache(filename: str) -> dict:
         return json.load(f)
 
 
-def _build_ejr_inputs(instance, profile):
+def _build_ejr_inputs(filename: str):
+    instance, profile = _parse_election(filename)
+
     projects = sorted(instance, key=lambda p: str(p))
     proj_name_to_idx: dict[str, int] = {str(p): idx for idx, p in enumerate(projects)}
     approvals = [set(proj_name_to_idx[str(p)] for p in ballot) for ballot in profile]
@@ -80,10 +82,7 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
     metadata = cache.get("metadata", {})
     winning_sets_cache: dict = cache["winning_sets"]
 
-    instance, profile = _parse_election(filename)
-    approvals, costs, projects, budget, proj_name_to_idx = _build_ejr_inputs(
-        instance, profile
-    )
+    approvals, costs, projects, budget, proj_name_to_idx = _build_ejr_inputs(filename)
 
     def card_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
         return len([a for a in project_set if a in ballot])
