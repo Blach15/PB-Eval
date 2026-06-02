@@ -1,4 +1,4 @@
-from ejr import (
+from src.main.ejr import (
     find_ejr_1_violation_witness,
     find_ejr_x_violation_witness,
     find_ejr_violation_witness,

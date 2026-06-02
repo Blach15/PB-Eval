@@ -14,8 +14,8 @@ from pabutools.rules import (
 from pabutools.utils import Numeric
 from typing import Callable, Iterable
 import os
-from typess import EJRViolationWitness, EJRViolationResult
-from ejr import iterate_all_affordable_p_sets
+from src.main.typess import EJRViolationWitness, EJRViolationResult
+from src.main.ejr import iterate_all_affordable_p_sets
 
 
 def find_fjr_violation_witness(

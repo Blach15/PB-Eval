@@ -14,7 +14,7 @@ from pabutools.rules import (
 from pabutools.utils import Numeric
 from typing import Callable, Iterable
 import os
-from typess import EJRViolationWitness, EJRViolationResult
+from src.main.typess import EJRViolationWitness, EJRViolationResult
 
 
 def iterate_all_affordable_p_sets(
