@@ -1,22 +1,9 @@
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
-from numpy import sort
-from pabutools.election import (
-    Cardinality_Sat,
-    Project,
-    Instance,
-    Profile,
-    Cost_Sat,
-    parse_pabulib,
-)
-from pabutools.rules import (
-    greedy_utilitarian_welfare,
-    BudgetAllocation,
-)
+from pabutools.election import Project
 from pabutools.utils import Numeric
-from typing import Callable, Iterable
-from src.main.typess import EJRViolationWitness, EJRViolationResult
+from typing import Callable
 
 
 def iterate_all_affordable_p_sets(

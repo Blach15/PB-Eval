@@ -1,7 +1,6 @@
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
-from numpy import sort
 from pabutools.election import Project
 from pabutools.utils import Numeric
 from typing import Callable, Iterable
