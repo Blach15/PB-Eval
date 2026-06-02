@@ -7,11 +7,11 @@ from pabutools.election import Project
 
 # Crafted example where EJR_1 and EJR_X SHOULD differ:
 
-costs = [1, 3, 8, 9, 10]  # A=10, B=1, C=5
+costs = [4, 4, 4, 5, 1]  # A=10, B=1, C=5
 budget = 12
 # n_voters = 3
-approvals = [set({0, 2, 3}), set({0, 1, 3, 4}), set({0, 3})]
-winning_set = {1}  # only C funded
+approvals = [set({0, 3, 4}), set({1, 3, 4}), set({2, 3, 4})]
+winning_set = {0,1,2}  # only C funded
 
 projects = [Project(str(i), costs[i]) for i in range(len(costs))]
 
