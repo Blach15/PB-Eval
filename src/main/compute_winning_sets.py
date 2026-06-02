@@ -15,9 +15,11 @@ import os
 import time
 import json
 
+_DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data")
+
 
 def parsefile(filename: str, verbose: bool = True):
-    path = os.path.join("./elections/", filename)
+    path = os.path.join(_DATA_DIR, "elections", filename)
     instance, profile = parse_pabulib(path)
 
     projects = sorted(instance, key=lambda p: str(p))
@@ -148,9 +150,9 @@ def compute_winning_sets(filename: str, verbose: bool = True) -> str:
             "time": elapsed,
         }
 
-    os.makedirs("election_outcomes", exist_ok=True)
+    os.makedirs(os.path.join(_DATA_DIR, "election_outcomes"), exist_ok=True)
     output_filename = os.path.splitext(filename)[0] + ".json"
-    output_path = os.path.join("election_outcomes", output_filename)
+    output_path = os.path.join(_DATA_DIR, "election_outcomes", output_filename)
 
     with open(output_path, "w") as f:
         json.dump({"metadata": metadata, "winning_sets": winning_sets}, f, indent=2)
@@ -162,7 +164,7 @@ def compute_winning_sets(filename: str, verbose: bool = True) -> str:
 
 
 def run_all(verbose: bool = False):
-    elections_dir = "./elections/"
+    elections_dir = os.path.join(_DATA_DIR, "elections")
     files = sorted(f for f in os.listdir(elections_dir) if f.endswith(".pb"))
 
     for filename in files:

@@ -11,6 +11,8 @@ import sys
 
 _T = TypeVar("_T")
 
+_DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data")
+
 # ---------------------------------------------------------------------------
 # Analysis configs – determines which EJR-check types are included
 # ---------------------------------------------------------------------------
@@ -65,7 +67,7 @@ class OutcomeParser:
         )
     """
 
-    def __init__(self, outcomes_dir: str = "./outcomes") -> None:
+    def __init__(self, outcomes_dir: str = os.path.join(_DATA_DIR, "outcomes")) -> None:
         self.records: List[ElectionRecord] = self._load(outcomes_dir)
 
     def _load(self, outcomes_dir: str) -> List[ElectionRecord]:
@@ -1267,7 +1269,7 @@ def print_stats(config: str = "All_without_early") -> None:
       tex/pdf/, and a .tex snippet assembling them into a figure with subfigures
       is written to tex/.
     """
-    tex_dir = "06_tex"
+    tex_dir = os.path.join(_DATA_DIR, "06_tex")
     pdf_dir = os.path.join(tex_dir, "pdf")
     pdf_include_prefix = "06_tex/pdf"
     if os.path.exists(tex_dir):

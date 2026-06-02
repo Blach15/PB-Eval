@@ -16,6 +16,8 @@ from typing import Callable, Iterable
 import os
 from src.main.typess import EJRViolationWitness, EJRViolationResult
 
+_DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data")
+
 
 def iterate_all_affordable_p_sets(
     approvals: list[set[int]],
@@ -511,8 +513,8 @@ if __name__ == "__main__":
     def cost_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
         return sum(costs[p] for p in ([a for a in project_set if a in ballot]))
 
-    path = os.path.join("./elections/", "Hungary_Budapest_2024.pb")
-    # path = os.path.join("./elections/", "Netherlands_Amsterdam_332.pb")
+    path = os.path.join(_DATA_DIR, "elections", "Hungary_Budapest_2024.pb")
+    # path = os.path.join(_DATA_DIR, "elections", "Netherlands_Amsterdam_332.pb")
     instance, profile = parse_pabulib(path)
     outcome_greedy = greedy_utilitarian_welfare(
         instance, profile, sat_class=Cost_Sat, analytics=False

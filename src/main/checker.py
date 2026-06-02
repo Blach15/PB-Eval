@@ -12,16 +12,18 @@ from src.main.ejr import (
 )
 from src.main.typess import EJRViolationResult
 
+_DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data")
+
 
 def _parse_election(filename: str):
-    path = os.path.join("./elections/", filename)
+    path = os.path.join(_DATA_DIR, "elections", filename)
     instance, profile = parse_pabulib(path)
     return instance, profile
 
 
 def _load_cache(filename: str) -> dict:
     cache_path = os.path.join(
-        "election_outcomes", os.path.splitext(filename)[0] + ".json"
+        _DATA_DIR, "election_outcomes", os.path.splitext(filename)[0] + ".json"
     )
     if not os.path.exists(cache_path):
         raise FileNotFoundError(
@@ -285,9 +287,9 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
             },
         }
 
-    os.makedirs("outcomes", exist_ok=True)
+    os.makedirs(os.path.join(_DATA_DIR, "outcomes"), exist_ok=True)
     output_filename = os.path.splitext(filename)[0] + ".json"
-    output_path = os.path.join("outcomes", output_filename)
+    output_path = os.path.join(_DATA_DIR, "outcomes", output_filename)
 
     with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
@@ -297,7 +299,7 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
 
 
 def run_all(verbose: bool = False):
-    cache_dir = "./election_outcomes/"
+    cache_dir = os.path.join(_DATA_DIR, "election_outcomes")
     if not os.path.isdir(cache_dir):
         print(
             "No election_outcomes/ directory found. Run compute_winning_sets.py first."
@@ -310,7 +312,7 @@ def run_all(verbose: bool = False):
 
     for filename in files:
         output_filename = os.path.splitext(filename)[0] + ".json"
-        result_path = os.path.join("outcomes", output_filename)
+        result_path = os.path.join(_DATA_DIR, "outcomes", output_filename)
 
         if os.path.exists(result_path):
             print(f"\n--- {filename} --- (skipped, result exists)")
