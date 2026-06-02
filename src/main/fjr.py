@@ -18,6 +18,7 @@ from src.main.typess import EJRViolationWitness, EJRViolationResult
 from src.main.ejr import iterate_all_affordable_p_sets
 
 
+# Functionally correct algorithm, but not viable for large instances.
 def find_fjr_violation_witness(
     approvals: list[set[int]],
     winning_set: set[int],
