@@ -1,3 +1,4 @@
+import json
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
@@ -75,8 +76,8 @@ def find_fjr_violation_witness(
                 sum(costs[p] for p in p_set) * n
             ) / budget
             if len(unsat_voters) >= needed_voters_larger_or_equal_to:
-                if verbose:
-                    print(f"T: {p_set}, voters: {unsat_voters}")
+                # if verbose:
+                # print(f"T: {p_set}, voters: {unsat_voters}")
 
                 return EJRViolationResult(
                     witness=[EJRViolationWitness(p_set, unsat_voters, None)],
@@ -141,12 +142,18 @@ def find_fjr_violation_witness(
 # Idea 5: voter union again. If cant afford prune... Valid??
 
 if __name__ == "__main__":
-    filename = "France_Toulouse_2022_6_-_Saint-Cyprien.pb"
-    w = _load_cache(filename)["winning_sets"]
+    filename = "Netherlands_Amsterdam_2020_Oost_-_Oud_Oost.pb"
     approvals, costs, projects, budget, proj_name_to_idx = _build_ejr_inputs(filename)
+    w_cache = _load_cache(filename)["winning_sets"]
+    w: set[int] = set(
+        proj_name_to_idx[pname] for pname in w_cache["Greedy[card]"]["projects"]
+    )
 
     def cost_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
         return sum(costs[p] for p in project_set if p in ballot)
+
+    def card_utility_func(project_set: Iterable[int], ballot: set[int]) -> Numeric:
+        return len([a for a in project_set if a in ballot])
 
     res = find_fjr_violation_witness(
         approvals,
@@ -154,8 +161,35 @@ if __name__ == "__main__":
         costs,
         projects,
         budget,
-        cost_utility_func,
+        card_utility_func,
         verbose=True,
         exit_early=True,
     )
-    print(res)
+    # print res as readable json
+    print(
+        json.dumps(
+            {
+                "witness": [
+                    {
+                        "p_set": witness.p_set,
+                        "voters": len(witness.voters),
+                        "max_util": witness.max_util,
+                    }
+                    for witness in res.witness
+                ],
+                "p_sets_checked": res.p_sets_checked,
+                "unsat_voter_union": (
+                    list(res.unsat_voter_union)
+                    if res.unsat_voter_union is not None
+                    else None
+                ),
+                "unsat_voter_violation_union": (
+                    list(res.unsat_voter_violation_union)
+                    if res.unsat_voter_violation_union is not None
+                    else None
+                ),
+                "layers_checked": res.layers_checked,
+            },
+            indent=4,
+        )
+    )
