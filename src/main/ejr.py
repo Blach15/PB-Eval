@@ -9,6 +9,13 @@ from src.main.typess import EJRViolationWitness, EJRViolationResult
 from src.main.iteration_util import iterate_all_affordable_p_sets
 
 
+def is_subsetset(p_set: tuple[int, ...], winning_set: set[int]) -> bool:
+    for p in p_set:
+        if p not in winning_set:
+            return False
+    return True
+
+
 def find_ejr_violation_witness(
     approvals: list[set[int]],
     winning_set: set[int],
@@ -34,6 +41,9 @@ def find_ejr_violation_witness(
         p_sets_checked += 1
 
     def check_ejr(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
+        if is_subsetset(p_set, winning_set):
+            return False  # T subsetset W
+
         unsat_voters = {
             i
             for i in voter_intersection
@@ -48,9 +58,11 @@ def find_ejr_violation_witness(
         if len(unsat_voters) >= needed_voters_larger_or_equal_to:
             if verbose:
                 print(f"T: {p_set}, voters: {unsat_voters}")
+            if exit_early:
+                witnesses.append(EJRViolationWitness(p_set, unsat_voters, None))
+                return True  # exit early, to find 1 witness
 
-            if not exit_early:
-                unsat_voter_violation_union.update(unsat_voters)
+            unsat_voter_violation_union.update(unsat_voters)
 
             # for the voter i in the minimum set of voters, who is the closest to being satisfied
             # find the a in: a * util_p = util_win
@@ -66,7 +78,7 @@ def find_ejr_violation_witness(
             )
             return exit_early  # exit early, to find 1 witness
 
-        return False  # continue searching for more witnesses, don't exit early
+        return False  # continue searching for more witnesses, don't exit
 
     layers_checked = iterate_all_affordable_p_sets(
         approvals,
