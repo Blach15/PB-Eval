@@ -1161,6 +1161,233 @@ def graph_vote_length_vs_largest_t_checked(
     )
 
 
+def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
+    """
+    For each utility (cost, card), return a SubfigureGrid with one subfigure
+    per feature.  Each subfigure plots one point per election: x = feature
+    value, y = number of algorithms that found an EJR violation for that
+    election.  Points with y=0 (no violations) are green; points with y>0
+    are red.
+    """
+    parser = OutcomeParser()
+
+    feature_names = [
+        "budget_limit",
+        "number_of_voters",
+        "vote_length",
+        "number_of_projects",
+        "average_project_cost",
+        "budget_per_avg_cost",
+        "vote_length_times_avg_cost",
+    ]
+
+    election_data: dict[str, dict[str, dict]] = {"cost": {}, "card": {}}
+
+    for rec in parser.records:
+        meta = rec.metadata
+        budget = meta.get("budget_limit")
+        apc = meta.get("average_project_cost")
+        vl = meta.get("vote_length")
+        raw_features = {
+            "budget_limit": budget,
+            "number_of_voters": meta.get("number_of_voters"),
+            "vote_length": vl,
+            "number_of_projects": meta.get("number_of_projects"),
+            "average_project_cost": apc,
+            "budget_per_avg_cost": (
+                (budget / apc) if budget is not None and apc else None
+            ),
+            "vote_length_times_avg_cost": (
+                (vl * apc) if vl is not None and apc is not None else None
+            ),
+        }
+        for utility in ["cost", "card"]:
+            if rec.filename not in election_data[utility]:
+                election_data[utility][rec.filename] = {
+                    **raw_features,
+                    "violation_count": 0,
+                }
+            ejr_result = rec.results.get("ejr", {}).get(utility)
+            if ejr_result and ejr_result.get("violation_found", False):
+                election_data[utility][rec.filename]["violation_count"] += 1
+
+    figures = []
+    for utility in ["cost", "card"]:
+        rows_data = list(election_data[utility].values())
+        graphs = []
+        for feat in feature_names:
+            sat_pts = [
+                (r[feat], r["violation_count"])
+                for r in rows_data
+                if r[feat] is not None and r["violation_count"] == 0
+            ]
+            vio_pts = [
+                (r[feat], r["violation_count"])
+                for r in rows_data
+                if r[feat] is not None and r["violation_count"] > 0
+            ]
+
+            sat_feat_vals = [p[0] for p in sat_pts]
+            vio_feat_vals = [p[0] for p in vio_pts]
+            sat_mean = float(np.mean(sat_feat_vals)) if sat_feat_vals else None
+            vio_mean = float(np.mean(vio_feat_vals)) if vio_feat_vals else None
+            sat_str = f"{sat_mean:.2f}" if sat_mean is not None else "N/A"
+            vio_str = f"{vio_mean:.2f}" if vio_mean is not None else "N/A"
+
+            max_vio = max((p[1] for p in vio_pts), default=0)
+
+            plot_lines = []
+            if sat_pts:
+                plot_lines.append(
+                    PlotLine(
+                        color="green",
+                        coordinates=sat_pts,
+                        legend_entry="0 violations",
+                        mark="*",
+                        mark_size=1,
+                        only_marks=True,
+                        style="fill opacity=0.4, draw opacity=0.4",
+                    )
+                )
+            if vio_pts:
+                plot_lines.append(
+                    PlotLine(
+                        color="red",
+                        coordinates=vio_pts,
+                        legend_entry="$\\geq$1 violation",
+                        mark="*",
+                        mark_size=1,
+                        only_marks=True,
+                        style="fill opacity=0.4, draw opacity=0.4",
+                    )
+                )
+
+            if plot_lines:
+                graphs.append(
+                    Graph(
+                        title=feat.replace("_", " "),
+                        xlabel=f"{feat.replace('_', ' ')} (sat={sat_str}, vio={vio_str})",
+                        ylabel="\\# violations",
+                        plot_lines=plot_lines,
+                        ymajorgrids=True,
+                        grid_style="dashed",
+                        xmode="linear",
+                        ymode="linear",
+                        legend_pos="outer north east",
+                        ymin=-0.5,
+                        ymax=max_vio + 0.5,
+                    )
+                )
+
+        if graphs:
+            figures.append(
+                SubfigureGrid(
+                    title=f"EJR[{utility}] Feature vs Violation Count",
+                    caption=(
+                        f"Each point is one election (EJR[{utility}]). "
+                        f"x = feature value, y = number of algorithms that found a violation. "
+                        f"Green (y=0): no violations; red (y$>$0): at least one violation. "
+                        f"X-axis labels show the mean feature value for each group (sat / vio)."
+                    ),
+                    graphs=graphs,
+                )
+            )
+
+    return figures
+
+
+def graph_ejr_violation_budget_vs_voters() -> List[Graph]:
+    """
+    For each election and each utility (cost, card), determine if EJR is
+    violated by ANY voting rule (any algorithm).  Plot elections as scatter
+    points: green = satisfied in every rule, red = violated in at least one.
+    X-axis: budget, Y-axis: number of voters.
+
+    Returns a list of two Graph objects: one for EJR[cost], one for EJR[card].
+    """
+    parser = OutcomeParser()
+
+    # {utility: {filename: {violated, budget, voters}}}
+    election_data: dict[str, dict[str, dict]] = {
+        "cost": {},
+        "card": {},
+    }
+
+    for rec in parser.records:
+        budget = rec.metadata.get("budget_limit")
+        voters = rec.metadata.get("number_of_voters")
+        if budget is None or voters is None:
+            continue
+        if budget > 10000000:
+            continue  # Exclude extreme outliers for better visualization
+        for utility in ["cost", "card"]:
+            if rec.filename not in election_data[utility]:
+                election_data[utility][rec.filename] = {
+                    "violated": False,
+                    "budget": budget,
+                    "voters": voters,
+                }
+            ejr_result = rec.results.get("ejr", {}).get(utility)
+            if ejr_result and ejr_result.get("violation_found", False):
+                election_data[utility][rec.filename]["violated"] = True
+
+    graphs = []
+    for utility in ["cost", "card"]:
+        by_election = election_data[utility]
+        if not by_election:
+            continue
+
+        satisfied = [
+            (d["budget"], d["voters"])
+            for d in by_election.values()
+            if not d["violated"]
+        ]
+        violated = [
+            (d["budget"], d["voters"]) for d in by_election.values() if d["violated"]
+        ]
+
+        plot_lines = []
+        if satisfied:
+            plot_lines.append(
+                PlotLine(
+                    color="green",
+                    coordinates=satisfied,
+                    legend_entry="Satisfied (all rules)",
+                    mark="*",
+                    mark_size=1.5,
+                    only_marks=True,
+                )
+            )
+        if violated:
+            plot_lines.append(
+                PlotLine(
+                    color="red",
+                    coordinates=violated,
+                    legend_entry="Violated (some rule)",
+                    mark="*",
+                    mark_size=1.5,
+                    only_marks=True,
+                )
+            )
+
+        if plot_lines:
+            graphs.append(
+                Graph(
+                    title=f"EJR[{utility}] Violations: Budget vs Number of Voters",
+                    xlabel="Budget",
+                    ylabel="Number of Voters",
+                    plot_lines=plot_lines,
+                    ymajorgrids=True,
+                    grid_style="dashed",
+                    xmode="linear",
+                    ymode="linear",
+                    legend_pos="outer north east",
+                )
+            )
+
+    return graphs
+
+
 _LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
 \\usepackage{tikz}
 \\usepackage{booktabs}
@@ -1278,11 +1505,6 @@ def print_stats(config: str = "All_without_early") -> None:
     os.makedirs(pdf_dir)
 
     functions = [
-        # (
-        #     "parse_outcomes_and_count_satisfying_properties",
-        #     parse_outcomes_and_count_satisfying_properties(config),
-        # ),
-        # ("print_results_by_sat_function", print_results_by_sat_function(config)),
         ("print_results_by_algorithm", print_results_by_algorithm(config)),  # GOAT
         (
             "analyze_ejr_violations_by_utility",
@@ -1335,6 +1557,14 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_algorithm_time_vs_budget_per_avg_cost",
             [graph_algorithm_time_vs_budget_per_avg_cost(config)],
+        ),
+        (
+            "analyze_ejr_violation_mutual_information",
+            analyze_ejr_violation_mutual_information(),
+        ),
+        (
+            "graph_ejr_violation_budget_vs_voters",
+            graph_ejr_violation_budget_vs_voters(),
         ),
     ]
 
