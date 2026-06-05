@@ -209,7 +209,7 @@ class PlotLine:
 
     color: str
     coordinates: List[tuple]  # List of (x, y) tuples
-    legend_entry: str
+    legend_entry: Optional[str] = None
     mark: Optional[str] = None
     mark_size: Optional[float] = None
     only_marks: bool = False
@@ -224,7 +224,12 @@ class PlotLine:
             f", mark size={self.mark_size}pt" if self.mark_size is not None else ""
         )
         style_str = f", {self.style}" if self.style is not None else ""
-        return f"\\addplot[{only_marks_str}color={self.color}{mark_str}{mark_size_str}{style_str}]coordinates {{ {coords_str}}};\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
+        legend_str = (
+            f"\\addlegendentry{{{escape_latex(self.legend_entry)}}}"
+            if self.legend_entry is not None
+            else ""
+        )
+        return f"\\addplot[{only_marks_str}color={self.color}{mark_str}{mark_size_str}{style_str}]coordinates {{ {coords_str}}};{legend_str}"
 
 
 @dataclass
@@ -334,7 +339,12 @@ class SubfigureGrid:
         print("\\end{figure}", file=file)
 
     @staticmethod
-    def _print_graph(graph: "Graph", file: TextIO) -> None:
+    def _print_graph(
+        graph: "Graph",
+        file: TextIO,
+        height: Optional[str] = None,
+        width: Optional[str] = None,
+    ) -> None:
         """Render a Graph as a tikzpicture with legend entries."""
         print("    \\begin{tikzpicture}", file=file)
         axis_options = [
@@ -347,6 +357,8 @@ class SubfigureGrid:
             *([f"ymin={graph.ymin}"] if graph.ymin is not None else []),
             *([f"ymax={graph.ymax}"] if graph.ymax is not None else []),
             *([f"x dir={graph.xdir}"] if graph.xdir is not None else []),
+            *([f"width={width}"] if width is not None else []),
+            *([f"height={height}"] if height is not None else []),
         ]
         print("    \\begin{axis}[" + ", ".join(axis_options) + "]", file=file)
         for pl in graph.plot_lines:
@@ -360,7 +372,11 @@ class SubfigureGrid:
                 f"    \\addplot[{only_marks_opt}color={pl.color}{mark_opt}{mark_size_opt}]coordinates {{ {coords_str}}};",
                 file=file,
             )
-            print(f"    \\addlegendentry{{{escape_latex(pl.legend_entry)}}}", file=file)
+            if pl.legend_entry is not None:
+                print(
+                    f"    \\addlegendentry{{{escape_latex(pl.legend_entry)}}}",
+                    file=file,
+                )
         print("    \\end{axis}", file=file)
         print("    \\end{tikzpicture}", file=file)
 
@@ -1217,48 +1233,34 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
         graphs = []
         for feat in feature_names:
             sat_pts = [
-                (r[feat], r["violation_count"])
+                (r["violation_count"], r[feat])
                 for r in rows_data
                 if r[feat] is not None and r["violation_count"] == 0
             ]
             vio_pts = [
-                (r[feat], r["violation_count"])
+                (r["violation_count"], r[feat])
                 for r in rows_data
                 if r[feat] is not None and r["violation_count"] > 0
             ]
 
-            sat_feat_vals = [p[0] for p in sat_pts]
-            vio_feat_vals = [p[0] for p in vio_pts]
+            sat_feat_vals = [p[1] for p in sat_pts]
+            vio_feat_vals = [p[1] for p in vio_pts]
             sat_mean = float(np.mean(sat_feat_vals)) if sat_feat_vals else None
             vio_mean = float(np.mean(vio_feat_vals)) if vio_feat_vals else None
             sat_str = f"{sat_mean:.2f}" if sat_mean is not None else "N/A"
             vio_str = f"{vio_mean:.2f}" if vio_mean is not None else "N/A"
 
-            max_vio = max((p[1] for p in vio_pts), default=0)
+            max_vio = max((p[0] for p in vio_pts), default=0)
+            all_pts = sat_pts + vio_pts
+            avg_coords = OutcomeParser.moving_average(all_pts)
 
             plot_lines = []
-            if sat_pts:
+            if avg_coords:
                 plot_lines.append(
                     PlotLine(
-                        color="green",
-                        coordinates=sat_pts,
-                        legend_entry="0 violations",
-                        mark="*",
-                        mark_size=1,
-                        only_marks=True,
-                        style="fill opacity=0.4, draw opacity=0.4",
-                    )
-                )
-            if vio_pts:
-                plot_lines.append(
-                    PlotLine(
-                        color="red",
-                        coordinates=vio_pts,
-                        legend_entry="$\\geq$1 violation",
-                        mark="*",
-                        mark_size=1,
-                        only_marks=True,
-                        style="fill opacity=0.4, draw opacity=0.4",
+                        color="blue",
+                        coordinates=avg_coords,
+                        legend_entry=f"Mean violation count (sat={sat_str}, vio={vio_str})",
                     )
                 )
 
@@ -1266,16 +1268,16 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
                 graphs.append(
                     Graph(
                         title=feat.replace("_", " "),
-                        xlabel=f"{feat.replace('_', ' ')} (sat={sat_str}, vio={vio_str})",
-                        ylabel="\\# violations",
+                        xlabel="\\# violations",
+                        ylabel=f"{feat.replace('_', ' ')}",  # (sat={sat_str}, vio={vio_str})",
                         plot_lines=plot_lines,
                         ymajorgrids=True,
                         grid_style="dashed",
                         xmode="linear",
                         ymode="linear",
                         legend_pos="outer north east",
-                        ymin=-0.5,
-                        ymax=max_vio + 0.5,
+                        ymin=None,
+                        ymax=None,
                     )
                 )
 
@@ -1285,7 +1287,7 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
                     title=f"EJR[{utility}] Feature vs Violation Count",
                     caption=(
                         f"Each point is one election (EJR[{utility}]). "
-                        f"x = feature value, y = number of algorithms that found a violation. "
+                        f"x = feature value, y = number of algorithms that found a violation as moving average. "
                         f"Green (y=0): no violations; red (y$>$0): at least one violation. "
                         f"X-axis labels show the mean feature value for each group (sat / vio)."
                     ),
@@ -1457,12 +1459,19 @@ def _compile_subfigure_grid(
     \\includegraphics.
     """
     n = len(grid.graphs)
+    num_rows = (n + 1) // 2
+    # Set axis width close to the rendered size (0.49\textwidth ≈ 8cm minus ~1cm
+    # for ylabel+tick labels), so \includegraphics[width=\linewidth] scales
+    # at roughly 1× and font sizes stay at document size.
+    # Height is left to pgfplots default (natural aspect ratio).
+    graph_width = "7cm"
+    graph_height = None
     graph_names = []
 
     for j, graph in enumerate(grid.graphs):
         graph_name = f"{name}_graph_{j}"
         buf = io.StringIO()
-        SubfigureGrid._print_graph(graph, buf)
+        SubfigureGrid._print_graph(graph, buf, height=graph_height, width=graph_width)
         print(f"Compiling {graph_name}...")
         _compile_snippet_to_pdf(buf.getvalue(), graph_name, pdf_dir)
         graph_names.append(graph_name)
