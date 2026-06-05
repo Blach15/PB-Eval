@@ -179,7 +179,7 @@ class Table:
         col_spec = "c" * num_cols
 
         print(f"\n\n% {self.title}" if self.title else "% Table", file=file)
-        print("\\begin{table}[h]", file=file)
+        print("\\begin{table}[H]", file=file)
         print("\\centering", file=file)
         print(f"\\begin{{tabular}}{{{col_spec}}}", file=file)
         print("\\toprule", file=file)
