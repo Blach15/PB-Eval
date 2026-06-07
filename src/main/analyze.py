@@ -35,7 +35,7 @@ _EJR_LABELS: dict[str, str] = {
 
 def escape_latex(s: str) -> str:
     """Escape special LaTeX characters in a string."""
-    return s.replace("%", "\\%").replace("_", "\\_")
+    return s.replace("_", "\\_")
 
 
 @dataclass
@@ -178,7 +178,7 @@ class Table:
         num_cols = len(self.headers)
         col_spec = "c" * num_cols
 
-        print(f"\n\n% {self.title}" if self.title else "% Table", file=file)
+        print(f"\n\n\\% {self.title}" if self.title else "\\% Table", file=file)
         print("\\begin{table}[H]", file=file)
         print("\\centering", file=file)
         print(f"\\begin{{tabular}}{{{col_spec}}}", file=file)
@@ -432,16 +432,16 @@ def parse_outcomes_and_count_satisfying_properties(
             violated = counters[prop_key][key]["violated"]
             total = satisfied + violated
             pct = (satisfied / total * 100) if total > 0 else 0
-            rows.append([key, satisfied, violated, f"{pct:.1f}%"])
+            rows.append([key, satisfied, violated, f"{pct:.1f}\\%"])
 
         total_satisfied = sum(v["satisfied"] for v in counters[prop_key].values())
         total_violated = sum(v["violated"] for v in counters[prop_key].values())
         total_all = total_satisfied + total_violated
         total_pct = (total_satisfied / total_all * 100) if total_all > 0 else 0
-        rows.append(["TOTAL", total_satisfied, total_violated, f"{total_pct:.1f}%"])
+        rows.append(["TOTAL", total_satisfied, total_violated, f"{total_pct:.1f}\\%"])
 
         table = Table(
-            headers=["Algorithm", "Satisfied", "Violated", "Satisfaction %"],
+            headers=["Algorithm", "Satisfied", "Violated", "Satisfaction \\%"],
             rows=rows,
             title=f"Analysis of {prop_name}",
         )
@@ -496,7 +496,7 @@ def print_results_by_sat_function(
                         violated = algo_results[algo_name]["violated"]
                         total = satisfied + violated
                         pct = (satisfied / total * 100) if total > 0 else 0
-                        rows.append([algo_name, satisfied, total, f"{pct:.1f}%"])
+                        rows.append([algo_name, satisfied, total, f"{pct:.1f}\\%"])
 
                     total_satisfied = sum(r["satisfied"] for r in algo_results.values())
                     total_violated = sum(r["violated"] for r in algo_results.values())
@@ -505,11 +505,11 @@ def print_results_by_sat_function(
                         (total_satisfied / grand_total * 100) if grand_total > 0 else 0
                     )
                     rows.append(
-                        ["TOTAL", total_satisfied, grand_total, f"{pct_total:.1f}%"]
+                        ["TOTAL", total_satisfied, grand_total, f"{pct_total:.1f}\\%"]
                     )
 
                     table = Table(
-                        headers=["Algorithm", "Satisfied", "Total", "Satisfaction %"],
+                        headers=["Algorithm", "Satisfied", "Total", "Satisfaction \\%"],
                         rows=rows,
                         title=f"{_EJR_LABELS.get(ejr_type, ejr_type.upper())}[{utility}]",
                     )
@@ -568,7 +568,7 @@ def print_results_by_algorithm(
             if counts:
                 total = counts["satisfied"] + counts["violated"]
                 pct = (counts["satisfied"] / total * 100) if total > 0 else 0
-                row.append(f"{pct:.1f}%")
+                row.append(f"{pct:.1f}\\%")
             else:
                 row.append("N/A")
         rows.append(row)
@@ -812,6 +812,66 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
     )
 
     return graph
+
+
+def graph_exclusion_ratio_distribution() -> List[Graph]:
+    """
+    For each algorithm, collect the exclusion_ratio (no_util_voters / number_of_voters)
+    across all elections. Then compute a CDF: for each x in [0.00, 0.01, ..., 1.00],
+    compute the percentage of elections where exclusion_ratio <= x.
+
+    Returns a list containing one Graph with one line per algorithm showing the CDF of exclusion ratios.
+    """
+    parser = OutcomeParser()
+
+    # Structure: {algo_name: [exclusion_ratio_per_election, ...]}
+    data_by_algo: dict[str, list[float]] = defaultdict(list)
+
+    for rec in parser.records:
+        n_voters = rec.metadata.get("number_of_voters")
+        no_util_voters = rec.algo_stats.get("no_util_voters")
+
+        if n_voters is not None and no_util_voters is not None and n_voters > 0:
+            exclusion_ratio = no_util_voters / n_voters
+            data_by_algo[rec.algo_name].append(exclusion_ratio)
+
+    x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
+
+    plot_lines = []
+    for i, algo_name in enumerate(sorted(data_by_algo.keys())):
+        exclusion_ratios = data_by_algo[algo_name]
+        n = len(exclusion_ratios)
+        if n == 0:
+            continue
+        coordinates = [
+            (x, round(sum(1 for v in exclusion_ratios if v >= x) / n * 100, 2))
+            for x in x_points
+        ]
+        plot_lines.append(
+            PlotLine(
+                color=colors[i % len(colors)],
+                coordinates=coordinates,
+                legend_entry=algo_name,
+            )
+        )
+
+    if not plot_lines:
+        return []
+
+    return [
+        Graph(
+            title="Exclusion Ratio Distribution",
+            xlabel="Exclusion Ratio (Voters with no utility)",
+            ylabel="Elections with Exclusion Ratio $\\geq x$ \\%",
+            plot_lines=plot_lines,
+            ymajorgrids=True,
+            grid_style="dashed",
+            xmode="linear",
+            ymode="linear",
+            legend_pos="outer north east",
+        )
+    ]
 
 
 def graph_min_violation_degree_distribution_pr() -> List[Graph]:
@@ -1620,6 +1680,10 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_min_violation_degree_distribution_pr",
             graph_min_violation_degree_distribution_pr(),
+        ),
+        (
+            "graph_exclusion_ratio_distribution",
+            graph_exclusion_ratio_distribution(),
         ),
         (
             "graph_unsat_voter_fraction_distribution_pr",
