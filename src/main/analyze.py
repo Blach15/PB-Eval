@@ -579,6 +579,80 @@ def print_results_by_algorithm(
     return [table]
 
 
+def analyze_utility_comparison() -> Table:
+    """
+    Compare utility (cost efficiency) across algorithms, normalized to Greedy baseline.
+
+    For each election, computes relative utility scores per algorithm:
+    - Card: algo_stats[card][util_mean] / Greedy[card]'s algo_stats[card][util_mean]
+    - Cost: algo_stats[cost][util_mean] / Greedy[cost]'s algo_stats[cost][util_mean]
+
+    Then aggregates across elections by taking the mean relative score per algorithm.
+
+    Returns a Table with columns: Algorithm, Card (relative), Cost (relative).
+    """
+    parser = OutcomeParser()
+
+    # Structure: {filename: {algo_name: {utility: util_mean}}}
+    election_data: dict[str, dict[str, dict[str, float]]] = defaultdict(
+        lambda: defaultdict(dict)
+    )
+
+    # Collect util_mean per election, algorithm, and utility
+    for rec in parser.records:
+        for utility in ["card", "cost"]:
+            # algo_stats has structure like {"card": {"util_mean": X}, "cost": {...}}
+            util_mean = rec.algo_stats.get(utility, {}).get("util_mean")
+            if util_mean is not None:
+                election_data[rec.filename][rec.algo_name][utility] = util_mean
+
+    # Structure: {algo_name: {utility: [relative_scores_per_election, ...]}}
+    relative_scores: dict[str, dict[str, list[float]]] = defaultdict(
+        lambda: {"card": [], "cost": []}
+    )
+
+    # Compute relative scores per election
+    for filename, algo_utils in election_data.items():
+        # Use capitalized names: Greedy[card], Greedy[cost]
+        greedy_card_util = algo_utils.get("Greedy[card]", {}).get("card")
+        greedy_cost_util = algo_utils.get("Greedy[cost]", {}).get("cost")
+
+        if greedy_card_util is not None or greedy_cost_util is not None:
+            for algo_name, utilities in algo_utils.items():
+                card_util = utilities.get("card")
+                cost_util = utilities.get("cost")
+
+                if card_util is not None and greedy_card_util is not None:
+                    relative_scores[algo_name]["card"].append(
+                        card_util / greedy_card_util
+                    )
+                if cost_util is not None and greedy_cost_util is not None:
+                    relative_scores[algo_name]["cost"].append(
+                        cost_util / greedy_cost_util
+                    )
+
+    # Build table rows
+    rows = []
+    for algo_name in sorted(relative_scores.keys()):
+        card_rels = relative_scores[algo_name]["card"]
+        cost_rels = relative_scores[algo_name]["cost"]
+
+        card_mean = f"{np.mean(card_rels):.4f}" if card_rels else "N/A"
+        cost_mean = f"{np.mean(cost_rels):.4f}" if cost_rels else "N/A"
+
+        rows.append([algo_name, card_mean, cost_mean])
+
+    return Table(
+        headers=[
+            "Algorithm",
+            "Card (rel. to Greedy[card])",
+            "Cost (rel. to Greedy[cost])",
+        ],
+        rows=rows,
+        title="Utility Comparison by Algorithm (Relative to Greedy)",
+    )
+
+
 def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
     """
     Analyze the 'violation_degree' (1 - satisfaction_degree) for EJR-cost and EJR-card per algorithm.
@@ -1514,6 +1588,7 @@ def print_stats(config: str = "All_without_early") -> None:
 
     functions = [
         ("print_results_by_algorithm", print_results_by_algorithm(config)),  # GOAT
+        ("analyze_utility_comparison", [analyze_utility_comparison()]),
         (
             "analyze_ejr_violations_by_utility",
             analyze_ejr_violations_by_utility(),
