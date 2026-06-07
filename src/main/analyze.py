@@ -32,10 +32,47 @@ _EJR_LABELS: dict[str, str] = {
     "ejr_1": "EJR-1",
 }
 
+_ALGO_LABELS: dict[str, str] = {
+    "Greedy[card]": "\\text{Greedy[$\\mu^{\\#}$]}",
+    "Greedy[cost]": "\\text{Greedy[$\\mu^{c}$]}",
+    "MES[card]": "\\text{MES[$\\mu^{\\#}$]}",
+    "MES[cost]": "\\text{MES[$\\mu^{c}$]}",
+    "Phragmen": "\\text{seq-Phragmén}",
+}
+_ALGO_LABELS.update(
+    {
+        "MES[card]_Greedy[card]]": f"${_ALGO_LABELS['MES[card]']}_"
+        + "{"
+        + f"{_ALGO_LABELS['Greedy[card]']}"
+        + "}$",
+        "MES[cost]_Greedy[cost]]": f"${_ALGO_LABELS['MES[cost]']}_"
+        + "{"
+        + f"{_ALGO_LABELS['Greedy[cost]']}"
+        + "}$",
+        "Phragmen_Greedy[card]]": f"${_ALGO_LABELS['Phragmen']}_"
+        + "{"
+        + f"{_ALGO_LABELS['Greedy[card]']}"
+        + "}$",
+        "Phragmen_Greedy[cost]]": f"${_ALGO_LABELS['Phragmen']}_"
+        + "{"
+        + f"{_ALGO_LABELS['Greedy[cost]']}"
+        + "}$",
+    }
+)
+
+
+def get_algo_label(algo_name: str) -> str:
+    """Get the display label for an algorithm name.
+
+    Returns the mapped label from _ALGO_LABELS if it exists,
+    otherwise returns the algorithm name unchanged.
+    """
+    return _ALGO_LABELS.get(algo_name, algo_name)
+
 
 def escape_latex(s: str) -> str:
     """Escape special LaTeX characters in a string."""
-    return s.replace("_", "\\_")
+    return s
 
 
 @dataclass
@@ -178,7 +215,7 @@ class Table:
         num_cols = len(self.headers)
         col_spec = "c" * num_cols
 
-        print(f"\n\n\\% {self.title}" if self.title else "\\% Table", file=file)
+        print(f"\n\n% {self.title}" if self.title else "% Table", file=file)
         print("\\begin{table}[H]", file=file)
         print("\\centering", file=file)
         print(f"\\begin{{tabular}}{{{col_spec}}}", file=file)
@@ -496,7 +533,14 @@ def print_results_by_sat_function(
                         violated = algo_results[algo_name]["violated"]
                         total = satisfied + violated
                         pct = (satisfied / total * 100) if total > 0 else 0
-                        rows.append([algo_name, satisfied, total, f"{pct:.1f}\\%"])
+                        rows.append(
+                            [
+                                get_algo_label(algo_name),
+                                satisfied,
+                                total,
+                                f"{pct:.1f}\\%",
+                            ]
+                        )
 
                     total_satisfied = sum(r["satisfied"] for r in algo_results.values())
                     total_violated = sum(r["violated"] for r in algo_results.values())
@@ -562,7 +606,7 @@ def print_results_by_algorithm(
 
     rows = []
     for algo_name in sorted(by_algo.keys()):
-        row = [algo_name]
+        row = [get_algo_label(algo_name)]
         for ejr_type, utility in columns:
             counts = by_algo[algo_name].get(ejr_type, {}).get(utility)
             if counts:
@@ -655,21 +699,21 @@ def analyze_utility_comparison() -> Table:
         cost_rels = relative_scores[algo_name]["cost"]
         usage_ratios = budget_usage.get(algo_name, [])
 
-        card_mean = f"{np.mean(card_rels):.4f}" if card_rels else "N/A"
-        cost_mean = f"{np.mean(cost_rels):.4f}" if cost_rels else "N/A"
-        budget_mean = f"{np.mean(usage_ratios):.4f}" if usage_ratios else "N/A"
+        card_mean = f"{round(np.mean(card_rels), 2)}" if card_rels else "N/A"
+        cost_mean = f"{round(np.mean(cost_rels), 2)}" if cost_rels else "N/A"
+        budget_mean = f"{round(np.mean(usage_ratios), 2)}" if usage_ratios else "N/A"
 
-        rows.append([algo_name, card_mean, cost_mean, budget_mean])
+        rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean])
 
     return Table(
         headers=[
             "Algorithm",
-            "Card (rel. to Greedy[card])",
-            "Cost (rel. to Greedy[cost])",
-            "Budget Usage",
+            "$\\mu^{\\#}_{\\text{rel. to Greedy[card]}} \\%$",
+            "$\\mu^{c}_{\\text{rel. to Greedy[cost]}} \\%$",
+            "Budget Usage \\%",
         ],
         rows=rows,
-        title="Utility Comparison and Budget Usage by Algorithm",
+        title="Average Utility Comparison and Budget Usage by Algorithm",
     )
 
 
@@ -712,7 +756,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
 
             rows.append(
                 [
-                    algo_name,
+                    get_algo_label(algo_name),
                     len(violations),
                     f"{mean:.4f}",
                     f"{median:.4f}",
@@ -852,7 +896,7 @@ def graph_exclusion_ratio_distribution() -> List[Graph]:
             PlotLine(
                 color=colors[i % len(colors)],
                 coordinates=coordinates,
-                legend_entry=algo_name,
+                legend_entry=get_algo_label(algo_name),
             )
         )
 
@@ -923,7 +967,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
                 PlotLine(
                     color=colors[i % len(colors)],
                     coordinates=coordinates,
-                    legend_entry=algo_name,
+                    legend_entry=get_algo_label(algo_name),
                 )
             )
 
@@ -996,7 +1040,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
                 PlotLine(
                     color=colors[i % len(colors)],
                     coordinates=coordinates,
-                    legend_entry=algo_name,
+                    legend_entry=get_algo_label(algo_name),
                 )
             )
 
@@ -1058,7 +1102,7 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
 
             graphs.append(
                 Graph(
-                    title=algo_name,
+                    title=get_algo_label(algo_name),
                     xlabel="Vote Length",
                     ylabel="Violation Degree ($\\phi$)",
                     plot_lines=[
@@ -1073,7 +1117,7 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
                             color="red",
                             mark=None,
                             coordinates=grouped_coords,
-                            legend_entry=f"{algo_name} (mean)",
+                            legend_entry=f"{get_algo_label(algo_name)} (mean)",
                         ),
                     ],
                     ymajorgrids=True,

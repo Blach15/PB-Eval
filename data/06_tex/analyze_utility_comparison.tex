@@ -1,23 +1,23 @@
 
 
-\% Utility Comparison and Budget Usage by Algorithm
+% Average Utility Comparison and Budget Usage by Algorithm
 \begin{table}[H]
 \centering
 \begin{tabular}{cccc}
 \toprule
-Algorithm & Card (rel. to Greedy[card]) & Cost (rel. to Greedy[cost]) & Budget Usage \\
+Algorithm & $\mu^{\#}_{\text{rel. to Greedy[card]}} \%$ & $\mu^{c}_{\text{rel. to Greedy[cost]}} \%$ & Budget Usage \% \\
 \midrule
-Greedy[card] & 1.0000 & 0.7347 & 0.8678 \\
-Greedy[cost] & 0.8915 & 1.0000 & 0.9628 \\
-MES[card] & 0.6993 & 0.3984 & 0.4311 \\
-MES[card]\_Greedy[card]] & 0.9999 & 0.7342 & 0.8678 \\
-MES[cost] & 0.7079 & 0.5028 & 0.4918 \\
-MES[cost]\_Greedy[cost]] & 0.9890 & 0.8615 & 0.9066 \\
-Phragmen & 0.9674 & 0.7144 & 0.8099 \\
-Phragmen\_Greedy[card]] & 0.9982 & 0.7380 & 0.8692 \\
-Phragmen\_Greedy[cost]] & 0.9989 & 0.7416 & 0.8735 \\
+\text{Greedy[$\mu^{\#}$]} & 1.0 & 0.73 & 0.87 \\
+\text{Greedy[$\mu^{c}$]} & 0.89 & 1.0 & 0.96 \\
+\text{MES[$\mu^{\#}$]} & 0.7 & 0.4 & 0.43 \\
+$\text{MES[$\mu^{\#}$]}_{\text{Greedy[$\mu^{\#}$]}}$ & 1.0 & 0.73 & 0.87 \\
+\text{MES[$\mu^{c}$]} & 0.71 & 0.5 & 0.49 \\
+$\text{MES[$\mu^{c}$]}_{\text{Greedy[$\mu^{c}$]}}$ & 0.99 & 0.86 & 0.91 \\
+\text{seq-Phragmén} & 0.97 & 0.71 & 0.81 \\
+$\text{seq-Phragmén}_{\text{Greedy[$\mu^{\#}$]}}$ & 1.0 & 0.74 & 0.87 \\
+$\text{seq-Phragmén}_{\text{Greedy[$\mu^{c}$]}}$ & 1.0 & 0.74 & 0.87 \\
 \bottomrule
 \end{tabular}
-\caption{Utility Comparison and Budget Usage by Algorithm}
+\caption{Average Utility Comparison and Budget Usage by Algorithm}
 \label{tab:analyze_utility_comparison}
 \end{table}
