@@ -884,7 +884,7 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
         if vote_length is None:
             continue
         for utility in ["cost", "card"]:
-            ejr_util = rec.results.get("ejr", {}).get(utility)
+            ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
             if ejr_util is not None:
                 raw = ejr_util.get("satisfaction_degree")
                 data_by_algo[rec.algo_name][utility].append(
@@ -913,7 +913,6 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
                             mark="*",
                             mark_size=1,
                             coordinates=coords,
-                            legend_entry=algo_name,
                             only_marks=True,
                         ),
                         PlotLine(
