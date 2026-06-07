@@ -581,15 +581,16 @@ def print_results_by_algorithm(
 
 def analyze_utility_comparison() -> Table:
     """
-    Compare utility (cost efficiency) across algorithms, normalized to Greedy baseline.
+    Compare utility (cost efficiency) and budget usage across algorithms.
 
-    For each election, computes relative utility scores per algorithm:
+    For each election, computes:
     - Card: algo_stats[card][util_mean] / Greedy[card]'s algo_stats[card][util_mean]
     - Cost: algo_stats[cost][util_mean] / Greedy[cost]'s algo_stats[cost][util_mean]
+    - Budget Usage: winning_set_cost / budget_limit
 
-    Then aggregates across elections by taking the mean relative score per algorithm.
+    Then aggregates across elections by taking the mean per algorithm.
 
-    Returns a Table with columns: Algorithm, Card (relative), Cost (relative).
+    Returns a Table with columns: Algorithm, Card (relative), Cost (relative), Budget Usage.
     """
     parser = OutcomeParser()
 
@@ -611,6 +612,9 @@ def analyze_utility_comparison() -> Table:
         lambda: {"card": [], "cost": []}
     )
 
+    # Structure: {algo_name: [budget_usage_ratios, ...]}
+    budget_usage: dict[str, list[float]] = defaultdict(list)
+
     # Compute relative scores per election
     for filename, algo_utils in election_data.items():
         # Use capitalized names: Greedy[card], Greedy[cost]
@@ -631,25 +635,41 @@ def analyze_utility_comparison() -> Table:
                         cost_util / greedy_cost_util
                     )
 
+    # Collect budget usage per election
+    for rec in parser.records:
+        budget_limit = rec.metadata.get("budget_limit")
+        winning_set_cost = rec.algo_stats.get("winning_set_cost")
+
+        if (
+            budget_limit is not None
+            and winning_set_cost is not None
+            and budget_limit > 0
+        ):
+            usage_ratio = winning_set_cost / budget_limit
+            budget_usage[rec.algo_name].append(usage_ratio)
+
     # Build table rows
     rows = []
     for algo_name in sorted(relative_scores.keys()):
         card_rels = relative_scores[algo_name]["card"]
         cost_rels = relative_scores[algo_name]["cost"]
+        usage_ratios = budget_usage.get(algo_name, [])
 
         card_mean = f"{np.mean(card_rels):.4f}" if card_rels else "N/A"
         cost_mean = f"{np.mean(cost_rels):.4f}" if cost_rels else "N/A"
+        budget_mean = f"{np.mean(usage_ratios):.4f}" if usage_ratios else "N/A"
 
-        rows.append([algo_name, card_mean, cost_mean])
+        rows.append([algo_name, card_mean, cost_mean, budget_mean])
 
     return Table(
         headers=[
             "Algorithm",
             "Card (rel. to Greedy[card])",
             "Cost (rel. to Greedy[cost])",
+            "Budget Usage",
         ],
         rows=rows,
-        title="Utility Comparison by Algorithm (Relative to Greedy)",
+        title="Utility Comparison and Budget Usage by Algorithm",
     )
 
 
