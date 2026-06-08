@@ -66,6 +66,27 @@ _ALGO_LABELS.update(
 )
 
 
+_ALGO_ORDER: list[str] = [
+    "Greedy[card]",
+    "Greedy[cost]",
+    "MES[card]",
+    "MES[cost]",
+    "Phragmen",
+    "MES[card]_Greedy[card]]",
+    "MES[cost]_Greedy[cost]]",
+    "Phragmen_Greedy[card]]",
+    "Phragmen_Greedy[cost]]",
+]
+
+
+def algo_sort_key(algo_name: str) -> tuple:
+    """Sort key that respects _ALGO_ORDER; unknown names sort last alphabetically."""
+    try:
+        return (0, _ALGO_ORDER.index(algo_name), "")
+    except ValueError:
+        return (1, 0, algo_name)
+
+
 def get_algo_label(algo_name: str) -> str:
     """Get the display label for an algorithm name.
 
@@ -155,7 +176,9 @@ class OutcomeParser:
             grouped[r.algo_name].append(r)
         return [
             result
-            for algo, recs in sorted(grouped.items())
+            for algo, recs in sorted(
+                grouped.items(), key=lambda kv: algo_sort_key(kv[0])
+            )
             if (result := fn(algo, recs)) is not None
         ]
 
@@ -533,7 +556,7 @@ def print_results_by_sat_function(
                     rows = []
                     algo_results = results_by_sat_func[ejr_type][utility]
 
-                    for algo_name in sorted(algo_results.keys()):
+                    for algo_name in sorted(algo_results.keys(), key=algo_sort_key):
                         satisfied = algo_results[algo_name]["satisfied"]
                         violated = algo_results[algo_name]["violated"]
                         total = satisfied + violated
@@ -610,7 +633,7 @@ def print_results_by_algorithm(
     }
 
     rows = []
-    for algo_name in sorted(by_algo.keys()):
+    for algo_name in sorted(by_algo.keys(), key=algo_sort_key):
         row = [get_algo_label(algo_name)]
         for ejr_type, utility in columns:
             counts = by_algo[algo_name].get(ejr_type, {}).get(utility)
@@ -699,7 +722,7 @@ def analyze_utility_comparison() -> Table:
 
     # Build table rows
     rows = []
-    for algo_name in sorted(relative_scores.keys()):
+    for algo_name in sorted(relative_scores.keys(), key=algo_sort_key):
         card_rels = relative_scores[algo_name]["card"]
         cost_rels = relative_scores[algo_name]["cost"]
         usage_ratios = budget_usage.get(algo_name, [])
@@ -747,7 +770,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
     tables = []
     for utility in ["cost", "card"]:
         rows = []
-        for algo_name in sorted(violations_by_algo.keys()):
+        for algo_name in sorted(violations_by_algo.keys(), key=algo_sort_key):
             violations = violations_by_algo[algo_name][utility]
 
             if len(violations) == 0:
@@ -890,7 +913,7 @@ def graph_exclusion_ratio_distribution() -> List[Graph]:
     colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     plot_lines = []
-    for i, algo_name in enumerate(sorted(data_by_algo.keys())):
+    for i, algo_name in enumerate(sorted(data_by_algo.keys(), key=algo_sort_key)):
         exclusion_ratios = data_by_algo[algo_name]
         n = len(exclusion_ratios)
         if n == 0:
@@ -961,7 +984,9 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
             continue
 
         plot_lines = []
-        for i, algo_name in enumerate(sorted(algo_violations.keys())):
+        for i, algo_name in enumerate(
+            sorted(algo_violations.keys(), key=algo_sort_key)
+        ):
             violations = algo_violations[algo_name]
             n = len(violations)
             if n == 0:
@@ -1034,7 +1059,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
             continue
 
         plot_lines = []
-        for i, algo_name in enumerate(sorted(algo_data.keys())):
+        for i, algo_name in enumerate(sorted(algo_data.keys(), key=algo_sort_key)):
             fractions = algo_data[algo_name]
             n = len(fractions)
             if n == 0:
@@ -1099,7 +1124,7 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
     figures = []
     for utility in ["cost", "card"]:
         graphs = []
-        for algo_name in sorted(data_by_algo.keys()):
+        for algo_name in sorted(data_by_algo.keys(), key=algo_sort_key):
             coords = sorted(data_by_algo[algo_name][utility], key=lambda p: p[0])
             if not coords:
                 continue
@@ -1504,7 +1529,7 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
         graphs = []
         for feat in feature_names:
             plot_lines = []
-            for i, algo_name in enumerate(sorted(algo_data.keys())):
+            for i, algo_name in enumerate(sorted(algo_data.keys(), key=algo_sort_key)):
                 coords = algo_data[algo_name][feat]
                 if not coords:
                     continue
