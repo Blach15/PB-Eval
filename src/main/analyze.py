@@ -704,9 +704,11 @@ def analyze_utility_comparison() -> Table:
         cost_rels = relative_scores[algo_name]["cost"]
         usage_ratios = budget_usage.get(algo_name, [])
 
-        card_mean = f"{round(np.mean(card_rels), 3)}" if card_rels else "N/A"
-        cost_mean = f"{round(np.mean(cost_rels), 3)}" if cost_rels else "N/A"
-        budget_mean = f"{round(np.mean(usage_ratios), 3)}" if usage_ratios else "N/A"
+        card_mean = f"{round(100*np.mean(card_rels), 1)}" if card_rels else "N/A"
+        cost_mean = f"{round(100*np.mean(cost_rels), 1)}" if cost_rels else "N/A"
+        budget_mean = (
+            f"{round(100*np.mean(usage_ratios), 1)}" if usage_ratios else "N/A"
+        )
 
         rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean])
 
@@ -849,9 +851,9 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
 
     # Create and return the graph
     graph = Graph(
-        title="Vote Length vs P-Sets Visited (EJR[card])",
+        title="Vote Length vs T-Cohesive Sets Checked (EJR[card])",
         xlabel="Vote Length",
-        ylabel="P-Sets Checked",
+        ylabel="T-Cohesive Sets Checked",
         plot_lines=plot_lines,
         ymajorgrids=True,
         grid_style="dashed",
@@ -1304,6 +1306,68 @@ def graph_algorithm_time_vs_budget_per_avg_cost(
     )
 
 
+def graph_p_sets_per_layer(
+    filename: str = "Poland_Warszawa_2018_Bialoleka_obszar_3.json",
+) -> Optional[Graph]:
+    """Plot p_sets checked per layer for a single election file.
+
+    One line per (ejr_type, utility) combination found in the file.
+    X-axis: layer number, Y-axis: p_sets checked in that layer.
+    """
+    filepath = os.path.join(_DATA_DIR, "outcomes", filename)
+    try:
+        with open(filepath) as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"Could not load {filename}: {e}")
+        return None
+
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
+    plot_lines = []
+    seen: set[tuple] = set()  # deduplicate identical series
+    idx = 0
+
+    for algo_name, algo_results in data.get("results", {}).items():
+        for ejr_type in ["ejr", "ejr_alpha", "ejr_x", "ejr_1"]:
+            for utility in ["cost", "card"]:
+                raw = (
+                    algo_results.get(ejr_type, {})
+                    .get(utility, {})
+                    .get("p_sets_in_layer")
+                )
+                if not raw:
+                    continue
+                coords = tuple(sorted((int(k), v) for k, v in raw.items()))
+                if coords in seen:
+                    continue
+                seen.add(coords)
+                label = f"{_EJR_LABELS.get(ejr_type, ejr_type)}-{_UTIL_LABELS.get(utility, utility)}"
+                plot_lines.append(
+                    PlotLine(
+                        color=colors[idx % len(colors)],
+                        coordinates=list(coords),
+                        legend_entry=label,
+                        mark="*",
+                        mark_size=1.5,
+                    )
+                )
+                idx += 1
+
+    if not plot_lines:
+        return None
+    return Graph(
+        title=f"P-Sets per Layer — {filename}",
+        xlabel="$|T|$ (Layer)",
+        ylabel="T-Cohesive Sets Checked",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
+    )
+
+
 def graph_vote_length_vs_largest_t_checked(
     config: str = "All_without_early",
 ) -> Optional[Graph]:
@@ -1740,6 +1804,10 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_algorithm_time_vs_vote_length",
             [graph_algorithm_time_vs_vote_length(config)],
+        ),
+        (
+            "graph_p_sets_per_layer",
+            [graph_p_sets_per_layer()],
         ),
         (
             "graph_vote_length_vs_largest_t_checked",
