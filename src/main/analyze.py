@@ -78,6 +78,43 @@ _ALGO_ORDER: list[str] = [
     "Phragmen_Greedy[cost]]",
 ]
 
+_ALGO_COLORS: dict[str, str] = {
+    "Greedy[card]": "red",
+    "Greedy[cost]": "blue",
+    "MES[card]": "green",
+    "MES[cost]": "purple",
+    "Phragmen": "orange",
+    "MES[card]_Greedy[card]]": "teal",
+    "MES[cost]_Greedy[cost]]": "brown",
+    "Phragmen_Greedy[card]]": "olive",
+    "Phragmen_Greedy[cost]]": "gray",
+}
+
+_EJR_COLORS: dict[str, str] = {
+    "ejr": "red",
+    "ejr_alpha": "purple",
+    "ejr_x": "green",
+    "ejr_1": "blue",
+}
+
+
+def get_algo_color(algo_name: str) -> str:
+    """Return the canonical color for an algorithm. Raises KeyError if unmapped."""
+    if algo_name not in _ALGO_COLORS:
+        raise KeyError(
+            f"No color configured for algorithm {algo_name!r}. Add it to _ALGO_COLORS."
+        )
+    return _ALGO_COLORS[algo_name]
+
+
+def get_ejr_color(ejr_type: str) -> str:
+    """Return the canonical color for an EJR type. Raises KeyError if unmapped."""
+    if ejr_type not in _EJR_COLORS:
+        raise KeyError(
+            f"No color configured for EJR type {ejr_type!r}. Add it to _EJR_COLORS."
+        )
+    return _EJR_COLORS[ejr_type]
+
 
 def algo_sort_key(algo_name: str) -> tuple:
     """Sort key that respects _ALGO_ORDER; unknown names sort last alphabetically."""
@@ -910,7 +947,6 @@ def graph_exclusion_ratio_distribution() -> List[Graph]:
             data_by_algo[rec.algo_name].append(exclusion_ratio)
 
     x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     plot_lines = []
     for i, algo_name in enumerate(sorted(data_by_algo.keys(), key=algo_sort_key)):
@@ -924,7 +960,7 @@ def graph_exclusion_ratio_distribution() -> List[Graph]:
         ]
         plot_lines.append(
             PlotLine(
-                color=colors[i % len(colors)],
+                color=get_algo_color(algo_name),
                 coordinates=coordinates,
                 legend_entry=get_algo_label(algo_name),
             )
@@ -975,7 +1011,6 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
                 )
 
     x_points = [round(i * 0.01, 2) for i in range(0, 100)]  # 0.00 to 0.99
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     graphs = []
     for utility in ["cost", "card"]:
@@ -997,7 +1032,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
             ]
             plot_lines.append(
                 PlotLine(
-                    color=colors[i % len(colors)],
+                    color=get_algo_color(algo_name),
                     coordinates=coordinates,
                     legend_entry=get_algo_label(algo_name),
                 )
@@ -1050,7 +1085,6 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
                 data_by_utility[utility][rec.algo_name].append(fraction)
 
     x_points = [round(i * 0.01, 2) for i in range(0, 100)]  # 0.00 to 0.99
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     graphs = []
     for utility in ["cost", "card"]:
@@ -1070,7 +1104,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
             ]
             plot_lines.append(
                 PlotLine(
-                    color=colors[i % len(colors)],
+                    color=get_algo_color(algo_name),
                     coordinates=coordinates,
                     legend_entry=get_algo_label(algo_name),
                 )
@@ -1191,7 +1225,6 @@ def _graph_ejr_check_time(
     """
     ejr_types = CONFIGS[config]
     parser = OutcomeParser()
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     # Collect all (x, t) pairs per ejr_type, pooled across algorithms & utilities
     data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
@@ -1210,7 +1243,7 @@ def _graph_ejr_check_time(
         if coords:
             plot_lines.append(
                 PlotLine(
-                    color=colors[i % len(colors)],
+                    color=get_ejr_color(ejr_type),
                     coordinates=coords,
                     legend_entry=_EJR_LABELS.get(ejr_type, ejr_type.upper()),
                 )
@@ -1347,7 +1380,6 @@ def graph_p_sets_per_layer(
         print(f"Could not load {filename}: {e}")
         return None
 
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
     plot_lines = []
     seen: set[tuple] = set()  # deduplicate identical series
     idx = 0
@@ -1366,10 +1398,10 @@ def graph_p_sets_per_layer(
                 if coords in seen:
                     continue
                 seen.add(coords)
-                label = f"{_EJR_LABELS.get(ejr_type, ejr_type)}-{_UTIL_LABELS.get(utility, utility)}"
+                label = f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS.get(ejr_type, ejr_type)}"
                 plot_lines.append(
                     PlotLine(
-                        color=colors[idx % len(colors)],
+                        color=get_ejr_color(ejr_type),
                         coordinates=list(coords),
                         legend_entry=label,
                         mark="*",
@@ -1399,7 +1431,6 @@ def graph_vote_length_vs_largest_t_checked(
     """EJR largest |T| checked vs vote_length, with moving average, one line per EJR type."""
     ejr_types = CONFIGS[config]
     parser = OutcomeParser()
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     # For scatter: one point per election per ejr_type = max layers_checked across all algorithms & utilities
     # For moving average: all (vote_length, layers_checked) pairs pooled
@@ -1430,7 +1461,7 @@ def graph_vote_length_vs_largest_t_checked(
         if not avg_coords:
             continue
         label = _EJR_LABELS.get(ejr_type, ejr_type.upper())
-        color = colors[i % len(colors)]
+        color = get_ejr_color(ejr_type)
         # Raw scatter points: one per election (max layers_checked)
         scatter = list(scatter_max[ejr_type].values())
         plot_lines.append(
@@ -1521,8 +1552,6 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
                 if feat_val is not None:
                     data[utility][rec.algo_name][feat].append((feat_val, violated_pct))
 
-    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
-
     figures = []
     for utility in ["cost", "card"]:
         algo_data = data[utility]
@@ -1537,7 +1566,7 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
                 if avg_coords:
                     plot_lines.append(
                         PlotLine(
-                            color=colors[i % len(colors)],
+                            color=get_algo_color(algo_name),
                             coordinates=avg_coords,
                             legend_entry=get_algo_label(algo_name),
                         )
