@@ -22,10 +22,14 @@ class EJRViolationResult:
         p_sets_checked: int,
         unsat_voter_union: Optional[set[int]],
         unsat_voter_violation_union: Optional[set[int]],
-        layers_checked: int,
+        p_sets_in_layer: dict[int, int],
     ):
         self.witness = witness
         self.p_sets_checked = p_sets_checked
         self.unsat_voter_union = unsat_voter_union
         self.unsat_voter_violation_union = unsat_voter_violation_union
-        self.layers_checked = layers_checked
+        self.p_sets_in_layer = p_sets_in_layer
+
+    @property
+    def layers_checked(self) -> int:
+        return max(self.p_sets_in_layer.keys(), default=0)

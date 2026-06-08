@@ -73,6 +73,7 @@ def _format_ejr_result(violation: EJRViolationResult, elapsed_time: float) -> di
             else None
         ),
         "layers_checked": violation.layers_checked,
+        "p_sets_in_layer": violation.p_sets_in_layer,
     }
 
 
@@ -326,7 +327,7 @@ def run_all(verbose: bool = False):
 
 
 def run_one(verbose: bool = True):
-    filename = "France_Toulouse_2022_6_-_Saint-Cyprien.pb"
+    filename = "Poland_Warszawa_2018_Bialoleka_obszar_3.pb"
     # output_filename = os.path.splitext(filename)[0] + ".json"
     # result_path = os.path.join("outcomes", output_filename)
 
@@ -342,4 +343,4 @@ def run_one(verbose: bool = True):
 
 
 if __name__ == "__main__":
-    run_all()
+    run_one()

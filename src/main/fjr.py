@@ -90,7 +90,7 @@ def find_fjr_violation_witness(
                     p_sets_checked=p_sets_checked,
                     unsat_voter_union=None,
                     unsat_voter_violation_union=None,
-                    layers_checked=0,
+                    p_sets_in_layer={},
                 )
 
             surviving_lattice_layer_worklist.append((p_set, voter_union))
@@ -128,7 +128,7 @@ def find_fjr_violation_witness(
         p_sets_checked=p_sets_checked,
         unsat_voter_union=None,
         unsat_voter_violation_union=None,
-        layers_checked=0,
+        p_sets_in_layer={},
     )
 
 

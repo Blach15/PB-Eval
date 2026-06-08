@@ -14,11 +14,12 @@ def iterate_all_affordable_p_sets(
     callback: Callable[[tuple[int, ...], set[int]], bool],
     pre_callback: Callable[[], None] = lambda: None,
     verbose: bool = False,
-) -> int:
+) -> dict[int, int]:
     project_supporters = get_project_supporters(approvals, projects)
 
     n = len(approvals)
-    layers_checked = 0
+    layers_checked: dict[int, int] = {}
+    layer = 0
 
     current_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
     next_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = list()
@@ -28,11 +29,13 @@ def iterate_all_affordable_p_sets(
         next_lattice_layer_worklist.append((p_set, project_supporters[pIdx]))
 
     while len(next_lattice_layer_worklist) > 0:
-        layers_checked += 1
+        layer += 1
         current_lattice_layer_worklist = next_lattice_layer_worklist
         surviving_lattice_layer_worklist: list[tuple[tuple[int, ...], set[int]]] = []
+        p_sets_in_layer = 0
 
         for p_set, voter_intersection in current_lattice_layer_worklist:
+            p_sets_in_layer += 1
             pre_callback()
 
             # Get cached voter_intersection or calculate if not in cache
@@ -44,9 +47,12 @@ def iterate_all_affordable_p_sets(
 
             # allow exit early, to find 1 witness
             if callback(p_set, voter_intersection):
+                layers_checked[layer] = p_sets_in_layer
                 return layers_checked
 
             surviving_lattice_layer_worklist.append((p_set, voter_intersection))
+
+        layers_checked[layer] = p_sets_in_layer
 
         if verbose and len(surviving_lattice_layer_worklist) != 0:
             print(

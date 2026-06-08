@@ -97,5 +97,5 @@ def find_ejr_violation_witness(
         unsat_voter_violation_union=(
             None if exit_early else unsat_voter_violation_union
         ),
-        layers_checked=layers_checked,
+        p_sets_in_layer=layers_checked,
     )
