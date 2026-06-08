@@ -1382,10 +1382,9 @@ def graph_vote_length_vs_largest_t_checked(
 def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
     """
     For each utility (cost, card), return a SubfigureGrid with one subfigure
-    per feature.  Each subfigure plots one point per election: x = feature
-    value, y = number of algorithms that found an EJR violation for that
-    election.  Points with y=0 (no violations) are green; points with y>0
-    are red.
+    per feature.  Each subfigure plots one line per voting rule showing the
+    moving average of EJR violation % (y-axis) as a function of the feature
+    value (x-axis).
     """
     parser = OutcomeParser()
 
@@ -1399,7 +1398,11 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
         "vote_length_times_avg_cost",
     ]
 
-    election_data: dict[str, dict[str, dict]] = {"cost": {}, "card": {}}
+    # {utility: {algo_name: {feat: [(feat_val, violated_pct), ...]}}}
+    data: dict[str, dict[str, dict[str, list[tuple]]]] = {
+        "cost": defaultdict(lambda: defaultdict(list)),
+        "card": defaultdict(lambda: defaultdict(list)),
+    }
 
     for rec in parser.records:
         meta = rec.metadata
@@ -1420,78 +1423,61 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
             ),
         }
         for utility in ["cost", "card"]:
-            if rec.filename not in election_data[utility]:
-                election_data[utility][rec.filename] = {
-                    **raw_features,
-                    "violation_count": 0,
-                }
             ejr_result = rec.results.get("ejr", {}).get(utility)
-            if ejr_result and ejr_result.get("violation_found", False):
-                election_data[utility][rec.filename]["violation_count"] += 1
+            if ejr_result is None:
+                continue
+            violated_pct = 100.0 if ejr_result.get("violation_found", False) else 0.0
+            for feat in feature_names:
+                feat_val = raw_features.get(feat)
+                if feat_val is not None:
+                    data[utility][rec.algo_name][feat].append((feat_val, violated_pct))
+
+    colors = ["red", "blue", "green", "purple", "orange", "brown", "teal", "gray"]
 
     figures = []
     for utility in ["cost", "card"]:
-        rows_data = list(election_data[utility].values())
+        algo_data = data[utility]
         graphs = []
         for feat in feature_names:
-            sat_pts = [
-                (r["violation_count"], r[feat])
-                for r in rows_data
-                if r[feat] is not None and r["violation_count"] == 0
-            ]
-            vio_pts = [
-                (r["violation_count"], r[feat])
-                for r in rows_data
-                if r[feat] is not None and r["violation_count"] > 0
-            ]
-
-            sat_feat_vals = [p[1] for p in sat_pts]
-            vio_feat_vals = [p[1] for p in vio_pts]
-            sat_mean = float(np.mean(sat_feat_vals)) if sat_feat_vals else None
-            vio_mean = float(np.mean(vio_feat_vals)) if vio_feat_vals else None
-            sat_str = f"{sat_mean:.2f}" if sat_mean is not None else "N/A"
-            vio_str = f"{vio_mean:.2f}" if vio_mean is not None else "N/A"
-
-            max_vio = max((p[0] for p in vio_pts), default=0)
-            all_pts = sat_pts + vio_pts
-            avg_coords = OutcomeParser.moving_average(all_pts)
-
             plot_lines = []
-            if avg_coords:
-                plot_lines.append(
-                    PlotLine(
-                        color="blue",
-                        coordinates=avg_coords,
-                        legend_entry=f"Mean violation count (sat={sat_str}, vio={vio_str})",
+            for i, algo_name in enumerate(sorted(algo_data.keys())):
+                coords = algo_data[algo_name][feat]
+                if not coords:
+                    continue
+                avg_coords = OutcomeParser.moving_average(coords)
+                if avg_coords:
+                    plot_lines.append(
+                        PlotLine(
+                            color=colors[i % len(colors)],
+                            coordinates=avg_coords,
+                            legend_entry=get_algo_label(algo_name),
+                        )
                     )
-                )
 
             if plot_lines:
                 graphs.append(
                     Graph(
                         title=feat.replace("_", " "),
-                        xlabel="\\# violations",
-                        ylabel=f"{feat.replace('_', ' ')}",  # (sat={sat_str}, vio={vio_str})",
+                        xlabel=feat.replace("_", " "),
+                        ylabel="Violation \\%",
                         plot_lines=plot_lines,
                         ymajorgrids=True,
                         grid_style="dashed",
                         xmode="linear",
                         ymode="linear",
                         legend_pos="outer north east",
-                        ymin=None,
-                        ymax=None,
+                        ymin=0,
+                        ymax=100,
                     )
                 )
 
         if graphs:
             figures.append(
                 SubfigureGrid(
-                    title=f"EJR[{utility}] Feature vs Violation Count",
+                    title=f"EJR[{utility}] Violation Rate vs Features",
                     caption=(
-                        f"Each point is one election (EJR[{utility}]). "
-                        f"x = feature value, y = number of algorithms that found a violation as moving average. "
-                        f"Green (y=0): no violations; red (y$>$0): at least one violation. "
-                        f"X-axis labels show the mean feature value for each group (sat / vio)."
+                        f"EJR[{utility}] violation rate (\\%) as a function of election features, "
+                        f"shown per voting rule as a moving average."
                     ),
                     graphs=graphs,
                 )
