@@ -25,6 +25,11 @@ CONFIGS: dict[str, list[str]] = {
     "EJR_compare": ["ejr", "ejr_alpha"],
 }
 
+_UTIL_LABELS: dict[str, str] = {
+    "card": "$\\mu^{\\#}$",
+    "cost": "$\\mu^c$",
+}
+
 _EJR_LABELS: dict[str, str] = {
     "ejr": "EJR",
     "ejr_alpha": "EJR-$\\phi$",
@@ -33,29 +38,29 @@ _EJR_LABELS: dict[str, str] = {
 }
 
 _ALGO_LABELS: dict[str, str] = {
-    "Greedy[card]": "\\text{Greedy[$\\mu^{\\#}$]}",
-    "Greedy[cost]": "\\text{Greedy[$\\mu^{c}$]}",
-    "MES[card]": "\\text{MES[$\\mu^{\\#}$]}",
-    "MES[cost]": "\\text{MES[$\\mu^{c}$]}",
-    "Phragmen": "\\text{seq-Phragmén}",
+    "Greedy[card]": f"\\text{{Greedy[{_UTIL_LABELS['card']}]}}",
+    "Greedy[cost]": f"\\text{{Greedy[{_UTIL_LABELS['cost']}]}}",
+    "MES[card]": f"\\text{{MES[{_UTIL_LABELS['card']}]}}",
+    "MES[cost]": f"\\text{{MES[{_UTIL_LABELS['cost']}]}}",
+    "Phragmen": "\\text{Seq-Phragmén}",
 }
 _ALGO_LABELS.update(
     {
         "MES[card]_Greedy[card]]": f"${_ALGO_LABELS['MES[card]']}_"
-        + "{"
-        + f"{_ALGO_LABELS['Greedy[card]']}"
+        + "\\text{"
+        + f"{_UTIL_LABELS['card']}"
         + "}$",
         "MES[cost]_Greedy[cost]]": f"${_ALGO_LABELS['MES[cost]']}_"
-        + "{"
-        + f"{_ALGO_LABELS['Greedy[cost]']}"
+        + "\\text{"
+        + f"{_UTIL_LABELS['cost']}"
         + "}$",
         "Phragmen_Greedy[card]]": f"${_ALGO_LABELS['Phragmen']}_"
-        + "{"
-        + f"{_ALGO_LABELS['Greedy[card]']}"
+        + "\\text{"
+        + f"{_UTIL_LABELS['card']}"
         + "}$",
         "Phragmen_Greedy[cost]]": f"${_ALGO_LABELS['Phragmen']}_"
-        + "{"
-        + f"{_ALGO_LABELS['Greedy[cost]']}"
+        + "\\text{"
+        + f"{_UTIL_LABELS['cost']}"
         + "}$",
     }
 )
@@ -599,7 +604,7 @@ def print_results_by_algorithm(
         if (et, u) not in _excluded
     ]
     col_labels = {
-        (et, u): f"{_EJR_LABELS.get(et, et.upper())}[{u}]"
+        (et, u): f"{_UTIL_LABELS.get(u, u)}-{_EJR_LABELS.get(et, et.upper())}"
         for et in ejr_types
         for u in ["card", "cost"]
     }
@@ -699,9 +704,9 @@ def analyze_utility_comparison() -> Table:
         cost_rels = relative_scores[algo_name]["cost"]
         usage_ratios = budget_usage.get(algo_name, [])
 
-        card_mean = f"{round(np.mean(card_rels), 2)}" if card_rels else "N/A"
-        cost_mean = f"{round(np.mean(cost_rels), 2)}" if cost_rels else "N/A"
-        budget_mean = f"{round(np.mean(usage_ratios), 2)}" if usage_ratios else "N/A"
+        card_mean = f"{round(np.mean(card_rels), 3)}" if card_rels else "N/A"
+        cost_mean = f"{round(np.mean(cost_rels), 3)}" if cost_rels else "N/A"
+        budget_mean = f"{round(np.mean(usage_ratios), 3)}" if usage_ratios else "N/A"
 
         rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean])
 
@@ -771,7 +776,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
             table = Table(
                 headers=["Algorithm", "N", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
                 rows=rows,
-                title=f"Violation Degree Analysis for {_EJR_LABELS.get(ejr_type, ejr_type.upper())}[{utility}]",
+                title=f"Violation Degree Analysis for {_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS.get(ejr_type, ejr_type.upper())}",
             )
             tables.append(table)
 
@@ -973,7 +978,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
 
         graphs.append(
             Graph(
-                title=f"EJR[{utility}] Violation Degree Distribution",
+                title=f"{_UTIL_LABELS.get(utility, utility)}-EJR Violation Degree Distribution",
                 xlabel="Violation Degree ($\\phi$)",
                 ylabel="Elections with Violation Degree $\\le \\phi$",
                 plot_lines=plot_lines,
@@ -1046,7 +1051,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
 
         graphs.append(
             Graph(
-                title=f"EJR[{utility}] Unsatisfied Voter Fraction Distribution",
+                title=f"{_UTIL_LABELS.get(utility, utility)}-EJR Unsatisfied Voter Fraction Distribution",
                 xlabel="Fraction of Unsatisfied Voters ($r$)",
                 ylabel="Elections with Fraction $\\le r$",
                 plot_lines=plot_lines,
@@ -1591,6 +1596,7 @@ _LATEX_PREAMBLE = """\\documentclass[tikz,border=0pt]{standalone}
 \\usepackage{tikz}
 \\usepackage{booktabs}
 \\usepackage{pgfplots}
+\\usepackage{amsmath}
 \\pgfplotsset{compat=1.18}
 \\usepackage{subcaption}
 \\usepackage{caption}
