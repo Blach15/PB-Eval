@@ -1871,10 +1871,10 @@ def print_stats(config: str = "All_without_early") -> None:
             "graph_algorithm_time_vs_number_of_voters",
             [graph_algorithm_time_vs_number_of_voters(config)],
         ),
-        (
-            "graph_algorithm_time_vs_vote_length_times_avg_cost",
-            [graph_algorithm_time_vs_vote_length_times_avg_cost(config)],
-        ),
+        # (
+        #     "graph_algorithm_time_vs_vote_length_times_avg_cost",
+        #     [graph_algorithm_time_vs_vote_length_times_avg_cost(config)],
+        # ),
         (
             "graph_algorithm_time_vs_projects_ejr_compare",
             [graph_algorithm_time_vs_projects_ejr_compare()],
