@@ -129,6 +129,7 @@ def find_fjr_violation_witness(
         unsat_voter_union=None,
         unsat_voter_violation_union=None,
         p_sets_in_layer={},
+        satisfaction_degrees=None,
     )
 
 

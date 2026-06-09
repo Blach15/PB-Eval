@@ -23,12 +23,14 @@ class EJRViolationResult:
         unsat_voter_union: Optional[set[int]],
         unsat_voter_violation_union: Optional[set[int]],
         p_sets_in_layer: dict[int, int],
+        satisfaction_degrees: Optional[dict[int, float]],
     ):
         self.witness = witness
         self.p_sets_checked = p_sets_checked
         self.unsat_voter_union = unsat_voter_union
         self.unsat_voter_violation_union = unsat_voter_violation_union
         self.p_sets_in_layer = p_sets_in_layer
+        self.satisfaction_degrees = satisfaction_degrees
 
     @property
     def layers_checked(self) -> int:

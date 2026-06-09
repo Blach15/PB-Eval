@@ -35,6 +35,7 @@ def find_ejr_violation_witness(
     n = len(approvals)
     unsat_voter_union = set()
     unsat_voter_violation_union = set()
+    satisfaction_degrees = {}
 
     def count_p_sets():
         nonlocal p_sets_checked
@@ -66,13 +67,18 @@ def find_ejr_violation_witness(
 
             # for the voter i in the minimum set of voters, who is the closest to being satisfied
             # find the a in: a * util_p = util_win
+            unsat_voters_list = list(unsat_voters)
             unsat_voters_util = [
                 (winning_util[i] / utility_func(p_set, approvals[i]))
-                for i in unsat_voters
+                for i in unsat_voters_list
             ]
-            max_a_in_min_set_of_voters = sort(unsat_voters_util)[
+            sorted_pairs = sorted(zip(unsat_voters_list, unsat_voters_util), key=lambda x: x[1])
+            max_a_in_min_set_of_voters = sorted_pairs[
                 int(needed_voters_larger_or_equal_to) - 1
-            ]
+            ][1]
+            for i, a in sorted_pairs:
+                if a >= max_a_in_min_set_of_voters:
+                    satisfaction_degrees[i] = max(satisfaction_degrees.get(i, 0), a)
             witnesses.append(
                 EJRViolationWitness(p_set, unsat_voters, max_a_in_min_set_of_voters)
             )
@@ -98,4 +104,5 @@ def find_ejr_violation_witness(
             None if exit_early else unsat_voter_violation_union
         ),
         p_sets_in_layer=layers_checked,
+        satisfaction_degrees=(None if exit_early else satisfaction_degrees),
     )

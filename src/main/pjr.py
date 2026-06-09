@@ -105,4 +105,5 @@ def find_pjr_violation_witness(
         unsat_voter_union=None,
         unsat_voter_violation_union=None,
         p_sets_in_layer=layers_checked,
+        satisfaction_degrees=None,
     )
