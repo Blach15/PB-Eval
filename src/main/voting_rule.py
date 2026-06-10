@@ -70,15 +70,25 @@ def voting_rule(
     
     violations_dict = {i: 1 - d for i, d in violations.satisfaction_degrees.items()}
 
-    # scale by how violated they are
-    def card_utility_func(project_set: Iterable[int], voter_i: int) -> Numeric:
-        return violations_dict[voter_i] * len([a for a in project_set if a in approvals[voter_i]])
+    # scale by how violated they are; voters not in any violation get weight 0
+    def card_utility_func(p: int, voter_i: int) -> Numeric:
+        return violations_dict.get(voter_i, 0) * (1 if p in approvals[voter_i] else 0)
 
-    P = {proj_name_to_idx[str(p)] for p in projects} - winning_set
 
-    def greedy_completion_rule():
-        2
-    
-    return method_of_equal_shares(
-                instance, profile, sat_class=Cost_Sat
+    def greedy_completion_rule() -> BudgetAllocation:
+        P = {proj_name_to_idx[str(p)] for p in projects} - winning_set
+        b = budget - sum(costs[p] for p in winning_set)
+        while True:
+            affordable = [p for p in P if costs[p] <= b]
+            if not affordable:
+                break
+            best = max(
+                affordable,
+                key=lambda p: sum(card_utility_func(p, i) for i in range(len(approvals))) / costs[p],
             )
+            winning_set.add(best)
+            P.remove(best)
+            b -= costs[best]
+        return BudgetAllocation(projects[p] for p in winning_set)
+
+    return greedy_completion_rule()
