@@ -1802,6 +1802,44 @@ def _compile_subfigure_grid(
         f.write("\\end{figure}\n\n")
 
 
+def print_winning_set_size_stats() -> None:
+    """Print winning_set_size statistics across all elections.
+
+    For each election file, finds the max winning_set_size across all algorithms.
+    Then prints the overall max and average of those per-election maxima.
+    """
+    outcomes_dir = os.path.join(_DATA_DIR, "outcomes")
+    if not os.path.exists(outcomes_dir):
+        print(f"Outcomes directory {outcomes_dir} not found")
+        return
+
+    per_election_maxima: list[float] = []
+    for filename in sorted(f for f in os.listdir(outcomes_dir) if f.endswith(".json")):
+        filepath = os.path.join(outcomes_dir, filename)
+        try:
+            with open(filepath) as f:
+                data = json.load(f)
+            sizes = [
+                algo_results.get("algo_stats", {}).get("winning_set_size")
+                for algo_results in data.get("results", {}).values()
+            ]
+            sizes = [s for s in sizes if s is not None]
+            if sizes:
+                per_election_maxima.append(max(sizes))
+        except Exception as e:
+            print(f"Error processing {filename}: {e}")
+
+    if not per_election_maxima:
+        print("No winning_set_size data found.")
+        return
+
+    overall_max = max(per_election_maxima)
+    overall_avg = sum(per_election_maxima) / len(per_election_maxima)
+    print(f"Elections with data : {len(per_election_maxima)}")
+    print(f"Max of per-election maxima  : {overall_max}")
+    print(f"Avg of per-election maxima  : {overall_avg:.4f}")
+
+
 def print_stats(config: str = "All_without_early") -> None:
     """Main entry point for statistics generation.
 
@@ -1919,4 +1957,4 @@ def print_stats(config: str = "All_without_early") -> None:
 
 
 if __name__ == "__main__":
-    print_stats()
+    print_winning_set_size_stats()
