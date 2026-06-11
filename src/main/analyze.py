@@ -744,7 +744,10 @@ def analyze_utility_comparison() -> Table:
                         cost_util / greedy_cost_util
                     )
 
-    # Collect budget usage per election
+    # Structure: {algo_name: [algorithm_times, ...]}
+    algo_times: dict[str, list[float]] = defaultdict(list)
+
+    # Collect budget usage and running time per election
     for rec in parser.records:
         budget_limit = rec.metadata.get("budget_limit")
         winning_set_cost = rec.algo_stats.get("winning_set_cost")
@@ -757,27 +760,34 @@ def analyze_utility_comparison() -> Table:
             usage_ratio = winning_set_cost / budget_limit
             budget_usage[rec.algo_name].append(usage_ratio)
 
+        t = rec.algorithm_time
+        if t is not None:
+            algo_times[rec.algo_name].append(t)
+
     # Build table rows
     rows = []
     for algo_name in sorted(relative_scores.keys(), key=algo_sort_key):
         card_rels = relative_scores[algo_name]["card"]
         cost_rels = relative_scores[algo_name]["cost"]
         usage_ratios = budget_usage.get(algo_name, [])
+        times = algo_times.get(algo_name, [])
 
         card_mean = f"{round(100*np.mean(card_rels), 1)}" if card_rels else "N/A"
         cost_mean = f"{round(100*np.mean(cost_rels), 1)}" if cost_rels else "N/A"
         budget_mean = (
             f"{round(100*np.mean(usage_ratios), 1)}" if usage_ratios else "N/A"
         )
+        time_mean = f"{np.mean(times):.4f}" if times else "N/A"
 
-        rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean])
+        rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean, time_mean])
 
     return Table(
         headers=[
             "Algorithm",
-            "$\\mu^{\\#}_{\\text{rel. to Greedy[card]}} \\%$",
-            "$\\mu^{c}_{\\text{rel. to Greedy[cost]}} \\%$",
-            "Budget Usage \\%",
+            "rel. $\\mu^{\\#} (\\%)$",
+            "rel. $\\mu^{c} (\\%)$",
+            "Budget Usage (\\%)",
+            "Avg Running Time (s)",
         ],
         rows=rows,
         title="Average Utility Comparison and Budget Usage by Algorithm",
