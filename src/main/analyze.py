@@ -33,7 +33,7 @@ _UTIL_LABELS: dict[str, str] = {
 _EJR_LABELS: dict[str, str] = {
     "ejr": "EJR",
     "ejr_alpha": "EJR-$\\phi$",
-    "ejr_x": "EJR-X",
+    "ejr_x": "EJR-x",
     "ejr_1": "EJR-1",
 }
 
@@ -82,7 +82,7 @@ _ALGO_COLORS: dict[str, str] = {
     "Greedy[card]": "red",
     "Greedy[cost]": "blue",
     "MES[card]": "green",
-    "MES[cost]": "purple",
+    "MES[cost]": "black",
     "Phragmen": "orange",
     "MES[card]_Greedy[card]]": "teal",
     "MES[cost]_Greedy[cost]]": "brown",
@@ -92,7 +92,7 @@ _ALGO_COLORS: dict[str, str] = {
 
 _EJR_COLORS: dict[str, str] = {
     "ejr": "red",
-    "ejr_alpha": "purple",
+    "ejr_alpha": "teal",
     "ejr_x": "green",
     "ejr_1": "blue",
 }
@@ -1294,8 +1294,8 @@ def graph_algorithm_time_vs_p_sets_checked(
         x_fn=lambda rec, et, u: rec.results.get(et, {})
         .get(u, {})
         .get("p_sets_checked"),
-        x_label="P-Sets Checked",
-        title_suffix="P-Sets Checked",
+        x_label="T-Cohesive Sets Checked",
+        title_suffix="T-Cohesive Sets Checked",
         config=config,
     )
 
@@ -1957,4 +1957,5 @@ def print_stats(config: str = "All_without_early") -> None:
 
 
 if __name__ == "__main__":
-    print_winning_set_size_stats()
+    # print_winning_set_size_stats()
+    print_stats()
