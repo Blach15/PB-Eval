@@ -284,7 +284,7 @@ def test_ejr_algorithms(filename: str, verbose: bool = True) -> None:
                 "cost": _format_ejr_result(v_ejr1_cost, t_ejr1_cost),
                 "card": _format_ejr_result(v_ejr1_card, t_ejr1_card),
             },
-            "ejr_alpha": {
+            "ejr_phi": {
                 "cost": _format_ejr_result(v_ejr_alpha_cost, t_ejr_alpha_cost),
                 "card": _format_ejr_result(v_ejr_alpha_card, t_ejr_alpha_card),
             },
@@ -345,4 +345,4 @@ def run_one(verbose: bool = True):
 
 
 if __name__ == "__main__":
-    run_one()
+    run_all()

@@ -16,13 +16,13 @@ _DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",
 # ---------------------------------------------------------------------------
 # Analysis configs – determines which EJR-check types are included
 # ---------------------------------------------------------------------------
-ALL_EJR_TYPES: list[str] = ["ejr", "ejr_alpha", "ejr_x", "ejr_1"]
+ALL_EJR_TYPES: list[str] = ["ejr", "ejr_phi", "ejr_x", "ejr_1"]
 ALL_WITHOUT_EARLY_EJR_TYPES: list[str] = ["ejr", "ejr_x", "ejr_1"]
 
 CONFIGS: dict[str, list[str]] = {
     "All": ALL_EJR_TYPES,
     "All_without_early": ALL_WITHOUT_EARLY_EJR_TYPES,
-    "EJR_compare": ["ejr", "ejr_alpha"],
+    "EJR_compare": ["ejr", "ejr_phi"],
 }
 
 _UTIL_LABELS: dict[str, str] = {
@@ -32,7 +32,7 @@ _UTIL_LABELS: dict[str, str] = {
 
 _EJR_LABELS: dict[str, str] = {
     "ejr": "EJR",
-    "ejr_alpha": "EJR-$\\phi$",
+    "ejr_phi": "EJR-$\\phi$",
     "ejr_x": "EJR-x",
     "ejr_1": "EJR-1",
 }
@@ -92,7 +92,7 @@ _ALGO_COLORS: dict[str, str] = {
 
 _EJR_COLORS: dict[str, str] = {
     "ejr": "red",
-    "ejr_alpha": "teal",
+    "ejr_phi": "teal",
     "ejr_x": "green",
     "ejr_1": "blue",
 }
@@ -145,7 +145,7 @@ class ElectionRecord:
     filename: str
     metadata: dict
     algo_name: str
-    results: dict  # keys: "algo_stats" (algorithm_time, cost, card stats), "ejr", "ejr_x", "ejr_1", "ejr_alpha"
+    results: dict  # keys: "algo_stats" (algorithm_time, cost, card stats), "ejr", "ejr_x", "ejr_1", "ejr_phi"
 
     @property
     def algo_stats(self) -> dict:
@@ -794,7 +794,7 @@ def analyze_utility_comparison() -> Table:
     )
 
 
-def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
+def analyze_ejr_violations_by_utility(ejr_type="ejr_phi") -> List[Table]:
     """
     Analyze the 'violation_degree' (1 - satisfaction_degree) for EJR-cost and EJR-card per algorithm.
 
@@ -1013,7 +1013,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
 
     for rec in parser.records:
         for utility in ["cost", "card"]:
-            ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
+            ejr_util = rec.results.get("ejr_phi", {}).get(utility)
             if ejr_util is not None:
                 raw = ejr_util.get("satisfaction_degree")
                 data_by_utility[utility][rec.algo_name].append(
@@ -1088,7 +1088,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
         if not n_voters:
             continue
         for utility in ["cost", "card"]:
-            ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
+            ejr_util = rec.results.get("ejr_phi", {}).get(utility)
             if ejr_util is not None:
                 unsat = ejr_util.get("number_of_unsat_voters")
                 fraction = (unsat / n_voters) if unsat is not None else 0.0
@@ -1158,7 +1158,7 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
         if vote_length is None:
             continue
         for utility in ["cost", "card"]:
-            ejr_util = rec.results.get("ejr_alpha", {}).get(utility)
+            ejr_util = rec.results.get("ejr_phi", {}).get(utility)
             if ejr_util is not None:
                 raw = ejr_util.get("satisfaction_degree")
                 data_by_algo[rec.algo_name][utility].append(
@@ -1466,7 +1466,7 @@ def graph_p_sets_per_layer(
     idx = 0
 
     for algo_name, algo_results in data.get("results", {}).items():
-        for ejr_type in ["ejr", "ejr_alpha", "ejr_x", "ejr_1"]:
+        for ejr_type in ["ejr", "ejr_phi", "ejr_x", "ejr_1"]:
             for utility in ["cost", "card"]:
                 raw = (
                     algo_results.get(ejr_type, {})
