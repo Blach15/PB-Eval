@@ -36,14 +36,20 @@ def find_ejr_violation_witness(
     unsat_voter_union = set()
     unsat_voter_violation_union = set()
     satisfaction_degrees = {}
+    p_sets_before_subset = 0
+    p_sets_unsat_checked = 0
 
     def count_p_sets():
         nonlocal p_sets_checked
         p_sets_checked += 1
 
     def check_ejr(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
+        nonlocal p_sets_before_subset, p_sets_unsat_checked
+        p_sets_before_subset = p_sets_before_subset + 1
         if is_subsetset(p_set, winning_set):
             return False  # T subsetset W
+
+        p_sets_unsat_checked = p_sets_unsat_checked + 1
 
         unsat_voters = {
             i
@@ -105,4 +111,6 @@ def find_ejr_violation_witness(
         ),
         p_sets_in_layer=layers_checked,
         satisfaction_degrees=(None if exit_early else satisfaction_degrees),
+        p_sets_before_subset=p_sets_before_subset,
+        p_sets_unsat_checked=p_sets_unsat_checked,
     )

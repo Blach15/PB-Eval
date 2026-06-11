@@ -22,6 +22,8 @@ def find_ejr_x_violation_witness(
     ]
 
     p_sets_checked = 0
+    p_sets_before_subset = 0
+    p_sets_unsat_checked = 0
     witnesses = []
     n = len(approvals)
 
@@ -46,6 +48,8 @@ def find_ejr_x_violation_witness(
         return min_proj, min_util
 
     def check_ejr_x(p_set: tuple[int, ...], voter_intersection: set[int]) -> bool:
+        nonlocal p_sets_before_subset, p_sets_unsat_checked
+        p_sets_before_subset = p_sets_before_subset + 1
         voters_projects = {
             i: min_util_from_unpicked(i, p_set) for i in voter_intersection
         }
@@ -53,6 +57,8 @@ def find_ejr_x_violation_witness(
         # Check if any voter has no project available
         if any(p is None for i, (p, util) in voters_projects.items()):
             return False  # T subsetset W
+
+        p_sets_unsat_checked = p_sets_unsat_checked + 1
 
         unsat_voters = {
             i
@@ -88,4 +94,6 @@ def find_ejr_x_violation_witness(
         unsat_voter_violation_union=None,
         p_sets_in_layer=layers_checked,
         satisfaction_degrees=None,
+        p_sets_before_subset=p_sets_before_subset,
+        p_sets_unsat_checked=p_sets_unsat_checked,
     )

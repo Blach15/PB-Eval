@@ -49,6 +49,8 @@ def _format_ejr_result(violation: EJRViolationResult, elapsed_time: float) -> di
     return {
         "time": elapsed_time,
         "p_sets_checked": violation.p_sets_checked,
+        "p_sets_before_subset": violation.p_sets_before_subset,
+        "p_sets_unsat_checked": violation.p_sets_unsat_checked,
         "violation_found": len(violation.witness) != 0,
         "amount_of_violation": len(violation.witness),
         "satisfaction_degree": (

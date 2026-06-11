@@ -24,6 +24,8 @@ class EJRViolationResult:
         unsat_voter_violation_union: Optional[set[int]],
         p_sets_in_layer: dict[int, int],
         satisfaction_degrees: Optional[dict[int, float]],
+        p_sets_before_subset: Optional[int] = None,
+        p_sets_unsat_checked: Optional[int] = None,
     ):
         self.witness = witness
         self.p_sets_checked = p_sets_checked
@@ -31,6 +33,8 @@ class EJRViolationResult:
         self.unsat_voter_violation_union = unsat_voter_violation_union
         self.p_sets_in_layer = p_sets_in_layer
         self.satisfaction_degrees = satisfaction_degrees
+        self.p_sets_before_subset = p_sets_before_subset
+        self.p_sets_unsat_checked = p_sets_unsat_checked
 
     @property
     def layers_checked(self) -> int:
