@@ -1374,6 +1374,75 @@ def graph_algorithm_time_vs_budget_per_avg_cost(
     )
 
 
+def graph_algorithm_time_vs_complexity_product(
+    config: str = "ejr",
+) -> Optional[Graph]:
+    """EJR running time vs p_sets_checked * number_of_projects * number_of_voters * layers_checked.
+
+    Scatter plot (no moving average), one colour per EJR type, pooled across
+    all algorithms and utilities.
+    """
+    ejr_types = ["ejr"] #CONFIGS[config]
+    parser = OutcomeParser()
+
+    # {ejr_type: {filename: {"xs": [...], "ys": [...]}}}
+    raw: dict[str, dict[str, dict]] = {et: defaultdict(lambda: {"xs": [], "ys": []}) for et in ejr_types}
+
+    for rec in parser.records:
+        voters = rec.metadata.get("number_of_voters")
+        if voters is None:
+            continue
+        for ejr_type in ejr_types:
+            for utility in ["cost", "card"]:
+                result = rec.results.get(ejr_type, {}).get(utility, {})
+                t = result.get("time")
+                p_sets = result.get("p_sets_checked")
+                layers = result.get("layers_checked")
+                if t is None or p_sets is None or layers is None:
+                    continue
+                x = p_sets * voters * layers
+                raw[ejr_type][rec.filename]["xs"].append(x)
+                raw[ejr_type][rec.filename]["ys"].append(t)
+
+    # One averaged point per election per ejr_type
+    data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
+    for ejr_type in ejr_types:
+        for vals in raw[ejr_type].values():
+            xs, ys = vals["xs"], vals["ys"]
+            if xs:
+                data[ejr_type].append((sum(xs) / len(xs), sum(ys) / len(ys)))
+
+    plot_lines = []
+    for ejr_type in ejr_types:
+        points = data[ejr_type]
+        if not points:
+            continue
+        plot_lines.append(
+            PlotLine(
+                color=get_ejr_color(ejr_type),
+                coordinates=points,
+                legend_entry=_EJR_LABELS.get(ejr_type, ejr_type.upper()),
+                mark="*",
+                mark_size=1,
+                only_marks=True,
+            )
+        )
+
+    if not plot_lines:
+        raise ValueError("No data points found for EJR running time vs complexity product graph.")
+    return Graph(
+        title=f"{_EJR_LABELS['ejr']} Running Time vs $p\\text{{-sets}} \\times n \\times |T|$",
+        xlabel="$p\\text{-sets} \\times n \\times |T|$",
+        ylabel="Running Time (s)",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
+    )
+
+
 def graph_p_sets_per_layer(
     filename: str = "Poland_Warszawa_2018_Bialoleka_obszar_3.json",
 ) -> Optional[Graph]:
@@ -1749,14 +1818,14 @@ def _compile_snippet_to_pdf(snippet: str, name: str, pdf_dir: str) -> bool:
     )
 
     if os.path.exists(pdf_path):
-        for ext in (".aux", ".tex", ".log"):
+        for ext in (".aux", ".log"): # , ".tex"
             p = os.path.join(pdf_dir, f"{name}{ext}")
             if os.path.exists(p):
                 os.remove(p)
         print(f"  -> 06_tex/pdf/{name}.pdf")
         return True
     else:
-        for ext in (".aux", ".tex"):
+        for ext in (".aux"):
             p = os.path.join(pdf_dir, f"{name}{ext}")
             if os.path.exists(p):
                 os.remove(p)
@@ -1869,76 +1938,80 @@ def print_stats(config: str = "All_without_early") -> None:
     os.makedirs(pdf_dir)
 
     functions = [
-        ("print_results_by_algorithm", print_results_by_algorithm(config)),  # GOAT
-        ("analyze_utility_comparison", [analyze_utility_comparison()]),
-        (
-            "analyze_ejr_violations_by_utility",
-            analyze_ejr_violations_by_utility(),
-        ),  # a qq table
-        (
-            "graph_vote_length_vs_p_sets_ejr_card",
-            [graph_vote_length_vs_p_sets_ejr_card()],
-        ),
-        (
-            "graph_min_violation_degree_distribution_pr",
-            graph_min_violation_degree_distribution_pr(),
-        ),
-        (
-            "graph_exclusion_ratio_distribution",
-            graph_exclusion_ratio_distribution(),
-        ),
-        (
-            "graph_unsat_voter_fraction_distribution_pr",
-            graph_unsat_voter_fraction_distribution_pr(),
-        ),
-        (
-            "graph_vote_length_vs_violation_degree_ejr",
-            graph_vote_length_vs_violation_degree_ejr(),
-        ),
-        (
-            "graph_algorithm_time_vs_projects",
-            [graph_algorithm_time_vs_projects(config)],
-        ),
-        (
-            "graph_algorithm_time_vs_p_sets_checked",
-            [graph_algorithm_time_vs_p_sets_checked(config)],
-        ),
-        (
-            "graph_algorithm_time_vs_vote_length",
-            [graph_algorithm_time_vs_vote_length(config)],
-        ),
-        (
-            "graph_p_sets_per_layer",
-            [graph_p_sets_per_layer()],
-        ),
-        (
-            "graph_vote_length_vs_largest_t_checked",
-            [graph_vote_length_vs_largest_t_checked(config)],
-        ),
-        (
-            "graph_algorithm_time_vs_number_of_voters",
-            [graph_algorithm_time_vs_number_of_voters(config)],
-        ),
+        # ("print_results_by_algorithm", print_results_by_algorithm(config)),  # GOAT
+        # ("analyze_utility_comparison", [analyze_utility_comparison()]),
+        # (
+        #     "analyze_ejr_violations_by_utility",
+        #     analyze_ejr_violations_by_utility(),
+        # ),  # a qq table
+        # (
+        #     "graph_vote_length_vs_p_sets_ejr_card",
+        #     [graph_vote_length_vs_p_sets_ejr_card()],
+        # ),
+        # (
+        #     "graph_min_violation_degree_distribution_pr",
+        #     graph_min_violation_degree_distribution_pr(),
+        # ),
+        # (
+        #     "graph_exclusion_ratio_distribution",
+        #     graph_exclusion_ratio_distribution(),
+        # ),
+        # (
+        #     "graph_unsat_voter_fraction_distribution_pr",
+        #     graph_unsat_voter_fraction_distribution_pr(),
+        # ),
+        # (
+        #     "graph_vote_length_vs_violation_degree_ejr",
+        #     graph_vote_length_vs_violation_degree_ejr(),
+        # ),
+        # (
+        #     "graph_algorithm_time_vs_projects",
+        #     [graph_algorithm_time_vs_projects(config)],
+        # ),
+        # (
+        #     "graph_algorithm_time_vs_p_sets_checked",
+        #     [graph_algorithm_time_vs_p_sets_checked(config)],
+        # ),
+        # (
+        #     "graph_algorithm_time_vs_vote_length",
+        #     [graph_algorithm_time_vs_vote_length(config)],
+        # ),
+        # (
+        #     "graph_p_sets_per_layer",
+        #     [graph_p_sets_per_layer()],
+        # ),
+        # (
+        #     "graph_vote_length_vs_largest_t_checked",
+        #     [graph_vote_length_vs_largest_t_checked(config)],
+        # ),
+        # (
+        #     "graph_algorithm_time_vs_number_of_voters",
+        #     [graph_algorithm_time_vs_number_of_voters(config)],
+        # ),
         # (
         #     "graph_algorithm_time_vs_vote_length_times_avg_cost",
         #     [graph_algorithm_time_vs_vote_length_times_avg_cost(config)],
         # ),
+        # (
+        #     "graph_algorithm_time_vs_projects_ejr_compare",
+        #     [graph_algorithm_time_vs_projects_ejr_compare()],
+        # ),
+        # (
+        #     "graph_algorithm_time_vs_budget_per_avg_cost",
+        #     [graph_algorithm_time_vs_budget_per_avg_cost(config)],
+        # ),
         (
-            "graph_algorithm_time_vs_projects_ejr_compare",
-            [graph_algorithm_time_vs_projects_ejr_compare()],
+            "graph_algorithm_time_vs_complexity_product",
+            [graph_algorithm_time_vs_complexity_product()],
         ),
-        (
-            "graph_algorithm_time_vs_budget_per_avg_cost",
-            [graph_algorithm_time_vs_budget_per_avg_cost(config)],
-        ),
-        (
-            "analyze_ejr_violation_mutual_information",
-            analyze_ejr_violation_mutual_information(),
-        ),
-        (
-            "graph_ejr_violation_budget_vs_voters",
-            graph_ejr_violation_budget_vs_voters(),
-        ),
+        # (
+        #     "analyze_ejr_violation_mutual_information",
+        #     analyze_ejr_violation_mutual_information(),
+        # ),
+        # (
+        #     "graph_ejr_violation_budget_vs_voters",
+        #     graph_ejr_violation_budget_vs_voters(),
+        # ),
     ]
 
     for func_name, items in functions:
