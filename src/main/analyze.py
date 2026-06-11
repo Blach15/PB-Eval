@@ -1390,6 +1390,7 @@ def graph_algorithm_time_vs_complexity_product(
 
     for rec in parser.records:
         voters = rec.metadata.get("number_of_voters")
+        projects = rec.metadata.get("number_of_projects")
         if voters is None:
             continue
         for ejr_type in ejr_types:
@@ -1398,11 +1399,12 @@ def graph_algorithm_time_vs_complexity_product(
                 t = result.get("time")
                 p_sets = result.get("p_sets_checked")
                 layers = result.get("layers_checked")
-                if t is None or p_sets is None or layers is None:
+                if t is None or p_sets is None or layers is None or projects is None:
                     continue
-                x = p_sets * voters * layers
+                x = p_sets #* (voters * projects)  # complexity product
+                y = t / (  voters * projects)  # time normalized by complexity product)
                 raw[ejr_type][rec.filename]["xs"].append(x)
-                raw[ejr_type][rec.filename]["ys"].append(t)
+                raw[ejr_type][rec.filename]["ys"].append(y)
 
     # One averaged point per election per ejr_type
     data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
@@ -1433,7 +1435,7 @@ def graph_algorithm_time_vs_complexity_product(
     return Graph(
         title=f"{_EJR_LABELS['ejr']} Running Time vs $p\\text{{-sets}} \\times n \\times |T|$",
         xlabel="$p\\text{-sets} \\times n \\times |T|$",
-        ylabel="Running Time (s)",
+        ylabel="Running Time (s) / $n \\times |T| \\times m$ ",
         plot_lines=plot_lines,
         ymajorgrids=True,
         grid_style="dashed",
