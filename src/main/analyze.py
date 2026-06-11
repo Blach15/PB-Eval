@@ -784,8 +784,8 @@ def analyze_utility_comparison() -> Table:
     return Table(
         headers=[
             "Algorithm",
-            "rel. $\\mu^{\\#} (\\%)$",
-            "rel. $\\mu^{c} (\\%)$",
+            "$\\mu^{\\#}_{\\text{rel.}} (\\%)$",
+            "$\\mu^{c}_{\\text{rel.}} (\\%)$",
             "Budget Usage (\\%)",
             "Avg Running Time (s)",
         ],
@@ -846,7 +846,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_alpha") -> List[Table]:
 
         if rows:
             table = Table(
-                headers=["Algorithm", "N", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
+                headers=["Algorithm", "$\\#_{V}$", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
                 rows=rows,
                 title=f"Violation Degree Analysis for {_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS.get(ejr_type, ejr_type.upper())}",
             )
@@ -921,7 +921,7 @@ def graph_vote_length_vs_p_sets_ejr_card() -> Optional[Graph]:
 
     # Create and return the graph
     graph = Graph(
-        title="Vote Length vs T-Cohesive Sets Checked (EJR[card])",
+        title=f"Vote Length vs T-Cohesive Sets Checked ({_UTIL_LABELS['card']}-{_EJR_LABELS['ejr']})",
         xlabel="Vote Length",
         ylabel="T-Cohesive Sets Checked",
         plot_lines=plot_lines,
@@ -1050,7 +1050,7 @@ def graph_min_violation_degree_distribution_pr() -> List[Graph]:
 
         graphs.append(
             Graph(
-                title=f"{_UTIL_LABELS.get(utility, utility)}-EJR Violation Degree Distribution",
+                title=f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} Violation Degree Distribution",
                 xlabel="Violation Degree ($\\phi$)",
                 ylabel="Elections with Violation Degree $\\le \\phi$",
                 plot_lines=plot_lines,
@@ -1122,7 +1122,7 @@ def graph_unsat_voter_fraction_distribution_pr() -> List[Graph]:
 
         graphs.append(
             Graph(
-                title=f"{_UTIL_LABELS.get(utility, utility)}-EJR Unsatisfied Voter Fraction Distribution",
+                title=f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} Unsatisfied Voter Fraction Distribution",
                 xlabel="Fraction of Unsatisfied Voters ($r$)",
                 ylabel="Elections with Fraction $\\le r$",
                 plot_lines=plot_lines,
@@ -1209,9 +1209,9 @@ def graph_vote_length_vs_violation_degree_ejr() -> List[SubfigureGrid]:
         if graphs:
             figures.append(
                 SubfigureGrid(
-                    title=f"EJR[{utility}] Violation Degree vs Vote Length",
+                    title=f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} Violation Degree vs Vote Length",
                     caption=(
-                        f"EJR[{utility}] violation degree ($\\phi = 1 - $ satisfaction degree) as a function of vote length, "
+                        f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} violation degree ($\\phi = 1 - $ satisfaction degree) as a function of vote length, "
                         f"shown per algorithm. A value of 1 indicates a full violation."
                     ),
                     graphs=graphs,
@@ -1262,7 +1262,7 @@ def _graph_ejr_check_time(
     if not plot_lines:
         return None
     return Graph(
-        title=f"EJR Running Time vs {title_suffix}",
+        title=f"{_EJR_LABELS['ejr']} Running Time vs {title_suffix}",
         xlabel=x_label,
         ylabel="Moving Average Running Time (s)",
         plot_lines=plot_lines,
@@ -1602,9 +1602,9 @@ def analyze_ejr_violation_mutual_information() -> List[SubfigureGrid]:
         if graphs:
             figures.append(
                 SubfigureGrid(
-                    title=f"EJR[{utility}] Violation Rate vs Features",
+                    title=f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} Violation Rate vs Features",
                     caption=(
-                        f"EJR[{utility}] violation rate (\\%) as a function of election features, "
+                        f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} violation rate (\\%) as a function of election features, "
                         f"shown per voting rule as a moving average."
                     ),
                     graphs=graphs,
@@ -1691,7 +1691,7 @@ def graph_ejr_violation_budget_vs_voters() -> List[Graph]:
         if plot_lines:
             graphs.append(
                 Graph(
-                    title=f"EJR[{utility}] Violations: Budget vs Number of Voters",
+                    title=f"{_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS['ejr']} Violations: Budget vs Number of Voters",
                     xlabel="Budget",
                     ylabel="Number of Voters",
                     plot_lines=plot_lines,
