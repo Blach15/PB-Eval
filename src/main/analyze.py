@@ -1459,6 +1459,79 @@ def graph_algorithm_time_vs_complexity_product(
     )
 
 
+def graph_algorithm_time_per_projects_voters_vs_p_sets(
+    config: str = "ejr",
+) -> Optional[Graph]:
+    """EJR running time / (projects * voters) vs p_sets_checked.
+
+    Scatter plot, one colour per EJR type, pooled across all algorithms and utilities.
+    """
+    ejr_types = ["ejr"]  # CONFIGS[config]
+    parser = OutcomeParser()
+
+    # {ejr_type: {filename: {"xs": [...], "ys": [...]}}}
+    raw: dict[str, dict[str, dict]] = {
+        et: defaultdict(lambda: {"xs": [], "ys": []}) for et in ejr_types
+    }
+
+    for rec in parser.records:
+        voters = rec.metadata.get("number_of_voters")
+        projects = rec.metadata.get("number_of_projects")
+        if voters is None or projects is None or voters == 0 or projects == 0:
+            continue
+        for ejr_type in ejr_types:
+            for utility in ["cost", "card"]:
+                result = rec.results.get(ejr_type, {}).get(utility, {})
+                t = result.get("time")
+
+                layers = result.get("layers_checked")
+                p_sets = result.get("p_sets_checked")
+                if t is None or p_sets is None or layers is None:
+                    continue
+                x = p_sets
+                y = t / (layers * voters)
+                raw[ejr_type][rec.filename]["xs"].append(x)
+                raw[ejr_type][rec.filename]["ys"].append(y)
+
+    # One averaged point per election per ejr_type
+    data: dict[str, list[tuple]] = {et: [] for et in ejr_types}
+    for ejr_type in ejr_types:
+        for vals in raw[ejr_type].values():
+            xs, ys = vals["xs"], vals["ys"]
+            if xs:
+                data[ejr_type].append((sum(xs) / len(xs), sum(ys) / len(ys)))
+
+    plot_lines = []
+    for ejr_type in ejr_types:
+        points = data[ejr_type]
+        if not points:
+            continue
+        plot_lines.append(
+            PlotLine(
+                color=get_ejr_color(ejr_type),
+                coordinates=points,
+                legend_entry=_EJR_LABELS.get(ejr_type, ejr_type.upper()),
+                mark="*",
+                mark_size=1,
+                only_marks=True,
+            )
+        )
+
+    if not plot_lines:
+        return None
+    return Graph(
+        title=f"{_EJR_LABELS['ejr']} Running Time / ($n \\cdot \\kappa$) vs $p$-sets",
+        xlabel="$p$-sets checked",
+        ylabel="Running Time (s) / ($n \\cdot \\kappa$)",
+        plot_lines=plot_lines,
+        ymajorgrids=True,
+        grid_style="dashed",
+        xmode="linear",
+        ymode="linear",
+        legend_pos="outer north east",
+    )
+
+
 def graph_p_sets_per_layer(
     filename: str = "Poland_Warszawa_2018_Bialoleka_obszar_3.json",
 ) -> Optional[Graph]:
@@ -2027,6 +2100,10 @@ def print_stats(config: str = "All_without_early") -> None:
         (
             "graph_algorithm_time_vs_complexity_product",
             [graph_algorithm_time_vs_complexity_product()],
+        ),
+        (
+            "graph_algorithm_time_per_projects_voters_vs_p_sets",
+            [graph_algorithm_time_per_projects_voters_vs_p_sets()],
         ),
     ]
 
