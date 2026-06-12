@@ -747,6 +747,9 @@ def analyze_utility_comparison() -> Table:
     # Structure: {algo_name: [algorithm_times, ...]}
     algo_times: dict[str, list[float]] = defaultdict(list)
 
+    # Structure: {algo_name: [is_not_exhaustive (bool), ...]}
+    exhaustive_counts: dict[str, list[bool]] = defaultdict(list)
+
     # Collect budget usage and running time per election
     for rec in parser.records:
         budget_limit = rec.metadata.get("budget_limit")
@@ -764,6 +767,10 @@ def analyze_utility_comparison() -> Table:
         if t is not None:
             algo_times[rec.algo_name].append(t)
 
+        is_not_exhaustive = rec.algo_stats.get("is_not_exhaustive")
+        if is_not_exhaustive is not None:
+            exhaustive_counts[rec.algo_name].append(not is_not_exhaustive)
+
     # Build table rows
     rows = []
     for algo_name in sorted(relative_scores.keys(), key=algo_sort_key):
@@ -771,6 +778,7 @@ def analyze_utility_comparison() -> Table:
         cost_rels = relative_scores[algo_name]["cost"]
         usage_ratios = budget_usage.get(algo_name, [])
         times = algo_times.get(algo_name, [])
+        exh = exhaustive_counts.get(algo_name, [])
 
         card_mean = f"{round(100*np.mean(card_rels), 1)}" if card_rels else "N/A"
         cost_mean = f"{round(100*np.mean(cost_rels), 1)}" if cost_rels else "N/A"
@@ -778,8 +786,11 @@ def analyze_utility_comparison() -> Table:
             f"{round(100*np.mean(usage_ratios), 1)}" if usage_ratios else "N/A"
         )
         time_mean = f"{np.mean(times):.4f}" if times else "N/A"
+        not_exh_pct = (
+            f"{round(100 * sum(exh) / len(exh), 1)}" if exh else "N/A"
+        )
 
-        rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean, time_mean])
+        rows.append([get_algo_label(algo_name), card_mean, cost_mean, budget_mean, not_exh_pct, time_mean])
 
     return Table(
         headers=[
@@ -787,7 +798,8 @@ def analyze_utility_comparison() -> Table:
             "$\\mu^{\\#}_{\\text{rel.}} (\\%)$",
             "$\\mu^{c}_{\\text{rel.}} (\\%)$",
             "Budget Usage (\\%)",
-            "Avg Running Time (s)",
+            "Exhaustive (\\%)",
+            "Running Time (s)",
         ],
         rows=rows,
         title="Average Utility Comparison and Budget Usage by Algorithm",
@@ -846,7 +858,7 @@ def analyze_ejr_violations_by_utility(ejr_type="ejr_phi") -> List[Table]:
 
         if rows:
             table = Table(
-                headers=["Algorithm", "$\\#_{V}$", "Mean", "Median", "Q1", "Q3", "Min", "Max"],
+                headers=["Algorithm", "$\\#_{V}$", "Mean", "Median", "$Q_1$", "$Q_3$", "Min", "Max"],
                 rows=rows,
                 title=f"Violation Degree Analysis for {_UTIL_LABELS.get(utility, utility)}-{_EJR_LABELS.get(ejr_type, ejr_type.upper())}",
             )
@@ -956,7 +968,7 @@ def graph_exclusion_ratio_distribution() -> List[Graph]:
             exclusion_ratio = no_util_voters / n_voters
             data_by_algo[rec.algo_name].append(exclusion_ratio)
 
-    x_points = [round(i * 0.01, 2) for i in range(1, 101)]  # 0.01 to 1.00
+    x_points = [round(i * 0.01, 2) for i in range(0, 101)]  # 0.00 to 1.00
 
     plot_lines = []
     for i, algo_name in enumerate(sorted(data_by_algo.keys(), key=algo_sort_key)):
@@ -1398,11 +1410,13 @@ def graph_algorithm_time_vs_complexity_product(
                 result = rec.results.get(ejr_type, {}).get(utility, {})
                 t = result.get("time")
                 p_sets = result.get("p_sets_checked")
+                p_sets_before_subset = result.get("p_sets_before_subset" )  
+                p_sets_after_subset = result.get("p_sets_unsat_checked" )  
                 layers = result.get("layers_checked")
                 if t is None or p_sets is None or layers is None or projects is None:
                     continue
-                x = p_sets #* (voters * layers)  # complexity product
-                y = t / (  voters * projects)  # time normalized by complexity product)
+                x = p_sets_after_subset #* (voters * layers)  # complexity product
+                y = t / (   layers)  # time normalized by complexity product)
                 raw[ejr_type][rec.filename]["xs"].append(x)
                 raw[ejr_type][rec.filename]["ys"].append(y)
 
@@ -1435,7 +1449,7 @@ def graph_algorithm_time_vs_complexity_product(
     return Graph(
         title=f"{_EJR_LABELS['ejr']} Running Time vs $p\\text{{-sets}}$",
         xlabel="$p\\text{-sets}$",
-        ylabel="Running Time (s) / ($n \\times m$)",
+        ylabel="Running Time (s) / ($ \\kappa$)",
         plot_lines=plot_lines,
         ymajorgrids=True,
         grid_style="dashed",
@@ -2003,16 +2017,16 @@ def print_stats(config: str = "All_without_early") -> None:
             [graph_algorithm_time_vs_budget_per_avg_cost(config)],
         ),
         (
-            "graph_algorithm_time_vs_complexity_product",
-            [graph_algorithm_time_vs_complexity_product()],
-        ),
-        (
             "analyze_ejr_violation_mutual_information",
             analyze_ejr_violation_mutual_information(),
         ),
         (
             "graph_ejr_violation_budget_vs_voters",
             graph_ejr_violation_budget_vs_voters(),
+        ),
+        (
+            "graph_algorithm_time_vs_complexity_product",
+            [graph_algorithm_time_vs_complexity_product()],
         ),
     ]
 
