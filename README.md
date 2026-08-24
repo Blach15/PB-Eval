@@ -1,5 +1,9 @@
 Code for our masters project
 
+# Results
+Core findings summarized as
+![results](data/results.png)
+
 # Running
 
 Run `src/main/compute_winning_sets.py` to produce the winning sets for all elections in `data/elections`.
