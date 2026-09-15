@@ -1,4 +1,6 @@
-Code for our masters project
+Code for our masters project.
+
+The code analyzes how well voting rules satisfy EJR on real data.
 
 # Results
 Core findings summarized as
